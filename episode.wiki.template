@@ -39,13 +39,21 @@
 == Tidbits ==
 {%for theme in themes %}
 * {{ theme }}{% endfor %}{% endif %}
+
 {% if notable_bits is defined and notable_bits|length > 0 %}
 == Notable Bits ==
 {%for bit in notable_bits %}
 * {{ bit }}{% endfor %}{% endif %}
+
 {% if sources is defined and sources|length > 0 %}
 == References ==
 {%for source in sources %}
 * {{ source }}{% endfor %}{% endif %}
+
+{% if mediawiki_citations is defined and mediawiki_citations is not none %}
+== Citations ==
+
+{{mediawiki_citations }}
+{% endif %}
 
 [[Category:Episodes]]
