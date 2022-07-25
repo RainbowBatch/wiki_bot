@@ -104,6 +104,15 @@ def process_ep_record(ep_record):
 def prettify_mediawiki(raw):
     p1 = wikitextparser.parse(raw).pformat()
 
+    # Remove lines that match the following patterns:
+    # Topics covered:
+    # [https://knowledgefight.com/research/2022/3/3/episode-655-july-18-2003 Citations]
+    # [https://www.gofundme.com/f/dreamycreamysummer The Dreamy Creamy Fundraiser]
+
+    # <0x92> -> '? Other strange encodings?
+
+    # Remove blank lines in bulleted lists.
+
     p2 = re.sub(r'(\n\s*)+\n+', '\n\n', p1)
 
     return p2
