@@ -1,0 +1,6 @@
+.~lock.*#
+google_credentials.json
+pywikibot/
+sample_pages.zip
+sample_pages/
+token.json

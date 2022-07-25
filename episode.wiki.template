@@ -1,0 +1,51 @@
+{% raw %}{{{% endraw %}Episode
+|title={{clean_title}}
+|caption=[{{libsyn_page}} Listen to this episode on Libsyn]
+|episodeNumber={{episode_number}}
+|length={{episode_length}}
+|airDate={{release_date}}
+{% if coverage_date is defined and coverage_date is not none %}
+|coverageDate={{coverage_date}}
+{%else%}
+{% if coverage_start_date is defined and coverage_start_date is not none %}
+|coverageStartDate={{coverage_start_date}}
+{% endif %}
+{% if coverage_end_date is defined and coverage_end_date is not none %}
+|coverageEndDate={{coverage_end_date}}
+{% endif %}
+{% endif %}
+|episodeType={{episode_type}}
+{% if people is defined and people|length > 0 %}
+|appearance={%for person in people %}[[{{ person }}]]; {% endfor %}
+{% endif %}
+{% if beverage is defined and beverage is not none %}
+|beverage={{beverage}}
+{% endif %}
+{% if ooc_drop is defined and ooc_drop is not none %}
+|oocDrop={{ooc_drop}}
+{% endif %}
+{% if prev_title is defined and prev_title is not none %}
+|previousEpisode=[[{{prev_title}}]]
+{% endif %}
+{% if next_title is defined and next_title is not none %}
+|nextEpisode=[[{{next_title}}]]
+{%endif%}
+{% raw %}}}
+{{Stub}}{% endraw %}
+
+{{ mediawiki_description }}
+
+{% if themes is defined and themes|length > 0 %}
+== Tidbits ==
+{%for theme in themes %}
+* {{ theme }}{% endfor %}{% endif %}
+{% if notable_bits is defined and notable_bits|length > 0 %}
+== Notable Bits ==
+{%for bit in notable_bits %}
+* {{ bit }}{% endfor %}{% endif %}
+{% if sources is defined and sources|length > 0 %}
+== References ==
+{%for source in sources %}
+* {{ source }}{% endfor %}{% endif %}
+
+[[Category:Episodes]]
