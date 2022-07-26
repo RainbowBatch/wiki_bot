@@ -1,4 +1,5 @@
 .~lock.*#
+__pycache__/
 google_credentials.json
 pywikibot/
 sample_pages.zip
