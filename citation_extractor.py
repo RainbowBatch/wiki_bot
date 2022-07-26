@@ -3,6 +3,8 @@ import requests
 import time
 import pandoc
 import wikitextparser
+import re
+from pprint import pprint
 
 from bs4 import BeautifulSoup
 
@@ -18,83 +20,41 @@ def request_with_retries(url):
     return page
 
 
-LISTING_QUEUE = [
-    "https://knowledgefight.com/citations",
-    "https://knowledgefight.com/research/",
+sitemap_page = request_with_retries('https://knowledgefight.com/sitemap.xml')
+sitemap_soup = BeautifulSoup(sitemap_page.text, 'html.parser')
+sitemap = [
+    loc.text
+    for loc in sitemap_soup.find_all("loc")
 ]
-VISITED_LISTINGS = set()
-
-URLS = set()
-
-# Also look for any links from libsyn. Should all be dupes, but worth checking.
-details_table = pd.read_csv('libsyn_details.csv', encoding='latin1')
-
-for ep_record in details_table.to_dict(orient='records'):
-
-    ep_record['mediawiki_description'] = pandoc.write(
-        pandoc.read(ep_record['details_html'],
-                    format="html-native_divs-native_spans"),
-        format="mediawiki"
-    )
-
-    parsed_description = wikitextparser.parse(
-        ep_record['mediawiki_description'])
-
-    if len(parsed_description.external_links) > 0:
-        for link in parsed_description.external_links:
-            link_url = link.url
-            if 'knowledgefight.com/research/' in link_url:
-                URLS.add(link_url)
 
 
-while len(LISTING_QUEUE) > 0:
-    listing_url = LISTING_QUEUE.pop()
-    listing_page = request_with_retries(listing_url)
-    VISITED_LISTINGS.add(listing_url)
-    listing_soup = BeautifulSoup(listing_page.text, 'html.parser')
+citation_url_regex = re.compile("^https://knowledgefight.com/((the-past)|(research))/\d+/\d+/\d+/.*$")
+citation_urls = [ s for s in sitemap if citation_url_regex.match(s) ]
 
-    for link_html in listing_soup.find_all("a"):
-        link = link_html['href']
-        if link.startswith("/research/"):
-            link = "https://knowledgefight.com" + link
-
-        if not link.startswith('https://knowledgefight.com/research/'):
-            continue
-
-        if '#comments' in link or '/category/' in link or '/tag/' in link:
-            continue
-
-        URLS.add(link)
-
-    pagination_html = listing_soup.find("nav", class_="pagination")
-    if pagination_html is not None:
-        for link_html in pagination_html.find_all("a"):
-            link = link_html['href']
-            assert link.startswith('/research?')
-            link = "https://knowledgefight.com" + link
-            if link in VISITED_LISTINGS:
-                continue
-            LISTING_QUEUE.append(link)
-
-    # print(listing_soup)
-
-print("Located", len(URLS), "citation urls.")
+print("Located", len(citation_urls), "citation urls.")
 
 header = [
     "citations_url",
     "citations_title",
+    "citations_tags",
     "citations_html",
     "citations_mediawiki",
 ]
 rows = []
 
-
-for citations_url in URLS:
+for citations_url in citation_urls:
     citations_page = request_with_retries(citations_url)
     citations_soup = BeautifulSoup(citations_page.text, 'html.parser')
     citations_html = citations_soup.find("div", class_="entry-content")
 
     title_html = citations_soup.find("h1", class_="entry-title")
+    citations_title = title_html.text
+
+    citations_tags = []
+    tags_container_html = citations_soup.find("div", class_="tags")
+    if tags_container_html is not None:
+        for tag_html in tags_container_html.find_all("a"):
+            citations_tags.append(tag_html.text)
 
     citations_mediawiki = pandoc.write(
         pandoc.read(citations_html, format="html-native_divs-native_spans"),
@@ -102,11 +62,11 @@ for citations_url in URLS:
     )
 
     print("Finished", citations_url)
-    citations_title = title_html.text
 
     rows.append([
         citations_url,
         citations_title,
+        ';'.join(citations_tags),
         citations_html,
         citations_mediawiki,
     ])
