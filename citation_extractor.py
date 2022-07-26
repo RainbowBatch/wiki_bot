@@ -90,12 +90,7 @@ rows = []
 
 
 for citations_url in URLS:
-    citations_page = None
-    while citations_page is None or citations_page.status_code != 200:
-        # SquareSpace is super senstive to too many requests.
-        time.sleep(2)
-        print('.')
-        citations_page = requests.get(citations_url)
+    citations_page = request_with_retries(citations_url)
     citations_soup = BeautifulSoup(citations_page.text, 'html.parser')
     citations_html = citations_soup.find("div", class_="entry-content")
 
