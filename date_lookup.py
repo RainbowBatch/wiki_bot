@@ -46,27 +46,7 @@ def lookup_date(datestring):
 
 if __name__ == '__main__':
     for date in [
-            'February 11, 2022',
-            'July 10, 2015',
-            'February 10, 2020',
-            'February 11, 2020',
-            'February 12, 2020',
-            'February 13, 2020',
-            'February 14, 2020',
-            'February 15, 2020',
-            'February 16, 2020',
-            'February 17, 2020',
-            'February 18, 2020',
-            'February 19, 2020',
-            'February 20, 2020',
-            'February 21, 2020',
-            'February 22, 2020',
-            'February 23, 2020',
-            'February 24, 2020',
-            'February 25, 2020',
-            'February 26, 2020',
-            'February 27, 2020',
-            'February 28, 2020',
+            'June 17, 2015',
         ]:
         print("===")
         print(date, "->\n\t", lookup_date(date))

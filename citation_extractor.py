@@ -1,12 +1,13 @@
 import pandas as pd
+import pandoc
+import re
 import requests
 import time
-import pandoc
 import wikitextparser
-import re
-from pprint import pprint
 
 from bs4 import BeautifulSoup
+from citation_episode_number_matcher import extract_episode_number
+from pprint import pprint
 
 
 def request_with_retries(url):
@@ -28,14 +29,16 @@ sitemap = [
 ]
 
 
-citation_url_regex = re.compile("^https://knowledgefight.com/((the-past)|(research))/\d+/\d+/\d+/.*$")
-citation_urls = [ s for s in sitemap if citation_url_regex.match(s) ]
+citation_url_regex = re.compile(
+    "^https://knowledgefight.com/((the-past)|(research))/\d+/\d+/\d+/.*$")
+citation_urls = [s for s in sitemap if citation_url_regex.match(s)]
 
 print("Located", len(citation_urls), "citation urls.")
 
 header = [
     "citations_url",
     "citations_title",
+    "citations_episode_number",
     "citations_tags",
     "citations_html",
     "citations_mediawiki",
@@ -49,6 +52,8 @@ for citations_url in citation_urls:
 
     title_html = citations_soup.find("h1", class_="entry-title")
     citations_title = title_html.text
+
+    citations_episode_number = extract_episode_number(citations_title)
 
     citations_tags = []
     tags_container_html = citations_soup.find("div", class_="tags")
@@ -66,6 +71,7 @@ for citations_url in citation_urls:
     rows.append([
         citations_url,
         citations_title,
+        citations_episode_number,
         ';'.join(citations_tags),
         citations_html,
         citations_mediawiki,
