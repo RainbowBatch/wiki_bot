@@ -64,7 +64,13 @@ if __name__ == '__main__':
 
     titles = title_table.citations_title.to_list()
 
-    print([
+    episode_numbers = [
         extract_episode_number(title)
         for title in titles
-    ])
+    ]
+
+    print(episode_numbers)
+
+    from collections import Counter
+
+    print(Counter(episode_numbers))

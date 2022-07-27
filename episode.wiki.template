@@ -3,7 +3,9 @@
 |caption=[{{libsyn_page}} Listen to this episode on Libsyn]
 |episodeNumber={{episode_number}}
 |length={{episode_length}}
+{% if release_date is defined and release_date is not none %}
 |airDate={{release_date}}
+{% endif %}
 {% if coverage_date is defined and coverage_date is not none %}
 |coverageDate={{coverage_date}}
 {%else%}
@@ -50,10 +52,12 @@
 {%for source in sources %}
 * {{ source }}{% endfor %}{% endif %}
 
-{% if mediawiki_citations is defined and mediawiki_citations is not none %}
+{% if mediawiki_citations is defined and mediawiki_citations|length > 0 %}
 == Citations ==
 
-{{mediawiki_citations }}
+{%for citation_block in mediawiki_citations %}
+{{citation_block }}
+{% endfor %}
 {% endif %}
 
 [[Category:Episodes]]
