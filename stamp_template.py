@@ -8,6 +8,7 @@ import re
 import wikitextparser
 from slugify import slugify
 import io
+from date_lookup import canonicalize_date
 
 merged_df = pd.read_csv('merged.csv')
 
@@ -77,16 +78,18 @@ def process_ep_record(ep_record):
 
     ep_record['coverage_start_date'] =  cleans(ep_record['coverage_start_date'])
     if ep_record['coverage_start_date'] is not None:
-        ep_record['coverage_start_date'] = maya.when(ep_record['coverage_start_date'], timezone=TIMEZONE).datetime().strftime(DATE_FORMAT)
+        ep_record['coverage_start_date'] = canonicalize_date(ep_record['coverage_start_date'])
 
     ep_record['coverage_end_date'] =  cleans(ep_record['coverage_end_date'])
     if ep_record['coverage_end_date'] is not None:
-        ep_record['coverage_end_date'] = maya.when(ep_record['coverage_end_date'], timezone=TIMEZONE).datetime().strftime(DATE_FORMAT)
+        ep_record['coverage_end_date'] = canonicalize_date(ep_record['coverage_end_date'])
 
     if ep_record['coverage_start_date'] == ep_record['coverage_end_date']:
         ep_record['coverage_date'] = ep_record['coverage_start_date']
     else:
         ep_record['coverage_date'] = None
+
+    print(ep_record['episode_type'])
 
     # Clean up obsolete fields
     del ep_record['release_date_x']

@@ -16,7 +16,7 @@
 |coverageEndDate={{coverage_end_date}}
 {% endif %}
 {% endif %}
-|episodeType={{episode_type}}
+|episodeType=[[:Category:{{episode_type}}|{{episode_type}}]]
 {% if people is defined and people|length > 0 %}
 |appearance={%for person in people %}[[{{ person }}]]; {% endfor %}
 {% endif %}
@@ -61,3 +61,4 @@
 {% endif %}
 
 [[Category:Episodes]]
+[[Category:{{episode_type}}]]
