@@ -13,10 +13,6 @@ merged_df = pd.read_csv('merged.csv')
 
 citations_df = pd.read_csv('citations.csv', encoding ='latin1')
 
-with open('episode.wiki.template') as episode_template_f:
-    template = Template(episode_template_f.read())
-
-
 def cleans(s):
     if isinstance(s, float) and math.isnan(s):
         return None
@@ -70,12 +66,12 @@ def process_ep_record(ep_record):
     parsed_description = wikitextparser.parse(ep_record['mediawiki_description'])
 
     # This is a bit hacky, but we need to pick up the correct citations from the external table.
-    ep_record['mediawiki_citations'] = None
-    if len(parsed_description.external_links) > 0:
-        for link in parsed_description.external_links:
-            link_url = link.url
-            if 'knowledgefight.com/research/' in link_url:
-                ep_record['mediawiki_citations'] = citations_df[citations_df.citations_url==link_url].citations_mediawiki.to_list()[0]
+    ep_record['mediawiki_citations'] = []
+    relevant_citations = citations_df[citations_df.citations_episode_number == ep_record['episode_number']]
+    if len(relevant_citations) > 0:
+        print(ep_record['title'], 'has %d citations' % len(relevant_citations))
+        for relevant_citation in relevant_citations.to_dict(orient='records'):
+            ep_record['mediawiki_citations'].append(relevant_citation['citations_mediawiki'])
 
     ep_record['release_date'] = maya.when(ep_record['release_date_x'], timezone=TIMEZONE).datetime().strftime(DATE_FORMAT)
 

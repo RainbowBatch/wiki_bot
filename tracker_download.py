@@ -14,7 +14,7 @@ from pprint import pprint
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
 
 # The ID and range of a sample spreadsheet.
-SAMPLE_SPREADSHEET_ID = '1p2u4MH5ywwsIHZvpdBbpzhPqAQedFR_xvbs1jbiAVOk'
+SAMPLE_SPREADSHEET_ID = '1HfPRsxjGFFqQWXaY_NKSX1ej7bRz5cuKCWp1T6Y1fI8' # This is the original, but there are mistakes. '1p2u4MH5ywwsIHZvpdBbpzhPqAQedFR_xvbs1jbiAVOk'
 SAMPLE_RANGE_NAME = 'Sheet1!A1:L'
 
 COLUMN_REMAP = {
