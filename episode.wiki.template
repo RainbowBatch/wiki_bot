@@ -16,9 +16,11 @@
 |coverageEndDate={{coverage_end_date}}
 {% endif %}
 {% endif %}
-|episodeType=[[:Category:{{episode_type}}|{{episode_type}}]]
+{% if categories is defined and categories|length > 0 %}
+|episodeType={% for category in categories %}[[:Category:{{category}}|{{category}}]]{% if not loop.last %}, {% endif %}{% endfor %}
+{% endif %}
 {% if people is defined and people|length > 0 %}
-|appearance={%for person in people %}[[{{ person }}]]; {% endfor %}
+|appearance={%for person in people %}[[{{ person }}]]{% if not loop.last %}, {% endif %}{% endfor %}
 {% endif %}
 {% if beverage is defined and beverage is not none %}
 |beverage={{beverage}}
@@ -53,7 +55,7 @@
 * {{ source }}{% endfor %}{% endif %}
 
 {% if mediawiki_citations is defined and mediawiki_citations|length > 0 %}
-== Citations ==
+== Detailed Show Notes ==
 
 {%for citation_block in mediawiki_citations %}
 {{citation_block }}
@@ -61,4 +63,6 @@
 {% endif %}
 
 [[Category:Episodes]]
-[[Category:{{episode_type}}]]
+{%- for category in categories %}
+[[Category:{{category}}]]
+{% endfor -%}
