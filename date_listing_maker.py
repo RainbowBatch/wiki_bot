@@ -6,7 +6,9 @@ import pandoc
 import re
 import wikitextparser
 
-from episode_processor import process_ep_record, load_category_remapping
+from episode_processor import load_category_remapping
+from episode_processor import load_citations_table
+from episode_processor import process_ep_record
 from jinja2 import Template
 from pprint import pprint
 from slugify import slugify
@@ -14,7 +16,7 @@ from slugify import slugify
 
 merged_df = pd.read_csv('merged.csv')
 
-citations_df = pd.read_csv('citations.csv', encoding='latin1')
+citations_df = load_citations_table('citations.csv')
 
 category_remapping_df = load_category_remapping('categories_remapping.csv')
 

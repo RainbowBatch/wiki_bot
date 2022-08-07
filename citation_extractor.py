@@ -4,9 +4,12 @@ import re
 import requests
 import time
 import wikitextparser
+import math
 
 from bs4 import BeautifulSoup
-from citation_episode_number_matcher import extract_episode_number
+from citation_episode_number_matcher import guess_episode
+from date_lookup import extract_date_from_string
+from date_lookup import format_date
 from pprint import pprint
 
 
@@ -39,6 +42,7 @@ header = [
     "citations_url",
     "citations_title",
     "citations_episode_number",
+    "citations_date",
     "citations_tags",
     "citations_html",
     "citations_mediawiki",
@@ -53,7 +57,23 @@ for citations_url in citation_urls:
     title_html = citations_soup.find("h1", class_="entry-title")
     citations_title = title_html.text
 
-    citations_episode_number = extract_episode_number(citations_title)
+    # TODO(woursler): Something about this is wrong. It associates April 1st, 2008 with 122 (April 1st, 2013)
+    associated_episode = guess_episode(citations_title)
+
+    if associated_episode is None:
+        citations_episode_number is None
+    else:
+        citations_episode_number = associated_episode.episode_number
+
+    start_date, end_date = extract_date_from_string(citations_title)
+
+    if start_date is None and associated_episode is not None:
+        start_date = associated_episode.coverage_start_date
+
+    citations_date = None
+    if start_date is not None and not pd.isnan(start_date):
+        citations_date = format_date(start_date)
+    print(citations_date)
 
     citations_tags = []
     tags_container_html = citations_soup.find("div", class_="tags")
@@ -72,6 +92,7 @@ for citations_url in citation_urls:
         citations_url,
         citations_title,
         citations_episode_number,
+        citations_date,
         ';'.join(citations_tags),
         citations_html,
         citations_mediawiki,

@@ -9,6 +9,7 @@ import wikitextparser
 from box import Box
 from date_lookup import canonicalize_date
 from pprint import pprint
+from wiki_cleaner import format_citation_block
 
 
 def cleans(s):
@@ -44,10 +45,6 @@ def splits(s):
     return [x for x in l2 if len(x) > 0]
 
 
-TIMEZONE = 'US/Eastern'
-DATE_FORMAT = "%B %#d, %Y"
-
-
 def process_ep_record(ep_record, citations_df, category_remapping_df):
     ep_record['title'] = cleantitle(ep_record['title'])
     ep_record['prev_title'] = cleantitle(ep_record['prev_title'])
@@ -81,13 +78,19 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
 
     # This is a bit hacky, but we need to pick up the correct citations from the external table.
     ep_record['mediawiki_citations'] = []
+    # TODO(woursler): Modify order so that they're in date order?
     relevant_citations = citations_df[citations_df.citations_episode_number ==
-                                      ep_record['episode_number']]
+                                      ep_record['episode_number']].sort_values(by=['citations_date'])
     if len(relevant_citations) > 0:
         # print(ep_record['title'], 'has %d citations' % len(relevant_citations))
         for relevant_citation in relevant_citations.to_dict(orient='records'):
             ep_record['mediawiki_citations'].append(
-                relevant_citation['citations_mediawiki'])
+                format_citation_block(
+                    relevant_citation['citations_mediawiki'],
+                    relevant_citation['citations_url'],
+                    relevant_citation['citations_title'],
+                )
+            )
 
     ep_record['coverage_start_date'] = cleans(ep_record['coverage_start_date'])
     if ep_record['coverage_start_date'] is not None:
@@ -123,14 +126,18 @@ def load_category_remapping(fname):
     return category_remapping_df
 
 
+def load_citations_table(fname):
+    citations_df = pd.read_csv(fname, encoding='latin1')
+    citations_df.citations_date = citations_df.citations_date.apply(lambda dt: maya.parse(dt) if not pd.isna(dt) else None)
+    return citations_df
+
+
 if __name__ == '__main__':
     merged_df = pd.read_csv('merged.csv')
 
-    citations_df = pd.read_csv('citations.csv', encoding='latin1')
+    citations_df = load_citations_table('citations.csv')
 
     category_remapping_df = load_category_remapping('categories_remapping.csv')
-
-    print(category_remapping_df)
 
     RECORDS = merged_df.to_dict(orient='records')
     for raw_record in RECORDS:

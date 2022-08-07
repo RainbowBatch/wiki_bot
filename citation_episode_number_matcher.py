@@ -1,7 +1,9 @@
 import pandas as pd
-import maya
 import re
+
+from date_lookup import lookup_by_epnum
 from date_lookup import lookup_date
+from date_lookup import parse_date_range
 
 TIMEZONE = 'US/Eastern'
 DATE_FORMAT = "%B %#d, %Y"
@@ -21,36 +23,26 @@ HARDCODED = {
 date_match_regex = re.compile("^\w+ \d+, \d+$")
 
 
-def parse_date_range(date_range_string):
-    if '-' not in date_range_string:
-        # Singleton date
-        return maya.when(date_range_string, timezone=TIMEZONE)
-    return maya.when(date_range_string, timezone=TIMEZONE)
-
-
-def extract_episode_number(title):
+def guess_episode(title):
     if title in HARDCODED:
-        return HARDCODED[title]
+        return lookup_by_epnum(HARDCODED[title])
 
     if ":" in title:
         fragment = title.split(':')[0].strip()
         if '#' in fragment:
-            return fragment.split('#')[-1].strip()
+            return lookup_by_epnum(fragment.split('#')[-1].strip())
         if fragment.startswith("Episode "):
-            return fragment[7:].strip()
-        return fragment
+            return lookup_by_epnum(fragment[7:].strip())
+        return lookup_by_epnum(fragment.strip())
 
     if title.startswith("Citations for"):
-        guessed_ep_details = lookup_date(title[14:])
-
-        if guessed_ep_details is not None:
-            return guessed_ep_details.episode_number
+        return lookup_date(title[14:])
 
     if date_match_regex.match(title):
         guessed_ep_details = lookup_date(title)
 
         if guessed_ep_details is not None:
-            return guessed_ep_details.episode_number
+            return guessed_ep_details
         else:
             print("Unable to match", title)
 
