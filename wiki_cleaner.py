@@ -1,103 +1,171 @@
+import wikitextparser
+import re
+
+from enum import Enum
 from io import StringIO
 from pprint import pprint
-import wikitextparser
+
+
+class LineClassification(Enum):
+    UNKNOWN = 0
+    BLANK = 1
+    BULLET_STAR = 2
+    BULLET_HASH = 3
+
+    @staticmethod
+    def is_bullet(lc):
+        return lc == LineClassification.BULLET_STAR or lc == LineClassification.BULLET_HASH
+
+
+def rewrite_bullet_line(line, classification):
+    if classification == LineClassification.BULLET_STAR:
+        bullet_index = line.find('*')
+        assert bullet_index != -1
+        bullet_text = line[bullet_index+1:].strip()
+        return "*%s\n" % bullet_text
+    if classification == LineClassification.BULLET_HASH:
+        bullet_index = line.find('#')
+        assert bullet_index != -1
+        bullet_text = line[bullet_index+1:].strip()
+        return "**%s\n" % bullet_text
+    raise NotImplementedError()
+
 
 def classify_line(line):
-	if line.strip() == '':
-		return 'BLANK'
-	# TODO(woursler): Regex?
-	if line.startswith("*") or line.startswith(" *"):
-		return 'BULLET*'
-	return 'UNKNOWN'
+    if line.strip() == '':
+        return LineClassification.BLANK
+    # TODO(woursler): Regex?
+    if line.startswith("*") or line.startswith(" *"):
+        return LineClassification.BULLET_STAR
+
+    if line.startswith("#") or line.startswith(" #"):
+        return LineClassification.BULLET_HASH
+
+    return LineClassification.UNKNOWN
+
+
+class LinewiseVisitorState(Enum):
+    START = 0
+    PRESERVE = 1
+    BULLETS = 2
+    BLANK = 3
+
 
 def linewise_simplification(raw_mediawiki):
-	def process_classified_lines(classified_lines):
-		'''This amounts to a really hacky state_machine.'''
-		state = 'START'
+    def process_classified_lines(classified_lines):
+        '''This amounts to a really hacky state_machine.'''
+        state = LinewiseVisitorState.START
 
-		for classification, line in classified_lines:
-			if state == 'START' and classification == 'BLANK':
-				continue
+        for classification, line in classified_lines:
+            assert isinstance(state, LinewiseVisitorState)
 
-			if classification == 'BULLET*' and state != 'BULLET':
-				yield '\n'
-				state = 'BULLET'
+            if state == LinewiseVisitorState.START and classification == LineClassification.BLANK:
+                continue
 
-			if classification == 'BLANK':
-				if state not in ['START', 'BULLET']:
-					classification = 'BLANK'
-					continue
+            if LineClassification.is_bullet(classification) and state != LinewiseVisitorState.BULLETS:
+                yield '\n'
+                state = LinewiseVisitorState.BULLETS
 
-			if state == 'BULLET':
-				if classification == 'BLANK':
-					continue
-				if classification != 'BULLET*':
-					yield '\n'
-					state = 'UNKNOWN'
+            if classification == LineClassification.BLANK:
+                if state not in [LinewiseVisitorState.START, LinewiseVisitorState.BULLETS]:
+                    state = LinewiseVisitorState.BLANK
+                    continue
 
-			if state == 'BLANK' and classification != 'BLANK':
-				yield '\n'
-			yield line
-		yield '\n'
+            if state == LinewiseVisitorState.BULLETS:
+                if classification == LineClassification.BLANK:
+                    continue
+                if not LineClassification.is_bullet(classification):
+                    yield '\n'
+                    # TODO(woursler): Maybe this does slightly the wrong thing?
+                    state = LinewiseVisitorState.PRESERVE
+
+            if state == LinewiseVisitorState.BLANK and classification != LineClassification.BLANK:
+                yield '\n'
+            if LineClassification.is_bullet(classification):
+                yield rewrite_bullet_line(line, classification)
+            else:
+                yield line
+        yield '\n'
+
+    classified_lines = [
+        (classify_line(line), line) for line in StringIO(raw_mediawiki)
+    ]
+
+    return ''.join(process_classified_lines(classified_lines))
 
 
-	classified_lines = [
-		(classify_line(line), line) for line in StringIO(raw_mediawiki)
-	]
+def add_kf_citation_reference_to_first_line(raw_mediawiki, reference_link, reference_title=None):
+    classified_lines = [
+        (classify_line(line), line) for line in StringIO(raw_mediawiki)
+    ]
 
-	return ''.join(process_classified_lines(classified_lines))
+    # TODO(woursler): Locate the first index instead?
+    assert classified_lines[0][0] == LineClassification.UNKNOWN
+
+    classifications = [
+        classifications for classifications, _ in classified_lines]
+    split_lines = [line for _, line in classified_lines]
+
+    def add_citation_to_line(line):
+        line = line.strip()
+        if reference_title is None:
+            reference = "<ref>%s</ref>" % reference_link
+        else:
+            reference = "<ref>[%s %s]</ref>" % (
+                reference_link, reference_title)
+
+        if line.endswith(':'):
+            return line[:-1] + reference + ':\n'
+        return line + reference + '\n'
+
+    split_lines[0] = add_citation_to_line(split_lines[0])
+
+    return ''.join(split_lines)
 
 
-def add_kf_citation_reference_to_first_line(raw_mediawiki, reference_link, reference_title = None):
-	classified_lines = [
-		(classify_line(line), line) for line in StringIO(raw_mediawiki)
-	]
-
-	assert classified_lines[0][0] == 'UNKNOWN' # TODO(woursler): Locate the first index instead?
-
-	classifications = [classifications for classifications, _ in classified_lines]
-	split_lines = [line for _, line in classified_lines]
-
-	def add_citation_to_line(line):
-		line = line.strip()
-		if reference_title is None:
-			reference = "<ref>%s</ref>" % reference_link
-		else:
-			reference = "<ref>[%s %s]</ref>" % (reference_link, reference_title)
-
-		if line.endswith(':'):
-			return line[:-1] + reference + ':\n'
-		return line + reference + '\n'
-
-	split_lines[0] = add_citation_to_line(split_lines[0])
-
-	return ''.join(split_lines)
-
+WINDOWS_LINE_ENDING = '\r\n'
+UNIX_LINE_ENDING = '\n'
 
 def simple_pformat_pass(raw_mediawiki):
-	return wikitextparser.parse(raw_mediawiki).pformat()
+    text = wikitextparser.parse(raw_mediawiki).pformat().replace("* *", "**")
+
+    # Clean up large blocks of blank lines.
+    text = text.replace(WINDOWS_LINE_ENDING, UNIX_LINE_ENDING)
+    text = re.sub(r'(\n\s*)+\n+', '\n\n', text)
+
+    # Remove trailing spaces.
+    text = re.sub('[^\S\r\n]+\n', '\n', text)
+
+    return text
 
 
 def format_citation_block(raw_citation_block, citation_link, citation_title=None):
-	return simple_pformat_pass(
-		add_kf_citation_reference_to_first_line(
-			linewise_simplification(raw_citation_block),
-			citation_link,
-			citation_title,
-		)
-	)
+    return simple_pformat_pass(
+        add_kf_citation_reference_to_first_line(
+            linewise_simplification(raw_citation_block),
+            citation_link,
+            citation_title,
+        )
+    )
 
 
 def simple_format(raw_mediawiki):
-	return simple_pformat_pass(linewise_simplification(raw_mediawiki))
+    return simple_pformat_pass(linewise_simplification(raw_mediawiki))
+
 
 if __name__ == '__main__':
 
-	SAMPLE = '''The world on June 21, 2015:
+    SAMPLE = '''The world on June 21, 2015:
 
 
 
 * Donald Trump has been running for president for 5 days.
+
+ *  Test 2
+
+# Sub point
+
+ # Sub point 2
 
 
 * The Congressional Budget Office announces that repealing the Affordable Care Act could increase the national debt by $137 billion
@@ -136,17 +204,14 @@ What Alex covered on June 21:
 
 * Alex has yet to mention that Donald Trump is running for president.'''
 
-	s2 = linewise_simplification(SAMPLE)
+    s2 = linewise_simplification(SAMPLE)
 
-	#print(s2)
+    # print(s2)
 
-	s3 = simple_pformat_pass(s2)
+    s3 = simple_pformat_pass(s2)
 
-	#print(s3)
+    # print(s3)
 
-	s4 = add_kf_citation_reference_to_first_line(s3, 'https://google.com')
+    s4 = add_kf_citation_reference_to_first_line(s3, 'https://google.com')
 
-	print(s4)
-
-
-
+    print(s4)

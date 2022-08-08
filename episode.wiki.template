@@ -37,32 +37,43 @@
 {% raw %}}}
 {{Stub}}{% endraw %}
 
+
+
 {{ mediawiki_description }}
 
+
+
 {% if themes is defined and themes|length > 0 %}
-== Tidbits ==
+==Tidbits==
 {%for theme in themes %}
 * {{ theme }}{% endfor %}{% endif %}
 
+
+
 {% if notable_bits is defined and notable_bits|length > 0 %}
-== Notable Bits ==
+==Notable Bits==
 {%for bit in notable_bits %}
 * {{ bit }}{% endfor %}{% endif %}
 
+
+
 {% if sources is defined and sources|length > 0 %}
-== References ==
+==References==
 {%for source in sources %}
 * {{ source }}{% endfor %}{% endif %}
 
+
+
 {% if mediawiki_citations is defined and mediawiki_citations|length > 0 %}
-== Detailed Show Notes ==
+==Detailed Show Notes==
 
 {%for citation_block in mediawiki_citations %}
 {{citation_block }}
 {% endfor %}
 {% endif %}
 
+
+
 [[Category:Episodes]]
 {%- for category in categories %}
-[[Category:{{category}}]]
-{% endfor -%}
+[[Category:{{category}}]]{% endfor -%}
