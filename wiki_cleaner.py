@@ -59,8 +59,13 @@ def linewise_simplification(raw_mediawiki):
         for classification, line in classified_lines:
             assert isinstance(state, LinewiseVisitorState)
 
-            if state == LinewiseVisitorState.START and classification == LineClassification.BLANK:
-                continue
+            if state == LinewiseVisitorState.START:
+                if classification == LineClassification.BLANK:
+                    continue
+                if LineClassification.is_bullet(classification):
+                    state = LinewiseVisitorState.BULLETS
+                if classification == LineClassification.UNKNOWN:
+                    state = LinewiseVisitorState.PRESERVE
 
             if LineClassification.is_bullet(classification) and state != LinewiseVisitorState.BULLETS:
                 yield '\n'
@@ -155,7 +160,15 @@ def simple_format(raw_mediawiki):
 
 if __name__ == '__main__':
 
-    SAMPLE = '''The world on June 21, 2015:
+    SAMPLE = '''
+{{Stub}}
+
+Today, Dan and Jordan check in on how the last week ended on The Alex Jones Show. In this installment, Alex stokes religious tensions, interviews someone who probably got tricked by a pyramid scheme, and definitely doesn't talk about Matt Gaetz news.
+
+==Tidbits==
+
+
+The world on June 21, 2015:
 
 
 
@@ -202,7 +215,9 @@ What Alex covered on June 21:
 
 
 
-* Alex has yet to mention that Donald Trump is running for president.'''
+* Alex has yet to mention that Donald Trump is running for president.
+
+'''
 
     s2 = linewise_simplification(SAMPLE)
 
