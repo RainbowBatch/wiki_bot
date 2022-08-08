@@ -1,5 +1,5 @@
-import wikitextparser
 import re
+import wikitextparser
 
 from enum import Enum
 from io import StringIO
@@ -8,13 +8,25 @@ from pprint import pprint
 
 class LineClassification(Enum):
     UNKNOWN = 0
-    BLANK = 1
-    BULLET_STAR = 2
-    BULLET_HASH = 3
+    SECTION = 1
+    PSEUDOSECTION = 2
+    BLANK = 3
+    BULLET_STAR = 4
+    BULLET_HASH = 5
+    IGNORED = 6
+
+    @staticmethod
+    def is_preserved(lc):
+        return lc == LineClassification.UNKNOWN or lc == LineClassification.SECTION or lc == LineClassification.PSEUDOSECTION
 
     @staticmethod
     def is_bullet(lc):
         return lc == LineClassification.BULLET_STAR or lc == LineClassification.BULLET_HASH
+
+
+section_pattern = re.compile(r"==+(?P<section_name>[^=]+)==+")
+pseudosection_pattern = re.compile(r"'''''(?P<section_name>[^']+)''''':")
+citation_link_pattern = re.compile("\\[\S+ Citations\\]")
 
 
 def rewrite_bullet_line(line, classification):
@@ -32,6 +44,15 @@ def rewrite_bullet_line(line, classification):
 
 
 def classify_line(line):
+    if section_pattern.search(line.strip()) is not None:
+        return LineClassification.SECTION
+
+    if pseudosection_pattern.search(line.strip()) is not None:
+        return LineClassification.PSEUDOSECTION
+
+    if citation_link_pattern.search(line.strip()) is not None:
+        return LineClassification.IGNORED
+
     if line.strip() == '':
         return LineClassification.BLANK
     # TODO(woursler): Regex?
@@ -59,12 +80,15 @@ def linewise_simplification(raw_mediawiki):
         for classification, line in classified_lines:
             assert isinstance(state, LinewiseVisitorState)
 
+            if classification == LineClassification.IGNORED:
+                continue
+
             if state == LinewiseVisitorState.START:
                 if classification == LineClassification.BLANK:
                     continue
                 if LineClassification.is_bullet(classification):
                     state = LinewiseVisitorState.BULLETS
-                if classification == LineClassification.UNKNOWN:
+                if LineClassification.is_preserved(classification):
                     state = LinewiseVisitorState.PRESERVE
 
             if LineClassification.is_bullet(classification) and state != LinewiseVisitorState.BULLETS:
@@ -86,8 +110,11 @@ def linewise_simplification(raw_mediawiki):
 
             if state == LinewiseVisitorState.BLANK and classification != LineClassification.BLANK:
                 yield '\n'
+
             if LineClassification.is_bullet(classification):
                 yield rewrite_bullet_line(line, classification)
+            elif classification == LineClassification.PSEUDOSECTION:
+                yield "===%s===\n" % pseudosection_pattern.search(line.strip()).group('section_name')
             else:
                 yield line
         yield '\n'
@@ -103,9 +130,6 @@ def add_kf_citation_reference_to_first_line(raw_mediawiki, reference_link, refer
     classified_lines = [
         (classify_line(line), line) for line in StringIO(raw_mediawiki)
     ]
-
-    # TODO(woursler): Locate the first index instead?
-    assert classified_lines[0][0] == LineClassification.UNKNOWN
 
     classifications = [
         classifications for classifications, _ in classified_lines]
@@ -123,6 +147,16 @@ def add_kf_citation_reference_to_first_line(raw_mediawiki, reference_link, refer
             return line[:-1] + reference + ':\n'
         return line + reference + '\n'
 
+    if classifications[0] != LineClassification.UNKNOWN:
+        split_lines.insert(
+            0,
+            '\n',
+        )
+        split_lines.insert(
+            0,
+            "This portion was reproduced from the offical Knowledge Fight website.\n",
+        )
+
     split_lines[0] = add_citation_to_line(split_lines[0])
 
     return ''.join(split_lines)
@@ -130,6 +164,7 @@ def add_kf_citation_reference_to_first_line(raw_mediawiki, reference_link, refer
 
 WINDOWS_LINE_ENDING = '\r\n'
 UNIX_LINE_ENDING = '\n'
+
 
 def simple_pformat_pass(raw_mediawiki):
     text = wikitextparser.parse(raw_mediawiki).pformat().replace("* *", "**")

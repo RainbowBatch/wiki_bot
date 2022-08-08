@@ -35,6 +35,4 @@ for raw_record in RECORDS:
     with io.open('sample_pages/%s.wiki' % slug, mode="w", encoding="utf-8") as f:
         f.write(pretty)
 
-# STILL NEEDED
-# Automatic Links
-# Episode type categories?
+# ??? Automatic Links
