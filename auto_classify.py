@@ -5,7 +5,6 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, accuracy_score
 from scipy import spatial
-
 from openai.embeddings_utils import cosine_similarity
 
 import kfio
@@ -42,6 +41,7 @@ for idx in range(len(y_test)):
     print(neighbor_idxs)
     print("ACTUAL", y_test.iloc[idx])
     for n_idx in neighbor_idxs:
+        print("POSSIBLE", cosine_similarity(X_test[idx], X_train[n_idx]))
         print("POSSIBLE", y_train.iloc[n_idx])
 
 # TODO(woursler): WTF? Does terribly at this task.
