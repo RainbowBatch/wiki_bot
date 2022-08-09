@@ -26,7 +26,7 @@ class LineClassification(Enum):
 
 section_pattern = re.compile(r"==+(?P<section_name>[^=]+)==+")
 pseudosection_pattern = re.compile(r"'''''(?P<section_name>[^']+)''''':")
-citation_link_pattern = re.compile("\\[\S+ Citations\\]")
+citation_link_pattern = re.compile("\\[\S+ Citations\s*\\]")
 dreamy_creamy_link = "[https://www.gofundme.com/f/dreamycreamysummer Dreamy Creamy Fundraiser]"
 
 
