@@ -27,6 +27,7 @@ class LineClassification(Enum):
 section_pattern = re.compile(r"==+(?P<section_name>[^=]+)==+")
 pseudosection_pattern = re.compile(r"'''''(?P<section_name>[^']+)''''':")
 citation_link_pattern = re.compile("\\[\S+ Citations\\]")
+dreamy_creamy_link = "[https://www.gofundme.com/f/dreamycreamysummer Dreamy Creamy Fundraiser]"
 
 
 def rewrite_bullet_line(line, classification):
@@ -49,6 +50,9 @@ def classify_line(line):
 
     if pseudosection_pattern.search(line.strip()) is not None:
         return LineClassification.PSEUDOSECTION
+
+    if line.strip() == dreamy_creamy_link:
+        return LineClassification.IGNORED
 
     if citation_link_pattern.search(line.strip()) is not None:
         return LineClassification.IGNORED

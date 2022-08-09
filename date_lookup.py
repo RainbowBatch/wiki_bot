@@ -76,27 +76,37 @@ def lookup_date(datestring):
 
     return None
 
-
 date_match_regex = re.compile(
     "(?P<month>\w+) (?P<start_date>\d+)(-(?P<end_date>\d+))?, (?P<year>\d+)")
+
+date2_match_regex = re.compile(
+    "(?P<start_month>\w+) (?P<start_date>\d+)(-(?P<end_month>\w+) (?P<end_date>\d+))?, (?P<year>\d+)")
 
 
 def extract_date_from_string(raw_string):
     match = date_match_regex.search(raw_string)
+    match2 = date2_match_regex.search(raw_string)
 
-    if match is None:
+    if match2 is not None:
+        start_month = match2.group('start_month')
+        end_month = match2.group('end_month')
+        start_date = match2.group('start_date')
+        end_date = match2.group('end_date')
+        year = match2.group('year')
+    elif match is not None:
+        start_month = match.group('month')
+        end_month = start_month
+        start_date = match.group('start_date')
+        end_date = match.group('end_date')
+        year = match.group('year')
+    else:
         return None, None
 
-    month = match.group('month')
-    start_date = match.group('start_date')
-    end_date = match.group('end_date')
-    year = match.group('year')
-
-    start_date = mayafy_date('%s %s, %s' % (month, start_date, year))
+    start_date = mayafy_date('%s %s, %s' % (start_month, start_date, year))
     if end_date is None:
         return start_date, start_date
     else:
-        end_date = mayafy_date('%s %s, %s' % (month, end_date, year))
+        end_date = mayafy_date('%s %s, %s' % (end_month, end_date, year))
         return start_date, end_date
 
     return None, None
@@ -114,3 +124,6 @@ if __name__ == '__main__':
     for title in citations_df.citations_title:
         match = extract_date_from_string(title)
         print(match)
+
+    match = extract_date_from_string("July 31-August 1, 2003")
+    print(match)
