@@ -140,8 +140,14 @@ if __name__ == '__main__':
     category_remapping_df = kfio.load_category_remapping('data/categories_remapping.json')
 
     RECORDS = merged_df.to_dict(orient='records')
+    NEW_RECORDS = []
     for raw_record in RECORDS:
         record = process_ep_record(
             raw_record, citations_df, category_remapping_df)
 
+        NEW_RECORDS.append(record)
         # pprint(record)
+
+    df = pd.DataFrame.from_records(NEW_RECORDS)
+
+    kfio.save(df, 'data/final.json')
