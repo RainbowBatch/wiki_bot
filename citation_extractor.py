@@ -1,9 +1,9 @@
+import kfio
+import math
 import pandas as pd
 import pandoc
 import re
 import wikitextparser
-import math
-import kfio
 
 from bs4 import BeautifulSoup
 from citation_episode_number_matcher import guess_episode
@@ -39,7 +39,10 @@ rows = []
 for citations_url in citation_urls:
     citations_page = kfio.download(citations_url)
     citations_soup = BeautifulSoup(citations_page.text, 'html.parser')
-    citations_html = citations_soup.find("div", class_="entry-content")
+    citations_html = citations_soup.find(
+        "div",
+        class_="entry-content",
+    ).encode("utf-8")
 
     title_html = citations_soup.find("h1", class_="entry-title")
     citations_title = title_html.text

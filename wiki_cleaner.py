@@ -171,7 +171,8 @@ UNIX_LINE_ENDING = '\n'
 
 
 def simple_pformat_pass(raw_mediawiki):
-    text = wikitextparser.parse(raw_mediawiki).pformat().replace("* *", "**")
+    text = wikitextparser.parse(raw_mediawiki).pformat().replace("* *", "**").replace(
+        "’", "'").replace('“', '"').replace('”', '"').replace('&quot;', '"').replace('&amp;', '&')
 
     # Clean up large blocks of blank lines.
     text = text.replace(WINDOWS_LINE_ENDING, UNIX_LINE_ENDING)

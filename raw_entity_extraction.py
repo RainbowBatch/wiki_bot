@@ -76,7 +76,7 @@ BANNED_TYPES = [
 
 for s, count in counter.most_common():
     ts = [t for t, _ in types[s].most_common()]
-    os = origins[s]
+    os = sorted(origins[s])
 
     # There's little value in entities that only appear in one episode.
     if len(os) <= 1:
