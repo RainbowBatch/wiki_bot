@@ -1,5 +1,6 @@
 import pandas as pd
 import requests
+import kfio
 
 from bs4 import BeautifulSoup
 
@@ -32,5 +33,4 @@ for item in soup.find_all("div", class_="libsyn-item"):
 
 df = pd.DataFrame(reversed(rows), columns=header)
 
-with open("titles.csv", "w") as csv_file:
-    csv_file.write(df.to_csv(index=False, line_terminator='\n'))
+kfio.save(df, 'data/titles.json')

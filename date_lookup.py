@@ -3,6 +3,7 @@ import math
 import maya
 import pandas as pd
 import re
+import kfio
 
 TIMEZONE = 'US/Eastern'
 DATE_FORMAT = "%B %#d, %Y"
@@ -17,13 +18,13 @@ def parse_date_range(date_range_string):
 
 
 def mayafy_date(datestring):
-    if isinstance(datestring, float) and math.isnan(datestring):
+    if pd.isna(datestring) or len(datestring.strip()) == 0:
         return None
     return maya.when(datestring, timezone=TIMEZONE)
 
 
 def canonicalize_date(datestring):
-    if isinstance(datestring, float) and math.isnan(datestring):
+    if pd.isna(datestring) or len(datestring.strip()) == 0:
         return None
     return format_date(mayafy_date(datestring))
 
@@ -34,7 +35,7 @@ def format_date(dt):
     return dt.datetime().strftime(DATE_FORMAT)
 
 
-date_listing_df = pd.read_csv('date_listing.csv')
+date_listing_df = kfio.load('data/date_listing.json')
 
 date_listing_df.coverage_date = date_listing_df.coverage_date.apply(
     canonicalize_date)
@@ -119,7 +120,7 @@ if __name__ == '__main__':
         print("===")
         print(date, "->\n\t", lookup_date(date))
 
-    citations_df = pd.read_csv('citations.csv', encoding='latin1')
+    citations_df = kfio.load_citations_table('data/citations.json')
 
     for title in citations_df.citations_title:
         match = extract_date_from_string(title)

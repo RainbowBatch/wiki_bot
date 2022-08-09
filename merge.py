@@ -1,16 +1,16 @@
 import json
+import kfio
 import pandas as pd
 
-title_table = pd.read_csv('titles.csv')
+title_table = kfio.load('data/titles.json')
+details_table = kfio.load('data/libsyn_details.json')
 
 # Annotate next / previous from the libsyn dataset.
+# TODO(woursler): Do something different?
 title_table['next_title'] = title_table.title.shift(-1)
 title_table['prev_title'] = title_table.title.shift(1)
 
-tracker_table = pd.read_csv('tracker.csv')
-
-details_table = pd.read_csv('libsyn_details.csv', encoding='latin1')
-
+tracker_table = kfio.load('data/tracker.json')
 
 def split_out_episode_number(title):
     if title[0] == "#":
@@ -81,16 +81,5 @@ title_table_view = augmented_title_table[augmented_title_table.episode_number.is
 
 print(title_table_view)
 
-with open("merged.csv", "w", encoding='utf-8') as csv_file:
-    csv_file.write(merged.to_csv(index=False, line_terminator='\n'))
-
-
-with open("tracker_unique_rows.json", "w", encoding='utf-8') as json_file:
-    json_file.write(
-        json.dumps(
-            json.loads(
-                title_table_view.to_json(orient='records')
-            ),
-            indent=4, sort_keys=True,
-        )
-    )
+kfio.save(merged, 'data/merged.json')
+kfio.save(title_table_view, 'data/tracker_unique_rows.json')

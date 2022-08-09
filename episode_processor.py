@@ -1,4 +1,5 @@
 import io
+import kfio
 import math
 import maya
 import numpy as np
@@ -12,41 +13,12 @@ from date_lookup import canonicalize_date
 from date_lookup import extract_date_from_string
 from date_lookup import format_date
 from pprint import pprint
+from string_processing import agressive_splits
+from string_processing import cleans
+from string_processing import cleantitle
+from string_processing import splits
 from wiki_cleaner import format_citation_block
 from wiki_cleaner import simple_format
-
-
-def cleans(s):
-    if pd.isna(s):
-        return None
-    return s.strip()
-
-
-def cleantitle(s):
-    if pd.isna(s):
-        return None
-    s = s.strip()
-    if s[0] == '#':
-        s = s[1:].strip()
-    return s
-
-
-def agressive_splits(s):
-    if pd.isna(s):
-        return []
-
-    l1 = re.split(',|;', s)
-    l2 = [x.strip() for x in l1]
-    return [x for x in l2 if len(x) > 0]
-
-
-def splits(s):
-    if pd.isna(s):
-        return []
-
-    l1 = s.split(";")
-    l2 = [x.strip() for x in l1]
-    return [x for x in l2 if len(x) > 0]
 
 
 def process_ep_record(ep_record, citations_df, category_remapping_df):
@@ -82,13 +54,17 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
     ep_record['sources'] = agressive_splits(ep_record['sources'])
     ep_record['themes'] = splits(ep_record['themes'])
     ep_record['notable_bits'] = splits(ep_record['notable_bits'])
-    ep_record['mediawiki_description'] = simple_format(
-        pandoc.write(
-            pandoc.read(ep_record['details_html'],
-                        format="html-native_divs-native_spans"),
-            format="mediawiki"
+
+    if pd.isna(ep_record['details_html']):
+        ep_record['mediawiki_description'] = ''
+    else:
+        ep_record['mediawiki_description'] = simple_format(
+            pandoc.write(
+                pandoc.read(ep_record['details_html'],
+                            format="html-native_divs-native_spans"),
+                format="mediawiki"
+            )
         )
-    )
 
     if not pd.isna(ep_record['episode_type']):
         episode_type_row = category_remapping_df[category_remapping_df.original_category ==
@@ -156,29 +132,12 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
     return Box(ep_record)
 
 
-def load_category_remapping(fname):
-    category_remapping_df = pd.read_csv('categories_remapping.csv')
-
-    category_remapping_df.new_categories = category_remapping_df.new_categories.apply(
-        splits)
-    category_remapping_df.people = category_remapping_df.people.apply(splits)
-
-    return category_remapping_df
-
-
-def load_citations_table(fname):
-    citations_df = pd.read_csv(fname, encoding='latin1')
-    citations_df.citations_date = citations_df.citations_date.apply(
-        lambda dt: maya.parse(dt) if not pd.isna(dt) else None)
-    return citations_df
-
-
 if __name__ == '__main__':
-    merged_df = pd.read_csv('merged.csv')
+    merged_df = kfio.load('data/merged.json')
 
-    citations_df = load_citations_table('citations.csv')
+    citations_df = kfio.load_citations_table('data/citations.json')
 
-    category_remapping_df = load_category_remapping('categories_remapping.csv')
+    category_remapping_df = kfio.load_category_remapping('data/categories_remapping.json')
 
     RECORDS = merged_df.to_dict(orient='records')
     for raw_record in RECORDS:

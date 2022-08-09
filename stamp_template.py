@@ -4,21 +4,20 @@ import maya
 import pandas as pd
 import pandoc
 import re
+import kfio
 
 from date_lookup import canonicalize_date
-from episode_processor import load_category_remapping
-from episode_processor import load_citations_table
 from episode_processor import process_ep_record
 from jinja2 import Template
 from pprint import pprint
 from slugify import slugify
 from wiki_cleaner import simple_format
 
-merged_df = pd.read_csv('merged.csv')
+merged_df = kfio.load('data/merged.json')
 
-citations_df = load_citations_table('citations.csv')
+citations_df = kfio.load_citations_table('data/citations.json')
 
-category_remapping_df = load_category_remapping('categories_remapping.csv')
+category_remapping_df = kfio.load_category_remapping('data/categories_remapping.json')
 
 with open('episode.wiki.template') as episode_template_f:
     template = Template(episode_template_f.read())

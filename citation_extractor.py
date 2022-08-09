@@ -1,10 +1,9 @@
 import pandas as pd
 import pandoc
 import re
-import requests
-import time
 import wikitextparser
 import math
+import kfio
 
 from bs4 import BeautifulSoup
 from citation_episode_number_matcher import guess_episode
@@ -12,19 +11,7 @@ from date_lookup import extract_date_from_string
 from date_lookup import format_date
 from pprint import pprint
 
-
-def request_with_retries(url):
-    print("requesting", url)
-    page = None
-    while page is None or page.status_code != 200:
-        # SquareSpace is super senstive to too many requests.
-        time.sleep(2)
-        print('.')
-        page = requests.get(url)
-    return page
-
-
-sitemap_page = request_with_retries('https://knowledgefight.com/sitemap.xml')
+sitemap_page = kfio.download('https://knowledgefight.com/sitemap.xml')
 sitemap_soup = BeautifulSoup(sitemap_page.text, 'html.parser')
 sitemap = [
     loc.text
@@ -50,7 +37,7 @@ header = [
 rows = []
 
 for citations_url in citation_urls:
-    citations_page = request_with_retries(citations_url)
+    citations_page = kfio.download(citations_url)
     citations_soup = BeautifulSoup(citations_page.text, 'html.parser')
     citations_html = citations_soup.find("div", class_="entry-content")
 
@@ -71,7 +58,7 @@ for citations_url in citation_urls:
         start_date = associated_episode.coverage_start_date
 
     citations_date = None
-    if start_date is not None and not pd.isnan(start_date):
+    if start_date is not None and not pd.isna(start_date):
         citations_date = format_date(start_date)
     print(citations_date)
 
@@ -100,5 +87,4 @@ for citations_url in citation_urls:
 
 df = pd.DataFrame(rows, columns=header)
 
-with open("citations.csv", "w") as csv_file:
-    csv_file.write(df.to_csv(index=False, line_terminator='\n'))
+kfio.save(df, 'data/citations.json')

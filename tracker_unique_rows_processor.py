@@ -5,10 +5,9 @@ import pandas as pd
 import pandas as pd
 import pandoc
 import re
+import kfio
 
 from date_lookup import canonicalize_date
-from episode_processor import load_category_remapping
-from episode_processor import load_citations_table
 from episode_processor import process_ep_record
 from jinja2 import Template
 from pprint import pprint
@@ -16,15 +15,12 @@ from slugify import slugify
 from wiki_cleaner import simple_format
 
 
-citations_df = load_citations_table('citations.csv')
+citations_df = kfio.load_citations_table('data/citations.json')
 
-category_remapping_df = load_category_remapping('categories_remapping.csv')
+category_remapping_df = kfio.load_category_remapping('data/categories_remapping.json')
 
 
-partial_episode_df = pd.read_json(
-    'tracker_unique_rows.json',
-    orient='records',
-)
+partial_episode_df = kfio.load('data/tracker_unique_rows.json')
 print(partial_episode_df)
 
 

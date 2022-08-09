@@ -1,9 +1,11 @@
+import kfio
 import pandas as pd
 import re
 
 from date_lookup import lookup_by_epnum
 from date_lookup import lookup_date
 from date_lookup import parse_date_range
+from raw_entity_extraction import extract_episode_number
 
 TIMEZONE = 'US/Eastern'
 DATE_FORMAT = "%B %#d, %Y"
@@ -52,7 +54,7 @@ def guess_episode(title):
 
 
 if __name__ == '__main__':
-    title_table = pd.read_csv('citations.csv', encoding='latin1')
+    title_table = kfio.load_citations_table('data/citations.json')
 
     titles = title_table.citations_title.to_list()
 

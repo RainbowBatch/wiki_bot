@@ -1,6 +1,7 @@
 from __future__ import print_function
 
 import os.path
+import kfio
 
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
@@ -67,13 +68,7 @@ try:
             for original_column_name in values[0]
         ])
 
-        pprint(
-            df.to_dict(orient='records')
-        )
-
-        with open("tracker.csv", "w", encoding='utf-8') as csv_file:
-            csv_file.write(df.to_csv(index=False, line_terminator='\n'))
-
+        kfio.save(df, 'data/tracker.json')
 
 except HttpError as err:
     print(err)
