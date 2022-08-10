@@ -126,11 +126,21 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
     else:
         ep_record['coverage_date'] = None
 
+
+    formatted_release_date_x = canonicalize_date(ep_record['release_date_x'])
+    formatted_release_date_y = canonicalize_date(ep_record['release_date_y'])
+    if formatted_release_date_x is not None:
+        ep_record['release_date'] = formatted_release_date_x
+    elif formatted_release_date_y is not None:
+        ep_record['release_date'] = formatted_release_date_y
+    else:
+        ep_record['release_date'] = None
+
     # Clean up obsolete fields
+    # These are reflected in release_date
     del ep_record['release_date_x']
     del ep_record['release_date_y']
-    del ep_record['details_html']
+    # Redundant with details_html
     del ep_record['description']
-    del ep_record['embed_player_url']
 
     return Box(ep_record)
