@@ -48,6 +48,6 @@ def load_category_remapping(fname):
 
 def load_citations_table(fname):
     citations_df = load(fname)
-    citations_df.citations_date = citations_df.citations_start_date.apply(
+    citations_df.citations_start_date = citations_df.citations_start_date.apply(
         lambda dt: maya.parse(dt) if not pd.isna(dt) else None)
     return citations_df
