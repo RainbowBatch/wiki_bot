@@ -85,7 +85,7 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
     # This is a bit hacky, but we need to pick up the correct citations from the external table.
     ep_record['mediawiki_citations'] = []
     relevant_citations = citations_df[citations_df.citations_episode_number ==
-                                      ep_record['episode_number']].sort_values(by=['citations_date'])
+                                      ep_record['episode_number']].sort_values(by=['citations_start_date'])
     if len(relevant_citations) > 0:
         for relevant_citation in relevant_citations.to_dict(orient='records'):
             ep_record['mediawiki_citations'].append(

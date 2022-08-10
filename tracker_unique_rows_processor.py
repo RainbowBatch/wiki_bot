@@ -27,7 +27,6 @@ print(partial_episode_df)
 with open('episode.wiki.template') as episode_template_f:
     template = Template(episode_template_f.read())
 
-
 RECORDS = partial_episode_df.to_dict(orient='records')
 for raw_record in RECORDS:
     record = process_ep_record(raw_record, citations_df, category_remapping_df)

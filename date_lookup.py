@@ -55,20 +55,12 @@ def lookup_by_epnum(episode_number):
 
     return None
 
+def lookup_by_maya_date(dt):
 
-def lookup_date(datestring):
-    df_view = date_listing_df[date_listing_df.coverage_date ==
-                              canonicalize_date(datestring)]
-
-    if len(df_view) == 0:
-        # No Exact match. Try for a date range match.
-
-        maya_date = mayafy_date(datestring)
-
-        df_view = date_listing_df[
-            (date_listing_df.coverage_start_date_maya <= maya_date)
-            & (date_listing_df.coverage_end_date_maya >= maya_date)
-        ]
+    df_view = date_listing_df[
+        (date_listing_df.coverage_start_date_maya <= dt)
+        & (date_listing_df.coverage_end_date_maya >= dt)
+    ]
 
     if len(df_view) > 0:
         # Assert only one result?
@@ -114,12 +106,6 @@ def extract_date_from_string(raw_string):
 
 
 if __name__ == '__main__':
-    for date in [
-        'June 17, 2015',
-    ]:
-        print("===")
-        print(date, "->\n\t", lookup_date(date))
-
     citations_df = kfio.load_citations_table('data/citations.json')
 
     for title in citations_df.citations_title:

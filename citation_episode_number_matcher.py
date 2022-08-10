@@ -2,17 +2,32 @@ import kfio
 import pandas as pd
 import re
 
-from date_lookup import lookup_by_epnum
-from date_lookup import lookup_date
-from date_lookup import parse_date_range
-from raw_entity_extraction import extract_episode_number
+from date_lookup import extract_date_from_string
+from date_lookup import lookup_by_maya_date
+from pprint import pprint
 
-TIMEZONE = 'US/Eastern'
-DATE_FORMAT = "%B %#d, %Y"
+explicit_episode_regex = re.compile(r"Episode\s+#?(?P<episode_number>\d+):")
 
-HARDCODED = {
+
+MANUAL_OVERRIDE = {
+    # These appear to be just wrong on the explicit ep number.
+    # Possibly an old numbering system?
+    "Episode 314: January 17-18, 2013": "297",
+    "Episode 315: January 20-23, 2013": "298",
+    "Episode 316: May 17-20, 2019": "299",
+    "Episode 317: May 21-22, 2019": "300",
+    "Episode 320: January 29-31, 2013": "303",
+    "Episode 321: May 30-31, 2019": "304",
+    "Episode 322: February 1, 2013": "305",
+    "Episode 335: July 5, 2019": "318",
     'Citations For Dennis Montgomery Episode': '25',
-    'Obama Deception Citations': '230A',  # Technically all 230, but....
+    # These are just dates that are slightly off the usual format.
+    'Citations for March 31st, 2017': '27',
+    'Citations for April 14th, 2017': '30',
+    # Covered twice due to a special episode...
+    'August 9, 2015': '56',
+    # Technically all 230, but....
+    'Obama Deception Citations': '230A',
     # These are not citations. They seem like guest lists?
     'July 2015': None,
     'March 2009': None,
@@ -22,49 +37,41 @@ HARDCODED = {
 }
 
 
-date_match_regex = re.compile("^\w+ \d+, \d+$")
+def guess_associated_episode(episode_title):
+    print(episode_title)
 
+    if episode_title in MANUAL_OVERRIDE:
+        return MANUAL_OVERRIDE[episode_title]
 
-def guess_episode(title):
-    if title in HARDCODED:
-        return lookup_by_epnum(HARDCODED[title])
+    guesses = set()
 
-    if ":" in title:
-        fragment = title.split(':')[0].strip()
-        if '#' in fragment:
-            return lookup_by_epnum(fragment.split('#')[-1].strip())
-        if fragment.startswith("Episode "):
-            return lookup_by_epnum(fragment[7:].strip())
-        return lookup_by_epnum(fragment.strip())
+    explicit_match = explicit_episode_regex.search(episode_title)
+    if explicit_match is not None:
+        guesses.add(explicit_match.group('episode_number'))
+    start_date, end_date = extract_date_from_string(episode_title)
 
-    if title.startswith("Citations for"):
-        return lookup_date(title[14:])
+    start_ep = lookup_by_maya_date(start_date)
+    end_ep = lookup_by_maya_date(end_date)
 
-    if date_match_regex.match(title):
-        guessed_ep_details = lookup_date(title)
+    if start_ep is not None:
+        guesses.add(start_ep['episode_number'])
 
-        if guessed_ep_details is not None:
-            return guessed_ep_details
-        else:
-            print("Unable to match", title)
+    if end_ep is not None:
+        guesses.add(end_ep['episode_number'])
 
-    print("WEIRD TITLE", title)
+    if len(guesses) == 0:
+        return None
 
-    return None
+    assert len(guesses) == 1, guesses
+    return list(guesses)[0]
 
 
 if __name__ == '__main__':
-    title_table = kfio.load_citations_table('data/citations.json')
+    citations_df = kfio.load('data/citations.json')
 
-    titles = title_table.citations_title.to_list()
+    citations_df['new_episode_number'] = citations_df.citations_title.apply(
+        guess_associated_episode)
 
-    episode_numbers = [
-        extract_episode_number(title)
-        for title in titles
-    ]
-
-    print(episode_numbers)
-
-    from collections import Counter
-
-    print(Counter(episode_numbers))
+    pd.set_option('display.max_rows', None)
+    print(citations_df[citations_df.new_episode_number != citations_df.citations_episode_number][[
+          'new_episode_number', 'citations_episode_number', 'citations_title']])
