@@ -19,6 +19,7 @@ from string_processing import cleantitle
 from string_processing import splits
 from wiki_cleaner import format_citation_block
 from wiki_cleaner import simple_format
+from slugify import slugify
 
 
 def process_ep_record(ep_record, citations_df, category_remapping_df):
@@ -45,6 +46,9 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
     ep_record['title'] = cleantitle(ep_record['title'])
     ep_record['prev_title'] = cleantitle(ep_record['prev_title'])
     ep_record['next_title'] = cleantitle(ep_record['next_title'])
+
+    ep_record['ofile'] = 'sample_pages/%s.wiki' % slugify(
+        ep_record['title'], separator='_')
 
     ep_record['clean_title'] = ep_record['title'].split(':')[-1].strip()
 
@@ -130,24 +134,3 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
     del ep_record['embed_player_url']
 
     return Box(ep_record)
-
-
-if __name__ == '__main__':
-    merged_df = kfio.load('data/merged.json')
-
-    citations_df = kfio.load_citations_table('data/citations.json')
-
-    category_remapping_df = kfio.load_category_remapping('data/categories_remapping.json')
-
-    RECORDS = merged_df.to_dict(orient='records')
-    NEW_RECORDS = []
-    for raw_record in RECORDS:
-        record = process_ep_record(
-            raw_record, citations_df, category_remapping_df)
-
-        NEW_RECORDS.append(record)
-        # pprint(record)
-
-    df = pd.DataFrame.from_records(NEW_RECORDS)
-
-    kfio.save(df, 'data/final.json')

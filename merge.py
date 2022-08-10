@@ -1,6 +1,7 @@
 import json
 import kfio
 import pandas as pd
+from episode_processor import process_ep_record
 
 title_table = kfio.load('data/titles.json')
 details_table = kfio.load('data/libsyn_details.json')
@@ -12,10 +13,12 @@ title_table['prev_title'] = title_table.title.shift(1)
 
 tracker_table = kfio.load('data/tracker.json')
 
+
 def split_out_episode_number(title):
     if title[0] == "#":
         return clean_episode_number(title[1:].split(":")[0])
     return clean_episode_number(title)
+
 
 manual_episode_number_remapping = {
     'Repost 25': '25(Repost)',
@@ -63,8 +66,6 @@ merged = pd.merge(
     on='episode_number'
 )
 
-print(merged)
-
 title_keys = title_table.episode_number.to_list()
 tracker_keys = tracker_table.episode_number.to_list()
 merged_keys = merged.episode_number.to_list()
@@ -79,7 +80,19 @@ print("Tracker Unique", tracker_unique_keys)
 title_table_view = augmented_title_table[augmented_title_table.episode_number.isin(
     title_unique_keys)]
 
-print(title_table_view)
 
-kfio.save(merged, 'data/merged.json')
-kfio.save(title_table_view, 'data/tracker_unique_rows.json')
+citations_df = kfio.load_citations_table('data/citations.json')
+
+category_remapping_df = kfio.load_category_remapping(
+    'data/categories_remapping.json')
+
+
+NEW_RECORDS = []
+for raw_record in merged.to_dict(orient='records') + title_table_view.to_dict(orient='records'):
+    record = process_ep_record(raw_record, citations_df, category_remapping_df)
+
+    NEW_RECORDS.append(record)
+
+processed_records = pd.DataFrame.from_records(NEW_RECORDS)
+
+kfio.save(processed_records, 'data/final.json')
