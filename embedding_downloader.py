@@ -40,9 +40,6 @@ existing_embeddings = kfio.load('data/description_embeddings.json')
 # This is a hack because some subsets are currently interpreted as ints
 existing_embeddings['episode_number'] = existing_embeddings['episode_number'].astype(str)
 
-# So we don't blow the budget while debugging...
-all_descriptions = all_descriptions[:700]
-
 existing_keys = existing_embeddings.episode_number.to_list()
 all_keys = all_descriptions.episode_number.to_list()
 

@@ -5,6 +5,17 @@ from bs4 import BeautifulSoup
 
 title_table = kfio.load('data/titles.json')
 
+existing_details_table = kfio.load('data/libsyn_details.json')
+
+# So we don't blow the budget while debugging...
+existing_urls = existing_details_table.libsyn_page.to_list()
+all_urls = title_table.libsyn_page.to_list()
+
+new_urls = [x for x in all_urls if x not in existing_urls]
+
+print(new_urls)
+
+
 header = [
     "libsyn_page",
     "embed_player_url",
@@ -13,8 +24,7 @@ header = [
 ]
 rows = []
 
-for _, coarse_episode_details in title_table.iterrows():
-    details_url = coarse_episode_details.libsyn_page
+for details_url in new_urls:
     details_page = kfio.download(details_url)
     details_soup = BeautifulSoup(details_page.text, 'html.parser')
 
@@ -38,6 +48,9 @@ for _, coarse_episode_details in title_table.iterrows():
     print(details_url, episode_length)
 
 
-df = pd.DataFrame(rows, columns=header)
+df = existing_details_table.append(
+    pd.DataFrame(rows, columns=header),
+    ignore_index=True,
+)
 
 kfio.save(df, 'data/libsyn_details.json')
