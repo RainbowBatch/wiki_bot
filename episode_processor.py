@@ -33,6 +33,7 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
         'episode_type',
         'coverage_start_date',
         'coverage_end_date',
+        'release_date',
         'release_date_x',
         'release_date_y',
         'description',
@@ -126,15 +127,21 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
     else:
         ep_record['coverage_date'] = None
 
-
+    formatted_release_date_0 = canonicalize_date(ep_record['release_date'])
     formatted_release_date_x = canonicalize_date(ep_record['release_date_x'])
     formatted_release_date_y = canonicalize_date(ep_record['release_date_y'])
-    if formatted_release_date_x is not None:
+    if formatted_release_date_0 is not None:
+        ep_record['release_date'] = formatted_release_date_0
+    elif formatted_release_date_x is not None:
         ep_record['release_date'] = formatted_release_date_x
     elif formatted_release_date_y is not None:
         ep_record['release_date'] = formatted_release_date_y
     else:
         ep_record['release_date'] = None
+
+    if ep_record['release_date'] == None:
+        print(ep_record['release_date'], ep_record['release_date_x'], ep_record['release_date_y'])
+        print(formatted_release_date_0, formatted_release_date_x, formatted_release_date_y)
 
     # Clean up obsolete fields
     # These are reflected in release_date
