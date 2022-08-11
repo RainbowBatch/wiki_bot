@@ -1,6 +1,6 @@
 [
   {
-    "entity_count": 494,
+    "entity_count": 464,
     "entity_name": "Alex Jones",
     "entity_origin": [
       "1",
@@ -36,7 +36,6 @@
       "143",
       "144",
       "145",
-      "146",
       "148",
       "149",
       "15",
@@ -235,7 +234,6 @@
       "47",
       "471",
       "472",
-      "48",
       "480",
       "481",
       "482",
@@ -260,7 +258,6 @@
       "515",
       "516",
       "518",
-      "519",
       "52",
       "521",
       "525",
@@ -499,7 +496,7 @@
     ]
   },
   {
-    "entity_count": 201,
+    "entity_count": 195,
     "entity_name": "Globalists",
     "entity_origin": [
       "100",
@@ -594,7 +591,6 @@
       "467",
       "47",
       "474",
-      "48",
       "481",
       "498",
       "505",
@@ -632,9 +628,9 @@
       "648",
       "651",
       "653",
-      "655",
       "668",
       "67",
+      "680",
       "74",
       "75",
       "77",
@@ -647,14 +643,13 @@
     ]
   },
   {
-    "entity_count": 143,
+    "entity_count": 135,
     "entity_name": "Sandy Hook",
     "entity_origin": [
       "113",
       "121",
       "143",
       "152",
-      "155",
       "188",
       "209",
       "226",
@@ -716,8 +711,8 @@
       "635",
       "641",
       "647",
-      "655",
       "657",
+      "691",
       "710",
       "713",
       "84",
@@ -730,7 +725,7 @@
     ]
   },
   {
-    "entity_count": 123,
+    "entity_count": 118,
     "entity_name": "Roger Stone",
     "entity_origin": [
       "101",
@@ -776,7 +771,6 @@
       "458",
       "460",
       "463",
-      "47",
       "470",
       "471",
       "472",
@@ -803,7 +797,8 @@
       "646",
       "649",
       "652",
-      "655",
+      "658",
+      "676",
       "697",
       "72",
       "77",
@@ -817,12 +812,11 @@
     ]
   },
   {
-    "entity_count": 104,
+    "entity_count": 102,
     "entity_name": "Alex Jones'",
     "entity_origin": [
       "114",
       "118",
-      "121",
       "130a",
       "130b",
       "130c",
@@ -991,7 +985,6 @@
     "entity_origin": [
       "270",
       "305",
-      "322",
       "326",
       "357",
       "410",
@@ -1181,12 +1174,11 @@
     ]
   },
   {
-    "entity_count": 65,
+    "entity_count": 57,
     "entity_name": "Donald Trump",
     "entity_origin": [
       "103",
       "141",
-      "146",
       "148",
       "150",
       "151",
@@ -1201,7 +1193,6 @@
       "380",
       "40",
       "41",
-      "44",
       "45",
       "46",
       "47",
@@ -1227,11 +1218,9 @@
     ]
   },
   {
-    "entity_count": 61,
+    "entity_count": 56,
     "entity_name": "David Knight",
     "entity_origin": [
-      "136",
-      "160",
       "196",
       "251",
       "261",
@@ -1258,19 +1247,69 @@
       "56",
       "641",
       "93",
-      "infowars",
-      "the"
+      "infowars"
     ],
     "entity_type": [
       "PERSON"
     ]
   },
   {
-    "entity_count": 58,
+    "entity_count": 55,
+    "entity_name": "Project Camelot",
+    "entity_origin": [
+      "125",
+      "149",
+      "153",
+      "156",
+      "159",
+      "171",
+      "177",
+      "187",
+      "193",
+      "201",
+      "204",
+      "207",
+      "212",
+      "217",
+      "223",
+      "229",
+      "23",
+      "250",
+      "260",
+      "280",
+      "284",
+      "291",
+      "293",
+      "302",
+      "313",
+      "318",
+      "324",
+      "332",
+      "359",
+      "362",
+      "372",
+      "400",
+      "405",
+      "419",
+      "431",
+      "437",
+      "476",
+      "479",
+      "67",
+      "698",
+      "79",
+      "87",
+      "95"
+    ],
+    "entity_type": [
+      "ORG"
+    ]
+  },
+  {
+    "entity_count": 55,
     "entity_name": "Mike Adams",
     "entity_origin": [
       "135",
-      "136",
       "137",
       "146",
       "185",
@@ -1312,58 +1351,6 @@
     ]
   },
   {
-    "entity_count": 55,
-    "entity_name": "Project Camelot",
-    "entity_origin": [
-      "125",
-      "149",
-      "153",
-      "156",
-      "159",
-      "171",
-      "177",
-      "187",
-      "193",
-      "201",
-      "204",
-      "207",
-      "212",
-      "217",
-      "223",
-      "229",
-      "23",
-      "250",
-      "260",
-      "280",
-      "284",
-      "291",
-      "293",
-      "302",
-      "313",
-      "324",
-      "332",
-      "335",
-      "359",
-      "362",
-      "372",
-      "400",
-      "405",
-      "419",
-      "431",
-      "437",
-      "476",
-      "479",
-      "67",
-      "698",
-      "79",
-      "87",
-      "95"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
     "entity_count": 53,
     "entity_name": "Glenn Beck",
     "entity_origin": [
@@ -1399,12 +1386,11 @@
     ]
   },
   {
-    "entity_count": 52,
+    "entity_count": 49,
     "entity_name": "Larry Nichols",
     "entity_origin": [
       "111",
       "145",
-      "160",
       "204",
       "213",
       "241",
@@ -1437,107 +1423,6 @@
     ],
     "entity_type": [
       "PERSON"
-    ]
-  },
-  {
-    "entity_count": 46,
-    "entity_name": "Ted Anderson",
-    "entity_origin": [
-      "123",
-      "155",
-      "160",
-      "167",
-      "189",
-      "2",
-      "224",
-      "243",
-      "303",
-      "307",
-      "320",
-      "331",
-      "36",
-      "463",
-      "47",
-      "48",
-      "5",
-      "535",
-      "635",
-      "647"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 41,
-    "entity_name": "George Soros",
-    "entity_origin": [
-      "1",
-      "10",
-      "118",
-      "138",
-      "139",
-      "143",
-      "146",
-      "148",
-      "155",
-      "158",
-      "206",
-      "216",
-      "220",
-      "243",
-      "264",
-      "334",
-      "343",
-      "352",
-      "363",
-      "370",
-      "374",
-      "417",
-      "644",
-      "649",
-      "85"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 41,
-    "entity_name": "Owen Shroyer",
-    "entity_origin": [
-      "136",
-      "143",
-      "146",
-      "152",
-      "212",
-      "242",
-      "302",
-      "311",
-      "363",
-      "379",
-      "383",
-      "39",
-      "392",
-      "404",
-      "422",
-      "436",
-      "446",
-      "45",
-      "451",
-      "456",
-      "498",
-      "501",
-      "580",
-      "589",
-      "590",
-      "665",
-      "708",
-      "infowars"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
     ]
   },
   {
@@ -1588,84 +1473,33 @@
     ]
   },
   {
-    "entity_count": 37,
-    "entity_name": "Bob Chapman",
-    "entity_origin": [
-      "123",
-      "155",
-      "160",
-      "173",
-      "183",
-      "189",
-      "198",
-      "200",
-      "202",
-      "219",
-      "224",
-      "237",
-      "537",
-      "564",
-      "75"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 37,
-    "entity_name": "Ted Nugent",
-    "entity_origin": [
-      "138",
-      "143",
-      "144",
-      "145",
-      "146",
-      "22",
-      "226",
-      "242",
-      "269",
-      "321",
-      "335",
-      "336",
-      "339",
-      "410",
-      "462",
-      "467",
-      "547",
-      "557",
-      "604",
-      "635",
-      "655"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
     "entity_count": 36,
-    "entity_name": "David Icke",
+    "entity_name": "George Soros",
     "entity_origin": [
-      "100",
-      "155",
-      "160",
-      "291",
-      "376",
-      "423",
-      "424",
-      "429",
-      "432",
-      "472",
-      "481",
-      "487",
-      "506",
-      "513",
-      "577",
-      "621",
-      "634",
-      "651",
-      "655",
-      "660",
-      "84"
+      "1",
+      "10",
+      "118",
+      "138",
+      "139",
+      "143",
+      "146",
+      "148",
+      "158",
+      "206",
+      "216",
+      "220",
+      "243",
+      "264",
+      "334",
+      "343",
+      "352",
+      "363",
+      "370",
+      "374",
+      "417",
+      "644",
+      "649",
+      "85"
     ],
     "entity_type": [
       "PERSON"
@@ -1761,6 +1595,96 @@
     ]
   },
   {
+    "entity_count": 34,
+    "entity_name": "David Icke",
+    "entity_origin": [
+      "100",
+      "155",
+      "291",
+      "376",
+      "423",
+      "424",
+      "429",
+      "432",
+      "472",
+      "481",
+      "487",
+      "506",
+      "513",
+      "577",
+      "621",
+      "634",
+      "651",
+      "660",
+      "84"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 34,
+    "entity_name": "Ted Nugent",
+    "entity_origin": [
+      "138",
+      "143",
+      "144",
+      "22",
+      "226",
+      "242",
+      "269",
+      "321",
+      "335",
+      "336",
+      "339",
+      "410",
+      "462",
+      "467",
+      "547",
+      "557",
+      "604",
+      "635",
+      "690"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 32,
+    "entity_name": "Owen Shroyer",
+    "entity_origin": [
+      "143",
+      "212",
+      "242",
+      "302",
+      "311",
+      "363",
+      "379",
+      "383",
+      "39",
+      "392",
+      "404",
+      "422",
+      "436",
+      "446",
+      "451",
+      "456",
+      "498",
+      "501",
+      "580",
+      "589",
+      "590",
+      "665",
+      "708",
+      "infowars"
+    ],
+    "entity_type": [
+      "PERSON",
+      "ORG"
+    ]
+  },
+  {
     "entity_count": 30,
     "entity_name": "Mark Richards",
     "entity_origin": [
@@ -1789,28 +1713,6 @@
     ]
   },
   {
-    "entity_count": 29,
-    "entity_name": "Tommy Robinson",
-    "entity_origin": [
-      "137",
-      "138",
-      "141",
-      "143",
-      "144",
-      "198",
-      "273",
-      "299",
-      "316",
-      "319",
-      "51",
-      "538",
-      "99"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
     "entity_count": 28,
     "entity_name": "California",
     "entity_origin": [
@@ -1834,7 +1736,8 @@
       "623",
       "639",
       "645",
-      "655",
+      "661",
+      "666",
       "95"
     ],
     "entity_type": [
@@ -1843,9 +1746,79 @@
   },
   {
     "entity_count": 28,
+    "entity_name": "Tommy Robinson",
+    "entity_origin": [
+      "137",
+      "138",
+      "141",
+      "143",
+      "144",
+      "198",
+      "273",
+      "299",
+      "319",
+      "51",
+      "538",
+      "99"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 27,
+    "entity_name": "Bob Chapman",
+    "entity_origin": [
+      "123",
+      "155",
+      "160",
+      "173",
+      "183",
+      "189",
+      "198",
+      "200",
+      "202",
+      "219",
+      "224",
+      "237",
+      "537",
+      "564",
+      "75"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 27,
+    "entity_name": "Ted Anderson",
+    "entity_origin": [
+      "123",
+      "155",
+      "160",
+      "167",
+      "189",
+      "2",
+      "224",
+      "243",
+      "303",
+      "307",
+      "331",
+      "36",
+      "463",
+      "47",
+      "535",
+      "635",
+      "647"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 27,
     "entity_name": "Stewart Rhodes",
     "entity_origin": [
-      "160",
       "222",
       "252",
       "277",
@@ -1867,11 +1840,11 @@
       "637",
       "638",
       "642",
-      "655"
+      "677"
     ],
     "entity_type": [
-      "PERSON",
-      "ORG"
+      "ORG",
+      "PERSON"
     ]
   },
   {
@@ -1918,7 +1891,7 @@
       "575",
       "585",
       "612",
-      "655"
+      "658"
     ],
     "entity_type": [
       "PERSON"
@@ -2003,27 +1976,6 @@
     ]
   },
   {
-    "entity_count": 25,
-    "entity_name": "Mike Lindell",
-    "entity_origin": [
-      "511",
-      "528",
-      "565",
-      "584",
-      "586",
-      "589",
-      "593",
-      "597",
-      "601",
-      "639",
-      "655",
-      "repost"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
     "entity_count": 24,
     "entity_name": "Alex Jones Show",
     "entity_origin": [
@@ -2086,31 +2038,6 @@
   },
   {
     "entity_count": 24,
-    "entity_name": "Bill Clinton",
-    "entity_origin": [
-      "135",
-      "138",
-      "141",
-      "152",
-      "317",
-      "329",
-      "390",
-      "414",
-      "434",
-      "447",
-      "455",
-      "495",
-      "544",
-      "579",
-      "59",
-      "612"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 24,
     "entity_name": "White House",
     "entity_origin": [
       "155",
@@ -2140,13 +2067,57 @@
     ]
   },
   {
+    "entity_count": 24,
+    "entity_name": "Mike Lindell",
+    "entity_origin": [
+      "511",
+      "528",
+      "565",
+      "584",
+      "586",
+      "589",
+      "593",
+      "597",
+      "601",
+      "639",
+      "658",
+      "repost"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
     "entity_count": 23,
+    "entity_name": "Bill Clinton",
+    "entity_origin": [
+      "135",
+      "141",
+      "152",
+      "300",
+      "329",
+      "390",
+      "414",
+      "434",
+      "447",
+      "455",
+      "495",
+      "544",
+      "579",
+      "59",
+      "612"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 22,
     "entity_name": "Rothschild",
     "entity_origin": [
       "100",
       "129",
       "130e",
-      "155",
       "216",
       "234",
       "312",
@@ -2164,11 +2135,36 @@
     ]
   },
   {
-    "entity_count": 23,
+    "entity_count": 22,
+    "entity_name": "Leo Zagami",
+    "entity_origin": [
+      "130d",
+      "204",
+      "212",
+      "242",
+      "264",
+      "318",
+      "329",
+      "331",
+      "333",
+      "340",
+      "348",
+      "428",
+      "580",
+      "61",
+      "653",
+      "654",
+      "76"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 22,
     "entity_name": "Hillary Clinton",
     "entity_origin": [
       "135",
-      "138",
       "141",
       "142",
       "334",
@@ -2186,80 +2182,6 @@
       "512",
       "651",
       "87"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 22,
-    "entity_name": "Gerald Celente",
-    "entity_origin": [
-      "119",
-      "143",
-      "145",
-      "151",
-      "155",
-      "160",
-      "163",
-      "215",
-      "230a",
-      "289",
-      "49",
-      "59",
-      "98"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 22,
-    "entity_name": "Leo Zagami",
-    "entity_origin": [
-      "130d",
-      "204",
-      "212",
-      "242",
-      "264",
-      "318",
-      "329",
-      "331",
-      "333",
-      "335",
-      "340",
-      "348",
-      "428",
-      "580",
-      "61",
-      "653",
-      "654",
-      "76"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 22,
-    "entity_name": "Paul Joseph Watson",
-    "entity_origin": [
-      "138",
-      "143",
-      "146",
-      "155",
-      "198",
-      "22",
-      "273",
-      "337",
-      "352",
-      "45",
-      "46",
-      "47",
-      "492",
-      "580",
-      "634",
-      "78"
     ],
     "entity_type": [
       "PERSON"
@@ -2312,7 +2234,6 @@
       "599",
       "613",
       "634",
-      "655",
       "667",
       "78"
     ],
@@ -2358,7 +2279,6 @@
       "637",
       "638",
       "642",
-      "655",
       "671"
     ],
     "entity_type": [
@@ -2384,7 +2304,8 @@
       "644",
       "651",
       "653",
-      "655"
+      "662",
+      "675"
     ],
     "entity_type": [
       "FAC",
@@ -2458,51 +2379,22 @@
   },
   {
     "entity_count": 19,
-    "entity_name": "Jerome Corsi",
-    "entity_origin": [
-      "113",
-      "145",
-      "146",
-      "149",
-      "160",
-      "248",
-      "291",
-      "298",
-      "301",
-      "401",
-      "43",
-      "45",
-      "47",
-      "49",
-      "53"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 19,
-    "entity_name": "Rockefeller",
+    "entity_name": "Gerald Celente",
     "entity_origin": [
       "119",
-      "130a",
-      "130c",
+      "143",
+      "145",
+      "151",
       "155",
-      "216",
-      "230d",
-      "413",
-      "416",
-      "497",
-      "5",
-      "501",
-      "537",
-      "547",
-      "74",
-      "75"
+      "163",
+      "215",
+      "230a",
+      "289",
+      "49",
+      "59",
+      "98"
     ],
     "entity_type": [
-      "ORG",
       "PERSON"
     ]
   },
@@ -2526,7 +2418,7 @@
       "602",
       "631",
       "637",
-      "655"
+      "668"
     ],
     "entity_type": [
       "PERSON",
@@ -2535,10 +2427,32 @@
   },
   {
     "entity_count": 18,
+    "entity_name": "North Korea",
+    "entity_origin": [
+      "141",
+      "164",
+      "304",
+      "328",
+      "344",
+      "48",
+      "508",
+      "590",
+      "592",
+      "605",
+      "606",
+      "72",
+      "79",
+      "87"
+    ],
+    "entity_type": [
+      "GPE"
+    ]
+  },
+  {
+    "entity_count": 17,
     "entity_name": "Millie Weaver",
     "entity_origin": [
       "108",
-      "146",
       "152",
       "290",
       "329",
@@ -2558,50 +2472,30 @@
     ]
   },
   {
-    "entity_count": 18,
-    "entity_name": "North Korea",
+    "entity_count": 17,
+    "entity_name": "Paul Joseph Watson",
     "entity_origin": [
-      "141",
-      "164",
-      "321",
-      "328",
-      "344",
-      "48",
-      "508",
-      "590",
-      "592",
-      "605",
-      "606",
-      "72",
-      "79",
-      "87"
-    ],
-    "entity_type": [
-      "GPE"
-    ]
-  },
-  {
-    "entity_count": 18,
-    "entity_name": "the Tea Party",
-    "entity_origin": [
+      "138",
       "143",
-      "155",
-      "160",
-      "194",
-      "200",
-      "203",
-      "219",
-      "222",
-      "252",
-      "258",
-      "262"
+      "198",
+      "22",
+      "273",
+      "337",
+      "352",
+      "45",
+      "46",
+      "47",
+      "492",
+      "580",
+      "634",
+      "78"
     ],
     "entity_type": [
-      "ORG"
+      "PERSON"
     ]
   },
   {
-    "entity_count": 18,
+    "entity_count": 17,
     "entity_name": "Christians",
     "entity_origin": [
       "143",
@@ -2614,7 +2508,6 @@
       "383",
       "398",
       "411",
-      "47",
       "49",
       "499",
       "528",
@@ -2625,51 +2518,6 @@
     ],
     "entity_type": [
       "NORP"
-    ]
-  },
-  {
-    "entity_count": 17,
-    "entity_name": "David Rockefeller",
-    "entity_origin": [
-      "107",
-      "112",
-      "130b",
-      "130c",
-      "155",
-      "188",
-      "189",
-      "216",
-      "427",
-      "435",
-      "458",
-      "5",
-      "559"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 17,
-    "entity_name": "Washington",
-    "entity_origin": [
-      "110",
-      "120",
-      "124",
-      "146",
-      "168",
-      "434",
-      "47",
-      "504",
-      "551",
-      "568",
-      "584",
-      "639",
-      "90"
-    ],
-    "entity_type": [
-      "GPE",
-      "ORG"
     ]
   },
   {
@@ -2740,6 +2588,28 @@
   },
   {
     "entity_count": 16,
+    "entity_name": "Washington",
+    "entity_origin": [
+      "110",
+      "120",
+      "124",
+      "168",
+      "434",
+      "47",
+      "504",
+      "551",
+      "568",
+      "584",
+      "639",
+      "90"
+    ],
+    "entity_type": [
+      "GPE",
+      "ORG"
+    ]
+  },
+  {
+    "entity_count": 16,
     "entity_name": "Confederate",
     "entity_origin": [
       "148",
@@ -2751,26 +2621,6 @@
     "entity_type": [
       "ORG",
       "FAC"
-    ]
-  },
-  {
-    "entity_count": 16,
-    "entity_name": "Midas Resources",
-    "entity_origin": [
-      "148",
-      "155",
-      "160",
-      "36",
-      "47",
-      "5",
-      "57",
-      "59",
-      "623",
-      "647",
-      "75"
-    ],
-    "entity_type": [
-      "ORG"
     ]
   },
   {
@@ -2854,25 +2704,6 @@
   },
   {
     "entity_count": 15,
-    "entity_name": "Paul Craig Roberts",
-    "entity_origin": [
-      "102",
-      "151",
-      "155",
-      "160",
-      "206",
-      "291",
-      "407",
-      "47",
-      "78",
-      "88"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 15,
     "entity_name": "Bernie Sanders",
     "entity_origin": [
       "115",
@@ -2897,71 +2728,40 @@
   },
   {
     "entity_count": 15,
-    "entity_name": "Matt Bracken",
+    "entity_name": "the Tea Party",
     "entity_origin": [
-      "145",
-      "277",
-      "310",
-      "394",
-      "500",
-      "524",
-      "620",
-      "642",
-      "99"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 15,
-    "entity_name": "Constitution",
-    "entity_origin": [
-      "155",
-      "158",
+      "143",
+      "160",
+      "194",
       "200",
-      "364",
-      "412",
-      "436",
-      "493",
-      "655"
+      "203",
+      "219",
+      "222",
+      "252",
+      "258",
+      "262"
     ],
     "entity_type": [
-      "LAW"
+      "ORG"
     ]
   },
   {
     "entity_count": 15,
-    "entity_name": "Republicans",
+    "entity_name": "Midas Resources",
     "entity_origin": [
+      "148",
       "155",
-      "211",
-      "278",
-      "292",
-      "444",
+      "160",
+      "36",
       "47",
-      "495",
-      "528",
-      "542",
-      "56",
-      "58",
+      "57",
+      "59",
+      "623",
+      "647",
       "75"
     ],
     "entity_type": [
-      "NORP"
-    ]
-  },
-  {
-    "entity_count": 15,
-    "entity_name": "Webster Tarpley",
-    "entity_origin": [
-      "160",
-      "211",
-      "230a",
-      "634"
-    ],
-    "entity_type": [
-      "PERSON"
+      "ORG"
     ]
   },
   {
@@ -2988,7 +2788,7 @@
       "47",
       "52",
       "539",
-      "655"
+      "671"
     ],
     "entity_type": [
       "GPE"
@@ -3015,6 +2815,49 @@
     ],
     "entity_type": [
       "NORP",
+      "ORG"
+    ]
+  },
+  {
+    "entity_count": 14,
+    "entity_name": "Jerome Corsi",
+    "entity_origin": [
+      "113",
+      "149",
+      "248",
+      "291",
+      "298",
+      "301",
+      "401",
+      "43",
+      "45",
+      "49",
+      "53"
+    ],
+    "entity_type": [
+      "PERSON",
+      "ORG"
+    ]
+  },
+  {
+    "entity_count": 14,
+    "entity_name": "Rockefeller",
+    "entity_origin": [
+      "119",
+      "130a",
+      "130c",
+      "216",
+      "230d",
+      "413",
+      "416",
+      "497",
+      "501",
+      "537",
+      "547",
+      "74",
+      "75"
+    ],
+    "entity_type": [
       "ORG"
     ]
   },
@@ -3053,7 +2896,7 @@
       "589",
       "611",
       "624",
-      "655"
+      "684"
     ],
     "entity_type": [
       "NORP"
@@ -3165,7 +3008,7 @@
       "618",
       "619",
       "646",
-      "655",
+      "697",
       "93"
     ],
     "entity_type": [
@@ -3191,6 +3034,26 @@
   },
   {
     "entity_count": 13,
+    "entity_name": "David Rockefeller",
+    "entity_origin": [
+      "107",
+      "112",
+      "130b",
+      "130c",
+      "188",
+      "189",
+      "216",
+      "427",
+      "435",
+      "458",
+      "559"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 13,
     "entity_name": "Harrison Smith",
     "entity_origin": [
       "118",
@@ -3202,33 +3065,9 @@
       "631",
       "637",
       "638",
-      "655",
       "661"
     ],
     "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 13,
-    "entity_name": "Knowledge Fight",
-    "entity_origin": [
-      "138",
-      "141",
-      "143",
-      "145",
-      "146",
-      "155",
-      "196",
-      "199",
-      "241",
-      "342",
-      "516",
-      "57",
-      "59"
-    ],
-    "entity_type": [
-      "FAC",
       "PERSON"
     ]
   },
@@ -3245,10 +3084,30 @@
       "415",
       "560",
       "58",
-      "655"
+      "670"
     ],
     "entity_type": [
       "GPE"
+    ]
+  },
+  {
+    "entity_count": 13,
+    "entity_name": "Republicans",
+    "entity_origin": [
+      "211",
+      "278",
+      "292",
+      "444",
+      "47",
+      "495",
+      "528",
+      "542",
+      "56",
+      "58",
+      "75"
+    ],
+    "entity_type": [
+      "NORP"
     ]
   },
   {
@@ -3274,20 +3133,35 @@
     ]
   },
   {
-    "entity_count": 12,
-    "entity_name": "James O'Keefe",
+    "entity_count": 13,
+    "entity_name": "Matt Bracken",
     "entity_origin": [
-      "123",
-      "138",
-      "301",
-      "313",
-      "331",
-      "366",
-      "449",
-      "496",
+      "277",
+      "310",
+      "394",
       "500",
-      "551",
-      "562"
+      "524",
+      "620",
+      "642",
+      "99"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 12,
+    "entity_name": "Paul Craig Roberts",
+    "entity_origin": [
+      "102",
+      "151",
+      "155",
+      "206",
+      "291",
+      "407",
+      "47",
+      "78",
+      "88"
     ],
     "entity_type": [
       "PERSON"
@@ -3337,25 +3211,6 @@
   },
   {
     "entity_count": 12,
-    "entity_name": "Peter Schiff",
-    "entity_origin": [
-      "143",
-      "145",
-      "151",
-      "155",
-      "160",
-      "167",
-      "230e",
-      "47",
-      "57",
-      "59"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 12,
     "entity_name": "Supreme Court",
     "entity_origin": [
       "143",
@@ -3367,7 +3222,7 @@
       "491",
       "601",
       "606",
-      "655"
+      "677"
     ],
     "entity_type": [
       "ORG"
@@ -3437,16 +3292,42 @@
   },
   {
     "entity_count": 11,
-    "entity_name": "Charlottesville",
+    "entity_name": "James O'Keefe",
     "entity_origin": [
-      "138",
-      "238",
-      "290",
-      "322",
-      "73"
+      "123",
+      "301",
+      "313",
+      "331",
+      "366",
+      "449",
+      "496",
+      "500",
+      "551",
+      "562"
     ],
     "entity_type": [
-      "GPE"
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 11,
+    "entity_name": "Knowledge Fight",
+    "entity_origin": [
+      "138",
+      "141",
+      "143",
+      "155",
+      "196",
+      "199",
+      "241",
+      "342",
+      "516",
+      "57",
+      "59"
+    ],
+    "entity_type": [
+      "FAC",
+      "PERSON"
     ]
   },
   {
@@ -3468,60 +3349,6 @@
       "GPE",
       "PERSON",
       "WORK_OF_ART"
-    ]
-  },
-  {
-    "entity_count": 11,
-    "entity_name": "Jack Posobiec",
-    "entity_origin": [
-      "143",
-      "146",
-      "149",
-      "316",
-      "39",
-      "511",
-      "576",
-      "584"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 11,
-    "entity_name": "Congressional",
-    "entity_origin": [
-      "155",
-      "158",
-      "355",
-      "441",
-      "491",
-      "52",
-      "621",
-      "643"
-    ],
-    "entity_type": [
-      "NORP"
-    ]
-  },
-  {
-    "entity_count": 11,
-    "entity_name": "Republican",
-    "entity_origin": [
-      "155",
-      "160",
-      "377",
-      "441",
-      "465",
-      "47",
-      "5",
-      "56",
-      "66",
-      "82"
-    ],
-    "entity_type": [
-      "NORP"
     ]
   },
   {
@@ -3552,7 +3379,7 @@
       "546",
       "549",
       "554",
-      "655"
+      "658"
     ],
     "entity_type": [
       "PERSON"
@@ -3630,49 +3457,52 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "Mike Rivero",
+    "entity_name": "Charlottesville",
     "entity_origin": [
-      "121",
-      "148",
-      "155",
-      "160",
-      "166",
-      "203"
+      "138",
+      "238",
+      "290",
+      "322",
+      "73"
     ],
     "entity_type": [
-      "PERSON"
+      "GPE"
     ]
   },
   {
     "entity_count": 10,
-    "entity_name": "the Supreme Court",
+    "entity_name": "Peter Schiff",
     "entity_origin": [
       "143",
+      "145",
+      "151",
       "155",
-      "36",
-      "48",
-      "590",
-      "655",
-      "677",
-      "696"
+      "160",
+      "167",
+      "230e",
+      "47",
+      "57",
+      "59"
     ],
     "entity_type": [
-      "ORG"
+      "PERSON"
     ]
   },
   {
     "entity_count": 10,
-    "entity_name": "Barack Obama",
+    "entity_name": "Jack Posobiec",
     "entity_origin": [
-      "145",
-      "155",
-      "158",
-      "47",
-      "48",
-      "49"
+      "143",
+      "149",
+      "316",
+      "39",
+      "511",
+      "576",
+      "584"
     ],
     "entity_type": [
-      "PERSON"
+      "PERSON",
+      "ORG"
     ]
   },
   {
@@ -3689,21 +3519,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 10,
-    "entity_name": "Lindsey Williams",
-    "entity_origin": [
-      "160",
-      "186",
-      "206",
-      "208",
-      "230b",
-      "373"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -3750,6 +3565,18 @@
       "522",
       "625",
       "631"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 10,
+    "entity_name": "Webster Tarpley",
+    "entity_origin": [
+      "211",
+      "230a",
+      "634"
     ],
     "entity_type": [
       "PERSON"
@@ -3843,7 +3670,7 @@
       "46",
       "52",
       "56",
-      "655"
+      "696"
     ],
     "entity_type": [
       "ORG",
@@ -3865,22 +3692,6 @@
     ],
     "entity_type": [
       "PERSON"
-    ]
-  },
-  {
-    "entity_count": 9,
-    "entity_name": "the United States",
-    "entity_origin": [
-      "141",
-      "143",
-      "155",
-      "158",
-      "332",
-      "47",
-      "48"
-    ],
-    "entity_type": [
-      "GPE"
     ]
   },
   {
@@ -3915,34 +3726,19 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "Wayne Madsen",
+    "entity_name": "Republican",
     "entity_origin": [
       "160",
-      "163",
-      "298",
-      "317",
-      "364",
-      "52",
-      "57",
-      "636"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 9,
-    "entity_name": "Anthony Gucciardi",
-    "entity_origin": [
-      "160",
-      "454",
+      "377",
+      "441",
+      "465",
       "47",
-      "49",
-      "498",
-      "645"
+      "56",
+      "66",
+      "82"
     ],
     "entity_type": [
-      "PERSON"
+      "NORP"
     ]
   },
   {
@@ -4110,23 +3906,6 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "Lee Ann McAdoo",
-    "entity_origin": [
-      "138",
-      "146",
-      "293",
-      "346",
-      "498",
-      "52",
-      "6",
-      "82"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 8,
     "entity_name": "Francis Boyle",
     "entity_origin": [
       "142",
@@ -4135,7 +3914,7 @@
       "421",
       "429",
       "541",
-      "655"
+      "661"
     ],
     "entity_type": [
       "PERSON"
@@ -4159,23 +3938,12 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "Jason Bermas",
-    "entity_origin": [
-      "152",
-      "160"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 8,
     "entity_name": "Eisenhower",
     "entity_origin": [
       "153",
       "284",
+      "299",
       "312",
-      "316",
       "405",
       "409",
       "546"
@@ -4183,6 +3951,38 @@
     "entity_type": [
       "PERSON",
       "ORG"
+    ]
+  },
+  {
+    "entity_count": 8,
+    "entity_name": "Constitution",
+    "entity_origin": [
+      "158",
+      "200",
+      "364",
+      "412",
+      "436",
+      "493",
+      "655"
+    ],
+    "entity_type": [
+      "LAW"
+    ]
+  },
+  {
+    "entity_count": 8,
+    "entity_name": "Congressional",
+    "entity_origin": [
+      "158",
+      "355",
+      "441",
+      "491",
+      "52",
+      "621",
+      "643"
+    ],
+    "entity_type": [
+      "NORP"
     ]
   },
   {
@@ -4199,21 +3999,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 8,
-    "entity_name": "Jesse Ventura",
-    "entity_origin": [
-      "160",
-      "230c",
-      "286",
-      "48",
-      "481",
-      "62"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -4275,7 +4060,7 @@
       "465",
       "491",
       "641",
-      "655"
+      "677"
     ],
     "entity_type": [
       "PERSON"
@@ -4285,14 +4070,14 @@
     "entity_count": 8,
     "entity_name": "Robert Barnes",
     "entity_origin": [
-      "321",
+      "304",
       "394",
       "512",
       "516",
       "522",
       "550",
       "551",
-      "655"
+      "675"
     ],
     "entity_type": [
       "PERSON",
@@ -4346,22 +4131,6 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "Genesis Communications Network",
-    "entity_origin": [
-      "121",
-      "155",
-      "47",
-      "48",
-      "49",
-      "5",
-      "59"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 7,
     "entity_name": "Palestinians",
     "entity_origin": [
       "128",
@@ -4400,7 +4169,7 @@
       "346",
       "398",
       "47",
-      "655"
+      "677"
     ],
     "entity_type": [
       "GPE"
@@ -4422,34 +4191,6 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "Lee Stranahan",
-    "entity_origin": [
-      "138",
-      "149",
-      "404",
-      "445"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 7,
-    "entity_name": "James Comey",
-    "entity_origin": [
-      "138",
-      "152",
-      "40",
-      "41",
-      "47",
-      "49"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 7,
     "entity_name": "Charlie Sheen",
     "entity_origin": [
       "140",
@@ -4462,29 +4203,14 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "John Kerry",
+    "entity_name": "the United States",
     "entity_origin": [
+      "141",
       "143",
-      "145",
-      "156",
-      "383",
-      "384",
-      "45",
-      "49"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 7,
-    "entity_name": "Washington DC",
-    "entity_origin": [
-      "146",
-      "149",
-      "289",
-      "442",
-      "517"
+      "158",
+      "332",
+      "47",
+      "48"
     ],
     "entity_type": [
       "GPE"
@@ -4492,16 +4218,17 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "Mark Zuckerberg",
+    "entity_name": "the Supreme Court",
     "entity_origin": [
-      "146",
-      "428",
-      "450",
-      "474",
-      "621"
+      "143",
+      "36",
+      "590",
+      "677",
+      "693",
+      "696"
     ],
     "entity_type": [
-      "PERSON"
+      "ORG"
     ]
   },
   {
@@ -4539,89 +4266,18 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "Steve Quayle",
+    "entity_name": "Wayne Madsen",
     "entity_origin": [
-      "155",
-      "160",
-      "175",
-      "553"
+      "163",
+      "298",
+      "317",
+      "364",
+      "52",
+      "57",
+      "636"
     ],
     "entity_type": [
       "PERSON"
-    ]
-  },
-  {
-    "entity_count": 7,
-    "entity_name": "New Jersey",
-    "entity_origin": [
-      "155",
-      "408",
-      "449",
-      "452",
-      "511",
-      "639",
-      "infowars"
-    ],
-    "entity_type": [
-      "GPE"
-    ]
-  },
-  {
-    "entity_count": 7,
-    "entity_name": "The Obama Deception",
-    "entity_origin": [
-      "155",
-      "215",
-      "230a",
-      "230b",
-      "230c",
-      "230d",
-      "230e"
-    ],
-    "entity_type": [
-      "WORK_OF_ART"
-    ]
-  },
-  {
-    "entity_count": 7,
-    "entity_name": "Jack McLamb",
-    "entity_origin": [
-      "160",
-      "215",
-      "219"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 7,
-    "entity_name": "Larry Pratt",
-    "entity_origin": [
-      "160",
-      "283",
-      "297",
-      "303",
-      "335",
-      "361"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 7,
-    "entity_name": "Lauren Southern",
-    "entity_origin": [
-      "160",
-      "47",
-      "474",
-      "538",
-      "614"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
     ]
   },
   {
@@ -4670,8 +4326,8 @@
     "entity_count": 7,
     "entity_name": "Jim Garrow",
     "entity_origin": [
+      "298",
       "303",
-      "315",
       "397"
     ],
     "entity_type": [
@@ -4688,6 +4344,20 @@
       "522",
       "541",
       "632"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 7,
+    "entity_name": "Anthony Gucciardi",
+    "entity_origin": [
+      "454",
+      "47",
+      "49",
+      "498",
+      "645"
     ],
     "entity_type": [
       "PERSON"
@@ -4738,20 +4408,6 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "Libertarian",
-    "entity_origin": [
-      "108",
-      "143",
-      "155",
-      "160",
-      "163"
-    ],
-    "entity_type": [
-      "NORP"
-    ]
-  },
-  {
-    "entity_count": 6,
     "entity_name": "Bill O'Reilly",
     "entity_origin": [
       "112",
@@ -4780,18 +4436,6 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "Chuck Norris",
-    "entity_origin": [
-      "118",
-      "160",
-      "219"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
     "entity_name": "Andrew Breitbart",
     "entity_origin": [
       "122",
@@ -4812,7 +4456,6 @@
       "130e",
       "553",
       "565",
-      "655",
       "700"
     ],
     "entity_type": [
@@ -4841,7 +4484,7 @@
       "46",
       "47",
       "52",
-      "655"
+      "671"
     ],
     "entity_type": [
       "PERSON",
@@ -4880,13 +4523,14 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "Ben Garrison",
+    "entity_name": "John Kerry",
     "entity_origin": [
       "143",
-      "144",
-      "152",
-      "199",
-      "322"
+      "156",
+      "383",
+      "384",
+      "45",
+      "49"
     ],
     "entity_type": [
       "PERSON"
@@ -4894,16 +4538,30 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "National Guard",
+    "entity_name": "James Comey",
     "entity_origin": [
-      "146",
-      "434",
-      "442",
-      "639",
-      "655"
+      "152",
+      "40",
+      "41",
+      "47",
+      "49"
     ],
     "entity_type": [
-      "ORG"
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 6,
+    "entity_name": "Barack Obama",
+    "entity_origin": [
+      "155",
+      "158",
+      "47",
+      "48",
+      "49"
+    ],
+    "entity_type": [
+      "PERSON"
     ]
   },
   {
@@ -4919,20 +4577,6 @@
     "entity_type": [
       "PERSON",
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Steve Shenk",
-    "entity_origin": [
-      "160",
-      "200",
-      "224",
-      "312",
-      "481"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -4993,6 +4637,20 @@
   },
   {
     "entity_count": 6,
+    "entity_name": "Lindsey Williams",
+    "entity_origin": [
+      "186",
+      "206",
+      "208",
+      "230b",
+      "373"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 6,
     "entity_name": "Eddie Page",
     "entity_origin": [
       "187",
@@ -5032,6 +4690,21 @@
     ],
     "entity_type": [
       "ORG"
+    ]
+  },
+  {
+    "entity_count": 6,
+    "entity_name": "The Obama Deception",
+    "entity_origin": [
+      "215",
+      "230a",
+      "230b",
+      "230c",
+      "230d",
+      "230e"
+    ],
+    "entity_type": [
+      "WORK_OF_ART"
     ]
   },
   {
@@ -5153,10 +4826,38 @@
   },
   {
     "entity_count": 6,
+    "entity_name": "Larry Pratt",
+    "entity_origin": [
+      "283",
+      "297",
+      "303",
+      "335",
+      "361"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 6,
+    "entity_name": "Lee Ann McAdoo",
+    "entity_origin": [
+      "293",
+      "346",
+      "498",
+      "52",
+      "6",
+      "82"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 6,
     "entity_name": "Andrew Wakefield",
     "entity_origin": [
       "297",
-      "314",
       "467",
       "485"
     ],
@@ -5183,7 +4884,7 @@
       "331",
       "352",
       "489",
-      "655",
+      "678",
       "690",
       "701"
     ],
@@ -5213,7 +4914,7 @@
       "581",
       "631",
       "649",
-      "655"
+      "658"
     ],
     "entity_type": [
       "ORG"
@@ -5227,7 +4928,6 @@
       "488",
       "494",
       "498",
-      "655",
       "702"
     ],
     "entity_type": [
@@ -5252,6 +4952,34 @@
   },
   {
     "entity_count": 6,
+    "entity_name": "New Jersey",
+    "entity_origin": [
+      "408",
+      "449",
+      "452",
+      "511",
+      "639",
+      "infowars"
+    ],
+    "entity_type": [
+      "GPE"
+    ]
+  },
+  {
+    "entity_count": 6,
+    "entity_name": "Mark Zuckerberg",
+    "entity_origin": [
+      "428",
+      "450",
+      "474",
+      "621"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 6,
     "entity_name": "Operation Lockstep",
     "entity_origin": [
       "429",
@@ -5259,7 +4987,7 @@
       "509",
       "526",
       "640",
-      "655"
+      "675"
     ],
     "entity_type": [
       "ORG",
@@ -5282,6 +5010,20 @@
   },
   {
     "entity_count": 6,
+    "entity_name": "Lauren Southern",
+    "entity_origin": [
+      "47",
+      "474",
+      "538",
+      "614"
+    ],
+    "entity_type": [
+      "PERSON",
+      "ORG"
+    ]
+  },
+  {
+    "entity_count": 6,
     "entity_name": "Amy Coney Barrett",
     "entity_origin": [
       "484",
@@ -5300,7 +5042,7 @@
       "532",
       "625",
       "637",
-      "655"
+      "675"
     ],
     "entity_type": [
       "ORG"
@@ -5349,7 +5091,7 @@
     "entity_name": "Luxembourg",
     "entity_origin": [
       "625",
-      "655"
+      "689"
     ],
     "entity_type": [
       "GPE"
@@ -5373,10 +5115,23 @@
       "107",
       "339",
       "636",
-      "655"
+      "678"
     ],
     "entity_type": [
       "PERSON"
+    ]
+  },
+  {
+    "entity_count": 5,
+    "entity_name": "Libertarian",
+    "entity_origin": [
+      "108",
+      "143",
+      "160",
+      "163"
+    ],
+    "entity_type": [
+      "NORP"
     ]
   },
   {
@@ -5421,6 +5176,17 @@
   },
   {
     "entity_count": 5,
+    "entity_name": "Chuck Norris",
+    "entity_origin": [
+      "118",
+      "219"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 5,
     "entity_name": "Eric Holder",
     "entity_origin": [
       "119",
@@ -5448,20 +5214,6 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "George W. Bush",
-    "entity_origin": [
-      "121",
-      "142",
-      "155",
-      "544",
-      "655"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
     "entity_name": "William Binney",
     "entity_origin": [
       "123",
@@ -5480,7 +5232,7 @@
     "entity_origin": [
       "12",
       "141",
-      "315",
+      "298",
       "52"
     ],
     "entity_type": [
@@ -5508,7 +5260,7 @@
       "131",
       "210",
       "433",
-      "655"
+      "703"
     ],
     "entity_type": [
       "ORG"
@@ -5516,13 +5268,12 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "Willie Nelson",
+    "entity_name": "Lee Stranahan",
     "entity_origin": [
-      "136",
-      "158",
-      "390",
-      "49",
-      "670"
+      "138",
+      "149",
+      "404",
+      "445"
     ],
     "entity_type": [
       "PERSON"
@@ -5536,7 +5287,7 @@
       "142",
       "155",
       "558",
-      "655"
+      "678"
     ],
     "entity_type": [
       "EVENT"
@@ -5558,13 +5309,13 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "Darren McBreen",
+    "entity_name": "Ben Garrison",
     "entity_origin": [
       "143",
-      "19",
-      "214",
-      "286",
-      "428"
+      "144",
+      "152",
+      "199",
+      "322"
     ],
     "entity_type": [
       "PERSON"
@@ -5572,11 +5323,13 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "Rick Derringer",
+    "entity_name": "Darren McBreen",
     "entity_origin": [
-      "145",
-      "47",
-      "48"
+      "143",
+      "19",
+      "214",
+      "286",
+      "428"
     ],
     "entity_type": [
       "PERSON"
@@ -5611,6 +5364,18 @@
   },
   {
     "entity_count": 5,
+    "entity_name": "Steve Quayle",
+    "entity_origin": [
+      "155",
+      "175",
+      "553"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 5,
     "entity_name": "Gary Allen",
     "entity_origin": [
       "155",
@@ -5620,19 +5385,6 @@
     ],
     "entity_type": [
       "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Palestinian",
-    "entity_origin": [
-      "155",
-      "160",
-      "236",
-      "363"
-    ],
-    "entity_type": [
-      "NORP"
     ]
   },
   {
@@ -5650,35 +5402,13 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "Kevin Booth",
+    "entity_name": "Steve Shenk",
     "entity_origin": [
       "160",
-      "227",
-      "88",
-      "93"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "George Humphrey",
-    "entity_origin": [
-      "160",
-      "230a",
-      "230b"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Glenn Spencer",
-    "entity_origin": [
-      "160",
-      "617"
+      "200",
+      "224",
+      "312",
+      "481"
     ],
     "entity_type": [
       "PERSON"
@@ -5821,6 +5551,19 @@
   },
   {
     "entity_count": 5,
+    "entity_name": "Jesse Ventura",
+    "entity_origin": [
+      "230c",
+      "286",
+      "481",
+      "62"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 5,
     "entity_name": "Adan Salazar",
     "entity_origin": [
       "242",
@@ -5887,6 +5630,32 @@
   },
   {
     "entity_count": 5,
+    "entity_name": "Huffington Post",
+    "entity_origin": [
+      "297",
+      "298",
+      "304",
+      "307",
+      "612"
+    ],
+    "entity_type": [
+      "ORG"
+    ]
+  },
+  {
+    "entity_count": 5,
+    "entity_name": "Minneapolis",
+    "entity_origin": [
+      "300",
+      "438",
+      "439"
+    ],
+    "entity_type": [
+      "GPE"
+    ]
+  },
+  {
+    "entity_count": 5,
     "entity_name": "Kevin Moore",
     "entity_origin": [
       "302",
@@ -5900,36 +5669,9 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "Huffington Post",
-    "entity_origin": [
-      "307",
-      "314",
-      "315",
-      "321",
-      "612"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Minneapolis",
-    "entity_origin": [
-      "317",
-      "438",
-      "439"
-    ],
-    "entity_type": [
-      "GPE"
-    ]
-  },
-  {
-    "entity_count": 5,
     "entity_name": "Henry Makow",
     "entity_origin": [
       "318",
-      "335",
       "634"
     ],
     "entity_type": [
@@ -6011,17 +5753,6 @@
     ],
     "entity_type": [
       "PRODUCT"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Hamdi Ulukaya",
-    "entity_origin": [
-      "34",
-      "44"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -6112,7 +5843,8 @@
     "entity_origin": [
       "545",
       "644",
-      "655"
+      "658",
+      "679"
     ],
     "entity_type": [
       "PERSON"
@@ -6236,15 +5968,14 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "Julian Assange",
+    "entity_name": "Willie Nelson",
     "entity_origin": [
-      "135",
-      "41",
-      "44",
-      "47"
+      "136",
+      "158",
+      "390",
+      "49"
     ],
     "entity_type": [
-      "ORG",
       "PERSON"
     ]
   },
@@ -6259,45 +5990,6 @@
     ],
     "entity_type": [
       "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "The Health Ranger",
-    "entity_origin": [
-      "137",
-      "146",
-      "392",
-      "519"
-    ],
-    "entity_type": [
-      "WORK_OF_ART",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Steven Crowder",
-    "entity_origin": [
-      "138",
-      "350",
-      "609"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "republican",
-    "entity_origin": [
-      "138",
-      "155",
-      "429",
-      "57"
-    ],
-    "entity_type": [
-      "NORP"
     ]
   },
   {
@@ -6327,6 +6019,17 @@
   },
   {
     "entity_count": 4,
+    "entity_name": "Rick Derringer",
+    "entity_origin": [
+      "145",
+      "48"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 4,
     "entity_name": "Aaron Russo",
     "entity_origin": [
       "147",
@@ -6343,10 +6046,23 @@
     "entity_name": "John Brown",
     "entity_origin": [
       "148",
-      "335"
+      "318"
     ],
     "entity_type": [
       "PERSON"
+    ]
+  },
+  {
+    "entity_count": 4,
+    "entity_name": "Washington DC",
+    "entity_origin": [
+      "149",
+      "289",
+      "442",
+      "517"
+    ],
+    "entity_type": [
+      "GPE"
     ]
   },
   {
@@ -6364,73 +6080,12 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "United States",
-    "entity_origin": [
-      "155",
-      "330",
-      "519",
-      "601"
-    ],
-    "entity_type": [
-      "GPE"
-    ]
-  },
-  {
-    "entity_count": 4,
     "entity_name": "Pat Robertson",
     "entity_origin": [
       "158",
       "263",
       "282",
       "354"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Barry Cooper",
-    "entity_origin": [
-      "158",
-      "160"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Chuck Baldwin",
-    "entity_origin": [
-      "160",
-      "222",
-      "343"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Steve Watson",
-    "entity_origin": [
-      "160",
-      "173",
-      "240"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Aaron Zelman",
-    "entity_origin": [
-      "160",
-      "167",
-      "335",
-      "592"
     ],
     "entity_type": [
       "PERSON"
@@ -6526,6 +6181,17 @@
   },
   {
     "entity_count": 4,
+    "entity_name": "Jack McLamb",
+    "entity_origin": [
+      "215",
+      "219"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 4,
     "entity_name": "Nationalist",
     "entity_origin": [
       "220",
@@ -6534,6 +6200,18 @@
     ],
     "entity_type": [
       "NORP"
+    ]
+  },
+  {
+    "entity_count": 4,
+    "entity_name": "Kevin Booth",
+    "entity_origin": [
+      "227",
+      "88",
+      "93"
+    ],
+    "entity_type": [
+      "PERSON"
     ]
   },
   {
@@ -6631,7 +6309,7 @@
     "entity_name": "Andrew Cuomo",
     "entity_origin": [
       "248",
-      "321",
+      "304",
       "416",
       "425"
     ],
@@ -6707,7 +6385,6 @@
     "entity_origin": [
       "288",
       "297",
-      "314",
       "338"
     ],
     "entity_type": [
@@ -6720,29 +6397,7 @@
     "entity_origin": [
       "289",
       "640",
-      "655"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Dayton King",
-    "entity_origin": [
-      "297",
-      "314"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Rosa Koire",
-    "entity_origin": [
-      "305",
-      "322"
+      "674"
     ],
     "entity_type": [
       "PERSON"
@@ -6932,7 +6587,7 @@
     "entity_origin": [
       "422",
       "644",
-      "655"
+      "703"
     ],
     "entity_type": [
       "ORG",
@@ -6953,11 +6608,24 @@
   },
   {
     "entity_count": 4,
+    "entity_name": "National Guard",
+    "entity_origin": [
+      "434",
+      "442",
+      "639",
+      "660"
+    ],
+    "entity_type": [
+      "ORG"
+    ]
+  },
+  {
+    "entity_count": 4,
     "entity_name": "Greg Reece",
     "entity_origin": [
       "435",
       "609",
-      "655"
+      "679"
     ],
     "entity_type": [
       "PERSON"
@@ -7044,7 +6712,7 @@
     "entity_origin": [
       "583",
       "647",
-      "655"
+      "666"
     ],
     "entity_type": [
       "ORG"
@@ -7240,6 +6908,32 @@
   },
   {
     "entity_count": 3,
+    "entity_name": "Julian Assange",
+    "entity_origin": [
+      "135",
+      "41",
+      "47"
+    ],
+    "entity_type": [
+      "ORG",
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 3,
+    "entity_name": "The Health Ranger",
+    "entity_origin": [
+      "137",
+      "392",
+      "519"
+    ],
+    "entity_type": [
+      "WORK_OF_ART",
+      "ORG"
+    ]
+  },
+  {
+    "entity_count": 3,
     "entity_name": "Natural News",
     "entity_origin": [
       "137",
@@ -7324,17 +7018,6 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Joel Gilbert",
-    "entity_origin": [
-      "138",
-      "143"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "Robert Mercer",
     "entity_origin": [
       "141",
@@ -7405,6 +7088,18 @@
   },
   {
     "entity_count": 3,
+    "entity_name": "George W. Bush",
+    "entity_origin": [
+      "142",
+      "544",
+      "693"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 3,
     "entity_name": "Chuck Schumer",
     "entity_origin": [
       "143",
@@ -7413,17 +7108,6 @@
     ],
     "entity_type": [
       "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "ExxonMobil",
-    "entity_origin": [
-      "143",
-      "155"
-    ],
-    "entity_type": [
-      "ORG"
     ]
   },
   {
@@ -7487,13 +7171,14 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "the National Guard",
+    "entity_name": "Mike Rivero",
     "entity_origin": [
-      "146",
-      "439"
+      "148",
+      "166",
+      "203"
     ],
     "entity_type": [
-      "ORG"
+      "PERSON"
     ]
   },
   {
@@ -7532,35 +7217,10 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Antifa/Soros",
-    "entity_origin": [
-      "152",
-      "155",
-      "439"
-    ],
-    "entity_type": [
-      "ORG",
-      "WORK_OF_ART"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "Kanye West",
     "entity_origin": [
       "154",
       "363"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Ray McGovern",
-    "entity_origin": [
-      "155",
-      "160",
-      "613"
     ],
     "entity_type": [
       "PERSON"
@@ -7614,58 +7274,11 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Queen Elizabeth",
-    "entity_origin": [
-      "155",
-      "240",
-      "243"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Netherlands",
-    "entity_origin": [
-      "155",
-      "649",
-      "655"
-    ],
-    "entity_type": [
-      "GPE"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Kevin McCarthy",
-    "entity_origin": [
-      "155",
-      "643",
-      "655"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Marty Shackter",
-    "entity_origin": [
-      "158",
-      "160"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "New York Times",
     "entity_origin": [
       "15",
       "458",
-      "655"
+      "662"
     ],
     "entity_type": [
       "ORG"
@@ -7717,49 +7330,14 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Matt Martin",
+    "entity_name": "Palestinian",
     "entity_origin": [
       "160",
-      "231"
+      "236",
+      "363"
     ],
     "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "the John Birch Society",
-    "entity_origin": [
-      "160",
-      "234",
-      "612"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Charles Key",
-    "entity_origin": [
-      "160",
-      "173"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Brain Force",
-    "entity_origin": [
-      "160",
-      "47",
-      "57"
-    ],
-    "entity_type": [
-      "ORG",
-      "PERSON"
+      "NORP"
     ]
   },
   {
@@ -7784,6 +7362,18 @@
     "entity_type": [
       "PERSON",
       "ORG"
+    ]
+  },
+  {
+    "entity_count": 3,
+    "entity_name": "Aaron Zelman",
+    "entity_origin": [
+      "167",
+      "335",
+      "592"
+    ],
+    "entity_type": [
+      "PERSON"
     ]
   },
   {
@@ -7819,6 +7409,17 @@
     ],
     "entity_type": [
       "ORG"
+    ]
+  },
+  {
+    "entity_count": 3,
+    "entity_name": "Steve Watson",
+    "entity_origin": [
+      "173",
+      "240"
+    ],
+    "entity_type": [
+      "PERSON"
     ]
   },
   {
@@ -7956,6 +7557,17 @@
       "230a",
       "555",
       "571"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 3,
+    "entity_name": "George Humphrey",
+    "entity_origin": [
+      "230a",
+      "230b"
     ],
     "entity_type": [
       "PERSON"
@@ -8131,7 +7743,7 @@
     "entity_name": "John Wayne",
     "entity_origin": [
       "28",
-      "655",
+      "680",
       "89"
     ],
     "entity_type": [
@@ -8190,7 +7802,7 @@
     "entity_origin": [
       "30",
       "387",
-      "655"
+      "693"
     ],
     "entity_type": [
       "PERSON"
@@ -8233,13 +7845,14 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Battle Hymn",
+    "entity_name": "United States",
     "entity_origin": [
-      "318",
-      "335"
+      "330",
+      "519",
+      "601"
     ],
     "entity_type": [
-      "PERSON"
+      "GPE"
     ]
   },
   {
@@ -8487,18 +8100,6 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Tuck Buckford",
-    "entity_origin": [
-      "44",
-      "58"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "Colin Kaepernick",
     "entity_origin": [
       "451",
@@ -8604,17 +8205,6 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Hulk Hogan",
-    "entity_origin": [
-      "47",
-      "477"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "South Carolina",
     "entity_origin": [
       "47",
@@ -8631,7 +8221,19 @@
     "entity_origin": [
       "47",
       "631",
-      "655"
+      "696"
+    ],
+    "entity_type": [
+      "ORG"
+    ]
+  },
+  {
+    "entity_count": 3,
+    "entity_name": "Genesis Communications Network",
+    "entity_origin": [
+      "47",
+      "49",
+      "59"
     ],
     "entity_type": [
       "ORG"
@@ -8827,7 +8429,7 @@
     "entity_name": "Thomas Renz",
     "entity_origin": [
       "603",
-      "655"
+      "688"
     ],
     "entity_type": [
       "PERSON"
@@ -8859,7 +8461,7 @@
     "entity_count": 3,
     "entity_name": "Roe v. Wade",
     "entity_origin": [
-      "655",
+      "677",
       "696"
     ],
     "entity_type": [
@@ -8870,24 +8472,12 @@
     "entity_count": 3,
     "entity_name": "Dreamy Creamy",
     "entity_origin": [
-      "655",
+      "697",
       "699",
       "700"
     ],
     "entity_type": [
       "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Highland Park",
-    "entity_origin": [
-      "655",
-      "699"
-    ],
-    "entity_type": [
-      "LOC",
-      "FAC"
     ]
   },
   {
@@ -9060,17 +8650,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Tosh Plumley",
-    "entity_origin": [
-      "120",
-      "160"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Reptillians",
     "entity_origin": [
       "125",
@@ -9129,7 +8708,7 @@
     "entity_name": "Julian Huxley",
     "entity_origin": [
       "130e",
-      "655"
+      "675"
     ],
     "entity_type": [
       "PERSON"
@@ -9196,62 +8775,6 @@
     "entity_origin": [
       "138",
       "648"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "St. Patrick",
-    "entity_origin": [
-      "138",
-      "655"
-    ],
-    "entity_type": [
-      "GPE"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Andrew McCabe",
-    "entity_origin": [
-      "138",
-      "141"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "the Globalists",
-    "entity_origin": [
-      "138",
-      "347"
-    ],
-    "entity_type": [
-      "WORK_OF_ART",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Christopher",
-    "entity_origin": [
-      "138",
-      "312"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Christopher Wylie",
-    "entity_origin": [
-      "138",
-      "141"
     ],
     "entity_type": [
       "PERSON"
@@ -9358,43 +8881,10 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Doug Hagman",
-    "entity_origin": [
-      "143",
-      "146"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Mark Moreno",
     "entity_origin": [
       "144",
       "263"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Posse Comitatus",
-    "entity_origin": [
-      "146",
-      "211"
-    ],
-    "entity_type": [
-      "GPE"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Miles Kwok",
-    "entity_origin": [
-      "146",
-      "368"
     ],
     "entity_type": [
       "PERSON"
@@ -9468,6 +8958,17 @@
   },
   {
     "entity_count": 2,
+    "entity_name": "Antifa/Soros",
+    "entity_origin": [
+      "152",
+      "439"
+    ],
+    "entity_type": [
+      "ORG"
+    ]
+  },
+  {
+    "entity_count": 2,
     "entity_name": "Silver Stallion",
     "entity_origin": [
       "155",
@@ -9479,24 +8980,13 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Eric Plumley",
+    "entity_name": "Ray McGovern",
     "entity_origin": [
       "155",
-      "160"
+      "613"
     ],
     "entity_type": [
       "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "the House of Representatives",
-    "entity_origin": [
-      "155",
-      "230d"
-    ],
-    "entity_type": [
-      "ORG"
     ]
   },
   {
@@ -9553,116 +9043,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Terry Bressi",
-    "entity_origin": [
-      "160",
-      "211"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Richard Linklater",
-    "entity_origin": [
-      "160",
-      "469"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Andrew Napolitano",
-    "entity_origin": [
-      "160",
-      "222"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "American Legion",
-    "entity_origin": [
-      "160",
-      "215"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Scott Whitaker",
-    "entity_origin": [
-      "160",
-      "237"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Karen Russo",
-    "entity_origin": [
-      "160",
-      "240"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Randy Brogdon",
-    "entity_origin": [
-      "160",
-      "200"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Janine Roberts",
-    "entity_origin": [
-      "160",
-      "200"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Max Kaiser",
-    "entity_origin": [
-      "160",
-      "47"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Greg Palast",
-    "entity_origin": [
-      "160",
-      "49"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -10014,6 +9394,17 @@
   },
   {
     "entity_count": 2,
+    "entity_name": "Chuck Baldwin",
+    "entity_origin": [
+      "222",
+      "343"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 2,
     "entity_name": "Astronauts",
     "entity_origin": [
       "223",
@@ -10081,6 +9472,17 @@
   },
   {
     "entity_count": 2,
+    "entity_name": "the John Birch Society",
+    "entity_origin": [
+      "234",
+      "612"
+    ],
+    "entity_type": [
+      "ORG"
+    ]
+  },
+  {
+    "entity_count": 2,
     "entity_name": "Popular Mechanics",
     "entity_origin": [
       "237",
@@ -10103,6 +9505,17 @@
   },
   {
     "entity_count": 2,
+    "entity_name": "Queen Elizabeth",
+    "entity_origin": [
+      "240",
+      "243"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 2,
     "entity_name": "Wall Street Journal",
     "entity_origin": [
       "246",
@@ -10110,17 +9523,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Angela Merkel",
-    "entity_origin": [
-      "248",
-      "47"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -10172,7 +9574,7 @@
     "entity_name": "Chemical Ali",
     "entity_origin": [
       "254",
-      "655"
+      "659"
     ],
     "entity_type": [
       "PERSON"
@@ -10372,17 +9774,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Sandy Hook Category",
-    "entity_origin": [
-      "286",
-      "297"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Susan Rice",
     "entity_origin": [
       "28",
@@ -10428,18 +9819,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Alien Workshop",
-    "entity_origin": [
-      "298",
-      "315"
-    ],
-    "entity_type": [
-      "ORG",
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Islamophobia",
     "entity_origin": [
       "303",
@@ -10447,28 +9826,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Walid Shoebat",
-    "entity_origin": [
-      "303",
-      "320"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Katie Walsh",
-    "entity_origin": [
-      "304",
-      "321"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -10488,6 +9845,17 @@
     "entity_origin": [
       "304",
       "401"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "Martin Luther King Jr.",
+    "entity_origin": [
+      "304",
+      "450"
     ],
     "entity_type": [
       "PERSON"
@@ -10594,18 +9962,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Dylan Matthews",
-    "entity_origin": [
-      "318",
-      "335"
-    ],
-    "entity_type": [
-      "ORG",
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Plant Watch",
     "entity_origin": [
       "320",
@@ -10621,17 +9977,6 @@
     "entity_origin": [
       "321",
       "513"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Martin Luther King Jr.",
-    "entity_origin": [
-      "321",
-      "450"
     ],
     "entity_type": [
       "PERSON"
@@ -10730,7 +10075,7 @@
     "entity_name": "North America",
     "entity_origin": [
       "332",
-      "655"
+      "680"
     ],
     "entity_type": [
       "LOC"
@@ -10876,6 +10221,17 @@
     "entity_origin": [
       "349",
       "83"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "Steven Crowder",
+    "entity_origin": [
+      "350",
+      "609"
     ],
     "entity_type": [
       "PERSON"
@@ -11166,7 +10522,7 @@
     "entity_name": "Benjamin Franklin",
     "entity_origin": [
       "416",
-      "655"
+      "666"
     ],
     "entity_type": [
       "PERSON"
@@ -11226,6 +10582,17 @@
     ],
     "entity_type": [
       "ORG"
+    ]
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "republican",
+    "entity_origin": [
+      "429",
+      "57"
+    ],
+    "entity_type": [
+      "NORP"
     ]
   },
   {
@@ -11315,17 +10682,6 @@
     "entity_type": [
       "PERSON",
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Washington D.C.",
-    "entity_origin": [
-      "44",
-      "5"
-    ],
-    "entity_type": [
-      "GPE"
     ]
   },
   {
@@ -11448,6 +10804,18 @@
     ],
     "entity_type": [
       "ORG"
+    ]
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "Brain Force",
+    "entity_origin": [
+      "47",
+      "57"
+    ],
+    "entity_type": [
+      "ORG",
+      "PERSON"
     ]
   },
   {
@@ -11732,7 +11100,7 @@
     "entity_name": "National Security Study Memorandum",
     "entity_origin": [
       "574",
-      "655"
+      "663"
     ],
     "entity_type": [
       "ORG"
@@ -11851,6 +11219,17 @@
   },
   {
     "entity_count": 2,
+    "entity_name": "Kevin McCarthy",
+    "entity_origin": [
+      "643",
+      "666"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 2,
     "entity_name": "Soviet Union",
     "entity_origin": [
       "647",
@@ -11862,13 +11241,13 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Mike Tyson",
+    "entity_name": "Netherlands",
     "entity_origin": [
-      "655",
-      "692"
+      "649",
+      "702"
     ],
     "entity_type": [
-      "PERSON"
+      "GPE"
     ]
   },
   {
@@ -11877,6 +11256,28 @@
     "entity_origin": [
       "657",
       "710"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "Teddy Roosevelt",
+    "entity_origin": [
+      "658",
+      "663"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "Mike Tyson",
+    "entity_origin": [
+      "661",
+      "692"
     ],
     "entity_type": [
       "PERSON"
