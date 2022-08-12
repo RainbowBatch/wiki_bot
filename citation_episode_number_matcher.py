@@ -38,8 +38,6 @@ MANUAL_OVERRIDE = {
 
 
 def guess_associated_episode(episode_title):
-    print(episode_title)
-
     if episode_title in MANUAL_OVERRIDE:
         return MANUAL_OVERRIDE[episode_title]
 

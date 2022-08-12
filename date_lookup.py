@@ -1,9 +1,9 @@
 import box
+import kfio
 import math
 import maya
 import pandas as pd
 import re
-import kfio
 
 TIMEZONE = 'US/Eastern'
 DATE_FORMAT = "%B %#d, %Y"
@@ -35,7 +35,8 @@ def format_date(dt):
     return dt.datetime().strftime(DATE_FORMAT)
 
 
-date_listing_df = kfio.load('data/date_listing.json')
+date_listing_df = kfio.load(
+    'data/final.json')[['title', 'episode_number', 'coverage_start_date', 'coverage_end_date', 'coverage_date']]
 
 date_listing_df.coverage_date = date_listing_df.coverage_date.apply(
     canonicalize_date)
@@ -55,6 +56,7 @@ def lookup_by_epnum(episode_number):
 
     return None
 
+
 def lookup_by_maya_date(dt):
 
     df_view = date_listing_df[
@@ -68,6 +70,7 @@ def lookup_by_maya_date(dt):
         return box.Box(df_view.to_dict(orient='records')[0])
 
     return None
+
 
 date_match_regex = re.compile(
     "(?P<month>\w+) (?P<start_date>\d+)(-(?P<end_date>\d+))?, (?P<year>\d+)")
