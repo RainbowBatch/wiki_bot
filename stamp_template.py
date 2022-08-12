@@ -2,6 +2,7 @@ import io
 import kfio
 
 from jinja2 import Template
+from pygit2 import Repository
 from wiki_cleaner import simple_format
 
 
@@ -9,6 +10,10 @@ def stamp_templates():
     episodes_df = kfio.load('data/final.json')
     with open('episode.wiki.template') as episode_template_f:
         template = Template(episode_template_f.read())
+
+    git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
+
+    assert git_branch == 'bot_raw', "Please checkout bot_raw! Currently on %s." % git_branch
 
     for record in episodes_df.to_dict(orient='records'):
         raw = template.render(**record)

@@ -19,8 +19,10 @@ from string_processing import cleantitle
 from string_processing import splits
 from wiki_cleaner import format_citation_block
 from wiki_cleaner import simple_format
-from slugify import slugify
 
+
+def canonicalize_title(title):
+        return title.replace(' ', '_').replace('#', '').replace('"', '{{QUOTE}}').replace("/", "{{FORWARD_SLASH}}").replace(":", "{{COLON}}").replace("?", "{{QUESTION_MARK}}")
 
 def process_ep_record(ep_record, citations_df, category_remapping_df):
     potentially_missing_columns = set([
@@ -48,8 +50,9 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
     ep_record['prev_title'] = cleantitle(ep_record['prev_title'])
     ep_record['next_title'] = cleantitle(ep_record['next_title'])
 
-    ep_record['ofile'] = 'sample_pages/%s.wiki' % slugify(
-        ep_record['title'], separator='_')
+    ep_record['slug'] = canonicalize_title(ep_record['title'])
+
+    ep_record['ofile'] = 'kf_wiki_content/%s.wiki' % ep_record['slug']
 
     ep_record['clean_title'] = ep_record['title'].split(':')[-1].strip()
 

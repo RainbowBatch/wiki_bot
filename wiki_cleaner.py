@@ -27,7 +27,7 @@ class LineClassification(Enum):
 section_pattern = re.compile(r"==+(?P<section_name>[^=]+)==+")
 pseudosection_pattern = re.compile(r"'''''(?P<section_name>[^']+)''''':")
 citation_link_pattern = re.compile("\\[\S+ Citations\s*\\]")
-dreamy_creamy_link = "[https://www.gofundme.com/f/dreamycreamysummer Dreamy Creamy Fundraiser]"
+dreamy_creamy_link_pattern = re.compile(r"\[https://www.gofundme.com/f/dreamycreamysummer .*\]")
 
 
 def rewrite_bullet_line(line, classification):
@@ -51,7 +51,7 @@ def classify_line(line):
     if pseudosection_pattern.search(line.strip()) is not None:
         return LineClassification.PSEUDOSECTION
 
-    if line.strip() == dreamy_creamy_link:
+    if dreamy_creamy_link_pattern.search(line.strip()) is not None:
         return LineClassification.IGNORED
 
     if citation_link_pattern.search(line.strip()) is not None:
@@ -158,7 +158,7 @@ def add_kf_citation_reference_to_first_line(raw_mediawiki, reference_link, refer
         )
         split_lines.insert(
             0,
-            "This portion was reproduced from the offical Knowledge Fight website.\n",
+            "This portion was reproduced from the official Knowledge Fight website.\n",
         )
 
     split_lines[0] = add_citation_to_line(split_lines[0])
