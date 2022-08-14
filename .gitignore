@@ -3,6 +3,5 @@ __pycache__/
 secrets/
 google_credentials.json
 pywikibot/
-sample_pages/
 kf_wiki_content/
 token.json

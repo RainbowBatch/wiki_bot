@@ -1,24 +1,43 @@
 import en_core_web_sm
-import glob
 import kfio
 import pandas as pd
 import pandoc
 import spacy
 
+from box import Box
 from collections import Counter
 from collections import defaultdict
 from pprint import pprint
+from pygit2 import Repository
 from spacy import displacy
+
+git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
+
+assert git_branch == 'latest_edits', "Please checkout latest_edits! Currently on %s." % git_branch
 
 nlp = en_core_web_sm.load()
 
 entities = []
 
-for fname in glob.glob('sample_pages/*.wiki', recursive=False):
+page_listing = kfio.load('kf_wiki_content/page_listing.json')
+
+existing_entities = [
+    page_record['title']
+    for page_record in page_listing.to_dict(orient='records')
+]
+
+for page_record in page_listing.to_dict(orient='records'):
+    page_record = Box(page_record)
+
+    fname = 'kf_wiki_content/%s.wiki' % page_record.slug
     try:
 
-        with open(fname) as f:
+        with open(fname, encoding='utf-8') as f:
             S = f.read()
+
+        if '#redirect' in S:
+            print(fname, "is a redirect")
+            continue
 
         # Strip out existing links.
         S = pandoc.write(
@@ -28,8 +47,10 @@ for fname in glob.glob('sample_pages/*.wiki', recursive=False):
 
         doc = nlp(S)
 
-        entities.extend([(X.text, X.label_, fname) for X in doc.ents])
-    except:
+        entities.extend([(X.text, X.label_, page_record.title)
+                         for X in doc.ents])
+    except Exception as e:
+        print(e)
         print("Error Processing", fname)
 
 
@@ -92,6 +113,9 @@ for s, count in counter.most_common():
     rows.append([s, count, ts, os])
 
 df = pd.DataFrame(rows, columns=header)
+
+# Only include things we don't have existing links to...
+df=df[~df.entity_name.isin(existing_entities)]
 
 print(df)
 
