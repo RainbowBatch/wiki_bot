@@ -24,9 +24,9 @@ def stamp_templates():
             f.write(pretty)
 
         PAGE_RECORDS.append({
-            'title': record['title'],
+            'title': record['safe_title'],
             'slug': record['slug'],
-            #'oldid': None,
+            'oldid': None,
         })
 
     page_records_df = pd.DataFrame.from_records(PAGE_RECORDS).sort_values('title')

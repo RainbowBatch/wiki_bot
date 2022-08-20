@@ -1,3 +1,5 @@
+{%- macro wiki_link(link_text, link_dest) -%}{% if link_text == link_dest %}[[{{link_dest}}]]{% else %}[[{{link_dest}}|{{link_text}}]]{% endif %}{%- endmacro -%}
+{%- if safe_clean_title != clean_title -%}{%- raw -%}{{{%- endraw -%}DISPLAYTITLE:{{clean_title}}{%- raw -%}}}{%- endraw -%}{%- endif -%}
 {% raw %}{{{% endraw %}Episode
 |title={{clean_title}}
 |caption=[{{libsyn_page}} Listen to this episode on Libsyn]
@@ -29,18 +31,16 @@
 |oocDrop={{ooc_drop}}
 {% endif %}
 {% if prev_title is defined and prev_title is not none %}
-|previousEpisode=[[{{prev_title}}]]
+|previousEpisode={{ wiki_link(prev_title, safe_prev_title) }}
 {% endif %}
 {% if next_title is defined and next_title is not none %}
-|nextEpisode=[[{{next_title}}]]
+|nextEpisode={{ wiki_link(next_title, safe_next_title) }}
 {%endif%}
 {% raw %}}}
 {{Stub}}{% endraw %}
 
 
-
 {{ mediawiki_description }}
-
 
 
 {% if themes is defined and themes|length > 0 %}

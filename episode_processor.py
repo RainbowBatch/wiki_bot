@@ -56,6 +56,13 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
 
     ep_record['clean_title'] = ep_record['title'].split(':')[-1].strip()
 
+    ep_record['safe_title'] = ep_record['title'].replace('#', '')
+    ep_record['safe_clean_title'] = ep_record['clean_title'].replace('#', '')
+    if ep_record['prev_title'] is not None:
+        ep_record['safe_prev_title'] = ep_record['prev_title'].replace('#', '')
+    if ep_record['next_title'] is not None:
+        ep_record['safe_next_title'] = ep_record['next_title'].replace('#', '')
+
     ep_record['ooc_drop'] = cleans(ep_record['ooc_drop'])
     ep_record['beverage'] = cleans(ep_record['beverage'])
     ep_record['people'] = agressive_splits(ep_record['people'])
