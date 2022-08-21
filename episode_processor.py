@@ -54,7 +54,11 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
 
     ep_record['ofile'] = 'kf_wiki_content/%s.wiki' % ep_record['slug']
 
-    ep_record['clean_title'] = ep_record['title'].split(':')[-1].strip()
+    # TODO(woursler): Handle "Repost:" special case...
+    if ep_record['title'].startswith("Repost:"):
+        ep_record['clean_title'] = ep_record['title']
+    else:
+        ep_record['clean_title'] = ep_record['title'].split(':')[-1].strip()
 
     ep_record['safe_title'] = ep_record['title'].replace('#', '')
     ep_record['safe_clean_title'] = ep_record['clean_title'].replace('#', '')
