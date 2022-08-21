@@ -18,16 +18,9 @@ for wiki_fname in glob.glob('kf_wiki_content/*.wiki'):
     with open(wiki_fname, encoding='utf-8') as wiki_f:
         page_slug = wiki_fname[16:-5]
 
-        if "Repost{{COLON}}" in page_slug:
-            print("Unable to handle", wiki_fname)
-            continue
-
-        try:
-            page_metadata = Box(page_listing[
-                page_listing.slug == wiki_fname[16:-5]
-            ].to_dict(orient='records')[0])
-        except:
-            print("Unable to match", wiki_fname)
+        page_metadata = Box(page_listing[
+            page_listing.slug == wiki_fname[16:-5]
+        ].to_dict(orient='records')[0])
 
         page_text = wiki_f.read()
 
@@ -113,12 +106,19 @@ for wiki_fname in glob.glob('kf_wiki_content/*.wiki'):
 
         PAGE_RECORDS.append(page_metadata)
 
-#for page_metadata in PAGE_RECORDS:
-#        if 'Episodes' in page_metadata.wiki_categories:
-#            pprint(page_metadata)
-
-
 
 page_records_df = pd.DataFrame.from_records(PAGE_RECORDS).sort_values('title')
 
+redirect_header = ['from', 'to']
+redirect_rows = []
+for page_metadata in PAGE_RECORDS:
+       if 'redirect' in page_metadata:
+            redirect_rows.append({
+                'from': page_metadata.title.strip(),
+                'to': page_metadata.redirect.strip(),
+            })
+
+redirects_df = pd.DataFrame(redirect_rows, columns=redirect_header)
+
 kfio.save(page_records_df, 'data/scraped_page_data.json')
+kfio.save(redirects_df, 'data/wiki_redirects.json')

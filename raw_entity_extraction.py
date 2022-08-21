@@ -20,11 +20,9 @@ nlp = en_core_web_sm.load()
 entities = []
 
 page_listing = kfio.load('kf_wiki_content/page_listing.json')
+known_missing_pages = kfio.load('data/missing_pages.json')
 
-existing_entities = [
-    page_record['title']
-    for page_record in page_listing.to_dict(orient='records')
-]
+recognized_entities = page_listing.title.to_list() + known_missing_pages.title.to_list()
 
 for page_record in page_listing.to_dict(orient='records'):
     page_record = Box(page_record)
@@ -114,8 +112,8 @@ for s, count in counter.most_common():
 
 df = pd.DataFrame(rows, columns=header)
 
-# Only include things we don't have existing links to...
-df=df[~df.entity_name.isin(existing_entities)]
+# Only include things we don't have existing knowledge of...
+df=df[~df.entity_name.isin(recognized_entities)]
 
 print(df)
 

@@ -19359,7 +19359,7 @@
     "length": "01:24:36",
     "libsyn_link": "https://knowledgefight.libsyn.com/585-august-8-2021",
     "nextEpisode": "25(Repost)",
-    "oldid": 1971,
+    "oldid": 2325,
     "oocDrop": "I don't attack people because it's god's plan to attack them",
     "previousEpisode": "584",
     "question": null,
@@ -19397,7 +19397,7 @@
     "length": "02:05:54",
     "libsyn_link": "https://knowledgefight.libsyn.com/586-august-11-12-2021",
     "nextEpisode": "587",
-    "oldid": 1973,
+    "oldid": 2326,
     "oocDrop": null,
     "previousEpisode": "25(Repost)",
     "question": null,
@@ -25025,7 +25025,7 @@
     "oocDrop": null,
     "previousEpisode": null,
     "question": null,
-    "redirect": "Alexandria Ocasio-Cortez\u200f\u200e",
+    "redirect": "Alexandria Ocasio-Cortez",
     "slug": "AOC",
     "title": "AOC",
     "wiki_categories": []
@@ -25197,7 +25197,7 @@
     "oocDrop": null,
     "previousEpisode": null,
     "question": null,
-    "redirect": "Alexandria Ocasio-Cortez\u200f\u200e",
+    "redirect": "Alexandria Ocasio-Cortez",
     "slug": "Alexandria_Ocasio_Cortez",
     "title": "Alexandria Ocasio Cortez",
     "wiki_categories": []
@@ -25731,7 +25731,7 @@
     "oocDrop": null,
     "previousEpisode": null,
     "question": null,
-    "redirect": "Dave Daubenmire\u200f\u200e",
+    "redirect": "Dave Daubenmire",
     "slug": "Coach_Dave",
     "title": "Coach Dave",
     "wiki_categories": []
@@ -26515,7 +26515,7 @@
     "length": "00:52:32",
     "libsyn_link": "https://knowledgefight.libsyn.com/knowledge-fight-infowars-roulette-1",
     "nextEpisode": "11",
-    "oldid": 1415,
+    "oldid": 2327,
     "oocDrop": null,
     "previousEpisode": "10",
     "question": null,
@@ -26561,7 +26561,7 @@
     "length": "01:46:03",
     "libsyn_link": "https://knowledgefight.libsyn.com/knowledge-fight-infowars-roulette-2",
     "nextEpisode": "183",
-    "oldid": 2244,
+    "oldid": 2324,
     "oocDrop": null,
     "previousEpisode": "182",
     "question": null,
@@ -27454,7 +27454,7 @@
     "oocDrop": null,
     "previousEpisode": null,
     "question": null,
-    "redirect": "Vladimir Putin\u200f\u200e",
+    "redirect": "Vladimir Putin",
     "slug": "Putin",
     "title": "Putin",
     "wiki_categories": []
@@ -27483,6 +27483,61 @@
     "wiki_categories": [
       "People",
       "Alex Jones Show guests"
+    ]
+  },
+  {
+    "airDate": null,
+    "appearance": null,
+    "beverage": null,
+    "coverageDate": null,
+    "coverageEndDate": null,
+    "coverageStartDate": null,
+    "episodeNumber": null,
+    "episodeType": null,
+    "hosts": null,
+    "is_stub": false,
+    "length": null,
+    "libsyn_link": null,
+    "nextEpisode": null,
+    "oldid": 2330,
+    "oocDrop": null,
+    "previousEpisode": null,
+    "question": null,
+    "redirect": "Repost: Episode 25",
+    "slug": "Repost{{COLON}}_Episode",
+    "title": "Repost: Episode",
+    "wiki_categories": []
+  },
+  {
+    "airDate": "August 13, 2021",
+    "appearance": [
+      "Dennis Montgomery"
+    ],
+    "beverage": null,
+    "coverageDate": null,
+    "coverageEndDate": "March 24, 2017",
+    "coverageStartDate": "March 20, 2017",
+    "episodeNumber": "25(Repost)",
+    "episodeType": [
+      "Deep Dive",
+      "Present Day"
+    ],
+    "hosts": null,
+    "is_stub": true,
+    "length": "02:54:17",
+    "libsyn_link": "https://knowledgefight.libsyn.com/repost-episode-25",
+    "nextEpisode": "586",
+    "oldid": 2328,
+    "oocDrop": null,
+    "previousEpisode": "585",
+    "question": null,
+    "redirect": null,
+    "slug": "Repost{{COLON}}_Episode_25",
+    "title": "Repost: Episode 25",
+    "wiki_categories": [
+      "Episodes",
+      "Deep Dive",
+      "Present Day"
     ]
   },
   {
@@ -28060,7 +28115,7 @@
       "Pat Reilly"
     ],
     "beverage": "Arizona Prescription Energy Tonic",
-    "coverageDate": "August 13, 2015",
+    "coverageDate": "August 20, 2015",
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "S005",
@@ -28072,7 +28127,7 @@
     "length": "00:47:20",
     "libsyn_link": "https://knowledgefight.libsyn.com/knowledge-fight-the-halloween-story",
     "nextEpisode": "87",
-    "oldid": 2249,
+    "oldid": 2329,
     "oocDrop": null,
     "previousEpisode": "86",
     "question": null,

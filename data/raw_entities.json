@@ -139,7 +139,7 @@
     ]
   },
   {
-    "entity_count": 112,
+    "entity_count": 113,
     "entity_name": "Alex Jones'",
     "entity_origin": [
       "114: Piers Morgan Interview",
@@ -247,6 +247,7 @@
       "Edward Group",
       "Globalists",
       "InfoWars",
+      "Steve Pieczenik",
       "Ted Anderson",
       "The Protocols of the Elders of Zion"
     ],
@@ -310,129 +311,6 @@
       "643: January 28, 2022",
       "68: September 19-28, 2015",
       "99: November 1, 2017"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 77,
-    "entity_name": "Bill Gates",
-    "entity_origin": [
-      "270: The Rogan Return",
-      "305: February 1, 2013",
-      "326: July 26-29, 2019",
-      "357: October 16, 2019",
-      "410: March 19-20, 2020",
-      "416: April 2, 2020",
-      "417: April 5, 2020",
-      "421: April 16, 2020",
-      "422: April 17, 2020",
-      "425: April 23-24, 2020",
-      "427: April 29-30, 2020",
-      "430: May 5-7, 2020",
-      "432: May 10-11, 2020",
-      "433: May 12-13, 2020",
-      "435: May 18-21, 2020",
-      "436: May 22, 2020",
-      "437: Gawain With a Telescope",
-      "438: May 26-28, 2020",
-      "440: June 1-2, 2020",
-      "442: June 5, 2020",
-      "444: June 11, 2020",
-      "450: June 25-26, 2020",
-      "453: July 2, 2020",
-      "463: July 28-30, 2020",
-      "464: July 31-August 1, 2020",
-      "478: September 4, 2020",
-      "480: September 9-10, 2020",
-      "483: September 17, 2020",
-      "490: October 9, 2020",
-      "492: October 13, 2020",
-      "496: October 22-23, 2020",
-      "506: November 22-24, 2020",
-      "510: Fourth Time Is Not A Charm",
-      "515: December 28-29, 2020",
-      "517: January 5-6, 2021",
-      "530: February 10-11, 2021",
-      "531: February 14, 2021",
-      "532: February 15, 2021",
-      "535: October 16, 2014",
-      "540: March 15-16, 2021",
-      "545: March 30-31, 2021",
-      "547: April 8, 2021",
-      "549: April 13-14, 2021",
-      "553: April 26-27, 2021",
-      "556: May 6-7, 2021",
-      "585: August 8, 2021",
-      "612: October 31, 2021",
-      "624: November 30, 2021",
-      "626: December 9, 2021",
-      "632: Christmas Message and More"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 75,
-    "entity_name": "Steve Pieczenik",
-    "entity_origin": [
-      "107: December 12, 2014",
-      "115: January 2, 2018",
-      "121: April 1-2, 2013",
-      "131: David Lynch Interview",
-      "138: March 13-15, 2018",
-      "139: St. Patrick's Day Special Report",
-      "150: Alex Jones Attempts A Face Turn",
-      "151: April 16, 2018",
-      "245: December 24, 2018",
-      "270: The Rogan Return",
-      "338: March 27-28, 2013",
-      "339: March 29-April 1, 2013",
-      "340: All About Steve",
-      "343: April 3-8, 2013",
-      "346: April 11-14, 2013",
-      "352: April 17, 2013",
-      "354: October 8-9, 2019",
-      "369: November 13, 2019",
-      "373: April 24, 2013",
-      "382: December 23-27, 2019",
-      "384: January 3, 2020",
-      "386: January 8, 2020",
-      "387: May 13, 2014",
-      "393: January 28, 2020",
-      "399: February 12-14, 2020",
-      "402: February 20, 2020",
-      "406: March 1-4, 2020",
-      "408: March 11-13, 2020",
-      "412: March 24-25, 2020",
-      "41: May 12, 2017",
-      "443: June 9, 2020",
-      "445: June 12, 2020",
-      "464: July 31-August 1, 2020",
-      "473: August 20-21, 2020",
-      "480: September 9-10, 2020",
-      "494: October 19, 2020",
-      "500: November 5-6, 2020",
-      "502: Dan's Cara-Vanity Project Part 1",
-      "508: December 1-2, 2020",
-      "513: December 18, 2020",
-      "520: January 12-13, 2021",
-      "522: January 14-17, 2021",
-      "523: January 18-19, 2021",
-      "527: February 4, 2021",
-      "535: October 16, 2014",
-      "568: June 19, 2021",
-      "641: Formulaic Objections Part 4",
-      "77: August 23, 2017",
-      "78: October 12-15, 2015",
-      "80: October 16-26, 2015",
-      "90: October 10, 2017",
-      "93: 2015 Investigation Last Looks",
-      "98: May 2-3, 2012",
-      "David Knight"
     ],
     "entity_type": [
       "PERSON"
@@ -513,140 +391,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 60,
-    "entity_name": "Donald Trump",
-    "entity_origin": [
-      "103: January 17, 2016",
-      "141: March 20-22, 2018",
-      "148: June 1-3, 2009",
-      "150: Alex Jones Attempts A Face Turn",
-      "151: April 16, 2018",
-      "155: January 7-9, 2009",
-      "226: November 7, 2018",
-      "233: November 28, 2018",
-      "251: January 8, 2019",
-      "259: January 27-29, 2019",
-      "270: The Rogan Return",
-      "330: Magic Coins And Sheep Nations",
-      "36: June 29, 2015",
-      "380: December 19-20, 2019",
-      "40: May 10, 2017",
-      "41: May 12, 2017",
-      "45: May 25, 2017",
-      "46: June 18, 2015",
-      "47: June 19-July 5, 2015",
-      "489: October 2-4, 2020",
-      "48: May 31, 2017",
-      "49: July 6-13. 2015",
-      "517: January 5-6, 2021",
-      "52: July 14-21, 2015",
-      "56: July 22-Aug 11, 2015",
-      "574: May 28-29, 2003",
-      "577: July 13, 2021",
-      "57: August 12-16, 2015",
-      "584: August 5, 2021",
-      "5: January 19, 2017",
-      "74: October 4-6, 2015",
-      "76: October 7-11, 2015",
-      "80: October 16-26, 2015",
-      "86: September 22, 2017",
-      "93: 2015 Investigation Last Looks",
-      "Notable Legal Proceedings",
-      "Roger Stone",
-      "Webster Tarpley"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 55,
-    "entity_name": "Project Camelot",
-    "entity_origin": [
-      "125: Project Camelot's War In Heaven",
-      "149: The Press Conference",
-      "153: More Mark Richards Fun",
-      "156: Gaseous Beings and Antiques",
-      "159: Mantids and Chakra Attacks",
-      "171: Loosh and Let Live",
-      "177: Sweary Kerry and the Racist Alien",
-      "187: Magic Cheesecloth and Secret Pleiadians",
-      "193: Big Skeletons and Pencil Ink",
-      "201: A New Messiah and The Plunger Toss",
-      "204: Sweary Kerry's Larry",
-      "207: Bus Station Photography and The Magic of Zoom",
-      "212: Matrix Schemes and Billions In Liens",
-      "217: Space Liars and Dragon Moths",
-      "223: A Progressive Space Diplomat",
-      "229: Mars Germans and Moon Leases",
-      "23: March 16-17, 2017",
-      "250: Remote Poisoners And Crypto Bigotry",
-      "260: Aliens Need Editors",
-      "280: Raptor Weddings and Sardinian Spiders",
-      "284: April 12, 2019",
-      "291: Feline Contessas And Canine Capitalists",
-      "293: May 2-3, 2019",
-      "302: Discernment Overload",
-      "313: June 23-24, 2019",
-      "318: July 5, 2019",
-      "324: Bilderberg Speeches",
-      "332: Anunnaki Stasis and Emerald Treaties",
-      "359: It's All Legs",
-      "362: There Is No Mermaid",
-      "372: November 20-21, 2019",
-      "400: One Out Of Five Seems High",
-      "405: Root Races and Terminated Spiders",
-      "419: Disease Denial and Vampire Affirmation",
-      "431: Smash-N-Grab Spy Jobs",
-      "437: Gawain With a Telescope",
-      "476: Moon Colonies Part 2",
-      "479: The Devil Went Down To Kiev",
-      "67: Protocols of Zion",
-      "698: For Squatch, There Are No Heroes",
-      "79: Meet Captain Mark Richards",
-      "87: Mark Richards Revisited",
-      "95: Project Camelot Break"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 53,
-    "entity_name": "Glenn Beck",
-    "entity_origin": [
-      "160: January 22-25, 2009",
-      "167: February 4-5, 2009",
-      "203: March 2-4, 2009",
-      "216: November 11, 2010",
-      "219: March 13, 2009",
-      "234: March 26, 2009",
-      "237: March 27, 2009",
-      "243: April 1-2, 2009",
-      "246: April 5-6, 2009",
-      "252: April 7-8, 2009",
-      "258: April 12-13, 2009",
-      "261: February 5-6, 2019",
-      "288: January 7-9, 2013",
-      "294: January 15-16, 2013",
-      "298: January 20-23, 2013",
-      "308: February 6-8, 2013",
-      "317: February 19-20, 2013",
-      "343: April 3-8, 2013",
-      "344: April 9-10, 2013",
-      "355: April 18, 2013",
-      "364: April 21-22, 2013",
-      "474: June 6, 2016",
-      "612: October 31, 2021",
-      "625: December 5, 2021",
-      "626: December 9, 2021",
-      "639: January 17, 2022"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -745,69 +489,6 @@
     ]
   },
   {
-    "entity_count": 37,
-    "entity_name": "George Soros",
-    "entity_origin": [
-      "10: February 6, 2017",
-      "118: January 10-11, 2018",
-      "138: March 13-15, 2018",
-      "139: St. Patrick's Day Special Report",
-      "143: March 25-31 Part 1",
-      "146: April 4, 2018",
-      "148: June 1-3, 2009",
-      "158: January 21, 2009",
-      "1: January 2, 2017",
-      "206: March 4-5, 2009",
-      "216: November 11, 2010",
-      "220: October 23, 2018",
-      "243: April 1-2, 2009",
-      "264: February 11-13, 2019",
-      "334: August 21-22, 2019",
-      "343: April 3-8, 2013",
-      "352: April 17, 2013",
-      "363: October 30, 2019",
-      "370: November 14-15, 2019",
-      "374: November 25, 2019",
-      "417: April 5, 2020",
-      "644: February 2, 2022",
-      "649: February 14, 2022",
-      "85: September 20-21, 2017",
-      "Gavin McInnes"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 31,
-    "entity_name": "Mark Richards",
-    "entity_origin": [
-      "153: More Mark Richards Fun",
-      "156: Gaseous Beings and Antiques",
-      "159: Mantids and Chakra Attacks",
-      "171: Loosh and Let Live",
-      "187: Magic Cheesecloth and Secret Pleiadians",
-      "193: Big Skeletons and Pencil Ink",
-      "217: Space Liars and Dragon Moths",
-      "280: Raptor Weddings and Sardinian Spiders",
-      "291: Feline Contessas And Canine Capitalists",
-      "302: Discernment Overload",
-      "353: Mark Richards Pt. 11",
-      "362: There Is No Mermaid",
-      "371: Canonical Space Weirdness",
-      "405: Root Races and Terminated Spiders",
-      "60: Mars Colonies",
-      "629: Black Goo and Space Covid",
-      "698: For Squatch, There Are No Heroes",
-      "79: Meet Captain Mark Richards",
-      "87: Mark Richards Revisited"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
     "entity_count": 28,
     "entity_name": "California",
     "entity_origin": [
@@ -865,135 +546,6 @@
     ],
     "entity_type": [
       "GPE"
-    ]
-  },
-  {
-    "entity_count": 27,
-    "entity_name": "Thomas Jefferson",
-    "entity_origin": [
-      "140: February 18, 2011",
-      "230E: Obama Deception, Part 5",
-      "315: February 17-18, 2013",
-      "341: September 5, 2019",
-      "343: April 3-8, 2013",
-      "350: September 29-30, 2019",
-      "359: It's All Legs",
-      "367: April 23, 2013",
-      "415: April 1, 2020",
-      "424: April 21-22, 2020",
-      "426: April 27-28, 2020",
-      "432: May 10-11, 2020",
-      "469: August 12-13, 2020",
-      "477: September 3, 2020",
-      "513: December 18, 2020",
-      "575: July 4, 2021",
-      "585: August 8, 2021",
-      "612: October 31, 2021",
-      "658: It's Pretty Easy Being Greene",
-      "Webster Tarpley"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 27,
-    "entity_name": "David Hogg",
-    "entity_origin": [
-      "142: March 23, 2018",
-      "143: March 25-31 Part 1",
-      "145: April 2, 2018",
-      "146: April 4, 2018",
-      "192: August 10, 2018",
-      "329: August 4-5, 2019",
-      "390: Grab Bag Minisode",
-      "Mike Adams"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 27,
-    "entity_name": "Stewart Rhodes",
-    "entity_origin": [
-      "222: March 15-19, 2009",
-      "252: April 7-8, 2009",
-      "277: March 15, 2019",
-      "315: February 17-18, 2013",
-      "316: July 1, 2019",
-      "349: April 15-16, 2013",
-      "352: April 17, 2013",
-      "361: April 19, 2013",
-      "368: November 11-12, 2019",
-      "389: January 15-17, 2020",
-      "406: March 1-4, 2020",
-      "451: June 29-30, 2020",
-      "502: Dan's Cara-Vanity Project Part 1",
-      "524: Inauguration 2021",
-      "526: January 28-31, 2021",
-      "539: March 10, 2021",
-      "540: March 15-16, 2021",
-      "545: March 30-31, 2021",
-      "637: January 13, 2022",
-      "638: See You At The Cross-Rhodes",
-      "642: January 24, 2022",
-      "677: May 4, 2022"
-    ],
-    "entity_type": [
-      "ORG",
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 26,
-    "entity_name": "Bill Cooper",
-    "entity_origin": [
-      "109: December 4, 2017",
-      "249: Predicting 9/11",
-      "381: Making It Big With Silent Weapons",
-      "390: Grab Bag Minisode",
-      "398: February 9-10, 2020",
-      "399: February 12-14, 2020",
-      "414: Bill Cooper's Ambitiously Bad Idea",
-      "420: The Militia Tech Support Call-In Show",
-      "434: Bill Cooper Covers OKC Part 1",
-      "439: May 29-31, 2020",
-      "447: Bill Cooper Covers OKC Part 2",
-      "450: June 25-26, 2020",
-      "560: May 12-13, 2003"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 26,
-    "entity_name": "Hillary Clinton",
-    "entity_origin": [
-      "135: The Wikileaks Press Conference",
-      "141: March 20-22, 2018",
-      "142: March 23, 2018",
-      "334: August 21-22, 2019",
-      "40: May 10, 2017",
-      "41: May 12, 2017",
-      "420: The Militia Tech Support Call-In Show",
-      "422: April 17, 2020",
-      "447: Bill Cooper Covers OKC Part 2",
-      "450: June 25-26, 2020",
-      "456: July 9-11, 2020",
-      "46: June 18, 2015",
-      "47: June 19-July 5, 2015",
-      "495: November 4-6, 2016",
-      "49: July 6-13. 2015",
-      "512: December 16-17, 2020",
-      "651: February 18, 2022",
-      "87: Mark Richards Revisited",
-      "Larry Nichols",
-      "Satan"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -1062,57 +614,6 @@
     ]
   },
   {
-    "entity_count": 25,
-    "entity_name": "Bill Clinton",
-    "entity_origin": [
-      "135: The Wikileaks Press Conference",
-      "141: March 20-22, 2018",
-      "152: April 18, 2018",
-      "300: May 21-22, 2019",
-      "329: August 4-5, 2019",
-      "390: Grab Bag Minisode",
-      "414: Bill Cooper's Ambitiously Bad Idea",
-      "434: Bill Cooper Covers OKC Part 1",
-      "447: Bill Cooper Covers OKC Part 2",
-      "455: July 7-8, 2020",
-      "495: November 4-6, 2016",
-      "544: May 1, 2003",
-      "579: May 30, 2003",
-      "59: August 17-18, 2015",
-      "612: October 31, 2021",
-      "Larry Nichols"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 25,
-    "entity_name": "Nick Fuentes",
-    "entity_origin": [
-      "363: October 30, 2019",
-      "403: February 24, 2020",
-      "404: Mr. Jones Goes To CPAC",
-      "483: September 17, 2020",
-      "505: November 18, 2020",
-      "512: December 16-17, 2020",
-      "517: January 5-6, 2021",
-      "523: January 18-19, 2021",
-      "553: April 26-27, 2021",
-      "556: May 6-7, 2021",
-      "568: June 19, 2021",
-      "575: July 4, 2021",
-      "576: July 9, 2021",
-      "578: A Little Side Track",
-      "580: July 20-21, 2021",
-      "635: January 6-7, 2022"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
     "entity_count": 24,
     "entity_name": "White House",
     "entity_origin": [
@@ -1143,27 +644,6 @@
     ]
   },
   {
-    "entity_count": 24,
-    "entity_name": "Mike Lindell",
-    "entity_origin": [
-      "511: The 12/12 Rallies",
-      "528: 2021 Super Bowl Commercial Spectacular",
-      "565: June 10, 2021",
-      "584: August 5, 2021",
-      "586: August 11-12, 2021",
-      "589: August 18-20, 2021",
-      "593: September 2, 2021",
-      "597: September 14, 2021",
-      "601: June 16, 2003",
-      "639: January 17, 2022",
-      "658: It's Pretty Easy Being Greene",
-      "Repost: Episode"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
     "entity_count": 22,
     "entity_name": "Rothschild",
     "entity_origin": [
@@ -1187,139 +667,6 @@
     ]
   },
   {
-    "entity_count": 22,
-    "entity_name": "Joel Skousen",
-    "entity_origin": [
-      "100: January 6-7, 2016",
-      "120: January 27, 2016",
-      "150: Alex Jones Attempts A Face Turn",
-      "310: June 13-14, 2019",
-      "336: March 24-26, 2013",
-      "354: October 8-9, 2019",
-      "364: April 21-22, 2013",
-      "373: April 24, 2013",
-      "385: January 6, 2020",
-      "403: February 24, 2020",
-      "408: March 11-13, 2020",
-      "463: July 28-30, 2020",
-      "515: December 28-29, 2020",
-      "518: January 7-8, 2021",
-      "520: January 12-13, 2021",
-      "534: February 19, 2021",
-      "564: May 15-20, 2003",
-      "647: February 8, 2022",
-      "80: October 16-26, 2015",
-      "Globalists"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 22,
-    "entity_name": "Leo Zagami",
-    "entity_origin": [
-      "130D: Endgame, Part 4",
-      "204: Sweary Kerry's Larry",
-      "212: Matrix Schemes and Billions In Liens",
-      "242: December 18-19, 2018",
-      "264: February 11-13, 2019",
-      "318: July 5, 2019",
-      "329: August 4-5, 2019",
-      "331: March 13-14, 2013",
-      "333: August 16, 2019",
-      "340: All About Steve",
-      "348: September 24-25, 2019",
-      "428: May 1, 2020",
-      "580: July 20-21, 2021",
-      "61: July 5, 2017",
-      "653: February 25, 2022",
-      "654: February 27, 2022",
-      "76: October 7-11, 2015"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 21,
-    "entity_name": "Michael Savage",
-    "entity_origin": [
-      "122 LIVE: March 1-2, 2012",
-      "136: March 30-31, 2008",
-      "194: February 22-24, 2009",
-      "203: March 2-4, 2009",
-      "22: March 14, 2017",
-      "242: December 18-19, 2018",
-      "289: January 10-13, 2013",
-      "321: February 24-26, 2013",
-      "430: May 5-7, 2020",
-      "493: February 16, 2016",
-      "544: May 1, 2003",
-      "599: June 13, 2003",
-      "613: June 24-25, 2003",
-      "634: July 11, 2003",
-      "667: July 25, 2003",
-      "78: October 12-15, 2015"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 21,
-    "entity_name": "Ali Alexander",
-    "entity_origin": [
-      "469: August 12-13, 2020",
-      "475: August 24-26, 2020",
-      "484: September 18-19, 2020",
-      "500: November 5-6, 2020",
-      "501: November 7-8, 2020",
-      "504: November 16-17, 2020",
-      "505: November 18, 2020",
-      "511: The 12/12 Rallies",
-      "517: January 5-6, 2021",
-      "520: January 12-13, 2021",
-      "528: 2021 Super Bowl Commercial Spectacular",
-      "614: The Purge of Gates",
-      "637: January 13, 2022",
-      "638: See You At The Cross-Rhodes",
-      "642: January 24, 2022",
-      "671: April 13, 2022"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 21,
-    "entity_name": "Klaus Schwab",
-    "entity_origin": [
-      "502: Dan's Cara-Vanity Project Part 1",
-      "508: December 1-2, 2020",
-      "509: December 3-4, 2020",
-      "572: June 28-30, 2021",
-      "598: September 17, 2021",
-      "618: November 15, 2021",
-      "624: November 30, 2021",
-      "626: December 9, 2021",
-      "631: December 20, 2021",
-      "632: Christmas Message and More",
-      "637: January 13, 2022",
-      "643: January 28, 2022",
-      "644: February 2, 2022",
-      "651: February 18, 2022",
-      "653: February 25, 2022",
-      "662: March 22, 2022",
-      "675: April 25, 2022"
-    ],
-    "entity_type": [
-      "FAC",
-      "ORG"
-    ]
-  },
-  {
     "entity_count": 20,
     "entity_name": "Sandra Bullock",
     "entity_origin": [
@@ -1335,50 +682,6 @@
       "67: Protocols of Zion",
       "74: October 4-6, 2015",
       "75: January 7, 2011"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 20,
-    "entity_name": "Brian Stelter",
-    "entity_origin": [
-      "117: January 8, 2018",
-      "118: January 10-11, 2018",
-      "131: David Lynch Interview",
-      "195: August 17, 2018",
-      "202: September 4-6, 2018",
-      "438: May 26-28, 2020",
-      "477: September 3, 2020",
-      "491: October 12, 2020",
-      "505: November 18, 2020",
-      "522: January 14-17, 2021",
-      "576: July 9, 2021",
-      "639: January 17, 2022",
-      "644: February 2, 2022",
-      "8: January 26-27, 2017",
-      "InfoWars Roulette 2"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 20,
-    "entity_name": "George Floyd",
-    "entity_origin": [
-      "438: May 26-28, 2020",
-      "439: May 29-31, 2020",
-      "440: June 1-2, 2020",
-      "442: June 5, 2020",
-      "443: June 9, 2020",
-      "450: June 25-26, 2020",
-      "470: ShadowGate",
-      "491: October 12, 2020",
-      "517: January 5-6, 2021",
-      "539: March 10, 2021"
     ],
     "entity_type": [
       "PERSON"
@@ -1461,51 +764,6 @@
   },
   {
     "entity_count": 17,
-    "entity_name": "Millie Weaver",
-    "entity_origin": [
-      "108: November 30, 2017",
-      "152: April 18, 2018",
-      "290: April 25-26, 2019",
-      "329: August 4-5, 2019",
-      "391: January 22, 2020",
-      "404: Mr. Jones Goes To CPAC",
-      "439: May 29-31, 2020",
-      "45: May 25, 2017",
-      "470: ShadowGate",
-      "471: August 14-16, 2020",
-      "472: August 17-19, 2020",
-      "473: August 20-21, 2020",
-      "512: December 16-17, 2020",
-      "73: August 12, 2017"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 17,
-    "entity_name": "Tucker Carlson",
-    "entity_origin": [
-      "199: August 29, 2018",
-      "407: March 5-10, 2020",
-      "454: December 17, 2013",
-      "457: July 12-13, 2020",
-      "458: July 14, 2020",
-      "474: June 6, 2016",
-      "612: October 31, 2021",
-      "614: The Purge of Gates",
-      "625: December 5, 2021",
-      "635: January 6-7, 2022",
-      "637: January 13, 2022"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG",
-      "WORK_OF_ART"
-    ]
-  },
-  {
-    "entity_count": 17,
     "entity_name": "Bohemian Grove",
     "entity_origin": [
       "329: August 4-5, 2019",
@@ -1581,28 +839,6 @@
     "entity_type": [
       "ORG",
       "FAC"
-    ]
-  },
-  {
-    "entity_count": 16,
-    "entity_name": "Bill Maher",
-    "entity_origin": [
-      "188: August 1, 2018",
-      "406: March 1-4, 2020",
-      "410: March 19-20, 2020",
-      "488: The First Debate Spectacular",
-      "491: October 12, 2020",
-      "497: Third Try's A Charm",
-      "527: February 4, 2021",
-      "551: April 20-21, 2021",
-      "553: April 26-27, 2021",
-      "583: August 1, 2021",
-      "590: August 24, 2021",
-      "640: January 22, 2022"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
     ]
   },
   {
@@ -1698,105 +934,6 @@
     ]
   },
   {
-    "entity_count": 15,
-    "entity_name": "Bernie Sanders",
-    "entity_origin": [
-      "115: January 2, 2018",
-      "126: February 2, 2018 (Special Report)",
-      "137: March 12, 2018",
-      "144: March 25-31, Part 2",
-      "211: March 10, 2009",
-      "227: March 23, 2009",
-      "273: March 5-6, 2019",
-      "300: May 21-22, 2019",
-      "340: All About Steve",
-      "389: January 15-17, 2020",
-      "398: February 9-10, 2020",
-      "403: February 24, 2020",
-      "47: June 19-July 5, 2015",
-      "49: July 6-13. 2015"
-    ],
-    "entity_type": [
-      "ORG",
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 15,
-    "entity_name": "Kerry Cassidy",
-    "entity_origin": [
-      "125: Project Camelot's War In Heaven",
-      "156: Gaseous Beings and Antiques",
-      "171: Loosh and Let Live",
-      "223: A Progressive Space Diplomat",
-      "232: Reverend Manning",
-      "291: Feline Contessas And Canine Capitalists",
-      "302: Discernment Overload",
-      "324: Bilderberg Speeches",
-      "400: One Out Of Five Seems High",
-      "437: Gawain With a Telescope",
-      "698: For Squatch, There Are No Heroes",
-      "87: Mark Richards Revisited",
-      "95: Project Camelot Break"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 15,
-    "entity_name": "David Duke",
-    "entity_origin": [
-      "136: March 30-31, 2008",
-      "388: January 12-13, 2020",
-      "47: June 19-July 5, 2015",
-      "57: August 12-16, 2015",
-      "59: August 17-18, 2015",
-      "62: August 19-26, 2015",
-      "Ron Paul"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 15,
-    "entity_name": "Carpe Donktum",
-    "entity_origin": [
-      "319: July 7-8, 2019",
-      "334: August 21-22, 2019",
-      "348: September 24-25, 2019",
-      "369: November 13, 2019",
-      "449: June 23-24, 2020",
-      "460: Donk's Dojo"
-    ],
-    "entity_type": [
-      "ORG",
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 14,
-    "entity_name": "Jerome Corsi",
-    "entity_origin": [
-      "113: February 21-23, 2014",
-      "149: The Press Conference",
-      "248: January 2, 2019",
-      "291: Feline Contessas And Canine Capitalists",
-      "298: January 20-23, 2013",
-      "301: January 24-28, 2013",
-      "401: Formulaic Objections Part 3",
-      "43: May 17, 2017",
-      "45: May 25, 2017",
-      "49: July 6-13. 2015",
-      "53: June 12, 2017"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
     "entity_count": 14,
     "entity_name": "Rockefeller",
     "entity_origin": [
@@ -1884,67 +1021,6 @@
     ]
   },
   {
-    "entity_count": 14,
-    "entity_name": "Michelle Obama",
-    "entity_origin": [
-      "154: April 23, 2018",
-      "16: February 24, 2017",
-      "238: Coach Dave",
-      "273: March 5-6, 2019",
-      "309: June 10-11, 2019",
-      "363: October 30, 2019",
-      "473: August 20-21, 2020",
-      "47: June 19-July 5, 2015",
-      "512: December 16-17, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 14,
-    "entity_name": "Jim Bakker",
-    "entity_origin": [
-      "175: Giants And Bonus Potatoes",
-      "180: Heresy and God Kings",
-      "184: Godly Particles and Illiteracy",
-      "191: Blood Moons and Our First Call-In",
-      "204: Sweary Kerry's Larry",
-      "330: Magic Coins And Sheep Nations",
-      "359: It's All Legs",
-      "365: She Doesn't Do Politics",
-      "392: January 24, 2020",
-      "399: February 12-14, 2020",
-      "466: August 5-6, 2020",
-      "553: April 26-27, 2021",
-      "596: Possibly Too Much Wacky"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 14,
-    "entity_name": "Mike Flynn",
-    "entity_origin": [
-      "346: April 11-14, 2013",
-      "41: May 12, 2017",
-      "432: May 10-11, 2020",
-      "48: May 31, 2017",
-      "511: The 12/12 Rallies",
-      "516: December 31, 2020- January 1, 2021",
-      "518: January 7-8, 2021",
-      "618: November 15, 2021",
-      "619: November 16, 2021",
-      "646: February 6, 2022",
-      "697: June 29, 2022",
-      "93: 2015 Investigation Last Looks"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
     "entity_count": 13,
     "entity_name": "South Africa",
     "entity_origin": [
@@ -1962,62 +1038,6 @@
     ],
     "entity_type": [
       "GPE"
-    ]
-  },
-  {
-    "entity_count": 13,
-    "entity_name": "Anderson Cooper",
-    "entity_origin": [
-      "107: December 12, 2014",
-      "230A: Obama Deception, Part 1",
-      "236: December 4-5, 2018",
-      "306: June 4-5, 2019",
-      "398: February 9-10, 2020",
-      "464: July 31-August 1, 2020",
-      "506: November 22-24, 2020",
-      "632: Christmas Message and More"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 13,
-    "entity_name": "David Rockefeller",
-    "entity_origin": [
-      "107: December 12, 2014",
-      "112: December 15, 2017",
-      "130B: Endgame, Part 2",
-      "130C: Endgame, Part 3",
-      "188: August 1, 2018",
-      "189: February 19-20, 2009",
-      "216: November 11, 2010",
-      "427: April 29-30, 2020",
-      "435: May 18-21, 2020",
-      "458: July 14, 2020",
-      "559: Noam Man's Land"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 13,
-    "entity_name": "Harrison Smith",
-    "entity_origin": [
-      "118: January 10-11, 2018",
-      "406: March 1-4, 2020",
-      "435: May 18-21, 2020",
-      "484: September 18-19, 2020",
-      "516: December 31, 2020- January 1, 2021",
-      "539: March 10, 2021",
-      "631: December 20, 2021",
-      "637: January 13, 2022",
-      "638: See You At The Cross-Rhodes",
-      "661: March 17, 2022"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -2063,28 +1083,6 @@
   },
   {
     "entity_count": 13,
-    "entity_name": "Peter Schiff",
-    "entity_origin": [
-      "143: March 25-31 Part 1",
-      "145: April 2, 2018",
-      "151: April 16, 2018",
-      "155: January 7-9, 2009",
-      "160: January 22-25, 2009",
-      "167: February 4-5, 2009",
-      "230E: Obama Deception, Part 5",
-      "47: June 19-July 5, 2015",
-      "57: August 12-16, 2015",
-      "59: August 17-18, 2015",
-      "Gerald Celente",
-      "Joe Rogan",
-      "Ted Anderson"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 13,
     "entity_name": "Republicans",
     "entity_origin": [
       "211: March 10, 2009",
@@ -2123,45 +1121,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 13,
-    "entity_name": "Matt Bracken",
-    "entity_origin": [
-      "277: March 15, 2019",
-      "310: June 13-14, 2019",
-      "394: January 31, 2020",
-      "500: November 5-6, 2020",
-      "524: Inauguration 2021",
-      "620: November 23, 2021",
-      "642: January 24, 2022",
-      "99: November 1, 2017"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 13,
-    "entity_name": "Desiax Clark",
-    "entity_origin": [
-      "378: Formulaic Objections Part 2",
-      "401: Formulaic Objections Part 3",
-      "641: Formulaic Objections Part 4",
-      "665: Formulaic Objections Part 6",
-      "685: Formulaic Objections Part 7",
-      "696: June 24, 2022",
-      "697: June 29, 2022",
-      "698: For Squatch, There Are No Heroes",
-      "699: July 4-5, 2022",
-      "700: July 6, 2022",
-      "701: June 23, 2004",
-      "702: July 11-12, 2022",
-      "703: 9/11, Part 1"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -2216,39 +1175,6 @@
     ]
   },
   {
-    "entity_count": 12,
-    "entity_name": "Ilhan Omar",
-    "entity_origin": [
-      "264: February 11-13, 2019",
-      "281: April 4, 2019",
-      "287: April 15-18, 2019",
-      "300: May 21-22, 2019",
-      "313: June 23-24, 2019",
-      "322: July 16-17, 2019",
-      "399: February 12-14, 2020",
-      "466: August 5-6, 2020",
-      "487: September 28, 2020",
-      "517: January 5-6, 2021",
-      "653: February 25, 2022"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 12,
-    "entity_name": "Patrick Bergy",
-    "entity_origin": [
-      "470: ShadowGate",
-      "471: August 14-16, 2020",
-      "472: August 17-19, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
     "entity_count": 11,
     "entity_name": "the Civil War",
     "entity_origin": [
@@ -2260,25 +1186,6 @@
     ],
     "entity_type": [
       "EVENT"
-    ]
-  },
-  {
-    "entity_count": 11,
-    "entity_name": "James O'Keefe",
-    "entity_origin": [
-      "123: March 18, 2008",
-      "301: January 24-28, 2013",
-      "313: June 23-24, 2019",
-      "331: March 13-14, 2013",
-      "366: November 5-6, 2019",
-      "449: June 23-24, 2020",
-      "496: October 22-23, 2020",
-      "500: November 5-6, 2020",
-      "551: April 20-21, 2021",
-      "562: May 27, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -2320,76 +1227,6 @@
     ]
   },
   {
-    "entity_count": 11,
-    "entity_name": "George Washington",
-    "entity_origin": [
-      "199: August 29, 2018",
-      "321: February 24-26, 2013",
-      "339: March 29-April 1, 2013",
-      "373: April 24, 2013",
-      "445: June 12, 2020",
-      "463: July 28-30, 2020",
-      "511: The 12/12 Rallies",
-      "626: December 9, 2021",
-      "6: Inauguration Speech Recap",
-      "77: August 23, 2017"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 11,
-    "entity_name": "Matt Gaetz",
-    "entity_origin": [
-      "470: ShadowGate",
-      "545: March 30-31, 2021",
-      "546: April 1-3, 2021",
-      "549: April 13-14, 2021",
-      "554: April 30, 2021",
-      "658: It's Pretty Easy Being Greene"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 10,
-    "entity_name": "Stefan Molyneux",
-    "entity_origin": [
-      "104: November 20, 2017",
-      "232: Reverend Manning",
-      "285: Lil' Taste of Poland",
-      "341: September 5, 2019",
-      "498: November 7, 2016",
-      "538: March 2, 2021",
-      "539: March 10, 2021",
-      "576: July 9, 2021"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 10,
-    "entity_name": "Jeff Sessions",
-    "entity_origin": [
-      "106: Drunk Special Report",
-      "138: March 13-15, 2018",
-      "143: March 25-31 Part 1",
-      "20: March 6 & Celebrity Cameos",
-      "40: May 10, 2017",
-      "41: May 12, 2017",
-      "474: June 6, 2016",
-      "47: June 19-July 5, 2015",
-      "645: November 4, 2014"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
     "entity_count": 10,
     "entity_name": "Media Matters",
     "entity_origin": [
@@ -2416,23 +1253,6 @@
     ],
     "entity_type": [
       "GPE"
-    ]
-  },
-  {
-    "entity_count": 10,
-    "entity_name": "Jack Posobiec",
-    "entity_origin": [
-      "143: March 25-31 Part 1",
-      "149: The Press Conference",
-      "316: July 1, 2019",
-      "39: Jack Posobiec...Ya Busted",
-      "511: The 12/12 Rallies",
-      "576: July 9, 2021",
-      "584: August 5, 2021"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
     ]
   },
   {
@@ -2471,20 +1291,6 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "Maxine Waters",
-    "entity_origin": [
-      "161: May 14, 2018",
-      "475: August 24-26, 2020",
-      "551: April 20-21, 2021",
-      "96: October 22-23, 2017"
-    ],
-    "entity_type": [
-      "ORG",
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 10,
     "entity_name": "Oathkeepers",
     "entity_origin": [
       "169: November 30, 2014",
@@ -2502,47 +1308,12 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "Jack Dorsey",
-    "entity_origin": [
-      "209: Drunk Hotel Interview",
-      "287: April 15-18, 2019",
-      "290: April 25-26, 2019",
-      "350: September 29-30, 2019",
-      "440: June 1-2, 2020",
-      "494: October 19, 2020",
-      "522: January 14-17, 2021",
-      "625: December 5, 2021",
-      "631: December 20, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 10,
     "entity_name": "Harry Potter",
     "entity_origin": [
       "247: Lionel",
       "610: June 23, 2003",
       "611: October 29, 2021",
       "613: June 24-25, 2003"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 10,
-    "entity_name": "Tom Pappert",
-    "entity_origin": [
-      "329: August 4-5, 2019",
-      "342: September 6-11, 2019",
-      "383: December 31, 2019",
-      "389: January 15-17, 2020",
-      "404: Mr. Jones Goes To CPAC",
-      "509: December 3-4, 2020",
-      "515: December 28-29, 2020",
-      "517: January 5-6, 2021"
     ],
     "entity_type": [
       "PERSON"
@@ -2560,24 +1331,6 @@
     ],
     "entity_type": [
       "PERSON"
-    ]
-  },
-  {
-    "entity_count": 10,
-    "entity_name": "Greg Reese",
-    "entity_origin": [
-      "435: May 18-21, 2020",
-      "467: August 7-9, 2020",
-      "475: August 24-26, 2020",
-      "489: October 2-4, 2020",
-      "549: April 13-14, 2021",
-      "609: October 20, 2021",
-      "625: December 5, 2021",
-      "651: February 18, 2022"
-    ],
-    "entity_type": [
-      "PERSON",
-      "NORP"
     ]
   },
   {
@@ -2629,19 +1382,6 @@
     ],
     "entity_type": [
       "ORG",
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 9,
-    "entity_name": "John Bolton",
-    "entity_origin": [
-      "142: March 23, 2018",
-      "342: September 6-11, 2019",
-      "345: September 19, 2019",
-      "445: June 12, 2020"
-    ],
-    "entity_type": [
       "PERSON"
     ]
   },
@@ -2714,37 +1454,6 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "Randy Kramer",
-    "entity_origin": [
-      "223: A Progressive Space Diplomat",
-      "229: Mars Germans and Moon Leases",
-      "302: Discernment Overload",
-      "353: Mark Richards Pt. 11",
-      "400: One Out Of Five Seems High",
-      "476: Moon Colonies Part 2"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 9,
-    "entity_name": "Robert David Steele",
-    "entity_origin": [
-      "227: March 23, 2009",
-      "244: October 5, 2014",
-      "400: One Out Of Five Seems High",
-      "507: Jordan Doesn't Know About Walk-Ins",
-      "535: October 16, 2014",
-      "67: Protocols of Zion",
-      "88: The 2015 Investigation Ends"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 9,
     "entity_name": "Democratic",
     "entity_origin": [
       "230A: Obama Deception, Part 1",
@@ -2758,59 +1467,6 @@
     ],
     "entity_type": [
       "NORP"
-    ]
-  },
-  {
-    "entity_count": 9,
-    "entity_name": "Dennis Montgomery",
-    "entity_origin": [
-      "25: Dennis Montgomery Investigation",
-      "290: April 25-26, 2019",
-      "501: November 7-8, 2020",
-      "586: August 11-12, 2021",
-      "Repost: Episode"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 9,
-    "entity_name": "Kim Jong Un",
-    "entity_origin": [
-      "304: May 30-31, 2019",
-      "305: February 1, 2013",
-      "328: March 11-12, 2013",
-      "339: March 29-April 1, 2013",
-      "86: September 22, 2017"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 9,
-    "entity_name": "John McAfee",
-    "entity_origin": [
-      "569: June 23, 2021",
-      "570: June 24, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 9,
-    "entity_name": "Steve Kirsch",
-    "entity_origin": [
-      "616: November 9, 2021",
-      "619: November 16, 2021",
-      "632: Christmas Message and More",
-      "635: January 6-7, 2022"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -2832,21 +1488,6 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "Margaret Sanger",
-    "entity_origin": [
-      "123: March 18, 2008",
-      "130C: Endgame, Part 3",
-      "363: October 30, 2019",
-      "435: May 18-21, 2020",
-      "450: June 25-26, 2020",
-      "57: August 12-16, 2015"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 8,
     "entity_name": "Immigrants",
     "entity_origin": [
       "130B: Endgame, Part 2",
@@ -2864,55 +1505,6 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "George W Bush",
-    "entity_origin": [
-      "130C: Endgame, Part 3",
-      "136: March 30-31, 2008",
-      "141: March 20-22, 2018",
-      "247: Lionel",
-      "544: May 1, 2003",
-      "552: May 6, 2003",
-      "566: May 21, 2003",
-      "Laura Loomer"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 8,
-    "entity_name": "Dylann Roof",
-    "entity_origin": [
-      "141: March 20-22, 2018",
-      "46: June 18, 2015",
-      "47: June 19-July 5, 2015",
-      "52: July 14-21, 2015",
-      "671: April 13, 2022",
-      "Bob Chapman"
-    ],
-    "entity_type": [
-      "PERSON",
-      "GPE"
-    ]
-  },
-  {
-    "entity_count": 8,
-    "entity_name": "Harry Dent",
-    "entity_origin": [
-      "143: March 25-31 Part 1",
-      "145: April 2, 2018",
-      "151: April 16, 2018",
-      "49: July 6-13. 2015",
-      "57: August 12-16, 2015",
-      "59: August 17-18, 2015",
-      "76: October 7-11, 2015"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 8,
     "entity_name": "H.G. Wells",
     "entity_origin": [
       "148: June 1-3, 2009",
@@ -2920,23 +1512,6 @@
     ],
     "entity_type": [
       "PERSON"
-    ]
-  },
-  {
-    "entity_count": 8,
-    "entity_name": "Eisenhower",
-    "entity_origin": [
-      "153: More Mark Richards Fun",
-      "284: April 12, 2019",
-      "299: May 17-20, 2019",
-      "312: February 10-13, 2013",
-      "405: Root Races and Terminated Spiders",
-      "409: The Lionel Countdown",
-      "546: April 1-3, 2021"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
     ]
   },
   {
@@ -2986,98 +1561,6 @@
     ],
     "entity_type": [
       "GPE"
-    ]
-  },
-  {
-    "entity_count": 8,
-    "entity_name": "Jason Bermis",
-    "entity_origin": [
-      "167: February 4-5, 2009",
-      "203: March 2-4, 2009",
-      "208: March 6-8, 2009",
-      "211: March 10, 2009",
-      "237: March 27, 2009",
-      "433: May 12-13, 2020",
-      "636: April 27, 2009"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 8,
-    "entity_name": "Larry Klayman",
-    "entity_origin": [
-      "244: October 5, 2014",
-      "25: Dennis Montgomery Investigation",
-      "401: Formulaic Objections Part 3",
-      "454: December 17, 2013",
-      "613: June 24-25, 2003",
-      "98: May 2-3, 2012"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 8,
-    "entity_name": "Wolfgang Halbig",
-    "entity_origin": [
-      "279: Formulaic Objections",
-      "387: May 13, 2014",
-      "641: Formulaic Objections Part 4",
-      "Adan Salazar",
-      "The Sandy Hook Elementary Massacre"
-    ],
-    "entity_type": [
-      "ORG",
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 8,
-    "entity_name": "Jim Fetzer",
-    "entity_origin": [
-      "291: Feline Contessas And Canine Capitalists",
-      "297: January 17-18, 2013",
-      "302: Discernment Overload",
-      "413: March 27, 2020",
-      "465: August 3-4, 2020",
-      "491: October 12, 2020",
-      "641: Formulaic Objections Part 4",
-      "677: May 4, 2022"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 8,
-    "entity_name": "John Brennan",
-    "entity_origin": [
-      "399: February 12-14, 2020",
-      "433: May 12-13, 2020",
-      "45: May 25, 2017",
-      "470: ShadowGate",
-      "502: Dan's Cara-Vanity Project Part 1",
-      "519: January 10-11, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 8,
-    "entity_name": "Ghislaine Maxwell",
-    "entity_origin": [
-      "453: July 2, 2020",
-      "455: July 7-8, 2020",
-      "497: Third Try's A Charm",
-      "633: December 30, 2021"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
     ]
   },
   {
@@ -3142,18 +1625,6 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "Charlie Sheen",
-    "entity_origin": [
-      "140: February 18, 2011",
-      "155: January 7-9, 2009",
-      "542: September 15, 2010"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 7,
     "entity_name": "Rebel Media",
     "entity_origin": [
       "141: March 20-22, 2018",
@@ -3185,52 +1656,6 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "Mike Pence",
-    "entity_origin": [
-      "152: April 18, 2018",
-      "309: June 10-11, 2019",
-      "406: March 1-4, 2020",
-      "45: May 25, 2017",
-      "474: June 6, 2016",
-      "490: October 9, 2020"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 7,
-    "entity_name": "Barack Obama",
-    "entity_origin": [
-      "155: January 7-9, 2009",
-      "158: January 21, 2009",
-      "47: June 19-July 5, 2015",
-      "48: May 31, 2017",
-      "49: July 6-13. 2015",
-      "Ted Nugent"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 7,
-    "entity_name": "Gary Allen",
-    "entity_origin": [
-      "155: January 7-9, 2009",
-      "168: Alex Vs. Bill Ayers",
-      "2: December 31, 1999 (Y2K)",
-      "551: April 20-21, 2021",
-      "Globalists",
-      "Webster Tarpley"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 7,
     "entity_name": "Antarctica",
     "entity_origin": [
       "156: Gaseous Beings and Antiques",
@@ -3245,160 +1670,6 @@
     ]
   },
   {
-    "entity_count": 7,
-    "entity_name": "Ben Shapiro",
-    "entity_origin": [
-      "160: January 22-25, 2009",
-      "209: Drunk Hotel Interview",
-      "242: December 18-19, 2018",
-      "459: July 17, 2020",
-      "504: November 16-17, 2020",
-      "Joe Rogan"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 7,
-    "entity_name": "Wayne Madsen",
-    "entity_origin": [
-      "163: January 27-29, 2009",
-      "298: January 20-23, 2013",
-      "317: February 19-20, 2013",
-      "364: April 21-22, 2013",
-      "52: July 14-21, 2015",
-      "57: August 12-16, 2015",
-      "636: April 27, 2009"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 7,
-    "entity_name": "Candace Owens",
-    "entity_origin": [
-      "277: March 15, 2019",
-      "284: April 12, 2019",
-      "322: July 16-17, 2019",
-      "363: October 30, 2019",
-      "460: Donk's Dojo",
-      "508: December 1-2, 2020",
-      "632: Christmas Message and More"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 7,
-    "entity_name": "Jack Swagger",
-    "entity_origin": [
-      "286: Wrestling With Disappointment",
-      "317: February 19-20, 2013"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 7,
-    "entity_name": "Jim Garrow",
-    "entity_origin": [
-      "298: January 20-23, 2013",
-      "303: January 29-31, 2013",
-      "397: February 7-8, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 7,
-    "entity_name": "Ezra Levant",
-    "entity_origin": [
-      "376: December 3-5, 2019",
-      "394: January 31, 2020",
-      "503: Dan's Cara-Vanity Project Part 2",
-      "522: January 14-17, 2021",
-      "541: March 17-18, 2021",
-      "632: Christmas Message and More"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 7,
-    "entity_name": "Anthony Gucciardi",
-    "entity_origin": [
-      "454: December 17, 2013",
-      "47: June 19-July 5, 2015",
-      "498: November 7, 2016",
-      "49: July 6-13. 2015",
-      "645: November 4, 2014"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 7,
-    "entity_name": "Kathy Griffin",
-    "entity_origin": [
-      "48: May 31, 2017",
-      "604: October 5, 2021"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG",
-      "GPE"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Max Keiser",
-    "entity_origin": [
-      "102: Alex On Russian Media",
-      "290: April 25-26, 2019",
-      "298: January 20-23, 2013",
-      "402: February 20, 2020",
-      "534: February 19, 2021",
-      "535: October 16, 2014"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Rob Jacobson",
-    "entity_origin": [
-      "107: December 12, 2014",
-      "133: Operation Paul Revere",
-      "243: April 1-2, 2009",
-      "Adan Salazar",
-      "Rob Dew"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Bill O'Reilly",
-    "entity_origin": [
-      "112: December 15, 2017",
-      "32: April 21, 2017",
-      "361: April 19, 2013",
-      "631: December 20, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
     "entity_count": 6,
     "entity_name": "Melinda Gates Foundation",
     "entity_origin": [
@@ -3408,34 +1679,6 @@
       "326: July 26-29, 2019",
       "392: January 24, 2020",
       "435: May 18-21, 2020"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Andrew Breitbart",
-    "entity_origin": [
-      "122 LIVE: March 1-2, 2012",
-      "149: The Press Conference",
-      "330: Magic Coins And Sheep Nations",
-      "373: April 24, 2013",
-      "569: June 23, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Georgia Guidestones",
-    "entity_origin": [
-      "130D: Endgame, Part 4",
-      "130E: Endgame, Part 5",
-      "553: April 26-27, 2021",
-      "565: June 10, 2021",
-      "700: July 6, 2022"
     ],
     "entity_type": [
       "ORG"
@@ -3485,94 +1728,6 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "John Kerry",
-    "entity_origin": [
-      "143: March 25-31 Part 1",
-      "156: Gaseous Beings and Antiques",
-      "383: December 31, 2019",
-      "384: January 3, 2020",
-      "45: May 25, 2017",
-      "49: July 6-13. 2015"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Chris Kyle",
-    "entity_origin": [
-      "148: June 1-3, 2009",
-      "312: February 10-13, 2013",
-      "314: February 14-15, 2013",
-      "47: June 19-July 5, 2015",
-      "Jesse Ventura"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "James Comey",
-    "entity_origin": [
-      "152: April 18, 2018",
-      "40: May 10, 2017",
-      "41: May 12, 2017",
-      "47: June 19-July 5, 2015",
-      "49: July 6-13. 2015"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Marty DeRosa",
-    "entity_origin": [
-      "157: WWE's Kane (Ft. Marty DeRosa)",
-      "178: Rowdy Roddy Piper w/ Marty DeRosa",
-      "18: March 1, 2017/Super Bowl Bonus",
-      "286: Wrestling With Disappointment",
-      "TWTWYTT Special"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "John McCain",
-    "entity_origin": [
-      "160: January 22-25, 2009",
-      "162: May 19, 2018",
-      "295: Crossover With QAnon Anonymous",
-      "52: July 14-21, 2015",
-      "56: July 22-Aug 11, 2015"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Eddie Bravo",
-    "entity_origin": [
-      "166: February 2-3, 2009",
-      "20: March 6 & Celebrity Cameos",
-      "261: February 5-6, 2019",
-      "345: September 19, 2019",
-      "542: September 15, 2010"
-    ],
-    "entity_type": [
-      "ORG",
-      "WORK_OF_ART",
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
     "entity_name": "Tim McVeigh",
     "entity_origin": [
       "168: Alex Vs. Bill Ayers",
@@ -3582,49 +1737,6 @@
     "entity_type": [
       "PERSON",
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Lindsey Williams",
-    "entity_origin": [
-      "186: February 17-18, 2009",
-      "206: March 4-5, 2009",
-      "208: March 6-8, 2009",
-      "230B: Obama Deception, Part 2",
-      "373: April 24, 2013"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Eddie Page",
-    "entity_origin": [
-      "187: Magic Cheesecloth and Secret Pleiadians",
-      "204: Sweary Kerry's Larry",
-      "207: Bus Station Photography and The Magic of Zoom",
-      "217: Space Liars and Dragon Moths"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Boris Johnson",
-    "entity_origin": [
-      "192: August 10, 2018",
-      "413: March 27, 2020",
-      "489: October 2-4, 2020",
-      "506: November 22-24, 2020",
-      "577: July 13, 2021",
-      "640: January 22, 2022"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -3655,46 +1767,6 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "Barry Goldwater",
-    "entity_origin": [
-      "230A: Obama Deception, Part 1",
-      "230B: Obama Deception, Part 2",
-      "291: Feline Contessas And Canine Capitalists",
-      "594: September 7, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "James David Manning",
-    "entity_origin": [
-      "232: Reverend Manning",
-      "294: January 15-16, 2013",
-      "89: December 31, 2015"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "John Rappaport",
-    "entity_origin": [
-      "233: November 28, 2018",
-      "392: January 24, 2020",
-      "522: January 14-17, 2021",
-      "524: Inauguration 2021",
-      "60: Mars Colonies",
-      "92: October 13 & 16, 2017"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
     "entity_name": "Robert E Lee",
     "entity_origin": [
       "238: Coach Dave",
@@ -3706,67 +1778,17 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "Steve Bannon",
+    "entity_name": "North Korean",
     "entity_origin": [
-      "245: December 24, 2018",
-      "473: August 20-21, 2020",
-      "557: May 11, 2021",
-      "625: December 5, 2021",
-      "705: The Knowledge Fight Battle Kitchen"
+      "328: March 11-12, 2013",
+      "344: April 9-10, 2013",
+      "41: May 12, 2017",
+      "605: June 17, 2003",
+      "650: July 17, 2003",
+      "Steve Pieczenik"
     ],
     "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Joe Arpaio",
-    "entity_origin": [
-      "25: Dennis Montgomery Investigation",
-      "370: November 14-15, 2019",
-      "77: August 23, 2017"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Larry Pratt",
-    "entity_origin": [
-      "283: January 4-6, 2013",
-      "297: January 17-18, 2013",
-      "303: January 29-31, 2013",
-      "335: March 15-22, 2013",
-      "361: April 19, 2013"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Andrew Wakefield",
-    "entity_origin": [
-      "297: January 17-18, 2013",
-      "467: August 7-9, 2020",
-      "485: September 23-24, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Richard Spencer",
-    "entity_origin": [
-      "322: July 16-17, 2019",
-      "327: July 31, 2019",
-      "388: January 12-13, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
+      "NORP"
     ]
   },
   {
@@ -3782,34 +1804,6 @@
     ],
     "entity_type": [
       "NORP"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Michael Moore",
-    "entity_origin": [
-      "331: March 13-14, 2013",
-      "352: April 17, 2013",
-      "489: October 2-4, 2020",
-      "678: July 29-30, 2003",
-      "690: May 27, 2022",
-      "701: June 23, 2004"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Dan Bongino",
-    "entity_origin": [
-      "343: April 3-8, 2013",
-      "470: ShadowGate",
-      "471: August 14-16, 2020",
-      "541: March 17-18, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -3844,18 +1838,6 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "Hamdi Ulukaya",
-    "entity_origin": [
-      "34: April 25, 2017",
-      "Chobani v. Jones",
-      "Notable Legal Proceedings"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
     "entity_name": "the New York Times",
     "entity_origin": [
       "377: December 6-10, 2019",
@@ -3871,21 +1853,6 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "Anthony Fauci",
-    "entity_origin": [
-      "397: February 7-8, 2020",
-      "424: April 21-22, 2020",
-      "430: May 5-7, 2020",
-      "433: May 12-13, 2020",
-      "586: August 11-12, 2021",
-      "632: Christmas Message and More"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
     "entity_name": "New Jersey",
     "entity_origin": [
       "408: March 11-13, 2020",
@@ -3897,19 +1864,6 @@
     ],
     "entity_type": [
       "GPE"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Mark Zuckerberg",
-    "entity_origin": [
-      "428: May 1, 2020",
-      "450: June 25-26, 2020",
-      "474: June 6, 2016",
-      "621: Reset Wars: Episode 1"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -3930,46 +1884,6 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "Melinda Gates",
-    "entity_origin": [
-      "429: May 3-4, 2020",
-      "435: May 18-21, 2020",
-      "450: June 25-26, 2020",
-      "56: July 22-Aug 11, 2015"
-    ],
-    "entity_type": [
-      "ORG",
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Lauren Southern",
-    "entity_origin": [
-      "474: June 6, 2016",
-      "47: June 19-July 5, 2015",
-      "538: March 2, 2021",
-      "614: The Purge of Gates"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Amy Coney Barrett",
-    "entity_origin": [
-      "484: September 18-19, 2020",
-      "486: September 27, 2020",
-      "491: October 12, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
     "entity_name": "Great Reset",
     "entity_origin": [
       "499: Jordan Takes The Wheel 5",
@@ -3980,30 +1894,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "John Sullivan",
-    "entity_origin": [
-      "522: January 14-17, 2021",
-      "523: January 18-19, 2021",
-      "549: April 13-14, 2021",
-      "614: The Purge of Gates"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
-    "entity_name": "Gavin Newsom",
-    "entity_origin": [
-      "616: November 9, 2021",
-      "619: November 16, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -4047,30 +1937,6 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "Charles Manson",
-    "entity_origin": [
-      "104: November 20, 2017",
-      "356: October 11, 2019"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Kurt Nimmo",
-    "entity_origin": [
-      "107: December 12, 2014",
-      "339: March 29-April 1, 2013",
-      "636: April 27, 2009",
-      "678: July 29-30, 2003"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
     "entity_name": "Libertarian",
     "entity_origin": [
       "108: November 30, 2017",
@@ -4084,91 +1950,11 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "Joe Scarborough",
-    "entity_origin": [
-      "110: December 5, 2017",
-      "322: July 16-17, 2019",
-      "545: March 30-31, 2021"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 5,
     "entity_name": "Ted Malloch",
     "entity_origin": [
       "111: January 21-22, 2016",
       "138: March 13-15, 2018",
       "143: March 25-31 Part 1"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Piers Morgan",
-    "entity_origin": [
-      "114: Piers Morgan Interview",
-      "269: December 19, 2012",
-      "275: December 23-31, 2012",
-      "288: January 7-9, 2013",
-      "289: January 10-13, 2013"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Chuck Norris",
-    "entity_origin": [
-      "118: January 10-11, 2018",
-      "219: March 13, 2009"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Eric Holder",
-    "entity_origin": [
-      "119: August 16, 2012",
-      "200: Feb. 25-March 1, 2009",
-      "246: April 5-6, 2009",
-      "373: April 24, 2013",
-      "514: An X-Mas Report Rebuttal"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Andrew Jackson",
-    "entity_origin": [
-      "120: January 27, 2016",
-      "121: April 1-2, 2013",
-      "155: January 7-9, 2009",
-      "230A: Obama Deception, Part 1"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "William Binney",
-    "entity_origin": [
-      "123: March 18, 2008",
-      "287: April 15-18, 2019",
-      "354: October 8-9, 2019",
-      "398: February 9-10, 2020",
-      "404: Mr. Jones Goes To CPAC"
     ],
     "entity_type": [
       "PERSON"
@@ -4216,35 +2002,6 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "Carroll Quigley",
-    "entity_origin": [
-      "134: Post-Tribulation Rapture?",
-      "230A: Obama Deception, Part 1",
-      "305: February 1, 2013",
-      "454: December 17, 2013",
-      "Webster Tarpley"
-    ],
-    "entity_type": [
-      "ORG",
-      "PERSON",
-      "PRODUCT"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Lee Stranahan",
-    "entity_origin": [
-      "138: March 13-15, 2018",
-      "149: The Press Conference",
-      "404: Mr. Jones Goes To CPAC",
-      "445: June 12, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
     "entity_name": "the Iraq War",
     "entity_origin": [
       "138: March 13-15, 2018",
@@ -4286,34 +2043,6 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "Xi Jinping",
-    "entity_origin": [
-      "141: March 20-22, 2018",
-      "421: April 16, 2020",
-      "430: May 5-7, 2020",
-      "439: May 29-31, 2020",
-      "492: October 13, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Darren McBreen",
-    "entity_origin": [
-      "143: March 25-31 Part 1",
-      "19: March 3, 2017",
-      "214: Cruel Parallels",
-      "286: Wrestling With Disappointment",
-      "428: May 1, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
     "entity_name": "David Morton",
     "entity_origin": [
       "153: More Mark Richards Fun",
@@ -4341,19 +2070,6 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "Ronald Reagan",
-    "entity_origin": [
-      "155: January 7-9, 2009",
-      "204: Sweary Kerry's Larry",
-      "553: April 26-27, 2021",
-      "Bob Chapman"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
     "entity_name": "The International Forecaster",
     "entity_origin": [
       "155: January 7-9, 2009",
@@ -4367,35 +2083,6 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "Steve Shenk",
-    "entity_origin": [
-      "160: January 22-25, 2009",
-      "200: Feb. 25-March 1, 2009",
-      "224: March 20, 2009",
-      "312: February 10-13, 2013",
-      "481: September 13, 2012"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Rahm Emanuel",
-    "entity_origin": [
-      "163: January 27-29, 2009",
-      "166: February 2-3, 2009",
-      "230A: Obama Deception, Part 1",
-      "230B: Obama Deception, Part 2",
-      "454: December 17, 2013"
-    ],
-    "entity_type": [
-      "ORG",
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
     "entity_name": "the Secret Service",
     "entity_origin": [
       "177: Sweary Kerry and the Racist Alien",
@@ -4405,32 +2092,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Kaitlin Bennett",
-    "entity_origin": [
-      "195: August 17, 2018",
-      "309: June 10-11, 2019",
-      "337: August 28-29, 2019",
-      "389: January 15-17, 2020",
-      "473: August 20-21, 2020"
-    ],
-    "entity_type": [
-      "ORG",
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Mark Cuban",
-    "entity_origin": [
-      "210: March 9, 2009",
-      "433: May 12-13, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -4461,19 +2122,6 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "Wayne Paul",
-    "entity_origin": [
-      "227: March 23, 2009",
-      "230C: Obama Deception, Part 3",
-      "230D: Obama Deception, Part 4",
-      "395: Ghosts Of Caucuses Past"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
     "entity_name": "Prison Planet",
     "entity_origin": [
       "230A: Obama Deception, Part 1",
@@ -4486,18 +2134,6 @@
       "GPE",
       "ORG",
       "FAC"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Steve King",
-    "entity_origin": [
-      "230A: Obama Deception, Part 1",
-      "253: January 15, 2019",
-      "617: June 27, 2003"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -4516,18 +2152,6 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "Ann Coulter",
-    "entity_origin": [
-      "243: April 1-2, 2009",
-      "259: January 27-29, 2019",
-      "628: July 10, 2003"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
     "entity_name": "Ellis Island",
     "entity_origin": [
       "244: October 5, 2014",
@@ -4540,19 +2164,6 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "Randy Credico",
-    "entity_origin": [
-      "257: January 25, 2019",
-      "402: February 20, 2020",
-      "Roger Stone"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 5,
     "entity_name": "Homeland Security",
     "entity_origin": [
       "262: April 14, 2009",
@@ -4561,21 +2172,6 @@
       "622: June 30-July 1, 2003"
     ],
     "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Adam Schiff",
-    "entity_origin": [
-      "26: March 30 (Special Report)",
-      "370: November 14-15, 2019",
-      "394: January 31, 2020",
-      "453: July 2, 2020",
-      "642: January 24, 2022"
-    ],
-    "entity_type": [
-      "PERSON",
       "ORG"
     ]
   },
@@ -4607,102 +2203,12 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "Kevin Moore",
-    "entity_origin": [
-      "302: Discernment Overload",
-      "353: Mark Richards Pt. 11",
-      "362: There Is No Mermaid",
-      "371: Canonical Space Weirdness"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Chris Mattei",
-    "entity_origin": [
-      "310: June 13-14, 2019",
-      "311: June 17-19, 2019",
-      "Connecticut Sandy Hook Lawsuit (Lafferty v. Jones)",
-      "Norm Pattis"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Henry Makow",
-    "entity_origin": [
-      "318: July 5, 2019",
-      "634: July 11, 2003"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "North Korean",
-    "entity_origin": [
-      "328: March 11-12, 2013",
-      "344: April 9-10, 2013",
-      "41: May 12, 2017",
-      "605: June 17, 2003",
-      "650: July 17, 2003"
-    ],
-    "entity_type": [
-      "NORP"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "New World Order",
-    "entity_origin": [
-      "330: Magic Coins And Sheep Nations",
-      "539: March 10, 2021",
-      "Alan Watt",
-      "Mark Dice"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Zach Voorhees",
-    "entity_origin": [
-      "333: August 16, 2019",
-      "334: August 21-22, 2019",
-      "374: November 25, 2019",
-      "379: December 13-16, 2019"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 5,
     "entity_name": "Story Hour",
     "entity_origin": [
       "342: September 6-11, 2019",
       "356: October 11, 2019",
       "404: Mr. Jones Goes To CPAC",
       "523: January 18-19, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Lana Del Rey",
-    "entity_origin": [
-      "347: September 23, 2019",
-      "522: January 14-17, 2021"
     ],
     "entity_type": [
       "PERSON"
@@ -4733,36 +2239,6 @@
       "FAC",
       "GPE",
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Nancy Pelosi",
-    "entity_origin": [
-      "384: January 3, 2020",
-      "396: February 6, 2020",
-      "431: Smash-N-Grab Spy Jobs",
-      "612: October 31, 2021",
-      "Ron Paul"
-    ],
-    "entity_type": [
-      "GPE",
-      "ORG",
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Del Bigtree",
-    "entity_origin": [
-      "388: January 12-13, 2020",
-      "427: April 29-30, 2020",
-      "464: July 31-August 1, 2020",
-      "586: August 11-12, 2021"
-    ],
-    "entity_type": [
-      "ORG",
-      "PERSON"
     ]
   },
   {
@@ -4817,20 +2293,6 @@
     ]
   },
   {
-    "entity_count": 5,
-    "entity_name": "Brittany Paz",
-    "entity_origin": [
-      "685: Formulaic Objections Part 7",
-      "Connecticut Sandy Hook Lawsuit (Lafferty v. Jones)",
-      "Jacquelyn Blott",
-      "Pozner Texas Sandy Hook Lawsuit (Pozner v. Jones)",
-      "Texas Sandy Hook Lawsuit (Heslin v. Jones)"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
     "entity_count": 4,
     "entity_name": "Daily Caller",
     "entity_origin": [
@@ -4841,56 +2303,6 @@
     ],
     "entity_type": [
       "ORG",
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Dave Mustane",
-    "entity_origin": [
-      "119: August 16, 2012",
-      "389: January 15-17, 2020",
-      "557: May 11, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Susan Collins",
-    "entity_origin": [
-      "121: April 1-2, 2013",
-      "272: December 20, 2012",
-      "338: March 27-28, 2013"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Courtney Brown",
-    "entity_origin": [
-      "125: Project Camelot's War In Heaven",
-      "479: The Devil Went Down To Kiev",
-      "Edward Group"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Rod Rosenstein",
-    "entity_origin": [
-      "126: February 2, 2018 (Special Report)",
-      "259: January 27-29, 2019",
-      "40: May 10, 2017",
-      "441: June 3-4, 2020"
-    ],
-    "entity_type": [
       "PERSON"
     ]
   },
@@ -4922,34 +2334,10 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "Daniel Estulin",
-    "entity_origin": [
-      "130B: Endgame, Part 2",
-      "230A: Obama Deception, Part 1",
-      "230B: Obama Deception, Part 2"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
     "entity_name": "Ray Kurzweil",
     "entity_origin": [
       "130E: Endgame, Part 5",
       "Why The Future Doesn't Need Us"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Ashley Beckford",
-    "entity_origin": [
-      "133: Operation Paul Revere",
-      "Buckley Hamman",
-      "Rob Dew"
     ],
     "entity_type": [
       "PERSON"
@@ -5010,32 +2398,6 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "Peter Thiel",
-    "entity_origin": [
-      "141: March 20-22, 2018",
-      "146: April 4, 2018",
-      "239: December 12-13, 2018",
-      "481: September 13, 2012"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Paul Manafort",
-    "entity_origin": [
-      "141: March 20-22, 2018",
-      "41: May 12, 2017",
-      "470: ShadowGate",
-      "Roger Stone"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
     "entity_name": "Mayan Apocalypse",
     "entity_origin": [
       "141: March 20-22, 2018",
@@ -5049,32 +2411,6 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "Chuck Schumer",
-    "entity_origin": [
-      "143: March 25-31 Part 1",
-      "569: June 23, 2021",
-      "99: November 1, 2017",
-      "Mike Cernovich"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Robert Mueller",
-    "entity_origin": [
-      "143: March 25-31 Part 1",
-      "162: May 19, 2018",
-      "303: January 29-31, 2013",
-      "Larry Nichols"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
     "entity_name": "Rick Derringer",
     "entity_origin": [
       "145: April 2, 2018",
@@ -5082,19 +2418,6 @@
     ],
     "entity_type": [
       "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Aaron Russo",
-    "entity_origin": [
-      "147: Aaron Russo",
-      "215: March 11-12, 2009",
-      "633: December 30, 2021"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
     ]
   },
   {
@@ -5159,44 +2482,6 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "Pat Robertson",
-    "entity_origin": [
-      "158: January 21, 2009",
-      "263: Jordan Takes The Wheel",
-      "282: April 5, 2019",
-      "354: October 8-9, 2019"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Sam Harris",
-    "entity_origin": [
-      "160: January 22-25, 2009",
-      "600: September 22, 2021",
-      "Joe Rogan"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Mike Rotondo",
-    "entity_origin": [
-      "164: May 25, 2018",
-      "166: February 2-3, 2009",
-      "186: February 17-18, 2009",
-      "292: January 14, 2013"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
     "entity_name": "InfoWarrior",
     "entity_origin": [
       "178: Rowdy Roddy Piper w/ Marty DeRosa",
@@ -5248,58 +2533,10 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "Michelle Wolf",
-    "entity_origin": [
-      "196: August 21, 2018",
-      "382: December 23-27, 2019",
-      "389: January 15-17, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Jared Holt",
-    "entity_origin": [
-      "197: Jared Holt from the Sh!tpost Podcast",
-      "304: May 30-31, 2019",
-      "582: Chattin' With Jared"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Robert Evans",
-    "entity_origin": [
-      "207: Bus Station Photography and The Magic of Zoom",
-      "274: Ask Alex Anything",
-      "475: August 24-26, 2020",
-      "705: The Knowledge Fight Battle Kitchen"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
     "entity_name": "John Conner",
     "entity_origin": [
       "212: Matrix Schemes and Billions In Liens",
       "Mark Dice"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Jack McLamb",
-    "entity_origin": [
-      "215: March 11-12, 2009",
-      "219: March 13, 2009"
     ],
     "entity_type": [
       "PERSON"
@@ -5319,43 +2556,6 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "Kevin Booth",
-    "entity_origin": [
-      "227: March 23, 2009",
-      "88: The 2015 Investigation Ends",
-      "93: 2015 Investigation Last Looks"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "W. Cleon Skousen",
-    "entity_origin": [
-      "230A: Obama Deception, Part 1",
-      "634: July 11, 2003",
-      "Webster Tarpley"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Samantha Power",
-    "entity_origin": [
-      "230A: Obama Deception, Part 1",
-      "290: April 25-26, 2019"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 4,
     "entity_name": "Guantanamo",
     "entity_origin": [
       "230A: Obama Deception, Part 1",
@@ -5366,19 +2566,6 @@
     "entity_type": [
       "FAC",
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Andrew Basiago",
-    "entity_origin": [
-      "232: Reverend Manning",
-      "324: Bilderberg Speeches",
-      "353: Mark Richards Pt. 11",
-      "95: Project Camelot Break"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -5409,19 +2596,6 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "Aaron Dykes",
-    "entity_origin": [
-      "243: April 1-2, 2009",
-      "331: March 13-14, 2013",
-      "537: July 16-18, 2010"
-    ],
-    "entity_type": [
-      "PERSON",
-      "PRODUCT"
-    ]
-  },
-  {
-    "entity_count": 4,
     "entity_name": "San Antonio",
     "entity_origin": [
       "244: October 5, 2014",
@@ -5430,32 +2604,6 @@
     ],
     "entity_type": [
       "GPE"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Owen Benjamin",
-    "entity_origin": [
-      "245: December 24, 2018",
-      "261: February 5-6, 2019",
-      "345: September 19, 2019",
-      "576: July 9, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Andrew Cuomo",
-    "entity_origin": [
-      "248: January 2, 2019",
-      "304: May 30-31, 2019",
-      "416: April 2, 2020",
-      "425: April 23-24, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -5469,19 +2617,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Doug Hagmann",
-    "entity_origin": [
-      "275: December 23-31, 2012",
-      "289: January 10-13, 2013",
-      "349: April 15-16, 2013",
-      "495: November 4-6, 2016"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -5522,36 +2657,11 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "James Tracy",
-    "entity_origin": [
-      "288: January 7-9, 2013",
-      "297: January 17-18, 2013",
-      "338: March 27-28, 2013"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
     "entity_name": "William Shatner",
     "entity_origin": [
       "289: January 10-13, 2013",
       "640: January 22, 2022",
       "674: April 22, 2022"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "John Bowne",
-    "entity_origin": [
-      "306: June 4-5, 2019",
-      "475: August 24-26, 2020",
-      "489: October 2-4, 2020",
-      "648: February 11, 2022"
     ],
     "entity_type": [
       "PERSON"
@@ -5571,19 +2681,6 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "DJ Danarchy",
-    "entity_origin": [
-      "323: July 19, 2019",
-      "324: Bilderberg Speeches",
-      "364: April 21-22, 2013",
-      "666: March 31, 2022"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 4,
     "entity_name": "United States",
     "entity_origin": [
       "330: Magic Coins And Sheep Nations",
@@ -5593,17 +2690,6 @@
     ],
     "entity_type": [
       "GPE"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Jim Carrey",
-    "entity_origin": [
-      "336: March 24-26, 2013",
-      "595: Boulder Missiles and Gettysburg Nukes"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -5711,31 +2797,6 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "Al Sharpton",
-    "entity_origin": [
-      "401: Formulaic Objections Part 3",
-      "443: June 9, 2020",
-      "74: October 4-6, 2015",
-      "Roger Stone"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Alan Keyes",
-    "entity_origin": [
-      "403: February 24, 2020",
-      "429: May 3-4, 2020",
-      "440: June 1-2, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
     "entity_name": "Hydroxychloroquine",
     "entity_origin": [
       "415: April 1, 2020",
@@ -5825,18 +2886,6 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "Kyle Rittenhouse",
-    "entity_origin": [
-      "475: August 24-26, 2020",
-      "515: December 28-29, 2020",
-      "Robert Barnes"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
     "entity_name": "American Journal",
     "entity_origin": [
       "524: Inauguration 2021",
@@ -5845,42 +2894,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Ashli Babbitt",
-    "entity_origin": [
-      "549: April 13-14, 2021",
-      "638: See You At The Cross-Rhodes",
-      "642: January 24, 2022"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Merrick Garland",
-    "entity_origin": [
-      "568: June 19, 2021",
-      "637: January 13, 2022",
-      "638: See You At The Cross-Rhodes"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Michael Malice",
-    "entity_origin": [
-      "576: July 9, 2021",
-      "609: October 20, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -5933,54 +2946,6 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Louis Farrakhan",
-    "entity_origin": [
-      "100: January 6-7, 2016",
-      "101: January 11, 2016"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Jeff Bezos",
-    "entity_origin": [
-      "112: December 15, 2017",
-      "631: December 20, 2021",
-      "633: December 30, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Joycelyn Elders",
-    "entity_origin": [
-      "115: January 2, 2018",
-      "347: September 23, 2019",
-      "576: July 9, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Cenk Uygur",
-    "entity_origin": [
-      "115: January 2, 2018",
-      "298: January 20-23, 2013",
-      "633: December 30, 2021"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "The Young Turks",
     "entity_origin": [
       "115: January 2, 2018",
@@ -6000,29 +2965,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Logan Paul",
-    "entity_origin": [
-      "116: January 5, 2018",
-      "287: April 15-18, 2019"
-    ],
-    "entity_type": [
-      "LOC",
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Stephen Miller",
-    "entity_origin": [
-      "117: January 8, 2018",
-      "372: November 20-21, 2019"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -6111,17 +3053,6 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Noam Chomsky",
-    "entity_origin": [
-      "134: Post-Tribulation Rapture?",
-      "559: Noam Man's Land"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "Julian Assange",
     "entity_origin": [
       "135: The Wikileaks Press Conference",
@@ -6194,18 +3125,6 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Mike Pompeo",
-    "entity_origin": [
-      "138: March 13-15, 2018",
-      "239: December 12-13, 2018",
-      "357: October 16, 2019"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "the Democratic party",
     "entity_origin": [
       "138: March 13-15, 2018",
@@ -6214,30 +3133,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Sean Hannity",
-    "entity_origin": [
-      "138: March 13-15, 2018",
-      "160: January 22-25, 2009",
-      "457: July 12-13, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Henry Kissinger",
-    "entity_origin": [
-      "138: March 13-15, 2018",
-      "230B: Obama Deception, Part 2",
-      "577: July 13, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -6335,18 +3230,6 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Rachel Maddow",
-    "entity_origin": [
-      "145: April 2, 2018",
-      "603: October 3-4, 2021",
-      "62: August 19-26, 2015"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "George Soros'",
     "entity_origin": [
       "146: April 4, 2018",
@@ -6355,41 +3238,6 @@
     ],
     "entity_type": [
       "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Mike Rivero",
-    "entity_origin": [
-      "148: June 1-3, 2009",
-      "166: February 2-3, 2009",
-      "203: March 2-4, 2009"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Marty Schacter",
-    "entity_origin": [
-      "148: June 1-3, 2009",
-      "158: January 21, 2009",
-      "240: March 30-31, 2009"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Henrietta Lacks",
-    "entity_origin": [
-      "151: April 16, 2018",
-      "580: July 20-21, 2021"
-    ],
-    "entity_type": [
-      "ORG"
     ]
   },
   {
@@ -6417,17 +3265,6 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Kanye West",
-    "entity_origin": [
-      "154: April 23, 2018",
-      "363: October 30, 2019"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "New York Times",
     "entity_origin": [
       "15: February 20-21, 2017",
@@ -6436,29 +3273,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Rainbow Snatch",
-    "entity_origin": [
-      "15: February 20-21, 2017",
-      "404: Mr. Jones Goes To CPAC"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Mitt Romney",
-    "entity_origin": [
-      "160: January 22-25, 2009",
-      "527: February 4, 2021",
-      "Roger Stone"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -6509,17 +3323,6 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Eric Prince",
-    "entity_origin": [
-      "164: May 25, 2018",
-      "97: October 25, 2017"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "Sovereign Citizen",
     "entity_origin": [
       "166: February 2-3, 2009",
@@ -6529,18 +3332,6 @@
     "entity_type": [
       "PERSON",
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Aaron Zelman",
-    "entity_origin": [
-      "167: February 4-5, 2009",
-      "335: March 15-22, 2013",
-      "592: June 12, 2003"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -6564,17 +3355,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Ian Fleming",
-    "entity_origin": [
-      "187: Magic Cheesecloth and Secret Pleiadians",
-      "425: April 23-24, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -6614,17 +3394,6 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Jesse James",
-    "entity_origin": [
-      "20: March 6 & Celebrity Cameos",
-      "498: November 7, 2016"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "Socialists",
     "entity_origin": [
       "218: October 17, 2018",
@@ -6633,17 +3402,6 @@
     ],
     "entity_type": [
       "NORP"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Brad Sherman",
-    "entity_origin": [
-      "230A: Obama Deception, Part 1",
-      "246: April 5-6, 2009"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -6660,13 +3418,14 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "George Humphrey",
+    "entity_name": "the State Department",
     "entity_origin": [
       "230A: Obama Deception, Part 1",
-      "230B: Obama Deception, Part 2"
+      "399: February 12-14, 2020",
+      "Steve Pieczenik"
     ],
     "entity_type": [
-      "PERSON"
+      "ORG"
     ]
   },
   {
@@ -6679,41 +3438,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Rush Limbaugh",
-    "entity_origin": [
-      "231: March 24, 2009",
-      "406: March 1-4, 2020",
-      "552: May 6, 2003"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "John Birch Society",
-    "entity_origin": [
-      "234: March 26, 2009",
-      "238: Coach Dave"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Arnold Schwarzenegger",
-    "entity_origin": [
-      "240: March 30-31, 2009",
-      "613: June 24-25, 2003"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -6754,78 +3478,6 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Tyler Nixon",
-    "entity_origin": [
-      "257: January 25, 2019",
-      "430: May 5-7, 2020",
-      "456: July 9-11, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Charles Murray",
-    "entity_origin": [
-      "264: February 11-13, 2019",
-      "398: February 9-10, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "InfoWars Nightly News",
-    "entity_origin": [
-      "265: September 1, 2011",
-      "David Knight",
-      "Rob Dew"
-    ],
-    "entity_type": [
-      "ORG",
-      "WORK_OF_ART"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Richard Baldwin",
-    "entity_origin": [
-      "280: Raptor Weddings and Sardinian Spiders",
-      "291: Feline Contessas And Canine Capitalists",
-      "79: Meet Captain Mark Richards"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Diane Feinstein",
-    "entity_origin": [
-      "283: January 4-6, 2013",
-      "289: January 10-13, 2013",
-      "301: January 24-28, 2013"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Buzz Bissinger",
-    "entity_origin": [
-      "288: January 7-9, 2013",
-      "289: January 10-13, 2013",
-      "298: January 20-23, 2013"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "Molon Labe",
     "entity_origin": [
       "289: January 10-13, 2013",
@@ -6845,29 +3497,6 @@
     ],
     "entity_type": [
       "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Edgar Casey",
-    "entity_origin": [
-      "291: Feline Contessas And Canine Capitalists",
-      "87: Mark Richards Revisited"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Frank Bates",
-    "entity_origin": [
-      "301: January 24-28, 2013",
-      "398: February 9-10, 2020"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
     ]
   },
   {
@@ -6896,41 +3525,6 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Mel Gibson",
-    "entity_origin": [
-      "30: April 14, 2017",
-      "387: May 13, 2014",
-      "693: August 4, 2003"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "David Clarke",
-    "entity_origin": [
-      "315: February 17-18, 2013",
-      "78: October 12-15, 2015"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Howard Stern",
-    "entity_origin": [
-      "321: February 24-26, 2013",
-      "513: December 18, 2020",
-      "Ted Nugent"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "the Boston Bombing",
     "entity_origin": [
       "346: April 11-14, 2013",
@@ -6939,30 +3533,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Jaquari Jackson",
-    "entity_origin": [
-      "349: April 15-16, 2013",
-      "355: April 18, 2013",
-      "76: October 7-11, 2015"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Andrew Torba",
-    "entity_origin": [
-      "350: September 29-30, 2019",
-      "424: April 21-22, 2020",
-      "439: May 29-31, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -6979,116 +3549,10 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Janet Napolitano",
-    "entity_origin": [
-      "367: April 23, 2013",
-      "636: April 27, 2009"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Glenn Greenwald",
-    "entity_origin": [
-      "391: January 22, 2020",
-      "586: August 11-12, 2021",
-      "709: 2 Dan's 2 War"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Rima Laibow",
-    "entity_origin": [
-      "394: January 31, 2020",
-      "572: June 28-30, 2021",
-      "83: November 10-12, 2015"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "Vanderbilt",
     "entity_origin": [
       "398: February 9-10, 2020",
       "506: November 22-24, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "William Barr",
-    "entity_origin": [
-      "399: February 12-14, 2020",
-      "424: April 21-22, 2020",
-      "509: December 3-4, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "David Willcock",
-    "entity_origin": [
-      "400: One Out Of Five Seems High",
-      "87: Mark Richards Revisited"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Michelle Malkin",
-    "entity_origin": [
-      "403: February 24, 2020",
-      "435: May 18-21, 2020",
-      "78: October 12-15, 2015"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Patrick Howley",
-    "entity_origin": [
-      "404: Mr. Jones Goes To CPAC",
-      "515: December 28-29, 2020",
-      "520: January 12-13, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Jim Jordan",
-    "entity_origin": [
-      "406: March 1-4, 2020",
-      "441: June 3-4, 2020",
-      "550: April 16, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Keith Olberman",
-    "entity_origin": [
-      "41: May 12, 2017",
-      "491: October 12, 2020",
-      "492: October 13, 2020"
     ],
     "entity_type": [
       "PERSON"
@@ -7103,18 +3567,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "John Roberts",
-    "entity_origin": [
-      "424: April 21-22, 2020",
-      "515: December 28-29, 2020",
-      "527: February 4, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -7152,75 +3604,6 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Breonna Taylor",
-    "entity_origin": [
-      "440: June 1-2, 2020",
-      "485: September 23-24, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Deanna Lorraine",
-    "entity_origin": [
-      "442: June 5, 2020",
-      "475: August 24-26, 2020",
-      "512: December 16-17, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Bubba Wallace",
-    "entity_origin": [
-      "449: June 23-24, 2020",
-      "450: June 25-26, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Colin Kaepernick",
-    "entity_origin": [
-      "451: June 29-30, 2020",
-      "480: September 9-10, 2020",
-      "550: April 16, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Larry Gaiters",
-    "entity_origin": [
-      "453: July 2, 2020",
-      "466: August 5-6, 2020",
-      "482: September 15, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Hodge Twins",
-    "entity_origin": [
-      "459: July 17, 2020",
-      "563: June 2, 2021"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "Philippines",
     "entity_origin": [
       "45: May 25, 2017",
@@ -7229,30 +3612,6 @@
     ],
     "entity_type": [
       "GPE"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Garrett Foster",
-    "entity_origin": [
-      "462: July 26, 2020",
-      "464: July 31-August 1, 2020",
-      "467: August 7-9, 2020"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Kamala Harris",
-    "entity_origin": [
-      "469: August 12-13, 2020",
-      "530: February 10-11, 2021",
-      "589: August 18-20, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -7328,30 +3687,6 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Jesse Benton",
-    "entity_origin": [
-      "481: September 13, 2012",
-      "515: December 28-29, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Tulsi Gabbard",
-    "entity_origin": [
-      "497: Third Try's A Charm",
-      "586: August 11-12, 2021",
-      "639: January 17, 2022"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "republicans",
     "entity_origin": [
       "499: Jordan Takes The Wheel 5",
@@ -7364,46 +3699,11 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Rudy Giuliani",
-    "entity_origin": [
-      "501: November 7-8, 2020",
-      "517: January 5-6, 2021",
-      "InfoWars Roulette 2"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Jeff Zucker",
-    "entity_origin": [
-      "508: December 1-2, 2020",
-      "644: February 2, 2022"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "Gnarls Barkley",
     "entity_origin": [
       "508: December 1-2, 2020",
       "619: November 16, 2021",
       "654: February 27, 2022"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Pete Santilly",
-    "entity_origin": [
-      "522: January 14-17, 2021",
-      "568: June 19, 2021",
-      "638: See You At The Cross-Rhodes"
     ],
     "entity_type": [
       "PERSON"
@@ -7445,39 +3745,6 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Sam Montoya",
-    "entity_origin": [
-      "549: April 13-14, 2021",
-      "Notable Legal Proceedings"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Prescott Bush",
-    "entity_origin": [
-      "552: May 6, 2003",
-      "628: July 10, 2003"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Dennis Miller",
-    "entity_origin": [
-      "555: May 7, 2003",
-      "Paul Joseph Watson"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "Colonial Pipeline",
     "entity_origin": [
       "557: May 11, 2021",
@@ -7505,18 +3772,6 @@
     "entity_origin": [
       "564: May 15-20, 2003",
       "628: July 10, 2003"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Ben Carson",
-    "entity_origin": [
-      "57: August 12-16, 2015",
-      "74: October 4-6, 2015",
-      "82: Oct. 27-Nov. 9, 2015"
     ],
     "entity_type": [
       "PERSON"
@@ -7559,44 +3814,10 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Darrel Rundus",
-    "entity_origin": [
-      "602: Sandy Hook Response",
-      "618: November 15, 2021",
-      "641: Formulaic Objections Part 4"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "Thomas Renz",
     "entity_origin": [
       "603: October 3-4, 2021",
       "688: May 25, 2022"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Wayne Allen Root",
-    "entity_origin": [
-      "603: October 3-4, 2021",
-      "647: February 8, 2022"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "David Kelly",
-    "entity_origin": [
-      "655: July 18, 2003",
-      "659: July 21-23, 2003"
     ],
     "entity_type": [
       "PERSON"
@@ -7615,28 +3836,6 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Jimmy Kimmel",
-    "entity_origin": [
-      "85: September 20-21, 2017",
-      "86: September 22, 2017"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Osama Bin Laden",
-    "entity_origin": [
-      "98: May 2-3, 2012",
-      "Ron Paul"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "Midas Resources Inc.",
     "entity_origin": [
       "Bob Chapman",
@@ -7644,18 +3843,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Eric Taube",
-    "entity_origin": [
-      "Mark Bailen",
-      "Pozner Texas Sandy Hook Lawsuit (Pozner v. Jones)",
-      "Texas Sandy Hook Lawsuit (Heslin v. Jones)"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -7740,18 +3927,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Mika Brzezinski",
-    "entity_origin": [
-      "110: December 5, 2017",
-      "322: July 16-17, 2019"
-    ],
-    "entity_type": [
-      "ORG",
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Super Female Vitality",
     "entity_origin": [
       "111: January 21-22, 2016",
@@ -7785,28 +3960,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Oprah Winfrey",
-    "entity_origin": [
-      "117: January 8, 2018",
-      "467: August 7-9, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Alex Soros",
-    "entity_origin": [
-      "118: January 10-11, 2018",
-      "319: July 7-8, 2019"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Hurricane Harvey",
     "entity_origin": [
       "118: January 10-11, 2018",
@@ -7825,17 +3978,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Richard Belzer",
-    "entity_origin": [
-      "119: August 16, 2012",
-      "349: April 15-16, 2013"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -7862,17 +4004,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Big Jim Tucker",
-    "entity_origin": [
-      "130B: Endgame, Part 2",
-      "579: May 30, 2003"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Warren Buffet",
     "entity_origin": [
       "130D: Endgame, Part 4",
@@ -7888,17 +4019,6 @@
     "entity_origin": [
       "130E: Endgame, Part 5",
       "675: April 25, 2022"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Rick Perry",
-    "entity_origin": [
-      "130E: Endgame, Part 5",
-      "370: November 14-15, 2019"
     ],
     "entity_type": [
       "PERSON"
@@ -8005,17 +4125,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Vladimir Putin",
-    "entity_origin": [
-      "142: March 23, 2018",
-      "49: July 6-13. 2015"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "the Trump Train",
     "entity_origin": [
       "143: March 25-31 Part 1",
@@ -8072,17 +4181,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Mark Moreno",
-    "entity_origin": [
-      "144: March 25-31, Part 2",
-      "263: Jordan Takes The Wheel"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Dear David Hogg",
     "entity_origin": [
       "146: April 4, 2018",
@@ -8090,28 +4188,6 @@
     ],
     "entity_type": [
       "WORK_OF_ART"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Bill Hicks",
-    "entity_origin": [
-      "148: June 1-3, 2009",
-      "227: March 23, 2009"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Sun Myung Moon",
-    "entity_origin": [
-      "149: The Press Conference",
-      "275: December 23-31, 2012"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -8193,17 +4269,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "None Dare Call It Conspiracy",
-    "entity_origin": [
-      "155: January 7-9, 2009",
-      "Globalists"
-    ],
-    "entity_type": [
-      "WORK_OF_ART"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Mises Institute",
     "entity_origin": [
       "157: WWE's Kane (Ft. Marty DeRosa)",
@@ -8233,28 +4298,6 @@
     ],
     "entity_type": [
       "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "David Koch",
-    "entity_origin": [
-      "160: January 22-25, 2009",
-      "Ron Paul"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Omar Navarro",
-    "entity_origin": [
-      "161: May 14, 2018",
-      "396: February 6, 2020"
-    ],
-    "entity_type": [
       "ORG"
     ]
   },
@@ -8348,17 +4391,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Tony Blair",
-    "entity_origin": [
-      "186: February 17-18, 2009",
-      "655: July 18, 2003"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Lolita Express",
     "entity_origin": [
       "188: August 1, 2018",
@@ -8392,50 +4424,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Stephen Crowder",
-    "entity_origin": [
-      "192: August 10, 2018",
-      "533: February 17, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Arthur C Clarke",
-    "entity_origin": [
-      "193: Big Skeletons and Pencil Ink",
-      "281: April 4, 2019"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Isaac Asimov",
-    "entity_origin": [
-      "193: Big Skeletons and Pencil Ink",
-      "9: Joe Rogan Appearance"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Lester Holt",
-    "entity_origin": [
-      "195: August 17, 2018",
-      "488: The First Debate Spectacular"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Alex Notable",
     "entity_origin": [
       "197: Jared Holt from the Sh!tpost Podcast",
@@ -8444,18 +4432,6 @@
     "entity_type": [
       "PERSON",
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Anders Breivik",
-    "entity_origin": [
-      "198: July 22, 2011",
-      "57: August 12-16, 2015"
-    ],
-    "entity_type": [
-      "ORG",
-      "PERSON"
     ]
   },
   {
@@ -8505,43 +4481,10 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Dick Cheney",
-    "entity_origin": [
-      "209: Drunk Hotel Interview",
-      "247: Lionel"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Richardson",
     "entity_origin": [
       "210: March 9, 2009",
       "352: April 17, 2013"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Red Beckman",
-    "entity_origin": [
-      "211: March 10, 2009",
-      "623: July 2-3, 2003"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "George Lucas",
-    "entity_origin": [
-      "212: Matrix Schemes and Billions In Liens",
-      "481: September 13, 2012"
     ],
     "entity_type": [
       "PERSON"
@@ -8584,17 +4527,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Chuck Baldwin",
-    "entity_origin": [
-      "222: March 15-19, 2009",
-      "343: April 3-8, 2013"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Astronauts",
     "entity_origin": [
       "223: A Progressive Space Diplomat",
@@ -8629,17 +4561,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Lyndon LaRouche",
-    "entity_origin": [
-      "230A: Obama Deception, Part 1",
-      "628: July 10, 2003"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Catholic University of America",
     "entity_origin": [
       "230A: Obama Deception, Part 1",
@@ -8647,28 +4568,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "the State Department",
-    "entity_origin": [
-      "230A: Obama Deception, Part 1",
-      "399: February 12-14, 2020"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Melania Trump",
-    "entity_origin": [
-      "230A: Obama Deception, Part 1",
-      "Webster Tarpley"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -8717,17 +4616,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Michael Cohen",
-    "entity_origin": [
-      "239: December 12-13, 2018",
-      "497: Third Try's A Charm"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Queen Elizabeth",
     "entity_origin": [
       "240: March 30-31, 2009",
@@ -8772,43 +4660,10 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Jair Bolsonaro",
-    "entity_origin": [
-      "253: January 15, 2019",
-      "428: May 1, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Marc Maron",
     "entity_origin": [
       "254: April 9-10, 2009",
       "47: June 19-July 5, 2015"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Chemical Ali",
-    "entity_origin": [
-      "254: April 9-10, 2009",
-      "659: July 21-23, 2003"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Aleister Crowley",
-    "entity_origin": [
-      "256: January 17-23, 2019",
-      "495: November 4-6, 2016"
     ],
     "entity_type": [
       "PERSON"
@@ -8849,18 +4704,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Clarence Thomas",
-    "entity_origin": [
-      "262: April 14, 2009",
-      "493: February 16, 2016"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Willis Carto",
     "entity_origin": [
       "262: April 14, 2009",
@@ -8880,17 +4723,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Ralph Northam",
-    "entity_origin": [
-      "270: The Rogan Return",
-      "290: April 25-26, 2019"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -8929,39 +4761,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Lucy Richards",
-    "entity_origin": [
-      "279: Formulaic Objections",
-      "Leonard Pozner"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Stephen King",
-    "entity_origin": [
-      "282: April 5, 2019",
-      "306: June 4-5, 2019"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "W Cleon Skousen",
-    "entity_origin": [
-      "284: April 12, 2019",
-      "368: November 11-12, 2019"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Nick Beggich",
     "entity_origin": [
       "284: April 12, 2019",
@@ -8969,17 +4768,6 @@
     ],
     "entity_type": [
       "ORG",
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Zeb Coulter",
-    "entity_origin": [
-      "286: Wrestling With Disappointment",
-      "317: February 19-20, 2013"
-    ],
-    "entity_type": [
       "PERSON"
     ]
   },
@@ -9007,17 +4795,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Robby Parker",
-    "entity_origin": [
-      "292: January 14, 2013",
-      "343: April 3-8, 2013"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Hail Satan",
     "entity_origin": [
       "296: May 8, 2019",
@@ -9026,28 +4803,6 @@
     "entity_type": [
       "PERSON",
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Joe Bannister",
-    "entity_origin": [
-      "304: May 30-31, 2019",
-      "326: July 26-29, 2019"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Cassandra Fairbanks",
-    "entity_origin": [
-      "304: May 30-31, 2019",
-      "401: Formulaic Objections Part 3"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -9070,17 +4825,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Edward Bernays",
-    "entity_origin": [
-      "306: June 4-5, 2019",
-      "564: May 15-20, 2003"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -9129,17 +4873,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Chris Dorner",
-    "entity_origin": [
-      "312: February 10-13, 2013",
-      "442: June 5, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "John Wilkes Booth",
     "entity_origin": [
       "312: February 10-13, 2013",
@@ -9184,17 +4917,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "James Fetzer",
-    "entity_origin": [
-      "324: Bilderberg Speeches",
-      "The Sandy Hook Elementary Massacre"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "South Korean",
     "entity_origin": [
       "326: July 26-29, 2019",
@@ -9213,17 +4935,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Maryanne Williamson",
-    "entity_origin": [
-      "327: July 31, 2019",
-      "329: August 4-5, 2019"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -9284,40 +4995,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Linda Thompson",
-    "entity_origin": [
-      "334: August 21-22, 2019",
-      "398: February 9-10, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Chicken Man",
-    "entity_origin": [
-      "336: March 24-26, 2013",
-      "98: May 2-3, 2012"
-    ],
-    "entity_type": [
-      "ORG",
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Dan Crenshaw",
-    "entity_origin": [
-      "337: August 28-29, 2019",
-      "497: Third Try's A Charm"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Space Odyssey",
     "entity_origin": [
       "338: March 27-28, 2013",
@@ -9373,40 +5050,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Savannah Hernandez",
-    "entity_origin": [
-      "347: September 23, 2019",
-      "440: June 1-2, 2020"
-    ],
-    "entity_type": [
-      "ORG",
-      "FAC"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Joel Scousen",
-    "entity_origin": [
-      "347: September 23, 2019",
-      "349: April 15-16, 2013"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Greta Thunberg",
-    "entity_origin": [
-      "348: September 24-25, 2019",
-      "351: Jordan Takes The Wheel 2"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Sandy Hood",
     "entity_origin": [
       "349: April 15-16, 2013",
@@ -9437,17 +5080,6 @@
     "entity_type": [
       "PERSON",
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Harry Reid",
-    "entity_origin": [
-      "355: April 18, 2013",
-      "632: Christmas Message and More"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -9485,40 +5117,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Rashida Tlaib",
-    "entity_origin": [
-      "363: October 30, 2019",
-      "399: February 12-14, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Tamerlan Tsarnaev",
-    "entity_origin": [
-      "364: April 21-22, 2013",
-      "373: April 24, 2013"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Fiona Hill",
-    "entity_origin": [
-      "368: November 11-12, 2019",
-      "428: May 1, 2020"
-    ],
-    "entity_type": [
-      "ORG",
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Zbigniew Brzezinski",
     "entity_origin": [
       "373: April 24, 2013",
@@ -9542,32 +5140,10 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "George Wallace",
-    "entity_origin": [
-      "386: January 8, 2020",
-      "617: June 27, 2003"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Jerry Nadler",
     "entity_origin": [
       "391: January 22, 2020",
       "Notable Legal Proceedings"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Tom Cotton",
-    "entity_origin": [
-      "394: January 31, 2020",
-      "430: May 5-7, 2020"
     ],
     "entity_type": [
       "PERSON"
@@ -9582,41 +5158,6 @@
     ],
     "entity_type": [
       "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Ivan Raiklin",
-    "entity_origin": [
-      "399: February 12-14, 2020",
-      "515: December 28-29, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "DeAnna Lorraine",
-    "entity_origin": [
-      "404: Mr. Jones Goes To CPAC",
-      "406: March 1-4, 2020"
-    ],
-    "entity_type": [
-      "ORG",
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Jim Humble",
-    "entity_origin": [
-      "405: Root Races and Terminated Spiders",
-      "419: Disease Denial and Vampire Affirmation"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
     ]
   },
   {
@@ -9643,32 +5184,10 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Bill Ackman",
-    "entity_origin": [
-      "410: March 19-20, 2020",
-      "413: March 27, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Buckaroo Bonzai",
     "entity_origin": [
       "410: March 19-20, 2020",
       "506: November 22-24, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Charles Leiber",
-    "entity_origin": [
-      "412: March 24-25, 2020",
-      "421: April 16, 2020"
     ],
     "entity_type": [
       "PERSON"
@@ -9715,18 +5234,6 @@
       "666: March 31, 2022"
     ],
     "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Jason Jones",
-    "entity_origin": [
-      "416: April 2, 2020",
-      "523: January 18-19, 2021"
-    ],
-    "entity_type": [
-      "ORG",
       "PERSON"
     ]
   },
@@ -9787,17 +5294,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Ahmad Arbery",
-    "entity_origin": [
-      "432: May 10-11, 2020",
-      "436: May 22, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Louisville",
     "entity_origin": [
       "440: June 1-2, 2020",
@@ -9805,17 +5301,6 @@
     ],
     "entity_type": [
       "GPE"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Jared Kushner",
-    "entity_origin": [
-      "441: June 3-4, 2020",
-      "631: December 20, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -9842,17 +5327,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Geoffrey Berman",
-    "entity_origin": [
-      "448: June 21-22, 2020",
-      "453: July 2, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "We Can't Breathe",
     "entity_origin": [
       "449: June 23-24, 2020",
@@ -9860,18 +5334,6 @@
     ],
     "entity_type": [
       "WORK_OF_ART"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Gavin Newsome",
-    "entity_origin": [
-      "449: June 23-24, 2020",
-      "452: Jordan Takes The Wheel 4"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
     ]
   },
   {
@@ -9898,17 +5360,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Michael Flynn",
-    "entity_origin": [
-      "45: May 25, 2017",
-      "619: November 16, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "ProPublica",
     "entity_origin": [
       "470: ShadowGate",
@@ -9925,28 +5376,6 @@
     "entity_origin": [
       "471: August 14-16, 2020",
       "551: April 20-21, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Carlos Zapata",
-    "entity_origin": [
-      "475: August 24-26, 2020",
-      "492: October 13, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Drew Hernandez",
-    "entity_origin": [
-      "475: August 24-26, 2020",
-      "618: November 15, 2021"
     ],
     "entity_type": [
       "PERSON"
@@ -9999,32 +5428,10 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Mitch McConnell",
-    "entity_origin": [
-      "481: September 13, 2012",
-      "512: December 16-17, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Sherry Tenpenny",
     "entity_origin": [
       "482: September 15, 2020",
       "573: July 1, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Matt Drudge",
-    "entity_origin": [
-      "483: September 17, 2020",
-      "74: October 4-6, 2015"
     ],
     "entity_type": [
       "PERSON"
@@ -10043,65 +5450,10 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Tim Dillon",
-    "entity_origin": [
-      "492: October 13, 2020",
-      "497: Third Try's A Charm"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Bill Cosby",
     "entity_origin": [
       "49: July 6-13. 2015",
       "89: December 31, 2015"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Brian Kemp",
-    "entity_origin": [
-      "504: November 16-17, 2020",
-      "505: November 18, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Enrique Tario",
-    "entity_origin": [
-      "505: November 18, 2020",
-      "525: January 27, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Sydney Powell",
-    "entity_origin": [
-      "511: The 12/12 Rallies",
-      "519: January 10-11, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Patrick Byrne",
-    "entity_origin": [
-      "512: December 16-17, 2020",
-      "520: January 12-13, 2021"
     ],
     "entity_type": [
       "PERSON"
@@ -10121,39 +5473,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Taylor Hanson",
-    "entity_origin": [
-      "517: January 5-6, 2021",
-      "518: January 7-8, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Justin Trudeau",
-    "entity_origin": [
-      "519: January 10-11, 2021",
-      "533: February 17, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Chandra Levy",
-    "entity_origin": [
-      "537: July 16-18, 2010",
-      "560: May 12-13, 2003"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "North Carolina",
     "entity_origin": [
       "539: March 10, 2021",
@@ -10161,17 +5480,6 @@
     ],
     "entity_type": [
       "GPE"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Megyn Kelly",
-    "entity_origin": [
-      "53: June 12, 2017",
-      "54: Megyn Kelly Interview Pt. 1"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -10187,39 +5495,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Duante Wright",
-    "entity_origin": [
-      "549: April 13-14, 2021",
-      "550: April 16, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Artur Pawlowski",
-    "entity_origin": [
-      "554: April 30, 2021",
-      "651: February 18, 2022"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Texe Marrs",
-    "entity_origin": [
-      "560: May 12-13, 2003",
-      "622: June 30-July 1, 2003"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "the Secret Space Program",
     "entity_origin": [
       "561: Jordan Takes The Wheel 6",
@@ -10228,28 +5503,6 @@
     "entity_type": [
       "ORG",
       "FAC"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Christopher Sign",
-    "entity_origin": [
-      "567: June 13, 2021",
-      "570: June 24, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "George Noori",
-    "entity_origin": [
-      "567: June 13, 2021",
-      "82: Oct. 27-Nov. 9, 2015"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -10298,17 +5551,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "George Orwell",
-    "entity_origin": [
-      "584: August 5, 2021",
-      "651: February 18, 2022"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "William Shakespeare",
     "entity_origin": [
       "586: August 11-12, 2021",
@@ -10324,28 +5566,6 @@
     "entity_origin": [
       "589: August 18-20, 2021",
       "Roger Stone"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Ron DeSantis",
-    "entity_origin": [
-      "597: September 14, 2021",
-      "625: December 5, 2021"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Ben Marble",
-    "entity_origin": [
-      "600: September 22, 2021",
-      "649: February 14, 2022"
     ],
     "entity_type": [
       "PERSON"
@@ -10408,28 +5628,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Jake Ducey",
-    "entity_origin": [
-      "620: November 23, 2021",
-      "621: Reset Wars: Episode 1"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Mike Hanson",
-    "entity_origin": [
-      "622: June 30-July 1, 2003",
-      "623: July 2-3, 2003"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Travis County",
     "entity_origin": [
       "622: June 30-July 1, 2003",
@@ -10449,28 +5647,6 @@
     "entity_type": [
       "ORG",
       "LOC"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Aaron Rogers",
-    "entity_origin": [
-      "632: Christmas Message and More",
-      "635: January 6-7, 2022"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Richard Nixon",
-    "entity_origin": [
-      "639: January 17, 2022",
-      "Roger Stone"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -10541,28 +5717,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Kit Daniels",
-    "entity_origin": [
-      "664: Formulaic Objections Part 5",
-      "Texas Sandy Hook Lawsuit (Heslin v. Jones)"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Derry Brownfield",
-    "entity_origin": [
-      "703: 9/11, Part 1",
-      "704: 9/11, Part 2"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Becca Lewis",
     "entity_origin": [
       "713: Chatting With Becca Lewis",
@@ -10611,17 +5765,6 @@
     "entity_origin": [
       "Chobani v. Jones",
       "Notable Legal Proceedings"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Matt Blumenthal",
-    "entity_origin": [
-      "Connecticut Sandy Hook Lawsuit (Lafferty v. Jones)",
-      "Mark Bailen"
     ],
     "entity_type": [
       "PERSON"
@@ -10709,39 +5852,6 @@
     "entity_name": "Bill Ogden Representing",
     "entity_origin": [
       "Pozner Texas Sandy Hook Lawsuit (Pozner v. Jones)",
-      "Texas Sandy Hook Lawsuit (Heslin v. Jones)"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Mark Enoch",
-    "entity_origin": [
-      "Pozner Texas Sandy Hook Lawsuit (Pozner v. Jones)",
-      "Texas Sandy Hook Lawsuit (Heslin v. Jones)"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Marc Randazza",
-    "entity_origin": [
-      "Pozner Texas Sandy Hook Lawsuit (Pozner v. Jones)",
-      "Texas Sandy Hook Lawsuit (Heslin v. Jones)"
-    ],
-    "entity_type": [
-      "GPE"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Brittney Paz",
-    "entity_origin": [
-      "Rob Dew",
       "Texas Sandy Hook Lawsuit (Heslin v. Jones)"
     ],
     "entity_type": [
