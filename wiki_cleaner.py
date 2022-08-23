@@ -14,6 +14,7 @@ class LineClassification(Enum):
     BULLET_STAR = 4
     BULLET_HASH = 5
     IGNORED = 6
+    CATEGORY_TAG = 7
 
     @staticmethod
     def is_preserved(lc):
@@ -25,10 +26,13 @@ class LineClassification(Enum):
 
 
 section_pattern = re.compile(r"==+(?P<section_name>[^=]+)==+")
-pseudosection_pattern = re.compile(r"'''''(?P<section_name>[^']+)''''':")
+pseudosection_pattern = re.compile(r"'''''+(?P<section_name>[^']+)'''''+:")
 citation_link_pattern = re.compile("\\[\S+ Citations\s*\\]")
 dreamy_creamy_link_pattern = re.compile(r"\[https://www.gofundme.com/f/dreamycreamysummer .*\]")
+category_tag_pattern = re.compile(r'\[\[\s*Category\s*:\s*(?P<category>[^\]]+)\]\]')
 
+# == '''Buckley's Musical Talents''' ==
+bolded_category_regex = re.compile(r"(=+)\s*'''(?P<section_name>[^=]+)'''\s*\1")
 
 def rewrite_bullet_line(line, classification):
     if classification == LineClassification.BULLET_STAR:
@@ -47,6 +51,9 @@ def rewrite_bullet_line(line, classification):
 def classify_line(line):
     if section_pattern.search(line.strip()) is not None:
         return LineClassification.SECTION
+
+    if category_tag_pattern.search(line.strip()) is not None:
+        return LineClassification.CATEGORY_TAG
 
     if pseudosection_pattern.search(line.strip()) is not None:
         return LineClassification.PSEUDOSECTION
@@ -73,7 +80,8 @@ class LinewiseVisitorState(Enum):
     START = 0
     PRESERVE = 1
     BULLETS = 2
-    BLANK = 3
+    CATEGORIES = 3
+    BLANK = 4
 
 
 def linewise_simplification(raw_mediawiki):
@@ -87,6 +95,10 @@ def linewise_simplification(raw_mediawiki):
             if classification == LineClassification.IGNORED:
                 continue
 
+
+            # TODO(woursler): Handle pseudosections here too?
+            line = bolded_category_regex.sub(r"\1\g<section_name>\1\n", line)
+
             if state == LinewiseVisitorState.START:
                 if classification == LineClassification.BLANK:
                     continue
@@ -94,10 +106,16 @@ def linewise_simplification(raw_mediawiki):
                     state = LinewiseVisitorState.BULLETS
                 if LineClassification.is_preserved(classification):
                     state = LinewiseVisitorState.PRESERVE
+                if classification == LineClassification.CATEGORY_TAG:
+                    state = LinewiseVisitorState.CATEGORIES
 
             if LineClassification.is_bullet(classification) and state != LinewiseVisitorState.BULLETS:
                 yield '\n'
                 state = LinewiseVisitorState.BULLETS
+
+            if classification == LineClassification.CATEGORY_TAG and state != LinewiseVisitorState.CATEGORIES:
+                yield '\n'
+                state = LinewiseVisitorState.CATEGORIES
 
             if classification == LineClassification.BLANK:
                 if state not in [LinewiseVisitorState.START, LinewiseVisitorState.BULLETS]:
@@ -112,6 +130,14 @@ def linewise_simplification(raw_mediawiki):
                     # TODO(woursler): Maybe this does slightly the wrong thing?
                     state = LinewiseVisitorState.PRESERVE
 
+            if state == LinewiseVisitorState.CATEGORIES:
+                if classification == LineClassification.BLANK:
+                    continue
+                if not classification == LineClassification.CATEGORY_TAG:
+                    yield '\n'
+                    # TODO(woursler): Maybe this does slightly the wrong thing?
+                    state = LinewiseVisitorState.PRESERVE
+
             if state == LinewiseVisitorState.BLANK and classification != LineClassification.BLANK:
                 yield '\n'
 
@@ -119,6 +145,10 @@ def linewise_simplification(raw_mediawiki):
                 yield rewrite_bullet_line(line, classification)
             elif classification == LineClassification.PSEUDOSECTION:
                 yield "===%s===\n" % pseudosection_pattern.search(line.strip()).group('section_name')
+            elif line.strip().endswith("<br>"):
+                yield line.strip()[:-4] + '\n\n'
+            elif line.strip().endswith("<br/>"):
+                yield line.strip()[:-5] + '\n\n'
             else:
                 yield line
         yield '\n'
