@@ -1,5 +1,13 @@
 [
   {
+    "from": "703: 9-11, Part 1",
+    "to": "703: 9/11, Part 1"
+  },
+  {
+    "from": "704: 9-11, Part 2",
+    "to": "704: 9/11, Part 2"
+  },
+  {
     "from": "9/11",
     "to": "703: 9/11, Part 1"
   },
@@ -10,6 +18,10 @@
   {
     "from": "Alexandria Ocasio Cortez",
     "to": "Alexandria Ocasio-Cortez"
+  },
+  {
+    "from": "Alex Jones Show",
+    "to": "The Alex Jones Show"
   },
   {
     "from": "AOC",
@@ -30,6 +42,10 @@
   {
     "from": "Buckley Hammon",
     "to": "Buckley Hamman"
+  },
+  {
+    "from": "Cam Atkinson",
+    "to": "Cameron Atkinson"
   },
   {
     "from": "CIA asset Osama Bin Laden",
@@ -88,6 +104,14 @@
     "to": "HONR Network"
   },
   {
+    "from": "Leonard Posner",
+    "to": "Leonard Pozner"
+  },
+  {
+    "from": "Main Page",
+    "to": "Knowledge Fight Wiki"
+  },
+  {
     "from": "Neil Heslin",
     "to": "Sandy Hook Family Members"
   },
@@ -104,6 +128,10 @@
     "to": "Repost: Episode 25"
   },
   {
+    "from": "Sandy Hook",
+    "to": "The Sandy Hook Elementary Massacre"
+  },
+  {
     "from": "Scarlett Lewis",
     "to": "Sandy Hook Family Members"
   },
@@ -114,6 +142,10 @@
   {
     "from": "Steve Quail",
     "to": "Steve Quayle"
+  },
+  {
+    "from": "The Globalists",
+    "to": "Globalists"
   },
   {
     "from": "Y2K",

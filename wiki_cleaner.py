@@ -118,7 +118,7 @@ def linewise_simplification(raw_mediawiki):
                 state = LinewiseVisitorState.CATEGORIES
 
             if classification == LineClassification.BLANK:
-                if state not in [LinewiseVisitorState.START, LinewiseVisitorState.BULLETS]:
+                if state not in [LinewiseVisitorState.START, LinewiseVisitorState.BULLETS, LinewiseVisitorState.CATEGORIES]:
                     state = LinewiseVisitorState.BLANK
                     continue
 
@@ -204,12 +204,17 @@ def simple_pformat_pass(raw_mediawiki):
     text = wikitextparser.parse(raw_mediawiki).pformat().replace("* *", "**").replace(
         "’", "'").replace('“', '"').replace('”', '"').replace('&quot;', '"').replace('&amp;', '&').replace(u'\xa0', u' ')
 
+    text = re.sub(r'<references\s*/>', '', text)
+
     # Clean up large blocks of blank lines.
     text = text.replace(WINDOWS_LINE_ENDING, UNIX_LINE_ENDING)
     text = re.sub(r'(\n\s*)+\n+', '\n\n', text)
 
     # Remove trailing spaces.
     text = re.sub('[^\S\r\n]+\n', '\n', text)
+
+    # Make sure we have a single trailing newline and no leading whitespace.
+    text = text.strip() + '\n'
 
     return text
 

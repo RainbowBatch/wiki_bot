@@ -30,6 +30,9 @@ recognized_entities = page_listing.title.to_list() + known_missing_pages.title.t
 for page_record in page_listing.to_dict(orient='records'):
     page_record = Box(page_record)
 
+    if 'Dreamy Creamy Summer' in page_record.title:
+        continue
+
     fname = 'kf_wiki_content/%s.wiki' % page_record.slug
     try:
         with open(fname, encoding='utf-8') as f:

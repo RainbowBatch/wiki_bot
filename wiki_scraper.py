@@ -6,7 +6,7 @@ from pprint import pprint
 import re
 import pandas as pd
 
-redirect_regex = re.compile(r'#redirect\s*\[\[\s*(?P<link>[^\]]+)\]\]')
+redirect_regex = re.compile(r'#redirect\s*\[\[\s*(?P<link>[^\]]+)\]\]', re.IGNORECASE)
 
 category_regex = re.compile(r'\[\[\s*Category\s*:\s*(?P<category>[^\]]+)\]\]')
 
