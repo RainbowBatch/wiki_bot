@@ -14,7 +14,7 @@ for wiki_categories in page_data.wiki_categories.to_list():
 categories = list(sorted(categories))
 print(categories)
 
-S = set(['Episodes'])
+S = set([])
 page_data = page_data[page_data.wiki_categories.map(S.issubset)]
 page_data = page_data[page_data.wiki_categories.str.len() <= len(S)]
 
@@ -30,6 +30,9 @@ for page_record in page_data.to_dict(orient='records'):
         pformat(page_record) + "[<space> select, <enter> proceed]",
         multiselect=True,
     )
+
+    if len(selected_categories) == 0:
+        continue
 
     fname = 'kf_wiki_content/%s.wiki' % page_record.slug
     with open(fname, encoding='utf-8') as f:

@@ -28,7 +28,9 @@ class LineClassification(Enum):
 section_pattern = re.compile(r"==+(?P<section_name>[^=]+)==+")
 pseudosection_pattern = re.compile(r"'''''+(?P<section_name>[^']+)'''''+:")
 citation_link_pattern = re.compile("\\[\S+ Citations\s*\\]")
-dreamy_creamy_link_pattern = re.compile(r"\[https://www.gofundme.com/f/dreamycreamysummer .*\]")
+
+dreamy_creamy_link1_pattern = re.compile(r"\[https://www.gofundme.com/f/dreamycreamysummer .*\]")
+dreamy_creamy_link2_pattern = re.compile(r"\[https://www.gofundme.com/f/lets-put-a-button-on-the-dreamy-creamy-summer .*\]")
 category_tag_pattern = re.compile(r'\[\[\s*Category\s*:\s*(?P<category>[^\]]+)\]\]')
 
 # == '''Buckley's Musical Talents''' ==
@@ -58,7 +60,10 @@ def classify_line(line):
     if pseudosection_pattern.search(line.strip()) is not None:
         return LineClassification.PSEUDOSECTION
 
-    if dreamy_creamy_link_pattern.search(line.strip()) is not None:
+    if dreamy_creamy_link1_pattern.search(line.strip()) is not None:
+        return LineClassification.IGNORED
+
+    if dreamy_creamy_link2_pattern.search(line.strip()) is not None:
         return LineClassification.IGNORED
 
     if citation_link_pattern.search(line.strip()) is not None:
