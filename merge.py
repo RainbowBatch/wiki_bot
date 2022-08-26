@@ -9,6 +9,7 @@ def merge_records():
 
     title_table = kfio.load('data/titles.json')
     details_table = kfio.load('data/libsyn_details.json')
+    overlay_table = kfio.load('data/overlay.json')
 
     # Annotate next / previous from the libsyn dataset.
     # TODO(woursler): Do something different?
@@ -91,6 +92,25 @@ def merge_records():
         NEW_RECORDS.append(record)
 
     processed_records = pd.DataFrame.from_records(NEW_RECORDS)
+
+    # Now we overlay any manually created changes.
+    print(overlay_table)
+
+    for overlay_record in overlay_table.to_dict(orient='records'):
+        assert 'episode_number' in overlay_record
+        idxs = processed_records.index[processed_records.episode_number == overlay_record['episode_number']].tolist()
+        assert len(idxs) == 1
+        idx = idxs[0]
+
+        for field, value in overlay_record.items():
+            if field == 'episode_number':
+                continue
+            if not isinstance(value, list) and pd.isna(value):
+                continue
+            if value == '##REMOVE##':
+                processed_records.at[idx,field]=None
+            else:
+                processed_records.at[idx,field]=value
 
     kfio.save(processed_records, 'data/final.json')
 
