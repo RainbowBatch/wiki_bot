@@ -1,3 +1,4 @@
+{% raw %}{{{% endraw %}DEFAULTSORT:{{sortkey}}{% raw %}}}{% endraw %}
 {%- macro wiki_link(link_text, link_dest) -%}{% if link_text == link_dest %}[[{{link_dest}}]]{% else %}[[{{link_dest}}|{{link_text}}]]{% endif %}{%- endmacro -%}
 {%- if safe_clean_title != clean_title -%}{%- raw -%}{{{%- endraw -%}DISPLAYTITLE:{{clean_title}}{%- raw -%}}}{%- endraw -%}{%- endif -%}
 {% raw %}{{{% endraw %}Episode

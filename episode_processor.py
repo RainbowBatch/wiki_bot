@@ -20,6 +20,22 @@ from string_processing import splits
 from wiki_cleaner import format_citation_block
 from wiki_cleaner import simple_format
 
+def sortkey(clean_title, episode_number, prev_episode_number, letter_code=None, max_digits = 4):
+    episode_number = episode_number
+    prev_episode_number = prev_episode_number
+
+    if episode_number.startswith('S'):
+        assert prev_episode_number is not None
+        return sortkey(clean_title, prev_episode_number, None, letter_code='S', max_digits = max_digits)
+    if episode_number.endswith(('A', 'B', 'C', 'D', 'E', 'F', 'G')):
+        assert letter_code is None
+        letter_code = episode_number[-1]
+        episode_number = episode_number[:-1]
+
+    if letter_code is None:
+        letter_code = ''
+
+    return '#_EPISODE_%s%s:%s' % (str(int(episode_number)).zfill(max_digits), letter_code, clean_title)
 
 def canonicalize_title(title):
         return title.replace(' ', '_').replace('#', '').replace('"', '{{QUOTE}}').replace("/", "{{FORWARD_SLASH}}").replace(":", "{{COLON}}").replace("?", "{{QUESTION_MARK}}")
@@ -59,6 +75,8 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
         ep_record['clean_title'] = ep_record['title']
     else:
         ep_record['clean_title'] = ep_record['title'].split(':')[-1].strip()
+
+    ep_record['sortkey'] = sortkey(ep_record['clean_title'], ep_record['episode_number'], ep_record['prev_episode_number'])
 
     ep_record['safe_title'] = ep_record['title'].replace('#', '')
     ep_record['safe_clean_title'] = ep_record['clean_title'].replace('#', '')

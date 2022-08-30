@@ -15,6 +15,8 @@ class LineClassification(Enum):
     BULLET_HASH = 5
     IGNORED = 6
     CATEGORY_TAG = 7
+    TABLE_START = 8
+    TABLE_END = 9
 
     @staticmethod
     def is_preserved(lc):
@@ -25,16 +27,23 @@ class LineClassification(Enum):
         return lc == LineClassification.BULLET_STAR or lc == LineClassification.BULLET_HASH
 
 
+table_start_pattern = re.compile(r"\{\|")
+table_end_pattern = re.compile(r"\|\}")
 section_pattern = re.compile(r"==+(?P<section_name>[^=]+)==+")
 pseudosection_pattern = re.compile(r"'''''+(?P<section_name>[^']+)'''''+:")
 citation_link_pattern = re.compile("\\[\S+ Citations\s*\\]")
 
-dreamy_creamy_link1_pattern = re.compile(r"\[https://www.gofundme.com/f/dreamycreamysummer .*\]")
-dreamy_creamy_link2_pattern = re.compile(r"\[https://www.gofundme.com/f/lets-put-a-button-on-the-dreamy-creamy-summer .*\]")
-category_tag_pattern = re.compile(r'\[\[\s*Category\s*:\s*(?P<category>[^\]]+)\]\]')
+dreamy_creamy_link1_pattern = re.compile(
+    r"\[https://www.gofundme.com/f/dreamycreamysummer .*\]")
+dreamy_creamy_link2_pattern = re.compile(
+    r"\[https://www.gofundme.com/f/lets-put-a-button-on-the-dreamy-creamy-summer .*\]")
+category_tag_pattern = re.compile(
+    r'\[\[\s*Category\s*:\s*(?P<category>[^\]]+)\]\]')
 
 # == '''Buckley's Musical Talents''' ==
-bolded_category_regex = re.compile(r"(=+)\s*'''(?P<section_name>[^=]+)'''\s*\1")
+bolded_category_regex = re.compile(
+    r"(=+)\s*'''(?P<section_name>[^=]+)'''\s*\1")
+
 
 def rewrite_bullet_line(line, classification):
     if classification == LineClassification.BULLET_STAR:
@@ -69,6 +78,12 @@ def classify_line(line):
     if citation_link_pattern.search(line.strip()) is not None:
         return LineClassification.IGNORED
 
+    if table_start_pattern.search(line.strip()) is not None:
+        return LineClassification.TABLE_START
+
+    if table_end_pattern.search(line.strip()) is not None:
+        return LineClassification.TABLE_END
+
     if line.strip() == '':
         return LineClassification.BLANK
     # TODO(woursler): Regex?
@@ -87,6 +102,7 @@ class LinewiseVisitorState(Enum):
     BULLETS = 2
     CATEGORIES = 3
     BLANK = 4
+    TABLE = 5
 
 
 def linewise_simplification(raw_mediawiki):
@@ -100,6 +116,9 @@ def linewise_simplification(raw_mediawiki):
             if classification == LineClassification.IGNORED:
                 continue
 
+            if classification == LineClassification.BLANK and state == LinewiseVisitorState.TABLE:
+                # No blank lines in tables.
+                continue
 
             # TODO(woursler): Handle pseudosections here too?
             line = bolded_category_regex.sub(r"\1\g<section_name>\1\n", line)
@@ -113,6 +132,14 @@ def linewise_simplification(raw_mediawiki):
                     state = LinewiseVisitorState.PRESERVE
                 if classification == LineClassification.CATEGORY_TAG:
                     state = LinewiseVisitorState.CATEGORIES
+                if classification == LineClassification.TABLE_START:
+                    state = LinewiseVisitorState.TABLE
+
+            if classification == LineClassification.TABLE_START:
+                state = LinewiseVisitorState.TABLE
+
+            if classification == LineClassification.TABLE_END and state == LinewiseVisitorState.TABLE:
+                state = LinewiseVisitorState.PRESERVE
 
             if LineClassification.is_bullet(classification) and state != LinewiseVisitorState.BULLETS:
                 yield '\n'

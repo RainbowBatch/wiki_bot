@@ -39,7 +39,7 @@ for page_record in page_listing.to_dict(orient='records'):
             page_text = f.read()
 
         if '#redirect' in page_text.lower():
-            print(fname, "is a redirect")
+            #print(fname, "is a redirect")
             continue
 
         formatted_page_text = simple_format(page_text)
