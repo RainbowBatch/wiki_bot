@@ -38,7 +38,7 @@ for wiki_fname in glob.glob('kf_wiki_content/*.wiki'):
             if template_name == 'stub':
                 page_metadata.is_stub = True
                 continue
-            if template_name in ['notice', 'messagebox', 'quote', 'main', 'topic']:
+            if template_name in ['notice', 'messagebox', 'quote', 'main', 'topic', 'externalredirect']:
                 continue
             if template_name != 'episode':
                 raise NotImplementedError("Unable to handle template named '%s'." % template_name)

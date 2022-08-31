@@ -18,13 +18,13 @@ rows = []
 for missing_item in missing_list.find_all("li"):
 	if missing_item.find("a", class_= "newcategory") is not None:
 		continue # We don't care about new categories right now.
+	if missing_item.find('del') is not None:
+		continue # These ones have been created recently.
 	rows.append((
 		missing_item.find("span").text,
 		int(missing_item.find("a").text.split()[0])
 	))
 
 df = pd.DataFrame(rows, columns=header)
-
-print(df)
 
 kfio.save(df, 'data/missing_pages.json')
