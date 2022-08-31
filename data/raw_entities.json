@@ -139,7 +139,93 @@
     ]
   },
   {
-    "entity_count": 113,
+    "entity_count": 213,
+    "entity_name": "Time Travel",
+    "entity_origin": [
+      "105: March 18, 2014",
+      "107: December 12, 2014",
+      "113: February 21-23, 2014",
+      "119: August 16, 2012",
+      "121: April 1-2, 2013",
+      "122 LIVE: March 1-2, 2012",
+      "123: March 18, 2008",
+      "124: March 23, 2008",
+      "128: March 3, 2015",
+      "135: The Wikileaks Press Conference",
+      "148: June 1-3, 2009",
+      "169: November 30, 2014",
+      "170: Live In Austin",
+      "172: June 11, 2013",
+      "181: August 16, 2016",
+      "198: July 22, 2011",
+      "216: November 11, 2010",
+      "228: Old Alex Clips",
+      "244: October 5, 2014",
+      "255: September 25, 2011",
+      "265: September 1, 2011",
+      "2: December 31, 1999 (Y2K)",
+      "36: June 29, 2015",
+      "395: Ghosts Of Caucuses Past",
+      "42: March 11, 2014",
+      "454: December 17, 2013",
+      "474: June 6, 2016",
+      "481: September 13, 2012",
+      "493: February 16, 2016",
+      "535: October 16, 2014",
+      "537: July 16-18, 2010",
+      "542: September 15, 2010",
+      "544: May 1, 2003",
+      "548: May 5, 2003",
+      "552: May 6, 2003",
+      "555: May 7, 2003",
+      "558: May 8-9, 2003",
+      "560: May 12-13, 2003",
+      "564: May 15-20, 2003",
+      "566: May 21, 2003",
+      "571: May 22-27, 2003",
+      "574: May 28-29, 2003",
+      "579: May 30, 2003",
+      "581: June 3, 2003",
+      "591: June 11, 2003",
+      "592: June 12, 2003",
+      "599: June 13, 2003",
+      "601: June 16, 2003",
+      "605: June 17, 2003",
+      "606: June 18-19, 2003",
+      "610: June 23, 2003",
+      "613: June 24-25, 2003",
+      "617: June 27, 2003",
+      "622: June 30-July 1, 2003",
+      "623: July 2-3, 2003",
+      "628: July 10, 2003",
+      "634: July 11, 2003",
+      "636: April 27, 2009",
+      "645: November 4, 2014",
+      "650: July 17, 2003",
+      "655: July 18, 2003",
+      "659: July 21-23, 2003",
+      "660: February 11, 2014",
+      "663: July 24, 2003",
+      "667: July 25, 2003",
+      "670: July 28, 2003",
+      "678: July 29-30, 2003",
+      "680: July 31-August 1, 2003",
+      "701: June 23, 2004",
+      "703: 9/11, Part 1",
+      "704: 9/11, Part 2",
+      "716: April 25, 2014",
+      "75: January 7, 2011",
+      "84: December 21, 2012",
+      "98: May 2-3, 2012",
+      "List of Knowledge Fight episodes",
+      "No One Is Mad At The Crew"
+    ],
+    "entity_type": [
+      "ORG"
+    ]
+  },
+  {
+    "entity_count": 123,
     "entity_name": "Alex Jones'",
     "entity_origin": [
       "114: Piers Morgan Interview",
@@ -241,15 +327,24 @@
       "6: Inauguration Speech Recap",
       "703: 9/11, Part 1",
       "706: Photobombing And Sweating",
+      "Alan Watt",
+      "Art Acevedo",
+      "Bob Chapman",
       "Buckley Hamman",
       "Carol Hamman",
       "David Jones",
+      "David Knight",
       "Edward Group",
+      "Gerald Celente",
       "Globalists",
+      "H.G. Wells and the \"New World Order\"",
       "InfoWars",
+      "Jesse Ventura",
+      "List of Knowledge Fight episodes",
       "Steve Pieczenik",
       "Ted Anderson",
-      "The Protocols of the Elders of Zion"
+      "The Protocols of the Elders of Zion",
+      "Wayne Madsen"
     ],
     "entity_type": [
       "PERSON",
@@ -317,80 +412,22 @@
     ]
   },
   {
-    "entity_count": 73,
-    "entity_name": "Time Travel",
+    "entity_count": 42,
+    "entity_name": "Jordan Takes",
     "entity_origin": [
-      "105: March 18, 2014",
-      "107: December 12, 2014",
-      "113: February 21-23, 2014",
-      "119: August 16, 2012",
-      "121: April 1-2, 2013",
-      "122 LIVE: March 1-2, 2012",
-      "123: March 18, 2008",
-      "124: March 23, 2008",
-      "128: March 3, 2015",
-      "135: The Wikileaks Press Conference",
-      "148: June 1-3, 2009",
-      "169: November 30, 2014",
-      "170: Live In Austin",
-      "172: June 11, 2013",
-      "181: August 16, 2016",
-      "198: July 22, 2011",
-      "216: November 11, 2010",
-      "228: Old Alex Clips",
-      "244: October 5, 2014",
-      "255: September 25, 2011",
-      "265: September 1, 2011",
-      "2: December 31, 1999 (Y2K)",
-      "36: June 29, 2015",
-      "395: Ghosts Of Caucuses Past",
-      "42: March 11, 2014",
-      "454: December 17, 2013",
-      "474: June 6, 2016",
-      "481: September 13, 2012",
-      "493: February 16, 2016",
-      "535: October 16, 2014",
-      "537: July 16-18, 2010",
-      "542: September 15, 2010",
-      "544: May 1, 2003",
-      "548: May 5, 2003",
-      "552: May 6, 2003",
-      "555: May 7, 2003",
-      "558: May 8-9, 2003",
-      "560: May 12-13, 2003",
-      "564: May 15-20, 2003",
-      "566: May 21, 2003",
-      "571: May 22-27, 2003",
-      "574: May 28-29, 2003",
-      "579: May 30, 2003",
-      "581: June 3, 2003",
-      "591: June 11, 2003",
-      "592: June 12, 2003",
-      "599: June 13, 2003",
-      "601: June 16, 2003",
-      "605: June 17, 2003",
-      "606: June 18-19, 2003",
-      "610: June 23, 2003",
-      "613: June 24-25, 2003",
-      "617: June 27, 2003",
-      "622: June 30-July 1, 2003",
-      "623: July 2-3, 2003",
-      "628: July 10, 2003",
-      "634: July 11, 2003",
-      "636: April 27, 2009",
-      "645: November 4, 2014",
-      "650: July 17, 2003",
-      "655: July 18, 2003",
-      "701: June 23, 2004",
-      "703: 9/11, Part 1",
-      "704: 9/11, Part 2",
-      "75: January 7, 2011",
-      "84: December 21, 2012",
-      "98: May 2-3, 2012",
-      "No One Is Mad At The Crew"
+      "144: March 25-31, Part 2",
+      "263: Jordan Takes The Wheel",
+      "351: Jordan Takes The Wheel 2",
+      "411: Jordan Takes The Wheel 3",
+      "452: Jordan Takes The Wheel 4",
+      "499: Jordan Takes The Wheel 5",
+      "561: Jordan Takes The Wheel 6",
+      "608: Jordan Takes The Wheel 7",
+      "673: Jordan Takes The Wheel 8",
+      "List of Knowledge Fight episodes"
     ],
     "entity_type": [
-      "ORG"
+      "PERSON"
     ]
   },
   {
@@ -688,6 +725,31 @@
     ]
   },
   {
+    "entity_count": 20,
+    "entity_name": "Washington",
+    "entity_origin": [
+      "110: December 5, 2017",
+      "120: January 27, 2016",
+      "124: March 23, 2008",
+      "168: Alex Vs. Bill Ayers",
+      "434: Bill Cooper Covers OKC Part 1",
+      "47: June 19-July 5, 2015",
+      "504: November 16-17, 2020",
+      "551: April 20-21, 2021",
+      "568: June 19, 2021",
+      "584: August 5, 2021",
+      "639: January 17, 2022",
+      "90: October 10, 2017",
+      "List of Knowledge Fight episodes",
+      "Roger Stone",
+      "Ron Paul"
+    ],
+    "entity_type": [
+      "GPE",
+      "ORG"
+    ]
+  },
+  {
     "entity_count": 19,
     "entity_name": "North Korea",
     "entity_origin": [
@@ -709,30 +771,6 @@
     ],
     "entity_type": [
       "GPE"
-    ]
-  },
-  {
-    "entity_count": 18,
-    "entity_name": "Washington",
-    "entity_origin": [
-      "110: December 5, 2017",
-      "120: January 27, 2016",
-      "124: March 23, 2008",
-      "168: Alex Vs. Bill Ayers",
-      "434: Bill Cooper Covers OKC Part 1",
-      "47: June 19-July 5, 2015",
-      "504: November 16-17, 2020",
-      "551: April 20-21, 2021",
-      "568: June 19, 2021",
-      "584: August 5, 2021",
-      "639: January 17, 2022",
-      "90: October 10, 2017",
-      "Roger Stone",
-      "Ron Paul"
-    ],
-    "entity_type": [
-      "GPE",
-      "ORG"
     ]
   },
   {
@@ -934,6 +972,29 @@
     ]
   },
   {
+    "entity_count": 15,
+    "entity_name": "Illuminati",
+    "entity_origin": [
+      "141: March 20-22, 2018",
+      "155: January 7-9, 2009",
+      "199: August 29, 2018",
+      "210: March 9, 2009",
+      "212: Matrix Schemes and Billions In Liens",
+      "294: January 15-16, 2013",
+      "338: March 27-28, 2013",
+      "428: May 1, 2020",
+      "431: Smash-N-Grab Spy Jobs",
+      "507: Jordan Doesn't Know About Walk-Ins",
+      "608: Jordan Takes The Wheel 7",
+      "Edward Group",
+      "Mark Dice"
+    ],
+    "entity_type": [
+      "GPE",
+      "ORG"
+    ]
+  },
+  {
     "entity_count": 14,
     "entity_name": "Rockefeller",
     "entity_origin": [
@@ -973,29 +1034,6 @@
     ],
     "entity_type": [
       "NORP"
-    ]
-  },
-  {
-    "entity_count": 14,
-    "entity_name": "Illuminati",
-    "entity_origin": [
-      "141: March 20-22, 2018",
-      "155: January 7-9, 2009",
-      "199: August 29, 2018",
-      "210: March 9, 2009",
-      "212: Matrix Schemes and Billions In Liens",
-      "294: January 15-16, 2013",
-      "338: March 27-28, 2013",
-      "428: May 1, 2020",
-      "431: Smash-N-Grab Spy Jobs",
-      "507: Jordan Doesn't Know About Walk-Ins",
-      "608: Jordan Takes The Wheel 7",
-      "Edward Group",
-      "Mark Dice"
-    ],
-    "entity_type": [
-      "GPE",
-      "ORG"
     ]
   },
   {
@@ -1124,6 +1162,51 @@
     ]
   },
   {
+    "entity_count": 13,
+    "entity_name": "Sandy Hook Investigation",
+    "entity_origin": [
+      "269: December 19, 2012",
+      "List of Knowledge Fight episodes"
+    ],
+    "entity_type": [
+      "PERSON",
+      "ORG"
+    ]
+  },
+  {
+    "entity_count": 12,
+    "entity_name": "Charlottesville",
+    "entity_origin": [
+      "138: March 13-15, 2018",
+      "238: Coach Dave",
+      "290: April 25-26, 2019",
+      "322: July 16-17, 2019",
+      "73: August 12, 2017",
+      "Lee Stranahan"
+    ],
+    "entity_type": [
+      "GPE"
+    ]
+  },
+  {
+    "entity_count": 12,
+    "entity_name": "the United States",
+    "entity_origin": [
+      "141: March 20-22, 2018",
+      "143: March 25-31 Part 1",
+      "158: January 21, 2009",
+      "332: Anunnaki Stasis and Emerald Treaties",
+      "47: June 19-July 5, 2015",
+      "48: May 31, 2017",
+      "Alex Jones",
+      "George Soros",
+      "Ron Paul"
+    ],
+    "entity_type": [
+      "GPE"
+    ]
+  },
+  {
     "entity_count": 12,
     "entity_name": "Supreme Court",
     "entity_origin": [
@@ -1190,23 +1273,6 @@
   },
   {
     "entity_count": 11,
-    "entity_name": "the United States",
-    "entity_origin": [
-      "141: March 20-22, 2018",
-      "143: March 25-31 Part 1",
-      "158: January 21, 2009",
-      "332: Anunnaki Stasis and Emerald Treaties",
-      "47: June 19-July 5, 2015",
-      "48: May 31, 2017",
-      "Alex Jones",
-      "Ron Paul"
-    ],
-    "entity_type": [
-      "GPE"
-    ]
-  },
-  {
-    "entity_count": 11,
     "entity_name": "Deep State",
     "entity_origin": [
       "143: March 25-31 Part 1",
@@ -1227,6 +1293,43 @@
     ]
   },
   {
+    "entity_count": 11,
+    "entity_name": "Obama Deception",
+    "entity_origin": [
+      "189: February 19-20, 2009",
+      "230D: Obama Deception, Part 4",
+      "230E: Obama Deception, Part 5",
+      "234: March 26, 2009",
+      "292: January 14, 2013",
+      "537: July 16-18, 2010",
+      "List of Knowledge Fight episodes"
+    ],
+    "entity_type": [
+      "ORG",
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 11,
+    "entity_name": "Legal Proceedings",
+    "entity_origin": [
+      "618: November 15, 2021",
+      "Chobani v. Jones",
+      "Connecticut Sandy Hook Lawsuit (Lafferty v. Jones)",
+      "Dan Friesen",
+      "InfoW et. al. Bankruptcy Case",
+      "Notable Legal Proceedings",
+      "PQPR",
+      "Pozner Texas Sandy Hook Lawsuit (Pozner v. Jones)",
+      "Texas Parkland Shooting Lawsuit (Fontaine v. Jones)",
+      "Texas Sandy Hook Lawsuit (Heslin v. Jones)",
+      "Texas TUFTA Case"
+    ],
+    "entity_type": [
+      "ORG"
+    ]
+  },
+  {
     "entity_count": 10,
     "entity_name": "Media Matters",
     "entity_origin": [
@@ -1239,20 +1342,6 @@
     ],
     "entity_type": [
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 10,
-    "entity_name": "Charlottesville",
-    "entity_origin": [
-      "138: March 13-15, 2018",
-      "238: Coach Dave",
-      "290: April 25-26, 2019",
-      "322: July 16-17, 2019",
-      "73: August 12, 2017"
-    ],
-    "entity_type": [
-      "GPE"
     ]
   },
   {
@@ -1334,25 +1423,6 @@
     ]
   },
   {
-    "entity_count": 10,
-    "entity_name": "Legal Proceedings",
-    "entity_origin": [
-      "618: November 15, 2021",
-      "Chobani v. Jones",
-      "Connecticut Sandy Hook Lawsuit (Lafferty v. Jones)",
-      "Dan Friesen",
-      "InfoW et. al. Bankruptcy Case",
-      "Notable Legal Proceedings",
-      "PQPR",
-      "Texas Parkland Shooting Lawsuit (Fontaine v. Jones)",
-      "Texas Sandy Hook Lawsuit (Heslin v. Jones)",
-      "Texas TUFTA Case"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
     "entity_count": 9,
     "entity_name": "Space Command",
     "entity_origin": [
@@ -1387,23 +1457,6 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "Jordan Takes",
-    "entity_origin": [
-      "144: March 25-31, Part 2",
-      "263: Jordan Takes The Wheel",
-      "351: Jordan Takes The Wheel 2",
-      "411: Jordan Takes The Wheel 3",
-      "452: Jordan Takes The Wheel 4",
-      "499: Jordan Takes The Wheel 5",
-      "561: Jordan Takes The Wheel 6",
-      "608: Jordan Takes The Wheel 7"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 9,
     "entity_name": "Constitution",
     "entity_origin": [
       "158: January 21, 2009",
@@ -1417,22 +1470,6 @@
     ],
     "entity_type": [
       "LAW"
-    ]
-  },
-  {
-    "entity_count": 9,
-    "entity_name": "Obama Deception",
-    "entity_origin": [
-      "189: February 19-20, 2009",
-      "230D: Obama Deception, Part 4",
-      "230E: Obama Deception, Part 5",
-      "234: March 26, 2009",
-      "292: January 14, 2013",
-      "537: July 16-18, 2010"
-    ],
-    "entity_type": [
-      "ORG",
-      "PERSON"
     ]
   },
   {
@@ -1595,6 +1632,20 @@
   },
   {
     "entity_count": 7,
+    "entity_name": "Jon Rappoport",
+    "entity_origin": [
+      "12: Jon Rappoport",
+      "141: March 20-22, 2018",
+      "298: January 20-23, 2013",
+      "52: July 14-21, 2015",
+      "List of Knowledge Fight episodes"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 7,
     "entity_name": "San Francisco",
     "entity_origin": [
       "130E: Endgame, Part 5",
@@ -1667,6 +1718,17 @@
     ],
     "entity_type": [
       "LOC"
+    ]
+  },
+  {
+    "entity_count": 7,
+    "entity_name": "Bill Cooper Covers",
+    "entity_origin": [
+      "447: Bill Cooper Covers OKC Part 2",
+      "List of Knowledge Fight episodes"
+    ],
+    "entity_type": [
+      "PERSON"
     ]
   },
   {
@@ -1763,6 +1825,23 @@
     ],
     "entity_type": [
       "EVENT"
+    ]
+  },
+  {
+    "entity_count": 6,
+    "entity_name": "Prison Planet",
+    "entity_origin": [
+      "230A: Obama Deception, Part 1",
+      "305: February 1, 2013",
+      "453: July 2, 2020",
+      "594: September 7, 2021",
+      "628: July 10, 2003",
+      "Paul Joseph Watson"
+    ],
+    "entity_type": [
+      "GPE",
+      "ORG",
+      "FAC"
     ]
   },
   {
@@ -1909,21 +1988,6 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "Alex Jones\u2019",
-    "entity_origin": [
-      "Alan Watt",
-      "Art Acevedo",
-      "Bob Chapman",
-      "David Knight",
-      "H.G. Wells and the \"New World Order\"",
-      "Jesse Ventura"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 6,
     "entity_name": "Maya Gamble",
     "entity_origin": [
       "Andino Reynal",
@@ -1955,19 +2019,6 @@
       "111: January 21-22, 2016",
       "138: March 13-15, 2018",
       "143: March 25-31 Part 1"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 5,
-    "entity_name": "Jon Rappoport",
-    "entity_origin": [
-      "12: Jon Rappoport",
-      "141: March 20-22, 2018",
-      "298: January 20-23, 2013",
-      "52: July 14-21, 2015"
     ],
     "entity_type": [
       "PERSON"
@@ -2122,18 +2173,13 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "Prison Planet",
+    "entity_name": "Mars Germans",
     "entity_origin": [
-      "230A: Obama Deception, Part 1",
-      "305: February 1, 2013",
-      "453: July 2, 2020",
-      "594: September 7, 2021",
-      "628: July 10, 2003"
+      "229: Mars Germans and Moon Leases",
+      "List of Knowledge Fight episodes"
     ],
     "entity_type": [
-      "GPE",
-      "ORG",
-      "FAC"
+      "NORP"
     ]
   },
   {
@@ -2265,6 +2311,32 @@
     ],
     "entity_type": [
       "GPE"
+    ]
+  },
+  {
+    "entity_count": 5,
+    "entity_name": "Greg Reece",
+    "entity_origin": [
+      "435: May 18-21, 2020",
+      "609: October 20, 2021",
+      "679: May 9, 2022",
+      "719: August 19, 2022"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 5,
+    "entity_name": "ShadowGate",
+    "entity_origin": [
+      "471: August 14-16, 2020",
+      "472: August 17-19, 2020",
+      "473: August 20-21, 2020",
+      "List of Knowledge Fight episodes"
+    ],
+    "entity_type": [
+      "ORG"
     ]
   },
   {
@@ -2544,6 +2616,18 @@
   },
   {
     "entity_count": 4,
+    "entity_name": "Dragon Moths",
+    "entity_origin": [
+      "217: Space Liars and Dragon Moths",
+      "List of Knowledge Fight episodes"
+    ],
+    "entity_type": [
+      "ORG",
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 4,
     "entity_name": "Nationalist",
     "entity_origin": [
       "220: October 23, 2018",
@@ -2633,6 +2717,19 @@
   },
   {
     "entity_count": 4,
+    "entity_name": "Jo Ann Richards",
+    "entity_origin": [
+      "280: Raptor Weddings and Sardinian Spiders",
+      "291: Feline Contessas And Canine Capitalists",
+      "302: Discernment Overload",
+      "353: Mark Richards Pt. 11"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 4,
     "entity_name": "Parliament",
     "entity_origin": [
       "285: Lil' Taste of Poland",
@@ -2665,6 +2762,17 @@
     ],
     "entity_type": [
       "PERSON"
+    ]
+  },
+  {
+    "entity_count": 4,
+    "entity_name": "QAnon Anonymous",
+    "entity_origin": [
+      "295: Crossover With QAnon Anonymous",
+      "List of Knowledge Fight episodes"
+    ],
+    "entity_type": [
+      "ORG"
     ]
   },
   {
@@ -2847,18 +2955,6 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "Greg Reece",
-    "entity_origin": [
-      "435: May 18-21, 2020",
-      "609: October 20, 2021",
-      "679: May 9, 2022"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
     "entity_name": "the World Economic Forum",
     "entity_origin": [
       "442: June 5, 2020",
@@ -2930,6 +3026,17 @@
     ],
     "entity_type": [
       "ORG"
+    ]
+  },
+  {
+    "entity_count": 4,
+    "entity_name": "Mike Rothschild",
+    "entity_origin": [
+      "607: A Chat With Mike Rothschild",
+      "List of Knowledge Fight episodes"
+    ],
+    "entity_type": [
+      "PERSON"
     ]
   },
   {
@@ -3130,6 +3237,18 @@
       "138: March 13-15, 2018",
       "396: February 6, 2020",
       "450: June 25-26, 2020"
+    ],
+    "entity_type": [
+      "ORG"
+    ]
+  },
+  {
+    "entity_count": 3,
+    "entity_name": "Al Jazeera",
+    "entity_origin": [
+      "141: March 20-22, 2018",
+      "25: Dennis Montgomery Investigation",
+      "Alexander Nekrassov"
     ],
     "entity_type": [
       "ORG"
@@ -3359,6 +3478,29 @@
   },
   {
     "entity_count": 3,
+    "entity_name": "Rowdy Roddy Piper",
+    "entity_origin": [
+      "178: Rowdy Roddy Piper w/ Marty DeRosa",
+      "List of Knowledge Fight episodes"
+    ],
+    "entity_type": [
+      "ORG",
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 3,
+    "entity_name": "Pleiadeans",
+    "entity_origin": [
+      "187: Magic Cheesecloth and Secret Pleiadians",
+      "217: Space Liars and Dragon Moths"
+    ],
+    "entity_type": [
+      "NORP"
+    ]
+  },
+  {
+    "entity_count": 3,
     "entity_name": "New Eastern Outlook",
     "entity_origin": [
       "198: July 22, 2011",
@@ -3549,6 +3691,17 @@
   },
   {
     "entity_count": 3,
+    "entity_name": "Samuel Mudd",
+    "entity_origin": [
+      "356: October 11, 2019",
+      "445: June 12, 2020"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 3,
     "entity_name": "Vanderbilt",
     "entity_origin": [
       "398: February 9-10, 2020",
@@ -3651,18 +3804,6 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "ShadowGate",
-    "entity_origin": [
-      "471: August 14-16, 2020",
-      "472: August 17-19, 2020",
-      "473: August 20-21, 2020"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "South Carolina",
     "entity_origin": [
       "47: June 19-July 5, 2015",
@@ -3722,14 +3863,13 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "InfoWars Video",
+    "entity_name": "Alex Anything",
     "entity_origin": [
-      "537: July 16-18, 2010",
-      "Rob Dew",
-      "Texas Sandy Hook Lawsuit (Heslin v. Jones)"
+      "538: March 2, 2021",
+      "List of Knowledge Fight episodes"
     ],
     "entity_type": [
-      "ORG"
+      "PERSON"
     ]
   },
   {
@@ -3825,6 +3965,18 @@
   },
   {
     "entity_count": 3,
+    "entity_name": "Elizabeth Williamson",
+    "entity_origin": [
+      "657: Chatting With Elizabeth Williamson",
+      "710: Elizabeth Williamson Returns",
+      "List of Knowledge Fight episodes"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 3,
     "entity_name": "Roe v. Wade",
     "entity_origin": [
       "677: May 4, 2022",
@@ -3840,6 +3992,29 @@
     "entity_origin": [
       "Bob Chapman",
       "Ted Anderson"
+    ],
+    "entity_type": [
+      "ORG"
+    ]
+  },
+  {
+    "entity_count": 3,
+    "entity_name": "Formulaic Objections",
+    "entity_origin": [
+      "Bradley Reeves",
+      "List of Knowledge Fight episodes"
+    ],
+    "entity_type": [
+      "PERSON",
+      "ORG"
+    ]
+  },
+  {
+    "entity_count": 3,
+    "entity_name": "Protocols of Zion",
+    "entity_origin": [
+      "List of Knowledge Fight episodes",
+      "The Protocols of the Elders of Zion"
     ],
     "entity_type": [
       "ORG"
@@ -3982,17 +4157,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Reptillians",
-    "entity_origin": [
-      "125: Project Camelot's War In Heaven",
-      "280: Raptor Weddings and Sardinian Spiders"
-    ],
-    "entity_type": [
-      "NORP"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "League of Nations",
     "entity_origin": [
       "130A: Endgame, Part 1",
@@ -4070,17 +4234,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Al Jazeera",
-    "entity_origin": [
-      "141: March 20-22, 2018",
-      "25: Dennis Montgomery Investigation"
-    ],
-    "entity_type": [
-      "ORG"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "the Natural Healing Institute of Naturopathy",
     "entity_origin": [
       "141: March 20-22, 2018",
@@ -4143,6 +4296,39 @@
     ],
     "entity_type": [
       "GPE"
+    ]
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "Comet Ping Pong Pizza",
+    "entity_origin": [
+      "143: March 25-31 Part 1",
+      "Jack Posobiec"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "Macron Leaks",
+    "entity_origin": [
+      "143: March 25-31 Part 1",
+      "Jack Posobiec"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "Rape Melania",
+    "entity_origin": [
+      "143: March 25-31 Part 1",
+      "Jack Posobiec"
+    ],
+    "entity_type": [
+      "WORK_OF_ART"
     ]
   },
   {
@@ -4727,6 +4913,17 @@
   },
   {
     "entity_count": 2,
+    "entity_name": "Reptilians",
+    "entity_origin": [
+      "271: The Serpent Loves Word Games",
+      "280: Raptor Weddings and Sardinian Spiders"
+    ],
+    "entity_type": [
+      "NORP"
+    ]
+  },
+  {
+    "entity_count": 2,
     "entity_name": "The War Room",
     "entity_origin": [
       "274: Ask Alex Anything",
@@ -5140,17 +5337,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Jerry Nadler",
-    "entity_origin": [
-      "391: January 22, 2020",
-      "Notable Legal Proceedings"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Neil Ferguson",
     "entity_origin": [
       "397: February 7-8, 2020",
@@ -5473,6 +5659,17 @@
   },
   {
     "entity_count": 2,
+    "entity_name": "InfoWars Video",
+    "entity_origin": [
+      "537: July 16-18, 2010",
+      "Rob Dew"
+    ],
+    "entity_type": [
+      "ORG"
+    ]
+  },
+  {
+    "entity_count": 2,
     "entity_name": "North Carolina",
     "entity_origin": [
       "539: March 10, 2021",
@@ -5684,17 +5881,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Elizabeth Williamson",
-    "entity_origin": [
-      "657: Chatting With Elizabeth Williamson",
-      "710: Elizabeth Williamson Returns"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Teddy Roosevelt",
     "entity_origin": [
       "658: It's Pretty Easy Being Greene",
@@ -5710,17 +5896,6 @@
     "entity_origin": [
       "661: March 17, 2022",
       "692: Alex Jones' Punch Out"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Becca Lewis",
-    "entity_origin": [
-      "713: Chatting With Becca Lewis",
-      "Texas Sandy Hook Lawsuit (Heslin v. Jones)"
     ],
     "entity_type": [
       "PERSON"
@@ -5745,6 +5920,18 @@
       "Jacquelyn Blott"
     ],
     "entity_type": [
+      "ORG"
+    ]
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "The Decompression Session",
+    "entity_origin": [
+      "Bradley Reeves",
+      "List of Knowledge Fight episodes"
+    ],
+    "entity_type": [
+      "WORK_OF_ART",
       "ORG"
     ]
   },
@@ -5790,6 +5977,17 @@
     ],
     "entity_type": [
       "PERSON"
+    ]
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "World War II",
+    "entity_origin": [
+      "George Soros",
+      "The Club Of Rome"
+    ],
+    "entity_type": [
+      "EVENT"
     ]
   },
   {

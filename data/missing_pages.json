@@ -4,15 +4,15 @@
     "title": "Leo Zagami"
   },
   {
-    "references": 26,
+    "references": 27,
     "title": "Glenn Beck"
   },
   {
-    "references": 23,
+    "references": 24,
     "title": "Brian Stelter"
   },
   {
-    "references": 23,
+    "references": 24,
     "title": "Tucker Carlson"
   },
   {
@@ -89,6 +89,10 @@
   },
   {
     "references": 10,
+    "title": "Greg Reese"
+  },
+  {
+    "references": 10,
     "title": "Jim Bakker"
   },
   {
@@ -113,7 +117,7 @@
   },
   {
     "references": 9,
-    "title": "Greg Reese"
+    "title": "Jo Ann Richards"
   },
   {
     "references": 9,
@@ -645,6 +649,10 @@
   },
   {
     "references": 3,
+    "title": "George Washington"
+  },
+  {
+    "references": 3,
     "title": "Greg Abbott"
   },
   {
@@ -861,6 +869,10 @@
   },
   {
     "references": 3,
+    "title": "Sam Harris"
+  },
+  {
+    "references": 3,
     "title": "Steve King"
   },
   {
@@ -1065,6 +1077,10 @@
   },
   {
     "references": 2,
+    "title": "Dr Samuel Mudd"
+  },
+  {
+    "references": 2,
     "title": "Duante Wright"
   },
   {
@@ -1117,10 +1133,6 @@
   },
   {
     "references": 2,
-    "title": "George Washington"
-  },
-  {
-    "references": 2,
     "title": "George Zimmerman"
   },
   {
@@ -1130,6 +1142,10 @@
   {
     "references": 2,
     "title": "Glen Spencer"
+  },
+  {
+    "references": 2,
+    "title": "Glenn Greenwald"
   },
   {
     "references": 2,
@@ -1186,6 +1202,10 @@
   {
     "references": 2,
     "title": "Janet Napolitano"
+  },
+  {
+    "references": 2,
+    "title": "January 6th Insurrection"
   },
   {
     "references": 2,
@@ -1514,10 +1534,6 @@
   {
     "references": 2,
     "title": "Ruth Bader Ginsberg"
-  },
-  {
-    "references": 2,
-    "title": "Sam Harris"
   },
   {
     "references": 2,
@@ -3013,14 +3029,6 @@
   },
   {
     "references": 1,
-    "title": "Dr Samuel Mud"
-  },
-  {
-    "references": 1,
-    "title": "Dr Samuel Mudd"
-  },
-  {
-    "references": 1,
     "title": "Dr Shawn Brooks"
   },
   {
@@ -3389,10 +3397,6 @@
   },
   {
     "references": 1,
-    "title": "Glenn Greenwald"
-  },
-  {
-    "references": 1,
     "title": "Glenn Spencer"
   },
   {
@@ -3757,10 +3761,6 @@
   },
   {
     "references": 1,
-    "title": "January 6th Insurrection"
-  },
-  {
-    "references": 1,
     "title": "Jar Jar Binks"
   },
   {
@@ -3926,5 +3926,21 @@
   {
     "references": 1,
     "title": "Jimmy Dore"
+  },
+  {
+    "references": 1,
+    "title": "Jo Cox"
+  },
+  {
+    "references": 1,
+    "title": "Joanie Turner"
+  },
+  {
+    "references": 1,
+    "title": "Joaquin Pheonix"
+  },
+  {
+    "references": 1,
+    "title": "Joe"
   }
 ]
