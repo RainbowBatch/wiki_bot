@@ -3,6 +3,7 @@ from citation_extractor import reprocess_citation_episodes
 from episode_details_downloader import download_episode_details
 from merge import merge_records
 from stamp_template import stamp_templates
+from stamp_episode_listing import stamp_episode_listing
 from title_download import download_titles
 
 if __name__ == '__main__':
@@ -19,5 +20,6 @@ if __name__ == '__main__':
         print("Doing second merge due to recalculated citations.")
         merge_records()  # In case any citations have new associations.
     stamp_templates()
+    stamp_episode_listing()
 
     # regenerate entitles

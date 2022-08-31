@@ -1,0 +1,88 @@
+{%- macro wiki_link(link_text, link_dest) -%}{% if link_text == link_dest %}[[{{link_dest}}]]{% else %}[[{{link_dest}}|{{link_text}}]]{% endif %}{%- endmacro -%}
+{% raw %}{{{% endraw %}DISPLAYTITLE:
+    List of ''Knowledge Fight'' episodes
+{% raw %}}}{{{% endraw %}Stub{% raw %}}}{% endraw %}The following is a list of episodes for the [[Knowledge Fight]] podcast hosted by [[Dan Friesen]] and [[Jordan Holmes]].
+
+==Episodes by Release Date==
+
+{% for year, shard in release_year_shards.items() %}
+==={{year}}===
+
+{| class="fandom-table"
+!No.
+!Title
+!Coverage
+start date
+!Coverage
+end date
+!Air date
+!Episode type
+{% for episode_record in shard %}
+|-
+|{{ wiki_link(episode_record.episode_number, episode_record.safe_title) }}
+|{{ wiki_link(episode_record.title, episode_record.safe_title) }}
+|{% if episode_record.coverage_start_date is defined and episode_record.coverage_start_date is not none %}{{episode_record.coverage_start_date}}{% endif %}
+|{% if episode_record.coverage_end_date is defined and episode_record.coverage_end_date is not none %}{{episode_record.coverage_end_date}}{% endif %}
+|{{episode_record.release_date}}
+|{% for category in episode_record.categories %}[[:Category:{{category}}|{{category}}]]{% if not loop.last %}, {% endif %}{% endfor %}
+{% endfor %}
+|}
+
+{% endfor %}
+
+==Episodes by Coverage Date==
+
+Note: For episodes covering a date range, the midpoint of the range is used.
+
+{% for year, shard in coverage_year_shards.items() %}
+==={{year}}===
+
+{| class="fandom-table"
+!No.
+!Title
+!Coverage
+start date
+!Coverage
+end date
+!Air date
+!Episode type
+{% for episode_record in shard %}
+|-
+|{{ wiki_link(episode_record.episode_number, episode_record.safe_title) }}
+|{{ wiki_link(episode_record.title, episode_record.safe_title) }}
+|{% if episode_record.coverage_start_date is defined and episode_record.coverage_start_date is not none %}{{episode_record.coverage_start_date}}{% endif %}
+|{% if episode_record.coverage_end_date is defined and episode_record.coverage_end_date is not none %}{{episode_record.coverage_end_date}}{% endif %}
+|{{episode_record.release_date}}
+|{% for category in episode_record.categories %}[[:Category:{{category}}|{{category}}]]{% if not loop.last %}, {% endif %}{% endfor %}
+{% endfor %}
+|}
+
+{% endfor %}
+
+==Episodes by Category==
+
+Note: Present Day Episodes are excluded, because there are too many and it would be mostly redundant. Within a category, episodes are sorted by release date.
+
+{% for shard_category, shard in category_shards.items() %}
+===[[:Category:{{shard_category}}|{{shard_category}}]]===
+
+{| class="fandom-table"
+!No.
+!Title
+!Coverage
+start date
+!Coverage
+end date
+!Air date
+!Episode type
+{% for episode_record in shard %}
+|-
+|{{ wiki_link(episode_record.episode_number, episode_record.safe_title) }}
+|{{ wiki_link(episode_record.title, episode_record.safe_title) }}
+|{% if episode_record.coverage_start_date is defined and episode_record.coverage_start_date is not none %}{{episode_record.coverage_start_date}}{% endif %}
+|{% if episode_record.coverage_end_date is defined and episode_record.coverage_end_date is not none %}{{episode_record.coverage_end_date}}{% endif %}
+|{{episode_record.release_date}}
+|{% for category in episode_record.categories %}[[:Category:{{category}}|{{category}}]]{% if not loop.last %}, {% endif %}{% endfor %}
+{% endfor %}
+|}
+{% endfor %}
