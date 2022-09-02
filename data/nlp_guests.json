@@ -15,6 +15,7 @@
     "guests": [
       "Mike Lindell",
       "Robert Barnes",
+      "Jim Brewer",
       "Mike Adams",
       "Glenn Beck",
       "Roger Stone",
@@ -41,7 +42,7 @@
   {
     "episode_number": "718",
     "guests": [
-      "Alexander Dugin",
+      "Aleksandr Dugin",
       "Glenn Beck",
       "Greg Reese"
     ]
@@ -54,8 +55,14 @@
       "Greg Reese",
       "Glenn Beck",
       "Glenn Greenwald",
-      "Tucker Carlson",
-      "George Washington"
+      "Tucker Carlson"
+    ]
+  },
+  {
+    "episode_number": "720",
+    "guests": [
+      "Omar al-Faruq",
+      "Jim Shepherd"
     ]
   }
 ]

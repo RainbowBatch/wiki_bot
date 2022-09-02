@@ -2001,6 +2001,20 @@
   },
   {
     "entity_count": 5,
+    "entity_name": "the Soviet Union",
+    "entity_origin": [
+      "102: Alex On Russian Media",
+      "382: December 23-27, 2019",
+      "568: June 19, 2021",
+      "647: February 8, 2022",
+      "75: January 7, 2011"
+    ],
+    "entity_type": [
+      "GPE"
+    ]
+  },
+  {
+    "entity_count": 5,
     "entity_name": "Libertarian",
     "entity_origin": [
       "108: November 30, 2017",
@@ -2717,19 +2731,6 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "Jo Ann Richards",
-    "entity_origin": [
-      "280: Raptor Weddings and Sardinian Spiders",
-      "291: Feline Contessas And Canine Capitalists",
-      "302: Discernment Overload",
-      "353: Mark Richards Pt. 11"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 4,
     "entity_name": "Parliament",
     "entity_origin": [
       "285: Lil' Taste of Poland",
@@ -2837,19 +2838,6 @@
     "entity_type": [
       "PERSON",
       "ORG"
-    ]
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "the Soviet Union",
-    "entity_origin": [
-      "382: December 23-27, 2019",
-      "568: June 19, 2021",
-      "647: February 8, 2022",
-      "75: January 7, 2011"
-    ],
-    "entity_type": [
-      "GPE"
     ]
   },
   {
@@ -3631,18 +3619,6 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "John Wayne",
-    "entity_origin": [
-      "28: How Not To Cover Alex Jones",
-      "680: July 31-August 1, 2003",
-      "89: December 31, 2015"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
-    "entity_count": 3,
     "entity_name": "Islamophobia",
     "entity_origin": [
       "303: January 29-31, 2013",
@@ -4329,17 +4305,6 @@
     ],
     "entity_type": [
       "WORK_OF_ART"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "John Paul Stevens",
-    "entity_origin": [
-      "143: March 25-31 Part 1",
-      "144: March 25-31, Part 2"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {
@@ -5066,17 +5031,6 @@
     ],
     "entity_type": [
       "PRODUCT"
-    ]
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "John Wilkes Booth",
-    "entity_origin": [
-      "312: February 10-13, 2013",
-      "445: June 12, 2020"
-    ],
-    "entity_type": [
-      "PERSON"
     ]
   },
   {

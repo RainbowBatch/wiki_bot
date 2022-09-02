@@ -23,6 +23,7 @@
     "people": [
       "Mike Lindell",
       "Robert Barnes",
+      "Jim Brewer",
       "Mike Adams",
       "Glenn Beck",
       "Hillary Clinton",
@@ -55,7 +56,7 @@
     "episode_number": "718",
     "people": [
       "Vladimir Putin",
-      "Alexander Dugin",
+      "Aleksandr Dugin",
       "Glenn Beck",
       "Greg Reese"
     ]
@@ -70,6 +71,13 @@
       "Glenn Greenwald",
       "Tucker Carlson",
       "George Washington"
+    ]
+  },
+  {
+    "episode_number": "720",
+    "people": [
+      "Omar al-Faruq",
+      "Jim Shepherd"
     ]
   }
 ]

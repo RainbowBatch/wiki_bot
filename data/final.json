@@ -54601,6 +54601,7 @@
     "people": [
       "Mike Lindell",
       "Robert Barnes",
+      "Jim Brewer",
       "Mike Adams",
       "Glenn Beck",
       "Hillary Clinton",
@@ -54726,7 +54727,7 @@
     "ooc_drop": null,
     "people": [
       "Vladimir Putin",
-      "Alexander Dugin",
+      "Aleksandr Dugin",
       "Glenn Beck",
       "Greg Reese"
     ],
@@ -54761,8 +54762,8 @@
       "Topics covered<ref>[https://knowledgefight.com/research/2022/8/28/episode-719-august-19-2022 Episode #719: August 19, 2022]</ref>:\n\n*Alex is pretending that [https://www.weforum.org/agenda/2020/11/misinformation-infodemic-world-vs-virus-podcast/ a WEF podcast from November 2020] came out the day before this episode, because he's just skimmed [https://newspunch.com/wef-announce-recruitment-of-information-warriors-to-control-the-narrative-on-social-media/ a blog post about it]\n*Alex misleads and engages in bigotry about [https://www.cnbc.com/2022/08/04/cdc-estimates-1point7-million-gay-and-bisexual-men-face-highest-risk-from-monkeypox-.html monkeypox]\n*Alex celebrates the cancelation of Reliable Sources and the ouster of Brian Stelter from CNN\n*Beef is not [https://www.biblegateway.com/passage/?search=Genesis%201&version=NIV how the Bible begins]\n*Greg Reece has some [https://scroll.in/article/833178/vegetarianism-in-india-has-more-to-do-with-caste-hierarchy-than-love-for-animals pretty dumb] [https://www.wupr.org/2021/12/07/caste-class-and-vegetarianism-in-india/ ideas about] the traditional Indian caste system and vegetarianism\n"
     ],
     "mediawiki_description": "Today, Dan and Jordan swing back a couple days to check in on how Alex Jones celebrated the end of Reliable Sources and the fall of Stelter.  As a bonus, they get to hear Alex rant excessively about how he's God's chosen leader of the Patriots.\n",
-    "next_episode_number": null,
-    "next_title": null,
+    "next_episode_number": "720",
+    "next_title": "720: August 6, 2003",
     "notable_bits": [],
     "ofile": "kf_wiki_content/719{{COLON}}_August_19,_2022.wiki",
     "ooc_drop": null,
@@ -54779,7 +54780,7 @@
     "prev_title": "718: August 21-22, 2022",
     "release_date": "August 29, 2022",
     "safe_clean_title": "August 19, 2022",
-    "safe_next_title": null,
+    "safe_next_title": "720: August 6, 2003",
     "safe_prev_title": "718: August 21-22, 2022",
     "safe_title": "719: August 19, 2022",
     "slug": "719{{COLON}}_August_19,_2022",
@@ -54787,5 +54788,43 @@
     "sources": [],
     "themes": [],
     "title": "719: August 19, 2022"
+  },
+  {
+    "beverage": null,
+    "categories": [],
+    "clean_title": "August 6, 2003",
+    "coverage_date": "August 6, 2003",
+    "coverage_end_date": "August 6, 2003",
+    "coverage_start_date": "August 6, 2003",
+    "details_html": "<div class=\"libsyn-item-body\">\n<p>Today, Dan and Jordan take a breakie into the past to see how things are going with Alex in simpler times.\u00a0 In this installment, Alex does an absolutely terrible job of covering the bombing of the Marriott in Jakarta and takes some calls from some real weirdos.</p> <p><a href=\"https://knowledgefight.com/research/2022/9/1/episode-720-august-6-2003\"> Citations</a></p> <p><a href=\"https://www.gofundme.com/f/lets-put-a-button-on-the-dreamy-creamy-summer\"> Dreamy Creamy Fundraiser</a></p>\n</div>",
+    "download_link": "https://traffic.libsyn.com/secure/knowledgefight/Aug-6-2003.mp3",
+    "embed_player_url": "https://html5-player.libsyn.com/embed/episode/id/24248259/height/90/theme/custom/thumbnail/yes/direction/forward/tdest_id/461807/render-playlist/no/custom-color/87A93A/",
+    "episode_length": "01:22:52",
+    "episode_number": "720",
+    "episode_type": null,
+    "libsyn_page": "https://knowledgefight.libsyn.com/720-august-6-2003",
+    "mediawiki_citations": [],
+    "mediawiki_description": "Today, Dan and Jordan take a breakie into the past to see how things are going with Alex in simpler times.  In this installment, Alex does an absolutely terrible job of covering the bombing of the Marriott in Jakarta and takes some calls from some real weirdos.\n",
+    "next_episode_number": null,
+    "next_title": null,
+    "notable_bits": [],
+    "ofile": "kf_wiki_content/720{{COLON}}_August_6,_2003.wiki",
+    "ooc_drop": null,
+    "people": [
+      "Omar al-Faruq",
+      "Jim Shepherd"
+    ],
+    "prev_episode_number": "719",
+    "prev_title": "719: August 19, 2022",
+    "release_date": "September 2, 2022",
+    "safe_clean_title": "August 6, 2003",
+    "safe_next_title": null,
+    "safe_prev_title": "719: August 19, 2022",
+    "safe_title": "720: August 6, 2003",
+    "slug": "720{{COLON}}_August_6,_2003",
+    "sortkey": "#_EPISODE_0720:August 6, 2003",
+    "sources": [],
+    "themes": [],
+    "title": "720: August 6, 2003"
   }
 ]
