@@ -27,6 +27,7 @@ for wiki_fname in glob.glob('kf_wiki_content/*.wiki'):
         page_parsed = wikitextparser.parse(page_text)
 
         page_metadata.is_stub = False
+        page_metadata.is_external_redirect = False
 
         page_metadata.wiki_categories = [
             z.strip()
@@ -38,7 +39,10 @@ for wiki_fname in glob.glob('kf_wiki_content/*.wiki'):
             if template_name == 'stub':
                 page_metadata.is_stub = True
                 continue
-            if template_name in ['notice', 'messagebox', 'quote', 'main', 'topic', 'externalredirect']:
+            if template_name == 'externalredirect':
+                page_metadata.is_external_redirect = True
+                continue
+            if template_name in ['notice', 'messagebox', 'quote', 'main', 'topic']:
                 continue
             if template_name != 'episode':
                 raise NotImplementedError("Unable to handle template named '%s'." % template_name)
