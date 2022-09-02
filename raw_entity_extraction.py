@@ -1,28 +1,26 @@
-import en_core_web_sm
 import kfio
 import pandas as pd
 import pandoc
-import spacy
 
 from box import Box
 from collections import Counter
 from collections import defaultdict
+from entity import extract_entities
+from entity import simplify_entity
 from pprint import pprint
 from pygit2 import Repository
-from spacy import displacy
 
 git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
 
 assert git_branch == 'latest_edits', "Please checkout latest_edits! Currently on %s." % git_branch
-
-nlp = en_core_web_sm.load()
 
 entities = []
 
 page_listing = kfio.load('kf_wiki_content/page_listing.json')
 known_missing_pages = kfio.load('data/missing_pages.json')
 
-recognized_entities = page_listing.title.to_list() + known_missing_pages.title.to_list()
+recognized_entities = page_listing.title.to_list(
+) + known_missing_pages.title.to_list()
 
 for page_record in page_listing.to_dict(orient='records'):
     page_record = Box(page_record)
@@ -43,48 +41,40 @@ for page_record in page_listing.to_dict(orient='records'):
             format="plain"
         )
 
-        doc = nlp(S)
-
-        entities.extend([(X.text, X.label_, page_record.title)
-                         for X in doc.ents])
+        entities.extend(extract_entities(S, page_record.title))
     except Exception as e:
         print(e)
         print("Error Processing", fname)
 
-
-def simplify(s):
-    s = ' '.join(s.split())
-    if s.endswith("'s"):
-        return s[:-2]
-    return s
-
-
-def extract_episode_number(s):
-    return s.split('\\')[-1].split('_')[0]
-
+print("Constructing counter.")
 
 counter = Counter()
 types = defaultdict(Counter)
 origins = defaultdict(set)
+sourcetexts = defaultdict(set)
 
 header = [
     "entity_name",
     "entity_count",
     "entity_type",
     "entity_origin",
+    "entity_sourcetexts",
 ]
 rows = []
 
 for s, t, o in entities:
-    s = simplify(s)
+    print("processing 1", s, len(counter))
 
-    if '-' in s:
+    s1 = simplify_entity(s)
+
+    if len(s1) < 10:
         continue
-    if len(s) < 10:
-        continue
-    counter.update([s])
-    types[s].update([t])
-    origins[s].add(extract_episode_number(o))
+    counter.update([s1])
+    types[s1].update([t])
+    origins[s1].add(o)
+    sourcetexts[s1].add(s)
+
+print("Done constructing counter.")
 
 BANNED_TYPES = [
     'DATE',
@@ -93,9 +83,13 @@ BANNED_TYPES = [
     'CARDINAL',
 ]
 
+print("Constructing rows.")
+
 for s, count in counter.most_common():
+    print("processing 2", s)
     ts = [t for t, _ in types[s].most_common()]
     os = sorted(origins[s])
+    sts = sorted(sourcetexts[s])
 
     # There's little value in entities that only appear in one episode.
     if len(os) <= 1:
@@ -108,12 +102,16 @@ for s, count in counter.most_common():
     if banned_flag:
         continue
 
-    rows.append([s, count, ts, os])
+    rows.append([s, count, ts, os, sts])
+
+print("Done making rows. Making df.")
 
 df = pd.DataFrame(rows, columns=header)
 
 # Only include things we don't have existing knowledge of...
-df=df[~df.entity_name.isin(recognized_entities)]
+df = df[~df.entity_name.isin(recognized_entities)]
+print("Starting sort.")
+df = df.sort_values('entity_name')
 
 print(df)
 

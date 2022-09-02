@@ -1,5 +1,6 @@
 import en_core_web_sm
 import kfio
+import re
 
 nlp = en_core_web_sm.load()
 
@@ -9,35 +10,40 @@ scraped_pages = kfio.load('data/scraped_page_data.json')
 
 redirects = scraped_pages[~scraped_pages.redirect.isna()]
 # TODO(woursler): Also include external redirects by default?
-existing_people = scraped_pages[scraped_pages.redirect.isna() & scraped_pages.wiki_categories.map(set(['People']).issubset)]
-external_redirects = scraped_pages[~scraped_pages.redirect.isna() & scraped_pages.is_external_redirect]
+existing_people = scraped_pages[scraped_pages.redirect.isna(
+) & scraped_pages.wiki_categories.map(set(['People']).issubset)]
+external_redirects = scraped_pages[~scraped_pages.redirect.isna(
+) & scraped_pages.is_external_redirect]
 
 missing_pages = kfio.load('data/missing_pages.json')
 
 hardcoded_people = [
- 'Omar al-Faruq',
- 'Jim Shepherd',
+    'Omar al-Faruq',
+    'Jim Shepherd',
 ]
 
 LIKELY_PEOPLE = set(
-    existing_people.title.to_list() + missing_pages.title.to_list() + external_redirects.title.to_list() + hardcoded_people
+    existing_people.title.to_list() + missing_pages.title.to_list() +
+    external_redirects.title.to_list() + hardcoded_people
 )
 
 REMAPPING = {
-    'Rhonda Santas': 'Ron DeSantis',
-    'Owen Troyer': 'Owen Schroyer',
-    'Meghan Kelly': 'Megyn Kelly',
+    "Alex Jones'": 'Alex Jones',
     'Alex E. Jones': 'Alex Jones',
-    'Wolfgang Halbeck': 'Wolfgang Halbig',
-    'Howard Stearn': 'Howard Stern',
+    'Alex': 'Alex Jones',
+    'Alexander Dugan': 'Alexander Dugin',
+    'Bobby Barnes': 'Robert Barnes',
+    'Dan Bodandi': 'Dan Bidondi',
     'Dan Bodandy': 'Dan Bidondi',
     'Dan Vedandi': 'Dan Bidondi',
     'Dan Vidanti': 'Dan Bidondi',
-    'Dan Bodandi': 'Dan Bidondi',
+    'Howard Stearn': 'Howard Stern',
+    'Meghan Kelly': 'Megyn Kelly',
     'Neil Hesleyn': 'Neil Heslin',
-    'Alexander Dugan': 'Alexander Dugin',
-    'Bobby Barnes': 'Robert Barnes',
-    'Omar Alfaruk' : 'Omar al-Faruq',
+    'Omar Alfaruk': 'Omar al-Faruq',
+    'Owen Troyer': 'Owen Schroyer',
+    'Rhonda Santas': 'Ron DeSantis',
+    'Wolfgang Halbeck': 'Wolfgang Halbig',
 }
 
 OVERUSED = [
@@ -47,7 +53,15 @@ OVERUSED = [
 ]
 
 for redirect in redirects.to_dict(orient='records'):
-    REMAPPING[redirect['title']] = redirect['redirect']
+    if redirect['redirect'].startswith('Category:'):
+        target = redirect['redirect'][9:]
+    elif '#' in redirect['redirect']:
+        target = redirect['redirect'].split('#')[0]
+    else:
+        target = redirect['redirect']
+
+    if redirect['title'] != target:
+        REMAPPING[redirect['title']] = target
 
 # These are names that have non-misspelling redirects.
 del REMAPPING['Neil Heslin']
@@ -55,8 +69,14 @@ del REMAPPING['Scarlett Lewis']
 del REMAPPING['Adam Lanza']
 
 
+_RE_COMBINE_WHITESPACE = re.compile(r"\s+")
+
+
 def simplify_entity(s):
-    s=s.replace('\u200f\u200e', '').strip()
+    s = _RE_COMBINE_WHITESPACE.sub(' ', s)
+    s = s.replace(u'\u200f', '').replace(u'\u200e', '')
+    s = s.strip()
+    assert u'\u200f\u200e' not in s
     s = ' '.join(s.split())
     if s.endswith("'s"):
         s = s[:-2]
