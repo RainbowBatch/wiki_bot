@@ -1,6 +1,7 @@
 import kfio
 import pandas as pd
 import pandoc
+import parse
 
 from box import Box
 from collections import Counter
@@ -9,6 +10,8 @@ from entity import extract_entities
 from entity import simplify_entity
 from pprint import pprint
 from pygit2 import Repository
+from glob import glob
+from tqdm import tqdm
 
 git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
 
@@ -22,7 +25,8 @@ known_missing_pages = kfio.load('data/missing_pages.json')
 recognized_entities = page_listing.title.to_list(
 ) + known_missing_pages.title.to_list()
 
-for page_record in page_listing.to_dict(orient='records'):
+print("Processing Wiki Pages")
+for page_record in tqdm(page_listing.to_dict(orient='records')):
     page_record = Box(page_record)
 
     fname = 'kf_wiki_content/%s.wiki' % page_record.slug
@@ -32,7 +36,7 @@ for page_record in page_listing.to_dict(orient='records'):
             S = f.read()
 
         if '#redirect' in S:
-            print(fname, "is a redirect")
+            # Don't process redirects.
             continue
 
         # Strip out existing links.
@@ -46,7 +50,19 @@ for page_record in page_listing.to_dict(orient='records'):
         print(e)
         print("Error Processing", fname)
 
-print("Constructing counter.")
+print("Processing Transcripts")
+for transcript_fname in tqdm(glob('transcripts/*.txt')):
+    episode_number = parse.parse("transcripts\\{}.txt", transcript_fname)[0]
+
+    try:
+        with open(transcript_fname, encoding='utf-8') as f:
+            S = f.read()
+
+        entities.extend(extract_entities(S, transcript_fname))
+
+    except Exception as e:
+        print(e)
+        print("Error Processing", transcript_fname)
 
 counter = Counter()
 types = defaultdict(Counter)
@@ -62,8 +78,8 @@ header = [
 ]
 rows = []
 
-for s, t, o in entities:
-    print("processing 1", s, len(counter))
+print("Constructing entity counter.")
+for s, t, o in tqdm(entities):
 
     s1 = simplify_entity(s)
 
@@ -74,7 +90,6 @@ for s, t, o in entities:
     origins[s1].add(o)
     sourcetexts[s1].add(s)
 
-print("Done constructing counter.")
 
 BANNED_TYPES = [
     'DATE',
@@ -83,10 +98,8 @@ BANNED_TYPES = [
     'CARDINAL',
 ]
 
-print("Constructing rows.")
-
-for s, count in counter.most_common():
-    print("processing 2", s)
+print("Constructing final rows")
+for s, count in tqdm(counter.most_common()):
     ts = [t for t, _ in types[s].most_common()]
     os = sorted(origins[s])
     sts = sorted(sourcetexts[s])
@@ -104,7 +117,7 @@ for s, count in counter.most_common():
 
     rows.append([s, count, ts, os, sts])
 
-print("Done making rows. Making df.")
+print("Finalizing and saving data.")
 
 df = pd.DataFrame(rows, columns=header)
 
