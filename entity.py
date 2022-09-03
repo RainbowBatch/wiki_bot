@@ -44,6 +44,7 @@ REMAPPING = {
     'Owen Troyer': 'Owen Schroyer',
     'Rhonda Santas': 'Ron DeSantis',
     'Wolfgang Halbeck': 'Wolfgang Halbig',
+    'Zuckerberg': 'Mark Zuckerberg',
 }
 
 OVERUSED = [

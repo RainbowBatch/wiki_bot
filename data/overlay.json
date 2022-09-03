@@ -1,11 +1,491 @@
 [
   {
-    "coverage_date": "##REMOVE##",
-    "coverage_end_date": "##REMOVE##",
-    "coverage_start_date": "##REMOVE##",
-    "episode_number": "S005",
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "544"
   },
   {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "548"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "552"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "555"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "558"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "560"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "564"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "566"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "571"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "574"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "579"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "581"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "591"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "592"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "599"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "601"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "605"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "606"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "610"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "613"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "617"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "622"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "623"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "628"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "634"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "650"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "655"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "656"
+  },
+  {
+    "categories": [
+      "Knowledge Fight Interview"
+    ],
+    "episode_number": "657"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "659"
+  },
+  {
+    "categories": [
+      "Time Travel"
+    ],
+    "episode_number": "660"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "661"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "662"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "663"
+  },
+  {
+    "categories": [
+      "Formulaic Objections"
+    ],
+    "episode_number": "664"
+  },
+  {
+    "categories": [
+      "Formulaic Objections"
+    ],
+    "episode_number": "665"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "666"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "667"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "668"
+  },
+  {
+    "categories": [
+      "Knowledge Fight Interview"
+    ],
+    "episode_number": "669"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "670"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "671"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "672"
+  },
+  {
+    "categories": [
+      "Jordan Takes the Wheel"
+    ],
+    "episode_number": "673"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "674"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "675"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "676"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "677"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "678"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "679"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "680"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "681"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "682"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "683"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "684"
+  },
+  {
+    "categories": [
+      "Formulaic Objections"
+    ],
+    "episode_number": "685"
+  },
+  {
+    "categories": [
+      "Project Camelot",
+      "Wacky Wednesday"
+    ],
+    "episode_number": "686"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "687"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "688"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "689"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "690"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "691"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "693"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "695"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "696"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "697"
+  },
+  {
+    "categories": [
+      "Project Camelot",
+      "Wacky Wednesday"
+    ],
+    "episode_number": "698"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "699"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "700"
+  },
+  {
+    "categories": [
+      "Time Travel"
+    ],
+    "episode_number": "701"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "702"
+  },
+  {
+    "categories": [
+      "Time Travel"
+    ],
+    "episode_number": "703"
+  },
+  {
+    "categories": [
+      "Time Travel"
+    ],
+    "episode_number": "704"
+  },
+  {
+    "categories": [
+      "Wacky Wednesday"
+    ],
+    "episode_number": "705"
+  },
+  {
+    "categories": [
+      "Documentary"
+    ],
+    "episode_number": "707"
+  },
+  {
+    "categories": [
+      "Documentary"
+    ],
+    "episode_number": "709"
+  },
+  {
+    "categories": [
+      "Knowledge Fight Interview"
+    ],
+    "episode_number": "710"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "711"
+  },
+  {
+    "categories": [
+      "Formulaic Objections",
+      "Knowledge Fight Interview"
+    ],
+    "episode_number": "712"
+  },
+  {
+    "categories": [
+      "Knowledge Fight Interview"
+    ],
+    "episode_number": "713"
+  },
+  {
+    "categories": [
+      "Formulaic Objections"
+    ],
     "episode_number": "714",
     "people": [
       "Howard Stern",
@@ -19,6 +499,9 @@
     ]
   },
   {
+    "categories": [
+      "Formulaic Objections"
+    ],
     "episode_number": "715",
     "people": [
       "Mike Lindell",
@@ -33,6 +516,9 @@
     ]
   },
   {
+    "categories": [
+      "Time Travel"
+    ],
     "episode_number": "716",
     "people": [
       "Glenn Beck",
@@ -74,10 +560,19 @@
     ]
   },
   {
+    "categories": [
+      "2003 Investigation"
+    ],
     "episode_number": "720",
     "people": [
       "Omar al-Faruq",
       "Jim Shepherd"
     ]
+  },
+  {
+    "coverage_date": "##REMOVE##",
+    "coverage_end_date": "##REMOVE##",
+    "coverage_start_date": "##REMOVE##",
+    "episode_number": "S005"
   }
 ]
