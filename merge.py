@@ -1,7 +1,7 @@
 import json
 import kfio
 import pandas as pd
-
+from tqdm import tqdm
 from episode_processor import process_ep_record
 
 
@@ -91,7 +91,8 @@ def merge_records():
         'data/categories_remapping.json')
 
     NEW_RECORDS = []
-    for raw_record in merged.to_dict(orient='records') + title_table_view.to_dict(orient='records'):
+    print("Processing raw episode records.")
+    for raw_record in tqdm(merged.to_dict(orient='records') + title_table_view.to_dict(orient='records')):
         record = process_ep_record(
             raw_record, citations_df, category_remapping_df)
 
@@ -99,9 +100,11 @@ def merge_records():
 
     processed_records = pd.DataFrame.from_records(NEW_RECORDS)
 
-    for overlay_record in overlay_table.to_dict(orient='records'):
+    print("Adding overlays.")
+    for overlay_record in tqdm(overlay_table.to_dict(orient='records')):
         assert 'episode_number' in overlay_record
-        idxs = processed_records.index[processed_records.episode_number == overlay_record['episode_number']].tolist()
+        idxs = processed_records.index[processed_records.episode_number ==
+                                       overlay_record['episode_number']].tolist()
         assert len(idxs) == 1
         idx = idxs[0]
 
@@ -111,9 +114,9 @@ def merge_records():
             if not isinstance(value, list) and pd.isna(value):
                 continue
             if value == '##REMOVE##':
-                processed_records.at[idx,field]=None
+                processed_records.at[idx, field] = None
             else:
-                processed_records.at[idx,field]=value
+                processed_records.at[idx, field] = value
 
     kfio.save(processed_records, 'data/final.json')
 

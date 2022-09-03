@@ -3,6 +3,7 @@ import pandas as pd
 import requests
 
 from bs4 import BeautifulSoup
+from tqdm import tqdm
 
 
 def download_titles():
@@ -18,7 +19,7 @@ def download_titles():
     ]
     rows = []
 
-    for item in soup.find_all("div", class_="libsyn-item"):
+    for item in tqdm(soup.find_all("div", class_="libsyn-item")):
         title_link = item.find("div", class_="libsyn-item-title").find("a")
         release_date = ''.join(
             item.find("div", class_="libsyn-item-release-date")).strip()

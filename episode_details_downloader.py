@@ -1,6 +1,6 @@
 import kfio
 import pandas as pd
-
+from tqdm import tqdm
 from bs4 import BeautifulSoup
 
 
@@ -28,7 +28,7 @@ def download_episode_details():
     ]
     rows = []
 
-    for details_url in new_urls:
+    for details_url in tqdm(new_urls):
         details_page = kfio.download(details_url)
         details_soup = BeautifulSoup(details_page.text, 'html.parser')
 

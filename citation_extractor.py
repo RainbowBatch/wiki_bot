@@ -6,10 +6,12 @@ import re
 import wikitextparser
 
 from bs4 import BeautifulSoup
+from bs4 import SoupStrainer
 from citation_episode_number_matcher import guess_associated_episode
 from date_lookup import extract_date_from_string
 from date_lookup import format_date
 from pprint import pprint
+from tqdm import tqdm
 
 
 def reprocess_citation_episodes():
@@ -52,7 +54,16 @@ def download_citations():
 
     citation_url_regex = re.compile(
         "^https://knowledgefight.com/((the-past)|(research))/\d+/\d+/\d+/.*$")
-    citation_urls = [s for s in sitemap if citation_url_regex.match(s)]
+    citation_urls = set([s for s in sitemap if citation_url_regex.match(s)])
+
+    # Almost everything ought to be in the sitemap, but it can take 24h to update.
+    libsyn_details = kfio.load('data/libsyn_details.json')
+    for description in libsyn_details.details_html.to_list():
+        for link in BeautifulSoup(description, parse_only=SoupStrainer('a')):
+            if link.has_attr('href') and citation_url_regex.match(link['href'].strip()):
+                citation_urls.add(link['href'].strip())
+
+    citation_urls = list(sorted(citation_urls))
 
     print("Located", len(citation_urls), "citation urls.")
 
@@ -80,7 +91,7 @@ def download_citations():
 
     print("Downloading html for %d citations." % len(new_citation_urls))
 
-    for citations_url in new_citation_urls:
+    for citations_url in tqdm(new_citation_urls):
         citations_page = kfio.download(citations_url)
         citations_soup = BeautifulSoup(citations_page.text, 'html.parser')
         citations_html = citations_soup.find(

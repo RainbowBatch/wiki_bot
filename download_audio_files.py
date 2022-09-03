@@ -1,12 +1,13 @@
 import kfio
 import requests
 from os.path import exists
+from tqdm import tqdm
 
 episode_listing = kfio.load('data/final.json')
 
 print(episode_listing[['episode_number', 'download_link']])
 
-for record in episode_listing.to_dict(orient='records'):
+for record in tqdm(episode_listing.to_dict(orient='records')):
 	audio_fname = 'audio_files/%s.mp3' % record['episode_number']
 	url = record['download_link']
 

@@ -2,8 +2,8 @@ from citation_extractor import download_citations
 from citation_extractor import reprocess_citation_episodes
 from episode_details_downloader import download_episode_details
 from merge import merge_records
-from stamp_template import stamp_templates
 from stamp_episode_listing import stamp_episode_listing
+from stamp_template import stamp_templates
 from title_download import download_titles
 
 if __name__ == '__main__':
