@@ -38,14 +38,16 @@
     "length": null,
     "libsyn_link": null,
     "nextEpisode": null,
-    "oldid": 2339,
+    "oldid": 3652,
     "oocDrop": null,
     "previousEpisode": null,
     "question": null,
     "redirect": null,
     "slug": "{{QUOTE}}Mandatory_Service_Bill{{QUOTE}}",
     "title": "\"Mandatory Service Bill\"",
-    "wiki_categories": []
+    "wiki_categories": [
+      "InfoWars Sources"
+    ]
   },
   {
     "airDate": "November 6, 2017",
@@ -8880,7 +8882,7 @@
   {
     "airDate": "June 24, 2019",
     "appearance": [
-      "Christopher Dorner\u200f\u200e",
+      "Christopher Dorner",
       "Rodney Brossart",
       "Ron Paul",
       "David Iche",
@@ -8901,7 +8903,7 @@
     "length": "01:35:04",
     "libsyn_link": "https://knowledgefight.libsyn.com/knowledge-fight-february-10-13-2013",
     "nextEpisode": "313",
-    "oldid": 3507,
+    "oldid": 3543,
     "oocDrop": null,
     "previousEpisode": "311",
     "question": null,
@@ -12966,7 +12968,7 @@
     "length": "02:11:59",
     "libsyn_link": "https://knowledgefight.libsyn.com/knowledge-fight-march-24-25-2020",
     "nextEpisode": "413",
-    "oldid": 3089,
+    "oldid": 3631,
     "oocDrop": null,
     "previousEpisode": "411",
     "question": null,
@@ -16173,7 +16175,7 @@
     "length": "01:11:33",
     "libsyn_link": "https://knowledgefight.libsyn.com/492-october-13-2020",
     "nextEpisode": "493",
-    "oldid": 3182,
+    "oldid": 3632,
     "oocDrop": null,
     "previousEpisode": "491",
     "question": null,
@@ -18207,7 +18209,7 @@
     "length": "01:31:11",
     "libsyn_link": "https://knowledgefight.libsyn.com/541-march-17-18-2021",
     "nextEpisode": "542",
-    "oldid": 3237,
+    "oldid": 3633,
     "oocDrop": null,
     "previousEpisode": "540",
     "question": null,
@@ -18305,7 +18307,7 @@
     "coverageStartDate": null,
     "episodeNumber": "544",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -18313,7 +18315,7 @@
     "length": "01:48:10",
     "libsyn_link": "https://knowledgefight.libsyn.com/544-may-1-2003",
     "nextEpisode": "545",
-    "oldid": 3240,
+    "oldid": 3546,
     "oocDrop": "What do you think about them apples?",
     "previousEpisode": "543",
     "question": null,
@@ -18322,7 +18324,7 @@
     "title": "544: May 1, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -18445,7 +18447,7 @@
     "coverageStartDate": null,
     "episodeNumber": "548",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -18453,7 +18455,7 @@
     "length": "01:23:13",
     "libsyn_link": "https://knowledgefight.libsyn.com/548-may-5-2003",
     "nextEpisode": "549",
-    "oldid": 3244,
+    "oldid": 3547,
     "oocDrop": "Kids are being arrested for stepping in water puddles",
     "previousEpisode": "547",
     "question": null,
@@ -18462,7 +18464,7 @@
     "title": "548: May 5, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -18635,7 +18637,7 @@
     "coverageStartDate": null,
     "episodeNumber": "552",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -18643,7 +18645,7 @@
     "length": "01:24:07",
     "libsyn_link": "https://knowledgefight.libsyn.com/552-may-6-2003",
     "nextEpisode": "553",
-    "oldid": 3249,
+    "oldid": 3548,
     "oocDrop": "Yes, I'm a maniac",
     "previousEpisode": "551",
     "question": null,
@@ -18652,7 +18654,7 @@
     "title": "552: May 6, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -18742,7 +18744,7 @@
     "coverageStartDate": null,
     "episodeNumber": "555",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -18750,7 +18752,7 @@
     "length": "01:17:47",
     "libsyn_link": "https://knowledgefight.libsyn.com/555-may-7-2003",
     "nextEpisode": "556",
-    "oldid": 3252,
+    "oldid": 3549,
     "oocDrop": null,
     "previousEpisode": "554",
     "question": null,
@@ -18759,7 +18761,7 @@
     "title": "555: May 7, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -18850,7 +18852,7 @@
     "coverageStartDate": "May 8, 2003",
     "episodeNumber": "558",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -18858,7 +18860,7 @@
     "length": "01:46:27",
     "libsyn_link": "https://knowledgefight.libsyn.com/558-may-8-9-2003",
     "nextEpisode": "559",
-    "oldid": 3255,
+    "oldid": 3550,
     "oocDrop": "Alex or Bill Clinton; You ever see the artwork in the Denver airport?; Valedictorians today don't hold a candle to my father",
     "previousEpisode": "557",
     "question": null,
@@ -18867,7 +18869,7 @@
     "title": "558: May 8-9, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -18949,7 +18951,7 @@
     "coverageStartDate": "May 12, 2003",
     "episodeNumber": "560",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -18957,7 +18959,7 @@
     "length": "01:42:19",
     "libsyn_link": "https://knowledgefight.libsyn.com/560-may-12-13-2003",
     "nextEpisode": "561",
-    "oldid": 3258,
+    "oldid": 3551,
     "oocDrop": null,
     "previousEpisode": "559",
     "question": null,
@@ -18966,7 +18968,7 @@
     "title": "560: May 12-13, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -19094,7 +19096,7 @@
     "coverageStartDate": "May 15, 2003",
     "episodeNumber": "564",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -19102,7 +19104,7 @@
     "length": "01:55:06",
     "libsyn_link": "https://knowledgefight.libsyn.com/564-may-15-20-2003",
     "nextEpisode": "565",
-    "oldid": 3262,
+    "oldid": 3552,
     "oocDrop": "Man, that was a good show! Didn't cover all of the news, but...",
     "previousEpisode": "563",
     "question": null,
@@ -19111,7 +19113,7 @@
     "title": "564: May 15-20, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -19159,7 +19161,7 @@
     "coverageStartDate": null,
     "episodeNumber": "566",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -19167,7 +19169,7 @@
     "length": "01:25:10",
     "libsyn_link": "https://knowledgefight.libsyn.com/566-may-21-2003",
     "nextEpisode": "567",
-    "oldid": 3264,
+    "oldid": 3553,
     "oocDrop": null,
     "previousEpisode": "565",
     "question": null,
@@ -19176,7 +19178,7 @@
     "title": "566: May 21, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -19373,7 +19375,7 @@
     "coverageStartDate": "May 22, 2003",
     "episodeNumber": "571",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -19381,7 +19383,7 @@
     "length": "01:24:02",
     "libsyn_link": "https://knowledgefight.libsyn.com/571-may-22-27-2003",
     "nextEpisode": "572",
-    "oldid": 3270,
+    "oldid": 3554,
     "oocDrop": null,
     "previousEpisode": "570",
     "question": null,
@@ -19390,7 +19392,7 @@
     "title": "571: May 22-27, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -19474,7 +19476,7 @@
     "coverageStartDate": "May 28, 2003",
     "episodeNumber": "574",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -19482,7 +19484,7 @@
     "length": "01:48:23",
     "libsyn_link": "https://knowledgefight.libsyn.com/574-may-28-29-2021",
     "nextEpisode": "575",
-    "oldid": 3273,
+    "oldid": 3555,
     "oocDrop": "No grandchildren for you",
     "previousEpisode": "573",
     "question": null,
@@ -19491,7 +19493,7 @@
     "title": "574: May 28-29, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -19657,7 +19659,7 @@
     "coverageStartDate": null,
     "episodeNumber": "579",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -19665,7 +19667,7 @@
     "length": "01:18:05",
     "libsyn_link": "https://knowledgefight.libsyn.com/579-may-30-2003",
     "nextEpisode": "580",
-    "oldid": 3278,
+    "oldid": 3556,
     "oocDrop": null,
     "previousEpisode": "578",
     "question": null,
@@ -19674,7 +19676,7 @@
     "title": "579: May 30, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -19761,7 +19763,7 @@
     "coverageStartDate": null,
     "episodeNumber": "581",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -19769,7 +19771,7 @@
     "length": "00:46:55",
     "libsyn_link": "https://knowledgefight.libsyn.com/581-june-3-2003",
     "nextEpisode": "582",
-    "oldid": 3281,
+    "oldid": 3557,
     "oocDrop": null,
     "previousEpisode": "580",
     "question": null,
@@ -19778,7 +19780,7 @@
     "title": "581: June 3, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -20143,7 +20145,7 @@
     "coverageStartDate": null,
     "episodeNumber": "591",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -20151,7 +20153,7 @@
     "length": "01:39:28",
     "libsyn_link": "https://knowledgefight.libsyn.com/591-june-11-2003",
     "nextEpisode": "592",
-    "oldid": 3292,
+    "oldid": 3558,
     "oocDrop": null,
     "previousEpisode": "590",
     "question": null,
@@ -20160,7 +20162,7 @@
     "title": "591: June 11, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -20174,7 +20176,7 @@
     "coverageStartDate": null,
     "episodeNumber": "592",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -20182,7 +20184,7 @@
     "length": "01:04:21",
     "libsyn_link": "https://knowledgefight.libsyn.com/592-june-12-2003",
     "nextEpisode": "593",
-    "oldid": 3293,
+    "oldid": 3559,
     "oocDrop": null,
     "previousEpisode": "591",
     "question": null,
@@ -20191,7 +20193,7 @@
     "title": "592: June 12, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -20415,7 +20417,7 @@
     "coverageStartDate": null,
     "episodeNumber": "599",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -20423,7 +20425,7 @@
     "length": "01:03:53",
     "libsyn_link": "https://knowledgefight.libsyn.com/599-june-13-2003",
     "nextEpisode": "600",
-    "oldid": 3300,
+    "oldid": 3560,
     "oocDrop": "Alex explains why he does an evil voice",
     "previousEpisode": "598",
     "question": null,
@@ -20432,7 +20434,7 @@
     "title": "599: June 13, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -20543,7 +20545,7 @@
     "coverageStartDate": null,
     "episodeNumber": "601",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -20551,7 +20553,7 @@
     "length": "01:16:17",
     "libsyn_link": "https://knowledgefight.libsyn.com/601-june-16-2003",
     "nextEpisode": "602",
-    "oldid": 3304,
+    "oldid": 3561,
     "oocDrop": null,
     "previousEpisode": "600",
     "question": null,
@@ -20560,7 +20562,7 @@
     "title": "601: June 16, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -20691,7 +20693,7 @@
     "coverageStartDate": null,
     "episodeNumber": "605",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -20699,7 +20701,7 @@
     "length": "00:53:00",
     "libsyn_link": "https://knowledgefight.libsyn.com/605-june-17-2003",
     "nextEpisode": "606",
-    "oldid": 3308,
+    "oldid": 3562,
     "oocDrop": null,
     "previousEpisode": "604",
     "question": null,
@@ -20708,7 +20710,7 @@
     "title": "605: June 17, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -20724,7 +20726,7 @@
     "coverageStartDate": "June 18, 2003",
     "episodeNumber": "606",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -20732,7 +20734,7 @@
     "length": "01:39:35",
     "libsyn_link": "https://knowledgefight.libsyn.com/606-june-17-18-2003",
     "nextEpisode": "607",
-    "oldid": 3309,
+    "oldid": 3563,
     "oocDrop": "Setting yourself on fire is not a good thing to do; Dan in Illinois, you're on the air",
     "previousEpisode": "605",
     "question": null,
@@ -20741,7 +20743,7 @@
     "title": "606: June 18-19, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -20865,7 +20867,7 @@
     "length": "01:55:16",
     "libsyn_link": "https://knowledgefight.libsyn.com/knowledge-fight-mars-colonies",
     "nextEpisode": "61",
-    "oldid": 3313,
+    "oldid": 3640,
     "oocDrop": null,
     "previousEpisode": "59",
     "question": null,
@@ -20891,7 +20893,7 @@
     "coverageStartDate": null,
     "episodeNumber": "610",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -20899,7 +20901,7 @@
     "length": "01:07:23",
     "libsyn_link": "https://knowledgefight.libsyn.com/610-june-23-2003",
     "nextEpisode": "611",
-    "oldid": 3314,
+    "oldid": 3564,
     "oocDrop": "You're a traitor, Dan",
     "previousEpisode": "609",
     "question": null,
@@ -20908,7 +20910,7 @@
     "title": "610: June 23, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -20999,7 +21001,7 @@
     "coverageStartDate": "June 24, 2003",
     "episodeNumber": "613",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -21007,7 +21009,7 @@
     "length": "01:31:57",
     "libsyn_link": "https://knowledgefight.libsyn.com/613-june-24-25-2003",
     "nextEpisode": "614",
-    "oldid": 3317,
+    "oldid": 3565,
     "oocDrop": "Barney, you're on the air",
     "previousEpisode": "612",
     "question": null,
@@ -21016,7 +21018,7 @@
     "title": "613: June 24-25, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -21145,7 +21147,7 @@
     "coverageStartDate": null,
     "episodeNumber": "617",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -21153,7 +21155,7 @@
     "length": "01:19:57",
     "libsyn_link": "https://knowledgefight.libsyn.com/617-june-27-2003",
     "nextEpisode": "618",
-    "oldid": 3321,
+    "oldid": 3566,
     "oocDrop": null,
     "previousEpisode": "616",
     "question": null,
@@ -21162,7 +21164,7 @@
     "title": "617: June 27, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -21354,7 +21356,7 @@
     "coverageStartDate": "June 30, 2003",
     "episodeNumber": "622",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -21362,7 +21364,7 @@
     "length": "01:11:07",
     "libsyn_link": "https://knowledgefight.libsyn.com/622-june-30-july-1-2003",
     "nextEpisode": "623",
-    "oldid": 3327,
+    "oldid": 3567,
     "oocDrop": null,
     "previousEpisode": "621",
     "question": null,
@@ -21371,7 +21373,7 @@
     "title": "622: June 30-July 1, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -21390,7 +21392,7 @@
     "coverageStartDate": "July 2, 2003",
     "episodeNumber": "623",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -21398,7 +21400,7 @@
     "length": "01:14:36",
     "libsyn_link": "https://knowledgefight.libsyn.com/623-july-2-3-2003",
     "nextEpisode": "624",
-    "oldid": 3328,
+    "oldid": 3568,
     "oocDrop": "It's Hades on earth, thanks for the call",
     "previousEpisode": "622",
     "question": null,
@@ -21407,7 +21409,7 @@
     "title": "623: July 2-3, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -21573,7 +21575,7 @@
     "coverageStartDate": "July 10, 2003",
     "episodeNumber": "628",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -21581,7 +21583,7 @@
     "length": "01:34:42",
     "libsyn_link": "https://knowledgefight.libsyn.com/628-july-10-2003",
     "nextEpisode": "629",
-    "oldid": 3333,
+    "oldid": 3569,
     "oocDrop": null,
     "previousEpisode": "627",
     "question": null,
@@ -21590,7 +21592,7 @@
     "title": "628: July 10, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -21836,7 +21838,7 @@
     "coverageStartDate": null,
     "episodeNumber": "634",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -21844,7 +21846,7 @@
     "length": "01:34:03",
     "libsyn_link": "https://knowledgefight.libsyn.com/634-july-11-2003",
     "nextEpisode": "635",
-    "oldid": 3339,
+    "oldid": 3570,
     "oocDrop": null,
     "previousEpisode": "633",
     "question": null,
@@ -21853,7 +21855,7 @@
     "title": "634: July 11, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -22498,7 +22500,7 @@
     "coverageStartDate": null,
     "episodeNumber": "650",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -22506,7 +22508,7 @@
     "length": "01:36:46",
     "libsyn_link": "https://knowledgefight.libsyn.com/650-july-17-2003",
     "nextEpisode": "651",
-    "oldid": 3357,
+    "oldid": 3571,
     "oocDrop": null,
     "previousEpisode": "649",
     "question": null,
@@ -22515,14 +22517,14 @@
     "title": "650: July 17, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
     "airDate": "February 21, 2022",
     "appearance": [
       "Hillary Clinton",
-      "Arthur Pawlowski",
+      "Artur Pawlowski",
       "Vladimir Putin",
       "George Orwell",
       "Prince Charles",
@@ -22544,7 +22546,7 @@
     "length": "01:46:56",
     "libsyn_link": "https://knowledgefight.libsyn.com/651-february-18-2022",
     "nextEpisode": "652",
-    "oldid": 3358,
+    "oldid": 3542,
     "oocDrop": null,
     "previousEpisode": "650",
     "question": null,
@@ -22678,7 +22680,7 @@
     "coverageStartDate": null,
     "episodeNumber": "655",
     "episodeType": [
-      "Time Travel"
+      "2003 Investigation"
     ],
     "hosts": null,
     "is_external_redirect": false,
@@ -22686,7 +22688,7 @@
     "length": "01:08:17",
     "libsyn_link": "https://knowledgefight.libsyn.com/655-july-18-2003",
     "nextEpisode": "656",
-    "oldid": 3362,
+    "oldid": 3572,
     "oocDrop": "I'd like to thank Mr Blood",
     "previousEpisode": "654",
     "question": null,
@@ -22695,7 +22697,7 @@
     "title": "655: July 18, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -22706,14 +22708,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "656",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "02:14:48",
     "libsyn_link": "https://knowledgefight.libsyn.com/656-march-5-2022",
     "nextEpisode": "657",
-    "oldid": 3363,
+    "oldid": 3573,
     "oocDrop": null,
     "previousEpisode": "655",
     "question": null,
@@ -22733,14 +22737,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "657",
-    "episodeType": null,
+    "episodeType": [
+      "Knowledge Fight Interview"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:19:21",
     "libsyn_link": "https://knowledgefight.libsyn.com/657-chatting-with-elizabeth-williamson",
     "nextEpisode": "658",
-    "oldid": 3364,
+    "oldid": 3574,
     "oocDrop": null,
     "previousEpisode": "656",
     "question": null,
@@ -22786,14 +22792,16 @@
     "coverageEndDate": "July 23, 2003",
     "coverageStartDate": "July 21, 2003",
     "episodeNumber": "659",
-    "episodeType": null,
+    "episodeType": [
+      "2003 Investigation"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:53:00",
     "libsyn_link": "https://knowledgefight.libsyn.com/659-july-21-23-2003",
     "nextEpisode": "660",
-    "oldid": 3366,
+    "oldid": 3575,
     "oocDrop": null,
     "previousEpisode": "658",
     "question": null,
@@ -22802,7 +22810,7 @@
     "title": "659: July 21-23, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -22847,14 +22855,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "660",
-    "episodeType": null,
+    "episodeType": [
+      "Time Travel"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:55:12",
     "libsyn_link": "https://knowledgefight.libsyn.com/660-february-11-2014",
     "nextEpisode": "661",
-    "oldid": 3368,
+    "oldid": 3576,
     "oocDrop": null,
     "previousEpisode": "659",
     "question": null,
@@ -22874,14 +22884,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "661",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:52:20",
     "libsyn_link": "https://knowledgefight.libsyn.com/661-march-17-2022",
     "nextEpisode": "662",
-    "oldid": 3369,
+    "oldid": 3577,
     "oocDrop": null,
     "previousEpisode": "660",
     "question": null,
@@ -22901,14 +22913,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "662",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "02:05:17",
     "libsyn_link": "https://knowledgefight.libsyn.com/662-march-22-2022",
     "nextEpisode": "663",
-    "oldid": 3370,
+    "oldid": 3578,
     "oocDrop": null,
     "previousEpisode": "661",
     "question": null,
@@ -22928,14 +22942,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "663",
-    "episodeType": null,
+    "episodeType": [
+      "2003 Investigation"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:26:09",
     "libsyn_link": "https://knowledgefight.libsyn.com/663-july-24-2003",
     "nextEpisode": "664",
-    "oldid": 3371,
+    "oldid": 3579,
     "oocDrop": null,
     "previousEpisode": "662",
     "question": null,
@@ -22944,7 +22960,7 @@
     "title": "663: July 24, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -22955,14 +22971,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "664",
-    "episodeType": null,
+    "episodeType": [
+      "Formulaic Objections"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "03:31:05",
     "libsyn_link": "https://knowledgefight.libsyn.com/664-formulaic-objections-part-5",
     "nextEpisode": "665",
-    "oldid": 3372,
+    "oldid": 3580,
     "oocDrop": null,
     "previousEpisode": "663",
     "question": null,
@@ -22983,14 +23001,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "665",
-    "episodeType": null,
+    "episodeType": [
+      "Formulaic Objections"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "02:33:15",
     "libsyn_link": "https://knowledgefight.libsyn.com/665-formulaic-objections-part-6",
     "nextEpisode": "666",
-    "oldid": 3373,
+    "oldid": 3581,
     "oocDrop": null,
     "previousEpisode": "664",
     "question": null,
@@ -23011,14 +23031,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "666",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:51:25",
     "libsyn_link": "https://knowledgefight.libsyn.com/666-march-31-2022",
     "nextEpisode": "667",
-    "oldid": 3374,
+    "oldid": 3582,
     "oocDrop": null,
     "previousEpisode": "665",
     "question": null,
@@ -23038,14 +23060,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "667",
-    "episodeType": null,
+    "episodeType": [
+      "2003 Investigation"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:16:50",
     "libsyn_link": "https://knowledgefight.libsyn.com/667-july-25-2003",
     "nextEpisode": "668",
-    "oldid": 3375,
+    "oldid": 3583,
     "oocDrop": null,
     "previousEpisode": "666",
     "question": null,
@@ -23054,7 +23078,7 @@
     "title": "667: July 25, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -23065,14 +23089,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "668",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:18:15",
     "libsyn_link": "https://knowledgefight.libsyn.com/668-april-8-2022",
     "nextEpisode": "669",
-    "oldid": 3376,
+    "oldid": 3584,
     "oocDrop": null,
     "previousEpisode": "667",
     "question": null,
@@ -23092,14 +23118,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "669",
-    "episodeType": null,
+    "episodeType": [
+      "Knowledge Fight Interview"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:23:18",
     "libsyn_link": "https://knowledgefight.libsyn.com/669-chatting-with-amanda-moore",
     "nextEpisode": "670",
-    "oldid": 3377,
+    "oldid": 3585,
     "oocDrop": null,
     "previousEpisode": "668",
     "question": null,
@@ -23155,14 +23183,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "670",
-    "episodeType": null,
+    "episodeType": [
+      "2003 Investigation"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:19:17",
     "libsyn_link": "https://knowledgefight.libsyn.com/670-july-28-2003",
     "nextEpisode": "671",
-    "oldid": 3379,
+    "oldid": 3586,
     "oocDrop": null,
     "previousEpisode": "669",
     "question": null,
@@ -23171,7 +23201,7 @@
     "title": "670: July 28, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -23182,14 +23212,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "671",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:59:00",
     "libsyn_link": "https://knowledgefight.libsyn.com/671-april-13-2022",
     "nextEpisode": "672",
-    "oldid": 3380,
+    "oldid": 3587,
     "oocDrop": null,
     "previousEpisode": "670",
     "question": null,
@@ -23209,14 +23241,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "672",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:18:01",
     "libsyn_link": "https://knowledgefight.libsyn.com/672-april-18-2022",
     "nextEpisode": "673",
-    "oldid": 3381,
+    "oldid": 3588,
     "oocDrop": null,
     "previousEpisode": "671",
     "question": null,
@@ -23236,14 +23270,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "673",
-    "episodeType": null,
+    "episodeType": [
+      "Jordan Takes the Wheel"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:37:39",
     "libsyn_link": "https://knowledgefight.libsyn.com/673-jordan-takes-the-wheel-8",
     "nextEpisode": "674",
-    "oldid": 3382,
+    "oldid": 3589,
     "oocDrop": null,
     "previousEpisode": "672",
     "question": null,
@@ -23263,14 +23299,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "674",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:20:54",
     "libsyn_link": "https://knowledgefight.libsyn.com/674-april-22-2022",
     "nextEpisode": "675",
-    "oldid": 3383,
+    "oldid": 3590,
     "oocDrop": null,
     "previousEpisode": "673",
     "question": null,
@@ -23290,14 +23328,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "675",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:48:22",
     "libsyn_link": "https://knowledgefight.libsyn.com/675-april-25-2022",
     "nextEpisode": "676",
-    "oldid": 3384,
+    "oldid": 3591,
     "oocDrop": null,
     "previousEpisode": "674",
     "question": null,
@@ -23317,14 +23357,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "676",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:17:40",
     "libsyn_link": "https://knowledgefight.libsyn.com/676-april-29-2022",
     "nextEpisode": "677",
-    "oldid": 3385,
+    "oldid": 3592,
     "oocDrop": null,
     "previousEpisode": "675",
     "question": null,
@@ -23344,14 +23386,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "677",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:30:53",
     "libsyn_link": "https://knowledgefight.libsyn.com/677-may-4-2022",
     "nextEpisode": "678",
-    "oldid": 3386,
+    "oldid": 3593,
     "oocDrop": null,
     "previousEpisode": "676",
     "question": null,
@@ -23371,14 +23415,16 @@
     "coverageEndDate": "July 30, 2003",
     "coverageStartDate": "July 29, 2003",
     "episodeNumber": "678",
-    "episodeType": null,
+    "episodeType": [
+      "2003 Investigation"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:53:47",
     "libsyn_link": "https://knowledgefight.libsyn.com/678-july-29-30-2003",
     "nextEpisode": "679",
-    "oldid": 3387,
+    "oldid": 3594,
     "oocDrop": null,
     "previousEpisode": "677",
     "question": null,
@@ -23387,7 +23433,7 @@
     "title": "678: July 29-30, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -23398,14 +23444,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "679",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:32:27",
     "libsyn_link": "https://knowledgefight.libsyn.com/679-may-9-2022",
     "nextEpisode": "680",
-    "oldid": 3388,
+    "oldid": 3595,
     "oocDrop": null,
     "previousEpisode": "678",
     "question": null,
@@ -23459,14 +23507,16 @@
     "coverageEndDate": "August 1, 2003",
     "coverageStartDate": "July 31, 2003",
     "episodeNumber": "680",
-    "episodeType": null,
+    "episodeType": [
+      "2003 Investigation"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:18:20",
     "libsyn_link": "https://knowledgefight.libsyn.com/680-july-31-august-1-2003",
     "nextEpisode": "681",
-    "oldid": 3390,
+    "oldid": 3596,
     "oocDrop": null,
     "previousEpisode": "679",
     "question": null,
@@ -23475,7 +23525,7 @@
     "title": "680: July 31-August 1, 2003",
     "wiki_categories": [
       "Episodes",
-      "Time Travel"
+      "2003 Investigation"
     ]
   },
   {
@@ -23486,14 +23536,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "681",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:58:19",
     "libsyn_link": "https://knowledgefight.libsyn.com/681-may-8-2022",
     "nextEpisode": "682",
-    "oldid": 3391,
+    "oldid": 3597,
     "oocDrop": null,
     "previousEpisode": "680",
     "question": null,
@@ -23513,14 +23565,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "682",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:25:25",
     "libsyn_link": "https://knowledgefight.libsyn.com/682-may-15-2022",
     "nextEpisode": "683",
-    "oldid": 3392,
+    "oldid": 3598,
     "oocDrop": null,
     "previousEpisode": "681",
     "question": null,
@@ -23540,14 +23594,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "683",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:06:05",
     "libsyn_link": "https://knowledgefight.libsyn.com/683-may-16-2022",
     "nextEpisode": "684",
-    "oldid": 3393,
+    "oldid": 3599,
     "oocDrop": null,
     "previousEpisode": "682",
     "question": null,
@@ -23567,14 +23623,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "684",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:12:07",
     "libsyn_link": "https://knowledgefight.libsyn.com/684-may-20-2022",
     "nextEpisode": "685",
-    "oldid": 3394,
+    "oldid": 3600,
     "oocDrop": null,
     "previousEpisode": "683",
     "question": null,
@@ -23594,14 +23652,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "685",
-    "episodeType": null,
+    "episodeType": [
+      "Formulaic Objections"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "03:02:56",
     "libsyn_link": "https://knowledgefight.libsyn.com/685-formulaic-objections-part-7",
     "nextEpisode": "686",
-    "oldid": 3395,
+    "oldid": 3601,
     "oocDrop": null,
     "previousEpisode": "684",
     "question": null,
@@ -23652,14 +23712,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "687",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "02:27:59",
     "libsyn_link": "https://knowledgefight.libsyn.com/687-may-24-2022",
     "nextEpisode": "688",
-    "oldid": 3397,
+    "oldid": 3602,
     "oocDrop": null,
     "previousEpisode": "686",
     "question": null,
@@ -23679,14 +23741,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "688",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:29:58",
     "libsyn_link": "https://knowledgefight.libsyn.com/688-may-25-2022",
     "nextEpisode": "689",
-    "oldid": 3398,
+    "oldid": 3603,
     "oocDrop": null,
     "previousEpisode": "687",
     "question": null,
@@ -23706,14 +23770,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "689",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:29:22",
     "libsyn_link": "https://knowledgefight.libsyn.com/689-may-26-2022",
     "nextEpisode": "690",
-    "oldid": 3399,
+    "oldid": 3604,
     "oocDrop": null,
     "previousEpisode": "688",
     "question": null,
@@ -23769,14 +23835,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "690",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:31:01",
     "libsyn_link": "https://knowledgefight.libsyn.com/690-may-27-2022",
     "nextEpisode": "691",
-    "oldid": 3401,
+    "oldid": 3605,
     "oocDrop": null,
     "previousEpisode": "689",
     "question": null,
@@ -23796,14 +23864,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "691",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:24:53",
     "libsyn_link": "https://knowledgefight.libsyn.com/691-june-6-2022",
     "nextEpisode": "692",
-    "oldid": 3402,
+    "oldid": 3606,
     "oocDrop": null,
     "previousEpisode": "690",
     "question": null,
@@ -23849,14 +23919,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "693",
-    "episodeType": null,
+    "episodeType": [
+      "2003 Investigation"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:17:57",
     "libsyn_link": "https://knowledgefight.libsyn.com/693-august-4-2003",
     "nextEpisode": "694",
-    "oldid": 3404,
+    "oldid": 3607,
     "oocDrop": null,
     "previousEpisode": "S012",
     "question": null,
@@ -23864,7 +23936,8 @@
     "slug": "693{{COLON}}_August_4,_2003",
     "title": "693: August 4, 2003",
     "wiki_categories": [
-      "Episodes"
+      "Episodes",
+      "2003 Investigation"
     ]
   },
   {
@@ -23901,14 +23974,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "695",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:17:09",
     "libsyn_link": "https://knowledgefight.libsyn.com/695-june-22-2022",
     "nextEpisode": "696",
-    "oldid": 3406,
+    "oldid": 3608,
     "oocDrop": null,
     "previousEpisode": "694",
     "question": null,
@@ -23928,14 +24003,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "696",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:49:15",
     "libsyn_link": "https://knowledgefight.libsyn.com/696-june-24-2022",
     "nextEpisode": "697",
-    "oldid": 3407,
+    "oldid": 3609,
     "oocDrop": null,
     "previousEpisode": "695",
     "question": null,
@@ -23955,14 +24032,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "697",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:28:57",
     "libsyn_link": "https://knowledgefight.libsyn.com/697-june-29-2022",
     "nextEpisode": "698",
-    "oldid": 3408,
+    "oldid": 3610,
     "oocDrop": null,
     "previousEpisode": "696",
     "question": null,
@@ -23976,7 +24055,9 @@
   },
   {
     "airDate": "July 4, 2022",
-    "appearance": null,
+    "appearance": [
+      "Solomon Berg"
+    ],
     "beverage": null,
     "coverageDate": null,
     "coverageEndDate": null,
@@ -23992,7 +24073,7 @@
     "length": "01:31:20",
     "libsyn_link": "https://knowledgefight.libsyn.com/698-for-squatch-there-are-no-heroes",
     "nextEpisode": "699",
-    "oldid": 3409,
+    "oldid": 3653,
     "oocDrop": null,
     "previousEpisode": "697",
     "question": null,
@@ -24136,14 +24217,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "701",
-    "episodeType": null,
+    "episodeType": [
+      "Time Travel"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:17:47",
     "libsyn_link": "https://knowledgefight.libsyn.com/701-june-23-2004",
     "nextEpisode": "702",
-    "oldid": 3414,
+    "oldid": 3611,
     "oocDrop": null,
     "previousEpisode": "700",
     "question": null,
@@ -24152,7 +24235,8 @@
     "title": "701: June 23, 2004",
     "wiki_categories": [
       "Time Travel",
-      "Episodes"
+      "Episodes",
+      "Time Travel"
     ]
   },
   {
@@ -24163,14 +24247,16 @@
     "coverageEndDate": "July 12, 2022",
     "coverageStartDate": "July 11, 2022",
     "episodeNumber": "702",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:46:12",
     "libsyn_link": "https://knowledgefight.libsyn.com/702-july-11-12-2022",
     "nextEpisode": "703",
-    "oldid": 3415,
+    "oldid": 3612,
     "oocDrop": null,
     "previousEpisode": "701",
     "question": null,
@@ -24296,14 +24382,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "705",
-    "episodeType": null,
+    "episodeType": [
+      "Wacky Wednesday"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:20:56",
     "libsyn_link": "https://knowledgefight.libsyn.com/705-the-knowledge-fight-battle-kitchen",
     "nextEpisode": "706",
-    "oldid": 3418,
+    "oldid": 3613,
     "oocDrop": null,
     "previousEpisode": "704",
     "question": null,
@@ -24349,14 +24437,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "707",
-    "episodeType": null,
+    "episodeType": [
+      "Documentary"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "02:35:21",
     "libsyn_link": "https://knowledgefight.libsyn.com/707-dans-war",
     "nextEpisode": "708",
-    "oldid": 3420,
+    "oldid": 3614,
     "oocDrop": null,
     "previousEpisode": "706",
     "question": null,
@@ -24402,14 +24492,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "709",
-    "episodeType": null,
+    "episodeType": [
+      "Documentary"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:48:05",
     "libsyn_link": "https://knowledgefight.libsyn.com/709-2-dans-2-war",
     "nextEpisode": "710",
-    "oldid": 3422,
+    "oldid": 3615,
     "oocDrop": null,
     "previousEpisode": "708",
     "question": null,
@@ -24461,14 +24553,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "710",
-    "episodeType": null,
+    "episodeType": [
+      "Knowledge Fight Interview"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:09:57",
     "libsyn_link": "https://knowledgefight.libsyn.com/710-elizabeth-williamson-returns",
     "nextEpisode": "711",
-    "oldid": 3424,
+    "oldid": 3616,
     "oocDrop": null,
     "previousEpisode": "709",
     "question": null,
@@ -24488,14 +24582,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "711",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:23:00",
     "libsyn_link": "https://knowledgefight.libsyn.com/711-august-2-2022",
     "nextEpisode": "712",
-    "oldid": 3425,
+    "oldid": 3617,
     "oocDrop": null,
     "previousEpisode": "710",
     "question": null,
@@ -24515,14 +24611,17 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "712",
-    "episodeType": null,
+    "episodeType": [
+      "Formulaic Objections",
+      "Knowledge Fight Interview"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:32:31",
     "libsyn_link": "https://knowledgefight.libsyn.com/712-the-decompression-session",
     "nextEpisode": "713",
-    "oldid": 3426,
+    "oldid": 3618,
     "oocDrop": null,
     "previousEpisode": "711",
     "question": null,
@@ -24531,8 +24630,8 @@
     "title": "712: The Decompression Session",
     "wiki_categories": [
       "Episodes",
-      "Knowledge Fight Interview",
-      "Formulaic Objections"
+      "Formulaic Objections",
+      "Knowledge Fight Interview"
     ]
   },
   {
@@ -24543,14 +24642,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "713",
-    "episodeType": null,
+    "episodeType": [
+      "Knowledge Fight Interview"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:25:23",
     "libsyn_link": "https://knowledgefight.libsyn.com/713-chatting-with-becca-lewis",
     "nextEpisode": "714",
-    "oldid": 3427,
+    "oldid": 3619,
     "oocDrop": null,
     "previousEpisode": "712",
     "question": null,
@@ -24579,14 +24680,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "714",
-    "episodeType": null,
+    "episodeType": [
+      "Formulaic Objections"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "02:49:09",
     "libsyn_link": "https://knowledgefight.libsyn.com/714-trial-recap-part-1",
     "nextEpisode": "715",
-    "oldid": 3428,
+    "oldid": 3620,
     "oocDrop": null,
     "previousEpisode": "713",
     "question": null,
@@ -24603,6 +24706,7 @@
     "appearance": [
       "Mike Lindell",
       "Robert Barnes",
+      "Jim Brewer",
       "Mike Adams",
       "Glenn Beck",
       "Hillary Clinton",
@@ -24615,14 +24719,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "715",
-    "episodeType": null,
+    "episodeType": [
+      "Formulaic Objections"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "02:08:15",
     "libsyn_link": "https://knowledgefight.libsyn.com/715-trial-recap-part-2",
     "nextEpisode": "716",
-    "oldid": 3429,
+    "oldid": 3621,
     "oocDrop": null,
     "previousEpisode": "714",
     "question": null,
@@ -24804,26 +24910,172 @@
   },
   {
     "airDate": "September 2, 2022",
-    "appearance": null,
+    "appearance": [
+      "Omar al-Faruq",
+      "Jim Shepherd"
+    ],
     "beverage": null,
     "coverageDate": "August 6, 2003",
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "720",
-    "episodeType": null,
+    "episodeType": [
+      "2003 Investigation"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:22:52",
     "libsyn_link": "https://knowledgefight.libsyn.com/720-august-6-2003",
-    "nextEpisode": null,
-    "oldid": 3538,
+    "nextEpisode": "721",
+    "oldid": 3625,
     "oocDrop": null,
     "previousEpisode": "719",
     "question": null,
     "redirect": null,
     "slug": "720{{COLON}}_August_6,_2003",
     "title": "720: August 6, 2003",
+    "wiki_categories": [
+      "Episodes",
+      "2003 Investigation"
+    ]
+  },
+  {
+    "airDate": "September 5, 2022",
+    "appearance": null,
+    "beverage": null,
+    "coverageDate": "September 2, 2022",
+    "coverageEndDate": null,
+    "coverageStartDate": null,
+    "episodeNumber": "721",
+    "episodeType": [
+      "Present Day"
+    ],
+    "hosts": null,
+    "is_external_redirect": false,
+    "is_stub": true,
+    "length": "01:30:39",
+    "libsyn_link": "https://knowledgefight.libsyn.com/721-september-2-2022",
+    "nextEpisode": "722",
+    "oldid": 3654,
+    "oocDrop": null,
+    "previousEpisode": "720",
+    "question": null,
+    "redirect": null,
+    "slug": "721{{COLON}}_September_2,_2022",
+    "title": "721: September 2, 2022",
+    "wiki_categories": [
+      "Episodes",
+      "Present Day"
+    ]
+  },
+  {
+    "airDate": "September 7, 2022",
+    "appearance": [
+      "Solomon Berg"
+    ],
+    "beverage": null,
+    "coverageDate": null,
+    "coverageEndDate": null,
+    "coverageStartDate": null,
+    "episodeNumber": "722",
+    "episodeType": [
+      "Project Camelot",
+      "Wacky Wednesday"
+    ],
+    "hosts": null,
+    "is_external_redirect": false,
+    "is_stub": true,
+    "length": "02:30:05",
+    "libsyn_link": "https://knowledgefight.libsyn.com/722-space-capitalism-is-still-capitalism",
+    "nextEpisode": "723",
+    "oldid": 3666,
+    "oocDrop": null,
+    "previousEpisode": "721",
+    "question": null,
+    "redirect": null,
+    "slug": "722{{COLON}}_Space_Capitalism_Is_Still_Capitalism",
+    "title": "722: Space Capitalism Is Still Capitalism",
+    "wiki_categories": [
+      "Episodes",
+      "Project Camelot",
+      "Wacky Wednesday"
+    ]
+  },
+  {
+    "airDate": "September 9, 2022",
+    "appearance": null,
+    "beverage": null,
+    "coverageDate": "September 8, 2022",
+    "coverageEndDate": null,
+    "coverageStartDate": null,
+    "episodeNumber": "723",
+    "episodeType": null,
+    "hosts": null,
+    "is_external_redirect": false,
+    "is_stub": true,
+    "length": "01:23:28",
+    "libsyn_link": "https://knowledgefight.libsyn.com/723-september-8-2022",
+    "nextEpisode": "724",
+    "oldid": 3667,
+    "oocDrop": null,
+    "previousEpisode": "722",
+    "question": null,
+    "redirect": null,
+    "slug": "723{{COLON}}_September_8,_2022",
+    "title": "723: September 8, 2022",
+    "wiki_categories": [
+      "Episodes"
+    ]
+  },
+  {
+    "airDate": "September 12, 2022",
+    "appearance": null,
+    "beverage": null,
+    "coverageDate": null,
+    "coverageEndDate": "August 11, 2003",
+    "coverageStartDate": "August 7, 2003",
+    "episodeNumber": "724",
+    "episodeType": null,
+    "hosts": null,
+    "is_external_redirect": false,
+    "is_stub": true,
+    "length": "01:28:12",
+    "libsyn_link": "https://knowledgefight.libsyn.com/724-august-7-11-2003",
+    "nextEpisode": "725",
+    "oldid": 3682,
+    "oocDrop": null,
+    "previousEpisode": "723",
+    "question": null,
+    "redirect": null,
+    "slug": "724{{COLON}}_August_7-11,_2003",
+    "title": "724: August 7-11, 2003",
+    "wiki_categories": [
+      "Episodes"
+    ]
+  },
+  {
+    "airDate": "September 16, 2022",
+    "appearance": null,
+    "beverage": null,
+    "coverageDate": null,
+    "coverageEndDate": "September 14, 2022",
+    "coverageStartDate": "September 13, 2022",
+    "episodeNumber": "725",
+    "episodeType": null,
+    "hosts": null,
+    "is_external_redirect": false,
+    "is_stub": true,
+    "length": "02:00:35",
+    "libsyn_link": "https://knowledgefight.libsyn.com/725-september-13-14-2022",
+    "nextEpisode": null,
+    "oldid": 3683,
+    "oocDrop": null,
+    "previousEpisode": "724",
+    "question": null,
+    "redirect": null,
+    "slug": "725{{COLON}}_September_13-14,_2022",
+    "title": "725: September 13-14, 2022",
     "wiki_categories": [
       "Episodes"
     ]
@@ -26632,6 +26884,30 @@
     "episodeNumber": null,
     "episodeType": null,
     "hosts": null,
+    "is_external_redirect": false,
+    "is_stub": false,
+    "length": null,
+    "libsyn_link": null,
+    "nextEpisode": null,
+    "oldid": 3541,
+    "oocDrop": null,
+    "previousEpisode": null,
+    "question": null,
+    "redirect": "Artur Pawlowski",
+    "slug": "Arthur_Pawlowski",
+    "title": "Arthur Pawlowski",
+    "wiki_categories": []
+  },
+  {
+    "airDate": null,
+    "appearance": null,
+    "beverage": null,
+    "coverageDate": null,
+    "coverageEndDate": null,
+    "coverageStartDate": null,
+    "episodeNumber": null,
+    "episodeType": null,
+    "hosts": null,
     "is_external_redirect": true,
     "is_stub": false,
     "length": null,
@@ -27154,6 +27430,30 @@
     "episodeType": null,
     "hosts": null,
     "is_external_redirect": false,
+    "is_stub": true,
+    "length": null,
+    "libsyn_link": null,
+    "nextEpisode": null,
+    "oldid": 3679,
+    "oocDrop": null,
+    "previousEpisode": null,
+    "question": null,
+    "redirect": null,
+    "slug": "Brittany_Paz",
+    "title": "Brittany Paz",
+    "wiki_categories": []
+  },
+  {
+    "airDate": null,
+    "appearance": null,
+    "beverage": null,
+    "coverageDate": null,
+    "coverageEndDate": null,
+    "coverageStartDate": null,
+    "episodeNumber": null,
+    "episodeType": null,
+    "hosts": null,
+    "is_external_redirect": false,
     "is_stub": false,
     "length": null,
     "libsyn_link": null,
@@ -27409,6 +27709,30 @@
     "length": null,
     "libsyn_link": null,
     "nextEpisode": null,
+    "oldid": 3672,
+    "oocDrop": null,
+    "previousEpisode": null,
+    "question": null,
+    "redirect": null,
+    "slug": "Chris_Mattei",
+    "title": "Chris Mattei",
+    "wiki_categories": []
+  },
+  {
+    "airDate": null,
+    "appearance": null,
+    "beverage": null,
+    "coverageDate": null,
+    "coverageEndDate": null,
+    "coverageStartDate": null,
+    "episodeNumber": null,
+    "episodeType": null,
+    "hosts": null,
+    "is_external_redirect": false,
+    "is_stub": true,
+    "length": null,
+    "libsyn_link": null,
+    "nextEpisode": null,
     "oldid": 2718,
     "oocDrop": null,
     "previousEpisode": null,
@@ -27556,7 +27880,7 @@
     "length": null,
     "libsyn_link": null,
     "nextEpisode": null,
-    "oldid": 2366,
+    "oldid": 3681,
     "oocDrop": null,
     "previousEpisode": null,
     "question": null,
@@ -28323,6 +28647,30 @@
     "length": null,
     "libsyn_link": null,
     "nextEpisode": null,
+    "oldid": 3657,
+    "oocDrop": null,
+    "previousEpisode": null,
+    "question": null,
+    "redirect": null,
+    "slug": "Fentanyl_the_Chinese_dragon",
+    "title": "Fentanyl the Chinese dragon",
+    "wiki_categories": []
+  },
+  {
+    "airDate": null,
+    "appearance": null,
+    "beverage": null,
+    "coverageDate": null,
+    "coverageEndDate": null,
+    "coverageStartDate": null,
+    "episodeNumber": null,
+    "episodeType": null,
+    "hosts": null,
+    "is_external_redirect": false,
+    "is_stub": true,
+    "length": null,
+    "libsyn_link": null,
+    "nextEpisode": null,
     "oldid": 2491,
     "oocDrop": null,
     "previousEpisode": null,
@@ -28838,14 +29186,16 @@
     "length": null,
     "libsyn_link": null,
     "nextEpisode": null,
-    "oldid": 2377,
+    "oldid": 3658,
     "oocDrop": null,
     "previousEpisode": null,
     "question": null,
     "redirect": null,
     "slug": "H.G._Wells_and_the_{{QUOTE}}New_World_Order{{QUOTE}}",
     "title": "H.G. Wells and the \"New World Order\"",
-    "wiki_categories": []
+    "wiki_categories": [
+      "InfoWars Sources"
+    ]
   },
   {
     "airDate": null,
@@ -29971,7 +30321,7 @@
     "length": null,
     "libsyn_link": null,
     "nextEpisode": null,
-    "oldid": 2719,
+    "oldid": 3641,
     "oocDrop": null,
     "previousEpisode": null,
     "question": null,
@@ -30206,6 +30556,30 @@
     "length": null,
     "libsyn_link": null,
     "nextEpisode": null,
+    "oldid": 3659,
+    "oocDrop": null,
+    "previousEpisode": null,
+    "question": null,
+    "redirect": null,
+    "slug": "Leo_Zagami",
+    "title": "Leo Zagami",
+    "wiki_categories": []
+  },
+  {
+    "airDate": null,
+    "appearance": null,
+    "beverage": null,
+    "coverageDate": null,
+    "coverageEndDate": null,
+    "coverageStartDate": null,
+    "episodeNumber": null,
+    "episodeType": null,
+    "hosts": null,
+    "is_external_redirect": false,
+    "is_stub": false,
+    "length": null,
+    "libsyn_link": null,
+    "nextEpisode": null,
     "oldid": 451,
     "oocDrop": null,
     "previousEpisode": null,
@@ -30280,7 +30654,7 @@
     "length": null,
     "libsyn_link": null,
     "nextEpisode": null,
-    "oldid": 3540,
+    "oldid": 3684,
     "oocDrop": null,
     "previousEpisode": null,
     "question": null,
@@ -30442,6 +30816,32 @@
     "title": "Mark Meechan",
     "wiki_categories": [
       "Alex Jones Show guests",
+      "People"
+    ]
+  },
+  {
+    "airDate": null,
+    "appearance": null,
+    "beverage": null,
+    "coverageDate": null,
+    "coverageEndDate": null,
+    "coverageStartDate": null,
+    "episodeNumber": null,
+    "episodeType": null,
+    "hosts": null,
+    "is_external_redirect": false,
+    "is_stub": true,
+    "length": null,
+    "libsyn_link": null,
+    "nextEpisode": null,
+    "oldid": 3661,
+    "oocDrop": null,
+    "previousEpisode": null,
+    "question": null,
+    "redirect": null,
+    "slug": "Mark_Richards",
+    "title": "Mark Richards",
+    "wiki_categories": [
       "People"
     ]
   },
@@ -31911,6 +32311,32 @@
     "wiki_categories": []
   },
   {
+    "airDate": null,
+    "appearance": null,
+    "beverage": null,
+    "coverageDate": null,
+    "coverageEndDate": null,
+    "coverageStartDate": null,
+    "episodeNumber": null,
+    "episodeType": null,
+    "hosts": null,
+    "is_external_redirect": false,
+    "is_stub": true,
+    "length": null,
+    "libsyn_link": null,
+    "nextEpisode": null,
+    "oldid": 3662,
+    "oocDrop": null,
+    "previousEpisode": null,
+    "question": null,
+    "redirect": null,
+    "slug": "Solomon_Berg",
+    "title": "Solomon Berg",
+    "wiki_categories": [
+      "People"
+    ]
+  },
+  {
     "airDate": "May 17, 2017",
     "appearance": null,
     "beverage": null,
@@ -32374,14 +32800,16 @@
     "length": null,
     "libsyn_link": null,
     "nextEpisode": null,
-    "oldid": 2439,
+    "oldid": 3663,
     "oocDrop": null,
     "previousEpisode": null,
     "question": null,
     "redirect": null,
     "slug": "The_Club_Of_Rome",
     "title": "The Club Of Rome",
-    "wiki_categories": []
+    "wiki_categories": [
+      "InfoWars Sources"
+    ]
   },
   {
     "airDate": null,
@@ -32756,14 +33184,16 @@
     "length": null,
     "libsyn_link": null,
     "nextEpisode": null,
-    "oldid": 2424,
+    "oldid": 3664,
     "oocDrop": null,
     "previousEpisode": null,
     "question": null,
     "redirect": null,
     "slug": "Why_The_Future_Doesn't_Need_Us",
     "title": "Why The Future Doesn't Need Us",
-    "wiki_categories": []
+    "wiki_categories": [
+      "InfoWars Sources"
+    ]
   },
   {
     "airDate": null,

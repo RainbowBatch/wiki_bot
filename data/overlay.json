@@ -1,5 +1,723 @@
 [
   {
+    "episode_number": "10",
+    "people": [
+      "Milo Yianopolis",
+      "Aleksandr Dugin"
+    ]
+  },
+  {
+    "episode_number": "102",
+    "people": [
+      "Paul Craig Roberts",
+      "Max Keiser",
+      "Aleksandr Dugin"
+    ]
+  },
+  {
+    "episode_number": "107",
+    "people": [
+      "John Boehner",
+      "David Rockefeller",
+      "Kurt Nimmo",
+      "Rob Jacobson",
+      "Charles Krauthammer",
+      "Sean Hannity",
+      "General Antonio Taguba",
+      "Darrell Hamamoto",
+      "Steve Pieczenik",
+      "Linda Katehi",
+      "Darrell Hamamoto",
+      "Billy Corgan",
+      "Anderson Cooper",
+      "John Lennon",
+      "Ajit Pai"
+    ]
+  },
+  {
+    "episode_number": "123",
+    "people": [
+      "William Binney",
+      "Kit Daniels",
+      "James O'Keefe",
+      "Margaret Sanger",
+      "Bob Chapman",
+      "Jeffrey Smith",
+      "Dr Dean Edell",
+      "Ted Anderson"
+    ]
+  },
+  {
+    "episode_number": "130D",
+    "people": [
+      "Josef Mengele",
+      "Otmar Freiherr von Verschuer",
+      "Thomas Watson",
+      "Aldous Huxley",
+      "George H W Bush",
+      "Leo Zagami",
+      "Bill Gates",
+      "Melinda Gates",
+      "Warren Buffett",
+      "Dr Eric Pianca"
+    ]
+  },
+  {
+    "episode_number": "139",
+    "people": [
+      "Darrell Hamamoto",
+      "Steve Pieczenik",
+      "Andrew McCabe",
+      "Rob Dew"
+    ]
+  },
+  {
+    "episode_number": "141",
+    "people": [
+      "Mark Meechan|Mark Meechan (aka Count Dankula)",
+      "Alexander Nekrassov",
+      "Seth Rich",
+      "Jack Burkman",
+      "Kevin Doherty",
+      "Julian Assange",
+      "Roger Stone",
+      "Dr. Group",
+      "Peter Theil",
+      "Obama"
+    ]
+  },
+  {
+    "episode_number": "164",
+    "people": [
+      "Raptor Princess Maria",
+      "Harvey Weinstein",
+      "Jeffrey Epstein",
+      "Eric Prince",
+      "Mike Rotondo",
+      "Marc Randazza"
+    ]
+  },
+  {
+    "episode_number": "166",
+    "people": [
+      "Raptor Princess Scott",
+      "Eddie Bravo",
+      "Patrick Wood",
+      "Mike Rivero",
+      "Donn de Grand Pr\u00e9"
+    ]
+  },
+  {
+    "episode_number": "17",
+    "people": [
+      "Darrell Hamamoto"
+    ]
+  },
+  {
+    "episode_number": "175",
+    "people": [
+      "Jim Bakker",
+      "Steve Quayle",
+      "Lindon LaRouche",
+      "Lorrie Bakker",
+      "Matt Drudge"
+    ]
+  },
+  {
+    "episode_number": "187",
+    "people": [
+      "Ben Jones",
+      "Kerry Cassidy",
+      "Helen Duncan",
+      "Ian Fleming",
+      "Winston Churchill",
+      "Harvey Metcalf",
+      "Harry Price",
+      "Mary McLinley",
+      "David Icke",
+      "Mark Richards",
+      "The Dutchman",
+      "Sean David Morton",
+      "Melissa Morton",
+      "Maggie Duncan",
+      "Eddie Page"
+    ]
+  },
+  {
+    "episode_number": "199",
+    "people": [
+      "FarOut",
+      "Katherine",
+      "Tucker Carlson",
+      "John McCain",
+      "Ann Coulter",
+      "Darrell Hamamoto",
+      "Ben Garrison"
+    ]
+  },
+  {
+    "episode_number": "20",
+    "people": [
+      "Reince Priebus",
+      "Jeff Sessions",
+      "Matt Drudge",
+      "Eddie Bravo",
+      "Jesse James",
+      "Sandra Bullock",
+      "Steve Pieczenik"
+    ]
+  },
+  {
+    "episode_number": "213",
+    "people": [
+      "Christine Blasey Ford",
+      "Brett Kavanaugh",
+      "Mike Adams",
+      "Marc Randazza",
+      "Amy Coney Barrett"
+    ]
+  },
+  {
+    "episode_number": "217",
+    "people": [
+      "Raptor Princess: Chris S",
+      "Kerry Cassidy",
+      "Mark Richards",
+      "Simon Park",
+      "Eddie Page",
+      "Jo Ann Richards",
+      "Bobby Ray Inman",
+      "Anders Breivik",
+      "Paul Price"
+    ]
+  },
+  {
+    "episode_number": "226",
+    "people": [
+      "Ted Nugent",
+      "Roger Stone",
+      "George Soros",
+      "Faith Goldy",
+      "Alexandria Ocasio-Cortez",
+      "Andrew Gillum",
+      "Jeff Sessions"
+    ]
+  },
+  {
+    "episode_number": "231",
+    "people": [
+      "Rush Limbaugh",
+      "Tyler Palmer",
+      "Donn de Grand Pr\u00e9",
+      "Matt Martin",
+      "Paul Joseph Watson"
+    ]
+  },
+  {
+    "episode_number": "236",
+    "people": [
+      "Roger Stone",
+      "Tim Cook",
+      "Snoop Dogg",
+      "Buckley Hammon",
+      "Anderson Cooper",
+      "Rufio Titan",
+      "MAGA Titan"
+    ]
+  },
+  {
+    "episode_number": "241",
+    "people": [
+      "Dave Daubenmire",
+      "Larry Nichols",
+      "Danny Williams",
+      "Webster Hubble"
+    ]
+  },
+  {
+    "episode_number": "251",
+    "people": [
+      "Gavin Newsom",
+      "Mark Dice",
+      "Jasmine Barnes",
+      "David Knight",
+      "Mike Adams",
+      "Roger Stone",
+      "Owen Shroyer"
+    ]
+  },
+  {
+    "episode_number": "270",
+    "people": [
+      "Joe Rogan",
+      "Eddie Bravo",
+      "David Jones",
+      "General Albert Stubblebine",
+      "Nick Beggich/Begitsh",
+      "Ralph Northam",
+      "Wernher Von Braun",
+      "Steve Pieczenik",
+      "George Soros",
+      "Bill Gates"
+    ]
+  },
+  {
+    "episode_number": "272",
+    "people": [
+      "David Icke",
+      "Bob Barr",
+      "Jan Morgan",
+      "Susan Collins"
+    ]
+  },
+  {
+    "episode_number": "273",
+    "people": [
+      "Paul Joseph Watson",
+      "Alexandria Ocasio-Cortez",
+      "Faith Goldy",
+      "Roger Stone",
+      "Dinesh D'Souza",
+      "Jerry Falwell Jr",
+      "Michelle Obama",
+      "Tommy Robinson",
+      "Mike Stackberry",
+      "Laura Loomer"
+    ]
+  },
+  {
+    "episode_number": "280",
+    "people": [
+      "Kerry Cassidy",
+      "Mark Richards",
+      "Richard Baldwin",
+      "Jo Ann Richards",
+      "Crossan Hoover",
+      "James Angel Engelton",
+      "The Dutchman",
+      "Ellis Richards",
+      "JFK",
+      "Andrew",
+      "Caryn",
+      "Paul Collin",
+      "Alex Jones",
+      "Kevin Daniel Moor",
+      "William Robles",
+      "Lawyer Shapiro",
+      "Kevin Spacey",
+      "Jan Michael Vincent"
+    ]
+  },
+  {
+    "episode_number": "287",
+    "people": [
+      "Millie Weaver",
+      "Caitlin Bennett",
+      "Joe Bannister",
+      "Logan Paul",
+      "Stefan Herre",
+      "Tucker Carlson",
+      "Ilhan Omar",
+      "George Soros",
+      "Robert Mueller",
+      "Bill Barr",
+      "Leo Zagami",
+      "Mark Lamprello",
+      "Holden Matthews",
+      "Seth Rich",
+      "William Binney",
+      "The Forensicator",
+      "Mark Taylor",
+      "Jack Dorsey"
+    ]
+  },
+  {
+    "episode_number": "288",
+    "people": [
+      "John Rappaport",
+      "Piers Morgan",
+      "Paul Joseph Watson",
+      "William Churchill",
+      "General Albert Stubblebine",
+      "Dr Rima Laibow",
+      "Barbara Loe Fisher",
+      "Aaron Dikes",
+      "Ted Bundy",
+      "Professor James Tracy",
+      "Charlie Sheen",
+      "Denise Richards",
+      "Ron Paul",
+      "Larry Pratt",
+      "Buzz Bissinger"
+    ]
+  },
+  {
+    "episode_number": "289",
+    "people": [
+      "Gary Busey",
+      "Mancow",
+      "William Shatner",
+      "Piers Morgan",
+      "Doug Hagmann",
+      "Gerald Celente",
+      "Shepard Ambellas",
+      "Michele Dowry",
+      "Bertrand Russell",
+      "Michael Savage",
+      "Buzz Bissinger",
+      "Diane Feinstein"
+    ]
+  },
+  {
+    "episode_number": "290",
+    "people": [
+      "Millie Weaver",
+      "Jack Dorsey",
+      "Larry C Johnson",
+      "Roger Stone",
+      "Geraldo Rivera",
+      "Judge Andrew Napolitano",
+      "Samantha Power",
+      "Evelyn Farkas",
+      "Brennan Gilmore",
+      "George Soros",
+      "Ralph Northam",
+      "Max Keiser",
+      "Dennis Montgomery",
+      "Sean Hannity"
+    ]
+  },
+  {
+    "episode_number": "291",
+    "people": [
+      "Kevin Moore",
+      "Kerry Cassidy",
+      "Mark Richards",
+      "Paul Craig Roberts",
+      "Jerome Corsi",
+      "David Icke",
+      "Jim Fetzer",
+      "Jo Ann Richards",
+      "Richard Baldwin",
+      "Barry Goldwater",
+      "The Dutchman",
+      "Prince Naga",
+      "Princess Linka",
+      "Prince Crag",
+      "Titania",
+      "David",
+      "Earth Angel",
+      "Galaxy",
+      "Rashme",
+      "The One",
+      "Edgar Casey"
+    ]
+  },
+  {
+    "episode_number": "302",
+    "people": [
+      "Owen Shroyer",
+      "Larry Nichols",
+      "Kevin Moore",
+      "Tere Joyce",
+      "Kerry Cassidy",
+      "Mark Richards",
+      "Jim Fetzer",
+      "Bill Ryan",
+      "Jo Ann Richards",
+      "Simon Parks",
+      "Randy Kramer",
+      "Steve D Kelly"
+    ]
+  },
+  {
+    "episode_number": "312",
+    "people": [
+      "Christopher Dorner",
+      "Rodney Brossart",
+      "Ron Paul",
+      "David Iche",
+      "John Wilkes Booth",
+      "Steve Shenk"
+    ]
+  },
+  {
+    "episode_number": "313",
+    "people": [
+      "James O'Keefe",
+      "Jen Gennai",
+      "Tim Cook",
+      "Alexandria Ocasio Cortez",
+      "Ilhan Omar"
+    ]
+  },
+  {
+    "episode_number": "314",
+    "people": [
+      "Dr Cory Gold",
+      "Piers Morgan",
+      "Joseph Farrah",
+      "Christopher Dorner",
+      "Chris Kyle",
+      "Gregor Mendel",
+      "Pioneer Research Scientist",
+      "Al Gore",
+      "Steven Mosher"
+    ]
+  },
+  {
+    "episode_number": "356",
+    "people": [
+      "Black Dragon Queen Kristy",
+      "Brad Parscale",
+      "Rudy Giuliani",
+      "Maxime Bernier",
+      "Phil Mud",
+      "Dr Samuel Mudd",
+      "Gavin McInnes"
+    ]
+  },
+  {
+    "episode_number": "359",
+    "people": [
+      "George Noory",
+      "Peter Breggan",
+      "Alex Jones",
+      "Doug Haggman",
+      "Martin Keating"
+    ]
+  },
+  {
+    "episode_number": "361",
+    "people": [
+      "Dan Bidondi",
+      "Stewart Rhodes",
+      "Dzhokhar Tsarnaev",
+      "Tamerlan Tsarnaev",
+      "Larry Pratt",
+      "Art Acevedo"
+    ]
+  },
+  {
+    "episode_number": "369",
+    "people": [
+      "Steve Pieczenik",
+      "Tulsi Gabbard",
+      "Joe Rogan",
+      "Edward Snowden",
+      "William Cohen",
+      "Carpe Donktum",
+      "Jeffrey Epstein",
+      "Melania Trump"
+    ]
+  },
+  {
+    "episode_number": "372",
+    "people": [
+      "Tim Cook",
+      "Matt Drudge",
+      "Benjamin Netanyahu",
+      "Stephen Miller",
+      "Tulsi Gabbard"
+    ]
+  },
+  {
+    "episode_number": "378",
+    "people": [
+      "Rob Dew",
+      "Paul Joseph Watson",
+      "Dan Bidondi",
+      "Hamdi Ulukaya",
+      "Jim Fetzer",
+      "Wolfgang Halbig",
+      "Lenny Posner",
+      "Robert Barnes"
+    ]
+  },
+  {
+    "episode_number": "392",
+    "people": [
+      "Mike Adams",
+      "Bill Gates",
+      "Melinda Gates",
+      "Michael Snyder",
+      "Maurice Hilleman",
+      "Owen Shroyer",
+      "Jonas Salk",
+      "Albert Sabin",
+      "Leonard Horowitz",
+      "Qasem Soleimani",
+      "John Rappaport",
+      "Norm Pattis"
+    ]
+  },
+  {
+    "episode_number": "399",
+    "people": [
+      "Jim Bakker",
+      "Robert O'Brien",
+      "Roger Stone",
+      "Bill Cooper",
+      "Francis Boyle",
+      "Anthony Fauci",
+      "David Jones",
+      "Norm Pattis",
+      "Styx666",
+      "Steve Pieczenik",
+      "Bill Barr",
+      "Jeffrey Epstein",
+      "Andrew McCabe",
+      "John Brennan",
+      "Ivan Raiklin",
+      "Tulsi Gabbard",
+      "Hillary Clinton",
+      "Mike Bloomberg",
+      "Melania Trump",
+      "Ilhan Omar",
+      "Rashida Tlaib"
+    ]
+  },
+  {
+    "episode_number": "405",
+    "people": [
+      "Kerry Cassidy",
+      "Mark Richards",
+      "Jim Humble",
+      "Jenny Randals",
+      "Richard Nixon",
+      "JFK",
+      "Dwight D Eisenhower",
+      "Soleimani",
+      "Sean David Morton"
+    ]
+  },
+  {
+    "episode_number": "412",
+    "people": [
+      "Anthony Fauci",
+      "Laurie Garrett",
+      "Josh Hawley",
+      "Sean Hannity",
+      "John Rappaport",
+      "Steve Pieczenik",
+      "E. Michael Jones",
+      "Charles Leiber"
+    ]
+  },
+  {
+    "episode_number": "416",
+    "people": [
+      "Anthony Fauci",
+      "Bill Gates",
+      "Thomas Robert Malthus",
+      "Plato",
+      "Bill Joy",
+      "E. Michael Jones",
+      "Jason Jones",
+      "Andrew Cuomo"
+    ]
+  },
+  {
+    "episode_number": "424",
+    "people": [
+      "Joy Behar",
+      "David Icke",
+      "Anthony Fauci",
+      "Ron Paul",
+      "John Roberts",
+      "Bill Joy",
+      "Bill Barr",
+      "Andrew Torba"
+    ]
+  },
+  {
+    "episode_number": "432",
+    "people": [
+      "Netanyahu",
+      "Seth Rich",
+      "Ty Clevinger",
+      "John Magufuli",
+      "Ahmaud Arbery",
+      "Robert Kennedy Jr",
+      "Bill Gates",
+      "Warren Buffett",
+      "Katie Miller",
+      "Bill Barr",
+      "Chuck Todd",
+      "Mary McCord",
+      "Mike Flynn",
+      "David Icke"
+    ]
+  },
+  {
+    "episode_number": "436",
+    "people": [
+      "Joe Rogan",
+      "David Pakman",
+      "Bill Gates",
+      "Owen Shroyer",
+      "Ahmaud Arbery",
+      "Jason Goodman"
+    ]
+  },
+  {
+    "episode_number": "449",
+    "people": [
+      "Gavin McInnes",
+      "Zach McElroy",
+      "James O'Keefe",
+      "Gavin Newsom",
+      "Jay Dyer",
+      "Arthur Koestler",
+      "Bubba Wallace",
+      "Carpe Donktum",
+      "Bonnie Cutler"
+    ]
+  },
+  {
+    "episode_number": "484",
+    "people": [
+      "Ruth Bader Ginsberg",
+      "Harrison Smith",
+      "Amy Coney Barrett",
+      "Norm Pattis",
+      "Robert Barnes",
+      "Clarence Thomas",
+      "Ali Alexander"
+    ]
+  },
+  {
+    "episode_number": "518",
+    "people": [
+      "Taylor Hanson",
+      "Chuck Schumer",
+      "Matt Drudge",
+      "Mike Flynn",
+      "Joel Skousen",
+      "Lin Wood",
+      "Q Shaman",
+      "Owen Shroyer"
+    ]
+  },
+  {
+    "episode_number": "522",
+    "people": [
+      "Roger Stone",
+      "John Rappaport",
+      "John Sullivan",
+      "Pete Santilly",
+      "Ezra Levant",
+      "Jack Dorsey",
+      "Mike Cernovich",
+      "Lana Del Rey",
+      "Steve Quayle",
+      "Mike Adams",
+      "Robert Barnes",
+      "Tucker Carlson",
+      "Brian Stelter"
+    ]
+  },
+  {
     "categories": [
       "2003 Investigation"
     ],
@@ -48,6 +766,29 @@
     "episode_number": "566"
   },
   {
+    "episode_number": "567",
+    "people": [
+      "Christopher Sign",
+      "Tucker Carlson",
+      "George Noory",
+      "Frank Figliuzzi",
+      "Owen Shroyer"
+    ]
+  },
+  {
+    "episode_number": "570",
+    "people": [
+      "Christopher Sign",
+      "John McAfee",
+      "Anthony Fauci",
+      "General Mark Milley",
+      "General Lloyd Austin",
+      "General Russel L. Honor\u00e9",
+      "General Jim Mattis",
+      "Andrew Breitbart"
+    ]
+  },
+  {
     "categories": [
       "2003 Investigation"
     ],
@@ -72,6 +813,15 @@
     "episode_number": "581"
   },
   {
+    "episode_number": "583",
+    "people": [
+      "Bill Gates",
+      "Bill Maher",
+      "Chris Sky",
+      "Mike Adams"
+    ]
+  },
+  {
     "categories": [
       "2003 Investigation"
     ],
@@ -84,10 +834,29 @@
     "episode_number": "592"
   },
   {
+    "episode_number": "597",
+    "people": [
+      "Alexandria Ocasio Cortez",
+      "Alfie Oakes",
+      "Mike Lindell",
+      "Ron DeSantis",
+      "General Mark Milley"
+    ]
+  },
+  {
     "categories": [
       "2003 Investigation"
     ],
     "episode_number": "599"
+  },
+  {
+    "episode_number": "600",
+    "people": [
+      "Michael Flynn",
+      "Sam Harris",
+      "Gabby Petito",
+      "Dr Ben Marble"
+    ]
   },
   {
     "categories": [
@@ -126,6 +895,17 @@
     "episode_number": "617"
   },
   {
+    "episode_number": "62",
+    "people": [
+      "Rachel Maddow",
+      "Frank Marshal Davis",
+      "Jesse Ventura",
+      "David Duke",
+      "Paul Joseph Watson",
+      "Sean King"
+    ]
+  },
+  {
     "categories": [
       "2003 Investigation"
     ],
@@ -150,10 +930,32 @@
     "episode_number": "634"
   },
   {
+    "episode_number": "649",
+    "people": [
+      "George Soros",
+      "Roger Stone",
+      "Jeremy McKenzie",
+      "Dr Ben Marble"
+    ]
+  },
+  {
     "categories": [
       "2003 Investigation"
     ],
     "episode_number": "650"
+  },
+  {
+    "episode_number": "651",
+    "people": [
+      "Hillary Clinton",
+      "Artur Pawlowski",
+      "Vladimir Putin",
+      "George Orwell",
+      "Prince Charles",
+      "Christina Freeland",
+      "David Icke",
+      "Greg Reese"
+    ]
   },
   {
     "categories": [
@@ -431,12 +1233,18 @@
     "categories": [
       "Time Travel"
     ],
+    "coverage_date": "September 11, 2001",
+    "coverage_end_date": "September 11, 2001",
+    "coverage_start_date": "September 11, 2001",
     "episode_number": "703"
   },
   {
     "categories": [
       "Time Travel"
     ],
+    "coverage_date": "September 11, 2001",
+    "coverage_end_date": "September 11, 2001",
+    "coverage_start_date": "September 11, 2001",
     "episode_number": "704"
   },
   {
@@ -456,6 +1264,13 @@
       "Documentary"
     ],
     "episode_number": "709"
+  },
+  {
+    "episode_number": "71",
+    "people": [
+      "Aleksandr Dugin",
+      "Mike Cernovich"
+    ]
   },
   {
     "categories": [
@@ -567,6 +1382,98 @@
     "people": [
       "Omar al-Faruq",
       "Jim Shepherd"
+    ]
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "721"
+  },
+  {
+  "categories": [
+      "Project Camelot",
+      "Wacky Wednesday"
+    ],
+    "episode_number": "722"
+  },
+  {
+    "episode_number": "78",
+    "people": [
+      "David Clarke",
+      "Dmitry Rogozin",
+      "Putin",
+      "Paul Joseph Watson",
+      "Michael Savage",
+      "Steve Pieczenik",
+      "Michelle Malkin",
+      "Howard Dean",
+      "Edward Group",
+      "Joe Biggs",
+      "Paul Craig Roberts"
+    ]
+  },
+  {
+    "episode_number": "79",
+    "people": [
+      "Kerry Cassidy",
+      "Jo Ann Richards",
+      "Mark Richards",
+      "The Dutchman",
+      "Richard Baldwin"
+    ]
+  },
+  {
+    "episode_number": "82",
+    "people": [
+      "Lee Ann McAdoo",
+      "George Noory",
+      "Max Keiser",
+      "Ted Cruz",
+      "Mellisa Harris Perry",
+      "Ben Carson",
+      "roger stone",
+      "Steve Pieczenek",
+      "phyllis schlafly",
+      "45 group",
+      "Donald Trump",
+      "Vladimir Putin",
+      "Jim Mars",
+      "Lisa Case",
+      "Buckley",
+      "Ron Paul"
+    ]
+  },
+  {
+    "episode_number": "83",
+    "people": [
+      "Mancow",
+      "Rand Paul",
+      "George Soros",
+      "Melissa Click",
+      "General Albert Stubblebine",
+      "Rima Laibow",
+      "Lord Monckton",
+      "Darrell Hamamoto",
+      "Nick Begich",
+      "Peter Stormare"
+    ]
+  },
+  {
+    "episode_number": "84",
+    "people": [
+      "David Icke"
+    ]
+  },
+  {
+    "episode_number": "97",
+    "people": [
+      "George H W Bush",
+      "The Bush family",
+      "Elon Musk",
+      "Eric Prince",
+      "Andrew Neal",
+      "Jeff Flake"
     ]
   },
   {
