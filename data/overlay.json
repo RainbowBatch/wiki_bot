@@ -1203,7 +1203,10 @@
       "Project Camelot",
       "Wacky Wednesday"
     ],
-    "episode_number": "698"
+    "episode_number": "698",
+    "people": [
+      "Solomon Berg"
+    ]
   },
   {
     "categories": [
@@ -1345,6 +1348,9 @@
     ]
   },
   {
+    "categories": [
+      "Present Day"
+    ],
     "episode_number": "717",
     "people": [
       "Donald Trump",
@@ -1354,6 +1360,9 @@
     ]
   },
   {
+    "categories": [
+      "Present Day"
+    ],
     "episode_number": "718",
     "people": [
       "Vladimir Putin",
@@ -1391,11 +1400,32 @@
     "episode_number": "721"
   },
   {
-  "categories": [
+    "categories": [
       "Project Camelot",
       "Wacky Wednesday"
     ],
-    "episode_number": "722"
+    "episode_number": "722",
+    "people": [
+      "Solomon Berg"
+    ]
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "723"
+  },
+  {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "724"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "725"
   },
   {
     "episode_number": "78",
