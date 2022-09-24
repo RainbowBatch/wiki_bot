@@ -694,7 +694,7 @@
     ]
   },
   {
-    "entity_count": 16,
+    "entity_count": 17,
     "entity_name": "Australian",
     "entity_origin": [
       "130C: Endgame, Part 3",
@@ -708,6 +708,7 @@
       "611: October 29, 2021",
       "624: November 30, 2021",
       "684: May 20, 2022",
+      "720: August 6, 2003",
       "transcripts\\720.txt"
     ],
     "entity_sourcetexts": [
@@ -1058,7 +1059,7 @@
     ]
   },
   {
-    "entity_count": 28,
+    "entity_count": 29,
     "entity_name": "California",
     "entity_origin": [
       "115: January 2, 2018",
@@ -1083,7 +1084,8 @@
       "645: November 4, 2014",
       "661: March 17, 2022",
       "666: March 31, 2022",
-      "95: Project Camelot Break"
+      "95: Project Camelot Break",
+      "Mark Richards"
     ],
     "entity_sourcetexts": [
       "California"
@@ -1299,7 +1301,7 @@
     ]
   },
   {
-    "entity_count": 18,
+    "entity_count": 19,
     "entity_name": "Christians",
     "entity_origin": [
       "143: March 25-31 Part 1",
@@ -1319,7 +1321,8 @@
       "601: June 16, 2003",
       "648: February 11, 2022",
       "97: October 25, 2017",
-      "Mark Dice"
+      "Mark Dice",
+      "transcripts\\721.txt"
     ],
     "entity_sourcetexts": [
       "Christians"
@@ -1489,7 +1492,7 @@
     ]
   },
   {
-    "entity_count": 32,
+    "entity_count": 38,
     "entity_name": "Connecticut",
     "entity_origin": [
       "210: March 9, 2009",
@@ -1502,8 +1505,12 @@
       "602: Sandy Hook Response",
       "618: November 15, 2021",
       "647: February 8, 2022",
+      "725: September 13-14, 2022",
+      "726: September 15-16, 2022",
       "Andino Reynal",
+      "Brittany Paz",
       "Cameron Atkinson",
+      "Chris Mattei",
       "Free Speech Systems Bankruptcy Case",
       "Free Speech Systems LLC",
       "Judge Barbara Bellis",
@@ -1706,10 +1713,11 @@
     ]
   },
   {
-    "entity_count": 2,
+    "entity_count": 3,
     "entity_name": "Daniel Jordan",
     "entity_origin": [
       "698: For Squatch, There Are No Heroes",
+      "Solomon Berg",
       "transcripts\\717.txt"
     ],
     "entity_sourcetexts": [
@@ -1877,7 +1885,7 @@
     ]
   },
   {
-    "entity_count": 838,
+    "entity_count": 856,
     "entity_name": "Donald Trump\u200f\u200e",
     "entity_origin": [
       "100: January 6-7, 2016",
@@ -2173,7 +2181,8 @@
       "transcripts\\717.txt",
       "transcripts\\718.txt",
       "transcripts\\719.txt",
-      "transcripts\\720.txt"
+      "transcripts\\720.txt",
+      "transcripts\\721.txt"
     ],
     "entity_sourcetexts": [
       "Trump",
@@ -2235,11 +2244,12 @@
     ]
   },
   {
-    "entity_count": 3,
+    "entity_count": 5,
     "entity_name": "Elizabeth Williamson",
     "entity_origin": [
       "657: Chatting With Elizabeth Williamson",
       "710: Elizabeth Williamson Returns",
+      "728: Elizabeth Williamson Returns Once More",
       "List of Knowledge Fight episodes"
     ],
     "entity_sourcetexts": [
@@ -2399,6 +2409,20 @@
     ]
   },
   {
+    "entity_count": 6,
+    "entity_name": "Frankenstein",
+    "entity_origin": [
+      "transcripts\\715.txt",
+      "transcripts\\721.txt"
+    ],
+    "entity_sourcetexts": [
+      "Frankenstein"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
     "entity_count": 2,
     "entity_name": "Frederick Douglas",
     "entity_origin": [
@@ -2413,10 +2437,11 @@
     ]
   },
   {
-    "entity_count": 4,
+    "entity_count": 5,
     "entity_name": "Free Speech Systems",
     "entity_origin": [
       "399: February 12-14, 2020",
+      "Brittany Paz",
       "Daria Karpova",
       "InfoWars",
       "Rob Dew"
@@ -2595,6 +2620,53 @@
     ],
     "entity_type": [
       "ORG"
+    ]
+  },
+  {
+    "entity_count": 112,
+    "entity_name": "Glenn Beck",
+    "entity_origin": [
+      "160: January 22-25, 2009",
+      "167: February 4-5, 2009",
+      "203: March 2-4, 2009",
+      "216: November 11, 2010",
+      "219: March 13, 2009",
+      "234: March 26, 2009",
+      "237: March 27, 2009",
+      "243: April 1-2, 2009",
+      "246: April 5-6, 2009",
+      "252: April 7-8, 2009",
+      "258: April 12-13, 2009",
+      "261: February 5-6, 2019",
+      "288: January 7-9, 2013",
+      "294: January 15-16, 2013",
+      "298: January 20-23, 2013",
+      "308: February 6-8, 2013",
+      "317: February 19-20, 2013",
+      "343: April 3-8, 2013",
+      "344: April 9-10, 2013",
+      "355: April 18, 2013",
+      "364: April 21-22, 2013",
+      "474: June 6, 2016",
+      "612: October 31, 2021",
+      "625: December 5, 2021",
+      "626: December 9, 2021",
+      "639: January 17, 2022",
+      "George Soros",
+      "transcripts\\715.txt",
+      "transcripts\\716.txt",
+      "transcripts\\717.txt",
+      "transcripts\\718.txt",
+      "transcripts\\719.txt"
+    ],
+    "entity_sourcetexts": [
+      "Glenn\r\n    Beck",
+      "Glenn\r\nBeck",
+      "Glenn Beck",
+      "Glenn Beck's"
+    ],
+    "entity_type": [
+      "PERSON"
     ]
   },
   {
@@ -2798,14 +2870,15 @@
     ]
   },
   {
-    "entity_count": 6,
+    "entity_count": 7,
     "entity_name": "Homeland Security",
     "entity_origin": [
       "262: April 14, 2009",
       "422: April 17, 2020",
       "570: June 24, 2021",
       "622: June 30-July 1, 2003",
-      "transcripts\\720.txt"
+      "transcripts\\720.txt",
+      "transcripts\\721.txt"
     ],
     "entity_sourcetexts": [
       "Homeland\r\n    Security",
@@ -2818,14 +2891,15 @@
     ]
   },
   {
-    "entity_count": 5,
+    "entity_count": 6,
     "entity_name": "Huffington Post",
     "entity_origin": [
       "297: January 17-18, 2013",
       "298: January 20-23, 2013",
       "304: May 30-31, 2019",
       "307: February 3-5, 2013",
-      "612: October 31, 2021"
+      "612: October 31, 2021",
+      "727: Chatting with Sebastian Murdock"
     ],
     "entity_sourcetexts": [
       "Huffington Post"
@@ -2914,32 +2988,6 @@
     ]
   },
   {
-    "entity_count": 15,
-    "entity_name": "Illuminati",
-    "entity_origin": [
-      "141: March 20-22, 2018",
-      "155: January 7-9, 2009",
-      "199: August 29, 2018",
-      "210: March 9, 2009",
-      "212: Matrix Schemes and Billions In Liens",
-      "294: January 15-16, 2013",
-      "338: March 27-28, 2013",
-      "428: May 1, 2020",
-      "431: Smash-N-Grab Spy Jobs",
-      "507: Jordan Doesn't Know About Walk-Ins",
-      "608: Jordan Takes The Wheel 7",
-      "Edward Group",
-      "Mark Dice"
-    ],
-    "entity_sourcetexts": [
-      "Illuminati"
-    ],
-    "entity_type": [
-      "GPE",
-      "ORG"
-    ]
-  },
-  {
     "entity_count": 8,
     "entity_name": "Immigrants",
     "entity_origin": [
@@ -2984,6 +3032,22 @@
     ],
     "entity_sourcetexts": [
       "InfoWarriors"
+    ],
+    "entity_type": [
+      "ORG"
+    ]
+  },
+  {
+    "entity_count": 4,
+    "entity_name": "InfoWars Sources",
+    "entity_origin": [
+      "\"Mandatory Service Bill\"",
+      "H.G. Wells and the \"New World Order\"",
+      "The Club Of Rome",
+      "Why The Future Doesn't Need Us"
+    ],
+    "entity_sourcetexts": [
+      "InfoWars Sources"
     ],
     "entity_type": [
       "ORG"
@@ -3451,7 +3515,7 @@
     ]
   },
   {
-    "entity_count": 42,
+    "entity_count": 45,
     "entity_name": "Jordan Takes",
     "entity_origin": [
       "144: March 25-31, Part 2",
@@ -3701,11 +3765,12 @@
     ]
   },
   {
-    "entity_count": 2,
+    "entity_count": 3,
     "entity_name": "Lindsey Graham",
     "entity_origin": [
       "45: May 25, 2017",
-      "transcripts\\718.txt"
+      "transcripts\\718.txt",
+      "transcripts\\721.txt"
     ],
     "entity_sourcetexts": [
       "Lindsey Graham",
@@ -3785,6 +3850,20 @@
     ],
     "entity_type": [
       "PERSON"
+    ]
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "Manchurian",
+    "entity_origin": [
+      "230A: Obama Deception, Part 1",
+      "transcripts\\721.txt"
+    ],
+    "entity_sourcetexts": [
+      "Manchurian"
+    ],
+    "entity_type": [
+      "NORP"
     ]
   },
   {
@@ -4545,7 +4624,7 @@
     ]
   },
   {
-    "entity_count": 20,
+    "entity_count": 23,
     "entity_name": "North Korea",
     "entity_origin": [
       "141: March 20-22, 2018",
@@ -4563,7 +4642,8 @@
       "79: Meet Captain Mark Richards",
       "87: Mark Richards Revisited",
       "The Club Of Rome",
-      "transcripts\\714.txt"
+      "transcripts\\714.txt",
+      "transcripts\\721.txt"
     ],
     "entity_sourcetexts": [
       "North Korea",
@@ -4690,7 +4770,7 @@
     ]
   },
   {
-    "entity_count": 12,
+    "entity_count": 13,
     "entity_name": "Oklahoma City",
     "entity_origin": [
       "216: November 11, 2010",
@@ -4698,7 +4778,8 @@
       "434: Bill Cooper Covers OKC Part 1",
       "447: Bill Cooper Covers OKC Part 2",
       "56: July 22-Aug 11, 2015",
-      "612: October 31, 2021"
+      "612: October 31, 2021",
+      "transcripts\\721.txt"
     ],
     "entity_sourcetexts": [
       "Oklahoma City"
@@ -5090,7 +5171,7 @@
     ]
   },
   {
-    "entity_count": 38,
+    "entity_count": 39,
     "entity_name": "Project Camelot Category",
     "entity_origin": [
       "125: Project Camelot's War In Heaven",
@@ -5128,6 +5209,7 @@
       "629: Black Goo and Space Covid",
       "686: Continental Negotiations",
       "698: For Squatch, There Are No Heroes",
+      "722: Space Capitalism Is Still Capitalism",
       "79: Meet Captain Mark Richards",
       "87: Mark Richards Revisited",
       "95: Project Camelot Break"
@@ -5375,7 +5457,7 @@
     ]
   },
   {
-    "entity_count": 11,
+    "entity_count": 12,
     "entity_name": "Republican",
     "entity_origin": [
       "160: January 22-25, 2009",
@@ -5387,7 +5469,8 @@
       "66: September 6-17, 2015",
       "82: Oct. 27-Nov. 9, 2015",
       "Roger Stone",
-      "transcripts\\718.txt"
+      "transcripts\\718.txt",
+      "transcripts\\721.txt"
     ],
     "entity_sourcetexts": [
       "Republican"
@@ -5397,7 +5480,7 @@
     ]
   },
   {
-    "entity_count": 16,
+    "entity_count": 23,
     "entity_name": "Republicans",
     "entity_origin": [
       "211: March 10, 2009",
@@ -5411,7 +5494,8 @@
       "56: July 22-Aug 11, 2015",
       "58: June 23, 2017",
       "75: January 7, 2011",
-      "transcripts\\717.txt"
+      "transcripts\\717.txt",
+      "transcripts\\721.txt"
     ],
     "entity_sourcetexts": [
       "Republicans"
@@ -5480,6 +5564,20 @@
     ],
     "entity_sourcetexts": [
       "Rick Wiles"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "Robby Parker",
+    "entity_origin": [
+      "292: January 14, 2013",
+      "343: April 3-8, 2013"
+    ],
+    "entity_sourcetexts": [
+      "Robby Parker"
     ],
     "entity_type": [
       "PERSON"
@@ -5753,7 +5851,7 @@
     ]
   },
   {
-    "entity_count": 9,
+    "entity_count": 11,
     "entity_name": "San Francisco",
     "entity_origin": [
       "130E: Endgame, Part 5",
@@ -5764,7 +5862,8 @@
       "47: June 19-July 5, 2015",
       "677: May 4, 2022",
       "transcripts\\715.txt",
-      "transcripts\\719.txt"
+      "transcripts\\719.txt",
+      "transcripts\\721.txt"
     ],
     "entity_sourcetexts": [
       "San Francisco"
@@ -5827,6 +5926,20 @@
     ]
   },
   {
+    "entity_count": 3,
+    "entity_name": "Sandy Hook Response",
+    "entity_origin": [
+      "Connecticut Sandy Hook Lawsuit (Lafferty v. Jones)",
+      "List of Knowledge Fight episodes"
+    ],
+    "entity_sourcetexts": [
+      "Sandy Hook Response"
+    ],
+    "entity_type": [
+      "PERSON"
+    ]
+  },
+  {
     "entity_count": 2,
     "entity_name": "Sarah Huckabee Sanders",
     "entity_origin": [
@@ -5870,7 +5983,7 @@
     ]
   },
   {
-    "entity_count": 17,
+    "entity_count": 18,
     "entity_name": "Saudi Arabia",
     "entity_origin": [
       "142: March 23, 2018",
@@ -5883,6 +5996,7 @@
       "560: May 12-13, 2003",
       "58: June 23, 2017",
       "670: July 28, 2003",
+      "720: August 6, 2003",
       "transcripts\\720.txt"
     ],
     "entity_sourcetexts": [
@@ -5893,13 +6007,14 @@
     ]
   },
   {
-    "entity_count": 4,
+    "entity_count": 5,
     "entity_name": "Schrodinger",
     "entity_origin": [
       "151: April 16, 2018",
       "199: August 29, 2018",
       "557: May 11, 2021",
-      "594: September 7, 2021"
+      "594: September 7, 2021",
+      "transcripts\\721.txt"
     ],
     "entity_sourcetexts": [
       "Schrodinger"
@@ -6472,6 +6587,21 @@
   },
   {
     "entity_count": 2,
+    "entity_name": "Super Bowl",
+    "entity_origin": [
+      "18: March 1, 2017/Super Bowl Bonus",
+      "728: Elizabeth Williamson Returns Once More"
+    ],
+    "entity_sourcetexts": [
+      "Super Bowl"
+    ],
+    "entity_type": [
+      "EVENT",
+      "PERSON"
+    ]
+  },
+  {
+    "entity_count": 2,
     "entity_name": "Super Female Vitality",
     "entity_origin": [
       "111: January 21-22, 2016",
@@ -6728,7 +6858,7 @@
     ]
   },
   {
-    "entity_count": 2,
+    "entity_count": 3,
     "entity_name": "The Decompression Session",
     "entity_origin": [
       "Bradley Reeves",
@@ -6736,7 +6866,8 @@
     ],
     "entity_sourcetexts": [
       "The Decompression Session",
-      "The Decompression Session                                                         "
+      "The Decompression Session                                                           ",
+      "The Decompression Session                                                                  "
     ],
     "entity_type": [
       "WORK_OF_ART",
@@ -7021,7 +7152,7 @@
     ]
   },
   {
-    "entity_count": 213,
+    "entity_count": 138,
     "entity_name": "Time Travel",
     "entity_origin": [
       "105: March 18, 2014",
@@ -7056,42 +7187,9 @@
       "535: October 16, 2014",
       "537: July 16-18, 2010",
       "542: September 15, 2010",
-      "544: May 1, 2003",
-      "548: May 5, 2003",
-      "552: May 6, 2003",
-      "555: May 7, 2003",
-      "558: May 8-9, 2003",
-      "560: May 12-13, 2003",
-      "564: May 15-20, 2003",
-      "566: May 21, 2003",
-      "571: May 22-27, 2003",
-      "574: May 28-29, 2003",
-      "579: May 30, 2003",
-      "581: June 3, 2003",
-      "591: June 11, 2003",
-      "592: June 12, 2003",
-      "599: June 13, 2003",
-      "601: June 16, 2003",
-      "605: June 17, 2003",
-      "606: June 18-19, 2003",
-      "610: June 23, 2003",
-      "613: June 24-25, 2003",
-      "617: June 27, 2003",
-      "622: June 30-July 1, 2003",
-      "623: July 2-3, 2003",
-      "628: July 10, 2003",
-      "634: July 11, 2003",
       "636: April 27, 2009",
       "645: November 4, 2014",
-      "650: July 17, 2003",
-      "655: July 18, 2003",
-      "659: July 21-23, 2003",
       "660: February 11, 2014",
-      "663: July 24, 2003",
-      "667: July 25, 2003",
-      "670: July 28, 2003",
-      "678: July 29-30, 2003",
-      "680: July 31-August 1, 2003",
       "701: June 23, 2004",
       "703: 9/11, Part 1",
       "704: 9/11, Part 2",
@@ -7660,22 +7758,6 @@
     ]
   },
   {
-    "entity_count": 6,
-    "entity_name": "Zuckerberg",
-    "entity_origin": [
-      "217: Space Liars and Dragon Moths",
-      "293: May 2-3, 2019",
-      "440: June 1-2, 2020",
-      "480: September 9-10, 2020"
-    ],
-    "entity_sourcetexts": [
-      "Zuckerberg"
-    ],
-    "entity_type": [
-      "PERSON"
-    ]
-  },
-  {
     "entity_count": 2,
     "entity_name": "anti-Clinton",
     "entity_origin": [
@@ -7760,18 +7842,33 @@
     ]
   },
   {
-    "entity_count": 3,
+    "entity_count": 4,
     "entity_name": "republicans",
     "entity_origin": [
       "499: Jordan Takes The Wheel 5",
       "505: November 18, 2020",
-      "646: February 6, 2022"
+      "646: February 6, 2022",
+      "transcripts\\721.txt"
     ],
     "entity_sourcetexts": [
       "republicans"
     ],
     "entity_type": [
       "NORP"
+    ]
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "the Air Force",
+    "entity_origin": [
+      "Ron Paul",
+      "transcripts\\721.txt"
+    ],
+    "entity_sourcetexts": [
+      "the Air Force"
+    ],
+    "entity_type": [
+      "ORG"
     ]
   },
   {
@@ -7851,7 +7948,7 @@
     ]
   },
   {
-    "entity_count": 13,
+    "entity_count": 16,
     "entity_name": "the Civil War",
     "entity_origin": [
       "11: February 10, 2017",
@@ -7860,7 +7957,8 @@
       "47: June 19-July 5, 2015",
       "548: May 5, 2003",
       "transcripts\\715.txt",
-      "transcripts\\720.txt"
+      "transcripts\\720.txt",
+      "transcripts\\721.txt"
     ],
     "entity_sourcetexts": [
       "the\r\n    Civil War",
@@ -8022,13 +8120,14 @@
     ]
   },
   {
-    "entity_count": 5,
+    "entity_count": 6,
     "entity_name": "the Great Depression",
     "entity_origin": [
       "394: January 31, 2020",
       "426: April 27-28, 2020",
       "Bob Chapman",
-      "transcripts\\719.txt"
+      "transcripts\\719.txt",
+      "transcripts\\721.txt"
     ],
     "entity_sourcetexts": [
       "the Great\r\n    Depression",
@@ -8475,7 +8574,7 @@
     ]
   },
   {
-    "entity_count": 20,
+    "entity_count": 22,
     "entity_name": "the United States",
     "entity_origin": [
       "141: March 20-22, 2018",
@@ -8492,7 +8591,8 @@
       "transcripts\\717.txt",
       "transcripts\\718.txt",
       "transcripts\\719.txt",
-      "transcripts\\720.txt"
+      "transcripts\\720.txt",
+      "transcripts\\721.txt"
     ],
     "entity_sourcetexts": [
       "the United States"

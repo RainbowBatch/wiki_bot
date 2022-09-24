@@ -10859,7 +10859,7 @@
     "appearance": [
       "Kevin Moore",
       "Noah",
-      "John Teter"
+      "John Titor"
     ],
     "beverage": null,
     "coverageDate": null,
@@ -10875,7 +10875,7 @@
     "length": "01:55:44",
     "libsyn_link": "https://knowledgefight.libsyn.com/knowledge-fight-there-is-no-mermaid",
     "nextEpisode": "363",
-    "oldid": 3029,
+    "oldid": 3700,
     "oocDrop": "In the case of the Merman",
     "previousEpisode": "361",
     "question": null,
@@ -24073,7 +24073,7 @@
     "length": "01:31:20",
     "libsyn_link": "https://knowledgefight.libsyn.com/698-for-squatch-there-are-no-heroes",
     "nextEpisode": "699",
-    "oldid": 3653,
+    "oldid": 3685,
     "oocDrop": null,
     "previousEpisode": "697",
     "question": null,
@@ -24793,14 +24793,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "717",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:37:07",
     "libsyn_link": "https://knowledgefight.libsyn.com/717-august-17-2022",
     "nextEpisode": "718",
-    "oldid": 3431,
+    "oldid": 3686,
     "oocDrop": null,
     "previousEpisode": "716",
     "question": null,
@@ -24808,7 +24810,8 @@
     "slug": "717{{COLON}}_August_17,_2022",
     "title": "717: August 17, 2022",
     "wiki_categories": [
-      "Episodes"
+      "Episodes",
+      "Present Day"
     ]
   },
   {
@@ -24824,14 +24827,16 @@
     "coverageEndDate": "August 22, 2022",
     "coverageStartDate": "August 21, 2022",
     "episodeNumber": "718",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:22:51",
     "libsyn_link": "https://knowledgefight.libsyn.com/718-august-21-22-2022",
     "nextEpisode": "719",
-    "oldid": 3502,
+    "oldid": 3687,
     "oocDrop": null,
     "previousEpisode": "717",
     "question": null,
@@ -24839,7 +24844,8 @@
     "slug": "718{{COLON}}_August_21-22,_2022",
     "title": "718: August 21-22, 2022",
     "wiki_categories": [
-      "Episodes"
+      "Episodes",
+      "Present Day"
     ]
   },
   {
@@ -24989,7 +24995,7 @@
     "length": "02:30:05",
     "libsyn_link": "https://knowledgefight.libsyn.com/722-space-capitalism-is-still-capitalism",
     "nextEpisode": "723",
-    "oldid": 3666,
+    "oldid": 3688,
     "oocDrop": null,
     "previousEpisode": "721",
     "question": null,
@@ -25010,14 +25016,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "723",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:23:28",
     "libsyn_link": "https://knowledgefight.libsyn.com/723-september-8-2022",
     "nextEpisode": "724",
-    "oldid": 3667,
+    "oldid": 3689,
     "oocDrop": null,
     "previousEpisode": "722",
     "question": null,
@@ -25025,7 +25033,8 @@
     "slug": "723{{COLON}}_September_8,_2022",
     "title": "723: September 8, 2022",
     "wiki_categories": [
-      "Episodes"
+      "Episodes",
+      "Present Day"
     ]
   },
   {
@@ -25036,14 +25045,16 @@
     "coverageEndDate": "August 11, 2003",
     "coverageStartDate": "August 7, 2003",
     "episodeNumber": "724",
-    "episodeType": null,
+    "episodeType": [
+      "2003 Investigation"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:28:12",
     "libsyn_link": "https://knowledgefight.libsyn.com/724-august-7-11-2003",
     "nextEpisode": "725",
-    "oldid": 3682,
+    "oldid": 3690,
     "oocDrop": null,
     "previousEpisode": "723",
     "question": null,
@@ -25051,7 +25062,8 @@
     "slug": "724{{COLON}}_August_7-11,_2003",
     "title": "724: August 7-11, 2003",
     "wiki_categories": [
-      "Episodes"
+      "Episodes",
+      "2003 Investigation"
     ]
   },
   {
@@ -25062,20 +25074,49 @@
     "coverageEndDate": "September 14, 2022",
     "coverageStartDate": "September 13, 2022",
     "episodeNumber": "725",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "02:00:35",
     "libsyn_link": "https://knowledgefight.libsyn.com/725-september-13-14-2022",
-    "nextEpisode": null,
-    "oldid": 3683,
+    "nextEpisode": "726",
+    "oldid": 3695,
     "oocDrop": null,
     "previousEpisode": "724",
     "question": null,
     "redirect": null,
     "slug": "725{{COLON}}_September_13-14,_2022",
     "title": "725: September 13-14, 2022",
+    "wiki_categories": [
+      "Episodes",
+      "Present Day"
+    ]
+  },
+  {
+    "airDate": "September 19, 2022",
+    "appearance": null,
+    "beverage": null,
+    "coverageDate": null,
+    "coverageEndDate": "September 16, 2022",
+    "coverageStartDate": "September 15, 2022",
+    "episodeNumber": "726",
+    "episodeType": null,
+    "hosts": null,
+    "is_external_redirect": false,
+    "is_stub": true,
+    "length": "01:18:58",
+    "libsyn_link": "https://knowledgefight.libsyn.com/726-september-15-16-2022",
+    "nextEpisode": null,
+    "oldid": 3696,
+    "oocDrop": null,
+    "previousEpisode": "725",
+    "question": null,
+    "redirect": null,
+    "slug": "726{{COLON}}_September_15-16,_2022",
+    "title": "726: September 15-16, 2022",
     "wiki_categories": [
       "Episodes"
     ]
@@ -27880,7 +27921,7 @@
     "length": null,
     "libsyn_link": null,
     "nextEpisode": null,
-    "oldid": 3681,
+    "oldid": 3698,
     "oocDrop": null,
     "previousEpisode": null,
     "question": null,
@@ -30654,7 +30695,7 @@
     "length": null,
     "libsyn_link": null,
     "nextEpisode": null,
-    "oldid": 3684,
+    "oldid": 3697,
     "oocDrop": null,
     "previousEpisode": null,
     "question": null,
