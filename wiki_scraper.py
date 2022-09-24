@@ -50,7 +50,7 @@ for wiki_fname in glob.glob('kf_wiki_content/*.wiki'):
                 argument_name = argument.name.strip()
                 if argument_name in ['title']:
                     continue
-                assert argument_name not in page_metadata, argument_name
+                assert argument_name not in page_metadata, argument_name + ' ' + wiki_fname
                 page_metadata[argument_name] = argument.value.strip()
 
         redirect_match = redirect_regex.search(page_text)

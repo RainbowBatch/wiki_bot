@@ -1,6 +1,7 @@
 import io
 import kfio
 import pandas as pd
+import page_listing
 
 from jinja2 import Template
 from pygit2 import Repository
@@ -31,10 +32,11 @@ def stamp_templates():
             'oldid': None,
         })
 
-    page_records_df = pd.DataFrame.from_records(
-        PAGE_RECORDS).sort_values('title')
+    page_listing.add_all(pd.DataFrame.from_records(
+        PAGE_RECORDS
+    ))
 
-    kfio.save(page_records_df, 'kf_wiki_content/page_listing.json')
+    page_listing.save()
 
 
 if __name__ == '__main__':
