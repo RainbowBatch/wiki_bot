@@ -1,7 +1,11 @@
 import kfio
 import pandas as pd
+import numpy as np
 
 page_listing = kfio.load('kf_wiki_content/page_listing.json')
+page_listing.oldid = page_listing.oldid.astype('Int64')
+
+print("GOT HERE")
 
 
 def add(title, slug):
@@ -26,3 +30,13 @@ def save():
     print(page_listing)
 
     kfio.save(page_listing, 'kf_wiki_content/page_listing.json')
+
+def repair():
+    global page_listing
+    page_listing = page_listing.sort_values(['title', 'oldid'], ascending = [True, True], na_position='first')
+    page_listing = page_listing.drop_duplicates(subset='slug', keep="last")
+
+if __name__=='__main__':
+    repair()
+    save()
+
