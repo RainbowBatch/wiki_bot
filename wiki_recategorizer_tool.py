@@ -14,7 +14,7 @@ for wiki_categories in page_data.wiki_categories.to_list():
 categories = list(sorted(categories))
 print(categories)
 
-S = set([])
+S = set(['Episodes'])
 page_data = page_data[page_data.wiki_categories.map(S.issubset)]
 page_data = page_data[page_data.wiki_categories.str.len() <= len(S)]
 
