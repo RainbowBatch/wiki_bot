@@ -63,9 +63,15 @@
     ]
   },
   {
+    "coverage_date": "October 4, 2016",
+    "coverage_end_date": "October 4, 2016",
+    "coverage_start_date": "October 4, 2016",
     "episode_number": "135"
   },
   {
+    "coverage_date": "March 17, 2018",
+    "coverage_end_date": "March 17, 2018",
+    "coverage_start_date": "March 17, 2018",
     "episode_number": "139",
     "people": [
       "Darrell Hamamoto",
@@ -180,6 +186,9 @@
     ]
   },
   {
+    "coverage_date": "December 31, 1999",
+    "coverage_end_date": "December 31, 1999",
+    "coverage_start_date": "December 31, 1999",
     "episode_number": "2"
   },
   {
@@ -294,9 +303,15 @@
     ]
   },
   {
+    "coverage_date": "December 14, 2012",
+    "coverage_end_date": "December 14, 2012",
+    "coverage_start_date": "December 14, 2012",
     "episode_number": "266"
   },
   {
+    "coverage_date": "December 16, 2012",
+    "coverage_end_date": "December 16, 2012",
+    "coverage_start_date": "December 16, 2012",
     "episode_number": "267"
   },
   {
@@ -349,6 +364,12 @@
       "Mike Stackberry",
       "Laura Loomer"
     ]
+  },
+  {
+    "coverage_date": "February 27, 2019",
+    "coverage_end_date": "February 27, 2019",
+    "coverage_start_date": "February 27, 2019",
+    "episode_number": "274"
   },
   {
     "episode_number": "280",
@@ -533,12 +554,6 @@
     ]
   },
   {
-    "coverage_date": "December 31, 1999",
-    "coverage_end_date": "December 31, 1999",
-    "coverage_start_date": "December 31, 1999",
-    "episode_number": "2"
-  },
-  {
     "episode_number": "302",
     "people": [
       "Owen Shroyer",
@@ -621,6 +636,8 @@
     ]
   },
   {
+    "coverage_end_date": "June 6, 2013",
+    "coverage_start_date": "June 9, 2013",
     "episode_number": "324"
   },
   {
@@ -786,6 +803,9 @@
     ]
   },
   {
+    "coverage_date": "January 3, 2012",
+    "coverage_end_date": "January 3, 2012",
+    "coverage_start_date": "January 3, 2012",
     "episode_number": "395"
   },
   {
@@ -981,6 +1001,12 @@
     ]
   },
   {
+    "coverage_date": "October 27, 2020",
+    "coverage_end_date": "October 27, 2020",
+    "coverage_start_date": "October 27, 2020",
+    "episode_number": "497"
+  },
+  {
     "episode_number": "504",
     "people": [
       "Ali Alexander",
@@ -1052,6 +1078,18 @@
     ]
   },
   {
+    "coverage_date": "December 25, 2020",
+    "coverage_end_date": "December 25, 2020",
+    "coverage_start_date": "December 25, 2020",
+    "episode_number": "514"
+  },
+  {
+    "coverage_date": "##REMOVE##",
+    "coverage_end_date": "January 6, 2021",
+    "coverage_start_date": "January 5, 2021",
+    "episode_number": "517"
+  },
+  {
     "episode_number": "518",
     "people": [
       "Taylor Hanson",
@@ -1102,6 +1140,12 @@
       "Stewart Rhodes",
       "Emmanuel Macron"
     ]
+  },
+  {
+    "coverage_date": "June 17, 2017",
+    "coverage_end_date": "June 17, 2017",
+    "coverage_start_date": "June 17, 2017",
+    "episode_number": "54"
   },
   {
     "categories": [
@@ -1382,6 +1426,9 @@
     "categories": [
       "2003 Investigation"
     ],
+    "coverage_date": "July 10, 2003",
+    "coverage_end_date": "July 10, 2003",
+    "coverage_start_date": "July 10, 2003",
     "episode_number": "628"
   },
   {
@@ -1457,6 +1504,12 @@
       "Knowledge Fight Interview"
     ],
     "episode_number": "657"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "658"
   },
   {
     "categories": [
@@ -1670,9 +1723,22 @@
   },
   {
     "categories": [
+      "InfoWars Interview"
+    ],
+    "episode_number": "692"
+  },
+  {
+    "categories": [
       "2003 Investigation"
     ],
     "episode_number": "693"
+  },
+  {
+    "categories": [
+      "Time Travel",
+      "2003 Investigation"
+    ],
+    "episode_number": "694"
   },
   {
     "categories": [
@@ -1749,6 +1815,12 @@
       "Wacky Wednesday"
     ],
     "episode_number": "705"
+  },
+  {
+    "categories": [
+      "Present Day"
+    ],
+    "episode_number": "706"
   },
   {
     "categories": [
@@ -1949,6 +2021,12 @@
     "episode_number": "729"
   },
   {
+    "categories": [
+      "2003 Investigation"
+    ],
+    "episode_number": "730"
+  },
+  {
     "episode_number": "78",
     "people": [
       "David Clarke",
@@ -2015,6 +2093,12 @@
     "people": [
       "David Icke"
     ]
+  },
+  {
+    "coverage_date": "February 1, 2017",
+    "coverage_end_date": "February 1, 2017",
+    "coverage_start_date": "February 1, 2017",
+    "episode_number": "9"
   },
   {
     "episode_number": "95",
