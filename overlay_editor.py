@@ -1,4 +1,5 @@
 import kfio
+import box
 from box import Box
 from collections import defaultdict
 import pandas as pd
@@ -35,7 +36,17 @@ for page_record in scraped_data.to_dict(orient='records'):
     matching_episode_record = Box(
         matching_episodes.to_dict(orient='records')[0])
 
-    inferred_categories = set(wiki_categories).intersection(valid_categories)
+    matching_overlays = existing_overlay[existing_overlay.episode_number == page_record.episodeNumber]
+    if len(matching_overlays) > 0:
+        current_overlay = Box(matching_overlays.to_dict(orient='records')[0])
+    else:
+        current_overlay = None
+
+
+    overlay_categories = set() if current_overlay is None else current_overlay.categories
+    overlay_categories = (set() if isinstance(overlay_categories, float) else set(overlay_categories))
+
+    inferred_categories = (set(wiki_categories) | set(overlay_categories)).intersection(valid_categories)
 
     if matching_episode_record.coverage_start_date is not None and '2003' in matching_episode_record.coverage_start_date:
         inferred_categories.add('2003 Investigation')
@@ -48,14 +59,11 @@ for page_record in scraped_data.to_dict(orient='records'):
                 - mayafy_date(matching_episode_record.coverage_start_date)
             ).days
             if delay_days <= 7:
-                print(matching_episode_record.release_date)
-                print(matching_episode_record.title)
                 inferred_categories.add('Present Day')
 
     current_categories = set(matching_episode_record.categories)
 
     if inferred_categories != current_categories:
-        # print(matching_episode_record.title, current_categories, '=>', inferred_categories)
         new_overlay[page_record.episodeNumber]['episode_number'] = page_record.episodeNumber
         new_overlay[page_record.episodeNumber]['categories'] = inferred_categories
 
@@ -63,24 +71,21 @@ for page_record in scraped_data.to_dict(orient='records'):
     inferred_people = page_record.appearance or []
 
     if set(current_people) != set(inferred_people):
-        # print(matching_episode_record.title, current_people, '=>', inferred_people)
         new_overlay[page_record.episodeNumber]['episode_number'] = page_record.episodeNumber
         new_overlay[page_record.episodeNumber]['people'] = inferred_people
 
     current_start_date = matching_episode_record.coverage_start_date
     current_end_date = matching_episode_record.coverage_end_date
-    inferred_start_date = page_record.coverageStartDate or page_record.coverageDate or None
-    inferred_end_date = page_record.coverageEndDate or page_record.coverageDate or None
+    inferred_start_date = page_record.coverageStartDate or page_record.coverageDate or (None if current_overlay is None else (current_overlay.coverage_start_date or current_overlay.coverage_date))
+    inferred_end_date = page_record.coverageEndDate or page_record.coverageDate or (None if current_overlay is None else (current_overlay.coverage_end_date or current_overlay.coverage_date))
 
     dirty_date = False
     if current_start_date != inferred_start_date:
-        print(page_record.episodeNumber, current_start_date, inferred_end_date)
         new_overlay[page_record.episodeNumber]['episode_number'] = page_record.episodeNumber
         new_overlay[page_record.episodeNumber]['coverage_start_date'] = inferred_start_date
         dirty_date = True
 
     if current_end_date != inferred_end_date:
-        print(page_record.episodeNumber, current_end_date, inferred_end_date)
         new_overlay[page_record.episodeNumber]['episode_number'] = page_record.episodeNumber
         new_overlay[page_record.episodeNumber]['coverage_end_date'] = inferred_end_date
         dirty_date = True
@@ -88,7 +93,7 @@ for page_record in scraped_data.to_dict(orient='records'):
     if dirty_date:
         if inferred_start_date == inferred_end_date:
             new_overlay[page_record.episodeNumber]['coverage_date'] = inferred_start_date
-        else:
+        elif current_overlay is not None and not pd.isna(current_overlay.coverage_date):
             new_overlay[page_record.episodeNumber]['coverage_date'] = '##REMOVE##'
 
 new_overlay_df = pd.DataFrame.from_records(

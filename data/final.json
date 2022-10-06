@@ -55348,7 +55348,9 @@
   },
   {
     "beverage": null,
-    "categories": [],
+    "categories": [
+      "Present Day"
+    ],
     "clean_title": "September 29-30, 2022",
     "coverage_date": null,
     "coverage_end_date": "September 30, 2022",

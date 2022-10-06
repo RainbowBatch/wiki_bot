@@ -1,75 +1,387 @@
 [
   {
+    "episode_number": "1",
+    "guests": [
+      "George Soros",
+      "Illuminati"
+    ]
+  },
+  {
+    "episode_number": "10",
+    "guests": [
+      "George Soros",
+      "Aleksandr Dugin",
+      "Roger Stone",
+      "Richard Spencer"
+    ]
+  },
+  {
+    "episode_number": "11",
+    "guests": [
+      "Andrew Jackson"
+    ]
+  },
+  {
+    "episode_number": "12",
+    "guests": [
+      "John Rappaport"
+    ]
+  },
+  {
+    "episode_number": "13",
+    "guests": [
+      "George Soros",
+      "Paul Joseph Watson",
+      "Chuck Schumer",
+      "Michael Flynn",
+      "John Rappaport",
+      "Roger Stone",
+      "Gloria Steinem",
+      "David Knight",
+      "Michael Moore"
+    ]
+  },
+  {
+    "episode_number": "14",
+    "guests": [
+      "Brian Williams",
+      "George Soros"
+    ]
+  },
+  {
+    "episode_number": "15",
+    "guests": [
+      "Roger Stone",
+      "Jerome Corsi",
+      "Michael Moore",
+      "Chris Carter",
+      "Ted Nugent",
+      "Bill Maher",
+      "Robert David Steele",
+      "Eddie Bravo"
+    ]
+  },
+  {
+    "episode_number": "16",
+    "guests": [
+      "Paul Joseph Watson",
+      "Jimmy Kimmel"
+    ]
+  },
+  {
+    "episode_number": "17",
+    "guests": [
+      "George Soros",
+      "Illuminati",
+      "Darrell Hamamoto"
+    ]
+  },
+  {
+    "episode_number": "18",
+    "guests": [
+      "Marty DeRosa",
+      "Illuminati",
+      "Charlie Sheen",
+      "Rick Perry",
+      "Michael Moore",
+      "Rahm Emanuel"
+    ]
+  },
+  {
+    "episode_number": "19",
+    "guests": [
+      "David Knight",
+      "Paul Joseph Watson",
+      "George Soros",
+      "Michael Savage",
+      "Chuck Schumer",
+      "Owen Shroyer"
+    ]
+  },
+  {
+    "episode_number": "2",
+    "guests": [
+      "Illuminati",
+      "Paul Joseph Watson"
+    ]
+  },
+  {
+    "episode_number": "20",
+    "guests": [
+      "Jesse James",
+      "Eddie Bravo",
+      "Roger Stone",
+      "William Binney"
+    ]
+  },
+  {
+    "episode_number": "279",
+    "guests": [
+      "Mark Bankston",
+      "Mark Enoch",
+      "Wolfgang Halbig"
+    ]
+  },
+  {
+    "episode_number": "3",
+    "guests": [
+      "Michael Savage",
+      "Roger Stone",
+      "David Knight",
+      "Chris Pratt"
+    ]
+  },
+  {
+    "episode_number": "378",
+    "guests": [
+      "Mark Bankston",
+      "Bill Ogden",
+      "Paul Joseph Watson",
+      "Buckley Hamman",
+      "Jim Fetzer",
+      "Wolfgang Halbig",
+      "James Tracy",
+      "Leonard Pozner",
+      "Robert Barnes",
+      "David Knight"
+    ]
+  },
+  {
+    "episode_number": "4",
+    "guests": [
+      "Bill Hicks",
+      "Doug Stanhope",
+      "Tucker Carlson",
+      "George Soros",
+      "Bill Gates"
+    ]
+  },
+  {
+    "episode_number": "401",
+    "guests": [
+      "Roger Stone",
+      "Larry Klayman",
+      "Jerome Corsi",
+      "Cassandra Fairbanks",
+      "Al Sharpton",
+      "Richard Nixon",
+      "Harry Reid"
+    ]
+  },
+  {
+    "episode_number": "5",
+    "guests": [
+      "David Knight",
+      "James O'Keefe",
+      "Roger Stone",
+      "Owen Shroyer",
+      "John Kerry",
+      "George Soros"
+    ]
+  },
+  {
+    "episode_number": "6",
+    "guests": [
+      "Roger Stone",
+      "David Knight",
+      "Paul Joseph Watson"
+    ]
+  },
+  {
+    "episode_number": "602",
+    "guests": [
+      "Mark Bankston",
+      "Jim Fetzer",
+      "Wolfgang Halbig",
+      "Bill Ogden",
+      "Paul Joseph Watson",
+      "Owen Shroyer"
+    ]
+  },
+  {
+    "episode_number": "664",
+    "guests": [
+      "Bill Ogden",
+      "Kit Daniels",
+      "Mark Bankston",
+      "Paul Joseph Watson",
+      "Glenn Greenwald"
+    ]
+  },
+  {
+    "episode_number": "665",
+    "guests": [
+      "Owen Shroyer",
+      "Bill Ogden",
+      "Wolfgang Halbig",
+      "Illuminati"
+    ]
+  },
+  {
+    "episode_number": "685",
+    "guests": [
+      "Mark Bankston",
+      "Bill Ogden",
+      "Jacquelyn Blott",
+      "Kurt Nimmo",
+      "Wolfgang Halbig",
+      "Leonard Pozner",
+      "Charlie Sheen",
+      "David Knight",
+      "Owen Shroyer",
+      "Jim Fetzer",
+      "David Jones"
+    ]
+  },
+  {
+    "episode_number": "7",
+    "guests": [
+      "David Brock",
+      "Illuminati",
+      "George Soros"
+    ]
+  },
+  {
+    "episode_number": "712",
+    "guests": [
+      "Mark Bankston",
+      "Bill Ogden",
+      "Robert Barnes",
+      "Roger Stone"
+    ]
+  },
+  {
     "episode_number": "714",
     "guests": [
+      "Mark Bankston",
+      "Owen Shroyer",
       "Howard Stern",
-      "Stefan Molyneux",
       "Wolfgang Halbig",
-      "Alex Lee Moyer",
+      "Stefan Molyneux",
       "James Tracy",
-      "Paul Joseph Watson"
+      "David Knight"
     ]
   },
   {
     "episode_number": "715",
     "guests": [
-      "Mike Lindell",
       "Robert Barnes",
-      "Jim Brewer",
+      "Mark Bankston",
+      "Owen Shroyer",
       "Mike Adams",
-      "Glenn Beck",
       "Roger Stone",
-      "Dick Cheney"
-    ]
-  },
-  {
-    "episode_number": "716",
-    "guests": [
-      "Glenn Beck",
-      "David Knight",
-      "Rush Limbaugh",
-      "Charlie Sheen"
-    ]
-  },
-  {
-    "episode_number": "717",
-    "guests": [
-      "Aaron Russo",
-      "Laura Loomer",
-      "Savannah Hernandez"
-    ]
-  },
-  {
-    "episode_number": "718",
-    "guests": [
-      "Aleksandr Dugin",
-      "Glenn Beck",
-      "Greg Reese"
-    ]
-  },
-  {
-    "episode_number": "719",
-    "guests": [
-      "Brian Stelter",
-      "Sam Harris",
-      "Greg Reese",
-      "Glenn Beck",
-      "Glenn Greenwald",
-      "Tucker Carlson"
+      "Dick Cheney",
+      "Mike Lindell"
     ]
   },
   {
     "episode_number": "720",
-    "guests": [
-      "Omar al-Faruq",
-      "Jim Shepherd"
-    ]
+    "guests": []
   },
   {
     "episode_number": "721",
     "guests": [
       "Thomas Jefferson",
       "Laura Loomer"
+    ]
+  },
+  {
+    "episode_number": "722",
+    "guests": [
+      "Solomon Berg",
+      "Kerry Cassidy",
+      "David Bowie"
+    ]
+  },
+  {
+    "episode_number": "723",
+    "guests": [
+      "Prince Charles",
+      "Harrison Smith",
+      "David Knight"
+    ]
+  },
+  {
+    "episode_number": "724",
+    "guests": [
+      "Paul Joseph Watson",
+      "David Kelly"
+    ]
+  },
+  {
+    "episode_number": "725",
+    "guests": [
+      "Tucker Carlson",
+      "Eddie Bravo",
+      "Robert Barnes",
+      "Roger Stone",
+      "Norm Pattis",
+      "Jimmy Kimmel",
+      "Ron DeSantis"
+    ]
+  },
+  {
+    "episode_number": "726",
+    "guests": [
+      "Dennis Montgomery",
+      "Ron DeSantis",
+      "Laura Loomer",
+      "Mike Lindell",
+      "Klaus Schwab"
+    ]
+  },
+  {
+    "episode_number": "727",
+    "guests": [
+      "Owen Shroyer",
+      "Mark Bankston",
+      "Dylann Roof"
+    ]
+  },
+  {
+    "episode_number": "728",
+    "guests": []
+  },
+  {
+    "episode_number": "729",
+    "guests": [
+      "Robert Barnes"
+    ]
+  },
+  {
+    "episode_number": "730",
+    "guests": [
+      "Illuminati",
+      "Mel Gibson"
+    ]
+  },
+  {
+    "episode_number": "731",
+    "guests": [
+      "Joel Skousen",
+      "Ted Nugent"
+    ]
+  },
+  {
+    "episode_number": "8",
+    "guests": [
+      "Brian Stelter",
+      "George Soros",
+      "John Wayne",
+      "Jerome Corsi",
+      "David Knight"
+    ]
+  },
+  {
+    "episode_number": "9",
+    "guests": [
+      "Eddie Bravo",
+      "Bill Gates",
+      "George Soros",
+      "Bill Hicks",
+      "Jesse Ventura",
+      "Isaac Asimov",
+      "Illuminati"
     ]
   }
 ]

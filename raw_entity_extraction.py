@@ -2,7 +2,7 @@ import kfio
 import pandas as pd
 import pandoc
 import parse
-
+import re
 from box import Box
 from collections import Counter
 from collections import defaultdict
@@ -50,10 +50,33 @@ for page_record in tqdm(page_listing.to_dict(orient='records')):
         print(e)
         print("Error Processing", fname)
 
-print("Processing Transcripts")
+print("Processing TXT Transcripts")
 for transcript_fname in tqdm(glob('transcripts/*.txt')):
-    episode_number = parse.parse("transcripts\\{}.txt", transcript_fname)[0]
+    try:
+        with open(transcript_fname, encoding='utf-8') as f:
+            S = f.read()
 
+        entities.extend(extract_entities(S, transcript_fname))
+
+    except Exception as e:
+        print(e)
+        print("Error Processing", transcript_fname)
+
+print("Processing SRT Transcripts")
+for transcript_fname in tqdm(glob('transcripts/*.srt')):
+    try:
+        with open(transcript_fname, encoding='utf-8') as f:
+            S = f.read()
+
+        entities.extend(extract_entities(S, transcript_fname))
+
+    except Exception as e:
+        print(e)
+        print("Error Processing", transcript_fname)
+
+
+print("Processing Automated SRT Transcripts")
+for transcript_fname in tqdm(glob('audio_files/*.srt')):
     try:
         with open(transcript_fname, encoding='utf-8') as f:
             S = f.read()
@@ -85,6 +108,13 @@ for s, t, o in tqdm(entities):
 
     if len(s1) < 10:
         continue
+
+    if '-->' in s1 or 'Alex -' in s1 or ' - ' in s1:
+        continue
+
+    if re.search(r"\d{2}:\d{2}:\d{2},\d{3}", s1, re.IGNORECASE):
+        continue
+
     counter.update([s1])
     types[s1].update([t])
     origins[s1].add(o)
@@ -96,6 +126,8 @@ BANNED_TYPES = [
     'MONEY',
     'TIME',
     'CARDINAL',
+    'QUANTITY',
+    'PERCENT',
 ]
 
 print("Constructing final rows")

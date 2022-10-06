@@ -20,8 +20,8 @@ OVERUSED = [
     'Dan Friesen',
 ]
 
-for transcript_fname in glob('transcripts/*.txt'):
-    episode_number = parse.parse("transcripts\\{}.txt", transcript_fname)[0]
+for transcript_fname in glob('transcripts/*.otter.txt'):
+    episode_number = parse.parse("transcripts\\{}.otter.txt", transcript_fname)[0]
 
     print(episode_number)
 
