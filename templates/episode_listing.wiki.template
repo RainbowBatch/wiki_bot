@@ -1,4 +1,5 @@
-{%- macro wiki_link(link_text, link_dest) -%}{% if link_text == link_dest %}[[{{link_dest}}]]{% else %}[[{{link_dest}}|{{link_text}}]]{% endif %}{%- endmacro -%}
+{% import 'macros.template' as macro %}
+
 {% raw %}{{{% endraw %}DISPLAYTITLE:
     List of ''Knowledge Fight'' episodes
 {% raw %}}}{{{% endraw %}Stub{% raw %}}}{% endraw %}The following is a list of episodes for the [[Knowledge Fight]] podcast hosted by [[Dan Friesen]] and [[Jordan Holmes]].
@@ -19,8 +20,8 @@ end date
 !Episode type
 {% for episode_record in shard %}
 |-
-|{{ wiki_link(episode_record.episode_number, episode_record.safe_title) }}
-|{{ wiki_link(episode_record.title, episode_record.safe_title) }}
+|{{ macro.wiki_link(episode_record.episode_number, episode_record.safe_title) }}
+|{{ macro.wiki_link(episode_record.title, episode_record.safe_title) }}
 |{% if episode_record.coverage_start_date is defined and episode_record.coverage_start_date is not none %}{{episode_record.coverage_start_date}}{% endif %}
 |{% if episode_record.coverage_end_date is defined and episode_record.coverage_end_date is not none %}{{episode_record.coverage_end_date}}{% endif %}
 |{{episode_record.release_date}}
@@ -48,8 +49,8 @@ end date
 !Episode type
 {% for episode_record in shard %}
 |-
-|{{ wiki_link(episode_record.episode_number, episode_record.safe_title) }}
-|{{ wiki_link(episode_record.title, episode_record.safe_title) }}
+|{{ macro.wiki_link(episode_record.episode_number, episode_record.safe_title) }}
+|{{ macro.wiki_link(episode_record.title, episode_record.safe_title) }}
 |{% if episode_record.coverage_start_date is defined and episode_record.coverage_start_date is not none %}{{episode_record.coverage_start_date}}{% endif %}
 |{% if episode_record.coverage_end_date is defined and episode_record.coverage_end_date is not none %}{{episode_record.coverage_end_date}}{% endif %}
 |{{episode_record.release_date}}
@@ -77,8 +78,8 @@ end date
 !Episode type
 {% for episode_record in shard %}
 |-
-|{{ wiki_link(episode_record.episode_number, episode_record.safe_title) }}
-|{{ wiki_link(episode_record.title, episode_record.safe_title) }}
+|{{ macro.wiki_link(episode_record.episode_number, episode_record.safe_title) }}
+|{{ macro.wiki_link(episode_record.title, episode_record.safe_title) }}
 |{% if episode_record.coverage_start_date is defined and episode_record.coverage_start_date is not none %}{{episode_record.coverage_start_date}}{% endif %}
 |{% if episode_record.coverage_end_date is defined and episode_record.coverage_end_date is not none %}{{episode_record.coverage_end_date}}{% endif %}
 |{{episode_record.release_date}}

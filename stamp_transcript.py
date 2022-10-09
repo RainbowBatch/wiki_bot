@@ -59,15 +59,12 @@ def stamp_transcript():
     for transcript_fname in glob('transcripts/*.otter.txt'):
         print("Processing", transcript_fname)
         episode_number = parse.parse(r"transcripts\{}.otter.txt", transcript_fname)[0]
-        print(repr(episode_number))
 
         idxs = episodes_df.index[episodes_df.episode_number == episode_number].tolist()
         assert len(idxs) == 1
         idx = idxs[0]
 
         episode_details = episodes_df.iloc[idx]
-
-        print(episode_details)
 
         with open(transcript_fname) as transcript_file:
             transcript_blocks = process_otter_transcript(transcript_file.read())

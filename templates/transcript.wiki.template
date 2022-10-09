@@ -1,9 +1,9 @@
-{%- macro wiki_link(link_text, link_dest) -%}{% if link_text == link_dest %}[[{{link_dest}}]]{% else %}[[{{link_dest}}|{{link_text}}]]{% endif %}{%- endmacro -%}
+{% import 'macros.template' as macro %}
 
 {% raw %}{{Transcript{% endraw %}
-    | title           = {{ wiki_link(episode_details.title, episode_details.safe_title) }}
+    | title           = {{ macro.wiki_link(episode_details.title, episode_details.safe_title) }}
     | caption         = [{{episode_details.libsyn_page}} Listen to this episode on Libsyn]
-    | episodeNumber   = {{ wiki_link(episode_details.episode_number, episode_details.safe_title) }}
+    | episodeNumber   = {{ macro.wiki_link(episode_details.episode_number, episode_details.safe_title) }}
     | length          = {{episode_details.episode_length}}
 {% raw %}}}{% endraw %}
 

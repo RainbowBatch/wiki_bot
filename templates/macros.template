@@ -1,0 +1,1 @@
+{%- macro wiki_link(link_text, link_dest) -%}{% if link_text == link_dest %}[[{{link_dest}}]]{% else %}[[{{link_dest}}|{{link_text}}]]{% endif %}{%- endmacro -%}
