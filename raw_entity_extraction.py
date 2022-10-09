@@ -22,9 +22,6 @@ entities = []
 page_listing = kfio.load('kf_wiki_content/page_listing.json')
 known_missing_pages = kfio.load('data/missing_pages.json')
 
-recognized_entities = page_listing.title.to_list(
-) + known_missing_pages.title.to_list()
-
 print("Processing Wiki Pages")
 for page_record in tqdm(page_listing.to_dict(orient='records')):
     page_record = Box(page_record)
@@ -154,7 +151,8 @@ print("Finalizing and saving data.")
 df = pd.DataFrame(rows, columns=header)
 
 # Only include things we don't have existing knowledge of...
-df = df[~df.entity_name.isin(recognized_entities)]
+df['is_existing'] = df.entity_name.isin(map(lambda x: x.lower(), page_listing.title.to_list()))
+df['is_known_missing'] = df.entity_name.isin(map(lambda x: x.lower(), known_missing_pages.title.to_list()))
 print("Starting sort.")
 df = df.sort_values('entity_name')
 

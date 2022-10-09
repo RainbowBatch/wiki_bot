@@ -68,6 +68,7 @@ for redirect in redirects.to_dict(orient='records'):
 del REMAPPING['Neil Heslin']
 del REMAPPING['Scarlett Lewis']
 del REMAPPING['Adam Lanza']
+del REMAPPING['Y2K']
 
 
 _RE_COMBINE_WHITESPACE = re.compile(r"\s+")
@@ -76,14 +77,20 @@ _RE_COMBINE_WHITESPACE = re.compile(r"\s+")
 def simplify_entity(s):
     s = _RE_COMBINE_WHITESPACE.sub(' ', s)
     s = s.replace(u'\u200f', '').replace(u'\u200e', '')
+    s = s.replace('.', '')
+    s = s.replace('-', ' ')
     s = s.strip()
     assert u'\u200f\u200e' not in s
     s = ' '.join(s.split())
     if s.endswith("'s"):
         s = s[:-2]
+    if s.lower().startswith("a "):
+        s = s[2:]
+    if s.lower().startswith("the "):
+        s = s[4:]
     while s in REMAPPING:
         s = REMAPPING[s]
-    return s
+    return s.strip().lower()
 
 
 def extract_entities(S, source):

@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import random
 import time
+import kfio
 
 HEADERS = {
     'User-agent':
@@ -11,7 +12,7 @@ HEADERS = {
 # TODO(woursler): Add a persistent cache on top of this.
 
 def correct_spelling(s):
-    time.sleep(random.uniform(5, 60))
+    time.sleep(random.uniform(5, 20))
 
     params = {
       'q': s,
@@ -27,4 +28,16 @@ def correct_spelling(s):
         return s
     return corrected.text
 
-print(correct_spelling('Neil Hesleyn'))
+
+raw_entity_listing = kfio.load('data/raw_entities.json')
+
+for entity_name in raw_entity_listing.entity_name.to_list():
+    # print(entity_name)
+    corrected_entity_name = correct_spelling(entity_name)
+
+    if corrected_entity_name != entity_name:
+        print(entity_name, ':', corrected_entity_name)
+    else:
+        print('- ', entity_name)
+
+# print(correct_spelling('Neil Hesleyn'))
