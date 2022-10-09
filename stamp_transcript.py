@@ -1,15 +1,26 @@
 import io
 import kfio
-import pandas as pd
 import maya
-import parse
 import page_listing
+import pandas as pd
+import parse
 
 from glob import glob
-from pprint import pprint
+from jinja2 import Environment
+from jinja2 import FileSystemLoader
 from jinja2 import Template
+from jinja2 import select_autoescape
+from pprint import pprint
 from pygit2 import Repository
 from wiki_cleaner import simple_format
+
+
+env = Environment(
+    loader=FileSystemLoader("templates"),
+    autoescape=select_autoescape()
+)
+
+template = env.get_template('transcript.wiki.template')
 
 def process_otter_transcript(transcript_text):
     blocks = transcript_text.split('\n\n')
@@ -40,8 +51,6 @@ def process_otter_transcript(transcript_text):
 
 def stamp_transcript():
     episodes_df = kfio.load('data/final.json')
-    with open('transcript.wiki.template') as transcript_template_f:
-        template = Template(transcript_template_f.read())
 
     git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
 

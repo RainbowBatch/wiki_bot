@@ -1,28 +1,40 @@
 import io
 import kfio
-import pandas as pd
 import maya
+import pandas as pd
 
-from pprint import pprint
+from jinja2 import Environment
+from jinja2 import FileSystemLoader
 from jinja2 import Template
+from jinja2 import select_autoescape
+from pprint import pprint
 from pygit2 import Repository
 from wiki_cleaner import simple_format
+
+env = Environment(
+    loader=FileSystemLoader("templates"),
+    autoescape=select_autoescape()
+)
+
+template = env.get_template('episode_listing.wiki.template')
+
 
 def extract_year(dts):
     if dts is None:
         return None
     return int(dts.split(',')[-1].strip())
 
+
 def mayafy_date(dt):
     return maya.parse(dt) if not pd.isna(dt) else None
 
+
 def date_midpoint(dt1, dt2):
-    return dt1 # TODO(woursler): Actually do this.
+    return dt1  # TODO(woursler): Actually do this.
+
 
 def stamp_episode_listing():
     episodes_df = kfio.load('data/final.json')
-    with open('episode_listing.wiki.template') as episode_template_f:
-        template = Template(episode_template_f.read())
 
     git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
 
@@ -30,13 +42,18 @@ def stamp_episode_listing():
 
     episodes_df['release_year'] = episodes_df.release_date.apply(extract_year)
 
-    episodes_df['maya_release_date'] = episodes_df.release_date.apply(mayafy_date)
-    episodes_df['maya_coverage_start_date'] = episodes_df.coverage_start_date.apply(mayafy_date)
-    episodes_df['maya_coverage_end_date'] = episodes_df.coverage_end_date.apply(mayafy_date)
+    episodes_df['maya_release_date'] = episodes_df.release_date.apply(
+        mayafy_date)
+    episodes_df['maya_coverage_start_date'] = episodes_df.coverage_start_date.apply(
+        mayafy_date)
+    episodes_df['maya_coverage_end_date'] = episodes_df.coverage_end_date.apply(
+        mayafy_date)
     # TODO: Actually use this to generate coverage_year
-    episodes_df['maya_coverage_mid_date'] = episodes_df.apply(lambda x: date_midpoint(x.maya_coverage_start_date, x.maya_coverage_end_date), axis=1)
+    episodes_df['maya_coverage_mid_date'] = episodes_df.apply(lambda x: date_midpoint(
+        x.maya_coverage_start_date, x.maya_coverage_end_date), axis=1)
 
-    episodes_df['coverage_year'] = episodes_df.coverage_start_date.apply(extract_year)
+    episodes_df['coverage_year'] = episodes_df.coverage_start_date.apply(
+        extract_year)
 
     categories = list(sorted(set([
         category
@@ -45,10 +62,8 @@ def stamp_episode_listing():
         if category not in ['Present Day']
     ])))
 
-
     release_years = list(sorted(set(episodes_df.release_year.to_list())))
     coverage_years = list(sorted(set(episodes_df.coverage_year.to_list())))
-
 
     release_year_shards = {
         release_year: episodes_df[episodes_df.release_year == release_year].sort_values('maya_release_date').to_dict(orient='records')
@@ -76,6 +91,7 @@ def stamp_episode_listing():
 
     with io.open('kf_wiki_content/List_of_Knowledge_Fight_episodes.wiki', mode="w", encoding="utf-8") as f:
         f.write(pretty)
+
 
 if __name__ == '__main__':
     stamp_episode_listing()

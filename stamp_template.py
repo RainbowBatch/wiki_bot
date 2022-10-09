@@ -1,18 +1,26 @@
 import io
 import kfio
-import pandas as pd
 import page_listing
+import pandas as pd
 
+from jinja2 import Environment
+from jinja2 import FileSystemLoader
 from jinja2 import Template
+from jinja2 import select_autoescape
 from pygit2 import Repository
 from tqdm import tqdm
 from wiki_cleaner import simple_format
 
+env = Environment(
+    loader=FileSystemLoader("templates"),
+    autoescape=select_autoescape()
+)
+
+template = env.get_template('episode.wiki.template')
+
 
 def stamp_templates():
     episodes_df = kfio.load('data/final.json')
-    with open('episode.wiki.template') as episode_template_f:
-        template = Template(episode_template_f.read())
 
     git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
 
