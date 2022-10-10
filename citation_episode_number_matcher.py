@@ -20,6 +20,7 @@ MANUAL_OVERRIDE = {
     "Episode 321: May 30-31, 2019": "304",
     "Episode 322: February 1, 2013": "305",
     "Episode 335: July 5, 2019": "318",
+    "Episode #733: October 6, 2022": "733",
     'Citations For Dennis Montgomery Episode': '25',
     # These are just dates that are slightly off the usual format.
     'Citations for March 31st, 2017': '27',

@@ -25337,8 +25337,8 @@
     "is_stub": true,
     "length": "01:06:35",
     "libsyn_link": "https://knowledgefight.libsyn.com/732-trial-press-conference",
-    "nextEpisode": null,
-    "oldid": 3946,
+    "nextEpisode": "733",
+    "oldid": 3998,
     "oocDrop": null,
     "previousEpisode": "731",
     "question": null,
@@ -25349,6 +25349,32 @@
       "Episodes",
       "Present Day",
       "Formulaic Objections"
+    ]
+  },
+  {
+    "airDate": "October 10, 2022",
+    "appearance": null,
+    "beverage": null,
+    "coverageDate": "October 6, 2022",
+    "coverageEndDate": null,
+    "coverageStartDate": null,
+    "episodeNumber": "733",
+    "episodeType": null,
+    "hosts": null,
+    "is_external_redirect": false,
+    "is_stub": true,
+    "length": "01:35:06",
+    "libsyn_link": "https://knowledgefight.libsyn.com/733-october-6-2022",
+    "nextEpisode": null,
+    "oldid": 3999,
+    "oocDrop": null,
+    "previousEpisode": "732",
+    "question": null,
+    "redirect": null,
+    "slug": "733{{COLON}}_October_6,_2022",
+    "title": "733: October 6, 2022",
+    "wiki_categories": [
+      "Episodes"
     ]
   },
   {
@@ -31086,7 +31112,7 @@
     "length": null,
     "libsyn_link": null,
     "nextEpisode": null,
-    "oldid": 3945,
+    "oldid": 4000,
     "oocDrop": null,
     "previousEpisode": null,
     "question": null,

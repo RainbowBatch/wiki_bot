@@ -2845,7 +2845,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 33906,
+    "entity_count": 33910,
     "entity_name": "alex jones",
     "entity_origin": [
       "\"Mandatory Service Bill\"",
@@ -4416,6 +4416,7 @@
       "Alex\n\n",
       "Alex\r\n",
       "Alex\r\n    ",
+      "Alex\r\n        ",
       "Alex\r\n    Jones",
       "Alex\r\n-",
       "Alex\r\n-   ",
@@ -22712,7 +22713,7 @@
       "transcripts\\731.otter.txt"
     ],
     "entity_sourcetexts": [
-      "Chiang Kai Shek",
+      "Chiang Kai-Shek",
       "Chiang Kai-shek",
       "The Chiang Kai-shek"
     ],
@@ -23368,14 +23369,15 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 7,
+    "entity_count": 8,
     "entity_name": "chris mattei",
     "entity_origin": [
       "310: June 13-14, 2019",
       "311: June 17-19, 2019",
       "Chris Mattei",
       "Connecticut Sandy Hook Lawsuit (Lafferty v. Jones)",
-      "Norm Pattis"
+      "Norm Pattis",
+      "transcripts\\731.otter.txt"
     ],
     "entity_sourcetexts": [
       "Chris\r\nMattei",
@@ -23406,22 +23408,6 @@
     ],
     "entity_sourcetexts": [
       "Chris Matthews"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "chris matty",
-    "entity_origin": [
-      "transcripts\\310.otter.txt",
-      "transcripts\\731.otter.txt"
-    ],
-    "entity_sourcetexts": [
-      "Chris Matty"
     ],
     "entity_type": [
       "PERSON"
@@ -34838,7 +34824,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 4944,
+    "entity_count": 4945,
     "entity_name": "donald trump\u200f\u200e",
     "entity_origin": [
       "100: January 6-7, 2016",
@@ -39605,13 +39591,14 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 4,
+    "entity_count": 5,
     "entity_name": "fear factor",
     "entity_origin": [
       "160: January 22-25, 2009",
       "audio_files\\627.srt",
       "audio_files\\680.srt",
-      "audio_files\\704.srt"
+      "audio_files\\704.srt",
+      "transcripts\\731.otter.txt"
     ],
     "entity_sourcetexts": [
       "Fear Factor"
@@ -50170,7 +50157,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 5,
+    "entity_count": 6,
     "entity_name": "hp lovecraft",
     "entity_origin": [
       "audio_files\\100.srt",
@@ -50179,6 +50166,7 @@
       "transcripts\\731.otter.txt"
     ],
     "entity_sourcetexts": [
+      "H.P. Lovecraft",
       "HP Lovecraft"
     ],
     "entity_type": [
@@ -62564,22 +62552,6 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
-    "entity_name": "kim jong hoon",
-    "entity_origin": [
-      "transcripts\\14.otter.txt",
-      "transcripts\\731.otter.txt"
-    ],
-    "entity_sourcetexts": [
-      "Kim Jong Hoon"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
     "entity_count": 13,
     "entity_name": "kim jong il",
     "entity_origin": [
@@ -62618,23 +62590,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
-    "entity_name": "kim jong moon",
-    "entity_origin": [
-      "audio_files\\179.srt",
-      "transcripts\\731.otter.txt"
-    ],
-    "entity_sourcetexts": [
-      "Kim Jong moon"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 20,
+    "entity_count": 22,
     "entity_name": "kim jong un",
     "entity_origin": [
       "304: May 30-31, 2019",
@@ -62651,7 +62607,8 @@
       "audio_files\\61.srt",
       "audio_files\\73.srt",
       "audio_files\\86.srt",
-      "audio_files\\87.srt"
+      "audio_files\\87.srt",
+      "transcripts\\731.otter.txt"
     ],
     "entity_sourcetexts": [
       "Kim Jong Un",
@@ -67196,7 +67153,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
+    "entity_count": 3,
     "entity_name": "lovecraftian",
     "entity_origin": [
       "transcripts\\7.otter.txt",
@@ -68350,11 +68307,12 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
+    "entity_count": 3,
     "entity_name": "mao zedong",
     "entity_origin": [
       "audio_files\\168.srt",
-      "audio_files\\484.srt"
+      "audio_files\\484.srt",
+      "transcripts\\731.otter.txt"
     ],
     "entity_sourcetexts": [
       "Mao Zedong"
@@ -79912,7 +79870,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 28,
+    "entity_count": 29,
     "entity_name": "nicolas cage",
     "entity_origin": [
       "audio_files\\176.srt",
@@ -80878,7 +80836,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 364,
+    "entity_count": 365,
     "entity_name": "north korea",
     "entity_origin": [
       "141: March 20-22, 2018",
@@ -92886,7 +92844,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 8,
+    "entity_count": 9,
     "entity_name": "robert welch",
     "entity_origin": [
       "audio_files\\234.srt",
@@ -104530,7 +104488,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 31,
+    "entity_count": 32,
     "entity_name": "super male vitality",
     "entity_origin": [
       "146: April 4, 2018",
@@ -109306,14 +109264,13 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 6,
+    "entity_count": 5,
     "entity_name": "transylvania",
     "entity_origin": [
       "audio_files\\139.srt",
       "audio_files\\19.srt",
       "audio_files\\26.srt",
-      "transcripts\\19.otter.txt",
-      "transcripts\\731.otter.txt"
+      "transcripts\\19.otter.txt"
     ],
     "entity_sourcetexts": [
       "Transylvania"
@@ -109326,13 +109283,14 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 5,
+    "entity_count": 6,
     "entity_name": "transylvanian",
     "entity_origin": [
       "139: St. Patrick's Day Special Report",
       "audio_files\\139.srt",
       "audio_files\\644.srt",
-      "transcripts\\723.otter.txt"
+      "transcripts\\723.otter.txt",
+      "transcripts\\731.otter.txt"
     ],
     "entity_sourcetexts": [
       "Transylvanian"
