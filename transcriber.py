@@ -6,7 +6,7 @@ from os.path import exists
 for audio_fname in glob('audio_files/*.mp3'):
     episode_number = parse.parse("audio_files/{}.mp3", audio_fname)[0]
 
-    if exists('audio_files/%s.srt' % episode_number) or exists('audio_files/transcripts/%s.autosub.srt' % episode_number):
+    if exists('audio_files/%s.srt' % episode_number) or exists('transcripts/%s.autosub.srt' % episode_number):
         print("Skipping", audio_fname)
         continue
     print("Processing", audio_fname)
