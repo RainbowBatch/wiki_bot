@@ -25359,14 +25359,16 @@
     "coverageEndDate": null,
     "coverageStartDate": null,
     "episodeNumber": "733",
-    "episodeType": null,
+    "episodeType": [
+      "Present Day"
+    ],
     "hosts": null,
     "is_external_redirect": false,
     "is_stub": true,
     "length": "01:35:06",
     "libsyn_link": "https://knowledgefight.libsyn.com/733-october-6-2022",
     "nextEpisode": null,
-    "oldid": 3999,
+    "oldid": 4001,
     "oocDrop": null,
     "previousEpisode": "732",
     "question": null,
@@ -25374,7 +25376,8 @@
     "slug": "733{{COLON}}_October_6,_2022",
     "title": "733: October 6, 2022",
     "wiki_categories": [
-      "Episodes"
+      "Episodes",
+      "Present Day"
     ]
   },
   {
@@ -31112,7 +31115,7 @@
     "length": null,
     "libsyn_link": null,
     "nextEpisode": null,
-    "oldid": 4000,
+    "oldid": 4002,
     "oocDrop": null,
     "previousEpisode": null,
     "question": null,
@@ -34543,7 +34546,7 @@
     "length": null,
     "libsyn_link": null,
     "nextEpisode": null,
-    "oldid": 3997,
+    "oldid": 4003,
     "oocDrop": null,
     "previousEpisode": null,
     "question": null,
@@ -34574,6 +34577,30 @@
     "redirect": null,
     "slug": "Transcript{{FORWARD_SLASH}}732{{COLON}}_Trial_Press_Conference",
     "title": "Transcript/732: Trial Press Conference",
+    "wiki_categories": []
+  },
+  {
+    "airDate": null,
+    "appearance": null,
+    "beverage": null,
+    "coverageDate": null,
+    "coverageEndDate": null,
+    "coverageStartDate": null,
+    "episodeNumber": null,
+    "episodeType": null,
+    "hosts": null,
+    "is_external_redirect": false,
+    "is_stub": false,
+    "length": null,
+    "libsyn_link": null,
+    "nextEpisode": null,
+    "oldid": 4004,
+    "oocDrop": null,
+    "previousEpisode": null,
+    "question": null,
+    "redirect": null,
+    "slug": "Transcript{{FORWARD_SLASH}}733{{COLON}}_October_6,_2022",
+    "title": "Transcript/733: October 6, 2022",
     "wiki_categories": []
   },
   {

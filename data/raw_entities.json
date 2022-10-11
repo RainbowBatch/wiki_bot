@@ -2845,7 +2845,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 33910,
+    "entity_count": 34031,
     "entity_name": "alex jones",
     "entity_origin": [
       "\"Mandatory Service Bill\"",
@@ -3505,6 +3505,7 @@
       "730: August 12, 2003",
       "731: September 29-30, 2022",
       "732: Trial Press Conference",
+      "733: October 6, 2022",
       "73: August 12, 2017",
       "74: October 4-6, 2015",
       "75: January 7, 2011",
@@ -4408,6 +4409,7 @@
       "transcripts\\730.otter.txt",
       "transcripts\\731.otter.txt",
       "transcripts\\732.otter.txt",
+      "transcripts\\733.otter.txt",
       "transcripts\\8.otter.txt",
       "transcripts\\9.otter.txt"
     ],
@@ -8038,6 +8040,22 @@
   },
   {
     "entity_count": 2,
+    "entity_name": "american psychological association",
+    "entity_origin": [
+      "audio_files\\266.srt",
+      "transcripts\\733.otter.txt"
+    ],
+    "entity_sourcetexts": [
+      "the American Psychological Association"
+    ],
+    "entity_type": [
+      "ORG"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
+    "entity_count": 2,
     "entity_name": "american republic",
     "entity_origin": [
       "audio_files\\637.srt",
@@ -8862,7 +8880,7 @@
     "is_known_missing": true
   },
   {
-    "entity_count": 19,
+    "entity_count": 20,
     "entity_name": "andrew wakefield",
     "entity_origin": [
       "297: January 17-18, 2013",
@@ -8876,7 +8894,8 @@
       "audio_files\\467.srt",
       "audio_files\\472.srt",
       "audio_files\\489.srt",
-      "audio_files\\66.srt"
+      "audio_files\\66.srt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Andrew Wakefield",
@@ -10447,7 +10466,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 24,
+    "entity_count": 25,
     "entity_name": "armageddon",
     "entity_origin": [
       "314: February 14-15, 2013",
@@ -10470,7 +10489,8 @@
       "audio_files\\661.srt",
       "audio_files\\694.srt",
       "audio_files\\703.srt",
-      "transcripts\\1.otter.txt"
+      "transcripts\\1.otter.txt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Armageddon"
@@ -11068,7 +11088,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 17,
+    "entity_count": 18,
     "entity_name": "association",
     "entity_origin": [
       "audio_files\\108.srt",
@@ -11086,7 +11106,8 @@
       "audio_files\\389.srt",
       "audio_files\\556.srt",
       "audio_files\\659.srt",
-      "audio_files\\678.srt"
+      "audio_files\\678.srt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Association"
@@ -13908,7 +13929,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 13,
+    "entity_count": 14,
     "entity_name": "benjamin franklin",
     "entity_origin": [
       "416: April 2, 2020",
@@ -13922,7 +13943,8 @@
       "audio_files\\416.srt",
       "audio_files\\496.srt",
       "audio_files\\517.srt",
-      "audio_files\\666.srt"
+      "audio_files\\666.srt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Benjamin Franklin",
@@ -14919,7 +14941,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 209,
+    "entity_count": 210,
     "entity_name": "bill cooper",
     "entity_origin": [
       "109: December 4, 2017",
@@ -14993,7 +15015,8 @@
       "audio_files\\713.srt",
       "transcripts\\310.otter.txt",
       "transcripts\\719.srt",
-      "transcripts\\719.txt"
+      "transcripts\\719.txt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Bill Cooper",
@@ -15096,7 +15119,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 510,
+    "entity_count": 511,
     "entity_name": "bill gates",
     "entity_origin": [
       "270: The Rogan Return",
@@ -15287,6 +15310,7 @@
       "audio_files\\81.srt",
       "audio_files\\9.srt",
       "transcripts\\4.otter.txt",
+      "transcripts\\733.otter.txt",
       "transcripts\\8.otter.txt",
       "transcripts\\9.otter.txt"
     ],
@@ -18109,13 +18133,14 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 10,
+    "entity_count": 13,
     "entity_name": "bray wyatt",
     "entity_origin": [
       "audio_files\\176.srt",
       "audio_files\\397.srt",
       "audio_files\\417.srt",
-      "audio_files\\548.srt"
+      "audio_files\\548.srt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Bray Wyatt"
@@ -19330,7 +19355,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 99,
+    "entity_count": 100,
     "entity_name": "buckley hamman",
     "entity_origin": [
       "236: December 4-5, 2018",
@@ -19374,7 +19399,8 @@
       "transcripts\\7.otter.txt",
       "transcripts\\720.otter.txt",
       "transcripts\\720.srt",
-      "transcripts\\720.txt"
+      "transcripts\\720.txt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Buckley",
@@ -20556,6 +20582,22 @@
     ],
     "is_existing": false,
     "is_known_missing": true
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "carly rae jepsen",
+    "entity_origin": [
+      "audio_files\\347.srt",
+      "transcripts\\733.otter.txt"
+    ],
+    "entity_sourcetexts": [
+      "Carly Rae Jepsen"
+    ],
+    "entity_type": [
+      "PERSON"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
   },
   {
     "entity_count": 10,
@@ -23177,6 +23219,22 @@
     ],
     "entity_sourcetexts": [
       "Chris Farley Show"
+    ],
+    "entity_type": [
+      "PERSON"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
+    "entity_count": 3,
+    "entity_name": "chris gethard",
+    "entity_origin": [
+      "transcripts\\723.otter.txt",
+      "transcripts\\733.otter.txt"
+    ],
+    "entity_sourcetexts": [
+      "Chris Gethard"
     ],
     "entity_type": [
       "PERSON"
@@ -26176,7 +26234,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 62,
+    "entity_count": 63,
     "entity_name": "communists",
     "entity_origin": [
       "329: August 4-5, 2019",
@@ -26226,7 +26284,8 @@
       "audio_files\\664.srt",
       "audio_files\\699.srt",
       "transcripts\\19.otter.txt",
-      "transcripts\\7.otter.txt"
+      "transcripts\\7.otter.txt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Communists"
@@ -26582,7 +26641,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 351,
+    "entity_count": 353,
     "entity_name": "connecticut",
     "entity_origin": [
       "210: March 9, 2009",
@@ -26599,6 +26658,7 @@
       "726: September 15-16, 2022",
       "729: September 24, 2022",
       "732: Trial Press Conference",
+      "733: October 6, 2022",
       "Andino Reynal",
       "Brittany Paz",
       "Cameron Atkinson",
@@ -26710,7 +26770,8 @@
       "transcripts\\728.otter.txt",
       "transcripts\\729.otter.txt",
       "transcripts\\731.otter.txt",
-      "transcripts\\732.otter.txt"
+      "transcripts\\732.otter.txt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Connecticut"
@@ -28994,7 +29055,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 34,
+    "entity_count": 35,
     "entity_name": "dan jordan",
     "entity_origin": [
       "audio_files\\374.srt",
@@ -29025,7 +29086,8 @@
       "transcripts\\727.otter.txt",
       "transcripts\\729.otter.txt",
       "transcripts\\730.otter.txt",
-      "transcripts\\732.otter.txt"
+      "transcripts\\732.otter.txt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Dan Jordan"
@@ -38401,7 +38463,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 7,
+    "entity_count": 8,
     "entity_name": "epoch times",
     "entity_origin": [
       "417: April 5, 2020",
@@ -38409,7 +38471,8 @@
       "audio_files\\341.srt",
       "transcripts\\715.otter.txt",
       "transcripts\\715.txt",
-      "transcripts\\725.otter.txt"
+      "transcripts\\725.otter.txt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Epoch Times",
@@ -40922,7 +40985,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 3,
+    "entity_count": 5,
     "entity_name": "formulaic objections",
     "entity_origin": [
       "Bradley Reeves",
@@ -41604,11 +41667,13 @@
     "is_known_missing": true
   },
   {
-    "entity_count": 4,
+    "entity_count": 7,
     "entity_name": "frank sinatra",
     "entity_origin": [
+      "733: October 6, 2022",
       "audio_files\\106.srt",
-      "audio_files\\680.srt"
+      "audio_files\\680.srt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Frank Sinatra"
@@ -47425,7 +47490,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 93,
+    "entity_count": 94,
     "entity_name": "harrison smith",
     "entity_origin": [
       "118: January 10-11, 2018",
@@ -47489,7 +47554,8 @@
       "transcripts\\719.srt",
       "transcripts\\719.txt",
       "transcripts\\723.otter.txt",
-      "transcripts\\727.otter.txt"
+      "transcripts\\727.otter.txt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Harrison\r\n    Smith",
@@ -47580,7 +47646,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 108,
+    "entity_count": 109,
     "entity_name": "harry potter",
     "entity_origin": [
       "247: Lionel",
@@ -47618,7 +47684,8 @@
       "audio_files\\684.srt",
       "audio_files\\71.srt",
       "transcripts\\1.otter.txt",
-      "transcripts\\310.otter.txt"
+      "transcripts\\310.otter.txt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Harry\r\n    Potter",
@@ -48407,7 +48474,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 17,
+    "entity_count": 19,
     "entity_name": "henry kissinger",
     "entity_origin": [
       "138: March 13-15, 2018",
@@ -48423,7 +48490,8 @@
       "transcripts\\1.otter.txt",
       "transcripts\\719.srt",
       "transcripts\\719.txt",
-      "transcripts\\729.otter.txt"
+      "transcripts\\729.otter.txt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Henry Kissinger"
@@ -50056,6 +50124,22 @@
     "is_known_missing": false
   },
   {
+    "entity_count": 2,
+    "entity_name": "howard schultz",
+    "entity_origin": [
+      "transcripts\\722.otter.txt",
+      "transcripts\\733.otter.txt"
+    ],
+    "entity_sourcetexts": [
+      "Howard Schultz"
+    ],
+    "entity_type": [
+      "PERSON"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
     "entity_count": 53,
     "entity_name": "howard stern",
     "entity_origin": [
@@ -50928,6 +51012,23 @@
     ],
     "is_existing": false,
     "is_known_missing": true
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "illuminati bloodlines",
+    "entity_origin": [
+      "audio_files\\171.srt",
+      "transcripts\\733.otter.txt"
+    ],
+    "entity_sourcetexts": [
+      "Illuminati Bloodlines",
+      "the Illuminati Bloodlines"
+    ],
+    "entity_type": [
+      "ORG"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
   },
   {
     "entity_count": 2,
@@ -58471,7 +58572,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 35,
+    "entity_count": 36,
     "entity_name": "john mcafee",
     "entity_origin": [
       "569: June 23, 2021",
@@ -58483,7 +58584,8 @@
       "audio_files\\570.srt",
       "audio_files\\618.srt",
       "audio_files\\66.srt",
-      "audio_files\\702.srt"
+      "audio_files\\702.srt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "John McAfee",
@@ -62848,7 +62950,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 59,
+    "entity_count": 60,
     "entity_name": "klaus schwab",
     "entity_origin": [
       "502: Dan's Cara-Vanity Project Part 1",
@@ -62899,7 +63001,8 @@
       "transcripts\\726.otter.txt",
       "transcripts\\728.otter.txt",
       "transcripts\\729.otter.txt",
-      "transcripts\\731.otter.txt"
+      "transcripts\\731.otter.txt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Klaus\r\n    Schwab",
@@ -65085,7 +65188,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 15,
+    "entity_count": 16,
     "entity_name": "lenny bruce",
     "entity_origin": [
       "138: March 13-15, 2018",
@@ -65099,7 +65202,8 @@
       "audio_files\\582.srt",
       "audio_files\\86.srt",
       "transcripts\\15.otter.txt",
-      "transcripts\\602.otter.txt"
+      "transcripts\\602.otter.txt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Lenny Bruce"
@@ -66050,7 +66154,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 21,
+    "entity_count": 22,
     "entity_name": "lindsey graham",
     "entity_origin": [
       "45: May 25, 2017",
@@ -66070,7 +66174,8 @@
       "transcripts\\718.txt",
       "transcripts\\721.otter.txt",
       "transcripts\\721.srt",
-      "transcripts\\721.txt"
+      "transcripts\\721.txt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Lindsey Graham",
@@ -66693,6 +66798,22 @@
     "entity_sourcetexts": [
       "Lonely Island",
       "The Lonely Island"
+    ],
+    "entity_type": [
+      "GPE"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "long beach",
+    "entity_origin": [
+      "audio_files\\415.srt",
+      "transcripts\\733.otter.txt"
+    ],
+    "entity_sourcetexts": [
+      "Long Beach"
     ],
     "entity_type": [
       "GPE"
@@ -67379,7 +67500,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 32,
+    "entity_count": 36,
     "entity_name": "luxembourg",
     "entity_origin": [
       "625: December 5, 2021",
@@ -67394,10 +67515,27 @@
       "audio_files\\656.srt",
       "audio_files\\689.srt",
       "audio_files\\691.srt",
-      "audio_files\\98.srt"
+      "audio_files\\98.srt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Luxembourg"
+    ],
+    "entity_type": [
+      "GPE"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "luxembourg city",
+    "entity_origin": [
+      "audio_files\\689.srt",
+      "transcripts\\733.otter.txt"
+    ],
+    "entity_sourcetexts": [
+      "Luxembourg City"
     ],
     "entity_type": [
       "GPE"
@@ -68436,7 +68574,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 28,
+    "entity_count": 29,
     "entity_name": "marco rubio",
     "entity_origin": [
       "audio_files\\202.srt",
@@ -68449,7 +68587,8 @@
       "audio_files\\526.srt",
       "audio_files\\539.srt",
       "audio_files\\697.srt",
-      "audio_files\\96.srt"
+      "audio_files\\96.srt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Marco Rubio"
@@ -72374,7 +72513,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 35,
+    "entity_count": 36,
     "entity_name": "michael jordan",
     "entity_origin": [
       "586: August 11-12, 2021",
@@ -72392,7 +72531,8 @@
       "audio_files\\505.srt",
       "audio_files\\586.srt",
       "audio_files\\650.srt",
-      "audio_files\\84.srt"
+      "audio_files\\84.srt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Michael Jordan"
@@ -73657,7 +73797,7 @@
     "is_known_missing": true
   },
   {
-    "entity_count": 351,
+    "entity_count": 352,
     "entity_name": "mike adams",
     "entity_origin": [
       "135: The Wikileaks Press Conference",
@@ -73794,7 +73934,8 @@
       "audio_files\\700.srt",
       "audio_files\\715.srt",
       "transcripts\\715.otter.txt",
-      "transcripts\\715.txt"
+      "transcripts\\715.txt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Mike\r\nAdams",
@@ -77445,13 +77586,14 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 4,
+    "entity_count": 5,
     "entity_name": "natural news",
     "entity_origin": [
       "137: March 12, 2018",
       "146: April 4, 2018",
       "639: January 17, 2022",
-      "Mike Adams"
+      "Mike Adams",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Natural News"
@@ -77773,12 +77915,13 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 3,
+    "entity_count": 4,
     "entity_name": "neil peart",
     "entity_origin": [
       "audio_files\\261.srt",
       "audio_files\\373.srt",
-      "audio_files\\387.srt"
+      "audio_files\\387.srt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Neil Peart"
@@ -80397,13 +80540,14 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 4,
+    "entity_count": 5,
     "entity_name": "norm pattice",
     "entity_origin": [
       "transcripts\\310.otter.txt",
       "transcripts\\602.otter.txt",
       "transcripts\\725.otter.txt",
-      "transcripts\\729.otter.txt"
+      "transcripts\\729.otter.txt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Norm Pattice"
@@ -86048,7 +86192,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 33,
+    "entity_count": 34,
     "entity_name": "piers morgan",
     "entity_origin": [
       "114: Piers Morgan Interview",
@@ -86070,7 +86214,8 @@
       "audio_files\\331.srt",
       "audio_files\\466.srt",
       "audio_files\\692.srt",
-      "audio_files\\707.srt"
+      "audio_files\\707.srt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Piers Morgan",
@@ -94543,7 +94688,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 162,
+    "entity_count": 163,
     "entity_name": "rothschild",
     "entity_origin": [
       "100: January 6-7, 2016",
@@ -94626,6 +94771,7 @@
       "audio_files\\71.srt",
       "audio_files\\84.srt",
       "transcripts\\13.otter.txt",
+      "transcripts\\733.otter.txt",
       "transcripts\\9.otter.txt"
     ],
     "entity_sourcetexts": [
@@ -98695,7 +98841,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 23,
+    "entity_count": 25,
     "entity_name": "shakespeare",
     "entity_origin": [
       "141: March 20-22, 2018",
@@ -98715,7 +98861,8 @@
       "audio_files\\709.srt",
       "audio_files\\96.srt",
       "transcripts\\279.otter.txt",
-      "transcripts\\6.otter.txt"
+      "transcripts\\6.otter.txt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Shakespeare"
@@ -99942,7 +100089,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 7,
+    "entity_count": 8,
     "entity_name": "social media",
     "entity_origin": [
       "162: May 19, 2018",
@@ -99951,7 +100098,8 @@
       "audio_files\\306.srt",
       "audio_files\\329.srt",
       "audio_files\\663.srt",
-      "transcripts\\726.otter.txt"
+      "transcripts\\726.otter.txt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Social Media"
@@ -100455,7 +100603,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 70,
+    "entity_count": 71,
     "entity_name": "south america",
     "entity_origin": [
       "332: Anunnaki Stasis and Emerald Treaties",
@@ -100507,7 +100655,8 @@
       "audio_files\\704.srt",
       "audio_files\\707.srt",
       "transcripts\\10.otter.txt",
-      "transcripts\\16.otter.txt"
+      "transcripts\\16.otter.txt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "South America",
@@ -101633,6 +101782,23 @@
     "entity_type": [
       "GPE",
       "PERSON"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
+    "entity_count": 3,
+    "entity_name": "st petersburg",
+    "entity_origin": [
+      "audio_files\\654.srt",
+      "transcripts\\733.otter.txt"
+    ],
+    "entity_sourcetexts": [
+      "St Petersburg",
+      "St. Petersburg"
+    ],
+    "entity_type": [
+      "GPE"
     ],
     "is_existing": false,
     "is_known_missing": false
@@ -103164,6 +103330,22 @@
     "is_known_missing": false
   },
   {
+    "entity_count": 2,
+    "entity_name": "steve wozniak",
+    "entity_origin": [
+      "audio_files\\497.srt",
+      "transcripts\\733.otter.txt"
+    ],
+    "entity_sourcetexts": [
+      "Steve Wozniak"
+    ],
+    "entity_type": [
+      "PERSON"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
     "entity_count": 3,
     "entity_name": "steven bannon",
     "entity_origin": [
@@ -104488,7 +104670,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 32,
+    "entity_count": 33,
     "entity_name": "super male vitality",
     "entity_origin": [
       "146: April 4, 2018",
@@ -104511,6 +104693,7 @@
       "transcripts\\2.otter.txt",
       "transcripts\\6.otter.txt",
       "transcripts\\7.otter.txt",
+      "transcripts\\733.otter.txt",
       "transcripts\\9.otter.txt"
     ],
     "entity_sourcetexts": [
@@ -106935,7 +107118,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 1369,
+    "entity_count": 1370,
     "entity_name": "the sandy hook elementary massacre",
     "entity_origin": [
       "113: February 21-23, 2014",
@@ -107233,6 +107416,7 @@
       "transcripts\\729.otter.txt",
       "transcripts\\731.otter.txt",
       "transcripts\\732.otter.txt",
+      "transcripts\\733.otter.txt",
       "transcripts\\8.otter.txt"
     ],
     "entity_sourcetexts": [
@@ -111198,7 +111382,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 1408,
+    "entity_count": 1410,
     "entity_name": "united states",
     "entity_origin": [
       "141: March 20-22, 2018",
@@ -111734,6 +111918,7 @@
       "transcripts\\730.otter.txt",
       "transcripts\\731.otter.txt",
       "transcripts\\732.otter.txt",
+      "transcripts\\733.otter.txt",
       "transcripts\\8.otter.txt"
     ],
     "entity_sourcetexts": [
@@ -112523,6 +112708,23 @@
     ],
     "entity_type": [
       "ORG"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "uss enterprise",
+    "entity_origin": [
+      "audio_files\\409.srt",
+      "transcripts\\733.otter.txt"
+    ],
+    "entity_sourcetexts": [
+      "USS Enterprise",
+      "the USS Enterprise"
+    ],
+    "entity_type": [
+      "PRODUCT"
     ],
     "is_existing": false,
     "is_known_missing": false
@@ -113402,7 +113604,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 762,
+    "entity_count": 779,
     "entity_name": "vladimir putin",
     "entity_origin": [
       "100: January 6-7, 2016",
@@ -113599,6 +113801,7 @@
       "transcripts\\725.otter.txt",
       "transcripts\\726.otter.txt",
       "transcripts\\729.otter.txt",
+      "transcripts\\733.otter.txt",
       "transcripts\\8.otter.txt",
       "transcripts\\9.otter.txt"
     ],
@@ -115846,7 +116049,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 479,
+    "entity_count": 481,
     "entity_name": "white house",
     "entity_origin": [
       "155: January 7-9, 2009",
@@ -116102,6 +116305,7 @@
       "transcripts\\717.txt",
       "transcripts\\718.txt",
       "transcripts\\726.otter.txt",
+      "transcripts\\733.otter.txt",
       "transcripts\\8.otter.txt",
       "transcripts\\9.otter.txt"
     ],
@@ -116801,7 +117005,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 18,
+    "entity_count": 19,
     "entity_name": "william shakespeare",
     "entity_origin": [
       "586: August 11-12, 2021",
@@ -116813,7 +117017,8 @@
       "audio_files\\396.srt",
       "audio_files\\546.srt",
       "audio_files\\583.srt",
-      "audio_files\\586.srt"
+      "audio_files\\586.srt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "William Shakespeare",
@@ -117293,7 +117498,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 36,
+    "entity_count": 37,
     "entity_name": "wolf blitzer",
     "entity_origin": [
       "352: April 17, 2013",
@@ -117317,7 +117522,8 @@
       "audio_files\\99.srt",
       "transcripts\\719.srt",
       "transcripts\\719.txt",
-      "transcripts\\723.otter.txt"
+      "transcripts\\723.otter.txt",
+      "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
       "Wolf Blitzer"
