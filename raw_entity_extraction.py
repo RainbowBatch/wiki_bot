@@ -71,19 +71,6 @@ for transcript_fname in tqdm(glob('transcripts/*.srt')):
         print(e)
         print("Error Processing", transcript_fname)
 
-
-print("Processing Automated SRT Transcripts")
-for transcript_fname in tqdm(glob('audio_files/*.srt')):
-    try:
-        with open(transcript_fname, encoding='utf-8') as f:
-            S = f.read()
-
-        entities.extend(extract_entities(S, transcript_fname))
-
-    except Exception as e:
-        print(e)
-        print("Error Processing", transcript_fname)
-
 counter = Counter()
 types = defaultdict(Counter)
 origins = defaultdict(set)

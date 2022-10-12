@@ -50783,5 +50783,26 @@
     "release_date": "October 10, 2022",
     "release_dow": "Monday",
     "show": "WarRoom"
+  },
+  {
+    "download_link": "http://rss.infowars.com./20221011_Tue_Alex.mp3",
+    "filename": "20221011_Tue_Alex.mp3",
+    "release_date": "October 11, 2022",
+    "release_dow": "Tuesday",
+    "show": "Alex"
+  },
+  {
+    "download_link": "http://rss.infowars.com./20221011_Tue_AmericanJournal.mp3",
+    "filename": "20221011_Tue_AmericanJournal.mp3",
+    "release_date": "October 11, 2022",
+    "release_dow": "Tuesday",
+    "show": "AmericanJournal"
+  },
+  {
+    "download_link": "http://rss.infowars.com./20221011_Tue_WarRoom.mp3",
+    "filename": "20221011_Tue_WarRoom.mp3",
+    "release_date": "October 11, 2022",
+    "release_dow": "Tuesday",
+    "show": "WarRoom"
   }
 ]

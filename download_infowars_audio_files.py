@@ -72,5 +72,5 @@ def download_broadcast_audio(year):
 
 
 if __name__ == '__main__':
-    # download_broadcast_details()
+    download_broadcast_details()
     download_broadcast_audio(year='2013')
