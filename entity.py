@@ -27,6 +27,20 @@ LIKELY_PEOPLE = set(
     external_redirects.title.to_list() + hardcoded_people
 )
 
+NOT_RELEVANT_PEOPLE = [
+    "Cookie Monster",
+    "Frankenstein",
+    "Illuminati",
+    "John Birch Society",
+    "New World Order",
+    "Project Veritas",
+    "Rube Goldberg",
+    "The Sandy Hook Elementary Massacre",
+    "Zero Hedge",
+    "Cinco Demayo",
+    "Wolfgang Puck",
+]
+
 REMAPPING = {
     "Alex Jones'": 'Alex Jones',
     'Alex E. Jones': 'Alex Jones',
@@ -45,7 +59,15 @@ REMAPPING = {
     'Rhonda Santas': 'Ron DeSantis',
     'Wolfgang Halbeck': 'Wolfgang Halbig',
     'Zuckerberg': 'Mark Zuckerberg',
+    "John Rapoport": "John Rappaport",
+    'Donald Trump\u200f\u200e': 'Donald Trump',
+    'Marty Derosa': 'Marty DeRosa',
+    'Evan Mcmullen': 'Evan McMullen',
+    "Leanne McAdoo": "Lee Ann McAdoo",
+    "Leann McAdoo": "Lee Ann McAdoo",
+    "Ron Desantis": "Ron DeSantis",
 }
+
 
 OVERUSED = [
     'Alex Jones',
@@ -70,9 +92,22 @@ del REMAPPING['Scarlett Lewis']
 del REMAPPING['Adam Lanza']
 del REMAPPING['Y2K']
 
+REMAPPING = {
+    k.lower(): v
+    for k,v in REMAPPING.items()
+}
+
+CAPITALIZATION_REMAPPING = {
+    s.lower(): s
+    for s in set(
+        missing_pages.title.to_list()
+        + scraped_pages.title.to_list()
+        + list(REMAPPING.values())
+        + hardcoded_people
+    )
+}
 
 _RE_COMBINE_WHITESPACE = re.compile(r"\s+")
-
 
 def simplify_entity(s):
     s = _RE_COMBINE_WHITESPACE.sub(' ', s)
@@ -86,11 +121,16 @@ def simplify_entity(s):
         s = s[:-2]
     if s.lower().startswith("a "):
         s = s[2:]
+    if s.lower().startswith("an "):
+        s = s[3:]
     if s.lower().startswith("the "):
         s = s[4:]
-    while s in REMAPPING:
-        s = REMAPPING[s]
-    return s.strip().lower()
+    while s.lower() in REMAPPING:
+        if s.lower() == REMAPPING[s.lower()].lower():
+            break
+        s = REMAPPING[s.lower()]
+    s = s.strip().lower()
+    return CAPITALIZATION_REMAPPING.get(s, s)
 
 
 def extract_entities(S, source):

@@ -5,6 +5,7 @@ import parse
 from collections import Counter
 from collections import defaultdict
 from entity import LIKELY_PEOPLE
+from entity import NOT_RELEVANT_PEOPLE
 from entity import extract_entities
 from entity import simplify_entity
 from glob import glob
@@ -21,7 +22,8 @@ OVERUSED = [
 ]
 
 for transcript_fname in glob('transcripts/*.otter.txt'):
-    episode_number = parse.parse("transcripts\\{}.otter.txt", transcript_fname)[0]
+    episode_number = parse.parse(
+        "transcripts\\{}.otter.txt", transcript_fname)[0]
 
     print(episode_number)
 
@@ -67,7 +69,16 @@ for transcript_fname in glob('transcripts/*.otter.txt'):
             if count < 2:
                 continue
 
-            rows.append([simplify_entity(s), count, ts, s in LIKELY_PEOPLE])
+            s_is_person = s in LIKELY_PEOPLE
+
+            if 'PERSON' in ts and count > 3:
+                s = s.title()
+                s_is_person = True
+
+            if s in NOT_RELEVANT_PEOPLE:
+                s_is_person = False
+
+            rows.append([s, count, ts, s_is_person])
 
         pprint(rows)
         likely_guests = [name for name, _, _,

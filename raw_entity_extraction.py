@@ -138,10 +138,10 @@ print("Finalizing and saving data.")
 df = pd.DataFrame(rows, columns=header)
 
 # Only include things we don't have existing knowledge of...
-df['is_existing'] = df.entity_name.isin(map(lambda x: x.lower(), page_listing.title.to_list()))
-df['is_known_missing'] = df.entity_name.isin(map(lambda x: x.lower(), known_missing_pages.title.to_list()))
+df['is_existing'] = df.entity_name.isin(map(lambda x: x.lower(), page_listing.title.to_list())) | df.entity_name.isin(page_listing.title.to_list())
+df['is_known_missing'] = df.entity_name.isin(map(lambda x: x.lower(), known_missing_pages.title.to_list())) | df.entity_name.isin(known_missing_pages.title.to_list())
 print("Starting sort.")
-df = df.sort_values('entity_name')
+df = df.sort_values('entity_name', key=lambda col: col.str.lower())
 
 print(df)
 

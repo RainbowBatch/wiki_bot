@@ -71,7 +71,7 @@ def stamp_episode_listing():
     }
 
     coverage_year_shards = {
-        int(coverage_year): episodes_df[episodes_df.coverage_year == coverage_year].sort_values('maya_coverage_mid_date').to_dict(orient='records')
+        int(coverage_year): episodes_df[episodes_df.coverage_year == coverage_year].sort_values(['maya_coverage_mid_date', 'maya_release_date', 'episode_number']).to_dict(orient='records')
         for coverage_year in coverage_years
         if not pd.isna(coverage_year)
     }
