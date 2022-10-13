@@ -39,6 +39,7 @@ NOT_RELEVANT_PEOPLE = [
     "Zero Hedge",
     "Cinco Demayo",
     "Wolfgang Puck",
+    "Arnold Palmer",
 ]
 
 REMAPPING = {

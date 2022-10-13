@@ -12,7 +12,7 @@ from glob import glob
 from pprint import pprint
 
 
-table_header = ['episode_number', 'guests']
+table_header = ['episode_number', 'people']
 transcript_guest_names = []
 
 OVERUSED = [

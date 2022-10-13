@@ -172,7 +172,7 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "aaron dykes",
+    "entity_name": "Aaron Dykes",
     "entity_origin": [
       "243: April 1-2, 2009",
       "288: January 7-9, 2013",
@@ -250,7 +250,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "aaron rogers",
+    "entity_name": "Aaron Rogers",
     "entity_origin": [
       "632: Christmas Message and More",
       "635: January 6-7, 2022"
@@ -266,7 +266,7 @@
   },
   {
     "entity_count": 35,
-    "entity_name": "aaron russo",
+    "entity_name": "Aaron Russo",
     "entity_origin": [
       "147: Aaron Russo",
       "215: March 11-12, 2009",
@@ -310,7 +310,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "aaron zelman",
+    "entity_name": "Aaron Zelman",
     "entity_origin": [
       "167: February 4-5, 2009",
       "335: March 15-22, 2013",
@@ -589,7 +589,7 @@
   },
   {
     "entity_count": 24,
-    "entity_name": "adam carolla",
+    "entity_name": "Adam Carolla",
     "entity_origin": [
       "86: September 22, 2017",
       "transcripts\\15.autosub.srt",
@@ -622,7 +622,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "adam carter",
+    "entity_name": "Adam Carter",
     "entity_origin": [
       "398: February 9-10, 2020",
       "transcripts\\398.autosub.srt"
@@ -672,7 +672,7 @@
   },
   {
     "entity_count": 34,
-    "entity_name": "adam lanza",
+    "entity_name": "Adam Lanza",
     "entity_origin": [
       "267: December 16, 2012",
       "272: December 20, 2012",
@@ -730,7 +730,7 @@
   },
   {
     "entity_count": 49,
-    "entity_name": "adam schiff",
+    "entity_name": "Adam Schiff",
     "entity_origin": [
       "26: March 30 (Special Report)",
       "370: November 14-15, 2019",
@@ -778,7 +778,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "adan salazar",
+    "entity_name": "Adan Salazar",
     "entity_origin": [
       "242: December 18-19, 2018",
       "343: April 3-8, 2013",
@@ -1119,7 +1119,25 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 75,
+    "entity_count": 2,
+    "entity_name": "african america",
+    "entity_origin": [
+      "transcripts\\248.autosub.srt",
+      "transcripts\\341.autosub.srt"
+    ],
+    "entity_sourcetexts": [
+      "African America",
+      "an African America\n\n"
+    ],
+    "entity_type": [
+      "ORG",
+      "LOC"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
+    "entity_count": 77,
     "entity_name": "african american",
     "entity_origin": [
       "57: August 12-16, 2015",
@@ -1140,6 +1158,7 @@
       "transcripts\\226.autosub.srt",
       "transcripts\\230A.autosub.srt",
       "transcripts\\234.autosub.srt",
+      "transcripts\\238.autosub.srt",
       "transcripts\\258.autosub.srt",
       "transcripts\\262.autosub.srt",
       "transcripts\\278.autosub.srt",
@@ -1169,6 +1188,7 @@
       "transcripts\\51.autosub.srt",
       "transcripts\\53.autosub.srt",
       "transcripts\\58.autosub.srt",
+      "transcripts\\583.autosub.srt",
       "transcripts\\59.autosub.srt",
       "transcripts\\6.autosub.srt",
       "transcripts\\6.otter.txt",
@@ -1181,7 +1201,9 @@
     "entity_sourcetexts": [
       "African American",
       "African-American",
+      "An African American",
       "a African American",
+      "an African American",
       "the African-American"
     ],
     "entity_type": [
@@ -1357,21 +1379,24 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 5,
+    "entity_count": 6,
     "entity_name": "air force base",
     "entity_origin": [
       "434: Bill Cooper Covers OKC Part 1",
       "transcripts\\171.autosub.srt",
+      "transcripts\\298.autosub.srt",
       "transcripts\\306.autosub.srt",
       "transcripts\\434.autosub.srt",
       "transcripts\\93.autosub.srt"
     ],
     "entity_sourcetexts": [
       "Air Force Base",
+      "an Air Force Base",
       "the Air Force Base"
     ],
     "entity_type": [
       "ORG",
+      "FAC",
       "PRODUCT"
     ],
     "is_existing": false,
@@ -1433,7 +1458,7 @@
   },
   {
     "entity_count": 16,
-    "entity_name": "al franken",
+    "entity_name": "Al Franken",
     "entity_origin": [
       "152: April 18, 2018",
       "transcripts\\152.autosub.srt",
@@ -1500,7 +1525,7 @@
   },
   {
     "entity_count": 23,
-    "entity_name": "al sharpton",
+    "entity_name": "Al Sharpton",
     "entity_origin": [
       "401: Formulaic Objections Part 3",
       "443: June 9, 2020",
@@ -1566,7 +1591,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "alan dershowitz",
+    "entity_name": "Alan Dershowitz",
     "entity_origin": [
       "436: May 22, 2020",
       "transcripts\\109.autosub.srt",
@@ -1589,7 +1614,7 @@
   },
   {
     "entity_count": 11,
-    "entity_name": "alan greenspan",
+    "entity_name": "Alan Greenspan",
     "entity_origin": [
       "230D: Obama Deception, Part 4",
       "transcripts\\203.autosub.srt",
@@ -1610,7 +1635,7 @@
   },
   {
     "entity_count": 12,
-    "entity_name": "alan keyes",
+    "entity_name": "Alan Keyes",
     "entity_origin": [
       "403: February 24, 2020",
       "429: May 3-4, 2020",
@@ -1631,7 +1656,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "alan moore",
+    "entity_name": "Alan Moore",
     "entity_origin": [
       "210: March 9, 2009",
       "transcripts\\210.autosub.srt",
@@ -1828,7 +1853,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "albert sabin",
+    "entity_name": "Albert Sabin",
     "entity_origin": [
       "392: January 24, 2020",
       "transcripts\\392.autosub.srt",
@@ -1846,7 +1871,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "alberto del rio",
+    "entity_name": "Alberto del Rio",
     "entity_origin": [
       "317: February 19-20, 2013",
       "transcripts\\178.autosub.srt",
@@ -1908,7 +1933,7 @@
   },
   {
     "entity_count": 21,
-    "entity_name": "aleister crowley",
+    "entity_name": "Aleister Crowley",
     "entity_origin": [
       "256: January 17-23, 2019",
       "495: November 4-6, 2016",
@@ -1936,7 +1961,7 @@
   },
   {
     "entity_count": 60,
-    "entity_name": "aleksandr dugin",
+    "entity_name": "Aleksandr Dugin",
     "entity_origin": [
       "102: Alex On Russian Media",
       "10: February 6, 2017",
@@ -2318,7 +2343,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "alex clark",
+    "entity_name": "Alex Clark",
     "entity_origin": [
       "582: Chattin' With Jared",
       "transcripts\\582.autosub.srt"
@@ -2903,8 +2928,8 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 34705,
-    "entity_name": "alex jones",
+    "entity_count": 34707,
+    "entity_name": "Alex Jones",
     "entity_origin": [
       "\"Mandatory Service Bill\"",
       "100: January 6-7, 2016",
@@ -3679,6 +3704,7 @@
       "The Halloween Story",
       "The Protocols of the Elders of Zion",
       "The Sandy Hook Elementary Massacre",
+      "Tucker Carlson",
       "Vladimir Putin",
       "Wayne Madsen",
       "Webster Tarpley",
@@ -4885,7 +4911,7 @@
   },
   {
     "entity_count": 11,
-    "entity_name": "alex lee moyer",
+    "entity_name": "Alex Lee Moyer",
     "entity_origin": [
       "transcripts\\707.autosub.srt",
       "transcripts\\709.autosub.srt",
@@ -5192,7 +5218,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "alex soros",
+    "entity_name": "Alex Soros",
     "entity_origin": [
       "118: January 10-11, 2018",
       "319: July 7-8, 2019",
@@ -6085,7 +6111,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "alexander acosta",
+    "entity_name": "Alexander Acosta",
     "entity_origin": [
       "transcripts\\164.autosub.srt",
       "transcripts\\233.autosub.srt"
@@ -6118,7 +6144,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "alexander haig",
+    "entity_name": "Alexander Haig",
     "entity_origin": [
       "121: April 1-2, 2013",
       "transcripts\\121.autosub.srt"
@@ -6151,7 +6177,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "alexander nekrassov",
+    "entity_name": "Alexander Nekrassov",
     "entity_origin": [
       "141: March 20-22, 2018",
       "Alexander Nekrassov"
@@ -6751,7 +6777,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "alexandria ocasio-cortez",
+    "entity_name": "Alexandria Ocasio-Cortez",
     "entity_origin": [
       "226: November 7, 2018",
       "transcripts\\369.autosub.srt"
@@ -6767,7 +6793,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "alfie oakes",
+    "entity_name": "Alfie Oakes",
     "entity_origin": [
       "557: May 11, 2021",
       "597: September 14, 2021",
@@ -6787,7 +6813,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "alfred milner",
+    "entity_name": "Alfred Milner",
     "entity_origin": [
       "transcripts\\219.autosub.srt",
       "transcripts\\426.autosub.srt"
@@ -6819,6 +6845,24 @@
   },
   {
     "entity_count": 2,
+    "entity_name": "algonquin round table",
+    "entity_origin": [
+      "transcripts\\470.autosub.srt",
+      "transcripts\\658.autosub.srt"
+    ],
+    "entity_sourcetexts": [
+      "Algonquin Round Table",
+      "An Algonquin Round Table"
+    ],
+    "entity_type": [
+      "ORG",
+      "PERSON"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
+    "entity_count": 2,
     "entity_name": "alharmaine",
     "entity_origin": [
       "transcripts\\720.welder.srt",
@@ -6835,7 +6879,7 @@
   },
   {
     "entity_count": 59,
-    "entity_name": "ali alexander",
+    "entity_name": "Ali Alexander",
     "entity_origin": [
       "469: August 12-13, 2020",
       "475: August 24-26, 2020",
@@ -7058,7 +7102,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "allen baylor",
+    "entity_name": "Allen Baylor",
     "entity_origin": [
       "301: January 24-28, 2013",
       "transcripts\\301.autosub.srt"
@@ -7074,7 +7118,7 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "allen dulles",
+    "entity_name": "Allen Dulles",
     "entity_origin": [
       "193: Big Skeletons and Pencil Ink",
       "transcripts\\193.autosub.srt",
@@ -7110,7 +7154,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "allen west",
+    "entity_name": "Allen West",
     "entity_origin": [
       "563: June 2, 2021",
       "transcripts\\77.autosub.srt"
@@ -7304,7 +7348,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "amanda milius",
+    "entity_name": "Amanda Milius",
     "entity_origin": [
       "500: November 5-6, 2020",
       "transcripts\\500.autosub.srt",
@@ -7649,7 +7693,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 9,
+    "entity_count": 10,
     "entity_name": "american activities committee",
     "entity_origin": [
       "transcripts\\141.autosub.srt",
@@ -7659,7 +7703,8 @@
       "transcripts\\628.autosub.srt"
     ],
     "entity_sourcetexts": [
-      "American Activities Committee"
+      "American Activities Committee",
+      "an American Activities Committee"
     ],
     "entity_type": [
       "ORG"
@@ -8355,7 +8400,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "ammon bundy",
+    "entity_name": "Ammon Bundy",
     "entity_origin": [
       "InfoWars Roulette 2",
       "transcripts\\58.autosub.srt",
@@ -8406,7 +8451,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "amy berman jackson",
+    "entity_name": "Amy Berman Jackson",
     "entity_origin": [
       "404: Mr. Jones Goes To CPAC",
       "transcripts\\370.autosub.srt",
@@ -8425,7 +8470,7 @@
   },
   {
     "entity_count": 14,
-    "entity_name": "amy coney barrett",
+    "entity_name": "Amy Coney Barrett",
     "entity_origin": [
       "484: September 18-19, 2020",
       "486: September 27, 2020",
@@ -8498,23 +8543,6 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
-    "entity_name": "an african american",
-    "entity_origin": [
-      "transcripts\\238.autosub.srt",
-      "transcripts\\583.autosub.srt"
-    ],
-    "entity_sourcetexts": [
-      "An African American",
-      "an African American"
-    ],
-    "entity_type": [
-      "NORP"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
     "entity_count": 18,
     "entity_name": "ancient aliens",
     "entity_origin": [
@@ -8561,7 +8589,7 @@
   },
   {
     "entity_count": 15,
-    "entity_name": "anders breivik",
+    "entity_name": "Anders Breivik",
     "entity_origin": [
       "198: July 22, 2011",
       "57: August 12-16, 2015",
@@ -8588,7 +8616,7 @@
   },
   {
     "entity_count": 119,
-    "entity_name": "anderson cooper",
+    "entity_name": "Anderson Cooper",
     "entity_origin": [
       "107: December 12, 2014",
       "230A: Obama Deception, Part 1",
@@ -8656,7 +8684,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "andino reynal",
+    "entity_name": "Andino Reynal",
     "entity_origin": [
       "Pozner Texas Sandy Hook Lawsuit (Pozner v. Jones)",
       "Texas Sandy Hook Lawsuit (Heslin v. Jones)"
@@ -8744,7 +8772,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "andrew arnold",
+    "entity_name": "Andrew Arnold",
     "entity_origin": [
       "579: May 30, 2003",
       "transcripts\\579.autosub.srt"
@@ -8760,7 +8788,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "andrew basiago",
+    "entity_name": "Andrew Basiago",
     "entity_origin": [
       "232: Reverend Manning",
       "324: Bilderberg Speeches",
@@ -8783,7 +8811,7 @@
   },
   {
     "entity_count": 37,
-    "entity_name": "andrew breitbart",
+    "entity_name": "Andrew Breitbart",
     "entity_origin": [
       "122 LIVE: March 1-2, 2012",
       "149: The Press Conference",
@@ -8840,7 +8868,7 @@
   },
   {
     "entity_count": 12,
-    "entity_name": "andrew cuomo",
+    "entity_name": "Andrew Cuomo",
     "entity_origin": [
       "248: January 2, 2019",
       "304: May 30-31, 2019",
@@ -8899,7 +8927,7 @@
   },
   {
     "entity_count": 86,
-    "entity_name": "andrew jackson",
+    "entity_name": "Andrew Jackson",
     "entity_origin": [
       "120: January 27, 2016",
       "121: April 1-2, 2013",
@@ -8954,7 +8982,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "andrew mccabe",
+    "entity_name": "Andrew McCabe",
     "entity_origin": [
       "141: March 20-22, 2018",
       "transcripts\\112.autosub.srt",
@@ -8973,7 +9001,7 @@
   },
   {
     "entity_count": 12,
-    "entity_name": "andrew napolitano",
+    "entity_name": "Andrew Napolitano",
     "entity_origin": [
       "222: March 15-19, 2009",
       "transcripts\\176.autosub.srt",
@@ -8995,7 +9023,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "andrew neal",
+    "entity_name": "Andrew Neal",
     "entity_origin": [
       "97: October 25, 2017",
       "transcripts\\491.autosub.srt"
@@ -9047,7 +9075,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "andrew torba",
+    "entity_name": "Andrew Torba",
     "entity_origin": [
       "350: September 29-30, 2019",
       "424: April 21-22, 2020",
@@ -9065,7 +9093,7 @@
   },
   {
     "entity_count": 21,
-    "entity_name": "andrew wakefield",
+    "entity_name": "Andrew Wakefield",
     "entity_origin": [
       "297: January 17-18, 2013",
       "388: January 12-13, 2020",
@@ -9300,7 +9328,7 @@
   },
   {
     "entity_count": 16,
-    "entity_name": "angela merkel",
+    "entity_name": "Angela Merkel",
     "entity_origin": [
       "248: January 2, 2019",
       "transcripts\\23.autosub.srt",
@@ -9341,7 +9369,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "angela stanton king",
+    "entity_name": "Angela Stanton King",
     "entity_origin": [
       "580: July 20-21, 2021",
       "transcripts\\580.autosub.srt"
@@ -9519,7 +9547,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "anita hill",
+    "entity_name": "Anita Hill",
     "entity_origin": [
       "76: October 7-11, 2015",
       "transcripts\\152.autosub.srt",
@@ -9538,7 +9566,7 @@
   },
   {
     "entity_count": 20,
-    "entity_name": "ann coulter",
+    "entity_name": "Ann Coulter",
     "entity_origin": [
       "243: April 1-2, 2009",
       "259: January 27-29, 2019",
@@ -9595,7 +9623,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "anna marie",
+    "entity_name": "Anna Marie",
     "entity_origin": [
       "595: Boulder Missiles and Gettysburg Nukes",
       "transcripts\\595.autosub.srt"
@@ -9627,7 +9655,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "anne frank",
+    "entity_name": "Anne Frank",
     "entity_origin": [
       "380: December 19-20, 2019",
       "transcripts\\380.autosub.srt"
@@ -9762,7 +9790,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "anthony fauci",
+    "entity_name": "Anthony Fauci",
     "entity_origin": [
       "397: February 7-8, 2020",
       "424: April 21-22, 2020",
@@ -9800,7 +9828,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "anthony gucciardi",
+    "entity_name": "Anthony Gucciardi",
     "entity_origin": [
       "454: December 17, 2013",
       "47: June 19-July 5, 2015",
@@ -9820,7 +9848,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "anthony hall",
+    "entity_name": "Anthony Hall",
     "entity_origin": [
       "407: March 5-10, 2020",
       "transcripts\\407.autosub.srt"
@@ -9893,7 +9921,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "anthony zender",
+    "entity_name": "Anthony Zender",
     "entity_origin": [
       "431: Smash-N-Grab Spy Jobs",
       "transcripts\\431.autosub.srt"
@@ -10274,7 +10302,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "antonin scalia",
+    "entity_name": "Antonin Scalia",
     "entity_origin": [
       "493: February 16, 2016",
       "transcripts\\370.autosub.srt",
@@ -10812,7 +10840,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 6,
+    "entity_count": 9,
     "entity_name": "arnold palmer",
     "entity_origin": [
       "transcripts\\115.autosub.srt",
@@ -10823,7 +10851,8 @@
       "transcripts\\74.autosub.srt"
     ],
     "entity_sourcetexts": [
-      "Arnold Palmer"
+      "Arnold Palmer",
+      "an Arnold Palmer"
     ],
     "entity_type": [
       "PERSON"
@@ -10833,7 +10862,7 @@
   },
   {
     "entity_count": 43,
-    "entity_name": "arnold schwarzenegger",
+    "entity_name": "Arnold Schwarzenegger",
     "entity_origin": [
       "240: March 30-31, 2009",
       "613: June 24-25, 2003",
@@ -10887,7 +10916,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "art acevedo",
+    "entity_name": "Art Acevedo",
     "entity_origin": [
       "160: January 22-25, 2009",
       "Art Acevedo"
@@ -10922,7 +10951,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "arthur c clarke",
+    "entity_name": "Arthur C Clarke",
     "entity_origin": [
       "100: January 6-7, 2016",
       "193: Big Skeletons and Pencil Ink",
@@ -10994,7 +11023,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "artur pawlowski",
+    "entity_name": "Artur Pawlowski",
     "entity_origin": [
       "554: April 30, 2021",
       "651: February 18, 2022"
@@ -11105,7 +11134,7 @@
   },
   {
     "entity_count": 17,
-    "entity_name": "ashley beckford",
+    "entity_name": "Ashley Beckford",
     "entity_origin": [
       "133: Operation Paul Revere",
       "Buckley Hamman",
@@ -11134,7 +11163,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "ashli babbitt",
+    "entity_name": "Ashli Babbitt",
     "entity_origin": [
       "549: April 13-14, 2021",
       "638: See You At The Cross-Rhodes",
@@ -12661,7 +12690,7 @@
   },
   {
     "entity_count": 931,
-    "entity_name": "barack obama",
+    "entity_name": "Barack Obama",
     "entity_origin": [
       "\"Mandatory Service Bill\"",
       "100: January 6-7, 2016",
@@ -13138,7 +13167,7 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "barbara loe fisher",
+    "entity_name": "Barbara Loe Fisher",
     "entity_origin": [
       "200: Feb. 25-March 1, 2009",
       "222: March 15-19, 2009",
@@ -13260,7 +13289,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "barry cooper",
+    "entity_name": "Barry Cooper",
     "entity_origin": [
       "158: January 21, 2009",
       "Barry Cooper",
@@ -13277,7 +13306,7 @@
   },
   {
     "entity_count": 32,
-    "entity_name": "barry goldwater",
+    "entity_name": "Barry Goldwater",
     "entity_origin": [
       "230A: Obama Deception, Part 1",
       "230B: Obama Deception, Part 2",
@@ -14140,7 +14169,7 @@
   },
   {
     "entity_count": 22,
-    "entity_name": "ben carson",
+    "entity_name": "Ben Carson",
     "entity_origin": [
       "57: August 12-16, 2015",
       "74: October 4-6, 2015",
@@ -14165,7 +14194,7 @@
   },
   {
     "entity_count": 23,
-    "entity_name": "ben garrison",
+    "entity_name": "Ben Garrison",
     "entity_origin": [
       "143: March 25-31 Part 1",
       "144: March 25-31, Part 2",
@@ -14210,7 +14239,7 @@
   },
   {
     "entity_count": 57,
-    "entity_name": "ben shapiro",
+    "entity_name": "Ben Shapiro",
     "entity_origin": [
       "160: January 22-25, 2009",
       "209: Drunk Hotel Interview",
@@ -14279,7 +14308,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "benazir bhutto",
+    "entity_name": "Benazir Bhutto",
     "entity_origin": [
       "98: May 2-3, 2012",
       "transcripts\\264.autosub.srt"
@@ -14377,7 +14406,7 @@
   },
   {
     "entity_count": 17,
-    "entity_name": "benjamin netanyahu",
+    "entity_name": "Benjamin Netanyahu",
     "entity_origin": [
       "128: March 3, 2015",
       "transcripts\\128.autosub.srt",
@@ -14514,7 +14543,7 @@
   },
   {
     "entity_count": 48,
-    "entity_name": "bernie sanders",
+    "entity_name": "Bernie Sanders",
     "entity_origin": [
       "115: January 2, 2018",
       "126: February 2, 2018 (Special Report)",
@@ -14588,7 +14617,7 @@
   },
   {
     "entity_count": 21,
-    "entity_name": "bertrand russell",
+    "entity_name": "Bertrand Russell",
     "entity_origin": [
       "130D: Endgame, Part 4",
       "289: January 10-13, 2013",
@@ -14874,7 +14903,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "bibi netanyahu",
+    "entity_name": "Bibi Netanyahu",
     "entity_origin": [
       "transcripts\\1.autosub.srt",
       "transcripts\\1.otter.txt",
@@ -14943,7 +14972,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "big jim tucker",
+    "entity_name": "Big Jim Tucker",
     "entity_origin": [
       "130B: Endgame, Part 2",
       "579: May 30, 2003"
@@ -15119,7 +15148,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "bill ackman",
+    "entity_name": "Bill Ackman",
     "entity_origin": [
       "410: March 19-20, 2020",
       "413: March 27, 2020",
@@ -15137,7 +15166,7 @@
   },
   {
     "entity_count": 42,
-    "entity_name": "bill ayers",
+    "entity_name": "Bill Ayers",
     "entity_origin": [
       "168: Alex Vs. Bill Ayers",
       "283: January 4-6, 2013",
@@ -15192,7 +15221,7 @@
   },
   {
     "entity_count": 250,
-    "entity_name": "bill clinton",
+    "entity_name": "Bill Clinton",
     "entity_origin": [
       "135: The Wikileaks Press Conference",
       "141: March 20-22, 2018",
@@ -15348,7 +15377,7 @@
   },
   {
     "entity_count": 211,
-    "entity_name": "bill cooper",
+    "entity_name": "Bill Cooper",
     "entity_origin": [
       "109: December 4, 2017",
       "249: Predicting 9/11",
@@ -15495,7 +15524,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "bill french",
+    "entity_name": "Bill French",
     "entity_origin": [
       "332: Anunnaki Stasis and Emerald Treaties",
       "transcripts\\332.autosub.srt"
@@ -15527,7 +15556,7 @@
   },
   {
     "entity_count": 513,
-    "entity_name": "bill gates",
+    "entity_name": "Bill Gates",
     "entity_origin": [
       "270: The Rogan Return",
       "305: February 1, 2013",
@@ -15774,7 +15803,7 @@
   },
   {
     "entity_count": 30,
-    "entity_name": "bill hicks",
+    "entity_name": "Bill Hicks",
     "entity_origin": [
       "148: June 1-3, 2009",
       "227: March 23, 2009",
@@ -15828,7 +15857,7 @@
   },
   {
     "entity_count": 122,
-    "entity_name": "bill maher",
+    "entity_name": "Bill Maher",
     "entity_origin": [
       "188: August 1, 2018",
       "406: March 1-4, 2020",
@@ -15998,7 +16027,7 @@
   },
   {
     "entity_count": 84,
-    "entity_name": "bill o'reilly",
+    "entity_name": "Bill O'Reilly",
     "entity_origin": [
       "112: December 15, 2017",
       "32: April 21, 2017",
@@ -16069,7 +16098,7 @@
   },
   {
     "entity_count": 770,
-    "entity_name": "bill ogden",
+    "entity_name": "Bill Ogden",
     "entity_origin": [
       "664: Formulaic Objections Part 5",
       "712: The Decompression Session",
@@ -16194,7 +16223,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "bill taylor",
+    "entity_name": "Bill Taylor",
     "entity_origin": [
       "360: October 23, 2019",
       "transcripts\\360.autosub.srt",
@@ -16212,7 +16241,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "bill warner",
+    "entity_name": "Bill Warner",
     "entity_origin": [
       "332: Anunnaki Stasis and Emerald Treaties",
       "transcripts\\332.autosub.srt"
@@ -16269,7 +16298,7 @@
   },
   {
     "entity_count": 30,
-    "entity_name": "billy corgan",
+    "entity_name": "Billy Corgan",
     "entity_origin": [
       "107: December 12, 2014",
       "transcripts\\107.autosub.srt",
@@ -16614,7 +16643,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "black knight",
+    "entity_name": "Black Knight",
     "entity_origin": [
       "193: Big Skeletons and Pencil Ink",
       "transcripts\\139.autosub.srt",
@@ -17381,7 +17410,7 @@
   },
   {
     "entity_count": 96,
-    "entity_name": "bob chapman",
+    "entity_name": "Bob Chapman",
     "entity_origin": [
       "123: March 18, 2008",
       "155: January 7-9, 2009",
@@ -17458,7 +17487,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "bob fletcher",
+    "entity_name": "Bob Fletcher",
     "entity_origin": [
       "276: January 1-2, 2013",
       "transcripts\\276.autosub.srt"
@@ -17493,7 +17522,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "bob marshall",
+    "entity_name": "Bob Marshall",
     "entity_origin": [
       "475: August 24-26, 2020",
       "transcripts\\475.autosub.srt"
@@ -17542,7 +17571,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "bob schultz",
+    "entity_name": "Bob Schultz",
     "entity_origin": [
       "transcripts\\203.autosub.srt",
       "transcripts\\276.autosub.srt"
@@ -17558,7 +17587,7 @@
   },
   {
     "entity_count": 11,
-    "entity_name": "bob woodward",
+    "entity_name": "Bob Woodward",
     "entity_origin": [
       "480: September 9-10, 2020",
       "transcripts\\480.autosub.srt",
@@ -18034,7 +18063,7 @@
   },
   {
     "entity_count": 53,
-    "entity_name": "boris johnson",
+    "entity_name": "Boris Johnson",
     "entity_origin": [
       "192: August 10, 2018",
       "413: March 27, 2020",
@@ -18077,7 +18106,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "boris yeltsin",
+    "entity_name": "Boris Yeltsin",
     "entity_origin": [
       "transcripts\\100.autosub.srt",
       "transcripts\\13.autosub.srt",
@@ -18225,7 +18254,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "boston marathon bombing",
+    "entity_name": "Boston Marathon Bombing",
     "entity_origin": [
       "346: April 11-14, 2013",
       "352: April 17, 2013",
@@ -18353,7 +18382,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "brad sherman",
+    "entity_name": "Brad Sherman",
     "entity_origin": [
       "230A: Obama Deception, Part 1",
       "246: April 5-6, 2009",
@@ -18389,7 +18418,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "bradley reeves",
+    "entity_name": "Bradley Reeves",
     "entity_origin": [
       "Bradley Reeves",
       "Pozner Texas Sandy Hook Lawsuit (Pozner v. Jones)",
@@ -18801,7 +18830,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "brennan gilmore",
+    "entity_name": "Brennan Gilmore",
     "entity_origin": [
       "138: March 13-15, 2018",
       "transcripts\\138.autosub.srt"
@@ -18818,7 +18847,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "breonna taylor",
+    "entity_name": "Breonna Taylor",
     "entity_origin": [
       "440: June 1-2, 2020",
       "485: September 23-24, 2020",
@@ -18889,7 +18918,7 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "brett favre",
+    "entity_name": "Brett Favre",
     "entity_origin": [
       "590: August 24, 2021",
       "transcripts\\157.autosub.srt",
@@ -18908,7 +18937,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "brett kavanaugh",
+    "entity_name": "Brett Kavanaugh",
     "entity_origin": [
       "transcripts\\189.autosub.srt",
       "transcripts\\213.autosub.srt",
@@ -18926,7 +18955,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "brett weinstein",
+    "entity_name": "Brett Weinstein",
     "entity_origin": [
       "575: July 4, 2021",
       "transcripts\\718.welder.txt"
@@ -18960,7 +18989,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "brian gibson",
+    "entity_name": "Brian Gibson",
     "entity_origin": [
       "511: The 12/12 Rallies",
       "transcripts\\511.autosub.srt"
@@ -18992,7 +19021,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "brian kemp",
+    "entity_name": "Brian Kemp",
     "entity_origin": [
       "504: November 16-17, 2020",
       "505: November 18, 2020",
@@ -19060,7 +19089,7 @@
   },
   {
     "entity_count": 62,
-    "entity_name": "brian stelter",
+    "entity_name": "Brian Stelter",
     "entity_origin": [
       "117: January 8, 2018",
       "118: January 10-11, 2018",
@@ -19120,7 +19149,7 @@
   },
   {
     "entity_count": 25,
-    "entity_name": "brian williams",
+    "entity_name": "Brian Williams",
     "entity_origin": [
       "590: August 24, 2021",
       "transcripts\\14.autosub.srt",
@@ -19161,7 +19190,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "brianna taylor",
+    "entity_name": "Brianna Taylor",
     "entity_origin": [
       "551: April 20-21, 2021",
       "transcripts\\469.autosub.srt",
@@ -19387,7 +19416,7 @@
   },
   {
     "entity_count": 47,
-    "entity_name": "brittany paz",
+    "entity_name": "Brittany Paz",
     "entity_origin": [
       "685: Formulaic Objections Part 7",
       "Brittany Paz",
@@ -19584,7 +19613,7 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "bruce springsteen",
+    "entity_name": "Bruce Springsteen",
     "entity_origin": [
       "529: February 8, 2021",
       "transcripts\\263.autosub.srt",
@@ -19668,7 +19697,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "bryson gray",
+    "entity_name": "Bryson Gray",
     "entity_origin": [
       "511: The 12/12 Rallies",
       "transcripts\\708.autosub.srt"
@@ -19727,7 +19756,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "bubba wallace",
+    "entity_name": "Bubba Wallace",
     "entity_origin": [
       "449: June 23-24, 2020",
       "450: June 25-26, 2020",
@@ -19829,7 +19858,7 @@
   },
   {
     "entity_count": 101,
-    "entity_name": "buckley hamman",
+    "entity_name": "Buckley Hamman",
     "entity_origin": [
       "236: December 4-5, 2018",
       "284: April 12, 2019",
@@ -20207,7 +20236,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "buzz bissinger",
+    "entity_name": "Buzz Bissinger",
     "entity_origin": [
       "288: January 7-9, 2013",
       "289: January 10-13, 2013",
@@ -20666,7 +20695,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "cameron atkinson",
+    "entity_name": "Cameron Atkinson",
     "entity_origin": [
       "Cameron Atkinson",
       "Connecticut Sandy Hook Lawsuit (Lafferty v. Jones)",
@@ -20739,7 +20768,7 @@
   },
   {
     "entity_count": 41,
-    "entity_name": "candace owens",
+    "entity_name": "Candace Owens",
     "entity_origin": [
       "277: March 15, 2019",
       "284: April 12, 2019",
@@ -21007,7 +21036,7 @@
   },
   {
     "entity_count": 14,
-    "entity_name": "carl sagan",
+    "entity_name": "Carl Sagan",
     "entity_origin": [
       "156: Gaseous Beings and Antiques",
       "transcripts\\10.autosub.srt",
@@ -21083,7 +21112,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "carlos zapata",
+    "entity_name": "Carlos Zapata",
     "entity_origin": [
       "475: August 24-26, 2020",
       "492: October 13, 2020"
@@ -21240,7 +21269,7 @@
   },
   {
     "entity_count": 15,
-    "entity_name": "carpe donktum",
+    "entity_name": "Carpe Donktum",
     "entity_origin": [
       "319: July 7-8, 2019",
       "334: August 21-22, 2019",
@@ -21295,7 +21324,7 @@
   },
   {
     "entity_count": 13,
-    "entity_name": "carroll quigley",
+    "entity_name": "Carroll Quigley",
     "entity_origin": [
       "134: Post-Tribulation Rapture?",
       "230A: Obama Deception, Part 1",
@@ -21393,7 +21422,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "casey newton",
+    "entity_name": "Casey Newton",
     "entity_origin": [
       "296: May 8, 2019",
       "transcripts\\296.autosub.srt",
@@ -21426,7 +21455,7 @@
   },
   {
     "entity_count": 28,
-    "entity_name": "cassandra fairbanks",
+    "entity_name": "Cassandra Fairbanks",
     "entity_origin": [
       "401: Formulaic Objections Part 3",
       "transcripts\\141.autosub.srt",
@@ -21483,7 +21512,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "catherine albrecht",
+    "entity_name": "Catherine Albrecht",
     "entity_origin": [
       "634: July 11, 2003",
       "transcripts\\359.autosub.srt",
@@ -21634,7 +21663,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "cecil rhodes",
+    "entity_name": "Cecil Rhodes",
     "entity_origin": [
       "transcripts\\426.autosub.srt",
       "transcripts\\656.autosub.srt"
@@ -21740,7 +21769,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "cenk uygur",
+    "entity_name": "Cenk Uygur",
     "entity_origin": [
       "115: January 2, 2018",
       "298: January 20-23, 2013",
@@ -22211,7 +22240,7 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "chandra levy",
+    "entity_name": "Chandra Levy",
     "entity_origin": [
       "537: July 16-18, 2010",
       "560: May 12-13, 2003",
@@ -22480,7 +22509,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "charles dickens",
+    "entity_name": "Charles Dickens",
     "entity_origin": [
       "86: September 22, 2017",
       "transcripts\\157.autosub.srt",
@@ -22497,7 +22526,7 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "charles dyer",
+    "entity_name": "Charles Dyer",
     "entity_origin": [
       "524: Inauguration 2021",
       "transcripts\\222.autosub.srt",
@@ -22532,7 +22561,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "charles koch",
+    "entity_name": "Charles Koch",
     "entity_origin": [
       "transcripts\\160.autosub.srt",
       "transcripts\\506.autosub.srt"
@@ -22548,7 +22577,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "charles kushner",
+    "entity_name": "Charles Kushner",
     "entity_origin": [
       "497: Third Try's A Charm",
       "transcripts\\497.autosub.srt",
@@ -22565,7 +22594,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "charles leiber",
+    "entity_name": "Charles Leiber",
     "entity_origin": [
       "412: March 24-25, 2020",
       "421: April 16, 2020"
@@ -22615,7 +22644,7 @@
   },
   {
     "entity_count": 53,
-    "entity_name": "charles manson",
+    "entity_name": "Charles Manson",
     "entity_origin": [
       "104: November 20, 2017",
       "356: October 11, 2019",
@@ -22647,7 +22676,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "charles martel",
+    "entity_name": "Charles Martel",
     "entity_origin": [
       "406: March 1-4, 2020",
       "transcripts\\406.autosub.srt"
@@ -22663,7 +22692,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "charles murray",
+    "entity_name": "Charles Murray",
     "entity_origin": [
       "264: February 11-13, 2019",
       "398: February 9-10, 2020",
@@ -22854,7 +22883,7 @@
   },
   {
     "entity_count": 45,
-    "entity_name": "charlie kirk",
+    "entity_name": "Charlie Kirk",
     "entity_origin": [
       "363: October 30, 2019",
       "transcripts\\190.autosub.srt",
@@ -22925,7 +22954,7 @@
   },
   {
     "entity_count": 86,
-    "entity_name": "charlie sheen",
+    "entity_name": "Charlie Sheen",
     "entity_origin": [
       "140: February 18, 2011",
       "155: January 7-9, 2009",
@@ -23263,7 +23292,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "chemical ali",
+    "entity_name": "Chemical Ali",
     "entity_origin": [
       "254: April 9-10, 2009",
       "659: July 21-23, 2003",
@@ -23281,7 +23310,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "cherie blair",
+    "entity_name": "Cherie Blair",
     "entity_origin": [
       "186: February 17-18, 2009",
       "transcripts\\186.autosub.srt"
@@ -23435,7 +23464,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "chicken man",
+    "entity_name": "Chicken Man",
     "entity_origin": [
       "336: March 24-26, 2013",
       "98: May 2-3, 2012"
@@ -23718,7 +23747,7 @@
   },
   {
     "entity_count": 13,
-    "entity_name": "chris carter",
+    "entity_name": "Chris Carter",
     "entity_origin": [
       "577: July 13, 2021",
       "transcripts\\103.autosub.srt",
@@ -23904,7 +23933,7 @@
   },
   {
     "entity_count": 25,
-    "entity_name": "chris kyle",
+    "entity_name": "Chris Kyle",
     "entity_origin": [
       "148: June 1-3, 2009",
       "312: February 10-13, 2013",
@@ -24018,7 +24047,7 @@
   },
   {
     "entity_count": 18,
-    "entity_name": "chris mattei",
+    "entity_name": "Chris Mattei",
     "entity_origin": [
       "310: June 13-14, 2019",
       "311: June 17-19, 2019",
@@ -24103,7 +24132,7 @@
   },
   {
     "entity_count": 14,
-    "entity_name": "chris pratt",
+    "entity_name": "Chris Pratt",
     "entity_origin": [
       "322: July 16-17, 2019",
       "transcripts\\246.autosub.srt",
@@ -24179,7 +24208,7 @@
   },
   {
     "entity_count": 13,
-    "entity_name": "chris wallace",
+    "entity_name": "Chris Wallace",
     "entity_origin": [
       "488: The First Debate Spectacular",
       "transcripts\\447.autosub.srt",
@@ -24734,7 +24763,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "christine o'donnell",
+    "entity_name": "Christine O'Donnell",
     "entity_origin": [
       "542: September 15, 2010",
       "transcripts\\542.autosub.srt"
@@ -24795,7 +24824,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "christopher cantwell",
+    "entity_name": "Christopher Cantwell",
     "entity_origin": [
       "101: January 11, 2016",
       "transcripts\\101.autosub.srt",
@@ -24829,7 +24858,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "christopher dorner",
+    "entity_name": "Christopher Dorner",
     "entity_origin": [
       "308: February 6-8, 2013",
       "312: February 10-13, 2013",
@@ -24847,7 +24876,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "christopher dorner\u200f\u200e",
+    "entity_name": "Christopher Dorner\u200f\u200e",
     "entity_origin": [
       "442: June 5, 2020",
       "transcripts\\312.autosub.srt"
@@ -24963,7 +24992,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "christopher sign",
+    "entity_name": "Christopher Sign",
     "entity_origin": [
       "567: June 13, 2021",
       "570: June 24, 2021"
@@ -24979,7 +25008,7 @@
   },
   {
     "entity_count": 33,
-    "entity_name": "christopher walken",
+    "entity_name": "Christopher Walken",
     "entity_origin": [
       "119: August 16, 2012",
       "transcripts\\119.autosub.srt",
@@ -25031,7 +25060,7 @@
   },
   {
     "entity_count": 28,
-    "entity_name": "chuck baldwin",
+    "entity_name": "Chuck Baldwin",
     "entity_origin": [
       "222: March 15-19, 2009",
       "343: April 3-8, 2013",
@@ -25071,7 +25100,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "chuck lorre",
+    "entity_name": "Chuck Lorre",
     "entity_origin": [
       "140: February 18, 2011",
       "transcripts\\140.autosub.srt"
@@ -25087,7 +25116,7 @@
   },
   {
     "entity_count": 45,
-    "entity_name": "chuck norris",
+    "entity_name": "Chuck Norris",
     "entity_origin": [
       "118: January 10-11, 2018",
       "219: March 13, 2009",
@@ -25148,7 +25177,7 @@
   },
   {
     "entity_count": 29,
-    "entity_name": "chuck schumer",
+    "entity_name": "Chuck Schumer",
     "entity_origin": [
       "143: March 25-31 Part 1",
       "569: June 23, 2021",
@@ -25185,7 +25214,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "chuck todd",
+    "entity_name": "Chuck Todd",
     "entity_origin": [
       "432: May 10-11, 2020",
       "transcripts\\284.autosub.srt",
@@ -25727,7 +25756,7 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "clarence thomas",
+    "entity_name": "Clarence Thomas",
     "entity_origin": [
       "262: April 14, 2009",
       "493: February 16, 2016",
@@ -26249,7 +26278,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "clyde hood",
+    "entity_name": "Clyde Hood",
     "entity_origin": [
       "431: Smash-N-Grab Spy Jobs",
       "transcripts\\431.autosub.srt"
@@ -26266,7 +26295,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "coast to coast",
+    "entity_name": "Coast To Coast",
     "entity_origin": [
       "636: April 27, 2009",
       "transcripts\\32.autosub.srt",
@@ -26369,7 +26398,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "cody wilson",
+    "entity_name": "Cody Wilson",
     "entity_origin": [
       "335: March 15-22, 2013",
       "transcripts\\335.autosub.srt"
@@ -26404,7 +26433,7 @@
   },
   {
     "entity_count": 32,
-    "entity_name": "colin kaepernick",
+    "entity_name": "Colin Kaepernick",
     "entity_origin": [
       "451: June 29-30, 2020",
       "480: September 9-10, 2020",
@@ -28204,7 +28233,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "corey lewandowski",
+    "entity_name": "Corey Lewandowski",
     "entity_origin": [
       "474: June 6, 2016",
       "transcripts\\161.autosub.srt",
@@ -28622,7 +28651,7 @@
   },
   {
     "entity_count": 32,
-    "entity_name": "courtney brown",
+    "entity_name": "Courtney Brown",
     "entity_origin": [
       "125: Project Camelot's War In Heaven",
       "479: The Devil Went Down To Kiev",
@@ -28762,7 +28791,7 @@
   },
   {
     "entity_count": 26,
-    "entity_name": "craig roberts",
+    "entity_name": "Craig Roberts",
     "entity_origin": [
       "591: June 11, 2003",
       "transcripts\\151.autosub.srt",
@@ -29589,7 +29618,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "dale gribble",
+    "entity_name": "Dale Gribble",
     "entity_origin": [
       "77: August 23, 2017",
       "transcripts\\77.autosub.srt"
@@ -29657,7 +29686,7 @@
   },
   {
     "entity_count": 19,
-    "entity_name": "dan bidondi",
+    "entity_name": "Dan Bidondi",
     "entity_origin": [
       "279: Formulaic Objections",
       "286: Wrestling With Disappointment",
@@ -29686,7 +29715,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "dan bongino",
+    "entity_name": "Dan Bongino",
     "entity_origin": [
       "343: April 3-8, 2013",
       "470: ShadowGate",
@@ -29707,7 +29736,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "dan crenshaw",
+    "entity_name": "Dan Crenshaw",
     "entity_origin": [
       "337: August 28-29, 2019",
       "497: Third Try's A Charm",
@@ -29725,7 +29754,7 @@
   },
   {
     "entity_count": 11,
-    "entity_name": "dan friesen",
+    "entity_name": "Dan Friesen",
     "entity_origin": [
       "Dan Friesen",
       "Knowledge Fight",
@@ -30001,7 +30030,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "daniel estulin",
+    "entity_name": "Daniel Estulin",
     "entity_origin": [
       "130B: Endgame, Part 2",
       "230A: Obama Deception, Part 1",
@@ -30143,7 +30172,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "danny williams",
+    "entity_name": "Danny Williams",
     "entity_origin": [
       "241: Larry Gets Coached",
       "transcripts\\241.autosub.srt"
@@ -30159,7 +30188,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "daria karpova",
+    "entity_name": "Daria Karpova",
     "entity_origin": [
       "Daria Karpova",
       "Rob Dew"
@@ -30288,7 +30317,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "darrel rundus",
+    "entity_name": "Darrel Rundus",
     "entity_origin": [
       "602: Sandy Hook Response",
       "618: November 15, 2021",
@@ -30321,7 +30350,7 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "darrell hamamoto",
+    "entity_name": "Darrell Hamamoto",
     "entity_origin": [
       "107: December 12, 2014",
       "17: February 7, 2017",
@@ -30344,7 +30373,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "darren beattie",
+    "entity_name": "Darren Beattie",
     "entity_origin": [
       "614: The Purge of Gates",
       "transcripts\\614.autosub.srt",
@@ -30361,7 +30390,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "darren huff",
+    "entity_name": "Darren Huff",
     "entity_origin": [
       "transcripts\\222.autosub.srt",
       "transcripts\\222.otter.txt"
@@ -30394,7 +30423,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "darren mcbreen",
+    "entity_name": "Darren McBreen",
     "entity_origin": [
       "143: March 25-31 Part 1",
       "19: March 3, 2017",
@@ -30545,7 +30574,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "dave anthony",
+    "entity_name": "Dave Anthony",
     "entity_origin": [
       "716: April 25, 2014",
       "transcripts\\393.autosub.srt",
@@ -30627,7 +30656,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "dave daubenmire",
+    "entity_name": "Dave Daubenmire",
     "entity_origin": [
       "238: Coach Dave",
       "transcripts\\359.autosub.srt"
@@ -30697,7 +30726,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "dave landau",
+    "entity_name": "Dave Landau",
     "entity_origin": [
       "530: February 10-11, 2021",
       "transcripts\\530.autosub.srt"
@@ -30713,7 +30742,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "dave mccurdy",
+    "entity_name": "Dave McCurdy",
     "entity_origin": [
       "434: Bill Cooper Covers OKC Part 1",
       "transcripts\\434.autosub.srt"
@@ -30729,7 +30758,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "dave moore",
+    "entity_name": "Dave Moore",
     "entity_origin": [
       "558: May 8-9, 2003",
       "transcripts\\558.autosub.srt"
@@ -30764,7 +30793,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "dave mustane",
+    "entity_name": "Dave Mustane",
     "entity_origin": [
       "119: August 16, 2012",
       "389: January 15-17, 2020",
@@ -30781,7 +30810,7 @@
   },
   {
     "entity_count": 48,
-    "entity_name": "dave rubin",
+    "entity_name": "Dave Rubin",
     "entity_origin": [
       "460: Donk's Dojo",
       "transcripts\\171.autosub.srt",
@@ -30840,7 +30869,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "david adair",
+    "entity_name": "David Adair",
     "entity_origin": [
       "629: Black Goo and Space Covid",
       "transcripts\\629.autosub.srt"
@@ -30958,7 +30987,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "david benoit",
+    "entity_name": "David Benoit",
     "entity_origin": [
       "611: October 29, 2021",
       "transcripts\\611.autosub.srt"
@@ -30974,7 +31003,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "david booth",
+    "entity_name": "David Booth",
     "entity_origin": [
       "344: April 9-10, 2013",
       "transcripts\\344.autosub.srt"
@@ -30990,7 +31019,7 @@
   },
   {
     "entity_count": 26,
-    "entity_name": "david bowie",
+    "entity_name": "David Bowie",
     "entity_origin": [
       "101: January 11, 2016",
       "transcripts\\101.autosub.srt",
@@ -31019,7 +31048,7 @@
   },
   {
     "entity_count": 39,
-    "entity_name": "david brock",
+    "entity_name": "David Brock",
     "entity_origin": [
       "135: The Wikileaks Press Conference",
       "transcripts\\115.autosub.srt",
@@ -31117,7 +31146,7 @@
   },
   {
     "entity_count": 19,
-    "entity_name": "david clarke",
+    "entity_name": "David Clarke",
     "entity_origin": [
       "315: February 17-18, 2013",
       "78: October 12-15, 2015",
@@ -31219,7 +31248,7 @@
   },
   {
     "entity_count": 125,
-    "entity_name": "david duke",
+    "entity_name": "David Duke",
     "entity_origin": [
       "136: March 30-31, 2008",
       "388: January 12-13, 2020",
@@ -31324,7 +31353,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "david gray",
+    "entity_name": "David Gray",
     "entity_origin": [
       "277: March 15, 2019",
       "transcripts\\452.autosub.srt"
@@ -31389,7 +31418,7 @@
   },
   {
     "entity_count": 83,
-    "entity_name": "david hogg",
+    "entity_name": "David Hogg",
     "entity_origin": [
       "142: March 23, 2018",
       "143: March 25-31 Part 1",
@@ -31447,7 +31476,7 @@
   },
   {
     "entity_count": 272,
-    "entity_name": "david icke",
+    "entity_name": "David Icke",
     "entity_origin": [
       "100: January 6-7, 2016",
       "155: January 7-9, 2009",
@@ -31570,7 +31599,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "david j smith",
+    "entity_name": "David J Smith",
     "entity_origin": [
       "566: May 21, 2003",
       "transcripts\\325.autosub.srt",
@@ -31624,7 +31653,7 @@
   },
   {
     "entity_count": 37,
-    "entity_name": "david jones",
+    "entity_name": "David Jones",
     "entity_origin": [
       "133: Operation Paul Revere",
       "186: February 17-18, 2009",
@@ -31662,7 +31691,7 @@
   },
   {
     "entity_count": 18,
-    "entity_name": "david kelly",
+    "entity_name": "David Kelly",
     "entity_origin": [
       "655: July 18, 2003",
       "659: July 21-23, 2003",
@@ -31703,8 +31732,8 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 372,
-    "entity_name": "david knight",
+    "entity_count": 373,
+    "entity_name": "David Knight",
     "entity_origin": [
       "196: August 21, 2018",
       "251: January 8, 2019",
@@ -31736,6 +31765,7 @@
       "InfoWars Roulette 1",
       "InfoWars Roulette 2",
       "Rob Dew",
+      "Tucker Carlson",
       "transcripts\\10.autosub.srt",
       "transcripts\\10.otter.txt",
       "transcripts\\100.autosub.srt",
@@ -31911,7 +31941,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "david koch",
+    "entity_name": "David Koch",
     "entity_origin": [
       "160: January 22-25, 2009",
       "Ron Paul",
@@ -31947,7 +31977,7 @@
   },
   {
     "entity_count": 37,
-    "entity_name": "david lynch",
+    "entity_name": "David Lynch",
     "entity_origin": [
       "131: David Lynch Interview",
       "List of Knowledge Fight episodes",
@@ -32134,7 +32164,7 @@
   },
   {
     "entity_count": 69,
-    "entity_name": "david rockefeller",
+    "entity_name": "David Rockefeller",
     "entity_origin": [
       "107: December 12, 2014",
       "112: December 15, 2017",
@@ -32193,7 +32223,7 @@
   },
   {
     "entity_count": 25,
-    "entity_name": "david rothschild",
+    "entity_name": "David Rothschild",
     "entity_origin": [
       "129: David Rothschild Interview",
       "List of Knowledge Fight episodes",
@@ -32253,7 +32283,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "david willcock",
+    "entity_name": "David Willcock",
     "entity_origin": [
       "400: One Out Of Five Seems High",
       "87: Mark Richards Revisited"
@@ -32322,7 +32352,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "dayton king",
+    "entity_name": "Dayton King",
     "entity_origin": [
       "297: January 17-18, 2013",
       "transcripts\\297.autosub.srt"
@@ -32404,7 +32434,7 @@
   },
   {
     "entity_count": 27,
-    "entity_name": "deanna lorraine",
+    "entity_name": "DeAnna Lorraine",
     "entity_origin": [
       "404: Mr. Jones Goes To CPAC",
       "406: March 1-4, 2020",
@@ -32476,7 +32506,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "debbie stabenow",
+    "entity_name": "Debbie Stabenow",
     "entity_origin": [
       "222: March 15-19, 2009",
       "transcripts\\222.otter.txt"
@@ -32775,7 +32805,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "del bigtree",
+    "entity_name": "Del Bigtree",
     "entity_origin": [
       "388: January 12-13, 2020",
       "427: April 29-30, 2020",
@@ -33303,7 +33333,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "denise richards",
+    "entity_name": "Denise Richards",
     "entity_origin": [
       "transcripts\\140.autosub.srt",
       "transcripts\\288.autosub.srt"
@@ -33319,7 +33349,7 @@
   },
   {
     "entity_count": 26,
-    "entity_name": "dennis miller",
+    "entity_name": "Dennis Miller",
     "entity_origin": [
       "555: May 7, 2003",
       "Paul Joseph Watson",
@@ -33353,7 +33383,7 @@
   },
   {
     "entity_count": 98,
-    "entity_name": "dennis montgomery",
+    "entity_name": "Dennis Montgomery",
     "entity_origin": [
       "25: Dennis Montgomery Investigation",
       "290: April 25-26, 2019",
@@ -33395,7 +33425,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "dennis prager",
+    "entity_name": "Dennis Prager",
     "entity_origin": [
       "374: November 25, 2019",
       "transcripts\\138.autosub.srt",
@@ -33413,7 +33443,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "dennis rodman",
+    "entity_name": "Dennis Rodman",
     "entity_origin": [
       "328: March 11-12, 2013",
       "transcripts\\123.autosub.srt",
@@ -34060,7 +34090,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "derek chauvin",
+    "entity_name": "Derek Chauvin",
     "entity_origin": [
       "transcripts\\439.autosub.srt",
       "transcripts\\539.autosub.srt",
@@ -34094,7 +34124,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "derek richards",
+    "entity_name": "Derek Richards",
     "entity_origin": [
       "604: October 5, 2021",
       "transcripts\\604.autosub.srt"
@@ -34126,7 +34156,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "derry brownfield",
+    "entity_name": "Derry Brownfield",
     "entity_origin": [
       "703: 9/11, Part 1",
       "704: 9/11, Part 2"
@@ -34182,7 +34212,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "desaix clark",
+    "entity_name": "Desaix Clark",
     "entity_origin": [
       "704: 9/11, Part 2",
       "transcripts\\731.otter.txt"
@@ -34216,7 +34246,7 @@
   },
   {
     "entity_count": 13,
-    "entity_name": "desiax clark",
+    "entity_name": "Desiax Clark",
     "entity_origin": [
       "378: Formulaic Objections Part 2",
       "401: Formulaic Objections Part 3",
@@ -34492,7 +34522,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "diane feinstein",
+    "entity_name": "Diane Feinstein",
     "entity_origin": [
       "283: January 4-6, 2013",
       "289: January 10-13, 2013",
@@ -34535,7 +34565,7 @@
   },
   {
     "entity_count": 34,
-    "entity_name": "dick cheney",
+    "entity_name": "Dick Cheney",
     "entity_origin": [
       "209: Drunk Hotel Interview",
       "247: Lionel",
@@ -34697,7 +34727,7 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "dinesh d'souza",
+    "entity_name": "Dinesh D'Souza",
     "entity_origin": [
       "192: August 10, 2018",
       "transcripts\\273.autosub.srt",
@@ -34978,7 +35008,7 @@
   },
   {
     "entity_count": 13,
-    "entity_name": "dixie chicks",
+    "entity_name": "Dixie Chicks",
     "entity_origin": [
       "558: May 8-9, 2003",
       "transcripts\\119.autosub.srt",
@@ -34999,7 +35029,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "dj danarchy",
+    "entity_name": "DJ Danarchy",
     "entity_origin": [
       "323: July 19, 2019",
       "324: Bilderberg Speeches",
@@ -35035,7 +35065,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "dolores cannon",
+    "entity_name": "Dolores Cannon",
     "entity_origin": [
       "371: Canonical Space Weirdness",
       "transcripts\\371.autosub.srt"
@@ -35345,7 +35375,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "donald rumsfeld",
+    "entity_name": "Donald Rumsfeld",
     "entity_origin": [
       "transcripts\\152.autosub.srt",
       "transcripts\\572.autosub.srt",
@@ -35364,353 +35394,8 @@
     "is_known_missing": true
   },
   {
-    "entity_count": 882,
-    "entity_name": "donald trump",
-    "entity_origin": [
-      "103: January 17, 2016",
-      "141: March 20-22, 2018",
-      "148: June 1-3, 2009",
-      "150: Alex Jones Attempts A Face Turn",
-      "151: April 16, 2018",
-      "155: January 7-9, 2009",
-      "226: November 7, 2018",
-      "233: November 28, 2018",
-      "251: January 8, 2019",
-      "259: January 27-29, 2019",
-      "270: The Rogan Return",
-      "330: Magic Coins And Sheep Nations",
-      "36: June 29, 2015",
-      "380: December 19-20, 2019",
-      "40: May 10, 2017",
-      "41: May 12, 2017",
-      "45: May 25, 2017",
-      "46: June 18, 2015",
-      "47: June 19-July 5, 2015",
-      "489: October 2-4, 2020",
-      "48: May 31, 2017",
-      "49: July 6-13. 2015",
-      "517: January 5-6, 2021",
-      "52: July 14-21, 2015",
-      "56: July 22-Aug 11, 2015",
-      "574: May 28-29, 2003",
-      "577: July 13, 2021",
-      "57: August 12-16, 2015",
-      "584: August 5, 2021",
-      "5: January 19, 2017",
-      "74: October 4-6, 2015",
-      "76: October 7-11, 2015",
-      "80: October 16-26, 2015",
-      "86: September 22, 2017",
-      "93: 2015 Investigation Last Looks",
-      "Notable Legal Proceedings",
-      "Roger Stone",
-      "Webster Tarpley",
-      "transcripts\\100.autosub.srt",
-      "transcripts\\101.autosub.srt",
-      "transcripts\\102.autosub.srt",
-      "transcripts\\106.autosub.srt",
-      "transcripts\\107.autosub.srt",
-      "transcripts\\108.autosub.srt",
-      "transcripts\\109.autosub.srt",
-      "transcripts\\11.otter.txt",
-      "transcripts\\110.autosub.srt",
-      "transcripts\\111.autosub.srt",
-      "transcripts\\115.autosub.srt",
-      "transcripts\\116.autosub.srt",
-      "transcripts\\127.autosub.srt",
-      "transcripts\\128.autosub.srt",
-      "transcripts\\13.autosub.srt",
-      "transcripts\\13.otter.txt",
-      "transcripts\\130C.autosub.srt",
-      "transcripts\\133.autosub.srt",
-      "transcripts\\135.autosub.srt",
-      "transcripts\\136.autosub.srt",
-      "transcripts\\138.autosub.srt",
-      "transcripts\\139.autosub.srt",
-      "transcripts\\14.autosub.srt",
-      "transcripts\\14.otter.txt",
-      "transcripts\\142.autosub.srt",
-      "transcripts\\149.autosub.srt",
-      "transcripts\\15.autosub.srt",
-      "transcripts\\15.otter.txt",
-      "transcripts\\150.autosub.srt",
-      "transcripts\\154.autosub.srt",
-      "transcripts\\161.autosub.srt",
-      "transcripts\\162.autosub.srt",
-      "transcripts\\163.autosub.srt",
-      "transcripts\\164.autosub.srt",
-      "transcripts\\165.autosub.srt",
-      "transcripts\\17.autosub.srt",
-      "transcripts\\17.otter.txt",
-      "transcripts\\170.autosub.srt",
-      "transcripts\\171.autosub.srt",
-      "transcripts\\18.autosub.srt",
-      "transcripts\\18.otter.txt",
-      "transcripts\\180.autosub.srt",
-      "transcripts\\181.autosub.srt",
-      "transcripts\\182.autosub.srt",
-      "transcripts\\185.autosub.srt",
-      "transcripts\\189.autosub.srt",
-      "transcripts\\19.autosub.srt",
-      "transcripts\\19.otter.txt",
-      "transcripts\\190.autosub.srt",
-      "transcripts\\195.autosub.srt",
-      "transcripts\\197.autosub.srt",
-      "transcripts\\20.autosub.srt",
-      "transcripts\\20.otter.txt",
-      "transcripts\\200.autosub.srt",
-      "transcripts\\201.autosub.srt",
-      "transcripts\\202.autosub.srt",
-      "transcripts\\21.autosub.srt",
-      "transcripts\\214.autosub.srt",
-      "transcripts\\218.autosub.srt",
-      "transcripts\\22.autosub.srt",
-      "transcripts\\225.autosub.srt",
-      "transcripts\\226.autosub.srt",
-      "transcripts\\23.autosub.srt",
-      "transcripts\\230A.autosub.srt",
-      "transcripts\\230C.autosub.srt",
-      "transcripts\\230E.autosub.srt",
-      "transcripts\\231.autosub.srt",
-      "transcripts\\233.autosub.srt",
-      "transcripts\\239.autosub.srt",
-      "transcripts\\24.autosub.srt",
-      "transcripts\\241.autosub.srt",
-      "transcripts\\245.autosub.srt",
-      "transcripts\\247.autosub.srt",
-      "transcripts\\25(Repost).autosub.srt",
-      "transcripts\\25.autosub.srt",
-      "transcripts\\250.autosub.srt",
-      "transcripts\\253.autosub.srt",
-      "transcripts\\255.autosub.srt",
-      "transcripts\\256.autosub.srt",
-      "transcripts\\257.autosub.srt",
-      "transcripts\\259.autosub.srt",
-      "transcripts\\26.autosub.srt",
-      "transcripts\\263.autosub.srt",
-      "transcripts\\27.autosub.srt",
-      "transcripts\\270.autosub.srt",
-      "transcripts\\274.autosub.srt",
-      "transcripts\\277.autosub.srt",
-      "transcripts\\28.autosub.srt",
-      "transcripts\\287.autosub.srt",
-      "transcripts\\290.autosub.srt",
-      "transcripts\\295.autosub.srt",
-      "transcripts\\3.otter.txt",
-      "transcripts\\30.autosub.srt",
-      "transcripts\\304.autosub.srt",
-      "transcripts\\309.autosub.srt",
-      "transcripts\\31.autosub.srt",
-      "transcripts\\310.otter.txt",
-      "transcripts\\317.autosub.srt",
-      "transcripts\\326.autosub.srt",
-      "transcripts\\329.autosub.srt",
-      "transcripts\\33.autosub.srt",
-      "transcripts\\330.autosub.srt",
-      "transcripts\\333.autosub.srt",
-      "transcripts\\337.autosub.srt",
-      "transcripts\\34.autosub.srt",
-      "transcripts\\340.autosub.srt",
-      "transcripts\\342.autosub.srt",
-      "transcripts\\345.autosub.srt",
-      "transcripts\\35.autosub.srt",
-      "transcripts\\350.autosub.srt",
-      "transcripts\\354.autosub.srt",
-      "transcripts\\359.autosub.srt",
-      "transcripts\\36.autosub.srt",
-      "transcripts\\363.autosub.srt",
-      "transcripts\\365.autosub.srt",
-      "transcripts\\37.autosub.srt",
-      "transcripts\\372.autosub.srt",
-      "transcripts\\373.autosub.srt",
-      "transcripts\\374.autosub.srt",
-      "transcripts\\376.autosub.srt",
-      "transcripts\\378.autosub.srt",
-      "transcripts\\378.otter.txt",
-      "transcripts\\38.autosub.srt",
-      "transcripts\\380.autosub.srt",
-      "transcripts\\385.autosub.srt",
-      "transcripts\\388.autosub.srt",
-      "transcripts\\391.autosub.srt",
-      "transcripts\\394.autosub.srt",
-      "transcripts\\395.autosub.srt",
-      "transcripts\\396.autosub.srt",
-      "transcripts\\399.autosub.srt",
-      "transcripts\\4.autosub.srt",
-      "transcripts\\4.otter.txt",
-      "transcripts\\40.autosub.srt",
-      "transcripts\\400.autosub.srt",
-      "transcripts\\403.autosub.srt",
-      "transcripts\\404.autosub.srt",
-      "transcripts\\406.autosub.srt",
-      "transcripts\\407.autosub.srt",
-      "transcripts\\409.autosub.srt",
-      "transcripts\\41.autosub.srt",
-      "transcripts\\410.autosub.srt",
-      "transcripts\\413.autosub.srt",
-      "transcripts\\415.autosub.srt",
-      "transcripts\\425.autosub.srt",
-      "transcripts\\43.autosub.srt",
-      "transcripts\\431.autosub.srt",
-      "transcripts\\433.autosub.srt",
-      "transcripts\\441.autosub.srt",
-      "transcripts\\448.autosub.srt",
-      "transcripts\\45.autosub.srt",
-      "transcripts\\450.autosub.srt",
-      "transcripts\\451.autosub.srt",
-      "transcripts\\452.autosub.srt",
-      "transcripts\\456.autosub.srt",
-      "transcripts\\459.autosub.srt",
-      "transcripts\\46.autosub.srt",
-      "transcripts\\460.autosub.srt",
-      "transcripts\\462.autosub.srt",
-      "transcripts\\463.autosub.srt",
-      "transcripts\\465.autosub.srt",
-      "transcripts\\466.autosub.srt",
-      "transcripts\\47.autosub.srt",
-      "transcripts\\470.autosub.srt",
-      "transcripts\\474.autosub.srt",
-      "transcripts\\475.autosub.srt",
-      "transcripts\\48.autosub.srt",
-      "transcripts\\484.autosub.srt",
-      "transcripts\\488.autosub.srt",
-      "transcripts\\489.autosub.srt",
-      "transcripts\\49.autosub.srt",
-      "transcripts\\493.autosub.srt",
-      "transcripts\\495.autosub.srt",
-      "transcripts\\498.autosub.srt",
-      "transcripts\\499.autosub.srt",
-      "transcripts\\5.autosub.srt",
-      "transcripts\\5.otter.txt",
-      "transcripts\\502.autosub.srt",
-      "transcripts\\503.autosub.srt",
-      "transcripts\\504.autosub.srt",
-      "transcripts\\507.autosub.srt",
-      "transcripts\\508.autosub.srt",
-      "transcripts\\51.autosub.srt",
-      "transcripts\\511.autosub.srt",
-      "transcripts\\514.autosub.srt",
-      "transcripts\\515.autosub.srt",
-      "transcripts\\517.autosub.srt",
-      "transcripts\\518.autosub.srt",
-      "transcripts\\519.autosub.srt",
-      "transcripts\\52.autosub.srt",
-      "transcripts\\520.autosub.srt",
-      "transcripts\\521.autosub.srt",
-      "transcripts\\524.autosub.srt",
-      "transcripts\\525.autosub.srt",
-      "transcripts\\538.autosub.srt",
-      "transcripts\\54.autosub.srt",
-      "transcripts\\540.autosub.srt",
-      "transcripts\\549.autosub.srt",
-      "transcripts\\55.autosub.srt",
-      "transcripts\\551.autosub.srt",
-      "transcripts\\555.autosub.srt",
-      "transcripts\\56.autosub.srt",
-      "transcripts\\565.autosub.srt",
-      "transcripts\\568.autosub.srt",
-      "transcripts\\57.autosub.srt",
-      "transcripts\\574.autosub.srt",
-      "transcripts\\575.autosub.srt",
-      "transcripts\\576.autosub.srt",
-      "transcripts\\577.autosub.srt",
-      "transcripts\\58.autosub.srt",
-      "transcripts\\584.autosub.srt",
-      "transcripts\\59.autosub.srt",
-      "transcripts\\592.autosub.srt",
-      "transcripts\\594.autosub.srt",
-      "transcripts\\6.autosub.srt",
-      "transcripts\\6.otter.txt",
-      "transcripts\\604.autosub.srt",
-      "transcripts\\605.autosub.srt",
-      "transcripts\\607.autosub.srt",
-      "transcripts\\61.autosub.srt",
-      "transcripts\\619.autosub.srt",
-      "transcripts\\62.autosub.srt",
-      "transcripts\\620.autosub.srt",
-      "transcripts\\625.autosub.srt",
-      "transcripts\\629.autosub.srt",
-      "transcripts\\63.autosub.srt",
-      "transcripts\\630.autosub.srt",
-      "transcripts\\631.autosub.srt",
-      "transcripts\\632.autosub.srt",
-      "transcripts\\635.autosub.srt",
-      "transcripts\\637.autosub.srt",
-      "transcripts\\639.autosub.srt",
-      "transcripts\\64.autosub.srt",
-      "transcripts\\642.autosub.srt",
-      "transcripts\\643.autosub.srt",
-      "transcripts\\649.autosub.srt",
-      "transcripts\\66.autosub.srt",
-      "transcripts\\665.autosub.srt",
-      "transcripts\\665.otter.txt",
-      "transcripts\\672.autosub.srt",
-      "transcripts\\676.autosub.srt",
-      "transcripts\\68.autosub.srt",
-      "transcripts\\683.autosub.srt",
-      "transcripts\\687.autosub.srt",
-      "transcripts\\69.autosub.srt",
-      "transcripts\\695.autosub.srt",
-      "transcripts\\697.autosub.srt",
-      "transcripts\\7.autosub.srt",
-      "transcripts\\7.otter.txt",
-      "transcripts\\70.autosub.srt",
-      "transcripts\\705.autosub.srt",
-      "transcripts\\707.autosub.srt",
-      "transcripts\\71.autosub.srt",
-      "transcripts\\717.autosub.srt",
-      "transcripts\\717.welder.txt",
-      "transcripts\\72.autosub.srt",
-      "transcripts\\721.autosub.srt",
-      "transcripts\\721.otter.txt",
-      "transcripts\\721.welder.srt",
-      "transcripts\\721.welder.txt",
-      "transcripts\\722.otter.txt",
-      "transcripts\\725.autosub.srt",
-      "transcripts\\725.otter.txt",
-      "transcripts\\73.autosub.srt",
-      "transcripts\\76.autosub.srt",
-      "transcripts\\77.autosub.srt",
-      "transcripts\\78.autosub.srt",
-      "transcripts\\8.autosub.srt",
-      "transcripts\\80.autosub.srt",
-      "transcripts\\81.autosub.srt",
-      "transcripts\\82.autosub.srt",
-      "transcripts\\83.autosub.srt",
-      "transcripts\\86.autosub.srt",
-      "transcripts\\88.autosub.srt",
-      "transcripts\\89.autosub.srt",
-      "transcripts\\9.autosub.srt",
-      "transcripts\\9.otter.txt",
-      "transcripts\\90.autosub.srt",
-      "transcripts\\91.autosub.srt",
-      "transcripts\\92.autosub.srt",
-      "transcripts\\93.autosub.srt",
-      "transcripts\\94.autosub.srt",
-      "transcripts\\96.autosub.srt",
-      "transcripts\\99.autosub.srt",
-      "transcripts\\S001.autosub.srt",
-      "transcripts\\S011.autosub.srt",
-      "transcripts\\S012.autosub.srt"
-    ],
-    "entity_sourcetexts": [
-      "Donald\r\nTrump",
-      "Donald Trump",
-      "Donald Trump\r\n    ",
-      "Donald Trump's",
-      "The Donald Trump",
-      "the Donald Trump"
-    ],
-    "entity_type": [
-      "PERSON",
-      "FAC"
-    ],
-    "is_existing": true,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 4984,
-    "entity_name": "donald trump\u200f\u200e",
+    "entity_count": 5866,
+    "entity_name": "Donald Trump",
     "entity_origin": [
       "100: January 6-7, 2016",
       "101: January 11, 2016",
@@ -35733,11 +35418,13 @@
       "142: March 23, 2018",
       "143: March 25-31 Part 1",
       "146: April 4, 2018",
+      "148: June 1-3, 2009",
       "149: The Press Conference",
       "150: Alex Jones Attempts A Face Turn",
       "151: April 16, 2018",
       "152: April 18, 2018",
       "154: April 23, 2018",
+      "155: January 7-9, 2009",
       "156: Gaseous Beings and Antiques",
       "162: May 19, 2018",
       "171: Loosh and Let Live",
@@ -35770,6 +35457,7 @@
       "259: January 27-29, 2019",
       "25: Dennis Montgomery Investigation",
       "26: March 30 (Special Report)",
+      "270: The Rogan Return",
       "277: March 15, 2019",
       "282: April 5, 2019",
       "284: April 12, 2019",
@@ -35880,6 +35568,7 @@
       "466: August 5-6, 2020",
       "467: August 7-9, 2020",
       "468: August 11, 2020",
+      "46: June 18, 2015",
       "470: ShadowGate",
       "471: August 14-16, 2020",
       "473: August 20-21, 2020",
@@ -35943,9 +35632,11 @@
       "565: June 10, 2021",
       "56: July 22-Aug 11, 2015",
       "573: July 1, 2021",
+      "574: May 28-29, 2003",
       "577: July 13, 2021",
       "57: August 12-16, 2015",
       "583: August 1, 2021",
+      "584: August 5, 2021",
       "586: August 11-12, 2021",
       "588: August 15, 2021",
       "590: August 24, 2021",
@@ -35980,6 +35671,7 @@
       "70: Sep 29- Oct 3, 2015",
       "71: August 4, 2017",
       "73: August 12, 2017",
+      "74: October 4-6, 2015",
       "76: October 7-11, 2015",
       "77: August 23, 2017",
       "78: October 12-15, 2015",
@@ -35987,6 +35679,7 @@
       "81: September 6-7, 2017",
       "82: Oct. 27-Nov. 9, 2015",
       "83: November 10-12, 2015",
+      "86: September 22, 2017",
       "88: The 2015 Investigation Ends",
       "90: October 10, 2017",
       "91: October 11, 2017",
@@ -35998,6 +35691,7 @@
       "Jakari Jackson",
       "Laura Loomer",
       "Mike Cernovich",
+      "Notable Legal Proceedings",
       "Roger Stone",
       "Satan",
       "Webster Tarpley",
@@ -36010,6 +35704,7 @@
       "transcripts\\102.autosub.srt",
       "transcripts\\103.autosub.srt",
       "transcripts\\105.autosub.srt",
+      "transcripts\\106.autosub.srt",
       "transcripts\\107.autosub.srt",
       "transcripts\\108.autosub.srt",
       "transcripts\\109.autosub.srt",
@@ -36028,13 +35723,18 @@
       "transcripts\\121.autosub.srt",
       "transcripts\\124.autosub.srt",
       "transcripts\\126.autosub.srt",
+      "transcripts\\127.autosub.srt",
+      "transcripts\\128.autosub.srt",
       "transcripts\\13.autosub.srt",
       "transcripts\\13.otter.txt",
+      "transcripts\\130C.autosub.srt",
       "transcripts\\130E.autosub.srt",
       "transcripts\\133.autosub.srt",
       "transcripts\\134.autosub.srt",
       "transcripts\\135.autosub.srt",
+      "transcripts\\136.autosub.srt",
       "transcripts\\137.autosub.srt",
+      "transcripts\\138.autosub.srt",
       "transcripts\\139.autosub.srt",
       "transcripts\\14.autosub.srt",
       "transcripts\\14.otter.txt",
@@ -36064,6 +35764,7 @@
       "transcripts\\167.autosub.srt",
       "transcripts\\17.autosub.srt",
       "transcripts\\17.otter.txt",
+      "transcripts\\170.autosub.srt",
       "transcripts\\171.autosub.srt",
       "transcripts\\173.autosub.srt",
       "transcripts\\174.autosub.srt",
@@ -36074,6 +35775,7 @@
       "transcripts\\18.otter.txt",
       "transcripts\\180.autosub.srt",
       "transcripts\\181.autosub.srt",
+      "transcripts\\182.autosub.srt",
       "transcripts\\183.autosub.srt",
       "transcripts\\185.autosub.srt",
       "transcripts\\186.autosub.srt",
@@ -36095,6 +35797,7 @@
       "transcripts\\20.autosub.srt",
       "transcripts\\20.otter.txt",
       "transcripts\\200.autosub.srt",
+      "transcripts\\201.autosub.srt",
       "transcripts\\202.autosub.srt",
       "transcripts\\205.autosub.srt",
       "transcripts\\209.autosub.srt",
@@ -36118,12 +35821,14 @@
       "transcripts\\230A.autosub.srt",
       "transcripts\\230B.autosub.srt",
       "transcripts\\230C.autosub.srt",
+      "transcripts\\230E.autosub.srt",
       "transcripts\\231.autosub.srt",
       "transcripts\\232.autosub.srt",
       "transcripts\\233.autosub.srt",
       "transcripts\\236.autosub.srt",
       "transcripts\\239.autosub.srt",
       "transcripts\\24.autosub.srt",
+      "transcripts\\241.autosub.srt",
       "transcripts\\242.autosub.srt",
       "transcripts\\245.autosub.srt",
       "transcripts\\246.autosub.srt",
@@ -36140,6 +35845,7 @@
       "transcripts\\259.autosub.srt",
       "transcripts\\26.autosub.srt",
       "transcripts\\261.autosub.srt",
+      "transcripts\\263.autosub.srt",
       "transcripts\\264.autosub.srt",
       "transcripts\\265.autosub.srt",
       "transcripts\\268.autosub.srt",
@@ -36173,6 +35879,7 @@
       "transcripts\\304.autosub.srt",
       "transcripts\\306.autosub.srt",
       "transcripts\\309.autosub.srt",
+      "transcripts\\31.autosub.srt",
       "transcripts\\310.autosub.srt",
       "transcripts\\310.otter.txt",
       "transcripts\\311.autosub.srt",
@@ -36215,6 +35922,7 @@
       "transcripts\\356.autosub.srt",
       "transcripts\\357.autosub.srt",
       "transcripts\\358.autosub.srt",
+      "transcripts\\359.autosub.srt",
       "transcripts\\36.autosub.srt",
       "transcripts\\360.autosub.srt",
       "transcripts\\361.autosub.srt",
@@ -36228,10 +35936,12 @@
       "transcripts\\370.autosub.srt",
       "transcripts\\371.autosub.srt",
       "transcripts\\372.autosub.srt",
+      "transcripts\\373.autosub.srt",
       "transcripts\\374.autosub.srt",
       "transcripts\\375.autosub.srt",
       "transcripts\\376.autosub.srt",
       "transcripts\\377.autosub.srt",
+      "transcripts\\378.autosub.srt",
       "transcripts\\378.otter.txt",
       "transcripts\\379.autosub.srt",
       "transcripts\\38.autosub.srt",
@@ -36289,6 +35999,7 @@
       "transcripts\\43.autosub.srt",
       "transcripts\\431.autosub.srt",
       "transcripts\\432.autosub.srt",
+      "transcripts\\433.autosub.srt",
       "transcripts\\435.autosub.srt",
       "transcripts\\436.autosub.srt",
       "transcripts\\437.autosub.srt",
@@ -36375,6 +36086,7 @@
       "transcripts\\519.autosub.srt",
       "transcripts\\52.autosub.srt",
       "transcripts\\520.autosub.srt",
+      "transcripts\\521.autosub.srt",
       "transcripts\\522.autosub.srt",
       "transcripts\\523.autosub.srt",
       "transcripts\\524.autosub.srt",
@@ -36421,6 +36133,7 @@
       "transcripts\\573.autosub.srt",
       "transcripts\\574.autosub.srt",
       "transcripts\\575.autosub.srt",
+      "transcripts\\576.autosub.srt",
       "transcripts\\577.autosub.srt",
       "transcripts\\58.autosub.srt",
       "transcripts\\583.autosub.srt",
@@ -36433,6 +36146,7 @@
       "transcripts\\591.autosub.srt",
       "transcripts\\592.autosub.srt",
       "transcripts\\593.autosub.srt",
+      "transcripts\\594.autosub.srt",
       "transcripts\\595.autosub.srt",
       "transcripts\\596.autosub.srt",
       "transcripts\\6.autosub.srt",
@@ -36444,6 +36158,7 @@
       "transcripts\\602.otter.txt",
       "transcripts\\603.autosub.srt",
       "transcripts\\604.autosub.srt",
+      "transcripts\\605.autosub.srt",
       "transcripts\\607.autosub.srt",
       "transcripts\\609.autosub.srt",
       "transcripts\\61.autosub.srt",
@@ -36458,6 +36173,7 @@
       "transcripts\\625.autosub.srt",
       "transcripts\\626.autosub.srt",
       "transcripts\\628.autosub.srt",
+      "transcripts\\629.autosub.srt",
       "transcripts\\63.autosub.srt",
       "transcripts\\630.autosub.srt",
       "transcripts\\631.autosub.srt",
@@ -36495,6 +36211,7 @@
       "transcripts\\671.autosub.srt",
       "transcripts\\672.autosub.srt",
       "transcripts\\675.autosub.srt",
+      "transcripts\\676.autosub.srt",
       "transcripts\\677.autosub.srt",
       "transcripts\\679.autosub.srt",
       "transcripts\\68.autosub.srt",
@@ -36589,6 +36306,11 @@
       "transcripts\\S012.autosub.srt"
     ],
     "entity_sourcetexts": [
+      "Donald\r\nTrump",
+      "Donald Trump",
+      "Donald Trump\r\n    ",
+      "Donald Trump's",
+      "The Donald Trump",
       "Trump",
       "Trump\n\n",
       "Trump\r\n",
@@ -36597,16 +36319,18 @@
       "Trump\r\n        ",
       "Trump\r\n-",
       "Trump\r\n-   ",
-      "Trump's"
+      "Trump's",
+      "the Donald Trump"
     ],
     "entity_type": [
       "PERSON",
       "ORG",
       "WORK_OF_ART",
       "PRODUCT",
-      "GPE"
+      "GPE",
+      "FAC"
     ],
-    "is_existing": false,
+    "is_existing": true,
     "is_known_missing": false
   },
   {
@@ -36736,7 +36460,7 @@
   },
   {
     "entity_count": 27,
-    "entity_name": "doug hagmann",
+    "entity_name": "Doug Hagmann",
     "entity_origin": [
       "275: December 23-31, 2012",
       "289: January 10-13, 2013",
@@ -36762,7 +36486,7 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "doug stanhope",
+    "entity_name": "Doug Stanhope",
     "entity_origin": [
       "4: Research and Stand Up",
       "transcripts\\106.autosub.srt",
@@ -36878,7 +36602,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "dr ben marble\u200f\u200e",
+    "entity_name": "Dr Ben Marble\u200f\u200e",
     "entity_origin": [
       "600: September 22, 2021",
       "649: February 14, 2022"
@@ -36978,7 +36702,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "dreamy creamy summer",
+    "entity_name": "Dreamy Creamy Summer",
     "entity_origin": [
       "696: June 24, 2022",
       "697: June 29, 2022",
@@ -37018,7 +36742,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "drew hernandez",
+    "entity_name": "Drew Hernandez",
     "entity_origin": [
       "475: August 24-26, 2020",
       "618: November 15, 2021"
@@ -37071,7 +36795,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "duante wright",
+    "entity_name": "Duante Wright",
     "entity_origin": [
       "549: April 13-14, 2021",
       "550: April 16, 2021"
@@ -37228,7 +36952,7 @@
   },
   {
     "entity_count": 63,
-    "entity_name": "dwight d eisenhower",
+    "entity_name": "Dwight D Eisenhower",
     "entity_origin": [
       "153: More Mark Richards Fun",
       "284: April 12, 2019",
@@ -37285,7 +37009,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "dylan avery",
+    "entity_name": "Dylan Avery",
     "entity_origin": [
       "433: May 12-13, 2020",
       "transcripts\\261.autosub.srt",
@@ -37302,7 +37026,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "dylan matthews",
+    "entity_name": "Dylan Matthews",
     "entity_origin": [
       "318: July 5, 2019",
       "transcripts\\318.autosub.srt"
@@ -37351,7 +37075,7 @@
   },
   {
     "entity_count": 12,
-    "entity_name": "dylann roof",
+    "entity_name": "Dylann Roof",
     "entity_origin": [
       "141: March 20-22, 2018",
       "46: June 18, 2015",
@@ -37980,7 +37704,7 @@
   },
   {
     "entity_count": 111,
-    "entity_name": "eddie bravo",
+    "entity_name": "Eddie Bravo",
     "entity_origin": [
       "166: February 2-3, 2009",
       "20: March 6 & Celebrity Cameos",
@@ -38054,7 +37778,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "eddie page",
+    "entity_name": "Eddie Page",
     "entity_origin": [
       "187: Magic Cheesecloth and Secret Pleiadians",
       "204: Sweary Kerry's Larry",
@@ -38121,7 +37845,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "edgar casey",
+    "entity_name": "Edgar Casey",
     "entity_origin": [
       "291: Feline Contessas And Canine Capitalists",
       "87: Mark Richards Revisited"
@@ -38171,7 +37895,7 @@
   },
   {
     "entity_count": 16,
-    "entity_name": "edward bernays",
+    "entity_name": "Edward Bernays",
     "entity_origin": [
       "306: June 4-5, 2019",
       "564: May 15-20, 2003",
@@ -38246,7 +37970,7 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "edward group",
+    "entity_name": "Edward Group",
     "entity_origin": [
       "141: March 20-22, 2018",
       "387: May 13, 2014",
@@ -38270,7 +37994,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "edward jenner",
+    "entity_name": "Edward Jenner",
     "entity_origin": [
       "259: January 27-29, 2019",
       "transcripts\\259.autosub.srt"
@@ -38320,7 +38044,7 @@
   },
   {
     "entity_count": 16,
-    "entity_name": "edward snowden",
+    "entity_name": "Edward Snowden",
     "entity_origin": [
       "56: July 22-Aug 11, 2015",
       "transcripts\\202.autosub.srt",
@@ -38665,7 +38389,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "elijah schaffer",
+    "entity_name": "Elijah Schaffer",
     "entity_origin": [
       "614: The Purge of Gates",
       "transcripts\\439.autosub.srt",
@@ -39429,7 +39153,7 @@
   },
   {
     "entity_count": 53,
-    "entity_name": "eric holder",
+    "entity_name": "Eric Holder",
     "entity_origin": [
       "119: August 16, 2012",
       "200: Feb. 25-March 1, 2009",
@@ -39485,7 +39209,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "eric prince",
+    "entity_name": "Eric Prince",
     "entity_origin": [
       "164: May 25, 2018",
       "97: October 25, 2017",
@@ -39504,7 +39228,7 @@
   },
   {
     "entity_count": 19,
-    "entity_name": "eric rudolph",
+    "entity_name": "Eric Rudolph",
     "entity_origin": [
       "581: June 3, 2003",
       "transcripts\\581.autosub.srt"
@@ -39539,7 +39263,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "eric taube",
+    "entity_name": "Eric Taube",
     "entity_origin": [
       "Mark Bailen",
       "Pozner Texas Sandy Hook Lawsuit (Pozner v. Jones)",
@@ -39606,7 +39330,7 @@
   },
   {
     "entity_count": 21,
-    "entity_name": "erik prince",
+    "entity_name": "Erik Prince",
     "entity_origin": [
       "148: June 1-3, 2009",
       "transcripts\\110.autosub.srt",
@@ -39898,7 +39622,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "evan mcmullen",
+    "entity_name": "Evan McMullen",
     "entity_origin": [
       "transcripts\\14.autosub.srt",
       "transcripts\\14.otter.txt"
@@ -39949,7 +39673,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "evelyn farkas",
+    "entity_name": "Evelyn Farkas",
     "entity_origin": [
       "290: April 25-26, 2019",
       "transcripts\\290.autosub.srt"
@@ -40091,7 +39815,7 @@
   },
   {
     "entity_count": 19,
-    "entity_name": "ezra levant",
+    "entity_name": "Ezra Levant",
     "entity_origin": [
       "376: December 3-5, 2019",
       "394: January 31, 2020",
@@ -40209,7 +39933,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "faith goldy",
+    "entity_name": "Faith Goldy",
     "entity_origin": [
       "472: August 17-19, 2020",
       "transcripts\\218.autosub.srt",
@@ -41303,7 +41027,7 @@
   },
   {
     "entity_count": 22,
-    "entity_name": "fiona hill",
+    "entity_name": "Fiona Hill",
     "entity_origin": [
       "368: November 11-12, 2019",
       "428: May 1, 2020",
@@ -42481,7 +42205,7 @@
   },
   {
     "entity_count": 62,
-    "entity_name": "francis boyle",
+    "entity_name": "Francis Boyle",
     "entity_origin": [
       "142: March 23, 2018",
       "396: February 6, 2020",
@@ -42538,7 +42262,7 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "frank bates",
+    "entity_name": "Frank Bates",
     "entity_origin": [
       "301: January 24-28, 2013",
       "398: February 9-10, 2020",
@@ -42671,7 +42395,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "frank shin",
+    "entity_name": "Frank Shin",
     "entity_origin": [
       "250: Remote Poisoners And Crypto Bigotry",
       "transcripts\\250.autosub.srt"
@@ -42859,7 +42583,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "fred trump",
+    "entity_name": "Fred Trump",
     "entity_origin": [
       "218: October 17, 2018",
       "transcripts\\218.autosub.srt"
@@ -42945,7 +42669,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "frederica wilson",
+    "entity_name": "Frederica Wilson",
     "entity_origin": [
       "96: October 22-23, 2017",
       "transcripts\\96.autosub.srt"
@@ -43002,7 +42726,7 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "frederick trump",
+    "entity_name": "Frederick Trump",
     "entity_origin": [
       "248: January 2, 2019",
       "transcripts\\110.autosub.srt",
@@ -43184,7 +42908,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "freeway ricky ross",
+    "entity_name": "Freeway Ricky Ross",
     "entity_origin": [
       "227: March 23, 2009",
       "transcripts\\227.autosub.srt"
@@ -43352,7 +43076,7 @@
   },
   {
     "entity_count": 11,
-    "entity_name": "g edward griffin",
+    "entity_name": "G Edward Griffin",
     "entity_origin": [
       "448: June 21-22, 2020",
       "450: June 25-26, 2020",
@@ -43392,7 +43116,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "gabrielle giffords",
+    "entity_name": "Gabrielle Giffords",
     "entity_origin": [
       "298: January 20-23, 2013",
       "transcripts\\141.autosub.srt",
@@ -43509,7 +43233,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "gareth reynolds",
+    "entity_name": "Gareth Reynolds",
     "entity_origin": [
       "716: April 25, 2014",
       "transcripts\\716.autosub.srt"
@@ -43525,7 +43249,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "garrett foster",
+    "entity_name": "Garrett Foster",
     "entity_origin": [
       "462: July 26, 2020",
       "464: July 31-August 1, 2020",
@@ -43544,7 +43268,7 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "garrison keillor",
+    "entity_name": "Garrison Keillor",
     "entity_origin": [
       "108: November 30, 2017",
       "transcripts\\104.autosub.srt",
@@ -43603,7 +43327,7 @@
   },
   {
     "entity_count": 11,
-    "entity_name": "gary allen",
+    "entity_name": "Gary Allen",
     "entity_origin": [
       "155: January 7-9, 2009",
       "168: Alex Vs. Bill Ayers",
@@ -43628,7 +43352,7 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "gary busey",
+    "entity_name": "Gary Busey",
     "entity_origin": [
       "628: July 10, 2003",
       "transcripts\\184.autosub.srt",
@@ -43683,7 +43407,7 @@
   },
   {
     "entity_count": 18,
-    "entity_name": "gary johnson",
+    "entity_name": "Gary Johnson",
     "entity_origin": [
       "498: November 7, 2016",
       "transcripts\\11.autosub.srt",
@@ -43727,7 +43451,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "gary peters",
+    "entity_name": "Gary Peters",
     "entity_origin": [
       "113: February 21-23, 2014",
       "transcripts\\113.autosub.srt"
@@ -43873,7 +43597,7 @@
   },
   {
     "entity_count": 38,
-    "entity_name": "gavin mcinnes",
+    "entity_name": "Gavin McInnes",
     "entity_origin": [
       "106: Drunk Special Report",
       "390: Grab Bag Minisode",
@@ -43920,7 +43644,7 @@
   },
   {
     "entity_count": 21,
-    "entity_name": "gavin newsom",
+    "entity_name": "Gavin Newsom",
     "entity_origin": [
       "452: Jordan Takes The Wheel 4",
       "616: November 9, 2021",
@@ -43978,7 +43702,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "geert wilders",
+    "entity_name": "Geert Wilders",
     "entity_origin": [
       "198: July 22, 2011",
       "transcripts\\109.autosub.srt"
@@ -44183,7 +43907,7 @@
   },
   {
     "entity_count": 21,
-    "entity_name": "genesis communications network",
+    "entity_name": "Genesis Communications Network",
     "entity_origin": [
       "155: January 7-9, 2009",
       "160: January 22-25, 2009",
@@ -44273,7 +43997,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "geoffrey berman",
+    "entity_name": "Geoffrey Berman",
     "entity_origin": [
       "448: June 21-22, 2020",
       "453: July 2, 2020",
@@ -44475,7 +44199,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "george conway",
+    "entity_name": "George Conway",
     "entity_origin": [
       "464: July 31-August 1, 2020",
       "transcripts\\369.autosub.srt"
@@ -44491,7 +44215,7 @@
   },
   {
     "entity_count": 80,
-    "entity_name": "george floyd",
+    "entity_name": "George Floyd",
     "entity_origin": [
       "438: May 26-28, 2020",
       "439: May 29-31, 2020",
@@ -44574,7 +44298,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "george h w bush",
+    "entity_name": "George H W Bush",
     "entity_origin": [
       "130D: Endgame, Part 4",
       "204: Sweary Kerry's Larry"
@@ -44610,7 +44334,7 @@
   },
   {
     "entity_count": 12,
-    "entity_name": "george humphrey",
+    "entity_name": "George Humphrey",
     "entity_origin": [
       "230A: Obama Deception, Part 1",
       "230B: Obama Deception, Part 2",
@@ -44701,7 +44425,7 @@
   },
   {
     "entity_count": 16,
-    "entity_name": "george lucas",
+    "entity_name": "George Lucas",
     "entity_origin": [
       "212: Matrix Schemes and Billions In Liens",
       "481: September 13, 2012",
@@ -44743,7 +44467,7 @@
   },
   {
     "entity_count": 72,
-    "entity_name": "george noory",
+    "entity_name": "George Noory",
     "entity_origin": [
       "331: March 13-14, 2013",
       "567: June 13, 2021",
@@ -44787,7 +44511,7 @@
   },
   {
     "entity_count": 19,
-    "entity_name": "george orwell",
+    "entity_name": "George Orwell",
     "entity_origin": [
       "584: August 5, 2021",
       "651: February 18, 2022",
@@ -44834,7 +44558,7 @@
   },
   {
     "entity_count": 595,
-    "entity_name": "george soros",
+    "entity_name": "George Soros",
     "entity_origin": [
       "10: February 6, 2017",
       "118: January 10-11, 2018",
@@ -45104,7 +44828,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "george strait",
+    "entity_name": "George Strait",
     "entity_origin": [
       "631: December 20, 2021",
       "transcripts\\493.autosub.srt",
@@ -45123,7 +44847,7 @@
   },
   {
     "entity_count": 36,
-    "entity_name": "george w bush",
+    "entity_name": "George W Bush",
     "entity_origin": [
       "130C: Endgame, Part 3",
       "136: March 30-31, 2008",
@@ -45177,7 +44901,7 @@
   },
   {
     "entity_count": 21,
-    "entity_name": "george wallace",
+    "entity_name": "George Wallace",
     "entity_origin": [
       "386: January 8, 2020",
       "617: June 27, 2003",
@@ -45223,7 +44947,7 @@
   },
   {
     "entity_count": 108,
-    "entity_name": "george washington",
+    "entity_name": "George Washington",
     "entity_origin": [
       "199: August 29, 2018",
       "321: February 24-26, 2013",
@@ -45322,7 +45046,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "george webb",
+    "entity_name": "George Webb",
     "entity_origin": [
       "419: Disease Denial and Vampire Affirmation",
       "transcripts\\140.autosub.srt",
@@ -45341,7 +45065,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "george zimmerman",
+    "entity_name": "George Zimmerman",
     "entity_origin": [
       "401: Formulaic Objections Part 3",
       "transcripts\\111.autosub.srt",
@@ -45411,7 +45135,7 @@
   },
   {
     "entity_count": 36,
-    "entity_name": "georgia guidestones",
+    "entity_name": "Georgia Guidestones",
     "entity_origin": [
       "130D: Endgame, Part 4",
       "130E: Endgame, Part 5",
@@ -45445,7 +45169,7 @@
   },
   {
     "entity_count": 62,
-    "entity_name": "gerald celente",
+    "entity_name": "Gerald Celente",
     "entity_origin": [
       "119: August 16, 2012",
       "143: March 25-31 Part 1",
@@ -45680,7 +45404,7 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "ghislaine maxwell",
+    "entity_name": "Ghislaine Maxwell",
     "entity_origin": [
       "453: July 2, 2020",
       "455: July 7-8, 2020",
@@ -45719,7 +45443,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "gina carano",
+    "entity_name": "Gina Carano",
     "entity_origin": [
       "530: February 10-11, 2021",
       "transcripts\\530.autosub.srt"
@@ -45784,7 +45508,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "glen spencer",
+    "entity_name": "Glen Spencer",
     "entity_origin": [
       "186: February 17-18, 2009",
       "transcripts\\617.autosub.srt"
@@ -45831,8 +45555,8 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 526,
-    "entity_name": "glenn beck",
+    "entity_count": 527,
+    "entity_name": "Glenn Beck",
     "entity_origin": [
       "160: January 22-25, 2009",
       "167: February 4-5, 2009",
@@ -45862,6 +45586,7 @@
       "639: January 17, 2022",
       "George Soros",
       "Glenn Beck",
+      "Tucker Carlson",
       "transcripts\\101.autosub.srt",
       "transcripts\\146.autosub.srt",
       "transcripts\\147.autosub.srt",
@@ -46059,7 +45784,7 @@
   },
   {
     "entity_count": 54,
-    "entity_name": "glenn greenwald",
+    "entity_name": "Glenn Greenwald",
     "entity_origin": [
       "391: January 22, 2020",
       "586: August 11-12, 2021",
@@ -46104,7 +45829,7 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "glenn spencer",
+    "entity_name": "Glenn Spencer",
     "entity_origin": [
       "617: June 27, 2003",
       "transcripts\\186.autosub.srt",
@@ -46257,7 +45982,7 @@
   },
   {
     "entity_count": 231,
-    "entity_name": "globalists",
+    "entity_name": "Globalists",
     "entity_origin": [
       "100: January 6-7, 2016",
       "108: November 30, 2017",
@@ -46447,7 +46172,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "gloria allred",
+    "entity_name": "Gloria Allred",
     "entity_origin": [
       "transcripts\\209.autosub.srt",
       "transcripts\\289.autosub.srt",
@@ -46464,7 +46189,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "gloria steinem",
+    "entity_name": "Gloria Steinem",
     "entity_origin": [
       "634: July 11, 2003",
       "transcripts\\13.autosub.srt",
@@ -46894,7 +46619,7 @@
   },
   {
     "entity_count": 16,
-    "entity_name": "graham ledger",
+    "entity_name": "Graham Ledger",
     "entity_origin": [
       "452: Jordan Takes The Wheel 4",
       "transcripts\\452.autosub.srt"
@@ -47609,7 +47334,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "greg abbott",
+    "entity_name": "Greg Abbott",
     "entity_origin": [
       "625: December 5, 2021",
       "transcripts\\449.autosub.srt",
@@ -47680,7 +47405,7 @@
   },
   {
     "entity_count": 37,
-    "entity_name": "greg reese",
+    "entity_name": "Greg Reese",
     "entity_origin": [
       "435: May 18-21, 2020",
       "467: August 7-9, 2020",
@@ -47720,7 +47445,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "gregor mendel",
+    "entity_name": "Gregor Mendel",
     "entity_origin": [
       "314: February 14-15, 2013",
       "transcripts\\314.autosub.srt",
@@ -47755,7 +47480,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "greta thunberg",
+    "entity_name": "Greta Thunberg",
     "entity_origin": [
       "348: September 24-25, 2019",
       "351: Jordan Takes The Wheel 2",
@@ -47773,7 +47498,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "gretchen whitmer",
+    "entity_name": "Gretchen Whitmer",
     "entity_origin": [
       "438: May 26-28, 2020",
       "transcripts\\413.autosub.srt",
@@ -48152,7 +47877,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "gustav mueller",
+    "entity_name": "Gustav Mueller",
     "entity_origin": [
       "104: November 20, 2017",
       "transcripts\\104.autosub.srt"
@@ -48247,7 +47972,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "haile selassie",
+    "entity_name": "Haile Selassie",
     "entity_origin": [
       "458: July 14, 2020",
       "transcripts\\459.autosub.srt"
@@ -48326,7 +48051,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "hamdi ulukaya",
+    "entity_name": "Hamdi Ulukaya",
     "entity_origin": [
       "34: April 25, 2017",
       "Chobani v. Jones",
@@ -48573,7 +48298,7 @@
   },
   {
     "entity_count": 96,
-    "entity_name": "harrison smith",
+    "entity_name": "Harrison Smith",
     "entity_origin": [
       "118: January 10-11, 2018",
       "406: March 1-4, 2020",
@@ -48704,7 +48429,7 @@
   },
   {
     "entity_count": 12,
-    "entity_name": "harry dent",
+    "entity_name": "Harry Dent",
     "entity_origin": [
       "143: March 25-31 Part 1",
       "145: April 2, 2018",
@@ -48788,7 +48513,7 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "harry reid",
+    "entity_name": "Harry Reid",
     "entity_origin": [
       "355: April 18, 2013",
       "632: Christmas Message and More",
@@ -48861,7 +48586,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "hartford van dyke",
+    "entity_name": "Hartford Van Dyke",
     "entity_origin": [
       "381: Making It Big With Silent Weapons",
       "transcripts\\381.autosub.srt"
@@ -48967,7 +48692,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "harvey weinstein",
+    "entity_name": "Harvey Weinstein",
     "entity_origin": [
       "117: January 8, 2018",
       "143: March 25-31 Part 1",
@@ -49417,7 +49142,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "helen duncan",
+    "entity_name": "Helen Duncan",
     "entity_origin": [
       "187: Magic Cheesecloth and Secret Pleiadians",
       "transcripts\\187.autosub.srt"
@@ -49433,7 +49158,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "helen keller",
+    "entity_name": "Helen Keller",
     "entity_origin": [
       "562: May 27, 2021",
       "transcripts\\187.autosub.srt",
@@ -49468,7 +49193,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "helmut schmidt",
+    "entity_name": "Helmut Schmidt",
     "entity_origin": [
       "186: February 17-18, 2009",
       "transcripts\\186.autosub.srt",
@@ -49537,7 +49262,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "henrietta lacks",
+    "entity_name": "Henrietta Lacks",
     "entity_origin": [
       "151: April 16, 2018",
       "580: July 20-21, 2021",
@@ -49581,7 +49306,7 @@
   },
   {
     "entity_count": 22,
-    "entity_name": "henry kissinger",
+    "entity_name": "Henry Kissinger",
     "entity_origin": [
       "138: March 13-15, 2018",
       "230B: Obama Deception, Part 2",
@@ -49628,7 +49353,7 @@
   },
   {
     "entity_count": 12,
-    "entity_name": "henry makow",
+    "entity_name": "Henry Makow",
     "entity_origin": [
       "318: July 5, 2019",
       "634: July 11, 2003",
@@ -49650,7 +49375,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "henry paulson",
+    "entity_name": "Henry Paulson",
     "entity_origin": [
       "transcripts\\230A.autosub.srt",
       "transcripts\\230D.autosub.srt"
@@ -49992,7 +49717,7 @@
   },
   {
     "entity_count": 494,
-    "entity_name": "hillary clinton",
+    "entity_name": "Hillary Clinton",
     "entity_origin": [
       "135: The Wikileaks Press Conference",
       "141: March 20-22, 2018",
@@ -50450,7 +50175,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "hodge twins",
+    "entity_name": "Hodge Twins",
     "entity_origin": [
       "459: July 17, 2020",
       "563: June 2, 2021"
@@ -50466,7 +50191,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "holden matthews",
+    "entity_name": "Holden Matthews",
     "entity_origin": [
       "287: April 15-18, 2019",
       "transcripts\\287.autosub.srt"
@@ -50892,7 +50617,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "honr network",
+    "entity_name": "HONR Network",
     "entity_origin": [
       "279: Formulaic Objections",
       "Leonard Pozner"
@@ -50904,7 +50629,7 @@
       "ORG"
     ],
     "is_existing": false,
-    "is_known_missing": true
+    "is_known_missing": false
   },
   {
     "entity_count": 3,
@@ -51168,7 +50893,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "howard dean",
+    "entity_name": "Howard Dean",
     "entity_origin": [
       "78: October 12-15, 2015",
       "transcripts\\185.autosub.srt",
@@ -51185,7 +50910,7 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "howard hughes",
+    "entity_name": "Howard Hughes",
     "entity_origin": [
       "476: Moon Colonies Part 2",
       "transcripts\\118.autosub.srt",
@@ -51277,7 +51002,7 @@
   },
   {
     "entity_count": 54,
-    "entity_name": "howard stern",
+    "entity_name": "Howard Stern",
     "entity_origin": [
       "321: February 24-26, 2013",
       "513: December 18, 2020",
@@ -51854,7 +51579,7 @@
   },
   {
     "entity_count": 20,
-    "entity_name": "ian fleming",
+    "entity_name": "Ian Fleming",
     "entity_origin": [
       "187: Magic Cheesecloth and Secret Pleiadians",
       "425: April 23-24, 2020",
@@ -52007,7 +51732,7 @@
   },
   {
     "entity_count": 16,
-    "entity_name": "ilhan omar",
+    "entity_name": "Ilhan Omar",
     "entity_origin": [
       "264: February 11-13, 2019",
       "281: April 4, 2019",
@@ -52038,7 +51763,7 @@
   },
   {
     "entity_count": 220,
-    "entity_name": "illuminati",
+    "entity_name": "Illuminati",
     "entity_origin": [
       "141: March 20-22, 2018",
       "155: January 7-9, 2009",
@@ -52781,7 +52506,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "infowars nightly news",
+    "entity_name": "InfoWars Nightly News",
     "entity_origin": [
       "265: September 1, 2011",
       "David Knight",
@@ -53292,6 +53017,24 @@
   },
   {
     "entity_count": 2,
+    "entity_name": "international airport",
+    "entity_origin": [
+      "transcripts\\703.autosub.srt",
+      "transcripts\\86.autosub.srt"
+    ],
+    "entity_sourcetexts": [
+      "International Airport",
+      "an International Airport"
+    ],
+    "entity_type": [
+      "EVENT",
+      "FAC"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
+    "entity_count": 2,
     "entity_name": "international bank",
     "entity_origin": [
       "transcripts\\230A.autosub.srt",
@@ -53770,7 +53513,7 @@
   },
   {
     "entity_count": 11,
-    "entity_name": "irvin baxter",
+    "entity_name": "Irvin Baxter",
     "entity_origin": [
       "182: Pay-To-Play Satan Fears",
       "transcripts\\182.autosub.srt"
@@ -53804,7 +53547,7 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "isaac asimov",
+    "entity_name": "Isaac Asimov",
     "entity_origin": [
       "193: Big Skeletons and Pencil Ink",
       "9: Joe Rogan Appearance",
@@ -53827,7 +53570,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "isaac ben israel",
+    "entity_name": "Isaac Ben Israel",
     "entity_origin": [
       "421: April 16, 2020",
       "transcripts\\421.autosub.srt"
@@ -53862,7 +53605,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "isaac kappy",
+    "entity_name": "Isaac Kappy",
     "entity_origin": [
       "188: August 1, 2018",
       "transcripts\\188.autosub.srt",
@@ -54105,7 +53848,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "ivan raiklin",
+    "entity_name": "Ivan Raiklin",
     "entity_origin": [
       "399: February 12-14, 2020",
       "515: December 28-29, 2020"
@@ -54121,7 +53864,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "ivanka trump",
+    "entity_name": "Ivanka Trump",
     "entity_origin": [
       "441: June 3-4, 2020",
       "transcripts\\61.autosub.srt"
@@ -54171,7 +53914,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "ivory hecker",
+    "entity_name": "Ivory Hecker",
     "entity_origin": [
       "584: August 5, 2021",
       "transcripts\\584.autosub.srt",
@@ -54208,7 +53951,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "j edgar hoover",
+    "entity_name": "J Edgar Hoover",
     "entity_origin": [
       "transcripts\\509.autosub.srt",
       "transcripts\\551.autosub.srt",
@@ -54315,7 +54058,7 @@
   },
   {
     "entity_count": 33,
-    "entity_name": "jack dorsey",
+    "entity_name": "Jack Dorsey",
     "entity_origin": [
       "209: Drunk Hotel Interview",
       "287: April 15-18, 2019",
@@ -54357,7 +54100,7 @@
   },
   {
     "entity_count": 16,
-    "entity_name": "jack mclamb",
+    "entity_name": "Jack McLamb",
     "entity_origin": [
       "215: March 11-12, 2009",
       "219: March 13, 2009",
@@ -54453,7 +54196,7 @@
   },
   {
     "entity_count": 13,
-    "entity_name": "jack posobiec",
+    "entity_name": "Jack Posobiec",
     "entity_origin": [
       "143: March 25-31 Part 1",
       "149: The Press Conference",
@@ -54516,7 +54259,7 @@
   },
   {
     "entity_count": 29,
-    "entity_name": "jack swagger",
+    "entity_name": "Jack Swagger",
     "entity_origin": [
       "286: Wrestling With Disappointment",
       "317: February 19-20, 2013",
@@ -54655,7 +54398,7 @@
   },
   {
     "entity_count": 15,
-    "entity_name": "jacquelyn blott",
+    "entity_name": "Jacquelyn Blott",
     "entity_origin": [
       "Bradley Reeves",
       "Pozner Texas Sandy Hook Lawsuit (Pozner v. Jones)",
@@ -54690,7 +54433,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "jair bolsonaro",
+    "entity_name": "Jair Bolsonaro",
     "entity_origin": [
       "253: January 15, 2019",
       "428: May 1, 2020"
@@ -54706,7 +54449,7 @@
   },
   {
     "entity_count": 46,
-    "entity_name": "jakari jackson",
+    "entity_name": "Jakari Jackson",
     "entity_origin": [
       "Jakari Jackson",
       "transcripts\\118.autosub.srt",
@@ -54756,7 +54499,7 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "jake ducey",
+    "entity_name": "Jake Ducey",
     "entity_origin": [
       "620: November 23, 2021",
       "621: Reset Wars: Episode 1",
@@ -54794,7 +54537,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "jake tapper",
+    "entity_name": "Jake Tapper",
     "entity_origin": [
       "118: January 10-11, 2018",
       "transcripts\\16.otter.txt",
@@ -54832,7 +54575,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "jalen martin",
+    "entity_name": "Jalen Martin",
     "entity_origin": [
       "132: Minisode",
       "transcripts\\132.autosub.srt"
@@ -54960,7 +54703,7 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "james brown",
+    "entity_name": "James Brown",
     "entity_origin": [
       "396: February 6, 2020",
       "transcripts\\23.autosub.srt",
@@ -55003,7 +54746,7 @@
   },
   {
     "entity_count": 15,
-    "entity_name": "james comey",
+    "entity_name": "James Comey",
     "entity_origin": [
       "152: April 18, 2018",
       "40: May 10, 2017",
@@ -55029,7 +54772,7 @@
   },
   {
     "entity_count": 17,
-    "entity_name": "james david manning",
+    "entity_name": "James David Manning",
     "entity_origin": [
       "232: Reverend Manning",
       "294: January 15-16, 2013",
@@ -55115,7 +54858,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "james fetzer",
+    "entity_name": "James Fetzer",
     "entity_origin": [
       "324: Bilderberg Speeches",
       "The Sandy Hook Elementary Massacre",
@@ -55227,7 +54970,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "james lovelock",
+    "entity_name": "James Lovelock",
     "entity_origin": [
       "337: August 28-29, 2019",
       "transcripts\\337.autosub.srt",
@@ -55296,7 +55039,7 @@
   },
   {
     "entity_count": 99,
-    "entity_name": "james o'keefe",
+    "entity_name": "James O'Keefe",
     "entity_origin": [
       "123: March 18, 2008",
       "301: January 24-28, 2013",
@@ -55403,7 +55146,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "james robison",
+    "entity_name": "James Robison",
     "entity_origin": [
       "411: Jordan Takes The Wheel 3",
       "transcripts\\411.autosub.srt"
@@ -55442,7 +55185,7 @@
   },
   {
     "entity_count": 21,
-    "entity_name": "james tracy",
+    "entity_name": "James Tracy",
     "entity_origin": [
       "288: January 7-9, 2013",
       "297: January 17-18, 2013",
@@ -55468,7 +55211,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "james trainor",
+    "entity_name": "James Trainor",
     "entity_origin": [
       "506: November 22-24, 2020",
       "transcripts\\506.autosub.srt"
@@ -55484,7 +55227,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "james warburg",
+    "entity_name": "James Warburg",
     "entity_origin": [
       "130A: Endgame, Part 1",
       "transcripts\\416.autosub.srt"
@@ -55500,7 +55243,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "james yeager",
+    "entity_name": "James Yeager",
     "entity_origin": [
       "331: March 13-14, 2013",
       "transcripts\\331.autosub.srt"
@@ -55532,7 +55275,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "jamie raskin",
+    "entity_name": "Jamie Raskin",
     "entity_origin": [
       "530: February 10-11, 2021",
       "transcripts\\530.autosub.srt",
@@ -55565,7 +55308,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "jan morgan",
+    "entity_name": "Jan Morgan",
     "entity_origin": [
       "272: December 20, 2012",
       "transcripts\\273.autosub.srt"
@@ -55667,7 +55410,7 @@
   },
   {
     "entity_count": 12,
-    "entity_name": "janet napolitano",
+    "entity_name": "Janet Napolitano",
     "entity_origin": [
       "367: April 23, 2013",
       "636: April 27, 2009",
@@ -55686,7 +55429,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "janet phelan",
+    "entity_name": "Janet Phelan",
     "entity_origin": [
       "198: July 22, 2011",
       "transcripts\\198.autosub.srt"
@@ -55702,7 +55445,7 @@
   },
   {
     "entity_count": 13,
-    "entity_name": "janet reno",
+    "entity_name": "Janet Reno",
     "entity_origin": [
       "434: Bill Cooper Covers OKC Part 1",
       "transcripts\\172.autosub.srt",
@@ -55727,7 +55470,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "janet woodcock",
+    "entity_name": "Janet Woodcock",
     "entity_origin": [
       "593: September 2, 2021",
       "transcripts\\593.autosub.srt"
@@ -55827,7 +55570,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "jaquari jackson",
+    "entity_name": "Jaquari Jackson",
     "entity_origin": [
       "349: April 15-16, 2013",
       "355: April 18, 2013",
@@ -55844,7 +55587,7 @@
   },
   {
     "entity_count": 33,
-    "entity_name": "jar jar binks",
+    "entity_name": "Jar Jar Binks",
     "entity_origin": [
       "transcripts\\141.autosub.srt",
       "transcripts\\145.autosub.srt",
@@ -55887,7 +55630,7 @@
   },
   {
     "entity_count": 11,
-    "entity_name": "jared holt",
+    "entity_name": "Jared Holt",
     "entity_origin": [
       "197: Jared Holt from the Sh!tpost Podcast",
       "304: May 30-31, 2019",
@@ -55909,7 +55652,7 @@
   },
   {
     "entity_count": 22,
-    "entity_name": "jared kushner",
+    "entity_name": "Jared Kushner",
     "entity_origin": [
       "441: June 3-4, 2020",
       "631: December 20, 2021",
@@ -55957,7 +55700,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "jason bermis",
+    "entity_name": "Jason Bermis",
     "entity_origin": [
       "167: February 4-5, 2009",
       "203: March 2-4, 2009",
@@ -56027,7 +55770,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "jason goodman",
+    "entity_name": "Jason Goodman",
     "entity_origin": [
       "436: May 22, 2020",
       "transcripts\\370.autosub.srt",
@@ -56044,7 +55787,7 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "jason jones",
+    "entity_name": "Jason Jones",
     "entity_origin": [
       "416: April 2, 2020",
       "523: January 18-19, 2021",
@@ -56100,7 +55843,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "jason miller",
+    "entity_name": "Jason Miller",
     "entity_origin": [
       "635: January 6-7, 2022",
       "transcripts\\635.autosub.srt"
@@ -56166,7 +55909,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "javon pulitzer",
+    "entity_name": "Javon Pulitzer",
     "entity_origin": [
       "642: January 24, 2022",
       "transcripts\\642.autosub.srt"
@@ -56230,7 +55973,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "jean claude",
+    "entity_name": "Jean Claude",
     "entity_origin": [
       "479: The Devil Went Down To Kiev",
       "transcripts\\163.autosub.srt",
@@ -56281,7 +56024,7 @@
   },
   {
     "entity_count": 11,
-    "entity_name": "jeff bezos",
+    "entity_name": "Jeff Bezos",
     "entity_origin": [
       "112: December 15, 2017",
       "631: December 20, 2021",
@@ -56324,7 +56067,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "jeff charlotte",
+    "entity_name": "Jeff Charlotte",
     "entity_origin": [
       "601: June 16, 2003",
       "transcripts\\601.autosub.srt"
@@ -56429,7 +56172,7 @@
   },
   {
     "entity_count": 16,
-    "entity_name": "jeff sessions",
+    "entity_name": "Jeff Sessions",
     "entity_origin": [
       "106: Drunk Special Report",
       "138: March 13-15, 2018",
@@ -56457,7 +56200,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "jeff zucker",
+    "entity_name": "Jeff Zucker",
     "entity_origin": [
       "508: December 1-2, 2020",
       "644: February 2, 2022",
@@ -56535,7 +56278,7 @@
   },
   {
     "entity_count": 67,
-    "entity_name": "jeffrey epstein",
+    "entity_name": "Jeffrey Epstein",
     "entity_origin": [
       "531: February 14, 2021",
       "560: May 12-13, 2003",
@@ -56624,7 +56367,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "jeffrey smith",
+    "entity_name": "Jeffrey Smith",
     "entity_origin": [
       "123: March 18, 2008",
       "transcripts\\123.autosub.srt"
@@ -56742,7 +56485,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "jennifer lawrence",
+    "entity_name": "Jennifer Lawrence",
     "entity_origin": [
       "511: The 12/12 Rallies",
       "transcripts\\511.autosub.srt"
@@ -56830,7 +56573,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "jeremy mackenzie",
+    "entity_name": "Jeremy Mackenzie",
     "entity_origin": [
       "647: February 8, 2022",
       "649: February 14, 2022",
@@ -56881,7 +56624,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "jerome bell",
+    "entity_name": "Jerome Bell",
     "entity_origin": [
       "404: Mr. Jones Goes To CPAC",
       "transcripts\\404.autosub.srt"
@@ -56897,7 +56640,7 @@
   },
   {
     "entity_count": 48,
-    "entity_name": "jerome corsi",
+    "entity_name": "Jerome Corsi",
     "entity_origin": [
       "113: February 21-23, 2014",
       "149: The Press Conference",
@@ -57040,7 +56783,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "jerry nadler",
+    "entity_name": "Jerry Nadler",
     "entity_origin": [
       "391: January 22, 2020",
       "Notable Legal Proceedings",
@@ -57080,7 +56823,7 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "jesse benton",
+    "entity_name": "Jesse Benton",
     "entity_origin": [
       "481: September 13, 2012",
       "515: December 28-29, 2020",
@@ -57117,7 +56860,7 @@
   },
   {
     "entity_count": 46,
-    "entity_name": "jesse james",
+    "entity_name": "Jesse James",
     "entity_origin": [
       "20: March 6 & Celebrity Cameos",
       "498: November 7, 2016",
@@ -57140,7 +56883,7 @@
   },
   {
     "entity_count": 19,
-    "entity_name": "jesse lee peterson",
+    "entity_name": "Jesse Lee Peterson",
     "entity_origin": [
       "465: August 3-4, 2020",
       "transcripts\\111.autosub.srt",
@@ -57217,7 +56960,7 @@
   },
   {
     "entity_count": 38,
-    "entity_name": "jesse ventura",
+    "entity_name": "Jesse Ventura",
     "entity_origin": [
       "230C: Obama Deception, Part 3",
       "286: Wrestling With Disappointment",
@@ -57544,7 +57287,7 @@
   },
   {
     "entity_count": 216,
-    "entity_name": "jim bakker",
+    "entity_name": "Jim Bakker",
     "entity_origin": [
       "175: Giants And Bonus Potatoes",
       "180: Heresy and God Kings",
@@ -57691,7 +57434,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "jim brewer",
+    "entity_name": "Jim Brewer",
     "entity_origin": [
       "631: December 20, 2021",
       "transcripts\\715.welder.txt"
@@ -57707,7 +57450,7 @@
   },
   {
     "entity_count": 37,
-    "entity_name": "jim carrey",
+    "entity_name": "Jim Carrey",
     "entity_origin": [
       "336: March 24-26, 2013",
       "595: Boulder Missiles and Gettysburg Nukes",
@@ -57809,7 +57552,7 @@
   },
   {
     "entity_count": 66,
-    "entity_name": "jim fetzer",
+    "entity_name": "Jim Fetzer",
     "entity_origin": [
       "291: Feline Contessas And Canine Capitalists",
       "297: January 17-18, 2013",
@@ -57855,7 +57598,7 @@
   },
   {
     "entity_count": 14,
-    "entity_name": "jim garrow",
+    "entity_name": "Jim Garrow",
     "entity_origin": [
       "298: January 20-23, 2013",
       "303: January 29-31, 2013",
@@ -57892,7 +57635,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "jim humble",
+    "entity_name": "Jim Humble",
     "entity_origin": [
       "405: Root Races and Terminated Spiders",
       "419: Disease Denial and Vampire Affirmation",
@@ -57911,7 +57654,7 @@
   },
   {
     "entity_count": 22,
-    "entity_name": "jim jordan",
+    "entity_name": "Jim Jordan",
     "entity_origin": [
       "406: March 1-4, 2020",
       "441: June 3-4, 2020",
@@ -57974,7 +57717,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "jim shepherd",
+    "entity_name": "Jim Shepherd",
     "entity_origin": [
       "transcripts\\720.welder.srt",
       "transcripts\\720.welder.txt"
@@ -58163,7 +57906,7 @@
   },
   {
     "entity_count": 19,
-    "entity_name": "jimmy dore",
+    "entity_name": "Jimmy Dore",
     "entity_origin": [
       "526: January 28-31, 2021",
       "transcripts\\117.autosub.srt",
@@ -58269,7 +58012,7 @@
   },
   {
     "entity_count": 22,
-    "entity_name": "jimmy kimmel",
+    "entity_name": "Jimmy Kimmel",
     "entity_origin": [
       "85: September 20-21, 2017",
       "86: September 22, 2017",
@@ -58336,20 +58079,29 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 5,
-    "entity_name": "jo ann richards",
+    "entity_count": 16,
+    "entity_name": "Jo Ann Richards",
     "entity_origin": [
       "280: Raptor Weddings and Sardinian Spiders",
       "291: Feline Contessas And Canine Capitalists",
       "302: Discernment Overload",
       "353: Mark Richards Pt. 11",
-      "Mark Richards"
+      "Mark Richards",
+      "transcripts\\153.autosub.srt",
+      "transcripts\\156.autosub.srt",
+      "transcripts\\217.autosub.srt",
+      "transcripts\\280.autosub.srt",
+      "transcripts\\291.autosub.srt",
+      "transcripts\\405.autosub.srt",
+      "transcripts\\79.autosub.srt"
     ],
     "entity_sourcetexts": [
-      "Jo Ann Richards"
+      "Jo Ann Richards",
+      "Joanne Richards"
     ],
     "entity_type": [
-      "PERSON"
+      "PERSON",
+      "ORG"
     ],
     "is_existing": false,
     "is_known_missing": true
@@ -58389,7 +58141,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "joanie turner",
+    "entity_name": "Joanie Turner",
     "entity_origin": [
       "81: September 6-7, 2017",
       "transcripts\\81.autosub.srt"
@@ -58440,28 +58192,6 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 11,
-    "entity_name": "joanne richards",
-    "entity_origin": [
-      "transcripts\\153.autosub.srt",
-      "transcripts\\156.autosub.srt",
-      "transcripts\\217.autosub.srt",
-      "transcripts\\280.autosub.srt",
-      "transcripts\\291.autosub.srt",
-      "transcripts\\405.autosub.srt",
-      "transcripts\\79.autosub.srt"
-    ],
-    "entity_sourcetexts": [
-      "Joanne Richards"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ],
-    "is_existing": true,
-    "is_known_missing": false
-  },
-  {
     "entity_count": 2,
     "entity_name": "joaquin castro",
     "entity_origin": [
@@ -58501,7 +58231,7 @@
   },
   {
     "entity_count": 82,
-    "entity_name": "joe arpaio",
+    "entity_name": "Joe Arpaio",
     "entity_origin": [
       "25: Dennis Montgomery Investigation",
       "370: November 14-15, 2019",
@@ -58545,7 +58275,7 @@
   },
   {
     "entity_count": 11,
-    "entity_name": "joe banister",
+    "entity_name": "Joe Banister",
     "entity_origin": [
       "304: May 30-31, 2019",
       "326: July 26-29, 2019",
@@ -58685,7 +58415,7 @@
   },
   {
     "entity_count": 22,
-    "entity_name": "joe scarborough",
+    "entity_name": "Joe Scarborough",
     "entity_origin": [
       "110: December 5, 2017",
       "322: July 16-17, 2019",
@@ -58709,7 +58439,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "joel gilbert",
+    "entity_name": "Joel Gilbert",
     "entity_origin": [
       "143: March 25-31 Part 1",
       "transcripts\\128.autosub.srt",
@@ -58743,7 +58473,7 @@
   },
   {
     "entity_count": 40,
-    "entity_name": "joel skousen",
+    "entity_name": "Joel Skousen",
     "entity_origin": [
       "100: January 6-7, 2016",
       "120: January 27, 2016",
@@ -58786,7 +58516,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "joel wallach",
+    "entity_name": "Joel Wallach",
     "entity_origin": [
       "Alex Jones",
       "transcripts\\186.autosub.srt",
@@ -58842,7 +58572,7 @@
   },
   {
     "entity_count": 13,
-    "entity_name": "john andrews",
+    "entity_name": "John Andrews",
     "entity_origin": [
       "617: June 27, 2003",
       "transcripts\\617.autosub.srt"
@@ -58982,7 +58712,7 @@
   },
   {
     "entity_count": 109,
-    "entity_name": "john birch society",
+    "entity_name": "John Birch Society",
     "entity_origin": [
       "234: March 26, 2009",
       "238: Coach Dave",
@@ -59088,7 +58818,7 @@
   },
   {
     "entity_count": 11,
-    "entity_name": "john boehner",
+    "entity_name": "John Boehner",
     "entity_origin": [
       "57: August 12-16, 2015",
       "transcripts\\116.autosub.srt",
@@ -59108,7 +58838,7 @@
   },
   {
     "entity_count": 54,
-    "entity_name": "john bolton",
+    "entity_name": "John Bolton",
     "entity_origin": [
       "142: March 23, 2018",
       "342: September 6-11, 2019",
@@ -59166,7 +58896,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "john bowne",
+    "entity_name": "John Bowne",
     "entity_origin": [
       "306: June 4-5, 2019",
       "475: August 24-26, 2020",
@@ -59185,7 +58915,7 @@
   },
   {
     "entity_count": 36,
-    "entity_name": "john brennan",
+    "entity_name": "John Brennan",
     "entity_origin": [
       "399: February 12-14, 2020",
       "433: May 12-13, 2020",
@@ -59375,7 +59105,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "john dewey",
+    "entity_name": "John Dewey",
     "entity_origin": [
       "605: June 17, 2003",
       "transcripts\\110.autosub.srt",
@@ -59596,7 +59326,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "john kelly",
+    "entity_name": "John Kelly",
     "entity_origin": [
       "96: October 22-23, 2017",
       "transcripts\\304.autosub.srt",
@@ -59616,7 +59346,7 @@
   },
   {
     "entity_count": 40,
-    "entity_name": "john kerry",
+    "entity_name": "John Kerry",
     "entity_origin": [
       "143: March 25-31 Part 1",
       "156: Gaseous Beings and Antiques",
@@ -59681,7 +59411,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "john lennon",
+    "entity_name": "John Lennon",
     "entity_origin": [
       "107: December 12, 2014",
       "transcripts\\392.autosub.srt",
@@ -59823,7 +59553,7 @@
   },
   {
     "entity_count": 37,
-    "entity_name": "john mcafee",
+    "entity_name": "John McAfee",
     "entity_origin": [
       "569: June 23, 2021",
       "570: June 24, 2021",
@@ -59851,7 +59581,7 @@
   },
   {
     "entity_count": 45,
-    "entity_name": "john mccain",
+    "entity_name": "John McCain",
     "entity_origin": [
       "160: January 22-25, 2009",
       "162: May 19, 2018",
@@ -60000,7 +59730,7 @@
   },
   {
     "entity_count": 34,
-    "entity_name": "john oliver",
+    "entity_name": "John Oliver",
     "entity_origin": [
       "85: September 20-21, 2017",
       "transcripts\\125.autosub.srt",
@@ -60031,7 +59761,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "john p holdren",
+    "entity_name": "John P Holdren",
     "entity_origin": [
       "585: August 8, 2021",
       "transcripts\\344.autosub.srt"
@@ -60066,7 +59796,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "john paul stevens",
+    "entity_name": "John Paul Stevens",
     "entity_origin": [
       "143: March 25-31 Part 1",
       "144: March 25-31, Part 2",
@@ -60083,7 +59813,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "john podesta",
+    "entity_name": "John Podesta",
     "entity_origin": [
       "transcripts\\18.otter.txt",
       "transcripts\\9.otter.txt"
@@ -60137,26 +59867,8 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 14,
-    "entity_name": "john rapoport",
-    "entity_origin": [
-      "transcripts\\11.otter.txt",
-      "transcripts\\12.otter.txt",
-      "transcripts\\13.otter.txt",
-      "transcripts\\14.otter.txt"
-    ],
-    "entity_sourcetexts": [
-      "John Rapoport"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 56,
-    "entity_name": "john rappaport",
+    "entity_count": 70,
+    "entity_name": "John Rappaport",
     "entity_origin": [
       "233: November 28, 2018",
       "298: January 20-23, 2013",
@@ -60174,6 +59886,7 @@
       "transcripts\\12.otter.txt",
       "transcripts\\128.autosub.srt",
       "transcripts\\13.otter.txt",
+      "transcripts\\14.otter.txt",
       "transcripts\\20.otter.txt",
       "transcripts\\213.autosub.srt",
       "transcripts\\24.autosub.srt",
@@ -60204,6 +59917,7 @@
       "transcripts\\98.autosub.srt"
     ],
     "entity_sourcetexts": [
+      "John Rapoport",
       "John Rappaport",
       "John Rappaport's",
       "a John Rappaport",
@@ -60235,7 +59949,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "john ratcliffe",
+    "entity_name": "John Ratcliffe",
     "entity_origin": [
       "326: July 26-29, 2019",
       "transcripts\\326.autosub.srt"
@@ -60251,7 +59965,7 @@
   },
   {
     "entity_count": 23,
-    "entity_name": "john roberts",
+    "entity_name": "John Roberts",
     "entity_origin": [
       "424: April 21-22, 2020",
       "515: December 28-29, 2020",
@@ -60416,7 +60130,7 @@
   },
   {
     "entity_count": 32,
-    "entity_name": "john sullivan",
+    "entity_name": "John Sullivan",
     "entity_origin": [
       "519: January 10-11, 2021",
       "522: January 14-17, 2021",
@@ -60569,7 +60283,7 @@
   },
   {
     "entity_count": 40,
-    "entity_name": "john wayne",
+    "entity_name": "John Wayne",
     "entity_origin": [
       "28: How Not To Cover Alex Jones",
       "680: July 31-August 1, 2003",
@@ -60657,7 +60371,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "john wilkes booth",
+    "entity_name": "John Wilkes Booth",
     "entity_origin": [
       "312: February 10-13, 2013",
       "445: June 12, 2020",
@@ -60775,7 +60489,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "johnny depp",
+    "entity_name": "Johnny Depp",
     "entity_origin": [
       "transcripts\\4.otter.txt",
       "transcripts\\58.autosub.srt"
@@ -60809,7 +60523,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "johnny rotten",
+    "entity_name": "Johnny Rotten",
     "entity_origin": [
       "491: October 12, 2020",
       "transcripts\\491.autosub.srt"
@@ -61061,7 +60775,7 @@
   },
   {
     "entity_count": 38,
-    "entity_name": "jon ronson",
+    "entity_name": "Jon Ronson",
     "entity_origin": [
       "615: November 8, 2021?",
       "transcripts\\116.autosub.srt",
@@ -61101,7 +60815,7 @@
   },
   {
     "entity_count": 13,
-    "entity_name": "jon stewart",
+    "entity_name": "Jon Stewart",
     "entity_origin": [
       "485: September 23-24, 2020",
       "transcripts\\11.otter.txt",
@@ -61126,7 +60840,7 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "jonas salk",
+    "entity_name": "Jonas Salk",
     "entity_origin": [
       "392: January 24, 2020",
       "transcripts\\392.autosub.srt",
@@ -61147,7 +60861,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "jonathan cain",
+    "entity_name": "Jonathan Cain",
     "entity_origin": [
       "180: Heresy and God Kings",
       "transcripts\\180.autosub.srt"
@@ -61163,7 +60877,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "jonathan davis",
+    "entity_name": "Jonathan Davis",
     "entity_origin": [
       "134: Post-Tribulation Rapture?",
       "transcripts\\134.autosub.srt"
@@ -61232,7 +60946,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "jonbenet ramsey",
+    "entity_name": "Jonbenet Ramsey",
     "entity_origin": [
       "623: July 2-3, 2003",
       "transcripts\\623.autosub.srt"
@@ -61406,7 +61120,7 @@
   },
   {
     "entity_count": 14,
-    "entity_name": "jordan holmes",
+    "entity_name": "Jordan Holmes",
     "entity_origin": [
       "Jordan Holmes",
       "Knowledge Fight",
@@ -61625,7 +61339,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "jordan sather",
+    "entity_name": "Jordan Sather",
     "entity_origin": [
       "353: Mark Richards Pt. 11",
       "391: January 22, 2020"
@@ -61683,7 +61397,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "josef mengele",
+    "entity_name": "Josef Mengele",
     "entity_origin": [
       "transcripts\\130D.autosub.srt",
       "transcripts\\466.autosub.srt",
@@ -61740,7 +61454,7 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "joseph farah",
+    "entity_name": "Joseph Farah",
     "entity_origin": [
       "transcripts\\191.autosub.srt",
       "transcripts\\314.autosub.srt",
@@ -61760,7 +61474,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "joseph farrah",
+    "entity_name": "Joseph Farrah",
     "entity_origin": [
       "314: February 14-15, 2013",
       "transcripts\\716.welder.txt"
@@ -61776,7 +61490,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "joseph farrell",
+    "entity_name": "Joseph Farrell",
     "entity_origin": [
       "561: Jordan Takes The Wheel 6",
       "transcripts\\95.autosub.srt"
@@ -61808,7 +61522,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "joseph grimaldi",
+    "entity_name": "Joseph Grimaldi",
     "entity_origin": [
       "86: September 22, 2017",
       "transcripts\\86.autosub.srt"
@@ -61824,7 +61538,7 @@
   },
   {
     "entity_count": 14,
-    "entity_name": "joseph mccarthy",
+    "entity_name": "Joseph McCarthy",
     "entity_origin": [
       "628: July 10, 2003",
       "transcripts\\127.autosub.srt",
@@ -61968,7 +61682,7 @@
   },
   {
     "entity_count": 13,
-    "entity_name": "josh hawley",
+    "entity_name": "Josh Hawley",
     "entity_origin": [
       "412: March 24-25, 2020",
       "transcripts\\368.autosub.srt",
@@ -61988,7 +61702,7 @@
   },
   {
     "entity_count": 19,
-    "entity_name": "josh owens",
+    "entity_name": "Josh Owens",
     "entity_origin": [
       "474: June 6, 2016",
       "Connecticut Sandy Hook Lawsuit (Lafferty v. Jones)",
@@ -62059,7 +61773,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "joshua koskoff",
+    "entity_name": "Joshua Koskoff",
     "entity_origin": [
       "Connecticut Sandy Hook Lawsuit (Lafferty v. Jones)",
       "Joshua Koskoff"
@@ -62130,7 +61844,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "joycelyn elders",
+    "entity_name": "Joycelyn Elders",
     "entity_origin": [
       "115: January 2, 2018",
       "347: September 23, 2019",
@@ -62568,7 +62282,7 @@
   },
   {
     "entity_count": 12,
-    "entity_name": "justin trudeau",
+    "entity_name": "Justin Trudeau",
     "entity_origin": [
       "519: January 10-11, 2021",
       "533: February 17, 2021",
@@ -62641,7 +62355,7 @@
   },
   {
     "entity_count": 31,
-    "entity_name": "kaitlin bennett",
+    "entity_name": "Kaitlin Bennett",
     "entity_origin": [
       "195: August 17, 2018",
       "309: June 10-11, 2019",
@@ -62680,7 +62394,7 @@
   },
   {
     "entity_count": 55,
-    "entity_name": "kamala harris",
+    "entity_name": "Kamala Harris",
     "entity_origin": [
       "469: August 12-13, 2020",
       "530: February 10-11, 2021",
@@ -62786,7 +62500,7 @@
   },
   {
     "entity_count": 43,
-    "entity_name": "kanye west",
+    "entity_name": "Kanye West",
     "entity_origin": [
       "154: April 23, 2018",
       "363: October 30, 2019",
@@ -62958,7 +62672,7 @@
   },
   {
     "entity_count": 28,
-    "entity_name": "kathy griffin",
+    "entity_name": "Kathy Griffin",
     "entity_origin": [
       "48: May 31, 2017",
       "604: October 5, 2021",
@@ -63147,7 +62861,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "keith olberman",
+    "entity_name": "Keith Olberman",
     "entity_origin": [
       "41: May 12, 2017",
       "491: October 12, 2020",
@@ -63274,7 +62988,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "kelly jones",
+    "entity_name": "Kelly Jones",
     "entity_origin": [
       "422: April 17, 2020",
       "InfoWars",
@@ -63434,7 +63148,7 @@
   },
   {
     "entity_count": 222,
-    "entity_name": "kerry cassidy",
+    "entity_name": "Kerry Cassidy",
     "entity_origin": [
       "125: Project Camelot's War In Heaven",
       "156: Gaseous Beings and Antiques",
@@ -63559,7 +63273,7 @@
   },
   {
     "entity_count": 18,
-    "entity_name": "kevin booth",
+    "entity_name": "Kevin Booth",
     "entity_origin": [
       "227: March 23, 2009",
       "88: The 2015 Investigation Ends",
@@ -63758,7 +63472,7 @@
   },
   {
     "entity_count": 54,
-    "entity_name": "kevin moore",
+    "entity_name": "Kevin Moore",
     "entity_origin": [
       "302: Discernment Overload",
       "353: Mark Richards Pt. 11",
@@ -64092,7 +63806,7 @@
   },
   {
     "entity_count": 22,
-    "entity_name": "kim jong un",
+    "entity_name": "Kim Jong Un",
     "entity_origin": [
       "304: May 30-31, 2019",
       "305: February 1, 2013",
@@ -64314,7 +64028,7 @@
   },
   {
     "entity_count": 223,
-    "entity_name": "kit daniels",
+    "entity_name": "Kit Daniels",
     "entity_origin": [
       "664: Formulaic Objections Part 5",
       "Texas Sandy Hook Lawsuit (Heslin v. Jones)",
@@ -64351,7 +64065,7 @@
   },
   {
     "entity_count": 62,
-    "entity_name": "klaus schwab",
+    "entity_name": "Klaus Schwab",
     "entity_origin": [
       "502: Dan's Cara-Vanity Project Part 1",
       "508: December 1-2, 2020",
@@ -64461,7 +64175,7 @@
   },
   {
     "entity_count": 49,
-    "entity_name": "knowledge fight",
+    "entity_name": "Knowledge Fight",
     "entity_origin": [
       "136: March 30-31, 2008",
       "138: March 13-15, 2018",
@@ -64713,7 +64427,7 @@
   },
   {
     "entity_count": 16,
-    "entity_name": "kurt nimmo",
+    "entity_name": "Kurt Nimmo",
     "entity_origin": [
       "107: December 12, 2014",
       "339: March 29-April 1, 2013",
@@ -64821,7 +64535,7 @@
   },
   {
     "entity_count": 11,
-    "entity_name": "kyle rittenhouse",
+    "entity_name": "Kyle Rittenhouse",
     "entity_origin": [
       "475: August 24-26, 2020",
       "515: December 28-29, 2020",
@@ -65028,7 +64742,7 @@
   },
   {
     "entity_count": 44,
-    "entity_name": "lana del rey",
+    "entity_name": "Lana Del Rey",
     "entity_origin": [
       "347: September 23, 2019",
       "522: January 14-17, 2021",
@@ -65207,7 +64921,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "larry gaiters",
+    "entity_name": "Larry Gaiters",
     "entity_origin": [
       "453: July 2, 2020",
       "466: August 5-6, 2020",
@@ -65296,7 +65010,7 @@
   },
   {
     "entity_count": 128,
-    "entity_name": "larry klayman",
+    "entity_name": "Larry Klayman",
     "entity_origin": [
       "244: October 5, 2014",
       "25: Dennis Montgomery Investigation",
@@ -65384,7 +65098,7 @@
   },
   {
     "entity_count": 405,
-    "entity_name": "larry nichols",
+    "entity_name": "Larry Nichols",
     "entity_origin": [
       "111: January 21-22, 2016",
       "145: April 2, 2018",
@@ -65605,7 +65319,7 @@
   },
   {
     "entity_count": 52,
-    "entity_name": "larry pratt",
+    "entity_name": "Larry Pratt",
     "entity_origin": [
       "283: January 4-6, 2013",
       "297: January 17-18, 2013",
@@ -65853,7 +65567,7 @@
   },
   {
     "entity_count": 136,
-    "entity_name": "laura loomer",
+    "entity_name": "Laura Loomer",
     "entity_origin": [
       "141: March 20-22, 2018",
       "273: March 5-6, 2019",
@@ -66001,7 +65715,7 @@
   },
   {
     "entity_count": 23,
-    "entity_name": "lauren southern",
+    "entity_name": "Lauren Southern",
     "entity_origin": [
       "474: June 6, 2016",
       "47: June 19-July 5, 2015",
@@ -66163,26 +65877,6 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 8,
-    "entity_name": "leann mcadoo",
-    "entity_origin": [
-      "transcripts\\3.otter.txt",
-      "transcripts\\6.otter.txt",
-      "transcripts\\685.otter.txt",
-      "transcripts\\7.otter.txt",
-      "transcripts\\8.otter.txt"
-    ],
-    "entity_sourcetexts": [
-      "Leann McAdoo"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
     "entity_count": 4,
     "entity_name": "leanne macado",
     "entity_origin": [
@@ -66193,30 +65887,6 @@
     ],
     "entity_sourcetexts": [
       "Leanne Macado's"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 11,
-    "entity_name": "leanne mcadoo",
-    "entity_origin": [
-      "transcripts\\222.otter.txt",
-      "transcripts\\4.otter.txt",
-      "transcripts\\6.otter.txt",
-      "transcripts\\685.autosub.srt",
-      "transcripts\\685.otter.txt",
-      "transcripts\\69.autosub.srt",
-      "transcripts\\7.autosub.srt",
-      "transcripts\\7.otter.txt",
-      "transcripts\\717.autosub.srt",
-      "transcripts\\79.autosub.srt"
-    ],
-    "entity_sourcetexts": [
-      "Leanne McAdoo"
     ],
     "entity_type": [
       "PERSON"
@@ -66327,8 +65997,8 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 34,
-    "entity_name": "lee ann mcadoo",
+    "entity_count": 53,
+    "entity_name": "Lee Ann McAdoo",
     "entity_origin": [
       "293: May 2-3, 2019",
       "346: April 11-14, 2013",
@@ -66343,26 +66013,39 @@
       "transcripts\\149.autosub.srt",
       "transcripts\\196.autosub.srt",
       "transcripts\\197.autosub.srt",
+      "transcripts\\222.otter.txt",
       "transcripts\\29.autosub.srt",
       "transcripts\\293.autosub.srt",
+      "transcripts\\3.otter.txt",
       "transcripts\\31.autosub.srt",
       "transcripts\\332.autosub.srt",
       "transcripts\\346.autosub.srt",
       "transcripts\\35.autosub.srt",
       "transcripts\\355.autosub.srt",
       "transcripts\\357.autosub.srt",
+      "transcripts\\4.otter.txt",
       "transcripts\\496.autosub.srt",
       "transcripts\\52.autosub.srt",
       "transcripts\\59.autosub.srt",
+      "transcripts\\6.otter.txt",
       "transcripts\\685.autosub.srt",
-      "transcripts\\7.autosub.srt"
+      "transcripts\\685.otter.txt",
+      "transcripts\\69.autosub.srt",
+      "transcripts\\7.autosub.srt",
+      "transcripts\\7.otter.txt",
+      "transcripts\\717.autosub.srt",
+      "transcripts\\79.autosub.srt",
+      "transcripts\\8.otter.txt"
     ],
     "entity_sourcetexts": [
+      "Leann McAdoo",
+      "Leanne McAdoo",
       "Lee Ann McAdoo",
       "Lee Ann McAdoo's"
     ],
     "entity_type": [
-      "PERSON"
+      "PERSON",
+      "ORG"
     ],
     "is_existing": true,
     "is_known_missing": false
@@ -66444,7 +66127,7 @@
   },
   {
     "entity_count": 22,
-    "entity_name": "lee stranahan",
+    "entity_name": "Lee Stranahan",
     "entity_origin": [
       "138: March 13-15, 2018",
       "149: The Press Conference",
@@ -66717,7 +66400,7 @@
   },
   {
     "entity_count": 135,
-    "entity_name": "leo zagami",
+    "entity_name": "Leo Zagami",
     "entity_origin": [
       "130D: Endgame, Part 4",
       "204: Sweary Kerry's Larry",
@@ -66852,7 +66535,7 @@
   },
   {
     "entity_count": 21,
-    "entity_name": "leonard pozner",
+    "entity_name": "Leonard Pozner",
     "entity_origin": [
       "279: Formulaic Objections",
       "641: Formulaic Objections Part 4",
@@ -67005,7 +66688,7 @@
   },
   {
     "entity_count": 12,
-    "entity_name": "lester holt",
+    "entity_name": "Lester Holt",
     "entity_origin": [
       "195: August 17, 2018",
       "488: The First Debate Spectacular",
@@ -67543,7 +67226,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "linda thompson",
+    "entity_name": "Linda Thompson",
     "entity_origin": [
       "334: August 21-22, 2019",
       "398: February 9-10, 2020",
@@ -67634,7 +67317,7 @@
   },
   {
     "entity_count": 32,
-    "entity_name": "lindsey williams",
+    "entity_name": "Lindsey Williams",
     "entity_origin": [
       "186: February 17-18, 2009",
       "206: March 4-5, 2009",
@@ -67996,7 +67679,7 @@
   },
   {
     "entity_count": 12,
-    "entity_name": "logan paul",
+    "entity_name": "Logan Paul",
     "entity_origin": [
       "116: January 5, 2018",
       "287: April 15-18, 2019",
@@ -68592,7 +68275,7 @@
   },
   {
     "entity_count": 38,
-    "entity_name": "louis farrakhan",
+    "entity_name": "Louis Farrakhan",
     "entity_origin": [
       "100: January 6-7, 2016",
       "101: January 11, 2016",
@@ -68849,7 +68532,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "lucy richards",
+    "entity_name": "Lucy Richards",
     "entity_origin": [
       "279: Formulaic Objections",
       "Leonard Pozner",
@@ -69029,7 +68712,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "lyndon larouche",
+    "entity_name": "Lyndon LaRouche",
     "entity_origin": [
       "230A: Obama Deception, Part 1",
       "628: July 10, 2003"
@@ -69969,7 +69652,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "marc randazza",
+    "entity_name": "Marc Randazza",
     "entity_origin": [
       "Pozner Texas Sandy Hook Lawsuit (Pozner v. Jones)",
       "Texas Sandy Hook Lawsuit (Heslin v. Jones)"
@@ -70059,7 +69742,7 @@
   },
   {
     "entity_count": 30,
-    "entity_name": "marco rubio",
+    "entity_name": "Marco Rubio",
     "entity_origin": [
       "transcripts\\202.autosub.srt",
       "transcripts\\209.autosub.srt",
@@ -70123,7 +69806,7 @@
   },
   {
     "entity_count": 43,
-    "entity_name": "margaret sanger",
+    "entity_name": "Margaret Sanger",
     "entity_origin": [
       "123: March 18, 2008",
       "130C: Endgame, Part 3",
@@ -70483,7 +70166,7 @@
   },
   {
     "entity_count": 16,
-    "entity_name": "marine le pen",
+    "entity_name": "Marine Le Pen",
     "entity_origin": [
       "Alexander Nekrassov",
       "transcripts\\109.autosub.srt",
@@ -70600,7 +70283,7 @@
   },
   {
     "entity_count": 42,
-    "entity_name": "marjorie taylor greene",
+    "entity_name": "Marjorie Taylor Greene",
     "entity_origin": [
       "658: It's Pretty Easy Being Greene",
       "transcripts\\529.autosub.srt",
@@ -70649,7 +70332,7 @@
   },
   {
     "entity_count": 707,
-    "entity_name": "mark bankston",
+    "entity_name": "Mark Bankston",
     "entity_origin": [
       "279: Formulaic Objections",
       "602: Sandy Hook Response",
@@ -70695,7 +70378,7 @@
   },
   {
     "entity_count": 14,
-    "entity_name": "mark cuban",
+    "entity_name": "Mark Cuban",
     "entity_origin": [
       "210: March 9, 2009",
       "433: May 12-13, 2020",
@@ -70716,7 +70399,7 @@
   },
   {
     "entity_count": 12,
-    "entity_name": "mark enoch",
+    "entity_name": "Mark Enoch",
     "entity_origin": [
       "Pozner Texas Sandy Hook Lawsuit (Pozner v. Jones)",
       "Texas Sandy Hook Lawsuit (Heslin v. Jones)",
@@ -70810,7 +70493,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "mark meechan",
+    "entity_name": "Mark Meechan",
     "entity_origin": [
       "141: March 20-22, 2018",
       "300: May 21-22, 2019",
@@ -70844,7 +70527,7 @@
   },
   {
     "entity_count": 19,
-    "entity_name": "mark moreno",
+    "entity_name": "Mark Moreno",
     "entity_origin": [
       "144: March 25-31, Part 2",
       "263: Jordan Takes The Wheel",
@@ -70944,7 +70627,7 @@
   },
   {
     "entity_count": 271,
-    "entity_name": "mark richards",
+    "entity_name": "Mark Richards",
     "entity_origin": [
       "153: More Mark Richards Fun",
       "156: Gaseous Beings and Antiques",
@@ -71181,7 +70864,7 @@
   },
   {
     "entity_count": 97,
-    "entity_name": "mark zuckerberg",
+    "entity_name": "Mark Zuckerberg",
     "entity_origin": [
       "217: Space Liars and Dragon Moths",
       "293: May 2-3, 2019",
@@ -71579,7 +71262,7 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "martin luther king jr",
+    "entity_name": "Martin Luther King Jr",
     "entity_origin": [
       "304: May 30-31, 2019",
       "450: June 25-26, 2020",
@@ -71664,7 +71347,7 @@
   },
   {
     "entity_count": 178,
-    "entity_name": "marty derosa",
+    "entity_name": "Marty DeRosa",
     "entity_origin": [
       "157: WWE's Kane (Ft. Marty DeRosa)",
       "178: Rowdy Roddy Piper w/ Marty DeRosa",
@@ -71721,7 +71404,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "marty schacter",
+    "entity_name": "Marty Schacter",
     "entity_origin": [
       "148: June 1-3, 2009",
       "158: January 21, 2009",
@@ -71874,7 +71557,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "maryanne williamson",
+    "entity_name": "Maryanne Williamson",
     "entity_origin": [
       "327: July 31, 2019",
       "329: August 4-5, 2019"
@@ -72020,7 +71703,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "matt blumenthal",
+    "entity_name": "Matt Blumenthal",
     "entity_origin": [
       "Connecticut Sandy Hook Lawsuit (Lafferty v. Jones)",
       "Mark Bailen"
@@ -72052,7 +71735,7 @@
   },
   {
     "entity_count": 62,
-    "entity_name": "matt bracken",
+    "entity_name": "Matt Bracken",
     "entity_origin": [
       "277: March 15, 2019",
       "310: June 13-14, 2019",
@@ -72131,7 +71814,7 @@
   },
   {
     "entity_count": 22,
-    "entity_name": "matt drudge",
+    "entity_name": "Matt Drudge",
     "entity_origin": [
       "483: September 17, 2020",
       "74: October 4-6, 2015",
@@ -72162,7 +71845,7 @@
   },
   {
     "entity_count": 11,
-    "entity_name": "matt gaetz",
+    "entity_name": "Matt Gaetz",
     "entity_origin": [
       "470: ShadowGate",
       "545: March 30-31, 2021",
@@ -72511,7 +72194,7 @@
   },
   {
     "entity_count": 47,
-    "entity_name": "max keiser",
+    "entity_name": "Max Keiser",
     "entity_origin": [
       "102: Alex On Russian Media",
       "290: April 25-26, 2019",
@@ -72565,7 +72248,7 @@
   },
   {
     "entity_count": 36,
-    "entity_name": "maxine waters",
+    "entity_name": "Maxine Waters",
     "entity_origin": [
       "161: May 14, 2018",
       "475: August 24-26, 2020",
@@ -72967,7 +72650,7 @@
   },
   {
     "entity_count": 37,
-    "entity_name": "megyn kelly",
+    "entity_name": "Megyn Kelly",
     "entity_origin": [
       "53: June 12, 2017",
       "54: Megyn Kelly Interview Pt. 1",
@@ -73009,7 +72692,7 @@
   },
   {
     "entity_count": 26,
-    "entity_name": "mel gibson",
+    "entity_name": "Mel Gibson",
     "entity_origin": [
       "30: April 14, 2017",
       "387: May 13, 2014",
@@ -73057,7 +72740,7 @@
   },
   {
     "entity_count": 13,
-    "entity_name": "melania trump",
+    "entity_name": "Melania Trump",
     "entity_origin": [
       "230A: Obama Deception, Part 1",
       "Steve Pieczenik",
@@ -73083,7 +72766,7 @@
   },
   {
     "entity_count": 41,
-    "entity_name": "melinda gates",
+    "entity_name": "Melinda Gates",
     "entity_origin": [
       "429: May 3-4, 2020",
       "435: May 18-21, 2020",
@@ -73428,7 +73111,7 @@
   },
   {
     "entity_count": 13,
-    "entity_name": "merrick garland",
+    "entity_name": "Merrick Garland",
     "entity_origin": [
       "568: June 19, 2021",
       "637: January 13, 2022",
@@ -73830,7 +73513,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "michael burnett",
+    "entity_name": "Michael Burnett",
     "entity_origin": [
       "Pozner Texas Sandy Hook Lawsuit (Pozner v. Jones)",
       "Texas Sandy Hook Lawsuit (Heslin v. Jones)",
@@ -73885,7 +73568,7 @@
   },
   {
     "entity_count": 24,
-    "entity_name": "michael cohen",
+    "entity_name": "Michael Cohen",
     "entity_origin": [
       "239: December 12-13, 2018",
       "497: Third Try's A Charm",
@@ -73949,7 +73632,7 @@
   },
   {
     "entity_count": 39,
-    "entity_name": "michael flynn",
+    "entity_name": "Michael Flynn",
     "entity_origin": [
       "45: May 25, 2017",
       "619: November 16, 2021",
@@ -74180,7 +73863,7 @@
   },
   {
     "entity_count": 13,
-    "entity_name": "michael kaufman",
+    "entity_name": "Michael Kaufman",
     "entity_origin": [
       "130A: Endgame, Part 1",
       "transcripts\\130A.autosub.srt",
@@ -74216,7 +73899,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "michael malice",
+    "entity_name": "Michael Malice",
     "entity_origin": [
       "576: July 9, 2021",
       "609: October 20, 2021"
@@ -74265,7 +73948,7 @@
   },
   {
     "entity_count": 64,
-    "entity_name": "michael moore",
+    "entity_name": "Michael Moore",
     "entity_origin": [
       "331: March 13-14, 2013",
       "352: April 17, 2013",
@@ -74453,7 +74136,7 @@
   },
   {
     "entity_count": 163,
-    "entity_name": "michael savage",
+    "entity_name": "Michael Savage",
     "entity_origin": [
       "122 LIVE: March 1-2, 2012",
       "136: March 30-31, 2008",
@@ -74827,7 +74510,7 @@
   },
   {
     "entity_count": 19,
-    "entity_name": "michelle malkin",
+    "entity_name": "Michelle Malkin",
     "entity_origin": [
       "403: February 24, 2020",
       "435: May 18-21, 2020",
@@ -74865,7 +74548,7 @@
   },
   {
     "entity_count": 87,
-    "entity_name": "michelle obama",
+    "entity_name": "Michelle Obama",
     "entity_origin": [
       "154: April 23, 2018",
       "16: February 24, 2017",
@@ -74941,7 +74624,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "michelle wolf",
+    "entity_name": "Michelle Wolf",
     "entity_origin": [
       "196: August 21, 2018",
       "382: December 23-27, 2019",
@@ -75110,7 +74793,7 @@
   },
   {
     "entity_count": 41,
-    "entity_name": "midas resources",
+    "entity_name": "Midas Resources",
     "entity_origin": [
       "148: June 1-3, 2009",
       "155: January 7-9, 2009",
@@ -75413,7 +75096,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "mika brzezinski",
+    "entity_name": "Mika Brzezinski",
     "entity_origin": [
       "110: December 5, 2017",
       "322: July 16-17, 2019",
@@ -75436,7 +75119,7 @@
   },
   {
     "entity_count": 353,
-    "entity_name": "mike adams",
+    "entity_name": "Mike Adams",
     "entity_origin": [
       "135: The Wikileaks Press Conference",
       "137: March 12, 2018",
@@ -75624,7 +75307,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "mike bloomberg",
+    "entity_name": "Mike Bloomberg",
     "entity_origin": [
       "transcripts\\402.autosub.srt",
       "transcripts\\406.autosub.srt",
@@ -75642,7 +75325,7 @@
   },
   {
     "entity_count": 19,
-    "entity_name": "mike cernovich",
+    "entity_name": "Mike Cernovich",
     "entity_origin": [
       "109: December 4, 2017",
       "143: March 25-31 Part 1",
@@ -75690,7 +75373,7 @@
   },
   {
     "entity_count": 64,
-    "entity_name": "mike flynn",
+    "entity_name": "Mike Flynn",
     "entity_origin": [
       "346: April 11-14, 2013",
       "41: May 12, 2017",
@@ -75786,7 +75469,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "mike hanson",
+    "entity_name": "Mike Hanson",
     "entity_origin": [
       "622: June 30-July 1, 2003",
       "623: July 2-3, 2003",
@@ -75876,7 +75559,7 @@
   },
   {
     "entity_count": 139,
-    "entity_name": "mike lindell",
+    "entity_name": "Mike Lindell",
     "entity_origin": [
       "511: The 12/12 Rallies",
       "528: 2021 Super Bowl Commercial Spectacular",
@@ -75959,7 +75642,7 @@
   },
   {
     "entity_count": 61,
-    "entity_name": "mike pence",
+    "entity_name": "Mike Pence",
     "entity_origin": [
       "152: April 18, 2018",
       "309: June 10-11, 2019",
@@ -76014,7 +75697,7 @@
   },
   {
     "entity_count": 22,
-    "entity_name": "mike pompeo",
+    "entity_name": "Mike Pompeo",
     "entity_origin": [
       "138: March 13-15, 2018",
       "239: December 12-13, 2018",
@@ -76070,7 +75753,7 @@
   },
   {
     "entity_count": 13,
-    "entity_name": "mike rivero",
+    "entity_name": "Mike Rivero",
     "entity_origin": [
       "148: June 1-3, 2009",
       "166: February 2-3, 2009",
@@ -76109,7 +75792,7 @@
   },
   {
     "entity_count": 14,
-    "entity_name": "mike rotondo",
+    "entity_name": "Mike Rotondo",
     "entity_origin": [
       "164: May 25, 2018",
       "166: February 2-3, 2009",
@@ -76409,7 +76092,7 @@
   },
   {
     "entity_count": 118,
-    "entity_name": "millie weaver",
+    "entity_name": "Millie Weaver",
     "entity_origin": [
       "108: November 30, 2017",
       "152: April 18, 2018",
@@ -76900,7 +76583,7 @@
   },
   {
     "entity_count": 68,
-    "entity_name": "mitch mcconnell",
+    "entity_name": "Mitch McConnell",
     "entity_origin": [
       "481: September 13, 2012",
       "512: December 16-17, 2020",
@@ -76975,7 +76658,7 @@
   },
   {
     "entity_count": 43,
-    "entity_name": "mitt romney",
+    "entity_name": "Mitt Romney",
     "entity_origin": [
       "160: January 22-25, 2009",
       "527: February 4, 2021",
@@ -77947,7 +77630,7 @@
   },
   {
     "entity_count": 64,
-    "entity_name": "nancy pelosi",
+    "entity_name": "Nancy Pelosi",
     "entity_origin": [
       "384: January 3, 2020",
       "396: February 6, 2020",
@@ -79560,7 +79243,7 @@
   },
   {
     "entity_count": 22,
-    "entity_name": "neil heslin",
+    "entity_name": "Neil Heslin",
     "entity_origin": [
       "641: Formulaic Objections Part 4",
       "711: August 2, 2022",
@@ -80245,7 +79928,7 @@
   },
   {
     "entity_count": 488,
-    "entity_name": "new world order",
+    "entity_name": "New World Order",
     "entity_origin": [
       "130B: Endgame, Part 2",
       "148: June 1-3, 2009",
@@ -81604,7 +81287,7 @@
   },
   {
     "entity_count": 163,
-    "entity_name": "nick fuentes",
+    "entity_name": "Nick Fuentes",
     "entity_origin": [
       "363: October 30, 2019",
       "403: February 24, 2020",
@@ -81826,7 +81509,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "nigel farage",
+    "entity_name": "Nigel Farage",
     "entity_origin": [
       "49: July 6-13. 2015",
       "transcripts\\11.otter.txt",
@@ -82143,7 +81826,7 @@
   },
   {
     "entity_count": 22,
-    "entity_name": "noam chomsky",
+    "entity_name": "Noam Chomsky",
     "entity_origin": [
       "134: Post-Tribulation Rapture?",
       "559: Noam Man's Land",
@@ -82233,7 +81916,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "none dare call it conspiracy",
+    "entity_name": "None Dare Call It Conspiracy",
     "entity_origin": [
       "155: January 7-9, 2009",
       "Globalists"
@@ -82321,7 +82004,7 @@
   },
   {
     "entity_count": 64,
-    "entity_name": "norm pattis",
+    "entity_name": "Norm Pattis",
     "entity_origin": [
       "284: April 12, 2019",
       "310: June 13-14, 2019",
@@ -83562,8 +83245,26 @@
     "is_known_missing": false
   },
   {
+    "entity_count": 2,
+    "entity_name": "obama phone",
+    "entity_origin": [
+      "292: January 14, 2013",
+      "343: April 3-8, 2013"
+    ],
+    "entity_sourcetexts": [
+      "Obama Phone",
+      "an Obama Phone"
+    ],
+    "entity_type": [
+      "PERSON",
+      "ORG"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
     "entity_count": 4,
-    "entity_name": "obama phone lady",
+    "entity_name": "Obama Phone Lady",
     "entity_origin": [
       "292: January 14, 2013",
       "transcripts\\292.autosub.srt"
@@ -84033,7 +83734,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "omar al-faruq",
+    "entity_name": "Omar al-Faruq",
     "entity_origin": [
       "transcripts\\720.welder.srt",
       "transcripts\\720.welder.txt"
@@ -84065,7 +83766,7 @@
   },
   {
     "entity_count": 17,
-    "entity_name": "omar navarro",
+    "entity_name": "Omar Navarro",
     "entity_origin": [
       "161: May 14, 2018",
       "396: February 6, 2020",
@@ -84301,7 +84002,7 @@
   },
   {
     "entity_count": 22,
-    "entity_name": "oprah winfrey",
+    "entity_name": "Oprah Winfrey",
     "entity_origin": [
       "117: January 8, 2018",
       "467: August 7-9, 2020",
@@ -84542,7 +84243,7 @@
   },
   {
     "entity_count": 40,
-    "entity_name": "osama bin laden",
+    "entity_name": "Osama Bin Laden",
     "entity_origin": [
       "98: May 2-3, 2012",
       "Ron Paul",
@@ -84717,7 +84418,7 @@
   },
   {
     "entity_count": 20,
-    "entity_name": "owen benjamin",
+    "entity_name": "Owen Benjamin",
     "entity_origin": [
       "245: December 24, 2018",
       "261: February 5-6, 2019",
@@ -84746,7 +84447,7 @@
   },
   {
     "entity_count": 11,
-    "entity_name": "owen schroyer",
+    "entity_name": "Owen Schroyer",
     "entity_origin": [
       "transcripts\\19.otter.txt",
       "transcripts\\2.otter.txt",
@@ -84770,7 +84471,7 @@
   },
   {
     "entity_count": 566,
-    "entity_name": "owen shroyer",
+    "entity_name": "Owen Shroyer",
     "entity_origin": [
       "143: March 25-31 Part 1",
       "212: Matrix Schemes and Billions In Liens",
@@ -85594,7 +85295,7 @@
   },
   {
     "entity_count": 33,
-    "entity_name": "pat robertson",
+    "entity_name": "Pat Robertson",
     "entity_origin": [
       "158: January 21, 2009",
       "263: Jordan Takes The Wheel",
@@ -85712,7 +85413,7 @@
   },
   {
     "entity_count": 12,
-    "entity_name": "patrick bergy",
+    "entity_name": "Patrick Bergy",
     "entity_origin": [
       "470: ShadowGate",
       "471: August 14-16, 2020",
@@ -85730,7 +85431,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "patrick byrne",
+    "entity_name": "Patrick Byrne",
     "entity_origin": [
       "512: December 16-17, 2020",
       "520: January 12-13, 2021",
@@ -85799,7 +85500,7 @@
   },
   {
     "entity_count": 11,
-    "entity_name": "patrick howley",
+    "entity_name": "Patrick Howley",
     "entity_origin": [
       "404: Mr. Jones Goes To CPAC",
       "515: December 28-29, 2020",
@@ -86049,7 +85750,7 @@
   },
   {
     "entity_count": 38,
-    "entity_name": "paul craig roberts",
+    "entity_name": "Paul Craig Roberts",
     "entity_origin": [
       "102: Alex On Russian Media",
       "151: April 16, 2018",
@@ -86211,7 +85912,7 @@
   },
   {
     "entity_count": 543,
-    "entity_name": "paul joseph watson",
+    "entity_name": "Paul Joseph Watson",
     "entity_origin": [
       "138: March 13-15, 2018",
       "143: March 25-31 Part 1",
@@ -86495,7 +86196,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "paul manafort",
+    "entity_name": "Paul Manafort",
     "entity_origin": [
       "141: March 20-22, 2018",
       "41: May 12, 2017",
@@ -86707,7 +86408,7 @@
   },
   {
     "entity_count": 15,
-    "entity_name": "paula white cain",
+    "entity_name": "Paula White Cain",
     "entity_origin": [
       "180: Heresy and God Kings",
       "365: She Doesn't Do Politics",
@@ -87189,7 +86890,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "pete buttigieg",
+    "entity_name": "Pete Buttigieg",
     "entity_origin": [
       "619: November 16, 2021",
       "transcripts\\401.otter.txt",
@@ -87260,7 +86961,7 @@
   },
   {
     "entity_count": 24,
-    "entity_name": "pete santilli",
+    "entity_name": "Pete Santilli",
     "entity_origin": [
       "522: January 14-17, 2021",
       "568: June 19, 2021",
@@ -87504,7 +87205,7 @@
   },
   {
     "entity_count": 61,
-    "entity_name": "peter schiff",
+    "entity_name": "Peter Schiff",
     "entity_origin": [
       "143: March 25-31 Part 1",
       "145: April 2, 2018",
@@ -87596,7 +87297,7 @@
   },
   {
     "entity_count": 32,
-    "entity_name": "peter thiel",
+    "entity_name": "Peter Thiel",
     "entity_origin": [
       "141: March 20-22, 2018",
       "146: April 4, 2018",
@@ -87646,7 +87347,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "pez dispenser",
+    "entity_name": "PEZ Dispenser",
     "entity_origin": [
       "PEZ Dispenser",
       "The Protocols of the Elders of Zion"
@@ -88017,7 +87718,7 @@
   },
   {
     "entity_count": 34,
-    "entity_name": "piers morgan",
+    "entity_name": "Piers Morgan",
     "entity_origin": [
       "114: Piers Morgan Interview",
       "269: December 19, 2012",
@@ -88881,7 +88582,7 @@
   },
   {
     "entity_count": 15,
-    "entity_name": "prescott bush",
+    "entity_name": "Prescott Bush",
     "entity_origin": [
       "552: May 6, 2003",
       "628: July 10, 2003",
@@ -88974,7 +88675,7 @@
   },
   {
     "entity_count": 27,
-    "entity_name": "prince charles",
+    "entity_name": "Prince Charles",
     "entity_origin": [
       "transcripts\\122.autosub.srt",
       "transcripts\\139.autosub.srt",
@@ -89249,7 +88950,7 @@
   },
   {
     "entity_count": 393,
-    "entity_name": "project camelot",
+    "entity_name": "Project Camelot",
     "entity_origin": [
       "125: Project Camelot's War In Heaven",
       "149: The Press Conference",
@@ -90635,7 +90336,7 @@
   },
   {
     "entity_count": 25,
-    "entity_name": "rachel maddow",
+    "entity_name": "Rachel Maddow",
     "entity_origin": [
       "145: April 2, 2018",
       "603: October 3-4, 2021",
@@ -90667,7 +90368,7 @@
   },
   {
     "entity_count": 12,
-    "entity_name": "rahm emanuel",
+    "entity_name": "Rahm Emanuel",
     "entity_origin": [
       "163: January 27-29, 2009",
       "166: February 2-3, 2009",
@@ -90730,7 +90431,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "ralph northam",
+    "entity_name": "Ralph Northam",
     "entity_origin": [
       "270: The Rogan Return",
       "290: April 25-26, 2019",
@@ -90798,7 +90499,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "randy credico",
+    "entity_name": "Randy Credico",
     "entity_origin": [
       "257: January 25, 2019",
       "402: February 20, 2020",
@@ -90816,7 +90517,7 @@
   },
   {
     "entity_count": 14,
-    "entity_name": "randy kramer",
+    "entity_name": "Randy Kramer",
     "entity_origin": [
       "223: A Progressive Space Diplomat",
       "229: Mars Germans and Moon Leases",
@@ -90943,7 +90644,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "rashida tlaib",
+    "entity_name": "Rashida Tlaib",
     "entity_origin": [
       "363: October 30, 2019",
       "399: February 12-14, 2020"
@@ -91120,7 +90821,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "rebecca carley",
+    "entity_name": "Rebecca Carley",
     "entity_origin": [
       "Rebecca Carley",
       "transcripts\\206.autosub.srt",
@@ -91258,7 +90959,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "red beckman",
+    "entity_name": "Red Beckman",
     "entity_origin": [
       "211: March 10, 2009",
       "623: July 2-3, 2003"
@@ -92907,7 +92608,7 @@
   },
   {
     "entity_count": 19,
-    "entity_name": "richard baldwin",
+    "entity_name": "Richard Baldwin",
     "entity_origin": [
       "280: Raptor Weddings and Sardinian Spiders",
       "291: Feline Contessas And Canine Capitalists",
@@ -92945,7 +92646,7 @@
   },
   {
     "entity_count": 40,
-    "entity_name": "richard belzer",
+    "entity_name": "Richard Belzer",
     "entity_origin": [
       "119: August 16, 2012",
       "349: April 15-16, 2013",
@@ -93137,7 +92838,7 @@
   },
   {
     "entity_count": 28,
-    "entity_name": "richard nixon",
+    "entity_name": "Richard Nixon",
     "entity_origin": [
       "639: January 17, 2022",
       "Roger Stone",
@@ -93239,7 +92940,7 @@
   },
   {
     "entity_count": 94,
-    "entity_name": "richard spencer",
+    "entity_name": "Richard Spencer",
     "entity_origin": [
       "322: July 16-17, 2019",
       "327: July 31, 2019",
@@ -93437,7 +93138,7 @@
   },
   {
     "entity_count": 30,
-    "entity_name": "rick perry",
+    "entity_name": "Rick Perry",
     "entity_origin": [
       "130E: Endgame, Part 5",
       "370: November 14-15, 2019",
@@ -93627,7 +93328,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "rima laibow",
+    "entity_name": "Rima Laibow",
     "entity_origin": [
       "394: January 31, 2020",
       "572: June 28-30, 2021",
@@ -93881,7 +93582,7 @@
   },
   {
     "entity_count": 17,
-    "entity_name": "rob jacobson",
+    "entity_name": "Rob Jacobson",
     "entity_origin": [
       "107: December 12, 2014",
       "133: Operation Paul Revere",
@@ -94066,7 +93767,7 @@
   },
   {
     "entity_count": 154,
-    "entity_name": "robert barnes",
+    "entity_name": "Robert Barnes",
     "entity_origin": [
       "394: January 31, 2020",
       "512: December 16-17, 2020",
@@ -94225,7 +93926,7 @@
   },
   {
     "entity_count": 66,
-    "entity_name": "robert david steele",
+    "entity_name": "Robert David Steele",
     "entity_origin": [
       "227: March 23, 2009",
       "244: October 5, 2014",
@@ -94415,7 +94116,7 @@
   },
   {
     "entity_count": 23,
-    "entity_name": "robert evans",
+    "entity_name": "Robert Evans",
     "entity_origin": [
       "207: Bus Station Photography and The Magic of Zoom",
       "274: Ask Alex Anything",
@@ -94618,7 +94319,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "robert kennedy jr",
+    "entity_name": "Robert Kennedy Jr",
     "entity_origin": [
       "438: May 26-28, 2020",
       "transcripts\\692.autosub.srt"
@@ -94723,7 +94424,7 @@
   },
   {
     "entity_count": 43,
-    "entity_name": "robert mueller",
+    "entity_name": "Robert Mueller",
     "entity_origin": [
       "143: March 25-31 Part 1",
       "162: May 19, 2018",
@@ -95461,7 +95162,7 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "rod rosenstein",
+    "entity_name": "Rod Rosenstein",
     "entity_origin": [
       "126: February 2, 2018 (Special Report)",
       "259: January 27-29, 2019",
@@ -96022,7 +95723,7 @@
   },
   {
     "entity_count": 342,
-    "entity_name": "roger stone",
+    "entity_name": "Roger Stone",
     "entity_origin": [
       "101: January 11, 2016",
       "112: December 15, 2017",
@@ -96364,7 +96065,7 @@
   },
   {
     "entity_count": 28,
-    "entity_name": "ron desantis",
+    "entity_name": "Ron DeSantis",
     "entity_origin": [
       "597: September 14, 2021",
       "625: December 5, 2021",
@@ -96542,7 +96243,7 @@
   },
   {
     "entity_count": 45,
-    "entity_name": "ronald reagan",
+    "entity_name": "Ronald Reagan",
     "entity_origin": [
       "155: January 7-9, 2009",
       "204: Sweary Kerry's Larry",
@@ -97152,7 +96853,7 @@
   },
   {
     "entity_count": 47,
-    "entity_name": "rudy giuliani",
+    "entity_name": "Rudy Giuliani",
     "entity_origin": [
       "501: November 7-8, 2020",
       "517: January 5-6, 2021",
@@ -97231,7 +96932,7 @@
   },
   {
     "entity_count": 74,
-    "entity_name": "rush limbaugh",
+    "entity_name": "Rush Limbaugh",
     "entity_origin": [
       "231: March 24, 2009",
       "406: March 1-4, 2020",
@@ -98123,7 +97824,7 @@
   },
   {
     "entity_count": 32,
-    "entity_name": "sam harris",
+    "entity_name": "Sam Harris",
     "entity_origin": [
       "160: January 22-25, 2009",
       "600: September 22, 2021",
@@ -98181,7 +97882,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "sam montoya",
+    "entity_name": "Sam Montoya",
     "entity_origin": [
       "549: April 13-14, 2021",
       "Notable Legal Proceedings",
@@ -98248,7 +97949,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "samantha power",
+    "entity_name": "Samantha Power",
     "entity_origin": [
       "230A: Obama Deception, Part 1",
       "290: April 25-26, 2019"
@@ -98679,7 +98380,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "sandy hook family members",
+    "entity_name": "Sandy Hook Family Members",
     "entity_origin": [
       "292: January 14, 2013",
       "343: April 3-8, 2013"
@@ -99324,7 +99025,7 @@
   },
   {
     "entity_count": 14,
-    "entity_name": "savannah hernandez",
+    "entity_name": "Savannah Hernandez",
     "entity_origin": [
       "347: September 23, 2019",
       "440: June 1-2, 2020",
@@ -99513,7 +99214,7 @@
   },
   {
     "entity_count": 22,
-    "entity_name": "scarlett lewis",
+    "entity_name": "Scarlett Lewis",
     "entity_origin": [
       "transcripts\\602.autosub.srt",
       "transcripts\\602.otter.txt",
@@ -100103,7 +99804,7 @@
   },
   {
     "entity_count": 30,
-    "entity_name": "sean hannity",
+    "entity_name": "Sean Hannity",
     "entity_origin": [
       "138: March 13-15, 2018",
       "160: January 22-25, 2009",
@@ -102473,7 +102174,7 @@
   },
   {
     "entity_count": 82,
-    "entity_name": "solomon berg",
+    "entity_name": "Solomon Berg",
     "entity_origin": [
       "722: Space Capitalism Is Still Capitalism",
       "Solomon Berg",
@@ -104506,7 +104207,7 @@
   },
   {
     "entity_count": 20,
-    "entity_name": "stefan molyneux",
+    "entity_name": "Stefan Molyneux",
     "entity_origin": [
       "104: November 20, 2017",
       "232: Reverend Manning",
@@ -104607,7 +104308,7 @@
   },
   {
     "entity_count": 39,
-    "entity_name": "stephen colbert",
+    "entity_name": "Stephen Colbert",
     "entity_origin": [
       "435: May 18-21, 2020",
       "transcripts\\11.autosub.srt",
@@ -104645,7 +104346,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "stephen crowder",
+    "entity_name": "Stephen Crowder",
     "entity_origin": [
       "192: August 10, 2018",
       "533: February 17, 2021"
@@ -104717,7 +104418,7 @@
   },
   {
     "entity_count": 11,
-    "entity_name": "stephen king",
+    "entity_name": "Stephen King",
     "entity_origin": [
       "282: April 5, 2019",
       "306: June 4-5, 2019",
@@ -104758,7 +104459,7 @@
   },
   {
     "entity_count": 30,
-    "entity_name": "stephen miller",
+    "entity_name": "Stephen Miller",
     "entity_origin": [
       "117: January 8, 2018",
       "372: November 20-21, 2019",
@@ -104906,7 +104607,7 @@
   },
   {
     "entity_count": 82,
-    "entity_name": "steve bannon",
+    "entity_name": "Steve Bannon",
     "entity_origin": [
       "245: December 24, 2018",
       "473: August 20-21, 2020",
@@ -105203,7 +104904,7 @@
   },
   {
     "entity_count": 33,
-    "entity_name": "steve king",
+    "entity_name": "Steve King",
     "entity_origin": [
       "230A: Obama Deception, Part 1",
       "253: January 15, 2019",
@@ -105225,7 +104926,7 @@
   },
   {
     "entity_count": 14,
-    "entity_name": "steve kirsch",
+    "entity_name": "Steve Kirsch",
     "entity_origin": [
       "616: November 9, 2021",
       "619: November 16, 2021",
@@ -105338,7 +105039,7 @@
   },
   {
     "entity_count": 79,
-    "entity_name": "steve pieczenik",
+    "entity_name": "Steve Pieczenik",
     "entity_origin": [
       "107: December 12, 2014",
       "115: January 2, 2018",
@@ -105413,7 +105114,7 @@
   },
   {
     "entity_count": 54,
-    "entity_name": "steve quayle",
+    "entity_name": "Steve Quayle",
     "entity_origin": [
       "155: January 7-9, 2009",
       "175: Giants And Bonus Potatoes",
@@ -105455,7 +105156,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "steve shenk",
+    "entity_name": "Steve Shenk",
     "entity_origin": [
       "160: January 22-25, 2009",
       "200: Feb. 25-March 1, 2009",
@@ -105510,7 +105211,7 @@
   },
   {
     "entity_count": 15,
-    "entity_name": "steve watson",
+    "entity_name": "Steve Watson",
     "entity_origin": [
       "173: February 6-10, 2009",
       "240: March 30-31, 2009",
@@ -105833,7 +105534,7 @@
   },
   {
     "entity_count": 51,
-    "entity_name": "stewart rhodes",
+    "entity_name": "Stewart Rhodes",
     "entity_origin": [
       "222: March 15-19, 2009",
       "252: April 7-8, 2009",
@@ -106647,7 +106348,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "sun myung moon",
+    "entity_name": "Sun Myung Moon",
     "entity_origin": [
       "149: The Press Conference",
       "275: December 23-31, 2012",
@@ -107396,7 +107097,7 @@
   },
   {
     "entity_count": 15,
-    "entity_name": "susan collins",
+    "entity_name": "Susan Collins",
     "entity_origin": [
       "121: April 1-2, 2013",
       "272: December 20, 2012",
@@ -107653,7 +107354,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "sydney powell",
+    "entity_name": "Sydney Powell",
     "entity_origin": [
       "511: The 12/12 Rallies",
       "519: January 10-11, 2021",
@@ -107788,7 +107489,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "tamerlan tsarnaev",
+    "entity_name": "Tamerlan Tsarnaev",
     "entity_origin": [
       "364: April 21-22, 2013",
       "373: April 24, 2013"
@@ -107838,7 +107539,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "tammy sue bakker",
+    "entity_name": "Tammy Sue Bakker",
     "entity_origin": [
       "365: She Doesn't Do Politics",
       "transcripts\\180.autosub.srt",
@@ -108006,7 +107707,7 @@
   },
   {
     "entity_count": 18,
-    "entity_name": "taylor hanson",
+    "entity_name": "Taylor Hanson",
     "entity_origin": [
       "517: January 5-6, 2021",
       "518: January 7-8, 2021",
@@ -108170,7 +107871,7 @@
   },
   {
     "entity_count": 98,
-    "entity_name": "ted anderson",
+    "entity_name": "Ted Anderson",
     "entity_origin": [
       "\"Mandatory Service Bill\"",
       "123: March 18, 2008",
@@ -108366,7 +108067,7 @@
   },
   {
     "entity_count": 203,
-    "entity_name": "ted nugent",
+    "entity_name": "Ted Nugent",
     "entity_origin": [
       "138: March 13-15, 2018",
       "143: March 25-31 Part 1",
@@ -109170,7 +108871,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "texe marrs",
+    "entity_name": "Texe Marrs",
     "entity_origin": [
       "560: May 12-13, 2003",
       "622: June 30-July 1, 2003"
@@ -109238,7 +108939,7 @@
   },
   {
     "entity_count": 230,
-    "entity_name": "the alex jones show",
+    "entity_name": "The Alex Jones Show",
     "entity_origin": [
       "103: January 17, 2016",
       "108: November 30, 2017",
@@ -109453,7 +109154,7 @@
   },
   {
     "entity_count": 1400,
-    "entity_name": "the sandy hook elementary massacre",
+    "entity_name": "The Sandy Hook Elementary Massacre",
     "entity_origin": [
       "113: February 21-23, 2014",
       "121: April 1-2, 2013",
@@ -110118,7 +109819,7 @@
   },
   {
     "entity_count": 186,
-    "entity_name": "thomas jefferson",
+    "entity_name": "Thomas Jefferson",
     "entity_origin": [
       "140: February 18, 2011",
       "230E: Obama Deception, Part 5",
@@ -110513,7 +110214,7 @@
   },
   {
     "entity_count": 25,
-    "entity_name": "tim dillon",
+    "entity_name": "Tim Dillon",
     "entity_origin": [
       "492: October 13, 2020",
       "497: Third Try's A Charm",
@@ -110859,7 +110560,7 @@
   },
   {
     "entity_count": 22,
-    "entity_name": "timothy mcveigh",
+    "entity_name": "Timothy McVeigh",
     "entity_origin": [
       "447: Bill Cooper Covers OKC Part 2",
       "transcripts\\136.autosub.srt",
@@ -111089,7 +110790,7 @@
   },
   {
     "entity_count": 11,
-    "entity_name": "tom cotton",
+    "entity_name": "Tom Cotton",
     "entity_origin": [
       "394: January 31, 2020",
       "430: May 5-7, 2020",
@@ -111207,7 +110908,7 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "tom pappert",
+    "entity_name": "Tom Pappert",
     "entity_origin": [
       "329: August 4-5, 2019",
       "342: September 6-11, 2019",
@@ -111284,7 +110985,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "tommy cryer",
+    "entity_name": "Tommy Cryer",
     "entity_origin": [
       "243: April 1-2, 2009",
       "transcripts\\243.autosub.srt"
@@ -111350,7 +111051,7 @@
   },
   {
     "entity_count": 135,
-    "entity_name": "tommy robinson",
+    "entity_name": "Tommy Robinson",
     "entity_origin": [
       "137: March 12, 2018",
       "138: March 13-15, 2018",
@@ -111453,7 +111154,7 @@
   },
   {
     "entity_count": 19,
-    "entity_name": "tony blair",
+    "entity_name": "Tony Blair",
     "entity_origin": [
       "186: February 17-18, 2009",
       "655: July 18, 2003",
@@ -112685,8 +112386,8 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 176,
-    "entity_name": "tucker carlson",
+    "entity_count": 177,
+    "entity_name": "Tucker Carlson",
     "entity_origin": [
       "199: August 29, 2018",
       "407: March 5-10, 2020",
@@ -112701,6 +112402,7 @@
       "637: January 13, 2022",
       "725: September 13-14, 2022",
       "734: October 9, 2022",
+      "Tucker Carlson",
       "transcripts\\110.autosub.srt",
       "transcripts\\130D.autosub.srt",
       "transcripts\\179.autosub.srt",
@@ -112802,7 +112504,7 @@
       "LOC",
       "PRODUCT"
     ],
-    "is_existing": false,
+    "is_existing": true,
     "is_known_missing": true
   },
   {
@@ -112823,7 +112525,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "tulsi gabbard",
+    "entity_name": "Tulsi Gabbard",
     "entity_origin": [
       "497: Third Try's A Charm",
       "586: August 11-12, 2021",
@@ -113242,7 +112944,7 @@
   },
   {
     "entity_count": 11,
-    "entity_name": "tyler nixon",
+    "entity_name": "Tyler Nixon",
     "entity_origin": [
       "257: January 25, 2019",
       "430: May 5-7, 2020",
@@ -115792,7 +115494,7 @@
   },
   {
     "entity_count": 15,
-    "entity_name": "vince mcmahon",
+    "entity_name": "Vince McMahon",
     "entity_origin": [
       "286: Wrestling With Disappointment",
       "transcripts\\157.autosub.srt",
@@ -116064,7 +115766,7 @@
   },
   {
     "entity_count": 792,
-    "entity_name": "vladimir putin",
+    "entity_name": "Vladimir Putin",
     "entity_origin": [
       "100: January 6-7, 2016",
       "102: Alex On Russian Media",
@@ -116438,7 +116140,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "w cleon skousen",
+    "entity_name": "W Cleon Skousen",
     "entity_origin": [
       "230A: Obama Deception, Part 1",
       "284: April 12, 2019",
@@ -116889,7 +116591,7 @@
   },
   {
     "entity_count": 12,
-    "entity_name": "warren buffett",
+    "entity_name": "Warren Buffett",
     "entity_origin": [
       "432: May 10-11, 2020",
       "transcripts\\130D.autosub.srt",
@@ -117641,7 +117343,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "wayne allen root",
+    "entity_name": "Wayne Allen Root",
     "entity_origin": [
       "603: October 3-4, 2021",
       "647: February 8, 2022"
@@ -117708,7 +117410,7 @@
   },
   {
     "entity_count": 26,
-    "entity_name": "wayne madsen",
+    "entity_name": "Wayne Madsen",
     "entity_origin": [
       "163: January 27-29, 2009",
       "298: January 20-23, 2013",
@@ -117774,7 +117476,7 @@
   },
   {
     "entity_count": 15,
-    "entity_name": "wayne paul",
+    "entity_name": "Wayne Paul",
     "entity_origin": [
       "227: March 23, 2009",
       "230C: Obama Deception, Part 3",
@@ -117909,7 +117611,7 @@
   },
   {
     "entity_count": 47,
-    "entity_name": "webster tarpley",
+    "entity_name": "Webster Tarpley",
     "entity_origin": [
       "211: March 10, 2009",
       "230A: Obama Deception, Part 1",
@@ -119341,7 +119043,7 @@
   },
   {
     "entity_count": 16,
-    "entity_name": "william binney",
+    "entity_name": "William Binney",
     "entity_origin": [
       "123: March 18, 2008",
       "287: April 15-18, 2019",
@@ -119952,7 +119654,7 @@
   },
   {
     "entity_count": 13,
-    "entity_name": "winston churchill",
+    "entity_name": "Winston Churchill",
     "entity_origin": [
       "99: November 1, 2017",
       "transcripts\\139.autosub.srt",
@@ -120124,7 +119826,7 @@
   },
   {
     "entity_count": 60,
-    "entity_name": "wolfgang halbig",
+    "entity_name": "Wolfgang Halbig",
     "entity_origin": [
       "279: Formulaic Objections",
       "387: May 13, 2014",
@@ -121175,7 +120877,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "xi jinping",
+    "entity_name": "Xi Jinping",
     "entity_origin": [
       "141: March 20-22, 2018",
       "421: April 16, 2020",
@@ -121543,7 +121245,7 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "zach voorhees",
+    "entity_name": "Zach Voorhees",
     "entity_origin": [
       "333: August 16, 2019",
       "334: August 21-22, 2019",
@@ -121638,7 +121340,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "zeb coulter",
+    "entity_name": "Zeb Coulter",
     "entity_origin": [
       "286: Wrestling With Disappointment",
       "317: February 19-20, 2013",

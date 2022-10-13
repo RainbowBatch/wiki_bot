@@ -96,6 +96,12 @@
     ]
   },
   {
+    "coverage_date": "April 10, 2018",
+    "coverage_end_date": "April 10, 2018",
+    "coverage_start_date": "April 10, 2018",
+    "episode_number": "149"
+  },
+  {
     "episode_number": "15",
     "people": [
       "Millie Weaver",
@@ -114,6 +120,12 @@
       "Mike Rotondo",
       "Marc Randazza"
     ]
+  },
+  {
+    "coverage_date": "May 25, 2018",
+    "coverage_end_date": "May 25, 2018",
+    "coverage_start_date": "May 25, 2018",
+    "episode_number": "165"
   },
   {
     "episode_number": "166",
@@ -1982,7 +1994,13 @@
     "categories": [
       "Present Day"
     ],
-    "episode_number": "723"
+    "episode_number": "723",
+    "people": [
+      "Prince Charles",
+      "Andrew Tate",
+      "Harrison Smith",
+      "David Knight"
+    ]
   },
   {
     "categories": [
@@ -2000,37 +2018,72 @@
     "categories": [
       "Present Day"
     ],
-    "episode_number": "726"
+    "episode_number": "726",
+    "people": [
+      "Dennis Montgomery",
+      "Ron Desantis",
+      "Donald Trump",
+      "Josh Hawley",
+      "Laura Loomer",
+      "Mike Lindell",
+      "Klaus Schwab"
+    ]
   },
   {
     "categories": [
       "Knowledge Fight Interview"
     ],
-    "episode_number": "727"
+    "episode_number": "727",
+    "people": [
+      "Sebastian Murdoch",
+      "Owen Shroyer",
+      "Mark Bankston",
+      "Dylann Roof"
+    ]
   },
   {
     "categories": [
       "Knowledge Fight Interview"
     ],
-    "episode_number": "728"
+    "episode_number": "728",
+    "people": [
+      "Elizabeth Williamson",
+      "Matthew Mills"
+    ]
   },
   {
     "categories": [
       "Present Day"
     ],
-    "episode_number": "729"
+    "episode_number": "729",
+    "people": [
+      "Robert Barnes",
+      "Elizabeth Williamson"
+    ]
   },
   {
     "categories": [
       "2003 Investigation"
     ],
-    "episode_number": "730"
+    "episode_number": "730",
+    "people": [
+      "John Anderson",
+      "Paul Revere",
+      "Arnold Schwarzenegger",
+      "Mel Gibson"
+    ]
   },
   {
     "categories": [
       "Present Day"
     ],
-    "episode_number": "731"
+    "episode_number": "731",
+    "people": [
+      "Robert Owens",
+      "Robert Welch",
+      "Joel Skousen",
+      "Ted Nugent"
+    ]
   },
   {
     "categories": [
@@ -2040,19 +2093,35 @@
     "coverage_date": "##REMOVE##",
     "coverage_end_date": "October 6, 2022",
     "coverage_start_date": "October 4, 2022",
-    "episode_number": "732"
+    "episode_number": "732",
+    "people": [
+      "Robert Barnes",
+      "Bill Ogden",
+      "Wolfgang Halbig"
+    ]
   },
   {
     "categories": [
       "Present Day"
     ],
-    "episode_number": "733"
+    "episode_number": "733",
+    "people": [
+      "Vladimir Putin"
+    ]
   },
   {
     "categories": [
       "Present Day"
     ],
-    "episode_number": "734"
+    "episode_number": "734",
+    "people": [
+      "Donald Trump",
+      "Candace Owens",
+      "Peter Thiel",
+      "Kanye West",
+      "Tucker Carlson",
+      "Aaron Russo"
+    ]
   },
   {
     "episode_number": "78",
