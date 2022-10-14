@@ -517,7 +517,9 @@
   {
     "episode_number": "733",
     "people": [
-      "Vladimir Putin"
+      "Vladimir Putin",
+      "Bray Wyatt",
+      "Frank Sinatra"
     ]
   },
   {
@@ -529,6 +531,19 @@
       "Kanye West",
       "Tucker Carlson",
       "Aaron Russo"
+    ]
+  },
+  {
+    "episode_number": "735",
+    "people": [
+      "Robert Barnes",
+      "Steve Quayle",
+      "Steve Quale",
+      "Owen Shroyer",
+      "Vladimir Putin",
+      "David Icke",
+      "David Knight",
+      "Harrison Smith"
     ]
   },
   {
@@ -559,6 +574,26 @@
       "Bill Hicks",
       "Jesse Ventura",
       "Isaac Asimov"
+    ]
+  },
+  {
+    "episode_number": "99",
+    "people": [
+      "Roger Stone",
+      "Donald Trump",
+      "Mike Cernovich",
+      "Larry Nichols",
+      "Linda Sarsour",
+      "Matt Bracken",
+      "Wild Wild West",
+      "Jake Tapper",
+      "Wolf Blitzer",
+      "Aleksandr Dugin",
+      "Laura Loomer",
+      "Buckley Hamman",
+      "Tommy Robinson",
+      "Chuck Schumer",
+      "Donald Trump Jr"
     ]
   }
 ]

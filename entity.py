@@ -40,11 +40,12 @@ NOT_RELEVANT_PEOPLE = [
     "Cinco Demayo",
     "Wolfgang Puck",
     "Arnold Palmer",
+    "Wild Wild West",
 ]
 
 REMAPPING = {
-    "Alex Jones'": 'Alex Jones',
     'Alex E. Jones': 'Alex Jones',
+    'Alex Jones\'': 'Alex Jones',
     'Alex': 'Alex Jones',
     'Alexander Dugan': 'Alexander Dugin',
     'Bobby Barnes': 'Robert Barnes',
@@ -52,21 +53,22 @@ REMAPPING = {
     'Dan Bodandy': 'Dan Bidondi',
     'Dan Vedandi': 'Dan Bidondi',
     'Dan Vidanti': 'Dan Bidondi',
+    'Donald Trump\u200f\u200e': 'Donald Trump',
+    'Evan Mcmullen': 'Evan McMullen',
     'Howard Stearn': 'Howard Stern',
+    'John Rapoport': "John Rappaport",
+    'Leann McAdoo': "Lee Ann McAdoo",
+    'Leanne McAdoo': "Lee Ann McAdoo",
+    'Marty Derosa': 'Marty DeRosa',
     'Meghan Kelly': 'Megyn Kelly',
     'Neil Hesleyn': 'Neil Heslin',
     'Omar Alfaruk': 'Omar al-Faruq',
     'Owen Troyer': 'Owen Schroyer',
     'Rhonda Santas': 'Ron DeSantis',
+    'Ron Desantis': "Ron DeSantis",
+    'Steve Quale': "Steve Quayle",
     'Wolfgang Halbeck': 'Wolfgang Halbig',
     'Zuckerberg': 'Mark Zuckerberg',
-    "John Rapoport": "John Rappaport",
-    'Donald Trump\u200f\u200e': 'Donald Trump',
-    'Marty Derosa': 'Marty DeRosa',
-    'Evan Mcmullen': 'Evan McMullen',
-    "Leanne McAdoo": "Lee Ann McAdoo",
-    "Leann McAdoo": "Lee Ann McAdoo",
-    "Ron Desantis": "Ron DeSantis",
 }
 
 
