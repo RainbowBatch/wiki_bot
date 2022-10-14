@@ -67,6 +67,7 @@ for page_record in scraped_data.to_dict(orient='records'):
         new_overlay[page_record.episodeNumber]['episode_number'] = page_record.episodeNumber
         new_overlay[page_record.episodeNumber]['categories'] = inferred_categories
 
+    # TODO(woursler): WTF -- This is wrong.
     current_people = matching_episode_record.people or []
     inferred_people = page_record.appearance or []
 
