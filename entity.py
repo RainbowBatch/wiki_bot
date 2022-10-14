@@ -41,14 +41,19 @@ NOT_RELEVANT_PEOPLE = [
     "Wolfgang Puck",
     "Arnold Palmer",
     "Wild Wild West",
+    "Dan Jordan",
+    "Alex Jordan",
+    "Beatles Rock Band",
 ]
 
 REMAPPING = {
     'Alex E. Jones': 'Alex Jones',
     'Alex Jones\'': 'Alex Jones',
     'Alex': 'Alex Jones',
+    'alex jonesy': 'Alex Jones',
     'Alexander Dugan': 'Alexander Dugin',
     'Bobby Barnes': 'Robert Barnes',
+    'Chris Maddie': 'Chris Mattei',
     'Dan Bodandi': 'Dan Bidondi',
     'Dan Bodandy': 'Dan Bidondi',
     'Dan Vedandi': 'Dan Bidondi',

@@ -55552,7 +55552,9 @@
   },
   {
     "beverage": null,
-    "categories": [],
+    "categories": [
+      "Present Day"
+    ],
     "clean_title": "October 12, 2022",
     "coverage_date": "October 12, 2022",
     "coverage_end_date": "October 12, 2022",
@@ -55571,7 +55573,15 @@
     "notable_bits": [],
     "ofile": "kf_wiki_content/735{{COLON}}_October_12,_2022.wiki",
     "ooc_drop": null,
-    "people": [],
+    "people": [
+      "Robert Barnes",
+      "Steve Quayle",
+      "Owen Shroyer",
+      "Vladimir Putin",
+      "David Icke",
+      "David Knight",
+      "Harrison Smith"
+    ],
     "prev_episode_number": "734",
     "prev_title": "734: October 9, 2022",
     "release_date": "October 14, 2022",
