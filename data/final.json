@@ -9467,9 +9467,9 @@
       "Present Day"
     ],
     "clean_title": "The Press Conference",
-    "coverage_date": null,
-    "coverage_end_date": null,
-    "coverage_start_date": null,
+    "coverage_date": "April 10, 2018",
+    "coverage_end_date": "April 10, 2018",
+    "coverage_start_date": "April 10, 2018",
     "details_html": "<div class=\"libsyn-item-body\">\n<p>Today, Dan tells Jordan all about the press conference that Alex Jones held in Washington DC on April 10, 2018. Actually, that's not true, they talk about that a little bit, but mostly talk about how stupid the Q and A session that Alex held after the conference was.\u00a0</p>\n</div>",
     "download_link": "https://traffic.libsyn.com/secure/knowledgefight/4-10-18.mp3",
     "embed_player_url": "https://html5-player.libsyn.com/embed/episode/id/6476818/height/90/theme/custom/thumbnail/yes/direction/forward/tdest_id/461807/render-playlist/no/custom-color/87A93A/",
@@ -10646,9 +10646,9 @@
       "Present Day"
     ],
     "clean_title": "Rotondo, Round 2",
-    "coverage_date": null,
-    "coverage_end_date": null,
-    "coverage_start_date": null,
+    "coverage_date": "May 25, 2018",
+    "coverage_end_date": "May 25, 2018",
+    "coverage_start_date": "May 25, 2018",
     "details_html": "<div class=\"libsyn-item-body\">\n<p>Today, Dan tells Jordan about how Alex Jones completely lost his mind in a live video he streamed on May 25th, 2018 when he took another stab at trying to be a father figure for Michael Rotondo, the 30 year old who got kicked out of his parents' house. It may seem like this is too much Rotondo for this podcast, but please believe that this is not about him. This is all about Alex Jones being a complete lunatic.</p>\n</div>",
     "download_link": "https://traffic.libsyn.com/secure/knowledgefight/RotondoRd2.mp3",
     "embed_player_url": "https://html5-player.libsyn.com/embed/episode/id/6647981/height/90/theme/custom/thumbnail/yes/direction/forward/tdest_id/461807/render-playlist/no/custom-color/87A93A/",
@@ -55067,7 +55067,12 @@
     "notable_bits": [],
     "ofile": "kf_wiki_content/723{{COLON}}_September_8,_2022.wiki",
     "ooc_drop": null,
-    "people": [],
+    "people": [
+      "Prince Charles",
+      "Andrew Tate",
+      "Harrison Smith",
+      "David Knight"
+    ],
     "prev_episode_number": "722",
     "prev_title": "722: Space Capitalism Is Still Capitalism",
     "release_date": "September 9, 2022",
@@ -55184,7 +55189,15 @@
     "notable_bits": [],
     "ofile": "kf_wiki_content/726{{COLON}}_September_15-16,_2022.wiki",
     "ooc_drop": null,
-    "people": [],
+    "people": [
+      "Dennis Montgomery",
+      "Ron Desantis",
+      "Donald Trump",
+      "Josh Hawley",
+      "Laura Loomer",
+      "Mike Lindell",
+      "Klaus Schwab"
+    ],
     "prev_episode_number": "725",
     "prev_title": "725: September 13-14, 2022",
     "release_date": "September 19, 2022",
@@ -55221,7 +55234,12 @@
     "notable_bits": [],
     "ofile": "kf_wiki_content/727{{COLON}}_Chatting_with_Sebastian_Murdock.wiki",
     "ooc_drop": null,
-    "people": [],
+    "people": [
+      "Sebastian Murdoch",
+      "Owen Shroyer",
+      "Mark Bankston",
+      "Dylann Roof"
+    ],
     "prev_episode_number": "726",
     "prev_title": "726: September 15-16, 2022",
     "release_date": "September 21, 2022",
@@ -55258,7 +55276,10 @@
     "notable_bits": [],
     "ofile": "kf_wiki_content/728{{COLON}}_Elizabeth_Williamson_Returns_Once_More.wiki",
     "ooc_drop": null,
-    "people": [],
+    "people": [
+      "Elizabeth Williamson",
+      "Matthew Mills"
+    ],
     "prev_episode_number": "727",
     "prev_title": "727: Chatting with Sebastian Murdock",
     "release_date": "September 23, 2022",
@@ -55295,7 +55316,10 @@
     "notable_bits": [],
     "ofile": "kf_wiki_content/729{{COLON}}_September_24,_2022.wiki",
     "ooc_drop": null,
-    "people": [],
+    "people": [
+      "Robert Barnes",
+      "Elizabeth Williamson"
+    ],
     "prev_episode_number": "728",
     "prev_title": "728: Elizabeth Williamson Returns Once More",
     "release_date": "September 26, 2022",
@@ -55332,7 +55356,12 @@
     "notable_bits": [],
     "ofile": "kf_wiki_content/730{{COLON}}_August_12,_2003.wiki",
     "ooc_drop": null,
-    "people": [],
+    "people": [
+      "John Anderson",
+      "Paul Revere",
+      "Arnold Schwarzenegger",
+      "Mel Gibson"
+    ],
     "prev_episode_number": "729",
     "prev_title": "729: September 24, 2022",
     "release_date": "September 30, 2022",
@@ -55371,7 +55400,12 @@
     "notable_bits": [],
     "ofile": "kf_wiki_content/731{{COLON}}_September_29-30,_2022.wiki",
     "ooc_drop": null,
-    "people": [],
+    "people": [
+      "Robert Owens",
+      "Robert Welch",
+      "Joel Skousen",
+      "Ted Nugent"
+    ],
     "prev_episode_number": "730",
     "prev_title": "730: August 12, 2003",
     "release_date": "October 3, 2022",
@@ -55409,7 +55443,11 @@
     "notable_bits": [],
     "ofile": "kf_wiki_content/732{{COLON}}_Trial_Press_Conference.wiki",
     "ooc_drop": null,
-    "people": [],
+    "people": [
+      "Robert Barnes",
+      "Bill Ogden",
+      "Wolfgang Halbig"
+    ],
     "prev_episode_number": "731",
     "prev_title": "731: September 29-30, 2022",
     "release_date": "October 7, 2022",
@@ -55448,7 +55486,9 @@
     "notable_bits": [],
     "ofile": "kf_wiki_content/733{{COLON}}_October_6,_2022.wiki",
     "ooc_drop": null,
-    "people": [],
+    "people": [
+      "Vladimir Putin"
+    ],
     "prev_episode_number": "732",
     "prev_title": "732: Trial Press Conference",
     "release_date": "October 10, 2022",
@@ -55487,7 +55527,14 @@
     "notable_bits": [],
     "ofile": "kf_wiki_content/734{{COLON}}_October_9,_2022.wiki",
     "ooc_drop": null,
-    "people": [],
+    "people": [
+      "Donald Trump",
+      "Candace Owens",
+      "Peter Thiel",
+      "Kanye West",
+      "Tucker Carlson",
+      "Aaron Russo"
+    ],
     "prev_episode_number": "733",
     "prev_title": "733: October 6, 2022",
     "release_date": "October 12, 2022",
