@@ -24060,29 +24060,6 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 12,
-    "entity_name": "chris maddie",
-    "entity_origin": [
-      "transcripts\\310.autosub.srt",
-      "transcripts\\311.autosub.srt",
-      "transcripts\\630.autosub.srt",
-      "transcripts\\705.autosub.srt",
-      "transcripts\\729.autosub.srt",
-      "transcripts\\729.otter.txt",
-      "transcripts\\733.autosub.srt",
-      "transcripts\\735.otter.txt"
-    ],
-    "entity_sourcetexts": [
-      "Chris Maddie",
-      "Chris Maddie's"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
     "entity_count": 3,
     "entity_name": "chris martin",
     "entity_origin": [
@@ -24116,7 +24093,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 19,
+    "entity_count": 31,
     "entity_name": "Chris Mattei",
     "entity_origin": [
       "310: June 13-14, 2019",
@@ -24125,12 +24102,21 @@
       "Chris Mattei",
       "Connecticut Sandy Hook Lawsuit (Lafferty v. Jones)",
       "Norm Pattis",
+      "transcripts\\310.autosub.srt",
       "transcripts\\310.otter.txt",
+      "transcripts\\311.autosub.srt",
+      "transcripts\\630.autosub.srt",
+      "transcripts\\705.autosub.srt",
+      "transcripts\\729.autosub.srt",
+      "transcripts\\729.otter.txt",
       "transcripts\\731.otter.txt",
+      "transcripts\\733.autosub.srt",
       "transcripts\\735.otter.txt"
     ],
     "entity_sourcetexts": [
       "Chris\r\nMattei",
+      "Chris Maddie",
+      "Chris Maddie's",
       "Chris Mattei",
       "Chris Mattei's"
     ],
@@ -39913,7 +39899,7 @@
   },
   {
     "entity_count": 19,
-    "entity_name": "Ezra LeVant",
+    "entity_name": "Ezra Levant",
     "entity_origin": [
       "376: December 3-5, 2019",
       "394: January 31, 2020",
@@ -50754,7 +50740,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "HONR Network",
+    "entity_name": "HONR network",
     "entity_origin": [
       "279: Formulaic Objections",
       "Leonard Pozner"
@@ -50766,7 +50752,7 @@
       "ORG"
     ],
     "is_existing": false,
-    "is_known_missing": false
+    "is_known_missing": true
   },
   {
     "entity_count": 3,
