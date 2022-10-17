@@ -2102,7 +2102,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 8,
+    "entity_count": 9,
     "entity_name": "alex and infowars",
     "entity_origin": [
       "transcripts\\376.autosub.srt",
@@ -2112,6 +2112,7 @@
       "transcripts\\712.autosub.srt",
       "transcripts\\712.otter.txt",
       "transcripts\\735.otter.txt",
+      "transcripts\\736.otter.txt",
       "transcripts\\8.otter.txt"
     ],
     "entity_sourcetexts": [
@@ -2947,7 +2948,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 34982,
+    "entity_count": 35068,
     "entity_name": "Alex Jones",
     "entity_origin": [
       "\"Mandatory Service Bill\"",
@@ -3610,6 +3611,7 @@
       "733: October 6, 2022",
       "734: October 9, 2022",
       "735: October 12, 2022",
+      "736: Reflections on a Verdict",
       "73: August 12, 2017",
       "74: October 4-6, 2015",
       "75: January 7, 2011",
@@ -4498,6 +4500,8 @@
       "transcripts\\733.otter.txt",
       "transcripts\\734.otter.txt",
       "transcripts\\735.otter.txt",
+      "transcripts\\736.otter.txt",
+      "transcripts\\737.otter.txt",
       "transcripts\\74.autosub.srt",
       "transcripts\\75.autosub.srt",
       "transcripts\\76.autosub.srt",
@@ -4549,10 +4553,12 @@
       "Alex\r\nJones",
       "Alex\r\nJones'",
       "Alex\r\nJones's",
+      "Alex Emmerich Jones",
       "Alex Jones",
       "Alex Jones\r\n",
       "Alex Jones'",
       "Alex Jones's",
+      "Alex Jonesy",
       "Alex's",
       "Alex's\n\n",
       "Alex's\r\n",
@@ -4823,23 +4829,6 @@
     "entity_type": [
       "PERSON",
       "ORG"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "alex jonesy",
-    "entity_origin": [
-      "transcripts\\719.welder.srt",
-      "transcripts\\719.welder.txt",
-      "transcripts\\99.otter.txt"
-    ],
-    "entity_sourcetexts": [
-      "Alex Jonesy"
-    ],
-    "entity_type": [
-      "PERSON"
     ],
     "is_existing": false,
     "is_known_missing": false
@@ -12733,7 +12722,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 932,
+    "entity_count": 933,
     "entity_name": "Barack Obama",
     "entity_origin": [
       "\"Mandatory Service Bill\"",
@@ -13115,6 +13104,7 @@
       "transcripts\\729.autosub.srt",
       "transcripts\\729.otter.txt",
       "transcripts\\73.autosub.srt",
+      "transcripts\\737.otter.txt",
       "transcripts\\76.autosub.srt",
       "transcripts\\77.autosub.srt",
       "transcripts\\78.autosub.srt",
@@ -13545,10 +13535,11 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
+    "entity_count": 3,
     "entity_name": "batman begins",
     "entity_origin": [
       "transcripts\\687.autosub.srt",
+      "transcripts\\736.otter.txt",
       "transcripts\\95.autosub.srt"
     ],
     "entity_sourcetexts": [
@@ -13634,10 +13625,11 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 4,
+    "entity_count": 5,
     "entity_name": "battle for truth",
     "entity_origin": [
       "657: Chatting With Elizabeth Williamson",
+      "737: Reflections on a Verdict Part 2",
       "transcripts\\657.autosub.srt",
       "transcripts\\728.autosub.srt"
     ],
@@ -14285,7 +14277,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 57,
+    "entity_count": 58,
     "entity_name": "Ben Shapiro",
     "entity_origin": [
       "160: January 22-25, 2009",
@@ -14323,7 +14315,8 @@
       "transcripts\\686.autosub.srt",
       "transcripts\\715.autosub.srt",
       "transcripts\\715.otter.txt",
-      "transcripts\\715.welder.txt"
+      "transcripts\\715.welder.txt",
+      "transcripts\\736.otter.txt"
     ],
     "entity_sourcetexts": [
       "Ben Shapiro",
@@ -14479,11 +14472,12 @@
     "is_known_missing": true
   },
   {
-    "entity_count": 4,
+    "entity_count": 5,
     "entity_name": "benny johnson",
     "entity_origin": [
       "transcripts\\363.autosub.srt",
-      "transcripts\\368.autosub.srt"
+      "transcripts\\368.autosub.srt",
+      "transcripts\\736.otter.txt"
     ],
     "entity_sourcetexts": [
       "Benny Johnson"
@@ -18555,19 +18549,22 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 4,
+    "entity_count": 5,
     "entity_name": "branch davidian",
     "entity_origin": [
       "transcripts\\104.autosub.srt",
       "transcripts\\26.autosub.srt",
-      "transcripts\\352.autosub.srt"
+      "transcripts\\352.autosub.srt",
+      "transcripts\\737.otter.txt"
     ],
     "entity_sourcetexts": [
+      "Branch Davidian",
       "the Branch Davidian",
       "the Branch Davidian\n\n"
     ],
     "entity_type": [
       "ORG",
+      "NORP",
       "LAW"
     ],
     "is_existing": false,
@@ -22440,22 +22437,6 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 8,
-    "entity_name": "chapter five",
-    "entity_origin": [
-      "transcripts\\718.welder.txt",
-      "transcripts\\729.otter.txt"
-    ],
-    "entity_sourcetexts": [
-      "Chapter Five"
-    ],
-    "entity_type": [
-      "LAW"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
     "entity_count": 4,
     "entity_name": "charles barkley",
     "entity_origin": [
@@ -22950,7 +22931,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 45,
+    "entity_count": 48,
     "entity_name": "Charlie Kirk",
     "entity_origin": [
       "363: October 30, 2019",
@@ -22969,7 +22950,8 @@
       "transcripts\\612.autosub.srt",
       "transcripts\\637.autosub.srt",
       "transcripts\\639.autosub.srt",
-      "transcripts\\713.autosub.srt"
+      "transcripts\\713.autosub.srt",
+      "transcripts\\736.otter.txt"
     ],
     "entity_sourcetexts": [
       "Charlie Kirk",
@@ -23121,7 +23103,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 71,
+    "entity_count": 72,
     "entity_name": "charlottesville",
     "entity_origin": [
       "138: March 13-15, 2018",
@@ -23155,6 +23137,7 @@
       "transcripts\\727.autosub.srt",
       "transcripts\\727.otter.txt",
       "transcripts\\73.autosub.srt",
+      "transcripts\\737.otter.txt",
       "transcripts\\74.autosub.srt",
       "transcripts\\99.autosub.srt",
       "transcripts\\99.otter.txt"
@@ -24152,14 +24135,15 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 7,
+    "entity_count": 8,
     "entity_name": "chris mattie",
     "entity_origin": [
       "transcripts\\310.autosub.srt",
       "transcripts\\725.autosub.srt",
       "transcripts\\727.autosub.srt",
       "transcripts\\729.autosub.srt",
-      "transcripts\\731.autosub.srt"
+      "transcripts\\731.autosub.srt",
+      "transcripts\\737.otter.txt"
     ],
     "entity_sourcetexts": [
       "Chris Mattie",
@@ -26863,6 +26847,22 @@
   },
   {
     "entity_count": 2,
+    "entity_name": "commonwealth",
+    "entity_origin": [
+      "transcripts\\355.autosub.srt",
+      "transcripts\\737.otter.txt"
+    ],
+    "entity_sourcetexts": [
+      "Commonwealth"
+    ],
+    "entity_type": [
+      "ORG"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
+    "entity_count": 2,
     "entity_name": "communications",
     "entity_origin": [
       "transcripts\\617.autosub.srt",
@@ -27408,7 +27408,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 406,
+    "entity_count": 411,
     "entity_name": "connecticut",
     "entity_origin": [
       "210: March 9, 2009",
@@ -27545,6 +27545,8 @@
       "transcripts\\733.autosub.srt",
       "transcripts\\733.otter.txt",
       "transcripts\\735.otter.txt",
+      "transcripts\\736.otter.txt",
+      "transcripts\\737.otter.txt",
       "transcripts\\89.autosub.srt",
       "transcripts\\92.autosub.srt",
       "transcripts\\99.autosub.srt",
@@ -27596,14 +27598,15 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 6,
+    "entity_count": 7,
     "entity_name": "connecticut supreme court",
     "entity_origin": [
       "transcripts\\279.otter.txt",
       "transcripts\\341.autosub.srt",
       "transcripts\\348.autosub.srt",
       "transcripts\\460.autosub.srt",
-      "transcripts\\461.autosub.srt"
+      "transcripts\\461.autosub.srt",
+      "transcripts\\736.otter.txt"
     ],
     "entity_sourcetexts": [
       "Connecticut Supreme Court",
@@ -28347,7 +28350,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 28,
+    "entity_count": 29,
     "entity_name": "coronavirus",
     "entity_origin": [
       "391: January 22, 2020",
@@ -28372,7 +28375,8 @@
       "transcripts\\456.autosub.srt",
       "transcripts\\602.otter.txt",
       "transcripts\\714.otter.txt",
-      "transcripts\\725.otter.txt"
+      "transcripts\\725.otter.txt",
+      "transcripts\\737.otter.txt"
     ],
     "entity_sourcetexts": [
       "Coronavirus"
@@ -29873,7 +29877,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 34,
+    "entity_count": 35,
     "entity_name": "dan jordan",
     "entity_origin": [
       "transcripts\\279.otter.txt",
@@ -29904,7 +29908,8 @@
       "transcripts\\727.otter.txt",
       "transcripts\\729.otter.txt",
       "transcripts\\730.otter.txt",
-      "transcripts\\732.otter.txt"
+      "transcripts\\732.otter.txt",
+      "transcripts\\737.otter.txt"
     ],
     "entity_sourcetexts": [
       "Dan Jordan"
@@ -31535,7 +31540,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 274,
+    "entity_count": 275,
     "entity_name": "David Icke",
     "entity_origin": [
       "100: January 6-7, 2016",
@@ -31621,6 +31626,7 @@
       "transcripts\\701.autosub.srt",
       "transcripts\\709.autosub.srt",
       "transcripts\\735.otter.txt",
+      "transcripts\\736.otter.txt",
       "transcripts\\84.autosub.srt",
       "transcripts\\87.autosub.srt",
       "transcripts\\95.autosub.srt"
@@ -35460,7 +35466,7 @@
     "is_known_missing": true
   },
   {
-    "entity_count": 5883,
+    "entity_count": 5888,
     "entity_name": "Donald Trump",
     "entity_origin": [
       "100: January 6-7, 2016",
@@ -36338,6 +36344,8 @@
       "transcripts\\732.autosub.srt",
       "transcripts\\732.otter.txt",
       "transcripts\\734.otter.txt",
+      "transcripts\\736.otter.txt",
+      "transcripts\\737.otter.txt",
       "transcripts\\74.autosub.srt",
       "transcripts\\75.autosub.srt",
       "transcripts\\76.autosub.srt",
@@ -38589,7 +38597,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 91,
+    "entity_count": 177,
     "entity_name": "elizabeth williamson",
     "entity_origin": [
       "657: Chatting With Elizabeth Williamson",
@@ -38609,7 +38617,8 @@
       "transcripts\\713.autosub.srt",
       "transcripts\\728.otter.txt",
       "transcripts\\729.autosub.srt",
-      "transcripts\\729.otter.txt"
+      "transcripts\\729.otter.txt",
+      "transcripts\\737.otter.txt"
     ],
     "entity_sourcetexts": [
       "Elizabeth Williamson"
@@ -39899,7 +39908,7 @@
   },
   {
     "entity_count": 19,
-    "entity_name": "Ezra Levant",
+    "entity_name": "Ezra LeVant",
     "entity_origin": [
       "376: December 3-5, 2019",
       "394: January 31, 2020",
@@ -41169,7 +41178,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 116,
+    "entity_count": 117,
     "entity_name": "first amendment",
     "entity_origin": [
       "transcripts\\10.otter.txt",
@@ -41241,6 +41250,7 @@
       "transcripts\\729.otter.txt",
       "transcripts\\73.autosub.srt",
       "transcripts\\732.otter.txt",
+      "transcripts\\736.otter.txt",
       "transcripts\\83.autosub.srt",
       "transcripts\\99.otter.txt"
     ],
@@ -41796,7 +41806,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 5,
+    "entity_count": 8,
     "entity_name": "formulaic objections",
     "entity_origin": [
       "Bradley Reeves",
@@ -42275,6 +42285,22 @@
     ],
     "entity_sourcetexts": [
       "Framingham"
+    ],
+    "entity_type": [
+      "PERSON"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "francine wheeler",
+    "entity_origin": [
+      "transcripts\\735.otter.txt",
+      "transcripts\\737.otter.txt"
+    ],
+    "entity_sourcetexts": [
+      "Francine Wheeler"
     ],
     "entity_type": [
       "PERSON"
@@ -45674,7 +45700,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 527,
+    "entity_count": 528,
     "entity_name": "Glenn Beck",
     "entity_origin": [
       "160: January 22-25, 2009",
@@ -45815,6 +45841,7 @@
       "transcripts\\719.autosub.srt",
       "transcripts\\719.welder.srt",
       "transcripts\\719.welder.txt",
+      "transcripts\\737.otter.txt",
       "transcripts\\82.autosub.srt",
       "transcripts\\88.autosub.srt",
       "transcripts\\S004.autosub.srt"
@@ -45902,7 +45929,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 54,
+    "entity_count": 55,
     "entity_name": "Glenn Greenwald",
     "entity_origin": [
       "391: January 22, 2020",
@@ -45933,6 +45960,7 @@
       "transcripts\\719.welder.srt",
       "transcripts\\719.welder.txt",
       "transcripts\\734.otter.txt",
+      "transcripts\\736.otter.txt",
       "transcripts\\88.autosub.srt"
     ],
     "entity_sourcetexts": [
@@ -47731,13 +47759,14 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 4,
+    "entity_count": 5,
     "entity_name": "groundhog day",
     "entity_origin": [
       "294: January 15-16, 2013",
       "transcripts\\294.autosub.srt",
       "transcripts\\429.autosub.srt",
-      "transcripts\\716.welder.txt"
+      "transcripts\\716.welder.txt",
+      "transcripts\\737.otter.txt"
     ],
     "entity_sourcetexts": [
       "Groundhog Day"
@@ -49838,7 +49867,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 495,
+    "entity_count": 496,
     "entity_name": "Hillary Clinton",
     "entity_origin": [
       "135: The Wikileaks Press Conference",
@@ -50080,6 +50109,7 @@
       "transcripts\\725.otter.txt",
       "transcripts\\732.autosub.srt",
       "transcripts\\732.otter.txt",
+      "transcripts\\737.otter.txt",
       "transcripts\\74.autosub.srt",
       "transcripts\\76.autosub.srt",
       "transcripts\\78.autosub.srt",
@@ -60904,7 +60934,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 38,
+    "entity_count": 41,
     "entity_name": "Jon Ronson",
     "entity_origin": [
       "615: November 8, 2021?",
@@ -60931,6 +60961,7 @@
       "transcripts\\687.autosub.srt",
       "transcripts\\707.autosub.srt",
       "transcripts\\720.otter.txt",
+      "transcripts\\737.otter.txt",
       "transcripts\\84.autosub.srt"
     ],
     "entity_sourcetexts": [
@@ -61250,11 +61281,12 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
+    "entity_count": 3,
     "entity_name": "jordan dan",
     "entity_origin": [
       "transcripts\\310.otter.txt",
-      "transcripts\\733.otter.txt"
+      "transcripts\\733.otter.txt",
+      "transcripts\\734.otter.txt"
     ],
     "entity_sourcetexts": [
       "Jordan\n\nDan  "
@@ -62622,7 +62654,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 37,
+    "entity_count": 38,
     "entity_name": "kansas city",
     "entity_origin": [
       "130C: Endgame, Part 3",
@@ -62649,7 +62681,8 @@
       "transcripts\\6.otter.txt",
       "transcripts\\607.autosub.srt",
       "transcripts\\680.autosub.srt",
-      "transcripts\\683.autosub.srt"
+      "transcripts\\683.autosub.srt",
+      "transcripts\\736.otter.txt"
     ],
     "entity_sourcetexts": [
       "Kansas City",
@@ -62663,7 +62696,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 43,
+    "entity_count": 48,
     "entity_name": "Kanye West",
     "entity_origin": [
       "154: April 23, 2018",
@@ -64338,7 +64371,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 50,
+    "entity_count": 51,
     "entity_name": "Knowledge Fight",
     "entity_origin": [
       "136: March 30-31, 2008",
@@ -64374,7 +64407,8 @@
       "The Protocols of the Elders of Zion",
       "Tyler Snodgrass",
       "transcripts\\731.otter.txt",
-      "transcripts\\733.otter.txt"
+      "transcripts\\733.otter.txt",
+      "transcripts\\734.otter.txt"
     ],
     "entity_sourcetexts": [
       "Knowledge Fight",
@@ -66506,7 +66540,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 16,
+    "entity_count": 17,
     "entity_name": "lenny posner",
     "entity_origin": [
       "303: January 29-31, 2013",
@@ -66519,7 +66553,8 @@
       "transcripts\\657.autosub.srt",
       "transcripts\\711.autosub.srt",
       "transcripts\\712.otter.txt",
-      "transcripts\\727.otter.txt"
+      "transcripts\\727.otter.txt",
+      "transcripts\\737.otter.txt"
     ],
     "entity_sourcetexts": [
       "Lenny Posner"
@@ -70501,7 +70536,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 707,
+    "entity_count": 783,
     "entity_name": "Mark Bankston",
     "entity_origin": [
       "279: Formulaic Objections",
@@ -70510,6 +70545,7 @@
       "641: Formulaic Objections Part 4",
       "681: May 8, 2022",
       "712: The Decompression Session",
+      "736: Reflections on a Verdict",
       "Bill Ogden",
       "Bradley Reeves",
       "Jacquelyn Blott",
@@ -70535,7 +70571,9 @@
       "transcripts\\719.welder.srt",
       "transcripts\\719.welder.txt",
       "transcripts\\727.otter.txt",
-      "transcripts\\731.autosub.srt"
+      "transcripts\\731.autosub.srt",
+      "transcripts\\736.otter.txt",
+      "transcripts\\737.otter.txt"
     ],
     "entity_sourcetexts": [
       "Mark Bankston"
@@ -80454,7 +80492,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 76,
+    "entity_count": 77,
     "entity_name": "new york city",
     "entity_origin": [
       "438: May 26-28, 2020",
@@ -80514,6 +80552,7 @@
       "transcripts\\717.welder.txt",
       "transcripts\\723.autosub.srt",
       "transcripts\\723.otter.txt",
+      "transcripts\\737.otter.txt",
       "transcripts\\75.autosub.srt",
       "transcripts\\76.autosub.srt",
       "transcripts\\99.autosub.srt"
@@ -80748,7 +80787,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 479,
+    "entity_count": 483,
     "entity_name": "new york times",
     "entity_origin": [
       "143: March 25-31 Part 1",
@@ -80968,6 +81007,7 @@
       "transcripts\\729.otter.txt",
       "transcripts\\73.autosub.srt",
       "transcripts\\734.otter.txt",
+      "transcripts\\737.otter.txt",
       "transcripts\\77.autosub.srt",
       "transcripts\\8.autosub.srt",
       "transcripts\\8.otter.txt",
@@ -82198,7 +82238,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 65,
+    "entity_count": 66,
     "entity_name": "Norm Pattis",
     "entity_origin": [
       "284: April 12, 2019",
@@ -82229,7 +82269,8 @@
       "transcripts\\723.otter.txt",
       "transcripts\\725.otter.txt",
       "transcripts\\729.otter.txt",
-      "transcripts\\735.otter.txt"
+      "transcripts\\735.otter.txt",
+      "transcripts\\737.otter.txt"
     ],
     "entity_sourcetexts": [
       "Norm\r\n    Pattis",
@@ -83280,7 +83321,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 47,
+    "entity_count": 49,
     "entity_name": "oathkeepers",
     "entity_origin": [
       "169: November 30, 2014",
@@ -83290,7 +83331,8 @@
       "361: April 19, 2013",
       "389: January 15-17, 2020",
       "637: January 13, 2022",
-      "transcripts\\222.otter.txt"
+      "transcripts\\222.otter.txt",
+      "transcripts\\737.otter.txt"
     ],
     "entity_sourcetexts": [
       "Oathkeepers"
@@ -87035,14 +87077,15 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 14,
+    "entity_count": 15,
     "entity_name": "perry mason",
     "entity_origin": [
       "transcripts\\712.autosub.srt",
       "transcripts\\712.otter.txt",
       "transcripts\\714.autosub.srt",
       "transcripts\\714.otter.txt",
-      "transcripts\\714.welder.txt"
+      "transcripts\\714.welder.txt",
+      "transcripts\\736.otter.txt"
     ],
     "entity_sourcetexts": [
       "The Perry Mason",
@@ -87919,7 +87962,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 34,
+    "entity_count": 35,
     "entity_name": "Piers Morgan",
     "entity_origin": [
       "114: Piers Morgan Interview",
@@ -87942,7 +87985,8 @@
       "transcripts\\466.autosub.srt",
       "transcripts\\692.autosub.srt",
       "transcripts\\707.autosub.srt",
-      "transcripts\\733.otter.txt"
+      "transcripts\\733.otter.txt",
+      "transcripts\\736.otter.txt"
     ],
     "entity_sourcetexts": [
       "Piers Morgan",
@@ -92098,7 +92142,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 420,
+    "entity_count": 421,
     "entity_name": "republicans",
     "entity_origin": [
       "211: March 10, 2009",
@@ -92319,6 +92363,7 @@
       "transcripts\\731.otter.txt",
       "transcripts\\734.otter.txt",
       "transcripts\\735.otter.txt",
+      "transcripts\\737.otter.txt",
       "transcripts\\76.autosub.srt",
       "transcripts\\77.autosub.srt",
       "transcripts\\82.autosub.srt",
@@ -93898,7 +93943,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 38,
+    "entity_count": 44,
     "entity_name": "robbie parker",
     "entity_origin": [
       "Connecticut Sandy Hook Lawsuit (Lafferty v. Jones)",
@@ -93923,7 +93968,9 @@
       "transcripts\\729.otter.txt",
       "transcripts\\732.autosub.srt",
       "transcripts\\732.otter.txt",
-      "transcripts\\735.otter.txt"
+      "transcripts\\735.otter.txt",
+      "transcripts\\736.otter.txt",
+      "transcripts\\737.otter.txt"
     ],
     "entity_sourcetexts": [
       "Robbie Parker",
@@ -93973,7 +94020,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 164,
+    "entity_count": 167,
     "entity_name": "Robert Barnes",
     "entity_origin": [
       "394: January 31, 2020",
@@ -94032,10 +94079,13 @@
       "transcripts\\729.autosub.srt",
       "transcripts\\729.otter.txt",
       "transcripts\\732.otter.txt",
-      "transcripts\\735.otter.txt"
+      "transcripts\\735.otter.txt",
+      "transcripts\\736.otter.txt",
+      "transcripts\\737.otter.txt"
     ],
     "entity_sourcetexts": [
       "Bobby Barnes",
+      "Bobby Barnes's",
       "Robert Barnes",
       "Robert Barnes\n\n",
       "Robert Barnes\r\n",
@@ -97520,7 +97570,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 21,
+    "entity_count": 22,
     "entity_name": "ruth bader ginsburg",
     "entity_origin": [
       "596: Possibly Too Much Wacky",
@@ -97532,7 +97582,8 @@
       "transcripts\\487.autosub.srt",
       "transcripts\\489.autosub.srt",
       "transcripts\\527.autosub.srt",
-      "transcripts\\596.autosub.srt"
+      "transcripts\\596.autosub.srt",
+      "transcripts\\737.otter.txt"
     ],
     "entity_sourcetexts": [
       "Ruth Bader\r\n    Ginsburg's",
@@ -99460,7 +99511,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 22,
+    "entity_count": 23,
     "entity_name": "Scarlett Lewis",
     "entity_origin": [
       "transcripts\\602.autosub.srt",
@@ -99473,7 +99524,8 @@
       "transcripts\\712.autosub.srt",
       "transcripts\\714.otter.txt",
       "transcripts\\714.welder.txt",
-      "transcripts\\715.welder.txt"
+      "transcripts\\715.welder.txt",
+      "transcripts\\737.otter.txt"
     ],
     "entity_sourcetexts": [
       "Scarlett Lewis",
@@ -100201,12 +100253,13 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 102,
+    "entity_count": 103,
     "entity_name": "sebastian murdoch",
     "entity_origin": [
       "transcripts\\710.autosub.srt",
       "transcripts\\727.autosub.srt",
-      "transcripts\\727.otter.txt"
+      "transcripts\\727.otter.txt",
+      "transcripts\\737.otter.txt"
     ],
     "entity_sourcetexts": [
       "Sebastian Murdoch"
@@ -102549,13 +102602,14 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 5,
+    "entity_count": 6,
     "entity_name": "soundcloud",
     "entity_origin": [
       "Buckley Hamman",
       "transcripts\\236.autosub.srt",
       "transcripts\\665.autosub.srt",
-      "transcripts\\665.otter.txt"
+      "transcripts\\665.otter.txt",
+      "transcripts\\736.otter.txt"
     ],
     "entity_sourcetexts": [
       "SoundCloud",
@@ -106412,7 +106466,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 7,
+    "entity_count": 8,
     "entity_name": "stuart rhodes",
     "entity_origin": [
       "transcripts\\222.otter.txt",
@@ -106420,7 +106474,8 @@
       "transcripts\\638.autosub.srt",
       "transcripts\\642.autosub.srt",
       "transcripts\\679.autosub.srt",
-      "transcripts\\690.autosub.srt"
+      "transcripts\\690.autosub.srt",
+      "transcripts\\737.otter.txt"
     ],
     "entity_sourcetexts": [
       "Stuart Rhodes"
@@ -107097,7 +107152,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 418,
+    "entity_count": 419,
     "entity_name": "supreme court",
     "entity_origin": [
       "143: March 25-31 Part 1",
@@ -107271,6 +107326,7 @@
       "transcripts\\715.welder.txt",
       "transcripts\\726.autosub.srt",
       "transcripts\\726.otter.txt",
+      "transcripts\\736.otter.txt",
       "transcripts\\74.autosub.srt",
       "transcripts\\78.autosub.srt",
       "transcripts\\98.autosub.srt",
@@ -108962,6 +109018,23 @@
     "is_known_missing": false
   },
   {
+    "entity_count": 5,
+    "entity_name": "texas court of appeals",
+    "entity_origin": [
+      "transcripts\\378.otter.txt",
+      "transcripts\\736.otter.txt"
+    ],
+    "entity_sourcetexts": [
+      "Texas Court of Appeals",
+      "the Texas Court of Appeals"
+    ],
+    "entity_type": [
+      "ORG"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
     "entity_count": 3,
     "entity_name": "texas department of public safety",
     "entity_origin": [
@@ -109088,7 +109161,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 14,
+    "entity_count": 18,
     "entity_name": "texas supreme court",
     "entity_origin": [
       "680: July 31-August 1, 2003",
@@ -109096,9 +109169,11 @@
       "transcripts\\680.autosub.srt",
       "transcripts\\715.autosub.srt",
       "transcripts\\715.otter.txt",
-      "transcripts\\715.welder.txt"
+      "transcripts\\715.welder.txt",
+      "transcripts\\736.otter.txt"
     ],
     "entity_sourcetexts": [
+      "Texas Supreme Court",
       "The Texas Supreme Court",
       "the Texas\r\n    Supreme Court",
       "the Texas Supreme Court"
@@ -109426,7 +109501,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 1404,
+    "entity_count": 1413,
     "entity_name": "The Sandy Hook Elementary Massacre",
     "entity_origin": [
       "113: February 21-23, 2014",
@@ -109500,6 +109575,7 @@
       "713: Chatting With Becca Lewis",
       "731: September 29-30, 2022",
       "735: October 12, 2022",
+      "737: Reflections on a Verdict Part 2",
       "84: December 21, 2012",
       "93: 2015 Investigation Last Looks",
       "Adan Salazar",
@@ -109726,6 +109802,8 @@
       "transcripts\\732.otter.txt",
       "transcripts\\733.otter.txt",
       "transcripts\\735.otter.txt",
+      "transcripts\\736.otter.txt",
+      "transcripts\\737.otter.txt",
       "transcripts\\8.autosub.srt",
       "transcripts\\8.otter.txt",
       "transcripts\\83.autosub.srt",
@@ -110967,7 +111045,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 11,
+    "entity_count": 12,
     "entity_name": "tom arnold",
     "entity_origin": [
       "66: September 6-17, 2015",
@@ -110976,7 +111054,8 @@
       "transcripts\\290.autosub.srt",
       "transcripts\\358.autosub.srt",
       "transcripts\\5.otter.txt",
-      "transcripts\\66.autosub.srt"
+      "transcripts\\66.autosub.srt",
+      "transcripts\\736.otter.txt"
     ],
     "entity_sourcetexts": [
       "The Tom Arnold",
@@ -111848,7 +111927,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 28,
+    "entity_count": 29,
     "entity_name": "travis county",
     "entity_origin": [
       "622: June 30-July 1, 2003",
@@ -111867,7 +111946,8 @@
       "transcripts\\705.autosub.srt",
       "transcripts\\714.autosub.srt",
       "transcripts\\714.otter.txt",
-      "transcripts\\714.welder.txt"
+      "transcripts\\714.welder.txt",
+      "transcripts\\736.otter.txt"
     ],
     "entity_sourcetexts": [
       "The Travis County",
@@ -113005,7 +113085,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 26,
+    "entity_count": 27,
     "entity_name": "twilight zone",
     "entity_origin": [
       "522: January 14-17, 2021",
@@ -113024,7 +113104,8 @@
       "transcripts\\632.autosub.srt",
       "transcripts\\661.autosub.srt",
       "transcripts\\691.autosub.srt",
-      "transcripts\\702.autosub.srt"
+      "transcripts\\702.autosub.srt",
+      "transcripts\\737.otter.txt"
     ],
     "entity_sourcetexts": [
       "The Twilight Zone",
@@ -115112,7 +115193,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 8,
+    "entity_count": 9,
     "entity_name": "us supreme court",
     "entity_origin": [
       "transcripts\\175.autosub.srt",
@@ -115120,7 +115201,8 @@
       "transcripts\\602.autosub.srt",
       "transcripts\\602.otter.txt",
       "transcripts\\715.autosub.srt",
-      "transcripts\\715.otter.txt"
+      "transcripts\\715.otter.txt",
+      "transcripts\\736.otter.txt"
     ],
     "entity_sourcetexts": [
       "The US Supreme Court",
@@ -119622,7 +119704,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 13,
+    "entity_count": 14,
     "entity_name": "william shatner",
     "entity_origin": [
       "289: January 10-13, 2013",
@@ -119633,7 +119715,8 @@
       "transcripts\\566.autosub.srt",
       "transcripts\\640.autosub.srt",
       "transcripts\\705.autosub.srt",
-      "transcripts\\716.autosub.srt"
+      "transcripts\\716.autosub.srt",
+      "transcripts\\737.otter.txt"
     ],
     "entity_sourcetexts": [
       "William Shatner",
@@ -119734,11 +119817,12 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 5,
+    "entity_count": 6,
     "entity_name": "williamson",
     "entity_origin": [
       "327: July 31, 2019",
       "329: August 4-5, 2019",
+      "737: Reflections on a Verdict Part 2",
       "transcripts\\386.autosub.srt",
       "transcripts\\664.otter.txt"
     ],
