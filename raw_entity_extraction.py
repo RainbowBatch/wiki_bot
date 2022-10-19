@@ -3,14 +3,16 @@ import pandas as pd
 import pandoc
 import parse
 import re
+
 from box import Box
 from collections import Counter
 from collections import defaultdict
 from entity import extract_entities
+from entity import restore_capitalization
 from entity import simplify_entity
+from glob import glob
 from pprint import pprint
 from pygit2 import Repository
-from glob import glob
 from tqdm import tqdm
 
 git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
@@ -131,6 +133,8 @@ for s, count in tqdm(counter.most_common()):
     if banned_flag:
         continue
 
+    s = restore_capitalization(s, sts)
+
     rows.append([s, count, ts, os, sts])
 
 print("Finalizing and saving data.")
@@ -138,8 +142,10 @@ print("Finalizing and saving data.")
 df = pd.DataFrame(rows, columns=header)
 
 # Only include things we don't have existing knowledge of...
-df['is_existing'] = df.entity_name.isin(map(lambda x: x.lower(), page_listing.title.to_list())) | df.entity_name.isin(page_listing.title.to_list())
-df['is_known_missing'] = df.entity_name.isin(map(lambda x: x.lower(), known_missing_pages.title.to_list())) | df.entity_name.isin(known_missing_pages.title.to_list())
+df['is_existing'] = df.entity_name.isin(map(lambda x: x.lower(
+), page_listing.title.to_list())) | df.entity_name.isin(page_listing.title.to_list())
+df['is_known_missing'] = df.entity_name.isin(map(lambda x: x.lower(
+), known_missing_pages.title.to_list())) | df.entity_name.isin(known_missing_pages.title.to_list())
 print("Starting sort.")
 df = df.sort_values('entity_name', key=lambda col: col.str.lower())
 

@@ -1,6 +1,12 @@
+import _thread as thread
 import en_core_web_sm
 import kfio
 import re
+import sys
+import threading
+
+from three_merge import merge
+from time import sleep
 
 nlp = en_core_web_sm.load()
 
@@ -20,6 +26,7 @@ missing_pages = kfio.load('data/missing_pages.json')
 hardcoded_people = [
     'Omar al-Faruq',
     'Jim Shepherd',
+    'Elizabeth Williamson',
 ]
 
 LIKELY_PEOPLE = set(
@@ -47,6 +54,7 @@ NOT_RELEVANT_PEOPLE = [
 ]
 
 REMAPPING = {
+    'alex emmerich jones': 'Alex Jones',
     'Alex E. Jones': 'Alex Jones',
     'Alex Jones\'': 'Alex Jones',
     'Alex': 'Alex Jones',
@@ -102,7 +110,7 @@ del REMAPPING['Y2K']
 
 REMAPPING = {
     k.lower(): v
-    for k,v in REMAPPING.items()
+    for k, v in REMAPPING.items()
 }
 
 CAPITALIZATION_REMAPPING = {
@@ -116,6 +124,7 @@ CAPITALIZATION_REMAPPING = {
 }
 
 _RE_COMBINE_WHITESPACE = re.compile(r"\s+")
+
 
 def simplify_entity(s):
     s = _RE_COMBINE_WHITESPACE.sub(' ', s)
@@ -144,3 +153,74 @@ def simplify_entity(s):
 def extract_entities(S, source):
     return [(X.text, X.label_, source)
             for X in nlp(S).ents]
+
+
+def quit_function(fn_name):
+    # print to stderr, unbuffered in Python 2.
+    print('{0} took too long'.format(fn_name), file=sys.stderr)
+    sys.stderr.flush()  # Python 3 stderr is likely buffered.
+    thread.interrupt_main()  # raises KeyboardInterrupt
+
+
+def exit_after(s):
+    '''
+    use as decorator to exit process if
+    function takes longer than s seconds
+    '''
+    def outer(fn):
+        def inner(*args, **kwargs):
+            timer = threading.Timer(s, quit_function, args=[fn.__name__])
+            timer.start()
+            try:
+                result = fn(*args, **kwargs)
+            finally:
+                timer.cancel()
+            return result
+        return inner
+    return outer
+
+
+@exit_after(0.05)
+def restore_specific_capitalization(cleaned_text, original_text):
+    if cleaned_text == original_text:
+        return cleaned_text
+
+    slightly_cleaned_text = ' '.join(original_text.split())
+
+    if slightly_cleaned_text.lower() == cleaned_text.lower():
+        return slightly_cleaned_text
+
+    merged = merge(slightly_cleaned_text, cleaned_text,
+                   slightly_cleaned_text.lower())
+
+    # TODO(woursler): We can do better than this, esp at the start of the string.
+    assert '<<<<<<<' not in merged
+    assert merged.lower() == cleaned_text.lower(
+    ), "%s != %s" % (merged.lower(), cleaned_text)
+
+    return merged
+
+
+def restore_capitalization(cleaned_text, original_texts):
+    for original_text in original_texts:
+        try:
+            return restore_specific_capitalization(cleaned_text, original_text)
+        except:
+            pass
+    # Nothing worked, we'll fall back.
+    return cleaned_text
+
+
+if __name__ == '__main__':
+    raw_entities = kfio.load('data/raw_entities.json')
+
+    for raw_entity in raw_entities.to_dict(orient='records'):
+        try:
+            restore_capitalization(
+                raw_entity['entity_name'], raw_entity['entity_sourcetexts'])
+        except:
+            print(repr(raw_entity['entity_name']),
+                  raw_entity['entity_sourcetexts'], '=>')
+            print('Failure')
+
+    print(raw_entities)
