@@ -5,8 +5,6 @@ import numpy as np
 page_listing = kfio.load('kf_wiki_content/page_listing.json')
 page_listing.oldid = page_listing.oldid.astype('Int64')
 
-print("GOT HERE")
-
 
 def add(title, slug):
     global page_listing

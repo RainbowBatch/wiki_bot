@@ -1,1 +1,3 @@
 {%- macro wiki_link(link_text, link_dest) -%}{% if link_text == link_dest %}[[{{link_dest}}]]{% else %}[[{{link_dest}}|{{link_text}}]]{% endif %}{%- endmacro -%}
+
+{%- macro entity_status(entity) -%}{% if entity.is_existing %}Exists{% elif entity.is_missing %}Linked but Missing{% else %}No known links{% endif %}{%- endmacro -%}
