@@ -2948,7 +2948,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 35074,
+    "entity_count": 35179,
     "entity_name": "Alex Jones",
     "entity_origin": [
       "\"Mandatory Service Bill\"",
@@ -3612,6 +3612,7 @@
       "734: October 9, 2022",
       "735: October 12, 2022",
       "736: Reflections on a Verdict",
+      "738: Taking a Powder With Chowder",
       "73: August 12, 2017",
       "74: October 4-6, 2015",
       "75: January 7, 2011",
@@ -4502,6 +4503,7 @@
       "transcripts\\735.otter.txt",
       "transcripts\\736.otter.txt",
       "transcripts\\737.otter.txt",
+      "transcripts\\738.welder.srt",
       "transcripts\\74.autosub.srt",
       "transcripts\\75.autosub.srt",
       "transcripts\\76.autosub.srt",
@@ -8906,6 +8908,22 @@
       "PERSON"
     ],
     "is_existing": true,
+    "is_known_missing": false
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "Andrew Dice Clay",
+    "entity_origin": [
+      "transcripts\\504.autosub.srt",
+      "transcripts\\738.welder.srt"
+    ],
+    "entity_sourcetexts": [
+      "Andrew Dice Clay"
+    ],
+    "entity_type": [
+      "PERSON"
+    ],
+    "is_existing": false,
     "is_known_missing": false
   },
   {
@@ -27427,7 +27445,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 411,
+    "entity_count": 418,
     "entity_name": "Connecticut",
     "entity_origin": [
       "210: March 9, 2009",
@@ -27566,6 +27584,7 @@
       "transcripts\\735.otter.txt",
       "transcripts\\736.otter.txt",
       "transcripts\\737.otter.txt",
+      "transcripts\\738.welder.srt",
       "transcripts\\89.autosub.srt",
       "transcripts\\92.autosub.srt",
       "transcripts\\99.autosub.srt",
@@ -27617,7 +27636,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 7,
+    "entity_count": 8,
     "entity_name": "Connecticut Supreme Court",
     "entity_origin": [
       "transcripts\\279.otter.txt",
@@ -27625,7 +27644,8 @@
       "transcripts\\348.autosub.srt",
       "transcripts\\460.autosub.srt",
       "transcripts\\461.autosub.srt",
-      "transcripts\\736.otter.txt"
+      "transcripts\\736.otter.txt",
+      "transcripts\\738.welder.srt"
     ],
     "entity_sourcetexts": [
       "Connecticut Supreme Court",
@@ -27819,7 +27839,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 255,
+    "entity_count": 256,
     "entity_name": "Constitution",
     "entity_origin": [
       "158: January 21, 2009",
@@ -27967,6 +27987,7 @@
       "transcripts\\728.otter.txt",
       "transcripts\\730.autosub.srt",
       "transcripts\\730.otter.txt",
+      "transcripts\\738.welder.srt",
       "transcripts\\78.autosub.srt",
       "transcripts\\8.otter.txt",
       "transcripts\\80.autosub.srt",
@@ -28846,6 +28867,24 @@
     ],
     "entity_type": [
       "PERSON"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "Covington Catholic",
+    "entity_origin": [
+      "transcripts\\711.autosub.srt",
+      "transcripts\\738.welder.srt"
+    ],
+    "entity_sourcetexts": [
+      "Covington Catholic",
+      "the Covington Catholic"
+    ],
+    "entity_type": [
+      "NORP",
+      "ORG"
     ],
     "is_existing": false,
     "is_known_missing": false
@@ -35487,7 +35526,7 @@
     "is_known_missing": true
   },
   {
-    "entity_count": 5888,
+    "entity_count": 5897,
     "entity_name": "Donald Trump",
     "entity_origin": [
       "100: January 6-7, 2016",
@@ -36367,6 +36406,7 @@
       "transcripts\\734.otter.txt",
       "transcripts\\736.otter.txt",
       "transcripts\\737.otter.txt",
+      "transcripts\\738.welder.srt",
       "transcripts\\74.autosub.srt",
       "transcripts\\75.autosub.srt",
       "transcripts\\76.autosub.srt",
@@ -36990,11 +37030,12 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 3,
+    "entity_count": 4,
     "entity_name": "Dunkin Donuts",
     "entity_origin": [
       "transcripts\\361.autosub.srt",
-      "transcripts\\527.autosub.srt"
+      "transcripts\\527.autosub.srt",
+      "transcripts\\738.welder.srt"
     ],
     "entity_sourcetexts": [
       "Dunkin Donuts",
@@ -41199,7 +41240,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 117,
+    "entity_count": 118,
     "entity_name": "First Amendment",
     "entity_origin": [
       "transcripts\\10.otter.txt",
@@ -41272,6 +41313,7 @@
       "transcripts\\73.autosub.srt",
       "transcripts\\732.otter.txt",
       "transcripts\\736.otter.txt",
+      "transcripts\\738.welder.srt",
       "transcripts\\83.autosub.srt",
       "transcripts\\99.otter.txt"
     ],
@@ -43732,7 +43774,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 22,
+    "entity_count": 23,
     "entity_name": "Gavin McGinnis",
     "entity_origin": [
       "transcripts\\138.autosub.srt",
@@ -43750,7 +43792,8 @@
       "transcripts\\47.autosub.srt",
       "transcripts\\518.autosub.srt",
       "transcripts\\525.autosub.srt",
-      "transcripts\\697.autosub.srt"
+      "transcripts\\697.autosub.srt",
+      "transcripts\\738.welder.srt"
     ],
     "entity_sourcetexts": [
       "Gavin McGinnis"
@@ -45721,7 +45764,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 528,
+    "entity_count": 531,
     "entity_name": "Glenn Beck",
     "entity_origin": [
       "160: January 22-25, 2009",
@@ -45863,6 +45906,7 @@
       "transcripts\\719.welder.srt",
       "transcripts\\719.welder.txt",
       "transcripts\\737.otter.txt",
+      "transcripts\\738.welder.srt",
       "transcripts\\82.autosub.srt",
       "transcripts\\88.autosub.srt",
       "transcripts\\S004.autosub.srt"
@@ -45950,7 +45994,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 55,
+    "entity_count": 57,
     "entity_name": "Glenn Greenwald",
     "entity_origin": [
       "391: January 22, 2020",
@@ -45982,6 +46026,7 @@
       "transcripts\\719.welder.txt",
       "transcripts\\734.otter.txt",
       "transcripts\\736.otter.txt",
+      "transcripts\\738.welder.srt",
       "transcripts\\88.autosub.srt"
     ],
     "entity_sourcetexts": [
@@ -46632,14 +46677,15 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 12,
+    "entity_count": 17,
     "entity_name": "Google Analytics",
     "entity_origin": [
       "transcripts\\602.otter.txt",
       "transcripts\\725.autosub.srt",
       "transcripts\\725.otter.txt",
       "transcripts\\727.autosub.srt",
-      "transcripts\\727.otter.txt"
+      "transcripts\\727.otter.txt",
+      "transcripts\\738.welder.srt"
     ],
     "entity_sourcetexts": [
       "Google Analytics",
@@ -48281,6 +48327,22 @@
     ],
     "entity_type": [
       "ORG"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
+    "entity_count": 3,
+    "entity_name": "Hannah Montana",
+    "entity_origin": [
+      "transcripts\\306.autosub.srt",
+      "transcripts\\738.welder.srt"
+    ],
+    "entity_sourcetexts": [
+      "Hannah Montana"
+    ],
+    "entity_type": [
+      "PERSON"
     ],
     "is_existing": false,
     "is_known_missing": false
@@ -52401,7 +52463,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 22,
+    "entity_count": 23,
     "entity_name": "Indiana Jones",
     "entity_origin": [
       "transcripts\\10.otter.txt",
@@ -52422,6 +52484,7 @@
       "transcripts\\661.autosub.srt",
       "transcripts\\725.autosub.srt",
       "transcripts\\725.otter.txt",
+      "transcripts\\738.welder.srt",
       "transcripts\\8.autosub.srt",
       "transcripts\\8.otter.txt"
     ],
@@ -55362,7 +55425,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 21,
+    "entity_count": 22,
     "entity_name": "James Tracy",
     "entity_origin": [
       "288: January 7-9, 2013",
@@ -55375,7 +55438,8 @@
       "transcripts\\378.otter.txt",
       "transcripts\\714.autosub.srt",
       "transcripts\\714.otter.txt",
-      "transcripts\\714.welder.txt"
+      "transcripts\\714.welder.txt",
+      "transcripts\\738.welder.srt"
     ],
     "entity_sourcetexts": [
       "James Tracy",
@@ -56294,7 +56358,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 6,
+    "entity_count": 7,
     "entity_name": "Jeff Foxworthy",
     "entity_origin": [
       "transcripts\\100.autosub.srt",
@@ -56302,7 +56366,8 @@
       "transcripts\\454.autosub.srt",
       "transcripts\\456.autosub.srt",
       "transcripts\\592.autosub.srt",
-      "transcripts\\612.autosub.srt"
+      "transcripts\\612.autosub.srt",
+      "transcripts\\738.welder.srt"
     ],
     "entity_sourcetexts": [
       "Jeff Foxworthy",
@@ -58191,7 +58256,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 22,
+    "entity_count": 23,
     "entity_name": "Jimmy Kimmel",
     "entity_origin": [
       "85: September 20-21, 2017",
@@ -58207,6 +58272,7 @@
       "transcripts\\725.autosub.srt",
       "transcripts\\725.otter.txt",
       "transcripts\\731.otter.txt",
+      "transcripts\\738.welder.srt",
       "transcripts\\85.autosub.srt",
       "transcripts\\86.autosub.srt"
     ],
@@ -61181,10 +61247,11 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
+    "entity_count": 3,
     "entity_name": "Jones Goes",
     "entity_origin": [
       "List of Knowledge Fight episodes",
+      "RainbowBatch Generated Entity Listing",
       "transcripts\\202.autosub.srt"
     ],
     "entity_sourcetexts": [
@@ -62716,7 +62783,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 50,
+    "entity_count": 51,
     "entity_name": "Kanye West",
     "entity_origin": [
       "154: April 23, 2018",
@@ -62734,6 +62801,7 @@
       "transcripts\\455.autosub.srt",
       "transcripts\\469.autosub.srt",
       "transcripts\\734.otter.txt",
+      "transcripts\\738.welder.srt",
       "transcripts\\76.autosub.srt"
     ],
     "entity_sourcetexts": [
@@ -64444,6 +64512,22 @@
   },
   {
     "entity_count": 2,
+    "entity_name": "Knowledgebitecom",
+    "entity_origin": [
+      "transcripts\\714.welder.txt",
+      "transcripts\\738.welder.srt"
+    ],
+    "entity_sourcetexts": [
+      "Knowledgebite.com"
+    ],
+    "entity_type": [
+      "ORG"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
+    "entity_count": 2,
     "entity_name": "Knowledgebuycom",
     "entity_origin": [
       "transcripts\\720.welder.srt",
@@ -65744,11 +65828,12 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 4,
+    "entity_count": 5,
     "entity_name": "laugh factory",
     "entity_origin": [
       "transcripts\\353.autosub.srt",
-      "transcripts\\48.autosub.srt"
+      "transcripts\\48.autosub.srt",
+      "transcripts\\738.welder.srt"
     ],
     "entity_sourcetexts": [
       "the Laugh Factory"
@@ -69174,13 +69259,14 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 4,
+    "entity_count": 5,
     "entity_name": "Madison Square Garden",
     "entity_origin": [
       "transcripts\\2.autosub.srt",
       "transcripts\\2.otter.txt",
       "transcripts\\286.autosub.srt",
-      "transcripts\\414.autosub.srt"
+      "transcripts\\414.autosub.srt",
+      "transcripts\\738.welder.srt"
     ],
     "entity_sourcetexts": [
       "Madison Square Garden"
@@ -79107,7 +79193,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 43,
+    "entity_count": 44,
     "entity_name": "Native American",
     "entity_origin": [
       "256: January 17-23, 2019",
@@ -79139,6 +79225,7 @@
       "transcripts\\603.autosub.srt",
       "transcripts\\722.otter.txt",
       "transcripts\\73.autosub.srt",
+      "transcripts\\738.welder.srt",
       "transcripts\\86.autosub.srt",
       "transcripts\\92.autosub.srt"
     ],
@@ -79154,7 +79241,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 21,
+    "entity_count": 22,
     "entity_name": "Native Americans",
     "entity_origin": [
       "270: The Rogan Return",
@@ -79173,6 +79260,7 @@
       "transcripts\\645.autosub.srt",
       "transcripts\\687.autosub.srt",
       "transcripts\\73.autosub.srt",
+      "transcripts\\738.welder.srt",
       "transcripts\\92.autosub.srt"
     ],
     "entity_sourcetexts": [
@@ -79491,7 +79579,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 22,
+    "entity_count": 23,
     "entity_name": "Neil Heslin",
     "entity_origin": [
       "641: Formulaic Objections Part 4",
@@ -79502,7 +79590,8 @@
       "transcripts\\685.otter.txt",
       "transcripts\\712.otter.txt",
       "transcripts\\714.welder.txt",
-      "transcripts\\728.otter.txt"
+      "transcripts\\728.otter.txt",
+      "transcripts\\738.welder.srt"
     ],
     "entity_sourcetexts": [
       "Neil Hesleyn",
@@ -81643,6 +81732,22 @@
     "entity_type": [
       "PERSON",
       "ORG"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
+    "entity_count": 3,
+    "entity_name": "Nick Sandman",
+    "entity_origin": [
+      "transcripts\\711.autosub.srt",
+      "transcripts\\738.welder.srt"
+    ],
+    "entity_sourcetexts": [
+      "Nick Sandman"
+    ],
+    "entity_type": [
+      "PERSON"
     ],
     "is_existing": false,
     "is_known_missing": false
@@ -84177,18 +84282,20 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
+    "entity_count": 3,
     "entity_name": "Operation Northwoods",
     "entity_origin": [
       "transcripts\\703.autosub.srt",
-      "transcripts\\718.welder.txt"
+      "transcripts\\718.welder.txt",
+      "transcripts\\738.welder.srt"
     ],
     "entity_sourcetexts": [
       "Operation Northwoods"
     ],
     "entity_type": [
       "ORG",
-      "EVENT"
+      "EVENT",
+      "FAC"
     ],
     "is_existing": false,
     "is_known_missing": false
@@ -91661,7 +91768,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 657,
+    "entity_count": 659,
     "entity_name": "Republican",
     "entity_origin": [
       "160: January 22-25, 2009",
@@ -91969,6 +92076,7 @@
       "transcripts\\731.autosub.srt",
       "transcripts\\731.otter.txt",
       "transcripts\\734.otter.txt",
+      "transcripts\\738.welder.srt",
       "transcripts\\75.autosub.srt",
       "transcripts\\78.autosub.srt",
       "transcripts\\80.autosub.srt",
@@ -92164,7 +92272,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 421,
+    "entity_count": 422,
     "entity_name": "Republicans",
     "entity_origin": [
       "211: March 10, 2009",
@@ -92386,6 +92494,7 @@
       "transcripts\\734.otter.txt",
       "transcripts\\735.otter.txt",
       "transcripts\\737.otter.txt",
+      "transcripts\\738.welder.srt",
       "transcripts\\76.autosub.srt",
       "transcripts\\77.autosub.srt",
       "transcripts\\82.autosub.srt",
@@ -93965,7 +94074,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 44,
+    "entity_count": 47,
     "entity_name": "Robbie Parker",
     "entity_origin": [
       "Connecticut Sandy Hook Lawsuit (Lafferty v. Jones)",
@@ -93992,7 +94101,8 @@
       "transcripts\\732.otter.txt",
       "transcripts\\735.otter.txt",
       "transcripts\\736.otter.txt",
-      "transcripts\\737.otter.txt"
+      "transcripts\\737.otter.txt",
+      "transcripts\\738.welder.srt"
     ],
     "entity_sourcetexts": [
       "Robbie Parker",
@@ -94042,7 +94152,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 167,
+    "entity_count": 168,
     "entity_name": "Robert Barnes",
     "entity_origin": [
       "394: January 31, 2020",
@@ -94103,7 +94213,8 @@
       "transcripts\\732.otter.txt",
       "transcripts\\735.otter.txt",
       "transcripts\\736.otter.txt",
-      "transcripts\\737.otter.txt"
+      "transcripts\\737.otter.txt",
+      "transcripts\\738.welder.srt"
     ],
     "entity_sourcetexts": [
       "Bobby Barnes",
@@ -98811,7 +98922,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 16,
+    "entity_count": 17,
     "entity_name": "Santa Claus",
     "entity_origin": [
       "transcripts\\13.otter.txt",
@@ -98828,6 +98939,7 @@
       "transcripts\\593.autosub.srt",
       "transcripts\\62.autosub.srt",
       "transcripts\\664.autosub.srt",
+      "transcripts\\738.welder.srt",
       "transcripts\\98.autosub.srt"
     ],
     "entity_sourcetexts": [
@@ -98836,7 +98948,8 @@
     ],
     "entity_type": [
       "ORG",
-      "WORK_OF_ART"
+      "WORK_OF_ART",
+      "GPE"
     ],
     "is_existing": false,
     "is_known_missing": false
@@ -102331,7 +102444,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 29,
+    "entity_count": 30,
     "entity_name": "Social Security",
     "entity_origin": [
       "transcripts\\105.autosub.srt",
@@ -102356,6 +102469,7 @@
       "transcripts\\609.autosub.srt",
       "transcripts\\62.autosub.srt",
       "transcripts\\632.autosub.srt",
+      "transcripts\\738.welder.srt",
       "transcripts\\89.autosub.srt",
       "transcripts\\90.autosub.srt"
     ],
@@ -104533,7 +104647,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 20,
+    "entity_count": 21,
     "entity_name": "Stefan Molyneux",
     "entity_origin": [
       "104: November 20, 2017",
@@ -104547,7 +104661,8 @@
       "transcripts\\664.otter.txt",
       "transcripts\\714.otter.txt",
       "transcripts\\714.welder.txt",
-      "transcripts\\718.welder.txt"
+      "transcripts\\718.welder.txt",
+      "transcripts\\738.welder.srt"
     ],
     "entity_sourcetexts": [
       "Stefan\r\n    Molyneux",
@@ -104672,14 +104787,16 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
+    "entity_count": 6,
     "entity_name": "Stephen Crowder",
     "entity_origin": [
       "192: August 10, 2018",
-      "533: February 17, 2021"
+      "533: February 17, 2021",
+      "transcripts\\738.welder.srt"
     ],
     "entity_sourcetexts": [
-      "Stephen Crowder"
+      "Stephen Crowder",
+      "Stephen Crowder's"
     ],
     "entity_type": [
       "PERSON"
@@ -105351,6 +105468,22 @@
     "is_known_missing": false
   },
   {
+    "entity_count": 2,
+    "entity_name": "Steve Patentic",
+    "entity_origin": [
+      "transcripts\\716.welder.txt",
+      "transcripts\\738.welder.srt"
+    ],
+    "entity_sourcetexts": [
+      "Steve Patentic"
+    ],
+    "entity_type": [
+      "PERSON"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
     "entity_count": 4,
     "entity_name": "Steve Perry",
     "entity_origin": [
@@ -105616,11 +105749,12 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 41,
+    "entity_count": 49,
     "entity_name": "Steven Crowder",
     "entity_origin": [
       "350: September 29-30, 2019",
       "609: October 20, 2021",
+      "738: Taking a Powder With Chowder",
       "transcripts\\138.autosub.srt",
       "transcripts\\185.autosub.srt",
       "transcripts\\192.autosub.srt",
@@ -105646,7 +105780,8 @@
       "transcripts\\714.otter.txt",
       "transcripts\\716.autosub.srt",
       "transcripts\\716.welder.txt",
-      "transcripts\\723.otter.txt"
+      "transcripts\\723.otter.txt",
+      "transcripts\\738.welder.srt"
     ],
     "entity_sourcetexts": [
       "Steven Crowder"
@@ -109524,7 +109659,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 1413,
+    "entity_count": 1426,
     "entity_name": "The Sandy Hook Elementary Massacre",
     "entity_origin": [
       "113: February 21-23, 2014",
@@ -109827,6 +109962,7 @@
       "transcripts\\735.otter.txt",
       "transcripts\\736.otter.txt",
       "transcripts\\737.otter.txt",
+      "transcripts\\738.welder.srt",
       "transcripts\\8.autosub.srt",
       "transcripts\\8.otter.txt",
       "transcripts\\83.autosub.srt",
@@ -113108,7 +113244,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 27,
+    "entity_count": 28,
     "entity_name": "Twilight Zone",
     "entity_origin": [
       "522: January 14-17, 2021",
@@ -113128,7 +113264,8 @@
       "transcripts\\661.autosub.srt",
       "transcripts\\691.autosub.srt",
       "transcripts\\702.autosub.srt",
-      "transcripts\\737.otter.txt"
+      "transcripts\\737.otter.txt",
+      "transcripts\\738.welder.srt"
     ],
     "entity_sourcetexts": [
       "The Twilight Zone",
@@ -113858,7 +113995,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 1446,
+    "entity_count": 1447,
     "entity_name": "United States",
     "entity_origin": [
       "141: March 20-22, 2018",
@@ -114390,6 +114527,7 @@
       "transcripts\\733.otter.txt",
       "transcripts\\734.otter.txt",
       "transcripts\\735.otter.txt",
+      "transcripts\\738.welder.srt",
       "transcripts\\74.autosub.srt",
       "transcripts\\76.autosub.srt",
       "transcripts\\78.autosub.srt",
@@ -115216,7 +115354,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 9,
+    "entity_count": 11,
     "entity_name": "US Supreme Court",
     "entity_origin": [
       "transcripts\\175.autosub.srt",
@@ -115225,7 +115363,8 @@
       "transcripts\\602.otter.txt",
       "transcripts\\715.autosub.srt",
       "transcripts\\715.otter.txt",
-      "transcripts\\736.otter.txt"
+      "transcripts\\736.otter.txt",
+      "transcripts\\738.welder.srt"
     ],
     "entity_sourcetexts": [
       "The US Supreme Court",
@@ -118102,6 +118241,22 @@
   },
   {
     "entity_count": 2,
+    "entity_name": "Weimar Germany",
+    "entity_origin": [
+      "transcripts\\375.autosub.srt",
+      "transcripts\\738.welder.srt"
+    ],
+    "entity_sourcetexts": [
+      "Weimar Germany"
+    ],
+    "entity_type": [
+      "GPE"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
+    "entity_count": 2,
     "entity_name": "Wellbutrin",
     "entity_origin": [
       "transcripts\\213.autosub.srt",
@@ -118714,7 +118869,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 486,
+    "entity_count": 487,
     "entity_name": "White House",
     "entity_origin": [
       "155: January 7-9, 2009",
@@ -118965,6 +119120,7 @@
       "transcripts\\726.otter.txt",
       "transcripts\\733.autosub.srt",
       "transcripts\\733.otter.txt",
+      "transcripts\\738.welder.srt",
       "transcripts\\74.autosub.srt",
       "transcripts\\75.autosub.srt",
       "transcripts\\77.autosub.srt",
@@ -120240,7 +120396,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 60,
+    "entity_count": 61,
     "entity_name": "Wolfgang Halbig",
     "entity_origin": [
       "279: Formulaic Objections",
@@ -120260,7 +120416,8 @@
       "transcripts\\715.welder.txt",
       "transcripts\\725.otter.txt",
       "transcripts\\727.otter.txt",
-      "transcripts\\732.otter.txt"
+      "transcripts\\732.otter.txt",
+      "transcripts\\738.welder.srt"
     ],
     "entity_sourcetexts": [
       "Wolfgang Halbeck",
