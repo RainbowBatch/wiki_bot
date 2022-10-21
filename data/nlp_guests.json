@@ -250,7 +250,6 @@
     "people": [
       "Roger Stone",
       "Larry Klayman",
-      "Larry Clayman",
       "Jerome Corsi",
       "Cassandra Fairbanks",
       "Donald Trump",
@@ -445,11 +444,11 @@
       "Hillary Clinton",
       "Tucker Carlson",
       "Peter Thiel",
+      "Norm Pattis",
       "Jimmy Kimmel",
       "Eddie Bravo",
       "Robert Barnes",
       "Roger Stone",
-      "Norm Pattis",
       "Ron DeSantis"
     ]
   },
@@ -485,7 +484,8 @@
     "episode_number": "729",
     "people": [
       "Robert Barnes",
-      "Elizabeth Williamson"
+      "Elizabeth Williamson",
+      "Norm Pattis"
     ]
   },
   {
@@ -526,8 +526,8 @@
     "episode_number": "734",
     "people": [
       "Kanye West",
-      "Donald Trump",
       "Candace Owens",
+      "Donald Trump",
       "Peter Thiel",
       "Tucker Carlson",
       "Aaron Russo"
@@ -536,8 +536,9 @@
   {
     "episode_number": "735",
     "people": [
-      "Steve Quayle",
       "Robert Barnes",
+      "Norm Pattis",
+      "Steve Quayle",
       "Owen Shroyer",
       "Vladimir Putin",
       "David Icke",
@@ -605,6 +606,7 @@
       "Wolf Blitzer",
       "Aleksandr Dugin",
       "Laura Loomer",
+      "Larry Klayman",
       "Buckley Hamman",
       "Tommy Robinson",
       "Chuck Schumer",

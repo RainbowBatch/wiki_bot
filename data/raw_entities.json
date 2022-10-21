@@ -33,17 +33,95 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
+    "entity_count": 120,
     "entity_name": "1st Amendment",
     "entity_origin": [
+      "transcripts\\10.otter.txt",
+      "transcripts\\113.autosub.srt",
+      "transcripts\\119.autosub.srt",
+      "transcripts\\131.autosub.srt",
+      "transcripts\\141.autosub.srt",
+      "transcripts\\146.autosub.srt",
+      "transcripts\\15.otter.txt",
+      "transcripts\\16.otter.txt",
+      "transcripts\\17.otter.txt",
+      "transcripts\\199.autosub.srt",
+      "transcripts\\230E.autosub.srt",
+      "transcripts\\255.autosub.srt",
+      "transcripts\\272.autosub.srt",
+      "transcripts\\279.otter.txt",
+      "transcripts\\282.autosub.srt",
+      "transcripts\\284.autosub.srt",
+      "transcripts\\288.autosub.srt",
+      "transcripts\\290.autosub.srt",
+      "transcripts\\310.autosub.srt",
+      "transcripts\\310.otter.txt",
+      "transcripts\\329.autosub.srt",
+      "transcripts\\341.autosub.srt",
+      "transcripts\\378.otter.txt",
+      "transcripts\\394.autosub.srt",
+      "transcripts\\401.autosub.srt",
+      "transcripts\\404.autosub.srt",
+      "transcripts\\409.autosub.srt",
+      "transcripts\\422.autosub.srt",
+      "transcripts\\436.autosub.srt",
+      "transcripts\\439.autosub.srt",
+      "transcripts\\448.autosub.srt",
+      "transcripts\\449.autosub.srt",
+      "transcripts\\497.autosub.srt",
+      "transcripts\\511.autosub.srt",
+      "transcripts\\514.autosub.srt",
+      "transcripts\\523.autosub.srt",
+      "transcripts\\524.autosub.srt",
+      "transcripts\\537.autosub.srt",
+      "transcripts\\541.autosub.srt",
+      "transcripts\\543.autosub.srt",
+      "transcripts\\562.autosub.srt",
+      "transcripts\\577.autosub.srt",
+      "transcripts\\6.otter.txt",
+      "transcripts\\602.otter.txt",
+      "transcripts\\614.autosub.srt",
+      "transcripts\\617.autosub.srt",
+      "transcripts\\618.autosub.srt",
+      "transcripts\\619.autosub.srt",
+      "transcripts\\623.autosub.srt",
+      "transcripts\\634.autosub.srt",
       "transcripts\\641.autosub.srt",
-      "transcripts\\672.autosub.srt"
+      "transcripts\\646.autosub.srt",
+      "transcripts\\657.autosub.srt",
+      "transcripts\\665.autosub.srt",
+      "transcripts\\665.otter.txt",
+      "transcripts\\672.autosub.srt",
+      "transcripts\\68.autosub.srt",
+      "transcripts\\682.autosub.srt",
+      "transcripts\\685.otter.txt",
+      "transcripts\\713.autosub.srt",
+      "transcripts\\714.otter.txt",
+      "transcripts\\714.welder.txt",
+      "transcripts\\715.otter.txt",
+      "transcripts\\715.welder.txt",
+      "transcripts\\717.welder.txt",
+      "transcripts\\728.otter.txt",
+      "transcripts\\729.otter.txt",
+      "transcripts\\73.autosub.srt",
+      "transcripts\\732.otter.txt",
+      "transcripts\\736.otter.txt",
+      "transcripts\\738.welder.srt",
+      "transcripts\\83.autosub.srt",
+      "transcripts\\99.otter.txt"
     ],
     "entity_sourcetexts": [
-      "the 1st Amendment"
+      "First Amendment",
+      "The First Amendment",
+      "The First Amendment\n\n",
+      "a First Amendment",
+      "the 1st Amendment",
+      "the First Amendment",
+      "the First Amendment\n\n"
     ],
     "entity_type": [
-      "LAW"
+      "LAW",
+      "ORG"
     ],
     "is_existing": false,
     "is_known_missing": false
@@ -84,21 +162,86 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 5,
+    "entity_count": 78,
     "entity_name": "2nd Amendment",
     "entity_origin": [
+      "141: March 20-22, 2018",
+      "143: March 25-31 Part 1",
+      "transcripts\\114.autosub.srt",
+      "transcripts\\12.autosub.srt",
+      "transcripts\\142.autosub.srt",
+      "transcripts\\144.autosub.srt",
+      "transcripts\\194.autosub.srt",
+      "transcripts\\209.autosub.srt",
       "transcripts\\213.autosub.srt",
+      "transcripts\\222.otter.txt",
+      "transcripts\\248.autosub.srt",
+      "transcripts\\252.autosub.srt",
+      "transcripts\\258.autosub.srt",
+      "transcripts\\262.autosub.srt",
+      "transcripts\\264.autosub.srt",
+      "transcripts\\268.autosub.srt",
+      "transcripts\\272.autosub.srt",
+      "transcripts\\279.otter.txt",
+      "transcripts\\284.autosub.srt",
+      "transcripts\\294.autosub.srt",
+      "transcripts\\298.autosub.srt",
+      "transcripts\\3.autosub.srt",
+      "transcripts\\3.otter.txt",
+      "transcripts\\335.autosub.srt",
+      "transcripts\\368.autosub.srt",
+      "transcripts\\37.autosub.srt",
+      "transcripts\\380.autosub.srt",
       "transcripts\\389.autosub.srt",
+      "transcripts\\390.autosub.srt",
+      "transcripts\\414.autosub.srt",
+      "transcripts\\433.autosub.srt",
       "transcripts\\462.autosub.srt",
+      "transcripts\\465.autosub.srt",
+      "transcripts\\466.autosub.srt",
       "transcripts\\510.autosub.srt",
-      "transcripts\\660.autosub.srt"
+      "transcripts\\525.autosub.srt",
+      "transcripts\\526.autosub.srt",
+      "transcripts\\535.autosub.srt",
+      "transcripts\\543.autosub.srt",
+      "transcripts\\554.autosub.srt",
+      "transcripts\\559.autosub.srt",
+      "transcripts\\611.autosub.srt",
+      "transcripts\\64.autosub.srt",
+      "transcripts\\641.autosub.srt",
+      "transcripts\\642.autosub.srt",
+      "transcripts\\660.autosub.srt",
+      "transcripts\\665.otter.txt",
+      "transcripts\\670.autosub.srt",
+      "transcripts\\688.autosub.srt",
+      "transcripts\\69.autosub.srt",
+      "transcripts\\690.autosub.srt",
+      "transcripts\\693.autosub.srt",
+      "transcripts\\712.otter.txt",
+      "transcripts\\714.otter.txt",
+      "transcripts\\714.welder.txt",
+      "transcripts\\715.autosub.srt",
+      "transcripts\\715.otter.txt",
+      "transcripts\\715.welder.txt",
+      "transcripts\\725.otter.txt",
+      "transcripts\\729.otter.txt",
+      "transcripts\\734.otter.txt",
+      "transcripts\\74.autosub.srt",
+      "transcripts\\8.otter.txt",
+      "transcripts\\83.autosub.srt"
     ],
     "entity_sourcetexts": [
       "2nd Amendment",
-      "the 2nd Amendment"
+      "Second Amendment",
+      "The Second Amendment",
+      "The Second Amendment\n\n",
+      "the 2nd Amendment",
+      "the Second Amendment",
+      "the Second Amendment\n\n"
     ],
     "entity_type": [
-      "LAW"
+      "LAW",
+      "WORK_OF_ART"
     ],
     "is_existing": false,
     "is_known_missing": false
@@ -138,14 +281,64 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
+    "entity_count": 5,
+    "entity_name": "4th Amendment",
+    "entity_origin": [
+      "transcripts\\25(Repost).autosub.srt",
+      "transcripts\\290.autosub.srt",
+      "transcripts\\715.otter.txt",
+      "transcripts\\S011.autosub.srt"
+    ],
+    "entity_sourcetexts": [
+      "Fourth Amendment",
+      "The Fourth Amendment",
+      "the Fourth Amendment"
+    ],
+    "entity_type": [
+      "EVENT",
+      "PRODUCT",
+      "LAW",
+      "WORK_OF_ART"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
+    "entity_count": 15,
+    "entity_name": "5th Amendment",
+    "entity_origin": [
+      "transcripts\\25.autosub.srt",
+      "transcripts\\257.autosub.srt",
+      "transcripts\\630.autosub.srt",
+      "transcripts\\642.autosub.srt",
+      "transcripts\\714.otter.txt",
+      "transcripts\\715.autosub.srt",
+      "transcripts\\715.otter.txt",
+      "transcripts\\732.otter.txt"
+    ],
+    "entity_sourcetexts": [
+      "Fifth Amendment",
+      "The Fifth Amendment\n\n",
+      "the Fifth Amendment"
+    ],
+    "entity_type": [
+      "LAW"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
+    "entity_count": 4,
     "entity_name": "5th Avenue",
     "entity_origin": [
       "transcripts\\334.autosub.srt",
-      "transcripts\\355.autosub.srt"
+      "transcripts\\355.autosub.srt",
+      "transcripts\\545.autosub.srt",
+      "transcripts\\734.otter.txt"
     ],
     "entity_sourcetexts": [
-      "5th Avenue"
+      "5th Avenue",
+      "Fifth Avenue"
     ],
     "entity_type": [
       "FAC"
@@ -166,6 +359,27 @@
     "entity_type": [
       "LOC",
       "FAC"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
+    "entity_count": 6,
+    "entity_name": "9th Circuit",
+    "entity_origin": [
+      "543: March 23-24, 2021",
+      "transcripts\\11.otter.txt",
+      "transcripts\\16.otter.txt"
+    ],
+    "entity_sourcetexts": [
+      "9th Circuit",
+      "Ninth Circuit",
+      "The Ninth Circuit",
+      "a Ninth Circuit",
+      "the Ninth Circuit"
+    ],
+    "entity_type": [
+      "ORG"
     ],
     "is_existing": false,
     "is_known_missing": false
@@ -802,7 +1016,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "adjustment bureau",
+    "entity_name": "Adjustment Bureau",
     "entity_origin": [
       "transcripts\\199.autosub.srt",
       "transcripts\\566.autosub.srt"
@@ -895,7 +1109,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "advanced military research system",
+    "entity_name": "Advanced Military Research System",
     "entity_origin": [
       "transcripts\\720.welder.srt",
       "transcripts\\720.welder.txt"
@@ -1299,7 +1513,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "agricultural revolution",
+    "entity_name": "Agricultural Revolution",
     "entity_origin": [
       "transcripts\\54.autosub.srt",
       "transcripts\\68.autosub.srt"
@@ -1574,7 +1788,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "alamo drafthouse",
+    "entity_name": "Alamo Drafthouse",
     "entity_origin": [
       "transcripts\\296.autosub.srt",
       "transcripts\\515.autosub.srt"
@@ -1767,7 +1981,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "alaska permanent fund",
+    "entity_name": "Alaska Permanent Fund",
     "entity_origin": [
       "transcripts\\130E.autosub.srt",
       "transcripts\\333.autosub.srt"
@@ -2948,7 +3162,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 35179,
+    "entity_count": 35184,
     "entity_name": "Alex Jones",
     "entity_origin": [
       "\"Mandatory Service Bill\"",
@@ -4910,23 +5124,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
-    "entity_name": "Alex Lee Boyer",
-    "entity_origin": [
-      "transcripts\\707.autosub.srt",
-      "transcripts\\719.autosub.srt"
-    ],
-    "entity_sourcetexts": [
-      "Alex Lee Boyer"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 12,
+    "entity_count": 14,
     "entity_name": "Alex Lee Moyer",
     "entity_origin": [
       "transcripts\\707.autosub.srt",
@@ -4934,12 +5132,14 @@
       "transcripts\\714.autosub.srt",
       "transcripts\\714.otter.txt",
       "transcripts\\714.welder.txt",
+      "transcripts\\719.autosub.srt",
       "transcripts\\719.welder.srt",
       "transcripts\\719.welder.txt",
       "transcripts\\732.otter.txt",
       "transcripts\\734.otter.txt"
     ],
     "entity_sourcetexts": [
+      "Alex Lee Boyer",
       "Alex Lee Moyer",
       "Alex Lee Moyer's",
       "Alex lee Moyer"
@@ -5917,7 +6117,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 272,
+    "entity_count": 285,
     "entity_name": "Alex's True Story",
     "entity_origin": [
       "100: January 6-7, 2016",
@@ -5948,11 +6148,15 @@
       "208: March 6-8, 2009",
       "215: March 11-12, 2009",
       "224: March 20, 2009",
+      "230B: Obama Deception, Part 2",
       "245: December 24, 2018",
       "265: September 1, 2011",
       "277: March 15, 2019",
+      "281: April 4, 2019",
       "288: January 7-9, 2013",
       "300: May 21-22, 2019",
+      "303: January 29-31, 2013",
+      "304: May 30-31, 2019",
       "309: June 10-11, 2019",
       "323: July 19, 2019",
       "327: July 31, 2019",
@@ -5978,6 +6182,7 @@
       "425: April 23-24, 2020",
       "427: April 29-30, 2020",
       "428: May 1, 2020",
+      "430: May 5-7, 2020",
       "433: May 12-13, 2020",
       "435: May 18-21, 2020",
       "436: May 22, 2020",
@@ -6052,33 +6257,7 @@
       "The Halloween Story"
     ],
     "entity_sourcetexts": [
-      "Alex's True Story"
-    ],
-    "entity_type": [
-      "ORG"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 13,
-    "entity_name": "Alex's True Story References",
-    "entity_origin": [
-      "230B: Obama Deception, Part 2",
-      "281: April 4, 2019",
-      "303: January 29-31, 2013",
-      "304: May 30-31, 2019",
-      "328: March 11-12, 2013",
-      "364: April 21-22, 2013",
-      "380: December 19-20, 2019",
-      "386: January 8, 2020",
-      "430: May 5-7, 2020",
-      "495: November 4-6, 2016",
-      "502: Dan's Cara-Vanity Project Part 1",
-      "635: January 6-7, 2022",
-      "83: November 10-12, 2015"
-    ],
-    "entity_sourcetexts": [
+      "Alex's True Story",
       "Alex's True Story\r\n\r\nReferences"
     ],
     "entity_type": [
@@ -7217,7 +7396,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "allied powers",
+    "entity_name": "Allied Powers",
     "entity_origin": [
       "transcripts\\270.autosub.srt",
       "transcripts\\296.autosub.srt"
@@ -7694,7 +7873,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "american academy of pediatrics",
+    "entity_name": "American Academy of Pediatrics",
     "entity_origin": [
       "transcripts\\386.autosub.srt",
       "transcripts\\466.autosub.srt",
@@ -8126,7 +8305,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "american library association",
+    "entity_name": "American Library Association",
     "entity_origin": [
       "transcripts\\404.autosub.srt",
       "transcripts\\605.autosub.srt"
@@ -8177,7 +8356,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "american medical association",
+    "entity_name": "American Medical Association",
     "entity_origin": [
       "transcripts\\259.autosub.srt",
       "transcripts\\340.autosub.srt",
@@ -8249,7 +8428,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "american psychological association",
+    "entity_name": "American Psychological Association",
     "entity_origin": [
       "transcripts\\266.autosub.srt",
       "transcripts\\733.otter.txt"
@@ -8265,7 +8444,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "american republic",
+    "entity_name": "American Republic",
     "entity_origin": [
       "transcripts\\637.autosub.srt",
       "transcripts\\668.autosub.srt"
@@ -8331,7 +8510,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "american south",
+    "entity_name": "American South",
     "entity_origin": [
       "transcripts\\269.autosub.srt",
       "transcripts\\463.autosub.srt",
@@ -9326,11 +9505,12 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
+    "entity_count": 4,
     "entity_name": "Angela Lampsberry",
     "entity_origin": [
       "transcripts\\717.welder.txt",
-      "transcripts\\718.welder.txt"
+      "transcripts\\718.welder.txt",
+      "transcripts\\735.otter.txt"
     ],
     "entity_sourcetexts": [
       "Angela Lampsberry"
@@ -10423,7 +10603,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "apollo 2425",
+    "entity_name": "Apollo 2425",
     "entity_origin": [
       "transcripts\\25(Repost).autosub.srt",
       "transcripts\\S011.autosub.srt"
@@ -10509,7 +10689,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "arab spring",
+    "entity_name": "Arab Spring",
     "entity_origin": [
       "transcripts\\115.autosub.srt",
       "transcripts\\17.otter.txt",
@@ -10673,7 +10853,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "ark of the covenant",
+    "entity_name": "Ark of the Covenant",
     "entity_origin": [
       "189: February 19-20, 2009",
       "transcripts\\189.autosub.srt",
@@ -10691,7 +10871,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "arkansas department of transportation",
+    "entity_name": "Arkansas Department of Transportation",
     "entity_origin": [
       "transcripts\\2.otter.txt",
       "transcripts\\5.autosub.srt",
@@ -10969,7 +11149,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "art of war",
+    "entity_name": "Art of War",
     "entity_origin": [
       "transcripts\\14.autosub.srt",
       "transcripts\\14.otter.txt",
@@ -11116,7 +11296,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "aryan republican army",
+    "entity_name": "Aryan Republican Army",
     "entity_origin": [
       "transcripts\\215.autosub.srt",
       "transcripts\\329.autosub.srt"
@@ -11443,7 +11623,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "association 2228",
+    "entity_name": "Association 2228",
     "entity_origin": [
       "transcripts\\25(Repost).autosub.srt",
       "transcripts\\S011.autosub.srt"
@@ -11565,7 +11745,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "atlanta braves",
+    "entity_name": "Atlanta Braves",
     "entity_origin": [
       "transcripts\\117.autosub.srt",
       "transcripts\\19.autosub.srt",
@@ -11584,7 +11764,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "atlanta olympics",
+    "entity_name": "Atlanta Olympics",
     "entity_origin": [
       "transcripts\\581.autosub.srt",
       "transcripts\\707.autosub.srt"
@@ -11667,7 +11847,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "audubon society",
+    "entity_name": "Audubon Society",
     "entity_origin": [
       "transcripts\\723.autosub.srt",
       "transcripts\\723.otter.txt"
@@ -12094,7 +12274,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "australian institute of marine sciences",
+    "entity_name": "Australian Institute of Marine Sciences",
     "entity_origin": [
       "transcripts\\715.autosub.srt",
       "transcripts\\715.otter.txt",
@@ -12137,7 +12317,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "austrian school",
+    "entity_name": "Austrian School",
     "entity_origin": [
       "transcripts\\157.autosub.srt",
       "transcripts\\242.autosub.srt",
@@ -12343,7 +12523,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "baby boomers",
+    "entity_name": "Baby Boomers",
     "entity_origin": [
       "transcripts\\176.autosub.srt",
       "transcripts\\236.autosub.srt"
@@ -13294,7 +13474,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "barefoot contessa",
+    "entity_name": "Barefoot Contessa",
     "entity_origin": [
       "transcripts\\729.autosub.srt",
       "transcripts\\729.otter.txt"
@@ -13646,7 +13826,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "battle for truth",
+    "entity_name": "Battle For Truth",
     "entity_origin": [
       "657: Chatting With Elizabeth Williamson",
       "737: Reflections on a Verdict Part 2",
@@ -13704,7 +13884,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "battle of waterloo",
+    "entity_name": "Battle of Waterloo",
     "entity_origin": [
       "transcripts\\118.autosub.srt",
       "transcripts\\129.autosub.srt",
@@ -13808,7 +13988,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "bavarian illuminati",
+    "entity_name": "Bavarian Illuminati",
     "entity_origin": [
       "Alan Watt",
       "transcripts\\167.autosub.srt"
@@ -13825,7 +14005,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "bay county sheriff's office",
+    "entity_name": "Bay County Sheriff's Office",
     "entity_origin": [
       "transcripts\\222.autosub.srt",
       "transcripts\\222.otter.txt"
@@ -13843,7 +14023,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "bay of pigs",
+    "entity_name": "Bay of Pigs",
     "entity_origin": [
       "transcripts\\617.autosub.srt",
       "transcripts\\629.autosub.srt"
@@ -13876,7 +14056,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "beach boys",
+    "entity_name": "Beach Boys",
     "entity_origin": [
       "transcripts\\104.autosub.srt",
       "transcripts\\381.autosub.srt",
@@ -14001,7 +14181,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "bedrock of",
+    "entity_name": "Bedrock of",
     "entity_origin": [
       "transcripts\\228.autosub.srt",
       "transcripts\\564.autosub.srt"
@@ -14531,7 +14711,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "berlin wall",
+    "entity_name": "Berlin Wall",
     "entity_origin": [
       "transcripts\\186.autosub.srt",
       "transcripts\\278.autosub.srt",
@@ -14999,7 +15179,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "big bopper",
+    "entity_name": "Big Bopper",
     "entity_origin": [
       "transcripts\\431.autosub.srt",
       "transcripts\\489.autosub.srt"
@@ -15049,7 +15229,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "big kahuna",
+    "entity_name": "Big Kahuna",
     "entity_origin": [
       "transcripts\\20.autosub.srt",
       "transcripts\\284.autosub.srt",
@@ -16475,7 +16655,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "birch society",
+    "entity_name": "Birch Society",
     "entity_origin": [
       "transcripts\\199.autosub.srt",
       "transcripts\\234.autosub.srt",
@@ -16609,7 +16789,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "black death",
+    "entity_name": "Black Death",
     "entity_origin": [
       "transcripts\\427.autosub.srt",
       "transcripts\\717.autosub.srt",
@@ -16626,7 +16806,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "black eyed peas",
+    "entity_name": "Black Eyed Peas",
     "entity_origin": [
       "transcripts\\5.autosub.srt",
       "transcripts\\5.otter.txt",
@@ -16855,7 +17035,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "black plague",
+    "entity_name": "Black Plague",
     "entity_origin": [
       "transcripts\\258.autosub.srt",
       "transcripts\\427.autosub.srt"
@@ -16893,7 +17073,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "black ridge",
+    "entity_name": "Black Ridge",
     "entity_origin": [
       "transcripts\\730.autosub.srt",
       "transcripts\\730.otter.txt"
@@ -16943,7 +17123,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "blacklist rj",
+    "entity_name": "Blacklist RJ",
     "entity_origin": [
       "transcripts\\25(Repost).autosub.srt",
       "transcripts\\S011.autosub.srt"
@@ -17064,7 +17244,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "blair witch project",
+    "entity_name": "Blair Witch Project",
     "entity_origin": [
       "transcripts\\433.autosub.srt",
       "transcripts\\50.autosub.srt"
@@ -17290,7 +17470,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "blue cat cafe",
+    "entity_name": "Blue Cat Cafe",
     "entity_origin": [
       "19: March 3, 2017",
       "transcripts\\19.otter.txt"
@@ -17402,7 +17582,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "board of commissioners",
+    "entity_name": "Board of Commissioners",
     "entity_origin": [
       "transcripts\\570.autosub.srt",
       "transcripts\\98.autosub.srt"
@@ -17793,7 +17973,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "boiling pot",
+    "entity_name": "Boiling Pot",
     "entity_origin": [
       "transcripts\\180.autosub.srt",
       "transcripts\\725.autosub.srt"
@@ -17925,7 +18105,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "boogaloo bois",
+    "entity_name": "Boogaloo Bois",
     "entity_origin": [
       "transcripts\\523.autosub.srt",
       "transcripts\\527.autosub.srt"
@@ -17942,7 +18122,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "book of daniel",
+    "entity_name": "Book of Daniel",
     "entity_origin": [
       "transcripts\\182.autosub.srt",
       "transcripts\\596.autosub.srt"
@@ -17959,7 +18139,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "book of enoch",
+    "entity_name": "Book of Enoch",
     "entity_origin": [
       "transcripts\\125.autosub.srt",
       "transcripts\\184.autosub.srt",
@@ -18221,7 +18401,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "bosnian muslim",
+    "entity_name": "Bosnian Muslim",
     "entity_origin": [
       "transcripts\\124.autosub.srt",
       "transcripts\\397.autosub.srt"
@@ -18238,7 +18418,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "bosnian war",
+    "entity_name": "Bosnian War",
     "entity_origin": [
       "transcripts\\124.autosub.srt",
       "transcripts\\397.autosub.srt"
@@ -18254,7 +18434,7 @@
   },
   {
     "entity_count": 10,
-    "entity_name": "boston bomber",
+    "entity_name": "Boston Bomber",
     "entity_origin": [
       "transcripts\\172.autosub.srt",
       "transcripts\\248.autosub.srt",
@@ -18356,7 +18536,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "boston tea party",
+    "entity_name": "Boston Tea Party",
     "entity_origin": [
       "transcripts\\295.autosub.srt",
       "transcripts\\721.otter.txt",
@@ -18552,7 +18732,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "brain trust",
+    "entity_name": "Brain Trust",
     "entity_origin": [
       "transcripts\\338.autosub.srt",
       "transcripts\\500.autosub.srt",
@@ -18769,7 +18949,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "breakfast table",
+    "entity_name": "Breakfast Table",
     "entity_origin": [
       "transcripts\\476.autosub.srt",
       "transcripts\\503.autosub.srt"
@@ -19445,7 +19625,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "british israel",
+    "entity_name": "British Israel",
     "entity_origin": [
       "transcripts\\325.autosub.srt",
       "transcripts\\343.autosub.srt"
@@ -20120,7 +20300,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "bureau of alcohol tobacco and firearms",
+    "entity_name": "Bureau of Alcohol Tobacco and Firearms",
     "entity_origin": [
       "transcripts\\434.autosub.srt",
       "transcripts\\539.autosub.srt",
@@ -20730,7 +20910,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "california institute of technology",
+    "entity_name": "California Institute of Technology",
     "entity_origin": [
       "transcripts\\405.autosub.srt",
       "transcripts\\74.autosub.srt"
@@ -20757,22 +20937,6 @@
     ],
     "entity_type": [
       "WORK_OF_ART",
-      "ORG"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Call Schwab",
-    "entity_origin": [
-      "transcripts\\625.autosub.srt",
-      "transcripts\\678.autosub.srt"
-    ],
-    "entity_sourcetexts": [
-      "Call Schwab"
-    ],
-    "entity_type": [
       "ORG"
     ],
     "is_existing": false,
@@ -20818,7 +20982,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "Camp David accords",
+    "entity_name": "Camp David Accords",
     "entity_origin": [
       "340: All About Steve",
       "Steve Pieczenik",
@@ -20852,7 +21016,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 41,
+    "entity_count": 42,
     "entity_name": "Candace Owens",
     "entity_origin": [
       "277: March 15, 2019",
@@ -21316,43 +21480,6 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 3,
-    "entity_name": "carol quickly",
-    "entity_origin": [
-      "transcripts\\230E.autosub.srt",
-      "transcripts\\305.autosub.srt",
-      "transcripts\\646.autosub.srt"
-    ],
-    "entity_sourcetexts": [
-      "Carol Quickly's"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 7,
-    "entity_name": "carol quigley",
-    "entity_origin": [
-      "transcripts\\134.autosub.srt",
-      "transcripts\\20.otter.txt",
-      "transcripts\\219.autosub.srt",
-      "transcripts\\270.autosub.srt",
-      "transcripts\\426.autosub.srt",
-      "transcripts\\457.autosub.srt"
-    ],
-    "entity_sourcetexts": [
-      "Carol Quigley's"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
     "entity_count": 16,
     "entity_name": "Carpe Donktum",
     "entity_origin": [
@@ -21392,24 +21519,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
-    "entity_name": "Carrie Cassidy",
-    "entity_origin": [
-      "transcripts\\393.autosub.srt",
-      "transcripts\\455.autosub.srt"
-    ],
-    "entity_sourcetexts": [
-      "Carrie Cassidy",
-      "Carrie Cassidy's"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 13,
+    "entity_count": 23,
     "entity_name": "Carroll Quigley",
     "entity_origin": [
       "134: Post-Tribulation Rapture?",
@@ -21418,13 +21528,22 @@
       "454: December 17, 2013",
       "Webster Tarpley",
       "transcripts\\130C.autosub.srt",
+      "transcripts\\134.autosub.srt",
+      "transcripts\\20.otter.txt",
       "transcripts\\219.autosub.srt",
+      "transcripts\\230E.autosub.srt",
+      "transcripts\\270.autosub.srt",
       "transcripts\\305.autosub.srt",
+      "transcripts\\426.autosub.srt",
       "transcripts\\454.autosub.srt",
+      "transcripts\\457.autosub.srt",
+      "transcripts\\646.autosub.srt",
       "transcripts\\693.autosub.srt",
       "transcripts\\707.autosub.srt"
     ],
     "entity_sourcetexts": [
+      "Carol Quickly's",
+      "Carol Quigley's",
       "Carroll\r\n    Quigley",
       "Carroll Quigley",
       "Carroll Quigley's"
@@ -21728,7 +21847,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "cayman islands",
+    "entity_name": "Cayman Islands",
     "entity_origin": [
       "transcripts\\10.autosub.srt",
       "transcripts\\10.otter.txt",
@@ -21911,7 +22030,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "center for medical progress",
+    "entity_name": "Center For Medical Progress",
     "entity_origin": [
       "52: July 14-21, 2015",
       "56: July 22-Aug 11, 2015"
@@ -21963,7 +22082,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "centers for disease control",
+    "entity_name": "Centers for Disease Control",
     "entity_origin": [
       "transcripts\\142.autosub.srt",
       "transcripts\\294.autosub.srt",
@@ -22144,7 +22263,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "central intelligence agency",
+    "entity_name": "Central Intelligence Agency",
     "entity_origin": [
       "transcripts\\251.autosub.srt",
       "transcripts\\387.autosub.srt",
@@ -23454,7 +23573,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "chicago museum",
+    "entity_name": "Chicago Museum",
     "entity_origin": [
       "transcripts\\13.otter.txt",
       "transcripts\\263.autosub.srt"
@@ -23586,7 +23705,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "children's health",
+    "entity_name": "Children's Health",
     "entity_origin": [
       "transcripts\\733.autosub.srt",
       "transcripts\\733.otter.txt"
@@ -23652,7 +23771,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "chinese civil war",
+    "entity_name": "Chinese Civil War",
     "entity_origin": [
       "transcripts\\415.autosub.srt",
       "transcripts\\501.autosub.srt"
@@ -23668,7 +23787,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "chinese communist party",
+    "entity_name": "Chinese Communist Party",
     "entity_origin": [
       "Fentanyl the Chinese dragon",
       "transcripts\\430.autosub.srt"
@@ -24064,22 +24183,6 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
-    "entity_name": "Chris Madden",
-    "entity_origin": [
-      "transcripts\\311.autosub.srt",
-      "transcripts\\662.autosub.srt"
-    ],
-    "entity_sourcetexts": [
-      "Chris Madden"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
     "entity_count": 3,
     "entity_name": "Chris Martin",
     "entity_origin": [
@@ -24096,24 +24199,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
-    "entity_name": "Chris Matic",
-    "entity_origin": [
-      "transcripts\\311.autosub.srt",
-      "transcripts\\662.autosub.srt"
-    ],
-    "entity_sourcetexts": [
-      "Chris Matic"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 31,
+    "entity_count": 46,
     "entity_name": "Chris Mattei",
     "entity_origin": [
       "310: June 13-14, 2019",
@@ -24126,19 +24212,30 @@
       "transcripts\\310.otter.txt",
       "transcripts\\311.autosub.srt",
       "transcripts\\630.autosub.srt",
+      "transcripts\\662.autosub.srt",
       "transcripts\\705.autosub.srt",
+      "transcripts\\725.autosub.srt",
+      "transcripts\\725.otter.txt",
+      "transcripts\\727.autosub.srt",
       "transcripts\\729.autosub.srt",
       "transcripts\\729.otter.txt",
+      "transcripts\\731.autosub.srt",
       "transcripts\\731.otter.txt",
       "transcripts\\733.autosub.srt",
-      "transcripts\\735.otter.txt"
+      "transcripts\\735.otter.txt",
+      "transcripts\\737.otter.txt"
     ],
     "entity_sourcetexts": [
       "Chris\r\nMattei",
+      "Chris Madden",
       "Chris Maddie",
       "Chris Maddie's",
+      "Chris Matic",
       "Chris Mattei",
-      "Chris Mattei's"
+      "Chris Mattei's",
+      "Chris Mattie",
+      "Chris Mattie\n\n",
+      "Chris Mehdi"
     ],
     "entity_type": [
       "PERSON",
@@ -24164,43 +24261,6 @@
     ],
     "entity_sourcetexts": [
       "Chris Matthews"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 8,
-    "entity_name": "Chris Mattie",
-    "entity_origin": [
-      "transcripts\\310.autosub.srt",
-      "transcripts\\725.autosub.srt",
-      "transcripts\\727.autosub.srt",
-      "transcripts\\729.autosub.srt",
-      "transcripts\\731.autosub.srt",
-      "transcripts\\737.otter.txt"
-    ],
-    "entity_sourcetexts": [
-      "Chris Mattie",
-      "Chris Mattie\n\n"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 3,
-    "entity_name": "Chris Mehdi",
-    "entity_origin": [
-      "transcripts\\725.otter.txt",
-      "transcripts\\729.otter.txt"
-    ],
-    "entity_sourcetexts": [
-      "Chris Mehdi"
     ],
     "entity_type": [
       "PERSON"
@@ -25366,7 +25426,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "church of latter day",
+    "entity_name": "Church of Latter day",
     "entity_origin": [
       "transcripts\\366.autosub.srt",
       "transcripts\\675.autosub.srt"
@@ -25382,7 +25442,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "church of satan",
+    "entity_name": "Church of Satan",
     "entity_origin": [
       "transcripts\\296.autosub.srt",
       "transcripts\\399.autosub.srt",
@@ -25402,7 +25462,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "church of scientology",
+    "entity_name": "Church of Scientology",
     "entity_origin": [
       "transcripts\\275.autosub.srt",
       "transcripts\\687.autosub.srt"
@@ -25626,7 +25686,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "city of austin",
+    "entity_name": "City of Austin",
     "entity_origin": [
       "transcripts\\412.autosub.srt",
       "transcripts\\473.autosub.srt",
@@ -25682,7 +25742,7 @@
   },
   {
     "entity_count": 21,
-    "entity_name": "civil rights act",
+    "entity_name": "Civil Rights Act",
     "entity_origin": [
       "141: March 20-22, 2018",
       "transcripts\\119.autosub.srt",
@@ -25766,7 +25826,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "civil war 1206",
+    "entity_name": "Civil War 1206",
     "entity_origin": [
       "transcripts\\530.autosub.srt",
       "transcripts\\620.autosub.srt"
@@ -25783,7 +25843,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "civil war 1662",
+    "entity_name": "Civil War 1662",
     "entity_origin": [
       "transcripts\\316.autosub.srt",
       "transcripts\\82.autosub.srt"
@@ -25860,22 +25920,6 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "clash schwab",
-    "entity_origin": [
-      "transcripts\\719.welder.srt",
-      "transcripts\\719.welder.txt"
-    ],
-    "entity_sourcetexts": [
-      "Clash Schwab's"
-    ],
-    "entity_type": [
-      "ORG"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 2,
     "entity_name": "Classic Alex",
     "entity_origin": [
       "transcripts\\15.otter.txt",
@@ -25903,40 +25947,6 @@
     ],
     "entity_type": [
       "PRODUCT"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Claude Schwab",
-    "entity_origin": [
-      "transcripts\\719.welder.srt",
-      "transcripts\\719.welder.txt",
-      "transcripts\\720.welder.srt",
-      "transcripts\\720.welder.txt"
-    ],
-    "entity_sourcetexts": [
-      "Claude Schwab"
-    ],
-    "entity_type": [
-      "ORG"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Claus Schwab",
-    "entity_origin": [
-      "transcripts\\719.welder.srt",
-      "transcripts\\719.welder.txt"
-    ],
-    "entity_sourcetexts": [
-      "Claus Schwab"
-    ],
-    "entity_type": [
-      "ORG"
     ],
     "is_existing": false,
     "is_known_missing": false
@@ -26192,24 +26202,8 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
-    "entity_name": "Clinton Hillary",
-    "entity_origin": [
-      "transcripts\\40.autosub.srt",
-      "transcripts\\420.autosub.srt"
-    ],
-    "entity_sourcetexts": [
-      "Clinton Hillary"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
     "entity_count": 5,
-    "entity_name": "clinton news network",
+    "entity_name": "Clinton News Network",
     "entity_origin": [
       "transcripts\\214.autosub.srt",
       "transcripts\\712.autosub.srt",
@@ -26932,7 +26926,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "communist menace",
+    "entity_name": "Communist Menace",
     "entity_origin": [
       "transcripts\\259.autosub.srt",
       "transcripts\\328.autosub.srt"
@@ -27268,7 +27262,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "confederate army",
+    "entity_name": "Confederate Army",
     "entity_origin": [
       "transcripts\\303.autosub.srt",
       "transcripts\\389.autosub.srt"
@@ -27284,7 +27278,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "confederate states",
+    "entity_name": "Confederate States",
     "entity_origin": [
       "transcripts\\157.autosub.srt",
       "transcripts\\445.autosub.srt"
@@ -28028,7 +28022,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "constitution party",
+    "entity_name": "Constitution Party",
     "entity_origin": [
       "160: January 22-25, 2009",
       "447: Bill Cooper Covers OKC Part 2",
@@ -28084,7 +28078,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "constitutional court",
+    "entity_name": "Constitutional Court",
     "entity_origin": [
       "transcripts\\285.autosub.srt",
       "transcripts\\6.otter.txt"
@@ -28127,7 +28121,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "consumer financial protection",
+    "entity_name": "Consumer Financial Protection",
     "entity_origin": [
       "transcripts\\111.autosub.srt",
       "transcripts\\259.autosub.srt"
@@ -28804,7 +28798,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "courts of heaven",
+    "entity_name": "Courts of Heaven",
     "entity_origin": [
       "596: Possibly Too Much Wacky",
       "transcripts\\633.autosub.srt"
@@ -29346,7 +29340,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "cuyahoga river",
+    "entity_name": "Cuyahoga River",
     "entity_origin": [
       "transcripts\\385.autosub.srt",
       "transcripts\\657.autosub.srt"
@@ -29362,7 +29356,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "cyber sunday",
+    "entity_name": "Cyber Sunday",
     "entity_origin": [
       "transcripts\\719.welder.srt",
       "transcripts\\719.welder.txt"
@@ -29615,7 +29609,7 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "daily show",
+    "entity_name": "Daily Show",
     "entity_origin": [
       "445: June 12, 2020",
       "transcripts\\110.autosub.srt",
@@ -29876,7 +29870,7 @@
     "is_known_missing": true
   },
   {
-    "entity_count": 11,
+    "entity_count": 14,
     "entity_name": "Dan Friesen",
     "entity_origin": [
       "Dan Friesen",
@@ -29886,13 +29880,16 @@
       "transcripts\\130E.autosub.srt",
       "transcripts\\142.autosub.srt",
       "transcripts\\157.autosub.srt",
+      "transcripts\\178.autosub.srt",
       "transcripts\\194.autosub.srt",
+      "transcripts\\445.autosub.srt",
       "transcripts\\561.autosub.srt",
       "transcripts\\65.autosub.srt",
       "transcripts\\676.autosub.srt"
     ],
     "entity_sourcetexts": [
       "Dan Friesen",
+      "Don Friesen",
       "the Dan Friesen"
     ],
     "entity_type": [
@@ -30388,7 +30385,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "dark side of",
+    "entity_name": "Dark Side of",
     "entity_origin": [
       "transcripts\\256.autosub.srt",
       "transcripts\\704.autosub.srt",
@@ -30406,7 +30403,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "dark tower",
+    "entity_name": "Dark Tower",
     "entity_origin": [
       "transcripts\\105.autosub.srt",
       "transcripts\\113.autosub.srt"
@@ -30423,7 +30420,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "darkest timeline",
+    "entity_name": "Darkest Timeline",
     "entity_origin": [
       "transcripts\\10.autosub.srt",
       "transcripts\\13.autosub.srt",
@@ -30778,15 +30775,18 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 3,
+    "entity_count": 5,
     "entity_name": "Dave Daubenmire",
     "entity_origin": [
       "238: Coach Dave",
-      "transcripts\\359.autosub.srt"
+      "transcripts\\279.otter.txt",
+      "transcripts\\359.autosub.srt",
+      "transcripts\\723.otter.txt"
     ],
     "entity_sourcetexts": [
       "Coach Dave",
-      "Dave Daubenmire"
+      "Dave Daubenmire",
+      "Dave Dobbin Meyer"
     ],
     "entity_type": [
       "PERSON",
@@ -30794,22 +30794,6 @@
     ],
     "is_existing": false,
     "is_known_missing": true
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Dave Dobbin Meyer",
-    "entity_origin": [
-      "transcripts\\279.otter.txt",
-      "transcripts\\723.otter.txt"
-    ],
-    "entity_sourcetexts": [
-      "Dave Dobbin Meyer"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
   },
   {
     "entity_count": 3,
@@ -30896,9 +30880,12 @@
     "is_known_missing": true
   },
   {
-    "entity_count": 13,
+    "entity_count": 17,
     "entity_name": "Dave Mustaine",
     "entity_origin": [
+      "119: August 16, 2012",
+      "389: January 15-17, 2020",
+      "557: May 11, 2021",
       "transcripts\\119.autosub.srt",
       "transcripts\\383.autosub.srt",
       "transcripts\\389.autosub.srt",
@@ -30906,30 +30893,14 @@
       "transcripts\\633.autosub.srt"
     ],
     "entity_sourcetexts": [
-      "Dave Mustaine"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 4,
-    "entity_name": "Dave Mustane",
-    "entity_origin": [
-      "119: August 16, 2012",
-      "389: January 15-17, 2020",
-      "557: May 11, 2021"
-    ],
-    "entity_sourcetexts": [
+      "Dave Mustaine",
       "Dave Mustane"
     ],
     "entity_type": [
       "PERSON"
     ],
     "is_existing": false,
-    "is_known_missing": true
+    "is_known_missing": false
   },
   {
     "entity_count": 48,
@@ -32427,7 +32398,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "davinci code",
+    "entity_name": "DaVinci Code",
     "entity_origin": [
       "transcripts\\186.autosub.srt",
       "transcripts\\314.autosub.srt"
@@ -32717,7 +32688,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "decompression session",
+    "entity_name": "Decompression Session",
     "entity_origin": [
       "Bradley Reeves",
       "List of Knowledge Fight episodes"
@@ -32899,7 +32870,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "defense advanced research agency",
+    "entity_name": "Defense Advanced Research Agency",
     "entity_origin": [
       "transcripts\\720.welder.srt",
       "transcripts\\720.welder.txt"
@@ -33444,7 +33415,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "democratic socialist",
+    "entity_name": "Democratic Socialist",
     "entity_origin": [
       "transcripts\\176.autosub.srt",
       "transcripts\\310.autosub.srt",
@@ -33689,7 +33660,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "department of",
+    "entity_name": "Department of",
     "entity_origin": [
       "201: A New Messiah and The Plunger Toss",
       "transcripts\\555.autosub.srt",
@@ -33709,7 +33680,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "department of agriculture",
+    "entity_name": "Department of Agriculture",
     "entity_origin": [
       "transcripts\\351.autosub.srt",
       "transcripts\\393.autosub.srt"
@@ -33801,7 +33772,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "department of energy",
+    "entity_name": "Department of Energy",
     "entity_origin": [
       "141: March 20-22, 2018",
       "640: January 22, 2022",
@@ -33846,7 +33817,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "department of health and human",
+    "entity_name": "Department of Health and Human",
     "entity_origin": [
       "transcripts\\335.autosub.srt",
       "transcripts\\398.autosub.srt"
@@ -33964,7 +33935,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "department of housing and urban development",
+    "entity_name": "Department of Housing and Urban Development",
     "entity_origin": [
       "transcripts\\328.autosub.srt",
       "transcripts\\680.autosub.srt"
@@ -34056,7 +34027,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "department of public safety",
+    "entity_name": "Department of Public Safety",
     "entity_origin": [
       "transcripts\\408.autosub.srt",
       "transcripts\\690.autosub.srt"
@@ -34341,11 +34312,12 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
+    "entity_count": 3,
     "entity_name": "Desaix Clark",
     "entity_origin": [
       "704: 9/11, Part 2",
-      "transcripts\\731.otter.txt"
+      "transcripts\\731.otter.txt",
+      "transcripts\\734.otter.txt"
     ],
     "entity_sourcetexts": [
       "Desaix Clark"
@@ -34472,7 +34444,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "detroit free press",
+    "entity_name": "Detroit Free Press",
     "entity_origin": [
       "transcripts\\363.autosub.srt",
       "transcripts\\462.autosub.srt",
@@ -34544,7 +34516,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "devil went down",
+    "entity_name": "Devil Went Down",
     "entity_origin": [
       "transcripts\\425.autosub.srt",
       "transcripts\\501.autosub.srt",
@@ -35330,22 +35302,6 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "Don Friesen",
-    "entity_origin": [
-      "transcripts\\178.autosub.srt",
-      "transcripts\\445.autosub.srt"
-    ],
-    "entity_sourcetexts": [
-      "Don Friesen"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 3,
     "entity_name": "Don Knotts",
     "entity_origin": [
       "transcripts\\712.autosub.srt",
@@ -35526,7 +35482,7 @@
     "is_known_missing": true
   },
   {
-    "entity_count": 5897,
+    "entity_count": 5896,
     "entity_name": "Donald Trump",
     "entity_origin": [
       "100: January 6-7, 2016",
@@ -37072,7 +37028,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "dutch east india company",
+    "entity_name": "Dutch East India Company",
     "entity_origin": [
       "transcripts\\719.welder.srt",
       "transcripts\\719.welder.txt"
@@ -38321,7 +38277,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "elder of celine",
+    "entity_name": "Elder of Celine",
     "entity_origin": [
       "transcripts\\557.autosub.srt",
       "transcripts\\616.autosub.srt"
@@ -38877,7 +38833,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "emanuel african methodist",
+    "entity_name": "Emanuel African Methodist",
     "entity_origin": [
       "transcripts\\46.autosub.srt",
       "transcripts\\47.autosub.srt",
@@ -39156,7 +39112,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "environmental protection agency",
+    "entity_name": "Environmental Protection Agency",
     "entity_origin": [
       "transcripts\\14.otter.txt",
       "transcripts\\142.autosub.srt"
@@ -39689,7 +39645,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "european commission",
+    "entity_name": "European Commission",
     "entity_origin": [
       "transcripts\\304.autosub.srt",
       "transcripts\\644.autosub.srt",
@@ -39936,7 +39892,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "eye of horus",
+    "entity_name": "Eye of Horus",
     "entity_origin": [
       "transcripts\\116.autosub.srt",
       "transcripts\\18.otter.txt"
@@ -40121,7 +40077,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "falklands war",
+    "entity_name": "Falklands War",
     "entity_origin": [
       "transcripts\\128.autosub.srt",
       "transcripts\\280.autosub.srt",
@@ -40304,7 +40260,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "fantasy life",
+    "entity_name": "Fantasy Life",
     "entity_origin": [
       "transcripts\\332.autosub.srt",
       "transcripts\\79.autosub.srt"
@@ -40537,7 +40493,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "federal communications commission",
+    "entity_name": "Federal Communications Commission",
     "entity_origin": [
       "Mark Bailen",
       "transcripts\\107.autosub.srt",
@@ -40592,7 +40548,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "federal government",
+    "entity_name": "Federal Government",
     "entity_origin": [
       "142: March 23, 2018",
       "Francis Boyle",
@@ -40779,7 +40735,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "federal reserve act",
+    "entity_name": "Federal Reserve Act",
     "entity_origin": [
       "transcripts\\230D.autosub.srt",
       "transcripts\\231.autosub.srt",
@@ -40820,7 +40776,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "federal reserve board",
+    "entity_name": "Federal Reserve Board",
     "entity_origin": [
       "Lee Ann McAdoo",
       "transcripts\\279.otter.txt",
@@ -40950,7 +40906,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "few good men",
+    "entity_name": "Few Good Men",
     "entity_origin": [
       "transcripts\\370.autosub.srt",
       "transcripts\\683.autosub.srt"
@@ -40992,46 +40948,6 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 15,
-    "entity_name": "Fifth Amendment",
-    "entity_origin": [
-      "transcripts\\25.autosub.srt",
-      "transcripts\\257.autosub.srt",
-      "transcripts\\630.autosub.srt",
-      "transcripts\\642.autosub.srt",
-      "transcripts\\714.otter.txt",
-      "transcripts\\715.autosub.srt",
-      "transcripts\\715.otter.txt",
-      "transcripts\\732.otter.txt"
-    ],
-    "entity_sourcetexts": [
-      "Fifth Amendment",
-      "The Fifth Amendment\n\n",
-      "the Fifth Amendment"
-    ],
-    "entity_type": [
-      "LAW"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Fifth Avenue",
-    "entity_origin": [
-      "transcripts\\545.autosub.srt",
-      "transcripts\\734.otter.txt"
-    ],
-    "entity_sourcetexts": [
-      "Fifth Avenue"
-    ],
-    "entity_type": [
-      "FAC"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
     "entity_count": 2,
     "entity_name": "Fight Club",
     "entity_origin": [
@@ -41050,7 +40966,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "final countdown",
+    "entity_name": "Final Countdown",
     "entity_origin": [
       "transcripts\\202.autosub.srt",
       "transcripts\\702.autosub.srt"
@@ -41240,99 +41156,6 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 118,
-    "entity_name": "First Amendment",
-    "entity_origin": [
-      "transcripts\\10.otter.txt",
-      "transcripts\\113.autosub.srt",
-      "transcripts\\119.autosub.srt",
-      "transcripts\\131.autosub.srt",
-      "transcripts\\141.autosub.srt",
-      "transcripts\\146.autosub.srt",
-      "transcripts\\15.otter.txt",
-      "transcripts\\16.otter.txt",
-      "transcripts\\17.otter.txt",
-      "transcripts\\199.autosub.srt",
-      "transcripts\\230E.autosub.srt",
-      "transcripts\\255.autosub.srt",
-      "transcripts\\272.autosub.srt",
-      "transcripts\\279.otter.txt",
-      "transcripts\\282.autosub.srt",
-      "transcripts\\284.autosub.srt",
-      "transcripts\\288.autosub.srt",
-      "transcripts\\290.autosub.srt",
-      "transcripts\\310.autosub.srt",
-      "transcripts\\310.otter.txt",
-      "transcripts\\329.autosub.srt",
-      "transcripts\\341.autosub.srt",
-      "transcripts\\378.otter.txt",
-      "transcripts\\394.autosub.srt",
-      "transcripts\\401.autosub.srt",
-      "transcripts\\404.autosub.srt",
-      "transcripts\\409.autosub.srt",
-      "transcripts\\422.autosub.srt",
-      "transcripts\\436.autosub.srt",
-      "transcripts\\439.autosub.srt",
-      "transcripts\\448.autosub.srt",
-      "transcripts\\449.autosub.srt",
-      "transcripts\\497.autosub.srt",
-      "transcripts\\511.autosub.srt",
-      "transcripts\\514.autosub.srt",
-      "transcripts\\523.autosub.srt",
-      "transcripts\\524.autosub.srt",
-      "transcripts\\537.autosub.srt",
-      "transcripts\\541.autosub.srt",
-      "transcripts\\543.autosub.srt",
-      "transcripts\\562.autosub.srt",
-      "transcripts\\577.autosub.srt",
-      "transcripts\\6.otter.txt",
-      "transcripts\\602.otter.txt",
-      "transcripts\\614.autosub.srt",
-      "transcripts\\617.autosub.srt",
-      "transcripts\\618.autosub.srt",
-      "transcripts\\619.autosub.srt",
-      "transcripts\\623.autosub.srt",
-      "transcripts\\634.autosub.srt",
-      "transcripts\\641.autosub.srt",
-      "transcripts\\646.autosub.srt",
-      "transcripts\\657.autosub.srt",
-      "transcripts\\665.autosub.srt",
-      "transcripts\\665.otter.txt",
-      "transcripts\\672.autosub.srt",
-      "transcripts\\68.autosub.srt",
-      "transcripts\\682.autosub.srt",
-      "transcripts\\685.otter.txt",
-      "transcripts\\713.autosub.srt",
-      "transcripts\\714.otter.txt",
-      "transcripts\\714.welder.txt",
-      "transcripts\\715.otter.txt",
-      "transcripts\\715.welder.txt",
-      "transcripts\\717.welder.txt",
-      "transcripts\\728.otter.txt",
-      "transcripts\\729.otter.txt",
-      "transcripts\\73.autosub.srt",
-      "transcripts\\732.otter.txt",
-      "transcripts\\736.otter.txt",
-      "transcripts\\738.welder.srt",
-      "transcripts\\83.autosub.srt",
-      "transcripts\\99.otter.txt"
-    ],
-    "entity_sourcetexts": [
-      "First Amendment",
-      "The First Amendment",
-      "The First Amendment\n\n",
-      "a First Amendment",
-      "the First Amendment",
-      "the First Amendment\n\n"
-    ],
-    "entity_type": [
-      "LAW",
-      "ORG"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
     "entity_count": 4,
     "entity_name": "First Baptist",
     "entity_origin": [
@@ -41384,7 +41207,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "first nations",
+    "entity_name": "First Nations",
     "entity_origin": [
       "transcripts\\329.autosub.srt",
       "transcripts\\349.autosub.srt"
@@ -41440,7 +41263,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "first world trade center",
+    "entity_name": "First World Trade Center",
     "entity_origin": [
       "transcripts\\294.autosub.srt",
       "transcripts\\704.autosub.srt"
@@ -41457,7 +41280,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "flaming lips",
+    "entity_name": "Flaming Lips",
     "entity_origin": [
       "transcripts\\454.autosub.srt",
       "transcripts\\731.otter.txt"
@@ -41562,7 +41385,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "flight risk",
+    "entity_name": "Flight Risk",
     "entity_origin": [
       "transcripts\\246.autosub.srt",
       "transcripts\\257.autosub.srt",
@@ -41582,7 +41405,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "flights of fancy",
+    "entity_name": "Flights of Fancy",
     "entity_origin": [
       "transcripts\\373.autosub.srt",
       "transcripts\\667.autosub.srt"
@@ -41634,7 +41457,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "florida bar association",
+    "entity_name": "Florida Bar Association",
     "entity_origin": [
       "transcripts\\25(Repost).autosub.srt",
       "transcripts\\25.autosub.srt",
@@ -41651,7 +41474,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "florida department of health",
+    "entity_name": "Florida Department of Health",
     "entity_origin": [
       "transcripts\\458.autosub.srt",
       "transcripts\\734.otter.txt"
@@ -41815,7 +41638,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "forefront of",
+    "entity_name": "Forefront of",
     "entity_origin": [
       "transcripts\\405.autosub.srt",
       "transcripts\\555.autosub.srt"
@@ -42211,31 +42034,8 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 5,
-    "entity_name": "Fourth Amendment",
-    "entity_origin": [
-      "transcripts\\25(Repost).autosub.srt",
-      "transcripts\\290.autosub.srt",
-      "transcripts\\715.otter.txt",
-      "transcripts\\S011.autosub.srt"
-    ],
-    "entity_sourcetexts": [
-      "Fourth Amendment",
-      "The Fourth Amendment",
-      "the Fourth Amendment"
-    ],
-    "entity_type": [
-      "EVENT",
-      "PRODUCT",
-      "LAW",
-      "WORK_OF_ART"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
     "entity_count": 2,
-    "entity_name": "fourth amendment 2451",
+    "entity_name": "Fourth Amendment 2451",
     "entity_origin": [
       "transcripts\\25(Repost).autosub.srt",
       "transcripts\\S011.autosub.srt"
@@ -42436,7 +42236,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "francis crick",
+    "entity_name": "Francis Crick",
     "entity_origin": [
       "transcripts\\580.autosub.srt",
       "transcripts\\589.autosub.srt"
@@ -43023,7 +42823,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "free world",
+    "entity_name": "Free World",
     "entity_origin": [
       "transcripts\\192.autosub.srt",
       "transcripts\\41.autosub.srt",
@@ -43347,7 +43147,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "galactic federation",
+    "entity_name": "Galactic Federation",
     "entity_origin": [
       "transcripts\\260.autosub.srt",
       "transcripts\\722.autosub.srt",
@@ -43416,7 +43216,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "garden of eden",
+    "entity_name": "Garden of Eden",
     "entity_origin": [
       "transcripts\\166.autosub.srt",
       "transcripts\\171.autosub.srt",
@@ -43774,38 +43574,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 23,
-    "entity_name": "Gavin McGinnis",
-    "entity_origin": [
-      "transcripts\\138.autosub.srt",
-      "transcripts\\185.autosub.srt",
-      "transcripts\\221.autosub.srt",
-      "transcripts\\239.autosub.srt",
-      "transcripts\\30.autosub.srt",
-      "transcripts\\31.autosub.srt",
-      "transcripts\\329.autosub.srt",
-      "transcripts\\37.autosub.srt",
-      "transcripts\\38.autosub.srt",
-      "transcripts\\404.autosub.srt",
-      "transcripts\\449.autosub.srt",
-      "transcripts\\45.autosub.srt",
-      "transcripts\\47.autosub.srt",
-      "transcripts\\518.autosub.srt",
-      "transcripts\\525.autosub.srt",
-      "transcripts\\697.autosub.srt",
-      "transcripts\\738.welder.srt"
-    ],
-    "entity_sourcetexts": [
-      "Gavin McGinnis"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 38,
+    "entity_count": 61,
     "entity_name": "Gavin McInnes",
     "entity_origin": [
       "106: Drunk Special Report",
@@ -43817,30 +43586,41 @@
       "Gavin McInnes",
       "transcripts\\13.otter.txt",
       "transcripts\\138.autosub.srt",
+      "transcripts\\185.autosub.srt",
       "transcripts\\197.autosub.srt",
+      "transcripts\\221.autosub.srt",
       "transcripts\\232.autosub.srt",
       "transcripts\\239.autosub.srt",
       "transcripts\\30.autosub.srt",
+      "transcripts\\31.autosub.srt",
       "transcripts\\310.otter.txt",
       "transcripts\\316.autosub.srt",
+      "transcripts\\329.autosub.srt",
+      "transcripts\\37.autosub.srt",
       "transcripts\\376.autosub.srt",
+      "transcripts\\38.autosub.srt",
       "transcripts\\399.autosub.srt",
       "transcripts\\403.autosub.srt",
       "transcripts\\404.autosub.srt",
       "transcripts\\449.autosub.srt",
+      "transcripts\\45.autosub.srt",
       "transcripts\\460.autosub.srt",
+      "transcripts\\47.autosub.srt",
       "transcripts\\491.autosub.srt",
+      "transcripts\\518.autosub.srt",
       "transcripts\\525.autosub.srt",
       "transcripts\\538.autosub.srt",
       "transcripts\\576.autosub.srt",
       "transcripts\\642.autosub.srt",
       "transcripts\\65.autosub.srt",
       "transcripts\\697.autosub.srt",
+      "transcripts\\738.welder.srt",
       "transcripts\\92.autosub.srt",
       "transcripts\\S006.autosub.srt",
       "transcripts\\S012.autosub.srt"
     ],
     "entity_sourcetexts": [
+      "Gavin McGinnis",
       "Gavin McInnes",
       "Gavin McInnes\n\n",
       "Gavin McInnes's"
@@ -43879,7 +43659,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "gay pride parade",
+    "entity_name": "Gay Pride Parade",
     "entity_origin": [
       "transcripts\\38.autosub.srt",
       "transcripts\\573.autosub.srt"
@@ -44011,7 +43791,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "general public",
+    "entity_name": "General Public",
     "entity_origin": [
       "transcripts\\10.autosub.srt",
       "transcripts\\43.autosub.srt",
@@ -45700,7 +45480,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "girl next door",
+    "entity_name": "Girl Next Door",
     "entity_origin": [
       "transcripts\\352.autosub.srt",
       "transcripts\\48.autosub.srt"
@@ -46816,7 +46596,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "gospel of thomas",
+    "entity_name": "Gospel of Thomas",
     "entity_origin": [
       "transcripts\\104.autosub.srt",
       "transcripts\\621.autosub.srt"
@@ -47167,7 +46947,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "great commission",
+    "entity_name": "Great Commission",
     "entity_origin": [
       "transcripts\\147.autosub.srt",
       "transcripts\\730.otter.txt"
@@ -47265,7 +47045,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "great pyramid",
+    "entity_name": "Great Pyramid",
     "entity_origin": [
       "transcripts\\175.autosub.srt",
       "transcripts\\476.autosub.srt"
@@ -47283,7 +47063,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "great pyramid of giza",
+    "entity_name": "Great Pyramid of Giza",
     "entity_origin": [
       "transcripts\\125.autosub.srt",
       "transcripts\\318.autosub.srt"
@@ -47325,7 +47105,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "great wall",
+    "entity_name": "Great Wall",
     "entity_origin": [
       "transcripts\\600.autosub.srt",
       "transcripts\\8.autosub.srt",
@@ -47343,7 +47123,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "great wall of china",
+    "entity_name": "Great Wall of China",
     "entity_origin": [
       "transcripts\\232.autosub.srt",
       "transcripts\\8.otter.txt",
@@ -47732,14 +47512,15 @@
     "is_known_missing": true
   },
   {
-    "entity_count": 5,
-    "entity_name": "gribble pibble",
+    "entity_count": 6,
+    "entity_name": "Gribble PIBBLE",
     "entity_origin": [
       "715: Trial Recap, Part 2",
       "transcripts\\715.welder.txt",
       "transcripts\\719.welder.srt",
       "transcripts\\719.welder.txt",
-      "transcripts\\731.otter.txt"
+      "transcripts\\731.otter.txt",
+      "transcripts\\734.otter.txt"
     ],
     "entity_sourcetexts": [
       "the Gribble PIBBLE",
@@ -47748,15 +47529,15 @@
     ],
     "entity_type": [
       "FAC",
-      "ORG",
-      "WORK_OF_ART"
+      "WORK_OF_ART",
+      "ORG"
     ],
     "is_existing": false,
     "is_known_missing": false
   },
   {
     "entity_count": 2,
-    "entity_name": "gribble pivot",
+    "entity_name": "Gribble Pivot",
     "entity_origin": [
       "transcripts\\720.welder.srt",
       "transcripts\\720.welder.txt"
@@ -47994,7 +47775,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "gulf of mexico",
+    "entity_name": "Gulf of Mexico",
     "entity_origin": [
       "47: June 19-July 5, 2015",
       "transcripts\\23.autosub.srt",
@@ -48012,7 +47793,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "gulf of oman",
+    "entity_name": "Gulf of Oman",
     "entity_origin": [
       "310: June 13-14, 2019",
       "transcripts\\310.otter.txt"
@@ -48028,7 +47809,7 @@
   },
   {
     "entity_count": 26,
-    "entity_name": "gulf of tonkin",
+    "entity_name": "Gulf of Tonkin",
     "entity_origin": [
       "transcripts\\310.autosub.srt",
       "transcripts\\310.otter.txt",
@@ -48387,7 +48168,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "hanoi hilton",
+    "entity_name": "Hanoi Hilton",
     "entity_origin": [
       "52: July 14-21, 2015",
       "transcripts\\56.autosub.srt"
@@ -49306,7 +49087,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "heat of the moment",
+    "entity_name": "Heat of the Moment",
     "entity_origin": [
       "transcripts\\432.autosub.srt",
       "transcripts\\496.autosub.srt",
@@ -49950,7 +49731,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 496,
+    "entity_count": 498,
     "entity_name": "Hillary Clinton",
     "entity_origin": [
       "135: The Wikileaks Press Conference",
@@ -50218,6 +49999,7 @@
       "transcripts\\S011.autosub.srt"
     ],
     "entity_sourcetexts": [
+      "Clinton Hillary",
       "Hillary Clinton",
       "Hillary Clinton\r\n    ",
       "Hillary Clinton's",
@@ -50323,7 +50105,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "hippocratic oath",
+    "entity_name": "Hippocratic Oath",
     "entity_origin": [
       "transcripts\\105.autosub.srt",
       "transcripts\\264.autosub.srt"
@@ -50339,7 +50121,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "history channel",
+    "entity_name": "History Channel",
     "entity_origin": [
       "49: July 6-13. 2015",
       "transcripts\\167.autosub.srt",
@@ -50376,7 +50158,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "hitler youth",
+    "entity_name": "Hitler Youth",
     "entity_origin": [
       "298: January 20-23, 2013",
       "transcripts\\222.otter.txt",
@@ -50531,7 +50313,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "holocaust 1106",
+    "entity_name": "Holocaust 1106",
     "entity_origin": [
       "transcripts\\250.autosub.srt",
       "transcripts\\325.autosub.srt"
@@ -50589,7 +50371,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "holy ghost",
+    "entity_name": "Holy Ghost",
     "entity_origin": [
       "transcripts\\455.autosub.srt",
       "transcripts\\520.autosub.srt"
@@ -50624,7 +50406,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "holy roman emperor",
+    "entity_name": "Holy Roman Emperor",
     "entity_origin": [
       "transcripts\\139.autosub.srt",
       "transcripts\\386.autosub.srt"
@@ -50641,7 +50423,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "holy roman empire",
+    "entity_name": "Holy Roman Empire",
     "entity_origin": [
       "386: January 8, 2020",
       "transcripts\\386.autosub.srt",
@@ -50659,7 +50441,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "holy trinity",
+    "entity_name": "Holy Trinity",
     "entity_origin": [
       "transcripts\\103.autosub.srt",
       "transcripts\\295.autosub.srt"
@@ -50716,7 +50498,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "home shopping network",
+    "entity_name": "Home Shopping Network",
     "entity_origin": [
       "155: January 7-9, 2009",
       "transcripts\\623.autosub.srt",
@@ -50985,7 +50767,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "house of representative",
+    "entity_name": "House of Representative",
     "entity_origin": [
       "transcripts\\230D.autosub.srt",
       "transcripts\\326.autosub.srt",
@@ -51002,7 +50784,7 @@
   },
   {
     "entity_count": 51,
-    "entity_name": "House of Representatives",
+    "entity_name": "House Of Representatives",
     "entity_origin": [
       "230D: Obama Deception, Part 4",
       "47: June 19-July 5, 2015",
@@ -51911,7 +51693,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "ides of march",
+    "entity_name": "Ides of March",
     "entity_origin": [
       "transcripts\\205.autosub.srt",
       "transcripts\\284.autosub.srt",
@@ -52225,7 +52007,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "imperial march",
+    "entity_name": "Imperial March",
     "entity_origin": [
       "transcripts\\329.autosub.srt",
       "transcripts\\372.autosub.srt",
@@ -52262,7 +52044,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "impossible dream",
+    "entity_name": "Impossible Dream",
     "entity_origin": [
       "284: April 12, 2019",
       "transcripts\\284.autosub.srt"
@@ -52448,7 +52230,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "indian university",
+    "entity_name": "Indian University",
     "entity_origin": [
       "transcripts\\408.autosub.srt",
       "transcripts\\421.autosub.srt"
@@ -52813,7 +52595,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "infowars studio",
+    "entity_name": "Infowars Studio",
     "entity_origin": [
       "transcripts\\1.autosub.srt",
       "transcripts\\20.autosub.srt",
@@ -53113,7 +52895,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "insurrection act",
+    "entity_name": "Insurrection Act",
     "entity_origin": [
       "299: May 17-20, 2019",
       "transcripts\\299.autosub.srt",
@@ -53206,7 +52988,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "internal revenue service",
+    "entity_name": "Internal Revenue Service",
     "entity_origin": [
       "transcripts\\187.autosub.srt",
       "transcripts\\685.otter.txt"
@@ -53413,7 +53195,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "international hotel",
+    "entity_name": "International Hotel",
     "entity_origin": [
       "279: Formulaic Objections",
       "transcripts\\279.autosub.srt",
@@ -53448,7 +53230,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "international space station",
+    "entity_name": "International Space Station",
     "entity_origin": [
       "transcripts\\443.autosub.srt",
       "transcripts\\699.autosub.srt"
@@ -53588,7 +53370,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "iowa national guard",
+    "entity_name": "Iowa National Guard",
     "entity_origin": [
       "transcripts\\189.autosub.srt",
       "transcripts\\194.autosub.srt",
@@ -53679,7 +53461,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "irish times",
+    "entity_name": "Irish Times",
     "entity_origin": [
       "transcripts\\208.autosub.srt",
       "transcripts\\448.autosub.srt",
@@ -54040,7 +53822,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "isle of lesbos",
+    "entity_name": "Isle of Lesbos",
     "entity_origin": [
       "transcripts\\138.autosub.srt",
       "transcripts\\62.autosub.srt"
@@ -54056,7 +53838,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "isle of patmos",
+    "entity_name": "Isle of Patmos",
     "entity_origin": [
       "transcripts\\103.autosub.srt",
       "transcripts\\520.autosub.srt"
@@ -54072,7 +53854,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "israeli army",
+    "entity_name": "Israeli Army",
     "entity_origin": [
       "transcripts\\146.autosub.srt",
       "transcripts\\60.autosub.srt"
@@ -55795,7 +55577,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "japanese health ministry",
+    "entity_name": "Japanese Health Ministry",
     "entity_origin": [
       "626: December 9, 2021",
       "transcripts\\626.autosub.srt"
@@ -57418,7 +57200,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "jewish council",
+    "entity_name": "Jewish Council",
     "entity_origin": [
       "transcripts\\221.autosub.srt",
       "transcripts\\67.autosub.srt"
@@ -60893,7 +60675,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "joint advertising, marketing, research and studies program",
+    "entity_name": "Joint Advertising, Marketing, Research and Studies Program",
     "entity_origin": [
       "transcripts\\720.welder.srt",
       "transcripts\\720.welder.txt"
@@ -60909,7 +60691,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "joint chiefs",
+    "entity_name": "Joint Chiefs",
     "entity_origin": [
       "150: Alex Jones Attempts A Face Turn",
       "transcripts\\17.otter.txt",
@@ -60928,7 +60710,7 @@
   },
   {
     "entity_count": 11,
-    "entity_name": "joint chiefs of staff",
+    "entity_name": "Joint Chiefs of Staff",
     "entity_origin": [
       "transcripts\\150.autosub.srt",
       "transcripts\\152.autosub.srt",
@@ -61247,11 +61029,10 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 3,
+    "entity_count": 2,
     "entity_name": "Jones Goes",
     "entity_origin": [
       "List of Knowledge Fight episodes",
-      "RainbowBatch Generated Entity Listing",
       "transcripts\\202.autosub.srt"
     ],
     "entity_sourcetexts": [
@@ -62089,7 +61870,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "journal of the american medical association",
+    "entity_name": "Journal of the American Medical Association",
     "entity_origin": [
       "transcripts\\259.autosub.srt",
       "transcripts\\297.autosub.srt",
@@ -63432,7 +63213,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 222,
+    "entity_count": 224,
     "entity_name": "Kerry Cassidy",
     "entity_origin": [
       "125: Project Camelot's War In Heaven",
@@ -63503,6 +63284,7 @@
       "transcripts\\414.autosub.srt",
       "transcripts\\419.autosub.srt",
       "transcripts\\437.autosub.srt",
+      "transcripts\\455.autosub.srt",
       "transcripts\\459.autosub.srt",
       "transcripts\\466.autosub.srt",
       "transcripts\\470.autosub.srt",
@@ -63524,6 +63306,8 @@
       "transcripts\\98.autosub.srt"
     ],
     "entity_sourcetexts": [
+      "Carrie Cassidy",
+      "Carrie Cassidy's",
       "Kerry\r\n    Cassidy",
       "Kerry Cassidy",
       "Kerry Cassidy's"
@@ -64177,7 +63961,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "king of england",
+    "entity_name": "King of England",
     "entity_origin": [
       "transcripts\\723.otter.txt",
       "transcripts\\731.otter.txt"
@@ -64209,7 +63993,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "kingdom of heaven",
+    "entity_name": "Kingdom of Heaven",
     "entity_origin": [
       "transcripts\\131.autosub.srt",
       "transcripts\\681.autosub.srt",
@@ -64349,7 +64133,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 62,
+    "entity_count": 74,
     "entity_name": "Klaus Schwab",
     "entity_origin": [
       "502: Dan's Cara-Vanity Project Part 1",
@@ -64376,6 +64160,7 @@
       "transcripts\\525.autosub.srt",
       "transcripts\\562.autosub.srt",
       "transcripts\\572.autosub.srt",
+      "transcripts\\625.autosub.srt",
       "transcripts\\626.autosub.srt",
       "transcripts\\627.autosub.srt",
       "transcripts\\632.autosub.srt",
@@ -64388,6 +64173,7 @@
       "transcripts\\666.autosub.srt",
       "transcripts\\675.autosub.srt",
       "transcripts\\677.autosub.srt",
+      "transcripts\\678.autosub.srt",
       "transcripts\\691.autosub.srt",
       "transcripts\\696.autosub.srt",
       "transcripts\\702.autosub.srt",
@@ -64398,6 +64184,8 @@
       "transcripts\\719.welder.srt",
       "transcripts\\719.welder.txt",
       "transcripts\\720.otter.txt",
+      "transcripts\\720.welder.srt",
+      "transcripts\\720.welder.txt",
       "transcripts\\726.otter.txt",
       "transcripts\\728.autosub.srt",
       "transcripts\\728.otter.txt",
@@ -64406,6 +64194,10 @@
       "transcripts\\733.otter.txt"
     ],
     "entity_sourcetexts": [
+      "Call Schwab",
+      "Clash Schwab's",
+      "Claude Schwab",
+      "Claus Schwab",
       "Klaus\r\n    Schwab",
       "Klaus Schwab",
       "Klaus Schwab\n\n",
@@ -64424,7 +64216,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "knights templar",
+    "entity_name": "Knights Templar",
     "entity_origin": [
       "transcripts\\120.autosub.srt",
       "transcripts\\356.autosub.srt",
@@ -64459,7 +64251,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 51,
+    "entity_count": 53,
     "entity_name": "Knowledge Fight",
     "entity_origin": [
       "136: March 30-31, 2008",
@@ -64496,7 +64288,8 @@
       "Tyler Snodgrass",
       "transcripts\\731.otter.txt",
       "transcripts\\733.otter.txt",
-      "transcripts\\734.otter.txt"
+      "transcripts\\734.otter.txt",
+      "transcripts\\735.otter.txt"
     ],
     "entity_sourcetexts": [
       "Knowledge Fight",
@@ -64511,29 +64304,16 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
-    "entity_name": "Knowledgebitecom",
+    "entity_count": 4,
+    "entity_name": "Knowledgefight.com",
     "entity_origin": [
       "transcripts\\714.welder.txt",
+      "transcripts\\720.welder.srt",
+      "transcripts\\720.welder.txt",
       "transcripts\\738.welder.srt"
     ],
     "entity_sourcetexts": [
-      "Knowledgebite.com"
-    ],
-    "entity_type": [
-      "ORG"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "Knowledgebuycom",
-    "entity_origin": [
-      "transcripts\\720.welder.srt",
-      "transcripts\\720.welder.txt"
-    ],
-    "entity_sourcetexts": [
+      "Knowledgebite.com",
       "Knowledgebuy.com"
     ],
     "entity_type": [
@@ -64876,7 +64656,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "kyoto protocol",
+    "entity_name": "Kyoto Protocol",
     "entity_origin": [
       "transcripts\\181.autosub.srt",
       "transcripts\\702.autosub.srt"
@@ -64945,7 +64725,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Labour party",
+    "entity_name": "Labour Party",
     "entity_origin": [
       "transcripts\\198.autosub.srt",
       "transcripts\\5.otter.txt"
@@ -65150,22 +64930,6 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 19,
-    "entity_name": "Larry Clayman",
-    "entity_origin": [
-      "transcripts\\401.otter.txt",
-      "transcripts\\99.otter.txt"
-    ],
-    "entity_sourcetexts": [
-      "Larry Clayman"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
     "entity_count": 3,
     "entity_name": "Larry David",
     "entity_origin": [
@@ -65328,7 +65092,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 128,
+    "entity_count": 147,
     "entity_name": "Larry Klayman",
     "entity_origin": [
       "244: October 5, 2014",
@@ -65338,9 +65102,11 @@
       "613: June 24-25, 2003",
       "98: May 2-3, 2012",
       "transcripts\\401.otter.txt",
-      "transcripts\\715.otter.txt"
+      "transcripts\\715.otter.txt",
+      "transcripts\\99.otter.txt"
     ],
     "entity_sourcetexts": [
+      "Larry Clayman",
       "Larry Klayman",
       "Larry Klayman's"
     ],
@@ -65722,7 +65488,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "last airbender",
+    "entity_name": "Last Airbender",
     "entity_origin": [
       "transcripts\\255.autosub.srt",
       "transcripts\\299.autosub.srt",
@@ -65740,7 +65506,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "last dance",
+    "entity_name": "Last Dance",
     "entity_origin": [
       "transcripts\\432.autosub.srt",
       "transcripts\\586.autosub.srt"
@@ -65829,7 +65595,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "laugh factory",
+    "entity_name": "Laugh Factory",
     "entity_origin": [
       "transcripts\\353.autosub.srt",
       "transcripts\\48.autosub.srt",
@@ -66532,7 +66298,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "legal services corporation",
+    "entity_name": "Legal Services Corporation",
     "entity_origin": [
       "transcripts\\19.autosub.srt",
       "transcripts\\19.otter.txt"
@@ -66548,7 +66314,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "legion of doom",
+    "entity_name": "Legion of Doom",
     "entity_origin": [
       "transcripts\\14.otter.txt",
       "transcripts\\575.autosub.srt"
@@ -66581,7 +66347,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "lego movie",
+    "entity_name": "Lego Movie",
     "entity_origin": [
       "transcripts\\141.autosub.srt",
       "transcripts\\660.autosub.srt"
@@ -66995,7 +66761,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "lester chester",
+    "entity_name": "Lester Chester",
     "entity_origin": [
       "transcripts\\644.autosub.srt",
       "transcripts\\703.autosub.srt"
@@ -67358,7 +67124,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "library of alexandria",
+    "entity_name": "Library of Alexandria",
     "entity_origin": [
       "transcripts\\184.autosub.srt",
       "transcripts\\79.autosub.srt"
@@ -67377,7 +67143,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "life and times",
+    "entity_name": "Life and Times",
     "entity_origin": [
       "transcripts\\35.autosub.srt",
       "transcripts\\37.autosub.srt"
@@ -67681,7 +67447,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "lion the witch",
+    "entity_name": "Lion the Witch",
     "entity_origin": [
       "transcripts\\13.otter.txt",
       "transcripts\\193.autosub.srt",
@@ -67953,7 +67719,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "loch ness monster",
+    "entity_name": "Loch Ness Monster",
     "entity_origin": [
       "transcripts\\546.autosub.srt",
       "transcripts\\693.autosub.srt"
@@ -68126,7 +67892,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "london school",
+    "entity_name": "London School",
     "entity_origin": [
       "transcripts\\522.autosub.srt",
       "transcripts\\639.autosub.srt"
@@ -68142,7 +67908,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "london telegraph",
+    "entity_name": "London Telegraph",
     "entity_origin": [
       "transcripts\\718.autosub.srt",
       "transcripts\\718.welder.txt"
@@ -68196,7 +67962,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "lone star state",
+    "entity_name": "Lone Star State",
     "entity_origin": [
       "transcripts\\120.autosub.srt",
       "transcripts\\534.autosub.srt"
@@ -68496,7 +68262,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "lost children",
+    "entity_name": "Lost Children",
     "entity_origin": [
       "transcripts\\175.autosub.srt",
       "transcripts\\33.autosub.srt"
@@ -68671,7 +68437,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "louisiana purchase",
+    "entity_name": "Louisiana Purchase",
     "entity_origin": [
       "transcripts\\315.autosub.srt",
       "transcripts\\333.autosub.srt",
@@ -69165,7 +68931,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "mad hatter",
+    "entity_name": "Mad Hatter",
     "entity_origin": [
       "transcripts\\720.welder.srt",
       "transcripts\\720.welder.txt"
@@ -69380,7 +69146,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "magna carta",
+    "entity_name": "Magna Carta",
     "entity_origin": [
       "transcripts\\556.autosub.srt",
       "transcripts\\603.autosub.srt",
@@ -69760,7 +69526,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "mandate of heaven",
+    "entity_name": "Mandate of Heaven",
     "entity_origin": [
       "transcripts\\354.autosub.srt",
       "transcripts\\355.autosub.srt",
@@ -69795,7 +69561,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "manhattan project",
+    "entity_name": "Manhattan Project",
     "entity_origin": [
       "transcripts\\3.autosub.srt",
       "transcripts\\3.otter.txt"
@@ -69859,7 +69625,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "manning report",
+    "entity_name": "Manning Report",
     "entity_origin": [
       "transcripts\\432.autosub.srt",
       "transcripts\\89.autosub.srt"
@@ -70864,7 +70630,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "mark of the beast",
+    "entity_name": "Mark of the Beast",
     "entity_origin": [
       "463: July 28-30, 2020",
       "transcripts\\463.autosub.srt"
@@ -71998,7 +71764,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "matrix reloaded",
+    "entity_name": "Matrix Reloaded",
     "entity_origin": [
       "566: May 21, 2003",
       "transcripts\\566.autosub.srt"
@@ -72473,7 +72239,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "maury show",
+    "entity_name": "Maury Show",
     "entity_origin": [
       "transcripts\\291.autosub.srt",
       "transcripts\\371.autosub.srt"
@@ -72907,7 +72673,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "mediterranean sea",
+    "entity_name": "Mediterranean Sea",
     "entity_origin": [
       "transcripts\\310.otter.txt",
       "transcripts\\357.autosub.srt"
@@ -73295,7 +73061,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "mendoza line",
+    "entity_name": "Mendoza Line",
     "entity_origin": [
       "transcripts\\192.autosub.srt",
       "transcripts\\597.autosub.srt",
@@ -73597,7 +73363,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "mexican american war",
+    "entity_name": "Mexican American War",
     "entity_origin": [
       "transcripts\\310.otter.txt",
       "transcripts\\333.autosub.srt"
@@ -73614,7 +73380,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "mexican army",
+    "entity_name": "Mexican Army",
     "entity_origin": [
       "transcripts\\203.autosub.srt",
       "transcripts\\462.autosub.srt"
@@ -73630,7 +73396,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "mexican government",
+    "entity_name": "Mexican Government",
     "entity_origin": [
       "transcripts\\218.autosub.srt",
       "transcripts\\281.autosub.srt",
@@ -75357,7 +75123,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "midnight oil",
+    "entity_name": "Midnight Oil",
     "entity_origin": [
       "transcripts\\473.autosub.srt",
       "transcripts\\604.autosub.srt"
@@ -75373,7 +75139,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "mighty duck",
+    "entity_name": "Mighty Duck",
     "entity_origin": [
       "transcripts\\719.welder.srt",
       "transcripts\\719.welder.txt"
@@ -76377,7 +76143,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "millennium falcon",
+    "entity_name": "Millennium Falcon",
     "entity_origin": [
       "transcripts\\306.autosub.srt",
       "transcripts\\698.autosub.srt"
@@ -76581,7 +76347,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "ministry of agriculture",
+    "entity_name": "Ministry of Agriculture",
     "entity_origin": [
       "transcripts\\544.autosub.srt",
       "transcripts\\605.autosub.srt"
@@ -76615,7 +76381,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "ministry of internal interior",
+    "entity_name": "Ministry of Internal Interior",
     "entity_origin": [
       "transcripts\\720.welder.srt",
       "transcripts\\720.welder.txt"
@@ -77036,7 +76802,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "modern age",
+    "entity_name": "Modern Age",
     "entity_origin": [
       "transcripts\\111.autosub.srt",
       "transcripts\\228.autosub.srt"
@@ -77172,7 +76938,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "money masters",
+    "entity_name": "Money Masters",
     "entity_origin": [
       "Mark Dice",
       "transcripts\\579.autosub.srt"
@@ -77209,7 +76975,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "monkey house",
+    "entity_name": "Monkey House",
     "entity_origin": [
       "transcripts\\306.autosub.srt",
       "transcripts\\83.autosub.srt"
@@ -77336,7 +77102,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "moon the moon",
+    "entity_name": "Moon the Moon",
     "entity_origin": [
       "transcripts\\271.autosub.srt",
       "transcripts\\561.autosub.srt",
@@ -77408,7 +77174,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "most dangerous game",
+    "entity_name": "Most Dangerous Game",
     "entity_origin": [
       "transcripts\\350.autosub.srt",
       "transcripts\\715.autosub.srt"
@@ -77718,7 +77484,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "murrah building",
+    "entity_name": "Murrah Building",
     "entity_origin": [
       "447: Bill Cooper Covers OKC Part 2",
       "transcripts\\310.otter.txt"
@@ -77734,7 +77500,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "museum of contemporary art",
+    "entity_name": "Museum of Contemporary Art",
     "entity_origin": [
       "transcripts\\8.autosub.srt",
       "transcripts\\8.otter.txt"
@@ -77912,7 +77678,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "naked communist",
+    "entity_name": "Naked Communist",
     "entity_origin": [
       "368: November 11-12, 2019",
       "634: July 11, 2003",
@@ -78243,7 +78009,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "nation squad",
+    "entity_name": "Nation Squad",
     "entity_origin": [
       "transcripts\\720.welder.srt",
       "transcripts\\720.welder.txt"
@@ -78353,7 +78119,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "national committee on correctional healthcare",
+    "entity_name": "National Committee on Correctional Healthcare",
     "entity_origin": [
       "transcripts\\25(Repost).autosub.srt",
       "transcripts\\25.autosub.srt",
@@ -78625,7 +78391,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "national institutes of health",
+    "entity_name": "National Institutes of Health",
     "entity_origin": [
       "transcripts\\241.autosub.srt",
       "transcripts\\406.autosub.srt",
@@ -78686,7 +78452,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "national library of medicine",
+    "entity_name": "National Library of Medicine",
     "entity_origin": [
       "transcripts\\433.autosub.srt",
       "transcripts\\499.autosub.srt"
@@ -78760,7 +78526,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "national police",
+    "entity_name": "National Police",
     "entity_origin": [
       "transcripts\\720.otter.txt",
       "transcripts\\720.welder.srt",
@@ -78836,7 +78602,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "national rifle association",
+    "entity_name": "National Rifle Association",
     "entity_origin": [
       "143: March 25-31 Part 1",
       "47: June 19-July 5, 2015",
@@ -78910,7 +78676,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "national security agency",
+    "entity_name": "National Security Agency",
     "entity_origin": [
       "transcripts\\201.autosub.srt",
       "transcripts\\415.autosub.srt",
@@ -79006,7 +78772,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "national spelling bee",
+    "entity_name": "National Spelling Bee",
     "entity_origin": [
       "transcripts\\12.autosub.srt",
       "transcripts\\12.otter.txt"
@@ -79044,7 +78810,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "national youth alliance",
+    "entity_name": "National Youth Alliance",
     "entity_origin": [
       "transcripts\\262.autosub.srt",
       "transcripts\\678.autosub.srt"
@@ -79274,7 +79040,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "natural healing institute of naturopathy",
+    "entity_name": "Natural Healing Institute of Naturopathy",
     "entity_origin": [
       "141: March 20-22, 2018",
       "Edward Group"
@@ -79385,7 +79151,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "nazi iron cross",
+    "entity_name": "Nazi Iron Cross",
     "entity_origin": [
       "transcripts\\20.autosub.srt",
       "transcripts\\20.otter.txt"
@@ -79739,7 +79505,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "neverending story",
+    "entity_name": "Neverending Story",
     "entity_origin": [
       "transcripts\\20.autosub.srt",
       "transcripts\\20.otter.txt"
@@ -79852,7 +79618,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "new black panther party",
+    "entity_name": "New Black Panther Party",
     "entity_origin": [
       "transcripts\\723.autosub.srt",
       "transcripts\\723.otter.txt"
@@ -79868,7 +79634,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "New civil war",
+    "entity_name": "New Civil War",
     "entity_origin": [
       "316: July 1, 2019",
       "58: June 23, 2017"
@@ -79959,7 +79725,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "new freedom",
+    "entity_name": "New Freedom",
     "entity_origin": [
       "transcripts\\31.autosub.srt",
       "transcripts\\606.autosub.srt"
@@ -80149,7 +79915,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "new normal",
+    "entity_name": "New Normal",
     "entity_origin": [
       "transcripts\\413.autosub.srt",
       "transcripts\\436.autosub.srt",
@@ -80204,7 +79970,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "new renaissance",
+    "entity_name": "New Renaissance",
     "entity_origin": [
       "transcripts\\51.autosub.srt",
       "transcripts\\58.autosub.srt"
@@ -80536,7 +80302,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "new world order plan",
+    "entity_name": "New World Order Plan",
     "entity_origin": [
       "transcripts\\390.autosub.srt",
       "transcripts\\426.autosub.srt"
@@ -80721,7 +80487,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "new york giants",
+    "entity_name": "New York Giants",
     "entity_origin": [
       "transcripts\\14.autosub.srt",
       "transcripts\\184.autosub.srt"
@@ -80754,7 +80520,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "new york journal",
+    "entity_name": "New York Journal",
     "entity_origin": [
       "transcripts\\310.autosub.srt",
       "transcripts\\310.otter.txt"
@@ -80854,7 +80620,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "new york review of books",
+    "entity_name": "New York Review of Books",
     "entity_origin": [
       "transcripts\\203.autosub.srt",
       "transcripts\\373.autosub.srt",
@@ -81140,7 +80906,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "new york times washington post",
+    "entity_name": "New York Times Washington Post",
     "entity_origin": [
       "transcripts\\25(Repost).autosub.srt",
       "transcripts\\25.autosub.srt",
@@ -81418,7 +81184,7 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "next generation",
+    "entity_name": "Next Generation",
     "entity_origin": [
       "transcripts\\113.autosub.srt",
       "transcripts\\176.autosub.srt",
@@ -81922,7 +81688,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "night stalker",
+    "entity_name": "Night Stalker",
     "entity_origin": [
       "transcripts\\469.autosub.srt",
       "transcripts\\518.autosub.srt"
@@ -82100,25 +81866,6 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 5,
-    "entity_name": "Ninth Circuit",
-    "entity_origin": [
-      "transcripts\\11.otter.txt",
-      "transcripts\\16.otter.txt"
-    ],
-    "entity_sourcetexts": [
-      "Ninth Circuit",
-      "The Ninth Circuit",
-      "a Ninth Circuit",
-      "the Ninth Circuit"
-    ],
-    "entity_type": [
-      "ORG"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
     "entity_count": 3,
     "entity_name": "Nixon Administration",
     "entity_origin": [
@@ -82205,7 +81952,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "nobel peace prize",
+    "entity_name": "Nobel Peace Prize",
     "entity_origin": [
       "transcripts\\128.autosub.srt",
       "transcripts\\351.autosub.srt",
@@ -82345,25 +82092,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 4,
-    "entity_name": "Norm Pattice",
-    "entity_origin": [
-      "transcripts\\602.otter.txt",
-      "transcripts\\725.otter.txt",
-      "transcripts\\729.otter.txt",
-      "transcripts\\733.otter.txt"
-    ],
-    "entity_sourcetexts": [
-      "Norm Pattice"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 66,
+    "entity_count": 76,
     "entity_name": "Norm Pattis",
     "entity_origin": [
       "284: April 12, 2019",
@@ -82390,15 +82119,19 @@
       "Pozner Texas Sandy Hook Lawsuit (Pozner v. Jones)",
       "Texas Sandy Hook Lawsuit (Heslin v. Jones)",
       "transcripts\\310.otter.txt",
+      "transcripts\\602.otter.txt",
       "transcripts\\685.otter.txt",
       "transcripts\\723.otter.txt",
       "transcripts\\725.otter.txt",
       "transcripts\\729.otter.txt",
+      "transcripts\\733.otter.txt",
+      "transcripts\\734.otter.txt",
       "transcripts\\735.otter.txt",
       "transcripts\\737.otter.txt"
     ],
     "entity_sourcetexts": [
       "Norm\r\n    Pattis",
+      "Norm Pattice",
       "Norm Pattis"
     ],
     "entity_type": [
@@ -83103,7 +82836,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "northern alliance",
+    "entity_name": "Northern Alliance",
     "entity_origin": [
       "transcripts\\310.autosub.srt",
       "transcripts\\310.otter.txt"
@@ -83339,22 +83072,6 @@
     ],
     "entity_sourcetexts": [
       "Nova Scotia"
-    ],
-    "entity_type": [
-      "ORG"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "nra wayne lapierre",
-    "entity_origin": [
-      "transcripts\\321.autosub.srt",
-      "transcripts\\355.autosub.srt"
-    ],
-    "entity_sourcetexts": [
-      "the NRA Wayne LaPierre"
     ],
     "entity_type": [
       "ORG"
@@ -83756,7 +83473,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "offspring of",
+    "entity_name": "Offspring of",
     "entity_origin": [
       "transcripts\\176.autosub.srt",
       "transcripts\\236.autosub.srt"
@@ -84022,7 +83739,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 15,
+    "entity_count": 17,
     "entity_name": "Oliver North",
     "entity_origin": [
       "transcripts\\130E.autosub.srt",
@@ -84032,15 +83749,18 @@
       "transcripts\\171.autosub.srt",
       "transcripts\\183.autosub.srt",
       "transcripts\\202.autosub.srt",
+      "transcripts\\225.autosub.srt",
       "transcripts\\246.autosub.srt",
       "transcripts\\296.autosub.srt",
       "transcripts\\389.autosub.srt",
       "transcripts\\466.autosub.srt",
       "transcripts\\535.autosub.srt",
+      "transcripts\\66.autosub.srt",
       "transcripts\\98.autosub.srt"
     ],
     "entity_sourcetexts": [
-      "Oliver North"
+      "Oliver North",
+      "Ollie North"
     ],
     "entity_type": [
       "PERSON"
@@ -84068,23 +83788,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "Ollie North",
-    "entity_origin": [
-      "transcripts\\225.autosub.srt",
-      "transcripts\\66.autosub.srt"
-    ],
-    "entity_sourcetexts": [
-      "Ollie North"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 2,
-    "entity_name": "olympic games",
+    "entity_name": "Olympic Games",
     "entity_origin": [
       "transcripts\\102.autosub.srt",
       "transcripts\\255.autosub.srt"
@@ -84212,7 +83916,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "open society",
+    "entity_name": "Open Society",
     "entity_origin": [
       "143: March 25-31 Part 1",
       "transcripts\\7.otter.txt"
@@ -84397,7 +84101,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "optics of this",
+    "entity_name": "Optics of this",
     "entity_origin": [
       "transcripts\\473.autosub.srt",
       "transcripts\\502.autosub.srt"
@@ -84434,7 +84138,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "order of the phoenix",
+    "entity_name": "Order of the Phoenix",
     "entity_origin": [
       "transcripts\\573.autosub.srt",
       "transcripts\\610.autosub.srt"
@@ -84450,7 +84154,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "oregon territory",
+    "entity_name": "Oregon Territory",
     "entity_origin": [
       "transcripts\\333.autosub.srt",
       "transcripts\\501.autosub.srt"
@@ -84466,7 +84170,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "orient express",
+    "entity_name": "Orient Express",
     "entity_origin": [
       "transcripts\\130B.autosub.srt",
       "transcripts\\149.autosub.srt",
@@ -84486,7 +84190,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "orinoco flow",
+    "entity_name": "Orinoco Flow",
     "entity_origin": [
       "transcripts\\25(Repost).autosub.srt",
       "transcripts\\25.autosub.srt",
@@ -84594,7 +84298,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "orthodox islam",
+    "entity_name": "Orthodox Islam",
     "entity_origin": [
       "transcripts\\144.autosub.srt",
       "transcripts\\51.autosub.srt"
@@ -84688,7 +84392,7 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "ottoman empire",
+    "entity_name": "Ottoman Empire",
     "entity_origin": [
       "transcripts\\104.autosub.srt",
       "transcripts\\130A.autosub.srt",
@@ -85485,7 +85189,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "pareto principle",
+    "entity_name": "Pareto Principle",
     "entity_origin": [
       "104: November 20, 2017",
       "transcripts\\104.autosub.srt"
@@ -86002,7 +85706,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "patriot movement",
+    "entity_name": "Patriot Movement",
     "entity_origin": [
       "transcripts\\515.autosub.srt",
       "transcripts\\667.autosub.srt"
@@ -86037,7 +85741,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "patriot world",
+    "entity_name": "Patriot World",
     "entity_origin": [
       "transcripts\\204.autosub.srt",
       "transcripts\\514.autosub.srt"
@@ -86807,7 +86511,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "peace corps",
+    "entity_name": "Peace Corps",
     "entity_origin": [
       "transcripts\\230D.autosub.srt",
       "transcripts\\230E.autosub.srt",
@@ -86824,7 +86528,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "peace prize",
+    "entity_name": "Peace Prize",
     "entity_origin": [
       "transcripts\\211.autosub.srt",
       "transcripts\\480.autosub.srt",
@@ -86921,7 +86625,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "pearly gates",
+    "entity_name": "Pearly Gates",
     "entity_origin": [
       "transcripts\\17.autosub.srt",
       "transcripts\\666.autosub.srt"
@@ -87141,7 +86845,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "people's voice",
+    "entity_name": "People's Voice",
     "entity_origin": [
       "transcripts\\719.welder.srt",
       "transcripts\\719.welder.txt"
@@ -87207,7 +86911,7 @@
   },
   {
     "entity_count": 15,
-    "entity_name": "perry mason",
+    "entity_name": "Perry Mason",
     "entity_origin": [
       "transcripts\\712.autosub.srt",
       "transcripts\\712.otter.txt",
@@ -87703,7 +87407,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "pew research center",
+    "entity_name": "Pew Research Center",
     "entity_origin": [
       "transcripts\\281.autosub.srt",
       "transcripts\\30.autosub.srt",
@@ -87738,7 +87442,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "phantom tollbooth",
+    "entity_name": "Phantom Tollbooth",
     "entity_origin": [
       "transcripts\\14.otter.txt",
       "transcripts\\415.autosub.srt"
@@ -87755,7 +87459,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "phantom zone",
+    "entity_name": "Phantom Zone",
     "entity_origin": [
       "594: September 7, 2021",
       "transcripts\\594.autosub.srt"
@@ -88014,7 +87718,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "phoenix new times",
+    "entity_name": "Phoenix New Times",
     "entity_origin": [
       "transcripts\\25(Repost).autosub.srt",
       "transcripts\\25.autosub.srt",
@@ -88074,7 +87778,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "pick up artist",
+    "entity_name": "Pick Up Artist",
     "entity_origin": [
       "Mark Dice",
       "Mike Cernovich"
@@ -88739,7 +88443,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "post dispatch",
+    "entity_name": "Post Dispatch",
     "entity_origin": [
       "transcripts\\601.autosub.srt",
       "transcripts\\665.autosub.srt",
@@ -88810,7 +88514,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "power balance",
+    "entity_name": "Power Balance",
     "entity_origin": [
       "transcripts\\270.autosub.srt",
       "transcripts\\59.autosub.srt"
@@ -88982,7 +88686,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "press 2265",
+    "entity_name": "Press 2265",
     "entity_origin": [
       "transcripts\\213.autosub.srt",
       "transcripts\\257.autosub.srt"
@@ -88998,7 +88702,7 @@
   },
   {
     "entity_count": 8,
-    "entity_name": "press club",
+    "entity_name": "Press Club",
     "entity_origin": [
       "transcripts\\146.autosub.srt",
       "transcripts\\149.autosub.srt",
@@ -89231,7 +88935,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "prodigal son",
+    "entity_name": "Prodigal Son",
     "entity_origin": [
       "transcripts\\37.autosub.srt",
       "transcripts\\427.autosub.srt"
@@ -90164,7 +89868,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "public square",
+    "entity_name": "Public Square",
     "entity_origin": [
       "transcripts\\294.autosub.srt",
       "transcripts\\617.autosub.srt"
@@ -90827,7 +90531,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "rand corporation",
+    "entity_name": "Rand Corporation",
     "entity_origin": [
       "transcripts\\462.autosub.srt",
       "transcripts\\636.autosub.srt"
@@ -91144,7 +90848,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "reagan administration",
+    "entity_name": "Reagan Administration",
     "entity_origin": [
       "transcripts\\384.autosub.srt",
       "transcripts\\628.autosub.srt",
@@ -91181,7 +90885,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "real housewives of",
+    "entity_name": "Real Housewives of",
     "entity_origin": [
       "transcripts\\276.autosub.srt",
       "transcripts\\93.autosub.srt"
@@ -91351,7 +91055,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "red dragon",
+    "entity_name": "Red Dragon",
     "entity_origin": [
       "transcripts\\177.autosub.srt",
       "transcripts\\530.autosub.srt"
@@ -91369,7 +91073,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "red fern grows",
+    "entity_name": "Red Fern Grows",
     "entity_origin": [
       "transcripts\\427.autosub.srt",
       "transcripts\\672.autosub.srt",
@@ -91493,7 +91197,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "regular guy",
+    "entity_name": "Regular Guy",
     "entity_origin": [
       "transcripts\\343.autosub.srt",
       "transcripts\\362.autosub.srt"
@@ -91509,7 +91213,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "regular show",
+    "entity_name": "Regular Show",
     "entity_origin": [
       "transcripts\\13.autosub.srt",
       "transcripts\\5.autosub.srt",
@@ -91733,7 +91437,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "republic of rwanda",
+    "entity_name": "Republic of Rwanda",
     "entity_origin": [
       "transcripts\\121.autosub.srt",
       "transcripts\\335.autosub.srt"
@@ -91749,7 +91453,7 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "republic of texas",
+    "entity_name": "Republic of Texas",
     "entity_origin": [
       "transcripts\\548.autosub.srt",
       "transcripts\\566.autosub.srt",
@@ -92167,7 +91871,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "republican national convention",
+    "entity_name": "Republican National Convention",
     "entity_origin": [
       "160: January 22-25, 2009",
       "transcripts\\253.autosub.srt",
@@ -93640,7 +93344,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "right moves",
+    "entity_name": "Right Moves",
     "entity_origin": [
       "transcripts\\40.autosub.srt",
       "transcripts\\421.autosub.srt"
@@ -93745,7 +93449,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "ring of power",
+    "entity_name": "Ring of Power",
     "entity_origin": [
       "transcripts\\222.autosub.srt",
       "transcripts\\222.otter.txt"
@@ -93803,7 +93507,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "rio grande river",
+    "entity_name": "Rio Grande River",
     "entity_origin": [
       "transcripts\\303.autosub.srt",
       "transcripts\\598.autosub.srt"
@@ -93855,7 +93559,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "rites of passage",
+    "entity_name": "Rites of Passage",
     "entity_origin": [
       "transcripts\\113.autosub.srt",
       "transcripts\\14.autosub.srt",
@@ -95227,7 +94931,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "rock and roll hall of fame",
+    "entity_name": "Rock and Roll Hall of Fame",
     "entity_origin": [
       "transcripts\\230B.autosub.srt",
       "transcripts\\328.autosub.srt"
@@ -95530,7 +95234,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "rocky mountains",
+    "entity_name": "Rocky Mountains",
     "entity_origin": [
       "transcripts\\276.autosub.srt",
       "transcripts\\325.autosub.srt",
@@ -97529,7 +97233,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "russian civil war",
+    "entity_name": "Russian Civil War",
     "entity_origin": [
       "transcripts\\11.autosub.srt",
       "transcripts\\11.otter.txt",
@@ -97564,7 +97268,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "russian empire",
+    "entity_name": "Russian Empire",
     "entity_origin": [
       "transcripts\\333.autosub.srt",
       "transcripts\\71.autosub.srt",
@@ -98116,7 +97820,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "salem witch trials",
+    "entity_name": "Salem Witch Trials",
     "entity_origin": [
       "TWTWYTT Special",
       "transcripts\\329.autosub.srt",
@@ -98186,7 +97890,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "salton sea",
+    "entity_name": "Salton Sea",
     "entity_origin": [
       "transcripts\\226.autosub.srt",
       "transcripts\\597.autosub.srt"
@@ -98662,7 +98366,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "san francisco chronicle",
+    "entity_name": "San Francisco Chronicle",
     "entity_origin": [
       "transcripts\\230A.autosub.srt",
       "transcripts\\329.autosub.srt",
@@ -99401,7 +99105,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "saudi supreme court",
+    "entity_name": "Saudi Supreme Court",
     "entity_origin": [
       "transcripts\\720.autosub.srt",
       "transcripts\\720.otter.txt",
@@ -99439,7 +99143,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "savage nation",
+    "entity_name": "Savage Nation",
     "entity_origin": [
       "transcripts\\22.autosub.srt",
       "transcripts\\3.autosub.srt",
@@ -100126,7 +99830,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "screen actors guild",
+    "entity_name": "Screen Actors Guild",
     "entity_origin": [
       "transcripts\\201.autosub.srt",
       "transcripts\\382.autosub.srt"
@@ -100425,85 +100129,6 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 73,
-    "entity_name": "Second Amendment",
-    "entity_origin": [
-      "141: March 20-22, 2018",
-      "143: March 25-31 Part 1",
-      "transcripts\\114.autosub.srt",
-      "transcripts\\12.autosub.srt",
-      "transcripts\\142.autosub.srt",
-      "transcripts\\144.autosub.srt",
-      "transcripts\\194.autosub.srt",
-      "transcripts\\209.autosub.srt",
-      "transcripts\\222.otter.txt",
-      "transcripts\\248.autosub.srt",
-      "transcripts\\252.autosub.srt",
-      "transcripts\\258.autosub.srt",
-      "transcripts\\262.autosub.srt",
-      "transcripts\\264.autosub.srt",
-      "transcripts\\268.autosub.srt",
-      "transcripts\\272.autosub.srt",
-      "transcripts\\279.otter.txt",
-      "transcripts\\284.autosub.srt",
-      "transcripts\\294.autosub.srt",
-      "transcripts\\298.autosub.srt",
-      "transcripts\\3.autosub.srt",
-      "transcripts\\3.otter.txt",
-      "transcripts\\335.autosub.srt",
-      "transcripts\\368.autosub.srt",
-      "transcripts\\37.autosub.srt",
-      "transcripts\\380.autosub.srt",
-      "transcripts\\390.autosub.srt",
-      "transcripts\\414.autosub.srt",
-      "transcripts\\433.autosub.srt",
-      "transcripts\\465.autosub.srt",
-      "transcripts\\466.autosub.srt",
-      "transcripts\\525.autosub.srt",
-      "transcripts\\526.autosub.srt",
-      "transcripts\\535.autosub.srt",
-      "transcripts\\543.autosub.srt",
-      "transcripts\\554.autosub.srt",
-      "transcripts\\559.autosub.srt",
-      "transcripts\\611.autosub.srt",
-      "transcripts\\64.autosub.srt",
-      "transcripts\\641.autosub.srt",
-      "transcripts\\642.autosub.srt",
-      "transcripts\\660.autosub.srt",
-      "transcripts\\665.otter.txt",
-      "transcripts\\670.autosub.srt",
-      "transcripts\\688.autosub.srt",
-      "transcripts\\69.autosub.srt",
-      "transcripts\\690.autosub.srt",
-      "transcripts\\693.autosub.srt",
-      "transcripts\\712.otter.txt",
-      "transcripts\\714.otter.txt",
-      "transcripts\\714.welder.txt",
-      "transcripts\\715.autosub.srt",
-      "transcripts\\715.otter.txt",
-      "transcripts\\715.welder.txt",
-      "transcripts\\725.otter.txt",
-      "transcripts\\729.otter.txt",
-      "transcripts\\734.otter.txt",
-      "transcripts\\74.autosub.srt",
-      "transcripts\\8.otter.txt",
-      "transcripts\\83.autosub.srt"
-    ],
-    "entity_sourcetexts": [
-      "Second Amendment",
-      "The Second Amendment",
-      "The Second Amendment\n\n",
-      "the Second Amendment",
-      "the Second Amendment\n\n"
-    ],
-    "entity_type": [
-      "LAW",
-      "WORK_OF_ART"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
     "entity_count": 4,
     "entity_name": "Second Bank",
     "entity_origin": [
@@ -100560,7 +100185,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "second story",
+    "entity_name": "Second Story",
     "entity_origin": [
       "transcripts\\456.autosub.srt",
       "transcripts\\553.autosub.srt",
@@ -100579,7 +100204,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "secret of 2017",
+    "entity_name": "Secret of 2017",
     "entity_origin": [
       "3: The Secret of 2017",
       "List of Knowledge Fight episodes",
@@ -100601,7 +100226,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "secret of my success",
+    "entity_name": "Secret of My Success",
     "entity_origin": [
       "transcripts\\25(Repost).autosub.srt",
       "transcripts\\25.autosub.srt",
@@ -100810,7 +100435,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "senate intelligence committee",
+    "entity_name": "Senate Intelligence Committee",
     "entity_origin": [
       "45: May 25, 2017",
       "48: May 31, 2017"
@@ -100880,7 +100505,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "sermon on the mount",
+    "entity_name": "Sermon on the Mount",
     "entity_origin": [
       "transcripts\\321.autosub.srt",
       "transcripts\\511.autosub.srt"
@@ -100964,7 +100589,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "seventh amendment",
+    "entity_name": "Seventh Amendment",
     "entity_origin": [
       "transcripts\\603.autosub.srt",
       "transcripts\\715.otter.txt"
@@ -101356,7 +100981,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "sheriff of nottingham",
+    "entity_name": "Sheriff of Nottingham",
     "entity_origin": [
       "transcripts\\25(Repost).autosub.srt",
       "transcripts\\S011.autosub.srt"
@@ -101392,7 +101017,7 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "sheriff's office",
+    "entity_name": "Sheriff's Office",
     "entity_origin": [
       "transcripts\\25(Repost).autosub.srt",
       "transcripts\\25.autosub.srt",
@@ -101412,7 +101037,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "sheriff's office 3004",
+    "entity_name": "Sheriff's Office 3004",
     "entity_origin": [
       "transcripts\\25(Repost).autosub.srt",
       "transcripts\\S011.autosub.srt"
@@ -101658,7 +101283,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "silent planet",
+    "entity_name": "Silent Planet",
     "entity_origin": [
       "transcripts\\588.autosub.srt",
       "transcripts\\722.autosub.srt"
@@ -101917,7 +101542,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "sirius mystery",
+    "entity_name": "Sirius Mystery",
     "entity_origin": [
       "271: The Serpent Loves Word Games",
       "transcripts\\271.autosub.srt"
@@ -102115,7 +101740,7 @@
   },
   {
     "entity_count": 29,
-    "entity_name": "smoking gun",
+    "entity_name": "Smoking Gun",
     "entity_origin": [
       "transcripts\\118.autosub.srt",
       "transcripts\\164.autosub.srt",
@@ -102320,7 +101945,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "soap company",
+    "entity_name": "Soap Company",
     "entity_origin": [
       "transcripts\\148.autosub.srt",
       "transcripts\\158.autosub.srt"
@@ -102720,7 +102345,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "sorting hat",
+    "entity_name": "Sorting Hat",
     "entity_origin": [
       "transcripts\\200.autosub.srt",
       "transcripts\\563.autosub.srt",
@@ -103062,7 +102687,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "south china morning post",
+    "entity_name": "South China Morning Post",
     "entity_origin": [
       "transcripts\\403.autosub.srt",
       "transcripts\\408.autosub.srt",
@@ -103219,7 +102844,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "south pole",
+    "entity_name": "South Pole",
     "entity_origin": [
       "transcripts\\129.autosub.srt",
       "transcripts\\2.autosub.srt",
@@ -103414,7 +103039,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "southern poverty law",
+    "entity_name": "Southern Poverty Law",
     "entity_origin": [
       "transcripts\\339.autosub.srt",
       "transcripts\\538.autosub.srt"
@@ -103820,7 +103445,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "special report",
+    "entity_name": "Special Report",
     "entity_origin": [
       "transcripts\\13.autosub.srt",
       "transcripts\\13.otter.txt",
@@ -104210,7 +103835,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "stanford prison experiment",
+    "entity_name": "Stanford Prison Experiment",
     "entity_origin": [
       "transcripts\\103.autosub.srt",
       "transcripts\\379.autosub.srt"
@@ -104279,7 +103904,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "star spangled banner",
+    "entity_name": "Star Spangled Banner",
     "entity_origin": [
       "transcripts\\498.autosub.srt",
       "transcripts\\6.autosub.srt",
@@ -104346,7 +103971,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "state bar of texas",
+    "entity_name": "State Bar of Texas",
     "entity_origin": [
       "transcripts\\602.autosub.srt",
       "transcripts\\602.otter.txt"
@@ -104613,7 +104238,7 @@
   },
   {
     "entity_count": 7,
-    "entity_name": "statue of liberty",
+    "entity_name": "Statue of Liberty",
     "entity_origin": [
       "transcripts\\351.autosub.srt",
       "transcripts\\62.autosub.srt",
@@ -105178,22 +104803,6 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
-    "entity_name": "steve crowder",
-    "entity_origin": [
-      "transcripts\\310.autosub.srt",
-      "transcripts\\310.otter.txt"
-    ],
-    "entity_sourcetexts": [
-      "Steve Crowder's"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
     "entity_count": 14,
     "entity_name": "Steve Doocy",
     "entity_origin": [
@@ -105468,22 +105077,6 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 2,
-    "entity_name": "Steve Patentic",
-    "entity_origin": [
-      "transcripts\\716.welder.txt",
-      "transcripts\\738.welder.srt"
-    ],
-    "entity_sourcetexts": [
-      "Steve Patentic"
-    ],
-    "entity_type": [
-      "PERSON"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
     "entity_count": 4,
     "entity_name": "Steve Perry",
     "entity_origin": [
@@ -105501,7 +105094,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 79,
+    "entity_count": 81,
     "entity_name": "Steve Pieczenik",
     "entity_origin": [
       "107: December 12, 2014",
@@ -105561,10 +105154,13 @@
       "98: May 2-3, 2012",
       "Anthony Fauci",
       "David Knight",
-      "Steve Pieczenik"
+      "Steve Pieczenik",
+      "transcripts\\716.welder.txt",
+      "transcripts\\738.welder.srt"
     ],
     "entity_sourcetexts": [
       "Steve\r\nPieczenik",
+      "Steve Patentic",
       "Steve Pieczenik",
       "Steve Pieczenik's",
       "Steve Pieczinik"
@@ -105576,7 +105172,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 69,
+    "entity_count": 61,
     "entity_name": "Steve Quayle",
     "entity_origin": [
       "155: January 7-9, 2009",
@@ -105606,6 +105202,7 @@
       "transcripts\\703.autosub.srt",
       "transcripts\\725.otter.txt",
       "transcripts\\729.otter.txt",
+      "transcripts\\734.otter.txt",
       "transcripts\\735.otter.txt",
       "transcripts\\94.autosub.srt"
     ],
@@ -105749,7 +105346,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 49,
+    "entity_count": 51,
     "entity_name": "Steven Crowder",
     "entity_origin": [
       "350: September 29-30, 2019",
@@ -105784,6 +105381,7 @@
       "transcripts\\738.welder.srt"
     ],
     "entity_sourcetexts": [
+      "Steve Crowder's",
       "Steven Crowder"
     ],
     "entity_type": [
@@ -106017,7 +105615,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 51,
+    "entity_count": 97,
     "entity_name": "Stewart Rhodes",
     "entity_origin": [
       "222: March 15-19, 2009",
@@ -106042,68 +105640,23 @@
       "638: See You At The Cross-Rhodes",
       "642: January 24, 2022",
       "677: May 4, 2022",
+      "transcripts\\222.autosub.srt",
       "transcripts\\222.otter.txt",
+      "transcripts\\252.autosub.srt",
+      "transcripts\\275.autosub.srt",
       "transcripts\\277.autosub.srt",
+      "transcripts\\303.autosub.srt",
+      "transcripts\\315.autosub.srt",
       "transcripts\\316.autosub.srt",
       "transcripts\\349.autosub.srt",
-      "transcripts\\522.autosub.srt",
-      "transcripts\\526.autosub.srt",
-      "transcripts\\539.autosub.srt",
-      "transcripts\\620.autosub.srt",
-      "transcripts\\638.autosub.srt",
-      "transcripts\\669.autosub.srt",
-      "transcripts\\677.autosub.srt"
-    ],
-    "entity_sourcetexts": [
-      "Stewart Rhodes",
-      "Stewart Rhodes's"
-    ],
-    "entity_type": [
-      "PERSON",
-      "ORG"
-    ],
-    "is_existing": false,
-    "is_known_missing": true
-  },
-  {
-    "entity_count": 13,
-    "entity_name": "Stewart Road",
-    "entity_origin": [
-      "transcripts\\252.autosub.srt",
-      "transcripts\\315.autosub.srt",
       "transcripts\\352.autosub.srt",
-      "transcripts\\389.autosub.srt",
-      "transcripts\\526.autosub.srt",
-      "transcripts\\539.autosub.srt",
-      "transcripts\\638.autosub.srt",
-      "transcripts\\S012.autosub.srt"
-    ],
-    "entity_sourcetexts": [
-      "Stewart Road",
-      "the Stewart Road\n\n"
-    ],
-    "entity_type": [
-      "PERSON",
-      "WORK_OF_ART",
-      "PRODUCT"
-    ],
-    "is_existing": false,
-    "is_known_missing": false
-  },
-  {
-    "entity_count": 33,
-    "entity_name": "Stewart Roads",
-    "entity_origin": [
-      "transcripts\\222.autosub.srt",
-      "transcripts\\275.autosub.srt",
-      "transcripts\\303.autosub.srt",
-      "transcripts\\316.autosub.srt",
       "transcripts\\368.autosub.srt",
       "transcripts\\389.autosub.srt",
       "transcripts\\406.autosub.srt",
       "transcripts\\408.autosub.srt",
       "transcripts\\412.autosub.srt",
       "transcripts\\520.autosub.srt",
+      "transcripts\\522.autosub.srt",
       "transcripts\\524.autosub.srt",
       "transcripts\\526.autosub.srt",
       "transcripts\\529.autosub.srt",
@@ -106115,17 +105668,25 @@
       "transcripts\\638.autosub.srt",
       "transcripts\\643.autosub.srt",
       "transcripts\\655.autosub.srt",
+      "transcripts\\669.autosub.srt",
       "transcripts\\677.autosub.srt",
       "transcripts\\S012.autosub.srt"
     ],
     "entity_sourcetexts": [
-      "Stewart Roads"
+      "Stewart Rhodes",
+      "Stewart Rhodes's",
+      "Stewart Road",
+      "Stewart Roads",
+      "the Stewart Road\n\n"
     ],
     "entity_type": [
-      "PERSON"
+      "PERSON",
+      "ORG",
+      "WORK_OF_ART",
+      "PRODUCT"
     ],
     "is_existing": false,
-    "is_known_missing": false
+    "is_known_missing": true
   },
   {
     "entity_count": 2,
@@ -106404,7 +105965,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "straight times",
+    "entity_name": "Straight Times",
     "entity_origin": [
       "transcripts\\720.welder.srt",
       "transcripts\\720.welder.txt"
@@ -106420,7 +105981,7 @@
   },
   {
     "entity_count": 15,
-    "entity_name": "strait of hormuz",
+    "entity_name": "Strait of Hormuz",
     "entity_origin": [
       "transcripts\\310.autosub.srt",
       "transcripts\\310.otter.txt",
@@ -106513,7 +106074,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "street churro cone",
+    "entity_name": "Street Churro Cone",
     "entity_origin": [
       "transcripts\\719.welder.srt",
       "transcripts\\719.welder.txt"
@@ -106665,7 +106226,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "student health center",
+    "entity_name": "Student Health Center",
     "entity_origin": [
       "transcripts\\12.otter.txt",
       "transcripts\\724.autosub.srt",
@@ -107533,7 +107094,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "supreme court of",
+    "entity_name": "Supreme Court of",
     "entity_origin": [
       "transcripts\\715.otter.txt",
       "transcripts\\715.welder.txt"
@@ -107549,7 +107110,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "supreme courts",
+    "entity_name": "Supreme Courts",
     "entity_origin": [
       "transcripts\\565.autosub.srt",
       "transcripts\\7.otter.txt"
@@ -107739,7 +107300,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "swift 2015",
+    "entity_name": "Swift 2015",
     "entity_origin": [
       "transcripts\\25(Repost).autosub.srt",
       "transcripts\\S011.autosub.srt"
@@ -107892,7 +107453,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "tag team championship",
+    "entity_name": "Tag Team Championship",
     "entity_origin": [
       "transcripts\\446.autosub.srt",
       "transcripts\\509.autosub.srt"
@@ -108045,7 +107606,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "tampa bay times",
+    "entity_name": "Tampa Bay Times",
     "entity_origin": [
       "transcripts\\344.autosub.srt",
       "transcripts\\470.autosub.srt"
@@ -108282,7 +107843,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "tea party movement",
+    "entity_name": "Tea Party Movement",
     "entity_origin": [
       "transcripts\\141.autosub.srt",
       "transcripts\\150.autosub.srt",
@@ -108777,7 +108338,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "teenage witch",
+    "entity_name": "Teenage Witch",
     "entity_origin": [
       "transcripts\\611.autosub.srt",
       "transcripts\\622.autosub.srt"
@@ -108825,7 +108386,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "ten commandment",
+    "entity_name": "Ten Commandment",
     "entity_origin": [
       "transcripts\\163.autosub.srt",
       "transcripts\\226.autosub.srt"
@@ -108841,7 +108402,7 @@
   },
   {
     "entity_count": 16,
-    "entity_name": "ten commandments",
+    "entity_name": "Ten Commandments",
     "entity_origin": [
       "transcripts\\21.autosub.srt",
       "transcripts\\226.autosub.srt",
@@ -109111,7 +108672,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "texas capitol",
+    "entity_name": "Texas Capitol",
     "entity_origin": [
       "transcripts\\456.autosub.srt",
       "transcripts\\501.autosub.srt"
@@ -109194,7 +108755,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "texas department of public safety",
+    "entity_name": "Texas Department of Public Safety",
     "entity_origin": [
       "transcripts\\343.autosub.srt",
       "transcripts\\689.autosub.srt",
@@ -109268,7 +108829,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "texas sandy hook",
+    "entity_name": "Texas Sandy Hook",
     "entity_origin": [
       "PQPR",
       "transcripts\\704.autosub.srt"
@@ -109284,7 +108845,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "texas senate",
+    "entity_name": "Texas Senate",
     "entity_origin": [
       "transcripts\\325.autosub.srt",
       "transcripts\\326.autosub.srt"
@@ -109361,7 +108922,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "texas youth commission",
+    "entity_name": "Texas Youth Commission",
     "entity_origin": [
       "transcripts\\714.otter.txt",
       "transcripts\\714.welder.txt"
@@ -110110,7 +109671,7 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "third reich",
+    "entity_name": "Third Reich",
     "entity_origin": [
       "transcripts\\130A.autosub.srt",
       "transcripts\\130B.autosub.srt",
@@ -111850,7 +111411,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "town council",
+    "entity_name": "Town Council",
     "entity_origin": [
       "transcripts\\159.autosub.srt",
       "transcripts\\352.autosub.srt"
@@ -111903,7 +111464,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "trade center",
+    "entity_name": "Trade Center",
     "entity_origin": [
       "transcripts\\703.autosub.srt",
       "transcripts\\704.autosub.srt"
@@ -111963,7 +111524,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "transgender law center",
+    "entity_name": "Transgender Law Center",
     "entity_origin": [
       "transcripts\\718.welder.txt",
       "transcripts\\722.otter.txt"
@@ -112222,7 +111783,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "treasury for economic policy",
+    "entity_name": "Treasury for Economic Policy",
     "entity_origin": [
       "151: April 16, 2018",
       "155: January 7-9, 2009"
@@ -112238,7 +111799,7 @@
   },
   {
     "entity_count": 5,
-    "entity_name": "tree of life",
+    "entity_name": "Tree of Life",
     "entity_origin": [
       "transcripts\\277.autosub.srt",
       "transcripts\\374.autosub.srt",
@@ -112374,7 +111935,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "trojan war",
+    "entity_name": "Trojan War",
     "entity_origin": [
       "transcripts\\195.autosub.srt",
       "transcripts\\622.autosub.srt"
@@ -112423,7 +111984,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "true believers",
+    "entity_name": "True Believers",
     "entity_origin": [
       "transcripts\\197.autosub.srt",
       "transcripts\\713.autosub.srt"
@@ -112886,7 +112447,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "truth and reconciliation",
+    "entity_name": "Truth and Reconciliation",
     "entity_origin": [
       "transcripts\\151.autosub.srt",
       "transcripts\\46.autosub.srt"
@@ -113206,7 +112767,7 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 13,
+    "entity_count": 14,
     "entity_name": "Turning Point USA",
     "entity_origin": [
       "363: October 30, 2019",
@@ -113215,7 +112776,8 @@
       "transcripts\\372.autosub.srt",
       "transcripts\\404.autosub.srt",
       "transcripts\\418.autosub.srt",
-      "transcripts\\582.autosub.srt"
+      "transcripts\\582.autosub.srt",
+      "transcripts\\734.otter.txt"
     ],
     "entity_sourcetexts": [
       "Turning Point USA"
@@ -113318,7 +112880,7 @@
   },
   {
     "entity_count": 12,
-    "entity_name": "twin towers",
+    "entity_name": "Twin Towers",
     "entity_origin": [
       "transcripts\\14.autosub.srt",
       "transcripts\\206.autosub.srt",
@@ -113605,7 +113167,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "un general assembly",
+    "entity_name": "UN General Assembly",
     "entity_origin": [
       "617: June 27, 2003",
       "transcripts\\121.autosub.srt"
@@ -113621,7 +113183,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "un security council",
+    "entity_name": "UN Security Council",
     "entity_origin": [
       "transcripts\\178.autosub.srt",
       "transcripts\\384.autosub.srt",
@@ -113760,7 +113322,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "union army",
+    "entity_name": "Union Army",
     "entity_origin": [
       "transcripts\\356.autosub.srt",
       "transcripts\\503.autosub.srt"
@@ -114586,7 +114148,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "united states constitution",
+    "entity_name": "United States Constitution",
     "entity_origin": [
       "transcripts\\715.otter.txt",
       "transcripts\\715.welder.txt",
@@ -114981,7 +114543,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "university of ottawa",
+    "entity_name": "University of Ottawa",
     "entity_origin": [
       "transcripts\\565.autosub.srt",
       "transcripts\\609.autosub.srt"
@@ -114997,7 +114559,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "university of oxford",
+    "entity_name": "University of Oxford",
     "entity_origin": [
       "transcripts\\111.autosub.srt",
       "transcripts\\438.autosub.srt"
@@ -115041,7 +114603,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "university of toronto",
+    "entity_name": "University of Toronto",
     "entity_origin": [
       "transcripts\\111.autosub.srt",
       "transcripts\\285.autosub.srt"
@@ -115194,7 +114756,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "us constitution",
+    "entity_name": "US Constitution",
     "entity_origin": [
       "Webster Tarpley",
       "transcripts\\173.autosub.srt",
@@ -115304,7 +114866,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "us house ethics committee",
+    "entity_name": "US House Ethics Committee",
     "entity_origin": [
       "transcripts\\25(Repost).autosub.srt",
       "transcripts\\S011.autosub.srt"
@@ -115320,7 +114882,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "us house of representatives",
+    "entity_name": "US House of Representatives",
     "entity_origin": [
       "transcripts\\222.otter.txt",
       "transcripts\\253.autosub.srt",
@@ -115379,7 +114941,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "usa network",
+    "entity_name": "USA Network",
     "entity_origin": [
       "transcripts\\157.autosub.srt",
       "transcripts\\286.autosub.srt"
@@ -115434,7 +114996,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "uss maddox",
+    "entity_name": "USS Maddox",
     "entity_origin": [
       "transcripts\\310.autosub.srt",
       "transcripts\\310.otter.txt"
@@ -115620,7 +115182,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "vatican insider",
+    "entity_name": "Vatican Insider",
     "entity_origin": [
       "transcripts\\318.autosub.srt",
       "transcripts\\68.autosub.srt"
@@ -116166,7 +115728,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "virgin islands",
+    "entity_name": "Virgin Islands",
     "entity_origin": [
       "transcripts\\267.autosub.srt",
       "transcripts\\455.autosub.srt"
@@ -116182,7 +115744,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "virgin mary",
+    "entity_name": "Virgin Mary",
     "entity_origin": [
       "transcripts\\108.autosub.srt",
       "transcripts\\260.autosub.srt",
@@ -116632,7 +116194,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "von erichs",
+    "entity_name": "Von Erichs",
     "entity_origin": [
       "transcripts\\178.autosub.srt",
       "transcripts\\518.autosub.srt"
@@ -116648,7 +116210,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "voodoo doughnut",
+    "entity_name": "Voodoo Doughnut",
     "entity_origin": [
       "transcripts\\645.autosub.srt",
       "transcripts\\710.autosub.srt"
@@ -116666,7 +116228,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "voting rights act",
+    "entity_name": "Voting Rights Act",
     "entity_origin": [
       "transcripts\\364.autosub.srt",
       "transcripts\\404.autosub.srt",
@@ -116707,7 +116269,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "waco massacre",
+    "entity_name": "Waco Massacre",
     "entity_origin": [
       "transcripts\\412.autosub.srt",
       "transcripts\\434.autosub.srt"
@@ -116743,7 +116305,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "wailing wall",
+    "entity_name": "Wailing Wall",
     "entity_origin": [
       "transcripts\\248.autosub.srt",
       "transcripts\\8.otter.txt"
@@ -116810,7 +116372,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "wall street",
+    "entity_name": "Wall Street",
     "entity_origin": [
       "transcripts\\284.autosub.srt",
       "transcripts\\634.autosub.srt"
@@ -116979,7 +116541,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "war of 1812",
+    "entity_name": "War of 1812",
     "entity_origin": [
       "transcripts\\333.autosub.srt",
       "transcripts\\399.autosub.srt"
@@ -117019,7 +116581,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "war powers act",
+    "entity_name": "War Powers Act",
     "entity_origin": [
       "158: January 21, 2009",
       "transcripts\\158.autosub.srt"
@@ -117036,7 +116598,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "war powers resolution",
+    "entity_name": "War Powers Resolution",
     "entity_origin": [
       "158: January 21, 2009",
       "transcripts\\158.autosub.srt"
@@ -117054,7 +116616,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "war room for owen",
+    "entity_name": "War Room for Owen",
     "entity_origin": [
       "transcripts\\723.autosub.srt",
       "transcripts\\723.otter.txt"
@@ -117503,7 +117065,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "washington department of health",
+    "entity_name": "Washington Department of Health",
     "entity_origin": [
       "438: May 26-28, 2020",
       "transcripts\\560.autosub.srt"
@@ -117537,7 +117099,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "washington free beacon",
+    "entity_name": "Washington Free Beacon",
     "entity_origin": [
       "439: May 29-31, 2020",
       "transcripts\\439.autosub.srt"
@@ -117554,7 +117116,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "washington monument",
+    "entity_name": "Washington Monument",
     "entity_origin": [
       "transcripts\\124.autosub.srt",
       "transcripts\\607.autosub.srt",
@@ -117572,7 +117134,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "washington nationals",
+    "entity_name": "Washington Nationals",
     "entity_origin": [
       "transcripts\\136.autosub.srt",
       "transcripts\\255.autosub.srt"
@@ -117937,18 +117499,21 @@
     "is_known_missing": false
   },
   {
-    "entity_count": 3,
+    "entity_count": 5,
     "entity_name": "Wayne LaPierre",
     "entity_origin": [
       "321: February 24-26, 2013",
       "transcripts\\321.autosub.srt",
+      "transcripts\\355.autosub.srt",
       "transcripts\\466.autosub.srt"
     ],
     "entity_sourcetexts": [
-      "Wayne LaPierre"
+      "Wayne LaPierre",
+      "the NRA Wayne LaPierre"
     ],
     "entity_type": [
-      "PERSON"
+      "PERSON",
+      "ORG"
     ],
     "is_existing": false,
     "is_known_missing": false
@@ -118060,7 +117625,7 @@
   },
   {
     "entity_count": 9,
-    "entity_name": "weather channel",
+    "entity_name": "Weather Channel",
     "entity_origin": [
       "transcripts\\719.autosub.srt",
       "transcripts\\719.welder.srt",
@@ -118208,7 +117773,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "weekend update",
+    "entity_name": "Weekend Update",
     "entity_origin": [
       "transcripts\\531.autosub.srt",
       "transcripts\\646.autosub.srt"
@@ -118225,7 +117790,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "weezer broadway",
+    "entity_name": "Weezer Broadway",
     "entity_origin": [
       "transcripts\\725.autosub.srt",
       "transcripts\\725.otter.txt"
@@ -118564,7 +118129,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "west india company",
+    "entity_name": "West India Company",
     "entity_origin": [
       "transcripts\\719.welder.srt",
       "transcripts\\719.welder.txt"
@@ -119151,7 +118716,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "white house office",
+    "entity_name": "White House Office",
     "entity_origin": [
       "transcripts\\366.autosub.srt",
       "transcripts\\397.autosub.srt"
@@ -119187,7 +118752,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "white knight",
+    "entity_name": "White Knight",
     "entity_origin": [
       "transcripts\\705.autosub.srt",
       "transcripts\\73.autosub.srt"
@@ -119299,7 +118864,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "whole new world order",
+    "entity_name": "Whole New World Order",
     "entity_origin": [
       "transcripts\\644.autosub.srt",
       "transcripts\\683.autosub.srt"
@@ -119420,7 +118985,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "wildlife preserve",
+    "entity_name": "Wildlife Preserve",
     "entity_origin": [
       "transcripts\\100.autosub.srt",
       "transcripts\\406.autosub.srt"
@@ -119471,6 +119036,22 @@
     ],
     "entity_sourcetexts": [
       "Wilford Snapple Snapple"
+    ],
+    "entity_type": [
+      "PERSON"
+    ],
+    "is_existing": false,
+    "is_known_missing": false
+  },
+  {
+    "entity_count": 2,
+    "entity_name": "Wilford Snibble Snabble",
+    "entity_origin": [
+      "transcripts\\731.otter.txt",
+      "transcripts\\734.otter.txt"
+    ],
+    "entity_sourcetexts": [
+      "Wilford Snibble Snabble"
     ],
     "entity_type": [
       "PERSON"
@@ -119572,7 +119153,7 @@
   },
   {
     "entity_count": 6,
-    "entity_name": "willard hotel",
+    "entity_name": "Willard Hotel",
     "entity_origin": [
       "transcripts\\625.autosub.srt",
       "transcripts\\630.autosub.srt",
@@ -120121,7 +119702,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "willis tower",
+    "entity_name": "Willis Tower",
     "entity_origin": [
       "transcripts\\329.autosub.srt",
       "transcripts\\335.autosub.srt",
@@ -120599,7 +120180,7 @@
   },
   {
     "entity_count": 22,
-    "entity_name": "world economic forum",
+    "entity_name": "World Economic Forum",
     "entity_origin": [
       "442: June 5, 2020",
       "618: November 15, 2021",
@@ -120623,7 +120204,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "world economic forums",
+    "entity_name": "World Economic Forums",
     "entity_origin": [
       "transcripts\\719.welder.srt",
       "transcripts\\719.welder.txt"
@@ -120773,7 +120354,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "world health organization 1026",
+    "entity_name": "World Health Organization 1026",
     "entity_origin": [
       "transcripts\\421.autosub.srt",
       "transcripts\\428.autosub.srt"
@@ -120950,7 +120531,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "world trade organization",
+    "entity_name": "World Trade Organization",
     "entity_origin": [
       "transcripts\\376.autosub.srt",
       "transcripts\\618.autosub.srt"
@@ -121336,7 +120917,7 @@
   },
   {
     "entity_count": 4,
-    "entity_name": "wuhan coronavirus",
+    "entity_name": "Wuhan Coronavirus",
     "entity_origin": [
       "transcripts\\392.autosub.srt",
       "transcripts\\396.autosub.srt",
@@ -121375,7 +120956,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "wuhan institute of virology",
+    "entity_name": "Wuhan Institute of Virology",
     "entity_origin": [
       "421: April 16, 2020",
       "422: April 17, 2020"
@@ -121393,7 +120974,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "wuhan laboratory",
+    "entity_name": "Wuhan Laboratory",
     "entity_origin": [
       "transcripts\\421.autosub.srt",
       "transcripts\\585.autosub.srt"
@@ -121601,7 +121182,7 @@
   },
   {
     "entity_count": 3,
-    "entity_name": "yellow pages",
+    "entity_name": "Yellow Pages",
     "entity_origin": [
       "transcripts\\176.autosub.srt",
       "transcripts\\280.autosub.srt",
@@ -121674,7 +121255,7 @@
   },
   {
     "entity_count": 2,
-    "entity_name": "young turk",
+    "entity_name": "Young Turk",
     "entity_origin": [
       "transcripts\\345.autosub.srt",
       "transcripts\\672.autosub.srt"
