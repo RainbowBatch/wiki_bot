@@ -2,11 +2,9 @@
 
 [[User:RainbowBatch | RainbowBatch]] automatically extracts "Entities" using spaCy's EntityRecognizer<ref>https://spacy.io/api/entityrecognizer</ref> and some custom code used to de-duplicate and regularize entities based on the Wiki's contents.
 
-This page is an attempt to make everything RainbowBatch knows available for searching and perusal. In addition, this information may be helpful to determine what missing pages might be of most value to create.
+This page is part of an attempt to make everything RainbowBatch knows available for searching and perusal. In addition, this information may be helpful to determine what missing pages might be of most value to create.
 
 Please do not edit this page directly. Contact [[User:Woursler | Woursler]] if you have a correction or suggestion, which will be added upstream.
-
-This page is under construction, check back soon.
 
 {% for entity in entities %}
 
@@ -28,8 +26,8 @@ This page is under construction, check back soon.
 |-
 |'''Sources:'''
 |
-{% for entity_origin in entity.entity_origin %}
-*{{entity_origin | pretty_entity_origin}}{% endfor %}
+{% for entity_origin in entity.grouped_entity_origin %}
+*{{entity_origin}}{% endfor %}
 |}
 
 {% endfor %}

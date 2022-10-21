@@ -54,32 +54,66 @@ NOT_RELEVANT_PEOPLE = [
 ]
 
 REMAPPING = {
-    'alex emmerich jones': 'Alex Jones',
     'Alex E. Jones': 'Alex Jones',
+    'alex emmerich jones': 'Alex Jones',
     'Alex Jones\'': 'Alex Jones',
-    'Alex': 'Alex Jones',
     'alex jonesy': 'Alex Jones',
+    'Alex Lee Boyer': 'Alex Lee Moyer',
+    'Alex': 'Alex Jones',
+    'Alex\'s True Story References': 'Alex\'s True Story',
     'Alexander Dugan': 'Alexander Dugin',
     'Bobby Barnes': 'Robert Barnes',
+    'Call Schwab': 'Klaus Schwab',
+    'Carol Quickly': 'Carroll Quigley',
+    'Carol Quigley': 'Carroll Quigley',
+    'Carrie Cassidy': 'Kerry Cassidy',
+    'Chris Madden': 'Chris Mattei',
     'Chris Maddie': 'Chris Mattei',
+    'Chris Matic': 'Chris Mattei',
+    'Chris Mattie': 'Chris Mattei',
+    'Chris Mehdi': 'Chris Mattei',
+    'Clash Schwab': 'Klaus Schwab',
+    'Claude Schwab': 'Klaus Schwab',
+    'Claus Schwab': 'Klaus Schwab',
+    'Clinton Hillary': 'Hillary Clinton',
     'Dan Bodandi': 'Dan Bidondi',
     'Dan Bodandy': 'Dan Bidondi',
     'Dan Vedandi': 'Dan Bidondi',
     'Dan Vidanti': 'Dan Bidondi',
+    'Dave Dobbin Meyer': 'Dave Daubenmire',
+    'Dave Mustane': 'Dave Mustaine',
+    'Don Friesen': 'Dan Friesen',
     'Donald Trump\u200f\u200e': 'Donald Trump',
     'Evan Mcmullen': 'Evan McMullen',
+    'Fifth Amendment': '5th Amendment',
+    'Fifth Avenue': '5th Avenue',
+    'First Amendment': '1st Amendment',
+    'Fourth Amendment': '4th Amendment',
+    'Gavin McGinnis': 'Gavin McInnes',
     'Howard Stearn': 'Howard Stern',
     'John Rapoport': "John Rappaport",
+    'Knowledgebitecom': 'knowledgefight.com',
+    'Knowledgebuycom': 'knowledgefight.com',
+    'Larry Clayman': 'Larry Klayman',
     'Leann McAdoo': "Lee Ann McAdoo",
     'Leanne McAdoo': "Lee Ann McAdoo",
     'Marty Derosa': 'Marty DeRosa',
     'Meghan Kelly': 'Megyn Kelly',
     'Neil Hesleyn': 'Neil Heslin',
+    'Ninth Circuit': '9th Circuit',
+    'Norm Pattice': 'Norm Pattis',
+    'NRA Wayne LaPierre': 'Wayne LaPierre',
+    'Ollie North': 'Oliver North',
     'Omar Alfaruk': 'Omar al-Faruq',
     'Owen Troyer': 'Owen Schroyer',
     'Rhonda Santas': 'Ron DeSantis',
     'Ron Desantis': "Ron DeSantis",
+    'Second Amendment': '2nd Amendment',
+    'Steve Crowder': 'Steven Crowder',
+    'Steve Patentic': 'Steve Pieczenik',
     'Steve Quale': "Steve Quayle",
+    'Stewart Road': 'Stewart Rhodes',
+    'Stewart Roads': 'Stewart Rhodes',
     'Wolfgang Halbeck': 'Wolfgang Halbig',
     'Zuckerberg': 'Mark Zuckerberg',
 }
@@ -187,6 +221,17 @@ def restore_specific_capitalization(cleaned_text, original_text):
 
     slightly_cleaned_text = ' '.join(original_text.split())
 
+    if slightly_cleaned_text.lower().startswith('the '):
+        slightly_cleaned_text = slightly_cleaned_text[4:]
+
+    if slightly_cleaned_text.lower().startswith('a '):
+        slightly_cleaned_text = slightly_cleaned_text[2:]
+
+    if slightly_cleaned_text.lower().startswith('an '):
+        slightly_cleaned_text = slightly_cleaned_text[3:]
+
+    slightly_cleaned_text = slightly_cleaned_text.strip()
+
     if slightly_cleaned_text.lower() == cleaned_text.lower():
         return slightly_cleaned_text
 
@@ -201,14 +246,27 @@ def restore_specific_capitalization(cleaned_text, original_text):
     return merged
 
 
+def n_upper_chars(string):
+    return sum(map(str.isupper, string))
+
 def restore_capitalization(cleaned_text, original_texts):
+    capitalizations = set()
     for original_text in original_texts:
         try:
-            return restore_specific_capitalization(cleaned_text, original_text)
-        except:
+            capitalizations.add(restore_specific_capitalization(cleaned_text, original_text))
+        except Exception as e:
+            print(e)
             pass
+        except KeyboardInterrupt:
+            pass
+
+
     # Nothing worked, we'll fall back.
-    return cleaned_text
+    if len(capitalizations) == 0:
+        return cleaned_text
+
+    # TODO(woursler): Consider different measures (e.g. right ratio.)
+    return max(capitalizations, key = n_upper_chars)
 
 
 if __name__ == '__main__':
@@ -216,8 +274,10 @@ if __name__ == '__main__':
 
     for raw_entity in raw_entities.to_dict(orient='records'):
         try:
-            restore_capitalization(
+            recap = restore_capitalization(
                 raw_entity['entity_name'], raw_entity['entity_sourcetexts'])
+            if recap != raw_entity['entity_name']:
+                print(raw_entity['entity_name'], '=>', recap)
         except:
             print(repr(raw_entity['entity_name']),
                   raw_entity['entity_sourcetexts'], '=>')

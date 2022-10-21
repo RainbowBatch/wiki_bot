@@ -29,6 +29,9 @@ for page_record in tqdm(page_listing.to_dict(orient='records')):
     page_record = Box(page_record)
 
     fname = 'kf_wiki_content/%s.wiki' % page_record.slug
+
+    if fname  == 'kf_wiki_content/RainbowBatch_Generated_Entity_Listing.wiki':
+        continue # Avoid circular entity inclusion.
     try:
 
         with open(fname, encoding='utf-8') as f:
