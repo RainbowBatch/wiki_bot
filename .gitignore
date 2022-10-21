@@ -1,8 +1,10 @@
 .~lock.*#
 __pycache__/
-secrets/
-google_credentials.json
-pywikibot/
-kf_wiki_content/
 audio_files/
+data/
+google_credentials.json
+kf_wiki_content/
+pywikibot/
+secrets/
 token.json
+transcripts/
