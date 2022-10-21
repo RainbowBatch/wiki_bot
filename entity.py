@@ -1,14 +1,22 @@
 import _thread as thread
+import box
 import en_core_web_sm
 import kfio
+import pandas as pd
+import parse
 import re
 import sys
 import threading
 
+from natsort import natsorted
 from three_merge import merge
 from time import sleep
 
 nlp = en_core_web_sm.load()
+
+episodes_df = kfio.load('data/final.json')
+
+wiki_df = kfio.load('data/scraped_page_data.json')
 
 page_listing = kfio.load('kf_wiki_content/page_listing.json')
 
@@ -249,24 +257,115 @@ def restore_specific_capitalization(cleaned_text, original_text):
 def n_upper_chars(string):
     return sum(map(str.isupper, string))
 
+
 def restore_capitalization(cleaned_text, original_texts):
     capitalizations = set()
     for original_text in original_texts:
         try:
-            capitalizations.add(restore_specific_capitalization(cleaned_text, original_text))
+            capitalizations.add(restore_specific_capitalization(
+                cleaned_text, original_text))
         except Exception as e:
             print(e)
             pass
         except KeyboardInterrupt:
             pass
 
-
     # Nothing worked, we'll fall back.
     if len(capitalizations) == 0:
         return cleaned_text
 
     # TODO(woursler): Consider different measures (e.g. right ratio.)
-    return max(capitalizations, key = n_upper_chars)
+    return max(capitalizations, key=n_upper_chars)
+
+
+def wiki_link(link_text, link_dest):
+    if link_text == link_dest:
+        return "[[%s]]" % link_dest
+    else:
+        return "[[%s|%s]]" % (link_dest, link_text)
+
+
+def lookup_by_epnum(episode_number):
+    df_view = episodes_df[episodes_df.episode_number == episode_number]
+
+    if len(df_view) > 0:
+        # Assert only one result?
+
+        return box.Box(df_view.to_dict(orient='records')[0])
+
+    return None
+
+
+def lookup_wiki_page(page_title):
+    df_view = wiki_df[wiki_df.title == page_title]
+
+    if len(df_view) > 0:
+        # Assert only one result?
+
+        return box.Box(df_view.to_dict(orient='records')[0])
+
+    return None
+
+
+REFERENCE_TYPES = {
+    'autosub': "AutoSub",
+    'otter': "otter.ai",
+    'welder': "Welder",
+    'manual': "Manually-created",
+    'whisper': "OpenAI Whisper",
+    'wiki': "Wiki Page",
+}
+
+
+def parse_entity_orgin(value):
+    if value.startswith('transcripts'):
+        parse_result = parse.parse(r"transcripts\{}.{}.{}", value)
+        episode_number, transcript_type, _ = parse_result
+
+        episode_record = lookup_by_epnum(episode_number)
+
+        if episode_record is not None:
+            return (episode_number, transcript_type, episode_record.safe_title)
+        return (episode_number, transcript_type, None)
+
+    wiki_page = lookup_wiki_page(value)
+
+    if wiki_page is not None and not pd.isna(wiki_page.episodeNumber):
+        return (wiki_page.episodeNumber, 'wiki', value)
+    return (None, 'wiki', value)
+
+
+def create_entity_origin_list_mw(entities_origins):
+    eo_rows = [parse_entity_orgin(eo) for eo in entities_origins]
+
+    eo_df = pd.DataFrame(
+        eo_rows, columns=['episode_number', 'reference_type', 'title'])
+
+    grouped_eo_df = eo_df.groupby('episode_number')
+
+    formatted_entity_strings = []
+
+    for non_episode_entry in eo_df[eo_df['episode_number'].isna()].to_dict(orient='records'):
+        formatted_entity_strings.append("%s (via %s)" % (
+            non_episode_entry['title'], REFERENCE_TYPES[non_episode_entry['reference_type']]))
+
+    for episode_number, _ in grouped_eo_df:
+        group_eo_df = grouped_eo_df.get_group(episode_number)
+        reference_types = set(group_eo_df.reference_type.to_list())
+
+        episode_record = lookup_by_epnum(episode_number)
+
+        if episode_record is None:
+            slug = episode_number
+        else:
+            slug = wiki_link(episode_record.title, episode_record.safe_title)
+
+        formatted_entity_strings.append("%s (via %s)" % (
+            slug, ', '.join([REFERENCE_TYPES[rt] for rt in sorted(reference_types)])))
+
+    assert len(formatted_entity_strings) > 0
+
+    return natsorted(formatted_entity_strings)
 
 
 if __name__ == '__main__':

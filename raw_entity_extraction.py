@@ -7,6 +7,7 @@ import re
 from box import Box
 from collections import Counter
 from collections import defaultdict
+from entity import create_entity_origin_list_mw
 from entity import extract_entities
 from entity import restore_capitalization
 from entity import simplify_entity
@@ -28,10 +29,11 @@ print("Processing Wiki Pages")
 for page_record in tqdm(page_listing.to_dict(orient='records')):
     page_record = Box(page_record)
 
+    if page_record.slug.startswith('RainbowBatch_Entities'):
+        continue  # Avoid circular entity inclusion.
+
     fname = 'kf_wiki_content/%s.wiki' % page_record.slug
 
-    if fname  == 'kf_wiki_content/RainbowBatch_Generated_Entity_Listing.wiki':
-        continue # Avoid circular entity inclusion.
     try:
 
         with open(fname, encoding='utf-8') as f:
@@ -142,16 +144,23 @@ for s, count in tqdm(counter.most_common()):
 
 print("Finalizing and saving data.")
 
-df = pd.DataFrame(rows, columns=header)
+entities_df = pd.DataFrame(rows, columns=header)
 
 # Only include things we don't have existing knowledge of...
-df['is_existing'] = df.entity_name.isin(map(lambda x: x.lower(
-), page_listing.title.to_list())) | df.entity_name.isin(page_listing.title.to_list())
-df['is_known_missing'] = df.entity_name.isin(map(lambda x: x.lower(
-), known_missing_pages.title.to_list())) | df.entity_name.isin(known_missing_pages.title.to_list())
+entities_df['is_existing'] = entities_df.entity_name.isin(map(lambda x: x.lower(
+), page_listing.title.to_list())) | entities_df.entity_name.isin(page_listing.title.to_list())
+entities_df['is_known_missing'] = entities_df.entity_name.isin(map(lambda x: x.lower(
+), known_missing_pages.title.to_list())) | entities_df.entity_name.isin(known_missing_pages.title.to_list())
 print("Starting sort.")
-df = df.sort_values('entity_name', key=lambda col: col.str.lower())
+entities_df = entities_df.sort_values(
+    'entity_name', key=lambda col: col.str.lower())
 
-print(df)
+entities_df['grouped_entity_origin'] = entities_df.entity_origin.apply(
+    create_entity_origin_list_mw)
 
-kfio.save(df, 'data/raw_entities.json')
+entities_df['starting_char'] = entities_df.entity_name.apply(
+    lambda name: name[0].upper())
+
+print(entities_df)
+
+kfio.save(entities_df, 'data/raw_entities.json')
