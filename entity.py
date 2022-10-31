@@ -8,6 +8,8 @@ import re
 import sys
 import threading
 
+from collections import Counter
+from collections import defaultdict
 from natsort import natsorted
 from three_merge import merge
 from time import sleep
@@ -95,6 +97,9 @@ REMAPPING = {
     'Evan Mcmullen': 'Evan McMullen',
     'Fifth Amendment': '5th Amendment',
     'Fifth Avenue': '5th Avenue',
+    'Fourth Amendment 2451': '4th Amendment',
+    'Fourteenth Amendment': '14th Amendment',
+    'Seventh Amendment': '7th Amendment',
     'First Amendment': '1st Amendment',
     'Fourth Amendment': '4th Amendment',
     'Gavin McGinnis': 'Gavin McInnes',
@@ -126,6 +131,7 @@ REMAPPING = {
     'Zuckerberg': 'Mark Zuckerberg',
 }
 
+# TODO: AstraZeneca, CenterPoint, CounterPoint, Daniel DuPont, DeAnna Lorraine is capitialized wrong.
 
 OVERUSED = [
     'Alex Jones',
@@ -176,6 +182,7 @@ def simplify_entity(s):
     s = s.strip()
     assert u'\u200f\u200e' not in s
     s = ' '.join(s.split())
+
     if s.endswith("'s"):
         s = s[:-2]
     if s.lower().startswith("a "):
@@ -184,6 +191,13 @@ def simplify_entity(s):
         s = s[3:]
     if s.lower().startswith("the "):
         s = s[4:]
+    if s.lower().startswith("this "):
+        s = s[5:]
+    if s.lower().startswith("these "):
+        s = s[6:]
+    if s.lower().startswith("their "):
+        s = s[6:]
+
     while s.lower() in REMAPPING:
         if s.lower() == REMAPPING[s.lower()].lower():
             break
@@ -192,14 +206,44 @@ def simplify_entity(s):
     return CAPITALIZATION_REMAPPING.get(s, s)
 
 
-def extract_entities(S, source):
-    return [(X.text, X.label_, source)
+def extract_entities(S, origin):
+    return [(X.text, X.label_, origin)
             for X in nlp(S).ents]
+
+
+def aggregate_proto_entities(entities):
+    counter = Counter()
+    types = defaultdict(Counter)
+    origins = defaultdict(Counter)
+    sourcetexts = defaultdict(Counter)
+
+    for text, label, origin in entities:
+        counter.update([text])
+        types[text].update([label])
+        origins[text].update([origin])
+
+    header = [
+        "entity_name",
+        "entity_count",
+        "entity_type",
+        "entity_origin",
+        "entity_sourcetexts",
+    ]
+    rows = []
+
+    for e_text, e_count in counter.most_common():
+        e_types = dict(types[e_text].most_common())
+        e_origins = dict(origins[e_text].most_common())
+        e_sourcetext = {e_text: e_count}
+
+        rows.append([e_text, e_count, e_types, e_origins, e_sourcetext])
+
+    return pd.DataFrame(rows, columns=header)
 
 
 def quit_function(fn_name):
     # print to stderr, unbuffered in Python 2.
-    print('{0} took too long'.format(fn_name), file=sys.stderr)
+    # print('{0} took too long'.format(fn_name), file=sys.stderr)
     sys.stderr.flush()  # Python 3 stderr is likely buffered.
     thread.interrupt_main()  # raises KeyboardInterrupt
 
@@ -238,6 +282,15 @@ def restore_specific_capitalization(cleaned_text, original_text):
     if slightly_cleaned_text.lower().startswith('an '):
         slightly_cleaned_text = slightly_cleaned_text[3:]
 
+    if slightly_cleaned_text.lower().startswith("this "):
+        slightly_cleaned_text = slightly_cleaned_text[5:]
+
+    if slightly_cleaned_text.lower().startswith("these "):
+        slightly_cleaned_text = slightly_cleaned_text[6:]
+
+    if slightly_cleaned_text.lower().startswith("their "):
+        slightly_cleaned_text = slightly_cleaned_text[6:]
+
     slightly_cleaned_text = slightly_cleaned_text.strip()
 
     if slightly_cleaned_text.lower() == cleaned_text.lower():
@@ -258,6 +311,12 @@ def n_upper_chars(string):
     return sum(map(str.isupper, string))
 
 
+def capitalization_goodness(string):
+    return abs(
+        (n_upper_chars(string) / (1 + len(string.split(' ')))) - 1
+    )
+
+
 def restore_capitalization(cleaned_text, original_texts):
     capitalizations = set()
     for original_text in original_texts:
@@ -265,7 +324,7 @@ def restore_capitalization(cleaned_text, original_texts):
             capitalizations.add(restore_specific_capitalization(
                 cleaned_text, original_text))
         except Exception as e:
-            print(e)
+            # print(e)
             pass
         except KeyboardInterrupt:
             pass
@@ -275,7 +334,7 @@ def restore_capitalization(cleaned_text, original_texts):
         return cleaned_text
 
     # TODO(woursler): Consider different measures (e.g. right ratio.)
-    return max(capitalizations, key=n_upper_chars)
+    return min(capitalizations, key=capitalization_goodness)
 
 
 def wiki_link(link_text, link_dest):
@@ -336,7 +395,7 @@ def parse_entity_orgin(value):
 
 
 def create_entity_origin_list_mw(entities_origins):
-    eo_rows = [parse_entity_orgin(eo) for eo in entities_origins]
+    eo_rows = [[None if s == 'None' else s for s in eo.split('__')] for eo in entities_origins]
 
     eo_df = pd.DataFrame(
         eo_rows, columns=['episode_number', 'reference_type', 'title'])
@@ -378,8 +437,9 @@ if __name__ == '__main__':
             if recap != raw_entity['entity_name']:
                 print(raw_entity['entity_name'], '=>', recap)
         except:
-            print(repr(raw_entity['entity_name']),
-                  raw_entity['entity_sourcetexts'], '=>')
-            print('Failure')
+            # print(repr(raw_entity['entity_name']),
+            #      raw_entity['entity_sourcetexts'], '=>')
+            # print('Failure')
+            pass
 
     print(raw_entities)

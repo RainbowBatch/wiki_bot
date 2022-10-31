@@ -19,18 +19,22 @@ def save(df, fname):
         )
 
 
+def serialize_without_nulls(df):
+    return [
+        {
+            key: value
+            for key, value in row.items()
+            if isinstance(value, list) or pd.notnull(value)
+        }
+        for row in json.loads(df.to_json(orient='records'))
+    ]
+
+
 def save_without_nulls(df, fname):
     with open(fname, "w", encoding='utf-8') as json_file:
         json_file.write(
             json.dumps(
-                [
-                    {
-                        key: value
-                        for key, value in row.items()
-                        if isinstance(value, list) or pd.notnull(value)
-                    }
-                    for row in json.loads(df.to_json(orient='records'))
-                ],
+                serialize_without_nulls(df),
                 indent=2, sort_keys=True,
             )
         )
