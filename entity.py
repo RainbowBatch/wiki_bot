@@ -90,6 +90,8 @@ REMAPPING = {
     'Dan Bodandy': 'Dan Bidondi',
     'Dan Vedandi': 'Dan Bidondi',
     'Dan Vidanti': 'Dan Bidondi',
+    'Dan Bidadi': 'Dan Bidondi',
+    'Dan Madani': 'Dan Bidondi',
     'Dave Dobbin Meyer': 'Dave Daubenmire',
     'Dave Mustane': 'Dave Mustaine',
     'Don Friesen': 'Dan Friesen',
