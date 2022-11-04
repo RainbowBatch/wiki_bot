@@ -1,8 +1,10 @@
+import datetime
 import pandas as pd
 import parse
 
 from attr import attr
 from attr import attrs
+from box import Box
 from box import Box
 from glob import glob
 from tqdm import tqdm
@@ -28,6 +30,7 @@ def create_best_transcript_listing():
         'autosub',
         'welder',
         'whisper',
+        'fek', # TODO(woursler)
         'otter',
         'manual',
     ]
@@ -51,6 +54,36 @@ class TranscriptBlock:
     text = attr(default=None)
 
 
+@attrs
+class Transcript:
+    metadata = attr(default=None)
+    blocks = attr(default=None)
+
+
+def parse_timestamp(ts_str):
+    ts_str = ts_str.strip()
+
+    pattern = '%M:%S'
+    if ts_str.count(':') == 2:
+        pattern = '%H:' + pattern
+    if ',' in ts_str:
+        pattern += ",%f"
+    if '.' in ts_str:
+        pattern += ".%f"
+
+    ts_dt = datetime.datetime.strptime(ts_str, pattern)
+    ts_seconds = datetime.timedelta(hours=ts_dt.hour, minutes=ts_dt.minute,
+                                    seconds=ts_dt.second, microseconds=ts_dt.microsecond).total_seconds()
+
+    return ts_seconds
+
+
+def format_timestamp(ts_seconds):
+    hours, remainder = divmod(ts_seconds, 3600)
+    minutes, seconds = divmod(remainder, 60)
+    seconds, microseconds = divmod(seconds, 1)
+    return '{:02}:{:02}:{:02}.{}'.format(int(hours), int(minutes), int(seconds), str(microseconds).split('.')[-1][:3])
+
 
 def parse_whisper_txt(transcript_text):
     transcript_text = transcript_text.replace('\x00', '').replace('ÿþ', '')
@@ -64,14 +97,16 @@ def parse_whisper_txt(transcript_text):
         line = block.strip()
         if len(line) == 0:
             continue
-        start_timestamp, end_timestamp, text = parse.parse(parse_template, line)
+        start_timestamp, end_timestamp, text = parse.parse(
+            parse_template, line)
 
         transcript_blocks.append(TranscriptBlock(
-            start_timestamp=start_timestamp,
-            end_timestamp=end_timestamp,
+            start_timestamp=parse_timestamp(start_timestamp),
+            end_timestamp=parse_timestamp(end_timestamp),
             text=text.strip(),
         ))
     return transcript_blocks
+
 
 def parse_otter_txt(transcript_text):
     blocks = transcript_text.split('\n\n')
@@ -85,12 +120,14 @@ def parse_otter_txt(transcript_text):
         block_lines = block.split('\n')
         assert len(block_lines) == 2, block
 
-        name, timestamp = block_lines[0].strip().split('  ')
+        first_line_chunks = block_lines[0].strip().split('  ')
+        assert len(first_line_chunks) == 2, block_lines[0]
+        name, timestamp = first_line_chunks
         text = block_lines[1].strip()
 
         transcript_blocks.append(TranscriptBlock(
             speaker_name=name,
-            start_timestamp=timestamp,
+            start_timestamp=parse_timestamp(timestamp),
             text=text,
         ))
 
@@ -114,15 +151,16 @@ def parse_srt(transcript_text):
         text = block_lines[2]
 
         transcript_blocks.append(TranscriptBlock(
-            start_timestamp=start_timestamp,
-            end_timestamp=end_timestamp,
+            start_timestamp=parse_timestamp(start_timestamp),
+            end_timestamp=parse_timestamp(end_timestamp),
             text=text,
         ))
 
     return transcript_blocks
 
 
-format_parsers = {
+FORMAT_PARSERS = {
+    ('fek', 'txt'): parse_otter_txt, # FowlEdgeKnight is mostly editing otter transcripts.
     ('otter', 'txt'): parse_otter_txt,
     ('autosub', 'srt'): parse_srt,
     ('welder', 'srt'): parse_srt,
@@ -135,14 +173,13 @@ def parse_transcript(transcript_record):
     format_parser_key = (transcript_record.transcript_type,
                          transcript_record.transcript_format)
 
-    assert format_parser_key in format_parsers, format_parser_key
-
-    format_parser = format_parsers[format_parser_key]
+    assert format_parser_key in FORMAT_PARSERS, format_parser_key
 
     with open(transcript_record.transcript_fname) as transcript_file:
-        transcript_blocks = format_parser(transcript_file.read())
+        transcript_blocks = FORMAT_PARSERS[format_parser_key](
+            transcript_file.read())
 
-    return transcript_blocks
+    return Transcript(metadata=Box(transcript_record), blocks=transcript_blocks)
 
 
 if __name__ == '__main__':
