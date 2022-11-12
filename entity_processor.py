@@ -3,6 +3,7 @@ import pandas as pd
 import pathlib
 import re
 
+from collections import Counter
 from collections import defaultdict
 from entity import create_entity_origin_list_mw
 from entity import restore_capitalization
@@ -61,6 +62,15 @@ def banned_type_fraction(entity_type):
     return num / denom
 
 
+def has_diverse_origins(entity_origins):
+    origin_counter = Counter([
+        origin.split('__')[0]
+        for origin in entity_origins
+    ])
+
+    return origin_counter['None'] > 1 or len(origin_counter) > 1
+
+
 print("Grouping and filtering entities.")
 entities_records = []
 
@@ -76,13 +86,12 @@ for e_key, proto_entities in tqdm(grouped_proto_entities.items()):
 
     z = group_proto_entities(proto_entities)
 
+
     if banned_type_fraction(z['entity_type']) > 0.8:
         continue
 
-    # TODO(woursler): Better source based filtering.
-
     # There's little value in entities that only appear in one episode.
-    if len(z['entity_origin']) <= 1:
+    if not has_diverse_origins(set(z['entity_origin'].keys())):
         continue
 
     z['entity_name'] = restore_capitalization(
