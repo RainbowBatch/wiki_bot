@@ -23,6 +23,17 @@ def create_full_transcript_listing():
     return pd.DataFrame(rows, columns=header)
 
 
+type_sorter = [
+    'autosub',
+    'welder',
+    'whisper',
+    'fek',  # TODO(woursler)
+    'otter',
+    'manual',
+]
+type_sorter_index = dict(zip(type_sorter, range(len(type_sorter))))
+
+
 def create_best_transcript_listing():
     df = create_full_transcript_listing()
 
@@ -30,7 +41,7 @@ def create_best_transcript_listing():
         'autosub',
         'welder',
         'whisper',
-        'fek', # TODO(woursler)
+        'fek',  # TODO(woursler)
         'otter',
         'manual',
     ]
@@ -59,6 +70,11 @@ class Transcript:
     metadata = attr(default=None)
     blocks = attr(default=None)
 
+    def augment_timestamps(self):
+        for i in range(len(self.blocks) - 1):
+            if self.blocks[i].end_timestamp is None:
+                self.blocks[i].end_timestamp = self.blocks[i+1].start_timestamp
+
 
 def parse_timestamp(ts_str):
     ts_str = ts_str.strip()
@@ -79,10 +95,12 @@ def parse_timestamp(ts_str):
 
 
 def format_timestamp(ts_seconds):
+    if pd.isna(ts_seconds):
+        return None
     hours, remainder = divmod(ts_seconds, 3600)
     minutes, seconds = divmod(remainder, 60)
     seconds, microseconds = divmod(seconds, 1)
-    return '{:02}:{:02}:{:02}.{}'.format(int(hours), int(minutes), int(seconds), str(microseconds).split('.')[-1][:3])
+    return '{:02}:{:02}:{:02}.{}'.format(int(hours), int(minutes), int(seconds), str(microseconds).split('.')[-1][:3].ljust(3, '0'))
 
 
 def parse_whisper_txt(transcript_text):
@@ -160,7 +178,8 @@ def parse_srt(transcript_text):
 
 
 FORMAT_PARSERS = {
-    ('fek', 'txt'): parse_otter_txt, # FowlEdgeKnight is mostly editing otter transcripts.
+    # FowlEdgeKnight is mostly editing otter transcripts.
+    ('fek', 'txt'): parse_otter_txt,
     ('otter', 'txt'): parse_otter_txt,
     ('autosub', 'srt'): parse_srt,
     ('welder', 'srt'): parse_srt,

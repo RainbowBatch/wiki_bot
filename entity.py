@@ -60,9 +60,11 @@ NOT_RELEVANT_PEOPLE = [
     "New World Order",
     "Project Veritas",
     "Rube Goldberg",
+    "Studio Ghibli",
     "The Sandy Hook Elementary Massacre",
     "Wild Wild West",
     "Wolfgang Puck",
+    "Young Turks",
     "Zero Hedge",
 ]
 
