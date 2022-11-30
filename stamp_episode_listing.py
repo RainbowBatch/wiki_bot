@@ -66,7 +66,7 @@ def stamp_episode_listing():
     coverage_years = list(sorted(set(episodes_df.coverage_year.to_list())))
 
     release_year_shards = {
-        release_year: episodes_df[episodes_df.release_year == release_year].sort_values('maya_release_date').to_dict(orient='records')
+        release_year: episodes_df[episodes_df.release_year == release_year].sort_values(['maya_release_date', 'episode_number']).to_dict(orient='records')
         for release_year in release_years
     }
 
@@ -77,7 +77,7 @@ def stamp_episode_listing():
     }
 
     category_shards = {
-        category: episodes_df[episodes_df.categories.map(set([category]).issubset)].sort_values('maya_release_date').to_dict(orient='records')
+        category: episodes_df[episodes_df.categories.map(set([category]).issubset)].sort_values(['maya_release_date', 'episode_number']).to_dict(orient='records')
         for category in categories
     }
 
