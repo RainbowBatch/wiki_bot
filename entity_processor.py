@@ -110,13 +110,17 @@ assert git_branch == 'latest_edits', "Please checkout latest_edits! Currently on
 
 page_listing = kfio.load('kf_wiki_content/page_listing.json')
 known_missing_pages = kfio.load('data/missing_pages.json')
-
+redirects = kfio.load('data/wiki_redirects.json')
 
 # Only include things we don't have existing knowledge of...
 entities_df['is_existing'] = entities_df.entity_name.isin(map(lambda x: x.lower(
 ), page_listing.title.to_list())) | entities_df.entity_name.isin(page_listing.title.to_list())
 entities_df['is_known_missing'] = entities_df.entity_name.isin(map(lambda x: x.lower(
 ), known_missing_pages.title.to_list())) | entities_df.entity_name.isin(known_missing_pages.title.to_list())
+
+# TODO(woursler): Why doesn't this work
+entities_df['is_redirect'] = entities_df.entity_name.isin(map(lambda x: x.lower(
+), redirects['from'].to_list()))
 
 entities_df['grouped_entity_origin'] = entities_df.entity_origin.apply(
     create_entity_origin_list_mw)

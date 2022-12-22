@@ -118,7 +118,7 @@ def search_transcripts(searchterm):
 
     result_df = pd.DataFrame.from_records(result_records)
 
-    best_result_df = result_df.nlargest(100, 'match').sort_values(
+    best_result_df = result_df.nlargest(1000, 'match').sort_values(
         by=['episode_number', 'start_timestamp'])
 
     grouped = best_result_df.groupby('episode_number')

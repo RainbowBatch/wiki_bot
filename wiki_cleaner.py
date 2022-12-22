@@ -110,8 +110,14 @@ def linewise_simplification(raw_mediawiki):
         '''This amounts to a really hacky state_machine.'''
         state = LinewiseVisitorState.START
 
+        categories = []
+
         for classification, line in classified_lines:
             assert isinstance(state, LinewiseVisitorState)
+
+            if classification == LineClassification.CATEGORY_TAG:
+                categories.append(line)
+                continue
 
             if classification == LineClassification.IGNORED:
                 continue
@@ -130,8 +136,6 @@ def linewise_simplification(raw_mediawiki):
                     state = LinewiseVisitorState.BULLETS
                 if LineClassification.is_preserved(classification):
                     state = LinewiseVisitorState.PRESERVE
-                if classification == LineClassification.CATEGORY_TAG:
-                    state = LinewiseVisitorState.CATEGORIES
                 if classification == LineClassification.TABLE_START:
                     state = LinewiseVisitorState.TABLE
 
@@ -145,10 +149,6 @@ def linewise_simplification(raw_mediawiki):
                 yield '\n'
                 state = LinewiseVisitorState.BULLETS
 
-            if classification == LineClassification.CATEGORY_TAG and state != LinewiseVisitorState.CATEGORIES:
-                yield '\n'
-                state = LinewiseVisitorState.CATEGORIES
-
             if classification == LineClassification.BLANK:
                 if state not in [LinewiseVisitorState.START, LinewiseVisitorState.BULLETS, LinewiseVisitorState.CATEGORIES]:
                     state = LinewiseVisitorState.BLANK
@@ -158,14 +158,6 @@ def linewise_simplification(raw_mediawiki):
                 if classification == LineClassification.BLANK:
                     continue
                 if not LineClassification.is_bullet(classification):
-                    yield '\n'
-                    # TODO(woursler): Maybe this does slightly the wrong thing?
-                    state = LinewiseVisitorState.PRESERVE
-
-            if state == LinewiseVisitorState.CATEGORIES:
-                if classification == LineClassification.BLANK:
-                    continue
-                if not classification == LineClassification.CATEGORY_TAG:
                     yield '\n'
                     # TODO(woursler): Maybe this does slightly the wrong thing?
                     state = LinewiseVisitorState.PRESERVE
@@ -183,7 +175,11 @@ def linewise_simplification(raw_mediawiki):
                 yield line.strip()[:-5] + '\n\n'
             else:
                 yield line
-        yield '\n'
+        yield '\n\n'
+
+        for category in categories:
+            yield category
+        yield '\n\n'
 
     classified_lines = [
         (classify_line(line), line) for line in StringIO(raw_mediawiki)

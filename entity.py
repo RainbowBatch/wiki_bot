@@ -77,8 +77,10 @@ REMAPPING = {
     'Alex': 'Alex Jones',
     'Alex\'s True Story References': 'Alex\'s True Story',
     'Alexander Dugan': 'Alexander Dugin',
+    'Alexander Emmerich Jones': 'Alex Jones',
     'Ally Alexander': 'Ali Alexander',
     'Bobby Barnes': 'Robert Barnes',
+    'Brock Obama': 'Barack Obama',
     'Call Schwab': 'Klaus Schwab',
     'Carol Quickly': 'Carroll Quigley',
     'Carol Quigley': 'Carroll Quigley',
@@ -225,6 +227,9 @@ def simplify_entity(s):
 
 
 def extract_entities(S, origin):
+    S = S.strip()
+    if len(S) == 0:
+        return []
     return [(X.text, X.label_, origin)
             for X in nlp(S).ents]
 

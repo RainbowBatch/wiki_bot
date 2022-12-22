@@ -22,3 +22,5 @@
     | text      = {{transcript_block.text}}
 {% raw %}}}{% endraw %}
 {% endfor %}
+
+[[Category:Transcripts]]

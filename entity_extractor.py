@@ -1,20 +1,23 @@
 import click
 import datetime
-import maya
-import pathlib
 import kfio
+import maya
 import pandas as pd
 import pandoc
+import pathlib
 
 from box import Box
-from pygit2 import Repository
 from entity import aggregate_proto_entities
 from entity import extract_entities
+from entity import parse_entity_orgin
+from entity_extraction_util import transcript_extractor
+from entity_extraction_util import wikipage_extractor
+from pprint import pprint
+from pygit2 import Repository
 from pytimeparse.timeparse import timeparse as duration_seconds
 from tqdm import tqdm
 from transcripts import create_full_transcript_listing
-from entity import parse_entity_orgin
-from pprint import pprint
+from transcripts import parse_transcript
 
 
 @click.command()
@@ -57,36 +60,22 @@ def extract_proto_entities(margin, overwrite):
         for page_record in tqdm(page_listing.to_dict(orient='records')):
             page_record = Box(page_record)
 
-            if page_record.slug.startswith('RainbowBatch_Entities') or page_record.slug.startswith('Transcript'):
+            if page_record.slug.startswith('RainbowBatch_Entities') or page_record.slug.startswith('Transcript') or page_record.slug.startswith('List_of_Knowledge_Fight_episodes'):
                 continue  # Avoid circular entity inclusion.
 
             fname = 'kf_wiki_content/%s.wiki' % page_record.slug
 
-            try:
+            origin = '__'.join(
+                ['None' if frag is None else frag for frag in parse_entity_orgin(page_record.title)])
 
-                with open(fname, encoding='utf-8') as f:
-                    f_contents = f.read()
+            with open(fname, encoding='utf-8') as f:
+                f_contents = f.read()
 
-                if '#redirect' in f_contents:
-                    # Don't process redirects.
-                    continue
-
-                # Strip out existing links.
-                f_contents = pandoc.write(
-                    pandoc.read(f_contents, format="mediawiki"),
-                    format="plain"
-                )
-
-                origin = '__'.join(['None' if frag is None else frag for frag in parse_entity_orgin(page_record.title)])
-
-                proto_entities = aggregate_proto_entities(
-                    extract_entities(f_contents, origin)).sort_values(
-                    'entity_name', key=lambda col: col.str.lower())
-                new_proto_entities[origin] = kfio.serialize_without_nulls(
-                    proto_entities)
-            except Exception as e:
-                print(e)
-                print("Error Processing", fname)
+            proto_entities = aggregate_proto_entities(
+                wikipage_extractor(f_contents, origin)).sort_values(
+                'entity_name', key=lambda col: col.str.lower())
+            new_proto_entities[origin] = kfio.serialize_without_nulls(
+                proto_entities)
     else:
         assert not overwrite, "Checkout latest_edits to use overwrite more."
         print("Skipping Wiki pages. Checkout latest_edits to reindex.")
@@ -104,19 +93,14 @@ def extract_proto_entities(margin, overwrite):
         cutoff_time = last_run_time.subtract(seconds=margin_seconds)
         relevant_transcript_listing = transcript_listing[transcript_listing.modified_time > cutoff_time]
 
-    for f_name in tqdm(relevant_transcript_listing.transcript_fname):
-        with open(f_name, 'rb') as f:
-            f_byte_contents = f.read()
-            try:
-                f_contents = f_byte_contents.decode('utf-8')
-            except UnicodeDecodeError:
-                f_contents = f_byte_contents.decode('utf-16')
+    for transcript_record in tqdm(relevant_transcript_listing.to_dict(orient='records')):
+        transcript = parse_transcript(transcript_record)
 
-        # TODO(woursler): Do this from the transcript table.
-        origin = '__'.join(['None' if frag is None else frag for frag in parse_entity_orgin(f_name)])
+        origin = '__'.join(['None' if frag is None else frag for frag in parse_entity_orgin(
+            transcript_record['transcript_fname'])])
 
         proto_entities = aggregate_proto_entities(
-            extract_entities(f_contents, origin)).sort_values(
+            transcript_extractor(transcript, origin)).sort_values(
             'entity_name', key=lambda col: col.str.lower())
         new_proto_entities[origin] = kfio.serialize_without_nulls(
             proto_entities)
