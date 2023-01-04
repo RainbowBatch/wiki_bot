@@ -13,12 +13,17 @@ from jinja2 import select_autoescape
 from pprint import pprint
 from pygit2 import Repository
 from wiki_cleaner import simple_format
+from transcripts import create_best_transcript_listing, parse_transcript, format_timestamp
+from tqdm import tqdm
 
 
 env = Environment(
     loader=FileSystemLoader("templates"),
     autoescape=select_autoescape()
 )
+
+env.filters["format_speaker"] = lambda speaker: "Unknown Speaker" if speaker is None else speaker
+env.filters["format_timestamp"] = format_timestamp
 
 template = env.get_template('transcript.wiki.template')
 
@@ -56,9 +61,13 @@ def stamp_transcript():
 
     assert git_branch == 'bot_raw', "Please checkout bot_raw! Currently on %s." % git_branch
 
-    for transcript_fname in glob('transcripts/*.otter.txt'):
-        print("Processing", transcript_fname)
-        episode_number = parse.parse(r"transcripts\{}.otter.txt", transcript_fname)[0]
+
+    transcript_listing = create_best_transcript_listing()
+    transcript_listing = transcript_listing[transcript_listing.transcript_type != 'autosub']
+
+    for transcript_record in tqdm(transcript_listing.to_dict(orient='records')):
+        transcript_fname = transcript_record['transcript_fname']
+        episode_number = transcript_record['episode_number']
 
         idxs = episodes_df.index[episodes_df.episode_number == episode_number].tolist()
         assert len(idxs) == 1
@@ -66,12 +75,11 @@ def stamp_transcript():
 
         episode_details = episodes_df.iloc[idx]
 
-        with open(transcript_fname) as transcript_file:
-            transcript_blocks = process_otter_transcript(transcript_file.read())
+        transcript = parse_transcript(transcript_record)
 
         raw = template.render(
             episode_details=episode_details,
-            transcript_blocks=transcript_blocks,
+            transcript_blocks=transcript.blocks,
         )
 
         pretty = simple_format(raw)

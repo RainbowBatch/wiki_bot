@@ -8,7 +8,6 @@ page_listing.oldid = page_listing.oldid.astype('Int64')
 
 def add(title, slug):
     global page_listing
-    print("Adding ", title, slug)
 
     page_listing = page_listing.append(
         {'title': title, 'slug': slug}, ignore_index=True)

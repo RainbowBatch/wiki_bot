@@ -17,8 +17,8 @@
 
 {% for transcript_block in transcript_blocks %}
 {% raw %}{{TranscriptBlock{% endraw %}
-    | name      = {{transcript_block.name}}
-    | timestamp = {{transcript_block.timestamp}}
+    | name      = {{transcript_block.speaker_name | format_speaker}}
+    | timestamp = {{transcript_block.start_timestamp | format_timestamp}}
     | text      = {{transcript_block.text}}
 {% raw %}}}{% endraw %}
 {% endfor %}

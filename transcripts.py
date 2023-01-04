@@ -33,24 +33,23 @@ type_sorter = [
 ]
 type_sorter_index = dict(zip(type_sorter, range(len(type_sorter))))
 
+format_sorter = [
+    'srt',
+    'vtt',
+    'txt', # TODO(woursler): Migrate to vtt?
+]
+format_sorter_index = dict(zip(type_sorter, range(len(type_sorter))))
+
 
 def create_best_transcript_listing():
     df = create_full_transcript_listing()
 
-    type_sorter = [
-        'autosub',
-        'welder',
-        'whisper',
-        'fek',  # TODO(woursler)
-        'otter',
-        'manual',
-    ]
-    type_sorter_index = dict(zip(type_sorter, range(len(type_sorter))))
     df['transcript_type_rank'] = df['transcript_type'].map(type_sorter_index)
+    df['transcript_format_rank'] = df['transcript_format'].map(format_sorter_index)
 
     df = df.sort_values(
-        ['episode_number', 'transcript_type_rank', 'transcript_format'],
-        ascending=[True, True, False],
+        ['episode_number', 'transcript_type_rank', 'transcript_format_rank'],
+        ascending=[True, True, True],
     )
 
     return df.drop_duplicates('episode_number', keep='last')[['episode_number', 'transcript_type',
@@ -177,13 +176,35 @@ def parse_srt(transcript_text):
     return transcript_blocks
 
 
+def parse_vtt(transcript_text):
+    transcript_blocks = []
+
+    for block in transcript_text.split('\n\n'):
+        if block.strip() == 'WEBVTT':
+            continue
+        if block.strip() == '':
+            continue
+
+        tss, text = block.split('\n')
+        start_timestamp, end_timestamp = tss.split(' --> ')
+        transcript_blocks.append(TranscriptBlock(
+            start_timestamp=parse_timestamp(start_timestamp),
+            end_timestamp=parse_timestamp(end_timestamp),
+            text=text,
+        ))
+
+    return transcript_blocks
+
+
 FORMAT_PARSERS = {
     # FowlEdgeKnight is mostly editing otter transcripts.
     ('fek', 'txt'): parse_otter_txt,
     ('otter', 'txt'): parse_otter_txt,
     ('autosub', 'srt'): parse_srt,
     ('welder', 'srt'): parse_srt,
+    ('whisper', 'vtt'): parse_vtt,
     ('whisper', 'txt'): parse_whisper_txt,
+    ('whisper', 'srt'): parse_srt,
 }
 
 
