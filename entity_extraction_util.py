@@ -31,7 +31,7 @@ def wikipage_extractor(wiki_text, origin):
                 continue
             people = people.value.split(',')
             for person in people:
-                yield from extract_entities(person.strip(), origin)
+                yield from extract_entities(wikitext_extractor(person.strip()), origin)
 
     # Loop through the sections of the page
     for section in wiki_page.sections:
