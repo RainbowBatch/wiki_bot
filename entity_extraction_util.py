@@ -21,7 +21,17 @@ def wikipage_extractor(wiki_text, origin):
     # Parse the wiki text
     wiki_page = wikitextparser.parse(wiki_text)
 
-    # TODO(woursler): Handle guest section specifically?
+    # Handle guest section specifically.
+    for template in wiki_page.templates:
+            template_name = template.name.strip().lower()
+            if template_name != 'episode':
+                continue
+            people = template.get_arg('appearance')
+            if people is None:
+                continue
+            people = people.value.split(',')
+            for person in people:
+                yield from extract_entities(person.strip(), origin)
 
     # Loop through the sections of the page
     for section in wiki_page.sections:

@@ -199,6 +199,8 @@ def simplify_entity(s):
     s = s.replace(u'\u200f', '').replace(u'\u200e', '')
     s = s.replace('.', '')
     s = s.replace('-', ' ')
+    s = s.replace('[', '')
+    s = s.replace(']', '')
     s = s.strip()
     assert u'\u200f\u200e' not in s
     s = ' '.join(s.split())
