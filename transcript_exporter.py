@@ -12,8 +12,6 @@ transcript_listing = create_best_transcript_listing()
 episode_listing = kfio.load('data/final.json')
 
 
-transcript_listing = create_best_transcript_listing()
-
 KF_TRANSCRIPT_NAMESPACE = uuid.UUID('c43bff5e-c3d0-4ee8-9925-d76901871ef7')
 
 

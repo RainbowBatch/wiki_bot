@@ -3,6 +3,7 @@ from pick import pick
 from pprint import pprint, pformat
 from box import Box
 from wiki_cleaner import simple_format
+from tqdm import tqdm
 
 page_data = kfio.load('data/scraped_page_data.json')
 
@@ -19,7 +20,7 @@ page_data = page_data[page_data.wiki_categories.map(S.issubset)]
 page_data = page_data[page_data.wiki_categories.str.len() <= len(S)]
 
 
-for page_record in page_data.to_dict(orient='records'):
+for page_record in tqdm(page_data.to_dict(orient='records')):
     page_record = Box(page_record)
 
     if page_record.redirect is not None:

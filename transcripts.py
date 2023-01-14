@@ -1,10 +1,10 @@
 import datetime
 import pandas as pd
 import parse
+import json
 
 from attr import attr
 from attr import attrs
-from box import Box
 from box import Box
 from glob import glob
 from tqdm import tqdm
@@ -27,8 +27,8 @@ type_sorter = [
     'autosub',
     'welder',
     'whisper',
-    'fek',  # TODO(woursler)
     'otter',
+    'fek',  # TODO(woursler): move to manual and attribute in authors metadata.
     'manual',
 ]
 type_sorter_index = dict(zip(type_sorter, range(len(type_sorter))))
@@ -37,6 +37,7 @@ format_sorter = [
     'srt',
     'vtt',
     'txt', # TODO(woursler): Migrate to vtt?
+    'json',
 ]
 format_sorter_index = dict(zip(type_sorter, range(len(type_sorter))))
 
@@ -165,7 +166,7 @@ def parse_srt(transcript_text):
         assert len(block_lines) == 3, block_lines
 
         start_timestamp, end_timestamp = block_lines[1].split(" --> ")
-        text = block_lines[2]
+        text = block_lines[2].strip()
 
         transcript_blocks.append(TranscriptBlock(
             start_timestamp=parse_timestamp(start_timestamp),
@@ -190,7 +191,24 @@ def parse_vtt(transcript_text):
         transcript_blocks.append(TranscriptBlock(
             start_timestamp=parse_timestamp(start_timestamp),
             end_timestamp=parse_timestamp(end_timestamp),
-            text=text,
+            text=text.strip(),
+        ))
+
+    return transcript_blocks
+
+
+def parse_json_transcript(transcript_text):
+    transcript_json = Box(json.loads(transcript_text))
+
+    transcript_blocks = []
+
+    for block in transcript_json.blocks:
+        transcript_blocks.append(TranscriptBlock(
+            # TODO(woursler): Include IDs?
+            speaker_name=block.speaker,
+            start_timestamp=block.start_timestamp,
+            end_timestamp=block.end_timestamp,
+            text=block.text,
         ))
 
     return transcript_blocks
@@ -199,12 +217,15 @@ def parse_vtt(transcript_text):
 FORMAT_PARSERS = {
     # FowlEdgeKnight is mostly editing otter transcripts.
     ('fek', 'txt'): parse_otter_txt,
+    ('manual', 'txt'): parse_otter_txt,
     ('otter', 'txt'): parse_otter_txt,
     ('autosub', 'srt'): parse_srt,
     ('welder', 'srt'): parse_srt,
     ('whisper', 'vtt'): parse_vtt,
     ('whisper', 'txt'): parse_whisper_txt,
     ('whisper', 'srt'): parse_srt,
+    ('fek', 'json'): parse_json_transcript,
+    ('manual', 'json'): parse_json_transcript,
 }
 
 
