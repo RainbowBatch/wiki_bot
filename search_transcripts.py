@@ -1,34 +1,24 @@
 import click
-import datetime
-import maya
-import pathlib
-import kfio
-import pandas as pd
-import pandoc
-from box import Box
-from pygit2 import Repository
-from entity import aggregate_proto_entities
-from entity import extract_entities
-from pytimeparse.timeparse import timeparse as duration_seconds
-from tqdm import tqdm
-from transcripts import create_full_transcript_listing, parse_transcript, format_timestamp, type_sorter_index
-from entity import parse_entity_orgin
-from pprint import pprint
-from thefuzz import fuzz
-from attr import asdict
-from natsort import natsorted
 import diff_match_patch as dmp_module
+import pandas as pd
+
+from attr import asdict
+from box import Box
+from natsort import natsorted
 from termcolor import colored
-
-dmp = dmp_module.diff_match_patch()
-
-REMOVE_OVERLAPS = True
+from thefuzz import fuzz
+from tqdm import tqdm
+from transcripts import create_full_transcript_listing
+from transcripts import format_timestamp
+from transcripts import parse_transcript
+from transcripts import type_sorter_index
 
 
 @click.command()
 @click.argument('searchterm')
-def search_transcripts_cli(searchterm):
-    search_transcripts(searchterm)
+@click.option('--remove-overlaps/--include-overlaps', default=True)
+def search_transcripts_cli(searchterm, remove_overlaps):
+    search_transcripts(searchterm, remove_overlaps)
 
 
 def merge(*dict_list):
@@ -96,7 +86,9 @@ def highlight_snippets(text, ranges, max_snippet_len=80):
     return result
 
 
-def search_transcripts(searchterm):
+def search_transcripts(searchterm, remove_overlaps):
+    dmp = dmp_module.diff_match_patch()
+
     transcript_listing = create_full_transcript_listing()
 
     result_records = []
@@ -125,10 +117,13 @@ def search_transcripts(searchterm):
 
     for episode_number in natsorted(grouped.groups):
         df = pd.DataFrame(grouped.get_group(episode_number))
-        # Detect overlapping segments.
-        if REMOVE_OVERLAPS:
-            df['overlap_group'] = (df['end_timestamp'].cummax().shift() <= df['start_timestamp']).cumsum()
-            df['transcript_type_rank'] = df['transcript_type'].map(type_sorter_index)
+
+        # Detect overlapping segments and only keep the best.
+        if remove_overlaps:
+            df['overlap_group'] = (df['end_timestamp'].cummax(
+            ).shift() <= df['start_timestamp']).cumsum()
+            df['transcript_type_rank'] = df['transcript_type'].map(
+                type_sorter_index)
 
             df = df.sort_values(
                 ['start_timestamp', 'transcript_type_rank'],
@@ -137,7 +132,6 @@ def search_transcripts(searchterm):
 
         for _, row in df.iterrows():
             diff = dmp.diff_main(row.text.lower(), searchterm.lower())
-            # TODO: Try this? dmp.diff_cleanupSemantic(diff)
 
             print("Ep%s@[%s --> %s]  %s:  %s" % (
                 row.episode_number.rjust(3, '0'),
