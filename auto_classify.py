@@ -21,7 +21,7 @@ classified_embeddings = pd.merge(
 
 labels = list(set([x for l in classified_embeddings.categories.to_list() for x in l]))
 
-# TODO(woursler): Classify indavidually?
+# TODO: Classify indavidually?
 classified_embeddings['category'] = classified_embeddings.categories.apply(lambda l: l[0])
 classified_embeddings["gpt3_ts_babbage_embedding"] = classified_embeddings.gpt3_ts_babbage_embedding.apply(np.array)
 
@@ -44,7 +44,7 @@ for idx in range(len(y_test)):
         print("POSSIBLE", cosine_similarity(X_test[idx], X_train[n_idx]))
         print("POSSIBLE", y_train.iloc[n_idx])
 
-# TODO(woursler): WTF? Does terribly at this task.
+# TODO: WTF? Does terribly at this task.
 clf = RandomForestClassifier(n_estimators=500)
 clf.fit(X_train, y_train)
 preds = clf.predict(X_test)

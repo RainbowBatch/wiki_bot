@@ -9,7 +9,7 @@ HEADERS = {
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.19582"
 }
 
-# TODO(woursler): Add a persistent cache on top of this.
+# TODO: Add a persistent cache on top of this.
 
 def correct_spelling(s):
     time.sleep(random.uniform(5, 20))

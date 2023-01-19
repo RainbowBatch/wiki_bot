@@ -53,7 +53,7 @@ def process_diff_to_path(z, start):
             current = (current[0] + delta[0], current[1] + delta[1])
             path.append(current)
         print(segment)
-    # TODO(woursler): Do we have to append the last one?
+    # TODO: Do we have to append the last one?
     print(path)
     print(z)
     return path

@@ -25,7 +25,7 @@ page_listing = kfio.load('kf_wiki_content/page_listing.json')
 scraped_pages = kfio.load('data/scraped_page_data.json')
 
 redirects = scraped_pages[~scraped_pages.redirect.isna()]
-# TODO(woursler): Also include external redirects by default?
+# TODO: Also include external redirects by default?
 existing_people = scraped_pages[scraped_pages.redirect.isna(
 ) & scraped_pages.wiki_categories.map(set(['People']).issubset)]
 external_redirects = scraped_pages[~scraped_pages.redirect.isna(
@@ -324,7 +324,7 @@ def restore_specific_capitalization(cleaned_text, original_text):
     merged = merge(slightly_cleaned_text, cleaned_text,
                    slightly_cleaned_text.lower())
 
-    # TODO(woursler): We can do better than this, esp at the start of the string.
+    # TODO: We can do better than this, esp at the start of the string.
     assert '<<<<<<<' not in merged
     assert merged.lower() == cleaned_text.lower(
     ), "%s != %s" % (merged.lower(), cleaned_text)
@@ -358,7 +358,7 @@ def restore_capitalization(cleaned_text, original_texts):
     if len(capitalizations) == 0:
         return cleaned_text
 
-    # TODO(woursler): Consider different measures (e.g. right ratio.)
+    # TODO: Consider different measures (e.g. right ratio.)
     return min(capitalizations, key=capitalization_goodness)
 
 

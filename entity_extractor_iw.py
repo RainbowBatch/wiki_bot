@@ -36,7 +36,7 @@ def extract_proto_entities():
             except UnicodeDecodeError:
                 f_contents = f_byte_contents.decode('utf-16')
 
-        # TODO(woursler): Do this from the transcript table.
+        # TODO: Do this from the transcript table.
         origin = f_name.split(r"\\")[-1][:-4]
 
         try:

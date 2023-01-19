@@ -30,7 +30,7 @@ class AStarGraph:
             y2 = pos[1] + dy
             if x2 < 0 or x2 >= self.n or y2 < 0 or y2 >= self.m:
                 continue
-            if self.board[x2][y2] >= 1: # TODO(woursler): Remove scaling.
+            if self.board[x2][y2] >= 1: # TODO: Remove scaling.
                 continue
             yield (x2, y2)
 
@@ -131,7 +131,7 @@ for i in range(len(transcript_texts[0])):
             continue
         d = fuzz.partial_ratio(transcript_texts[0][i].lower(), transcript_texts[1][j].lower())
         if d <= 0:
-            d = 1 # TODO (woursler): Use -1 instead?
+            d = 1 # TODO : Use -1 instead?
         D[i][j] = d
 
 D = 1 - D/100

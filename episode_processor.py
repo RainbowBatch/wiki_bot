@@ -73,7 +73,7 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
     # Transcript columns
     # ep_record['transcript_ofile'] = 'kf_wiki_content/Transcript{{FORWARD_SLASH}}%s.wiki' % ep_record['slug']
 
-    # TODO(woursler): Handle "Repost:" special case...
+    # TODO: Handle "Repost:" special case...
     if ep_record['title'].startswith("Repost:"):
         ep_record['clean_title'] = ep_record['title']
     else:

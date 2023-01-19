@@ -86,7 +86,7 @@ def classify_line(line):
 
     if line.strip() == '':
         return LineClassification.BLANK
-    # TODO(woursler): Regex?
+    # TODO: Regex?
     if line.startswith("*") or line.startswith(" *"):
         return LineClassification.BULLET_STAR
 
@@ -126,7 +126,7 @@ def linewise_simplification(raw_mediawiki):
                 # No blank lines in tables.
                 continue
 
-            # TODO(woursler): Handle pseudosections here too?
+            # TODO: Handle pseudosections here too?
             line = bolded_category_regex.sub(r"\1\g<section_name>\1\n", line)
 
             if state == LinewiseVisitorState.START:
@@ -159,7 +159,7 @@ def linewise_simplification(raw_mediawiki):
                     continue
                 if not LineClassification.is_bullet(classification):
                     yield '\n'
-                    # TODO(woursler): Maybe this does slightly the wrong thing?
+                    # TODO: Maybe this does slightly the wrong thing?
                     state = LinewiseVisitorState.PRESERVE
 
             if state == LinewiseVisitorState.BLANK and classification != LineClassification.BLANK:

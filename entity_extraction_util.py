@@ -9,7 +9,7 @@ def wikitext_extractor(wiki_text, origin):
         format="plain"
     )
 
-    # TODO(woursler): Consider processing line by line?
+    # TODO: Consider processing line by line?
     yield from extract_entities(cleaned_text, origin)
 
 
@@ -47,7 +47,7 @@ def wikipage_extractor(wiki_text, origin):
 
 def transcript_extractor(transcript, origin):
     for block in transcript.blocks:
-        # TODO(woursler): Directly handle this?
+        # TODO: Directly handle this?
         if block.speaker_name is not None:
             yield from extract_entities(block.speaker_name.strip(), origin)
         yield from extract_entities(block.text.strip(), origin)

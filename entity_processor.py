@@ -118,7 +118,7 @@ entities_df['is_existing'] = entities_df.entity_name.isin(map(lambda x: x.lower(
 entities_df['is_known_missing'] = entities_df.entity_name.isin(map(lambda x: x.lower(
 ), known_missing_pages.title.to_list())) | entities_df.entity_name.isin(known_missing_pages.title.to_list())
 
-# TODO(woursler): Why doesn't this work
+# TODO: Why doesn't this work
 entities_df['is_redirect'] = entities_df.entity_name.isin(map(lambda x: x.lower(
 ), redirects['from'].to_list()))
 

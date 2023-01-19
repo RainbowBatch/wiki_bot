@@ -44,7 +44,7 @@ for entity_record in raw_entities[raw_entities.is_existing & ~raw_entities.is_re
     relevant_episodes = episodes_df[episodes_df.episode_number.isin(origin_episode_numbers)].sort_values(
         ['maya_release_date', 'episode_number']).to_dict(orient='records')
 
-    # TODO(woursler): Ensure we don't clobber anything important.q
+    # TODO: Ensure we don't clobber anything important.q
     raw = template.render(
         relevant_episodes=relevant_episodes,
     )

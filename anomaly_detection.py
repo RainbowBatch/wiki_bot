@@ -12,7 +12,7 @@ from pygit2 import Repository
 from spacy import displacy
 from wiki_cleaner import simple_format
 
-# TODO(woursler): Breaks "The Dreamy Creamy Summer" article?
+# TODO: Breaks "The Dreamy Creamy Summer" article?
 
 git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
 

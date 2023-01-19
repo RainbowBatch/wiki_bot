@@ -7,8 +7,6 @@ from stamp_template import stamp_templates
 from title_download import download_titles
 
 if __name__ == '__main__':
-    # TODO(woursler): tracker download? Behind flag?
-
     download_titles()
     download_episode_details()
     download_citations()

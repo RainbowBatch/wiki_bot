@@ -10,7 +10,7 @@ DATE_FORMAT = "%B %#d, %Y"
 
 
 def parse_date_range(date_range_string):
-    # TODO(woursler): Use extract_date_from_string instead.
+    # TODO: Use extract_date_from_string instead.
     if '-' not in date_range_string:
         # Singleton date
         return maya.when(date_range_string, timezone=TIMEZONE)

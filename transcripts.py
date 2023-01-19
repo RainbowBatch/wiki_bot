@@ -28,7 +28,7 @@ type_sorter = [
     'welder',
     'whisper',
     'otter',
-    'fek',  # TODO(woursler): move to manual and attribute in authors metadata.
+    'fek',  # TODO: move to manual and attribute in authors metadata.
     'manual',
 ]
 type_sorter_index = dict(zip(type_sorter, range(len(type_sorter))))
@@ -36,7 +36,7 @@ type_sorter_index = dict(zip(type_sorter, range(len(type_sorter))))
 format_sorter = [
     'srt',
     'vtt',
-    'txt', # TODO(woursler): Migrate to vtt?
+    'txt', # TODO: Migrate to vtt?
     'json',
 ]
 format_sorter_index = dict(zip(type_sorter, range(len(type_sorter))))
@@ -204,7 +204,7 @@ def parse_json_transcript(transcript_text):
 
     for block in transcript_json.blocks:
         transcript_blocks.append(TranscriptBlock(
-            # TODO(woursler): Include IDs?
+            # TODO: Include IDs?
             speaker_name=block.speaker,
             start_timestamp=block.start_timestamp,
             end_timestamp=block.end_timestamp,

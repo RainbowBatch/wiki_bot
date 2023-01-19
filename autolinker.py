@@ -19,7 +19,7 @@ class WikitextVisitor(ABC):
             self.visit(n)
             for n in node.__children__()]
             if not isinstance(node, mwparserfromhell.wikicode.Wikicode)
-            # TODO(woursler): Might need to handle this differently?
+            # TODO: Might need to handle this differently?
             else [],
         )
 
@@ -37,7 +37,7 @@ class AutoLinkingVisitor(WikitextVisitor):
     '''Despite the name, this doesn't actually visit because mwfromhell doesn't support clean copies...'''
 
     def generic_visit(self, node, visited_children):
-        # TODO(woursler): Integrate children changes
+        # TODO: Integrate children changes
         # print("Visiting", type(node), node)
         return node
 

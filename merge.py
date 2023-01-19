@@ -12,7 +12,7 @@ def merge_records():
     overlay_table = kfio.load('data/overlay.json')
 
     # Annotate next / previous from the libsyn dataset.
-    # TODO(woursler): Do something different?
+    # TODO: Do something different?
     title_table['next_title'] = title_table.title.shift(-1)
     title_table['prev_title'] = title_table.title.shift(1)
 
@@ -57,7 +57,7 @@ def merge_records():
     tracker_table['episode_number'] = tracker_table.episode_number.apply(
         clean_episode_number)
 
-    # TODO(woursler): Ensure we're not dropping anything here?
+    # TODO: Ensure we're not dropping anything here?
     augmented_title_table = pd.merge(
         title_table,
         details_table,
@@ -68,7 +68,7 @@ def merge_records():
     merged = pd.merge(
         augmented_title_table,
         tracker_table,
-        how='inner',  # TODO(woursler): Outer join?
+        how='inner',  # TODO: Outer join?
         on='episode_number'
     )
 

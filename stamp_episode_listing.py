@@ -30,7 +30,7 @@ def mayafy_date(dt):
 
 
 def date_midpoint(dt1, dt2):
-    return dt1  # TODO(woursler): Actually do this.
+    return dt1  # TODO: Actually do this.
 
 
 def stamp_episode_listing():

@@ -114,7 +114,7 @@ def search_transcripts(searchterm):
                     {'match': match}
                 ))
 
-            # TODO(woursler): Two line match?
+            # TODO: Two line match?
 
     result_df = pd.DataFrame.from_records(result_records)
 
@@ -137,7 +137,7 @@ def search_transcripts(searchterm):
 
         for _, row in df.iterrows():
             diff = dmp.diff_main(row.text.lower(), searchterm.lower())
-            # TODO(woursler): Try this? dmp.diff_cleanupSemantic(diff)
+            # TODO: Try this? dmp.diff_cleanupSemantic(diff)
 
             print("Ep%s@[%s --> %s]  %s:  %s" % (
                 row.episode_number.rjust(3, '0'),
