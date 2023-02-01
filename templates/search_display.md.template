@@ -1,0 +1,5 @@
+```
+{%for result in search_results -%}
+Ep {{ "{:>3}".format(result.episode_number) }}@[{{result.start_timestamp | format_timestamp}} --> {{result.end_timestamp | format_timestamp}}]  {{result.speaker_name | format_speaker}}:  {{result.snippet | escape_ansi}}
+{% endfor -%}
+```

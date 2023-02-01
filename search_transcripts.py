@@ -3,6 +3,8 @@ import diff_match_patch as dmp_module
 import pandas as pd
 
 from attr import asdict
+from attr import attr
+from attr import attrs
 from box import Box
 from natsort import natsorted
 from termcolor import colored
@@ -12,13 +14,15 @@ from transcripts import create_full_transcript_listing
 from transcripts import format_timestamp
 from transcripts import parse_transcript
 from transcripts import type_sorter_index
+from typing import List
 
 
 @click.command()
 @click.argument('searchterm')
 @click.option('--remove-overlaps/--include-overlaps', default=True)
 def search_transcripts_cli(searchterm, remove_overlaps):
-    search_transcripts(searchterm, remove_overlaps)
+    results = search_transcripts(searchterm, remove_overlaps)
+    display_search_results(results)
 
 
 def merge(*dict_list):
@@ -86,7 +90,28 @@ def highlight_snippets(text, ranges, max_snippet_len=80):
     return result
 
 
-def search_transcripts(searchterm, remove_overlaps):
+@attrs
+class SearchResult:
+    episode_number = attr()
+    start_timestamp = attr()
+    end_timestamp = attr()
+    speaker_name = attr()
+    text = attr()
+    snippet = attr()
+
+
+def display_search_results(results: List[SearchResult]):
+    for result in results:
+        print("Ep%s@[%s --> %s]  %s:  %s" % (
+            result.episode_number.rjust(3, '0'),
+            format_timestamp(result.start_timestamp),
+            default_if_none(format_timestamp(result.end_timestamp), ''),
+            default_if_none(result.speaker_name, "Unknown"),
+            result.snippet,
+        ))
+
+
+def search_transcripts(searchterm, remove_overlaps, max_results=1000) -> List[SearchResult]:
     dmp = dmp_module.diff_match_patch()
 
     transcript_listing = create_full_transcript_listing()
@@ -110,10 +135,12 @@ def search_transcripts(searchterm, remove_overlaps):
 
     result_df = pd.DataFrame.from_records(result_records)
 
-    best_result_df = result_df.nlargest(1000, 'match').sort_values(
+    best_result_df = result_df.nlargest(max_results, 'match').sort_values(
         by=['episode_number', 'start_timestamp'])
 
     grouped = best_result_df.groupby('episode_number')
+
+    results = []
 
     for episode_number in natsorted(grouped.groups):
         df = pd.DataFrame(grouped.get_group(episode_number))
@@ -133,13 +160,16 @@ def search_transcripts(searchterm, remove_overlaps):
         for _, row in df.iterrows():
             diff = dmp.diff_main(row.text.lower(), searchterm.lower())
 
-            print("Ep%s@[%s --> %s]  %s:  %s" % (
-                row.episode_number.rjust(3, '0'),
-                format_timestamp(row.start_timestamp),
-                default_if_none(format_timestamp(row.end_timestamp), ''),
-                default_if_none(row.speaker_name, "Unknown"),
+            results.append(SearchResult(
+                row.episode_number,
+                row.start_timestamp,
+                row.end_timestamp,
+                row.speaker_name,
+                row.text,
                 highlight_snippets(row.text, match_range(diff)),
             ))
+
+    return results
 
 
 if __name__ == '__main__':

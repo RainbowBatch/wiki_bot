@@ -1,0 +1,13 @@
+I searched the [unofficial transcripts](https://github.com/RainbowBatch/kftranscripts) for near matches for the term "{{search_term}}". Here's what I found:
+
+{% if search_results|length > 99 %}
+Truncated after the top 100 results. Please provide a more specific search term if needed.
+{% endif %}
+
+|Ep#|Snippet|Start Time|End Time|Speaker|
+:--|:--|:--|:--|:--|
+{%for result in search_results -%}
+|{{ result.episode_number }}|{{result.snippet | escape_ansi}}|{{result.start_timestamp | format_timestamp}}|{{result.end_timestamp | format_timestamp}}|{{result.speaker_name | format_speaker}}|
+{% endfor %}
+
+*I am a bot, and this comment was composed automatically. Please contact [u/CelestAI](/message/compose/?to=CelestAI) if you have any questions or concerns.*

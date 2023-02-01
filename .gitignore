@@ -8,3 +8,4 @@ pywikibot/
 secrets/
 token.json
 transcripts/
+praw.ini
