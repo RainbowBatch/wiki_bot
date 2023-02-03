@@ -18,6 +18,15 @@ def save(df, fname):
             )
         )
 
+def save_json(obj, fname):
+    with open(fname, "w", encoding='utf-8') as json_file:
+        json_file.write(
+            json.dumps(
+                obj,
+                indent=2, sort_keys=True,
+            )
+        )
+
 
 def serialize_without_nulls(df):
     return [

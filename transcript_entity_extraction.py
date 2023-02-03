@@ -1,6 +1,7 @@
 import kfio
 import pandas as pd
 import parse
+import natsort
 
 from collections import Counter
 from collections import defaultdict
@@ -91,5 +92,6 @@ for transcript_fname in glob('transcripts/*.otter.txt'):
 
 
 df = pd.DataFrame(transcript_guest_names, columns=table_header)
+df = df.sort_values(by=['episode_number'], key=natsort.natsort_keygen())
 
 kfio.save(df, 'data/nlp_guests.json')

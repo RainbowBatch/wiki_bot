@@ -44,6 +44,12 @@ LIKELY_PEOPLE = set(
     external_redirects.title.to_list() + hardcoded_people
 )
 
+OVERUSED_PEOPLE = [
+    'Alex Jones',
+    'Jordan Holmes',
+    'Dan Friesen',
+]
+
 NOT_RELEVANT_PEOPLE = [
     "Academy Award",
     "Alex Jordan",
@@ -66,7 +72,7 @@ NOT_RELEVANT_PEOPLE = [
     "Wolfgang Puck",
     "Young Turks",
     "Zero Hedge",
-]
+] + OVERUSED_PEOPLE
 
 REMAPPING = {
     'Alex E. Jones': 'Alex Jones',

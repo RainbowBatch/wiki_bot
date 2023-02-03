@@ -5,24 +5,15 @@ import re
 
 from collections import Counter
 from collections import defaultdict
+from entity import LIKELY_PEOPLE
+from entity import NOT_RELEVANT_PEOPLE
 from entity import create_entity_origin_list_mw
 from entity import restore_capitalization
 from entity import simplify_entity
-from pprint import pprint
+from natsort import natsorted
 from pprint import pprint
 from pygit2 import Repository
 from tqdm import tqdm
-
-PROTO_ENTITIES_PATH = pathlib.Path('data/proto_entities.json')
-
-grouped_proto_entities = defaultdict(list)
-
-print("Re-shuffling entities.")
-for _, origin, proto_entities in tqdm(list(kfio.load(PROTO_ENTITIES_PATH).itertuples())):
-    origin = tuple(origin)
-    for proto_entity in proto_entities:
-        e_key = simplify_entity(proto_entity['entity_name'])
-        grouped_proto_entities[e_key].append(proto_entity)
 
 
 def sum_vector_dicts(v_dicts):
@@ -71,8 +62,21 @@ def has_diverse_origins(entity_origins):
     return origin_counter['None'] > 1 or len(origin_counter) > 1
 
 
+PROTO_ENTITIES_PATH = pathlib.Path('data/proto_entities.json')
+
+grouped_proto_entities = defaultdict(list)
+
+print("Re-shuffling entities.")
+for _, origin, proto_entities in tqdm(list(kfio.load(PROTO_ENTITIES_PATH).itertuples())):
+    origin = tuple(origin)
+    for proto_entity in proto_entities:
+        e_key = simplify_entity(proto_entity['entity_name'])
+        grouped_proto_entities[e_key].append(proto_entity)
+
 print("Grouping and filtering entities.")
 entities_records = []
+
+finalized_entity_names = dict()
 
 for e_key, proto_entities in tqdm(grouped_proto_entities.items()):
     if len(e_key) < 10:
@@ -86,7 +90,6 @@ for e_key, proto_entities in tqdm(grouped_proto_entities.items()):
 
     z = group_proto_entities(proto_entities)
 
-
     if banned_type_fraction(z['entity_type']) > 0.8:
         continue
 
@@ -96,6 +99,8 @@ for e_key, proto_entities in tqdm(grouped_proto_entities.items()):
 
     z['entity_name'] = restore_capitalization(
         e_key, z['entity_sourcetexts'].keys())
+
+    finalized_entity_names[e_key] = z['entity_name']
 
     entities_records.append(z)
 
@@ -135,3 +140,60 @@ entities_df = entities_df.sort_values(
 print(entities_df)
 
 kfio.save(entities_df, 'data/raw_entities.json')
+
+
+grouped_by_episode = defaultdict(lambda: defaultdict(list))
+
+print("Re-shuffling entities by episode.")
+for _, origin, proto_entities in tqdm(list(kfio.load(PROTO_ENTITIES_PATH).itertuples())):
+    origin = tuple(origin.split('__'))
+    for proto_entity in proto_entities:
+        episode_number = origin[0]
+        if episode_number is None or episode_number == 'None':
+            continue
+        entity_name = simplify_entity(proto_entity['entity_name'])
+
+        if entity_name not in finalized_entity_names:
+            continue
+
+        grouped_by_episode[episode_number][entity_name].append(proto_entity)
+
+per_episode_results = dict()
+
+for episode_number, entity_map in grouped_by_episode.items():
+    per_episode_results[episode_number] = dict()
+    per_episode_results[episode_number]['raw_entities'] = list()
+    per_episode_results[episode_number]['people'] = list()
+    for entity_name, proto_entities in entity_map.items():
+        z = group_proto_entities(proto_entities)
+        z['entity_name'] = finalized_entity_names[entity_name]
+
+        per_episode_results[episode_number]['raw_entities'].append(z)
+
+        clean_entity_name = z['entity_name']
+
+        if clean_entity_name in NOT_RELEVANT_PEOPLE:
+            continue
+        if clean_entity_name not in LIKELY_PEOPLE:
+            continue
+        if 'PERSON' not in z['entity_type']:
+            continue
+        if max(z['entity_origin'].values()) < 3:
+            continue
+
+        per_episode_results[episode_number]['people'].append(z['entity_name'])
+
+kfio.save_json(per_episode_results, 'data/raw_entities_per_episode.json')
+
+# TODO(woursler): A ton of people are missing from this for some reason.
+nlp_guests = [
+    {
+        "episode_number": episode_number,
+        "people": results['people']
+    }
+    for episode_number, results in per_episode_results.items()
+]
+
+nlp_guests = natsorted(nlp_guests, key=lambda x: x["episode_number"])
+
+kfio.save_json(nlp_guests, 'data/nlp_guests.json')
