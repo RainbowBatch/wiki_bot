@@ -21,6 +21,8 @@ logging.basicConfig(
 )
 logging.getLogger("urllib3").setLevel(logging.WARNING)
 logging.getLogger("parse").setLevel(logging.WARNING)
+# For development, it can be worth it to expose PRAW logging.
+logging.getLogger("prawcore").setLevel(logging.WARNING)
 logger = logging.getLogger(__name__)
 
 
@@ -69,7 +71,8 @@ for comment in subreddit.stream.comments():
         if comment.author not in ["CelestAI", "SauceCupAficionado"]:
             continue  # For now, restrict who can summon the bot.
 
-        logging.info("Responding to %s -- '%s'" % (comment.permalink, comment.body))
+        logging.info("Responding to %s -- '%s'" %
+                     (comment.permalink, comment.body))
 
         try:
             # TODO: Do something smarter, possibly using GPT?
@@ -88,19 +91,31 @@ for comment in subreddit.stream.comments():
 
             logging.info("Done. Replying.")
 
-            comment.reply(
+            reply = comment.reply(
                 reply_template.render(
                     search_term=search_term,
                     search_results=search_results,
+                    results_truncated=len(search_results) >= 100
                 ).strip()
             )
 
-            logging.info("Reply details: {ID: %s, permalink: %s }" % (c.id, c.permalink))
-
+            logging.info(
+                "Reply details: {ID: %s, permalink: %s }" % (
+                    reply.id,
+                    reply.permalink,
+                ),
+            )
 
         except:
             # printing stack trace
-            logging.exception("Failed to serve response. Replying with an error.")
+            logging.exception(
+                "Failed to serve response. Replying with an error.")
+            print("Failed to handle '%s'" % comment.body)
             traceback.print_exc()
-            c = comment.reply(error_reply_template.render())
-            logging.error("Error reply details: {ID: %s, permalink: %s }" % (c.id, c.permalink))
+            reply = comment.reply(error_reply_template.render().strip())
+            logging.error(
+                "Error reply details: {ID: %s, permalink: %s }" % (
+                    reply.id,
+                    reply.permalink,
+                ),
+            )
