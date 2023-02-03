@@ -4,10 +4,10 @@ I searched the [unofficial transcripts](https://github.com/RainbowBatch/kftransc
 Truncated after the top 100 results. Please provide a more specific search term if needed.
 {% endif %}
 
-|Ep#|Snippet|Start Time|End Time|Speaker|
+|Ep#|Snippet|Time Range|Speaker|
 :--|:--|:--|:--|:--|
 {%for result in search_results -%}
-|{{ result.episode_number }}|{{result.snippet | escape_ansi}}|{{result.start_timestamp | format_timestamp}}|{{result.end_timestamp | format_timestamp}}|{{result.speaker_name | format_speaker}}|
+|{{ result.episode_number }}|{{result.snippet}}|{{result.start_timestamp | format_timestamp}} - {{result.end_timestamp | format_timestamp}}|{{result.speaker_name | format_speaker}}|
 {% endfor %}
 
 *I am a bot, and this comment was composed automatically. Please contact [u/CelestAI](/message/compose/?to=CelestAI) if you have any questions or concerns.*

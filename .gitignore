@@ -9,3 +9,4 @@ secrets/
 token.json
 transcripts/
 praw.ini
+reddit_bot.log

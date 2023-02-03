@@ -2,6 +2,7 @@ import json
 import praw
 import random
 import re
+import traceback
 
 from box import Box
 from jinja2 import Environment
@@ -10,11 +11,18 @@ from jinja2 import Template
 from jinja2 import select_autoescape
 from search_transcripts import search_transcripts
 from transcripts import format_timestamp
+import logging
 
+# Configure logging.
+logging.basicConfig(
+    filename='reddit_bot.log',
+    level=logging.DEBUG,
+    format='%(asctime)s %(levelname)s %(name)s %(message)s',
+)
+logging.getLogger("urllib3").setLevel(logging.WARNING)
+logging.getLogger("parse").setLevel(logging.WARNING)
+logger = logging.getLogger(__name__)
 
-def escape_ansi(line):
-    ansi_escape = re.compile(r'(?:\x1B[@-_]|[\x80-\x9F])[0-?]*[ -/]*[@-~]')
-    return ansi_escape.sub('', line)
 
 env = Environment(
     loader=FileSystemLoader("templates"),
@@ -23,9 +31,9 @@ env = Environment(
 
 env.filters["format_speaker"] = lambda speaker: "Unknown" if speaker is None else speaker
 env.filters["format_timestamp"] = format_timestamp
-env.filters["escape_ansi"] = escape_ansi
 
 reply_template = env.get_template('reddit_bot_reply.md.template')
+error_reply_template = env.get_template('reddit_bot_error.md.template')
 
 
 with open("secrets/reddit.json") as secrets_f:
@@ -39,7 +47,7 @@ with open("secrets/reddit.json") as secrets_f:
         password=secrets.bot_password,
     )
 
-# TODO(woursler): Switch this over to knowledgefight once the bot is working.
+# Only interact with specific subreddits.
 subreddit = reddit.subreddit("pythonforengineers+KnowledgeFight")
 
 
@@ -50,35 +58,49 @@ def already_replied(comment):
     return False
 
 
-print("Listening for new comments!")
+logging.info("Listening for new comments!")
 
 for comment in subreddit.stream.comments():
     if re.search("u/RainbowBatch", comment.body, re.IGNORECASE):
         comment.refresh()
         if already_replied(comment):
-           continue
+            continue
 
         if comment.author not in ["CelestAI", "SauceCupAficionado"]:
-            continue # For now, restrict who can summon the bot.
+            continue  # For now, restrict who can summon the bot.
 
-        print("Responding to '%s" % comment.body)
+        logging.info("Responding to %s -- '%s'" % (comment.permalink, comment.body))
 
-        # TODO: Do something smarter, possibly using GPT?
-        quoted_strings = re.findall('"([^"]*)"', comment.body)
+        try:
+            # TODO: Do something smarter, possibly using GPT?
+            quoted_strings = re.findall('"([^"]*)"', comment.body)
 
-        # TODO: Do something less brittle, recover from errors.
-        assert len(quoted_strings) == 1
+            assert len(quoted_strings) == 1
+            search_term = quoted_strings[0]
 
-        search_term = quoted_strings[0]
+            logging.info("Searching for '%s'" % search_term)
+            search_results = search_transcripts(
+                search_term,
+                remove_overlaps=True,
+                max_results=100,
+                highlight_f=lambda s: "**%s**" % s,
+            )
 
-        print("Searching for '%s'" % search_term)
-        search_results = search_transcripts(search_term, remove_overlaps=True, max_results=100)
+            logging.info("Done. Replying.")
 
-        print("Done. Replying.")
+            comment.reply(
+                reply_template.render(
+                    search_term=search_term,
+                    search_results=search_results,
+                ).strip()
+            )
 
-        comment.reply(
-            reply_template.render(
-                search_term=search_term,
-                search_results=search_results,
-            ).strip()
-        )
+            logging.info("Reply details: {ID: %s, permalink: %s }" % (c.id, c.permalink))
+
+
+        except:
+            # printing stack trace
+            logging.exception("Failed to serve response. Replying with an error.")
+            traceback.print_exc()
+            c = comment.reply(error_reply_template.render())
+            logging.error("Error reply details: {ID: %s, permalink: %s }" % (c.id, c.permalink))

@@ -21,7 +21,8 @@ from typing import List
 @click.argument('searchterm')
 @click.option('--remove-overlaps/--include-overlaps', default=True)
 def search_transcripts_cli(searchterm, remove_overlaps):
-    results = search_transcripts(searchterm, remove_overlaps)
+    results = search_transcripts(
+        searchterm, remove_overlaps, highlight_f=lambda s: colored(s, 'cyan'))
     display_search_results(results)
 
 
@@ -50,7 +51,14 @@ def match_range(diff):
     return matched_segments
 
 
-def highlight_snippets(text, ranges, max_snippet_len=80):
+# Used to ensure that highlighted sections never start or end with whitespace.
+def split_whitespace(string):
+    leading_whitespace = string[:len(string) - len(string.lstrip())]
+    trailing_whitespace = string[len(string.rstrip()):]
+    return (leading_whitespace, string.strip(), trailing_whitespace)
+
+
+def highlight_snippets(text, ranges, max_snippet_len=80, highlight_f=lambda x: x):
     if len(ranges) == 0:
         return text
 
@@ -79,10 +87,18 @@ def highlight_snippets(text, ranges, max_snippet_len=80):
         if a is None:
             result += text[start:b[0]]
         elif b is None:
-            result += colored(text[a[0]:a[1]], 'cyan')
+            leading_ws, middle_text, trailing_ws = split_whitespace(
+                text[a[0]:a[1]])
+            result += leading_ws
+            result += highlight_f(middle_text)
+            result += trailing_ws
             result += text[a[1]:end]
         else:
-            result += colored(text[a[0]:a[1]], 'cyan')
+            leading_ws, middle_text, trailing_ws = split_whitespace(
+                text[a[0]:a[1]])
+            result += leading_ws
+            result += highlight_f(middle_text)
+            result += trailing_ws
             result += text[a[1]:b[0]]
     if end < len(text):
         result += ' ...'
@@ -111,7 +127,7 @@ def display_search_results(results: List[SearchResult]):
         ))
 
 
-def search_transcripts(searchterm, remove_overlaps, max_results=1000) -> List[SearchResult]:
+def search_transcripts(searchterm, remove_overlaps, max_results=1000, highlight_f=lambda x: x) -> List[SearchResult]:
     dmp = dmp_module.diff_match_patch()
 
     transcript_listing = create_full_transcript_listing()
@@ -166,7 +182,8 @@ def search_transcripts(searchterm, remove_overlaps, max_results=1000) -> List[Se
                 row.end_timestamp,
                 row.speaker_name,
                 row.text,
-                highlight_snippets(row.text, match_range(diff)),
+                highlight_snippets(row.text, match_range(
+                    diff), highlight_f=highlight_f),
             ))
 
     return results
