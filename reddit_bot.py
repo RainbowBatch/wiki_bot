@@ -21,9 +21,12 @@ logging.basicConfig(
 )
 logging.getLogger("urllib3").setLevel(logging.WARNING)
 logging.getLogger("parse").setLevel(logging.WARNING)
-# For development, it can be worth it to expose PRAW logging.
 logging.getLogger("prawcore").setLevel(logging.WARNING)
-logger = logging.getLogger(__name__)
+stderr_logger = logging.StreamHandler()
+stderr_logger.setLevel(logging.DEBUG)
+stderr_logger.setFormatter(logging.Formatter(
+    '%(asctime)s %(levelname)s %(message)s'))
+logging.getLogger().addHandler(stderr_logger)
 
 
 env = Environment(
@@ -31,8 +34,18 @@ env = Environment(
     autoescape=select_autoescape()
 )
 
-env.filters["format_speaker"] = lambda speaker: "Unknown" if speaker is None else speaker
-env.filters["format_timestamp"] = format_timestamp
+
+def format_speaker(speaker):
+    '''Shortens common names to save space.'''
+    if speaker is None:
+        return "?"
+    if speaker == "Alex Jones":
+        return "Alex"
+    return speaker
+
+
+env.filters["format_speaker"] = format_speaker
+env.filters["format_timestamp"] = lambda ts: format_timestamp(ts, shorten=True)
 
 reply_template = env.get_template('reddit_bot_reply.md.template')
 error_reply_template = env.get_template('reddit_bot_error.md.template')
@@ -62,6 +75,35 @@ def already_replied(comment):
 
 logging.info("Listening for new comments!")
 
+
+def clean_reply(raw_reply_markdown):
+    # TODO: Remove other raw things, e.g. \n\n\n => \n\n
+    return raw_reply_markdown.strip()
+
+
+def formulate_search_reply(search_term):
+    logging.info("Searching for '%s'" % search_term)
+
+    search_results = search_transcripts(
+        search_term,
+        remove_overlaps=True,
+        max_results=100,
+        highlight_f=lambda s: "**%s**" % s,
+    )
+
+    raw_reply = reply_template.render(
+        search_term=search_term,
+        search_results=search_results,
+        results_truncated=len(search_results) >= 100
+    )
+
+    reply = clean_reply(raw_reply)
+
+    logging.info("Formulated response.")
+
+    return reply
+
+
 for comment in subreddit.stream.comments():
     if re.search("u/RainbowBatch", comment.body, re.IGNORECASE):
         comment.refresh()
@@ -81,28 +123,20 @@ for comment in subreddit.stream.comments():
             assert len(quoted_strings) == 1
             search_term = quoted_strings[0]
 
-            logging.info("Searching for '%s'" % search_term)
-            search_results = search_transcripts(
-                search_term,
-                remove_overlaps=True,
-                max_results=100,
-                highlight_f=lambda s: "**%s**" % s,
+            reply_text = formulate_search_reply(search_term)
+
+            logging.info(
+                "Full reply text: %s" % reply_text
             )
 
-            logging.info("Done. Replying.")
+            logging.info("Reply length: %d" % len(reply_text))
 
-            reply = comment.reply(
-                reply_template.render(
-                    search_term=search_term,
-                    search_results=search_results,
-                    results_truncated=len(search_results) >= 100
-                ).strip()
-            )
+            reply_comment = comment.reply(reply_text)
 
             logging.info(
                 "Reply details: {ID: %s, permalink: %s }" % (
-                    reply.id,
-                    reply.permalink,
+                    reply_comment.id,
+                    reply_comment.permalink,
                 ),
             )
 
@@ -112,10 +146,11 @@ for comment in subreddit.stream.comments():
                 "Failed to serve response. Replying with an error.")
             print("Failed to handle '%s'" % comment.body)
             traceback.print_exc()
-            reply = comment.reply(error_reply_template.render().strip())
+            reply_comment = comment.reply(
+                clean_reply(error_reply_template.render()))
             logging.error(
                 "Error reply details: {ID: %s, permalink: %s }" % (
-                    reply.id,
-                    reply.permalink,
+                    reply_comment.id,
+                    reply_comment.permalink,
                 ),
             )

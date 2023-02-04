@@ -3,7 +3,7 @@
 I searched the [unofficial transcripts](https://github.com/RainbowBatch/kftranscripts) for near matches for the term "{{search_term}}". Here's what I found:
 
 {% if results_truncated %}
-Truncated after the top 100 results. Please provide a more specific search term if needed.
+Truncated after the top 100 results. Please try again with a more specific search term if needed.
 {% endif %}
 
 |Ep#|Snippet|Time Range|Speaker|

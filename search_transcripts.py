@@ -55,7 +55,10 @@ def match_range(diff):
 def split_whitespace(string):
     leading_whitespace = string[:len(string) - len(string.lstrip())]
     trailing_whitespace = string[len(string.rstrip()):]
-    return (leading_whitespace, string.strip(), trailing_whitespace)
+    middle_text = string.strip()
+    if len(middle_text) > 0:
+        return (leading_whitespace, middle_text, trailing_whitespace)
+    return (leading_whitespace, '', '')
 
 
 def highlight_snippets(text, ranges, max_snippet_len=80, highlight_f=lambda x: x):
@@ -90,14 +93,16 @@ def highlight_snippets(text, ranges, max_snippet_len=80, highlight_f=lambda x: x
             leading_ws, middle_text, trailing_ws = split_whitespace(
                 text[a[0]:a[1]])
             result += leading_ws
-            result += highlight_f(middle_text)
+            if len(middle_text) > 0:
+                result += highlight_f(middle_text)
             result += trailing_ws
             result += text[a[1]:end]
         else:
             leading_ws, middle_text, trailing_ws = split_whitespace(
                 text[a[0]:a[1]])
             result += leading_ws
-            result += highlight_f(middle_text)
+            if len(middle_text) > 0:
+                result += highlight_f(middle_text)
             result += trailing_ws
             result += text[a[1]:b[0]]
     if end < len(text):

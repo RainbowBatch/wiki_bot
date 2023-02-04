@@ -94,12 +94,16 @@ def parse_timestamp(ts_str):
     return ts_seconds
 
 
-def format_timestamp(ts_seconds):
+def format_timestamp(ts_seconds, shorten=False):
     if pd.isna(ts_seconds):
         return None
     hours, remainder = divmod(ts_seconds, 3600)
     minutes, seconds = divmod(remainder, 60)
     seconds, microseconds = divmod(seconds, 1)
+    if shorten:
+        if int(hours) == 0:
+            return '{}:{:02}'.format(int(minutes), int(seconds))
+        return '{}:{:02}:{:02}'.format(int(hours), int(minutes), int(seconds))
     return '{:02}:{:02}:{:02}.{}'.format(int(hours), int(minutes), int(seconds), str(microseconds).split('.')[-1][:3].ljust(3, '0'))
 
 
