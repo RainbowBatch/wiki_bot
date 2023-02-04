@@ -1,5 +1,6 @@
 .~lock.*#
 __pycache__/
+.cache
 audio_files/
 data/
 google_credentials.json
