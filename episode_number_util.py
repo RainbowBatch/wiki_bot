@@ -20,7 +20,7 @@ MANUAL_EPISODE_NUMBER_REMAPPING = {
 
     "Alex's Breaky Minisode": 'S012',
 
-    "Lost Episode": 'S013', # TODO: This may not be correct.
+    "Lost Episode": 'S014', # TODO: This may not be correct, it's def out of order.
 }
 
 

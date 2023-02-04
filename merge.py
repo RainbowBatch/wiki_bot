@@ -9,7 +9,8 @@ from episode_number_util import extract_episode_number, clean_episode_number
 def merge_records():
 
     title_table = kfio.load('data/titles.json')
-    details_table = kfio.load('data/libsyn_details.json')
+    libsyn_details_table = kfio.load('data/libsyn_details.json')
+    spotify_details_table = kfio.load('data/spotify_details.json')
     overlay_table = kfio.load('data/overlay.json')
 
     # Annotate next / previous from the libsyn dataset.
@@ -28,12 +29,20 @@ def merge_records():
     tracker_table['episode_number'] = tracker_table.episode_number.apply(
         clean_episode_number)
 
+
     # TODO: Ensure we're not dropping anything here?
     augmented_title_table = pd.merge(
         title_table,
-        details_table,
+        libsyn_details_table,
         how='inner',
         on='libsyn_page'
+    )
+
+    augmented_title_table = pd.merge(
+        augmented_title_table,
+        spotify_details_table,
+        how='inner',
+        on='episode_number'
     )
 
     merged = pd.merge(
