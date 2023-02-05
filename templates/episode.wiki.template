@@ -4,7 +4,7 @@
 {%- if safe_clean_title != clean_title -%}{%- raw -%}{{{%- endraw -%}DISPLAYTITLE:{{clean_title}}{%- raw -%}}}{%- endraw -%}{%- endif -%}
 {% raw %}{{{% endraw %}Episode
 |title={{clean_title}}
-|caption=[{{libsyn_page}} Listen to this episode on Libsyn]
+|caption=Listen to this episode on [{{libsyn_page}} Libsyn] [{{spotify_page}} Spotify]
 |episodeNumber={{episode_number}}
 |length={{episode_length}}
 {% if release_date is defined and release_date is not none %}

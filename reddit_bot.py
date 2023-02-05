@@ -38,7 +38,7 @@ env = Environment(
 def format_speaker(speaker):
     '''Shortens common names to save space.'''
     if speaker is None:
-        return "?"
+        return ''
     if speaker == "Alex Jones":
         return "Alex"
     return speaker
