@@ -5,7 +5,9 @@ import praw
 import random
 import re
 import traceback
+import kfio
 
+from thefuzz import process as fuzzy_process
 from attr import attr
 from attr import attrs
 from box import Box
@@ -43,12 +45,12 @@ env = Environment(
 
 COMMAND_MAPPING = {
     'details': 'episode_details',
-    'episode_details': 'episode_details'
+    'episode_details': 'episode_details',
     'help': 'help',
     'quitquitquit': 'quitquitquit',
     'search': 'transcript_search',
     'search_transcripts': 'transcript_search',
-    'shut_down': 'quitquitquit',
+    'shutdown': 'quitquitquit',
     'transcript_search': 'transcript_search',
 }
 
@@ -76,10 +78,12 @@ env.filters["format_redacted"] = format_redacted
 env.filters["format_speaker"] = format_speaker
 env.filters["format_timestamp"] = lambda ts: format_timestamp(ts, shorten=True)
 
-episode_details_reply_template = env.get_template('reddit_bot_episode_details.md.template')
+episode_details_reply_template = env.get_template(
+    'reddit_bot_episode_details.md.template')
 error_reply_template = env.get_template('reddit_bot_error.md.template')
 help_reply_template = env.get_template('reddit_bot_help.md.template')
-transcript_search_reply_template = env.get_template('reddit_bot_reply.md.template')
+transcript_search_reply_template = env.get_template(
+    'reddit_bot_reply.md.template')
 
 episodes_df = kfio.load('data/final.json')
 
@@ -111,10 +115,21 @@ class BotCommand:
         self.normalize_command()
 
     def normalize_command(self, fuzzy=True):
-        if self.command in COMMAND_MAPPING:
-            self.command = COMMAND_MAPPING[self.command]
+        if not fuzzy:
+            if self.command in COMMAND_MAPPING:
+                self.command = COMMAND_MAPPING[self.command]
+            else:
+                raise ValueError("Unknown command: '%s'" % self.command)
         else:
-            raise ValueError("Unknown command: '%s'" % self.command)
+            nearest_command, similarity = fuzzy_process.extractOne(
+                self.command,
+                COMMAND_MAPPING.keys()
+            )
+
+            if similarity < 70:
+                raise ValueError("Unknown command: '%s'" % self.command)
+            self.command = COMMAND_MAPPING[nearest_command]
+
 
     def __repr__(self):
         command_slug = self.command
@@ -125,14 +140,21 @@ class BotCommand:
         return '!%s "%s"' % (command_slug, self.argument)
 
 
-def extract_bot_command(comment_text: str) -> BotCommand:
-    # TODO(woursler): Do this smarter.
-    if "shut down" in comment_text:
-        return BotCommand("quitquitquit")
+command_extractor_regexp = re.compile("(?<=!)(?P<command>\w+)")
 
-    # TODO: Do something smarter, possibly using GPT?
+
+def extract_bot_command(comment_text: str) -> BotCommand:
     quoted_strings = re.findall('"([^"]*)"', comment.body)
 
+    command_match = command_extractor_regexp.search(comment_text)
+
+    if command_match is not None:
+        if len(quoted_strings) == 0:
+            return BotCommand(command_match.group('command'))
+        assert len(quoted_strings) == 1
+        return BotCommand(command_match.group('command'),  quoted_strings[0])
+
+    # TODO: Do something smarter as a fallback, possibly using GPT?
     assert len(quoted_strings) == 1
     search_term = quoted_strings[0]
 
@@ -258,7 +280,8 @@ for comment in subreddit.stream.comments():
                     "Remote shutdown requested by %s" % comment.author
                 )
 
-                reply_comment = comment.reply("!quitquitquit acknowledged. Shutting down now.")
+                reply_comment = comment.reply(
+                    "!quitquitquit acknowledged. Shutting down now.")
 
                 logging.info(
                     "Reply details: {ID: %s, permalink: %s }" % (

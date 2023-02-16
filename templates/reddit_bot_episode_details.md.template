@@ -9,11 +9,7 @@ Here's what I know about Episode #{{episode_details.episode_number}}:
 |**Length**|{{episode_details.episode_length}}|
 |**Aired on**|{{episode_details.release_date}}|
 |**Covers**|{{episode_details.coverage_dates_string}}|
-|**Links**|[Libsyn]({{episode_details.libsyn_page}}) [Spotify]({{episode_details.spotify_page}})
-{%- for citation_link in episode_details.citations_links %} [Citations]({{citation_link}})
-{%- if loop.last %} {% endif -%}
-{%- endfor -%}
-[Wiki]({{episode_details.wiki_link}}) [Transcript]({{episode_details.wiki_transcript_link}})|
+|**Links**|[Libsyn]({{episode_details.libsyn_page}}) [Spotify]({{episode_details.spotify_page}}){% for citation_link in episode_details.citations_links %} [Citations]({{citation_link}}){% endfor %} [Wiki]({{episode_details.wiki_link}}) [Transcript]({{episode_details.wiki_transcript_link}})|
 
 This information is compiled from [a variety of contributors and sources](https://knowledge-fight.fandom.com/wiki/Knowledge_Fight_Wiki#:~:text=Sources%20and%20Thanks).
 
