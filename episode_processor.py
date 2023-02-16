@@ -20,13 +20,14 @@ from string_processing import splits
 from wiki_cleaner import format_citation_block
 from wiki_cleaner import simple_format
 
-def sortkey(clean_title, episode_number, prev_episode_number, letter_code=None, max_digits = 4):
+
+def sortkey(clean_title, episode_number, prev_episode_number, letter_code=None, max_digits=4):
     episode_number = episode_number
     prev_episode_number = prev_episode_number
 
     if episode_number.startswith('S'):
         assert prev_episode_number is not None
-        return sortkey(clean_title, prev_episode_number, None, letter_code='S', max_digits = max_digits)
+        return sortkey(clean_title, prev_episode_number, None, letter_code='S', max_digits=max_digits)
     if episode_number.endswith(('A', 'B', 'C', 'D', 'E', 'F', 'G')):
         assert letter_code is None
         letter_code = episode_number[-1]
@@ -37,8 +38,10 @@ def sortkey(clean_title, episode_number, prev_episode_number, letter_code=None, 
 
     return '#_EPISODE_%s%s:%s' % (str(int(episode_number)).zfill(max_digits), letter_code, clean_title)
 
+
 def canonicalize_title(title):
-        return title.replace(' ', '_').replace('#', '').replace('"', '{{QUOTE}}').replace("/", "{{FORWARD_SLASH}}").replace(":", "{{COLON}}").replace("?", "{{QUESTION_MARK}}")
+    return title.replace(' ', '_').replace('#', '').replace('"', '{{QUOTE}}').replace("/", "{{FORWARD_SLASH}}").replace(":", "{{COLON}}").replace("?", "{{QUESTION_MARK}}")
+
 
 def process_ep_record(ep_record, citations_df, category_remapping_df):
     potentially_missing_columns = set([
@@ -66,6 +69,10 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
     ep_record['prev_title'] = cleantitle(ep_record['prev_title'])
     ep_record['next_title'] = cleantitle(ep_record['next_title'])
 
+    # TODO: These are probably wrong.
+    ep_record['wiki_link'] = "https://knowledge-fight.fandom.com/wiki/%s" % ep_record['title'].replace(' ', '_')
+    ep_record['wiki_transcript_link'] = "https://knowledge-fight.fandom.com/wiki/Transcript/%s" % ep_record['title'].replace(' ', '_')
+
     ep_record['slug'] = canonicalize_title(ep_record['title'])
 
     ep_record['ofile'] = 'kf_wiki_content/%s.wiki' % ep_record['slug']
@@ -79,7 +86,8 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
     else:
         ep_record['clean_title'] = ep_record['title'].split(':')[-1].strip()
 
-    ep_record['sortkey'] = sortkey(ep_record['clean_title'], ep_record['episode_number'], ep_record['prev_episode_number'])
+    ep_record['sortkey'] = sortkey(
+        ep_record['clean_title'], ep_record['episode_number'], ep_record['prev_episode_number'])
 
     ep_record['safe_title'] = ep_record['title'].replace('#', '')
     ep_record['safe_clean_title'] = ep_record['clean_title'].replace('#', '')
@@ -97,6 +105,7 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
 
     if pd.isna(ep_record['details_html']):
         ep_record['mediawiki_description'] = ''
+        ep_record['plaintext_description'] = ''
     else:
         ep_record['mediawiki_description'] = simple_format(
             pandoc.write(
@@ -105,6 +114,16 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
                 format="mediawiki"
             )
         )
+        pre_plaintext_description = pandoc.write(
+            pandoc.read(ep_record['mediawiki_description'],
+                        format="mediawiki"),
+            format="plain"
+        ).replace('\n-  ', '\n')
+        ep_record['plaintext_description'] = ' '.join([
+            line.strip()
+            for line in pre_plaintext_description.split('\n')
+            if len(line.strip()) > 0
+        ])
 
     if not pd.isna(ep_record['episode_type']):
         episode_type_row = category_remapping_df[category_remapping_df.original_category ==
@@ -124,6 +143,7 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
 
     # This is a bit hacky, but we need to pick up the correct citations from the external table.
     ep_record['mediawiki_citations'] = []
+    ep_record['citations_links'] = []
     relevant_citations = citations_df[citations_df.citations_episode_number ==
                                       ep_record['episode_number']].sort_values(by=['citations_start_date'])
     if len(relevant_citations) > 0:
@@ -134,6 +154,10 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
                     relevant_citation['citations_url'],
                     relevant_citation['citations_title'],
                 )
+            )
+
+            ep_record['citations_links'].append(
+                relevant_citation['citations_url']
             )
 
     title_based_coverage_start_date, title_based_coverage_end_date = extract_date_from_string(
@@ -162,6 +186,12 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
     else:
         ep_record['coverage_date'] = None
 
+    # TODO: Nicer formatting here
+    if ep_record['coverage_date'] is None:
+        ep_record['coverage_dates_string'] = "%s - %s" % (ep_record['coverage_start_date'], ep_record['coverage_end_date'])
+    else:
+        ep_record['coverage_dates_string'] = ep_record['coverage_date']
+
     formatted_release_date_0 = canonicalize_date(ep_record['release_date'])
     formatted_release_date_x = canonicalize_date(ep_record['release_date_x'])
     formatted_release_date_y = canonicalize_date(ep_record['release_date_y'])
@@ -175,8 +205,10 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
         ep_record['release_date'] = None
 
     if ep_record['release_date'] == None:
-        print(ep_record['release_date'], ep_record['release_date_x'], ep_record['release_date_y'])
-        print(formatted_release_date_0, formatted_release_date_x, formatted_release_date_y)
+        print(ep_record['release_date'],
+              ep_record['release_date_x'], ep_record['release_date_y'])
+        print(formatted_release_date_0,
+              formatted_release_date_x, formatted_release_date_y)
 
     # Clean up obsolete fields
     # These are reflected in release_date

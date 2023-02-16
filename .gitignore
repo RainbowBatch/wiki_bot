@@ -7,6 +7,7 @@ google_credentials.json
 kf_wiki_content/
 pywikibot/
 secrets/
+sensitive/
 token.json
 transcripts/
 praw.ini

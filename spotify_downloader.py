@@ -1,11 +1,13 @@
-import spotipy
-from box import Box
 import json
-from pprint import pprint
 import kfio
-import pandas as pd
 import natsort
+import pandas as pd
+import spotipy
+
+from box import Box
 from episode_number_util import extract_episode_number
+from pprint import pprint
+
 
 def download_spotify_details():
     PODCAST_ID = "6hK78c5u6Bscdz0HCDeFLn"

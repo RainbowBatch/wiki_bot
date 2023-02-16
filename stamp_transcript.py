@@ -53,7 +53,9 @@ def stamp_transcripts(overwrite):
 
         idxs = episodes_df.index[episodes_df.episode_number ==
                                  episode_number].tolist()
-        assert len(idxs) == 1
+        assert len(idxs) <= 1
+        if len(idxs) == 0:
+            continue  # Likely a lost episode.
         idx = idxs[0]
 
         episode_details = episodes_df.iloc[idx]
