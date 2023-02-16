@@ -1,0 +1,31 @@
+There are two ways to interact with RainbowBatch -- natural language and structured commands.
+
+# Structured Commands
+
+Structured commands have an unambigious meaning to the bot.
+
+A structured command is expressed as follows:
+
+```
+/u/RainbowBatch !verb "argument"
+```
+
+Valid verbs are as follows:
+
+| verb | meaning | argument meaning |
+|---|---|---|
+| search / transcript_search |   | Search terms are not case sensitive  |
+| details / episode_details | Print details and links for each episode. |   |
+| shutdown | Shuts down the bot, only avalible to subreddit moderators. | N/A |
+| help | Prints this message | N/A |
+
+# Natural language
+
+The bot will attempt to rephrase any comment it can't parse as a command. It does this using an LLM (think ChatGPT), which is locally running on the bot server and doesn't retain or log any prompts or responses.
+
+For instance, the bot might translate
+`Hey /u/RainbowBatch, search for any time You Belong to the City`
+into
+`/u/RainbowBatch !search "you belong to the city"`.
+
+LLMs, especially the relativly small LLM used for this bot, can be unreliable and have a litany of technical and ethical problems. I'm using one because I think in the risk of harm from a bad response is low, and the benifits of making the bot easier to use outwieghs the risk.

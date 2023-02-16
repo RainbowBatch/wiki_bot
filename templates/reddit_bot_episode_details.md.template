@@ -1,15 +1,19 @@
 {% import 'reddit_bot_macros.template' as macro %}
 
-Here's what I know about Episode #386:
+Here's what I know about Episode #{{episode_details.episode_number}}:
 
-|386:|January 8, 2020|
+||**#{{episode_details.episode_number}}: {{episode_details.clean_title}}**|
 |-:|:-|
-|**Type**|Present Day|
-|**Description**|Today, Dan and Jordan take a look at how Alex Jones is dealing with the evolving situation involving the US and Iran. In this installment, Alex decides to toss analysis to the side and focus on ranting about how much he's scared of Islam. Also, Alex experiences some unfortunate tech issues.|
-|**Length**|01:58:12|
-|**Aired on**|January 10, 2020|
-|**Covers**|January 8, 2020|
-|**Links**|[Libsyn](https://knowledgefight.libsyn.com/knowledge-fight-january-8-2020) [Spotify](https://open.spotify.com/episode/3suyocP6G82gFCAUCn8vzt?si=XrlcrLO4SzaJws0IGBrmbg) [Citations]() [Wiki](https://knowledge-fight.fandom.com/wiki/386:_January_8,_2020) [Transcript]()|
+|**Type**|{% for category in episode_details.categories %}{{category}}{% if not loop.last %}, {% endif %}{% endfor %}|
+|**Description**|{{episode_details.plaintext_description}}|
+|**Length**|{{episode_details.episode_length}}|
+|**Aired on**|{{episode_details.release_date}}|
+|**Covers**|{{episode_details.coverage_dates_string}}|
+|**Links**|[Libsyn]({{episode_details.libsyn_page}}) [Spotify]({{episode_details.spotify_page}})
+{%- for citation_link in episode_details.citations_links %} [Citations]({{citation_link}})
+{%- if loop.last %} {% endif -%}
+{%- endfor -%}
+[Wiki]({{episode_details.wiki_link}}) [Transcript]({{episode_details.wiki_transcript_link}})|
 
 This information is compiled from [a variety of contributors and sources](https://knowledge-fight.fandom.com/wiki/Knowledge_Fight_Wiki#:~:text=Sources%20and%20Thanks).
 

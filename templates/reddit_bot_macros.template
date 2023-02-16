@@ -5,6 +5,6 @@
 *I am a bot, and this comment was composed automatically. Please contact [u/CelestAI](/message/compose/?to=CelestAI) if you have any questions or concerns.*
 {%- endmacro -%}
 
-{%- macro results_omitted(n) -%}
-*I've omitted {{n}} results which might contain sensitive information.*
+{%- macro redaction_explaination() -%}
+[Click here](https://TODO) to read more about why RainbowBatch may redact results.
 {%- endmacro -%}

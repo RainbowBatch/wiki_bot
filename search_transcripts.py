@@ -132,6 +132,17 @@ def display_search_results(results: List[SearchResult]):
         ))
 
 
+def search_transcript(transcript_record, transcript, searchterm):
+    for block in transcript.blocks:
+            match = fuzz.partial_ratio(block.text.lower(), searchterm.lower())
+
+            if match > 80 and len(block.text) / len(searchterm) > .6:
+                yield merge(
+                    transcript_record,
+                    asdict(block),
+                    {'match': match}
+                )
+
 def search_transcripts(searchterm, remove_overlaps, max_results=1000, highlight_f=lambda x: x) -> List[SearchResult]:
     dmp = dmp_module.diff_match_patch()
 
@@ -142,22 +153,16 @@ def search_transcripts(searchterm, remove_overlaps, max_results=1000, highlight_
     for record in tqdm(transcript_listing.to_dict(orient='records')):
         transcript = parse_transcript(record)
         transcript.augment_timestamps()
-        for block in transcript.blocks:
-            match = fuzz.partial_ratio(block.text.lower(), searchterm.lower())
 
-            if match > 80 and len(block.text) / len(searchterm) > .6:
-                result_records.append(merge(
-                    record,
-                    asdict(block),
-                    {'match': match}
-                ))
+        result_records.extend(search_transcript(record, transcript, searchterm))
 
-            # TODO: Two line match?
+    if len(result_records) == 0:
+        return []
 
     result_df = pd.DataFrame.from_records(result_records)
 
     best_result_df = result_df.nlargest(max_results, 'match').sort_values(
-        by=['episode_number', 'start_timestamp'])
+            by=['episode_number', 'start_timestamp'])
 
     grouped = best_result_df.groupby('episode_number')
 

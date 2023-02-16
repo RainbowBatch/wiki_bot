@@ -1,15 +1,27 @@
 {% import 'reddit_bot_macros.template' as macro %}
 
-I searched the [unofficial transcripts](https://github.com/RainbowBatch/kftranscripts) for near matches for the term "{{search_term}}". Here's what I found:
+I searched the [unofficial transcripts](https://github.com/RainbowBatch/kftranscripts) for near matches for the term "{{search_term}}".{% if search_results | length %} Here's what I found:{% endif %}
 
 {% if results_truncated %}
 Truncated after the top 100 results. Please try again with a more specific search term if needed.
 {% endif %}
+
+{% if search_results | length %}
 
 |Ep#|Snippet|Time Range|Speaker|
 :--|:--|:--|:--|:--|
 {%for result in search_results -%}
 |{{ result.episode_number }}|{{result.snippet}}|{{result.start_timestamp | format_timestamp}} - {{result.end_timestamp | format_timestamp}}|{{result.speaker_name | format_speaker}}|
 {% endfor %}
+
+{% if n_redactions > 0 %}
+{{n_redactions | format_redacted}} results have been removed because they may contain sensitive information. {{ macro.redaction_explaination() }}
+{% endif %}
+
+{% else %}
+
+I found no results (or all results were removed because they may contain sensitive information). {{ macro.redaction_explaination() }}
+
+{% endif %}
 
 {{ macro.i_am_a_bot() }}
