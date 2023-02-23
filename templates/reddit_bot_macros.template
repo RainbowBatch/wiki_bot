@@ -6,5 +6,12 @@
 {%- endmacro -%}
 
 {%- macro redaction_explaination() -%}
-[Click here](https://TODO) to read more about why RainbowBatch may redact results.
+[Click here](https://github.com/RainbowBatch/wiki_bot/wiki/Why-does-RainbowBatch-remove-results%3F) to read more about why RainbowBatch may redact results.
+{%- endmacro -%}
+
+
+{%- macro nonstructured_command_message() -%}
+I had to reinterpret your command, which can be often error prone and ambiguous.
+I interpreted your command as `/u/RainbowBatch !verb "arg"`.
+Please reply with `/u/RainbowBatch !help` to see full documentation on writing unambiguous commands.
 {%- endmacro -%}

@@ -1,0 +1,5 @@
+{% import 'reddit_bot_macros.template' as macro %}
+
+{{reply}}
+
+{{ macro.i_am_a_bot() }}

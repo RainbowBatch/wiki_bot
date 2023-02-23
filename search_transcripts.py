@@ -144,6 +144,8 @@ def search_transcript(transcript_record, transcript, searchterm):
                 )
 
 def search_transcripts(searchterm, remove_overlaps, max_results=1000, highlight_f=lambda x: x) -> List[SearchResult]:
+    searchterm = searchterm.strip()
+
     dmp = dmp_module.diff_match_patch()
 
     transcript_listing = create_full_transcript_listing()

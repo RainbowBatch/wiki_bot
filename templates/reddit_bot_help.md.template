@@ -1,29 +1,11 @@
-There are two ways to interact with RainbowBatch -- natural language and structured commands.
+{% import 'reddit_bot_macros.template' as macro %}
 
-## Structured Commands
+RainbowBatch takes commands in the form `u/RainbowBatch !verb "argument"`. Here are some examples:
 
-Structured commands have an unambiguous meaning to the bot.
+`u/RainbowBatch !search "each one teach one"`
 
-A structured command would look like this: `/u/RainbowBatch !verb "argument"`
+`u/RainbowBatch !episode "700"`
 
-Valid verbs are as follows:
-
-| verb | meaning | argument meaning |
-|---|---|---|
-| search / transcript_search |   | Search terms are not case sensitive  |
-| details / episode_details | Print details and links for each episode. |   |
-| shutdown / quitquitquit | Shuts down the bot, only available to developers / subreddit moderators. | N/A |
-| help | Prints this message | N/A |
-
-## Natural Language
-
-The bot will attempt to rephrase any comment it can't parse as a command. It does this using an LLM (think ChatGPT), which is locally running on the bot server and doesn't retain or log any prompts or responses.
-
-For instance, the bot might translate
-`Hey /u/RainbowBatch, search for any time You Belong to the City was mentioned`
-into
-`/u/RainbowBatch !search "you belong to the city"`. It also could get things completely wrong. Use the structured commands if you don't want to risk it.
-
-LLMs, especially the smaller LLM used for this bot, can be unreliable and have a litany of technical and ethical problems. I'm using one because I think the risk of harm from a bad response is low, and the benefits of making the bot easier to use outweighs the risk.
+See instructions [here](https://github.com/RainbowBatch/wiki_bot/wiki/Reddit-Bot-(u-RainbowBatch)-Help) for more details.
 
 {{ macro.i_am_a_bot() }}

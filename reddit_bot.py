@@ -20,6 +20,7 @@ from search_transcripts import search_transcripts
 from sensitive.redactions import is_sensitive
 from transcripts import format_timestamp
 from typing import Optional
+from reddit_bot.nlp_command_parser import fuzzy_parse_bot_command
 
 
 # Configure logging.
@@ -45,6 +46,7 @@ env = Environment(
 
 COMMAND_MAPPING = {
     'details': 'episode_details',
+    'episode': 'episode_details',
     'episode_details': 'episode_details',
     'help': 'help',
     'quitquitquit': 'quitquitquit',
@@ -81,6 +83,8 @@ env.filters["format_timestamp"] = lambda ts: format_timestamp(ts, shorten=True)
 episode_details_reply_template = env.get_template(
     'reddit_bot_episode_details.md.template')
 error_reply_template = env.get_template('reddit_bot_error.md.template')
+generic_reply_template = env.get_template(
+    'reddit_bot_generic_reply.md.template')
 help_reply_template = env.get_template('reddit_bot_help.md.template')
 transcript_search_reply_template = env.get_template(
     'reddit_bot_reply.md.template')
@@ -100,66 +104,7 @@ with open("secrets/reddit.json") as secrets_f:
 
 
 # Only interact with specific subreddits.
-subreddit = reddit.subreddit("pythonforengineers+KnowledgeFight")
-
-
-@attrs(repr=False)
-class BotCommand:
-    command: str = attr()
-    argument: Optional[str] = attr(default=None)
-
-    origin_command: str = attr(init=False)
-
-    def __attrs_post_init__(self):
-        self.origin_command = self.command
-        self.normalize_command()
-
-    def normalize_command(self, fuzzy=True):
-        if not fuzzy:
-            if self.command in COMMAND_MAPPING:
-                self.command = COMMAND_MAPPING[self.command]
-            else:
-                raise ValueError("Unknown command: '%s'" % self.command)
-        else:
-            nearest_command, similarity = fuzzy_process.extractOne(
-                self.command,
-                COMMAND_MAPPING.keys()
-            )
-
-            if similarity < 70:
-                raise ValueError("Unknown command: '%s'" % self.command)
-            self.command = COMMAND_MAPPING[nearest_command]
-
-
-    def __repr__(self):
-        command_slug = self.command
-        if self.origin_command != self.command:
-            command_slug = "%s(%s)" % (self.command, self.origin_command)
-        if self.argument is None:
-            return '!%s' % (command_slug)
-        return '!%s "%s"' % (command_slug, self.argument)
-
-
-command_extractor_regexp = re.compile("(?<=!)(?P<command>\w+)")
-
-
-def extract_bot_command(comment_text: str) -> BotCommand:
-    quoted_strings = re.findall('"([^"]*)"', comment.body)
-
-    command_match = command_extractor_regexp.search(comment_text)
-
-    if command_match is not None:
-        if len(quoted_strings) == 0:
-            return BotCommand(command_match.group('command'))
-        assert len(quoted_strings) == 1
-        return BotCommand(command_match.group('command'),  quoted_strings[0])
-
-    # TODO: Do something smarter as a fallback, possibly using GPT?
-    assert len(quoted_strings) == 1
-    search_term = quoted_strings[0]
-
-    return BotCommand("transcript_search", search_term)
-
+subreddit = reddit.subreddit("KnowledgeFight+KnowledgeFightBots")
 
 def already_replied(comment):
     for reply in comment.replies:
@@ -181,6 +126,15 @@ def split_list_on_condition(l, condition):
 
 
 def formulate_search_reply(search_term):
+    if len(search_term) > 500:
+        logging.info("Rejected search for length: '%s'" % search_term)
+        return clean_reply(
+            generic_reply_template.render(
+                reply="Please enter a shorter search term. Search terms must be less than 500 char -- yours is currently %d char." % len(
+                    search_term),
+            ),
+        )
+
     logging.info("Searching for '%s'" % search_term)
 
     search_results = search_transcripts(
@@ -249,12 +203,16 @@ for comment in subreddit.stream.comments():
         continue
 
     # Don't respond to the same comment multiple times.
-    comment.refresh()
+    try:
+        comment.refresh()
+    except:
+        continue
+
     if already_replied(comment):
         continue
 
     # Only a few people can interact with the bot (for now).
-    if comment.author not in ["CelestAI", "SauceCupAficionado"]:
+    if comment.author not in ["CelestAI", "SauceCupAficionado", "KnowledgeFightBots"]:
         continue  # For now, restrict who can summon the bot.
 
     logging.info("Responding to {ID: %s, permalink: %s }" % (
@@ -263,14 +221,19 @@ for comment in subreddit.stream.comments():
     ))
 
     try:
-        command = extract_bot_command(comment.body)
+        # TODO: This does the right thing but it's a mess.
+        for line in comment.body.split('\n'):
+            if not re.search("u/RainbowBatch", line, re.IGNORECASE):
+                continue
+            command = fuzzy_parse_bot_command(line)
+            break
 
         logging.info(
             "Handling command: %s" % repr(command)
         )
 
         if command.command == 'quitquitquit':
-            authorized_users = ['RainbowBatch', 'CelestAI'] + [
+            authorized_users = ['RainbowBatch', 'CelestAI', 'KnowledgeFightBots'] + [
                 redditor.name
                 for redditor in reddit.subreddit("KnowledgeFight").moderator()
             ]
