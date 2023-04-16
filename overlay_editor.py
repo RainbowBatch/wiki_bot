@@ -1,8 +1,10 @@
-import kfio
 import box
+import kfio
+import natsort
+import pandas as pd
+
 from box import Box
 from collections import defaultdict
-import pandas as pd
 from date_lookup import mayafy_date
 
 scraped_data = kfio.load('data/scraped_page_data.json')
@@ -36,17 +38,19 @@ for page_record in scraped_data.to_dict(orient='records'):
     matching_episode_record = Box(
         matching_episodes.to_dict(orient='records')[0])
 
-    matching_overlays = existing_overlay[existing_overlay.episode_number == page_record.episodeNumber]
+    matching_overlays = existing_overlay[existing_overlay.episode_number ==
+                                         page_record.episodeNumber]
     if len(matching_overlays) > 0:
         current_overlay = Box(matching_overlays.to_dict(orient='records')[0])
     else:
         current_overlay = None
 
-
     overlay_categories = set() if current_overlay is None else current_overlay.categories
-    overlay_categories = (set() if isinstance(overlay_categories, float) else set(overlay_categories))
+    overlay_categories = (set() if isinstance(
+        overlay_categories, float) else set(overlay_categories))
 
-    inferred_categories = (set(wiki_categories) | set(overlay_categories)).intersection(valid_categories)
+    inferred_categories = (set(wiki_categories) | set(
+        overlay_categories)).intersection(valid_categories)
 
     if matching_episode_record.coverage_start_date is not None and '2003' in matching_episode_record.coverage_start_date:
         inferred_categories.add('2003 Investigation')
@@ -77,8 +81,10 @@ for page_record in scraped_data.to_dict(orient='records'):
 
     current_start_date = matching_episode_record.coverage_start_date
     current_end_date = matching_episode_record.coverage_end_date
-    inferred_start_date = page_record.coverageStartDate or page_record.coverageDate or (None if current_overlay is None else (current_overlay.coverage_start_date or current_overlay.coverage_date))
-    inferred_end_date = page_record.coverageEndDate or page_record.coverageDate or (None if current_overlay is None else (current_overlay.coverage_end_date or current_overlay.coverage_date))
+    inferred_start_date = page_record.coverageStartDate or page_record.coverageDate or (
+        None if current_overlay is None else (current_overlay.coverage_start_date or current_overlay.coverage_date))
+    inferred_end_date = page_record.coverageEndDate or page_record.coverageDate or (
+        None if current_overlay is None else (current_overlay.coverage_end_date or current_overlay.coverage_date))
 
     dirty_date = False
     if current_start_date != inferred_start_date:
@@ -98,6 +104,6 @@ for page_record in scraped_data.to_dict(orient='records'):
             new_overlay[page_record.episodeNumber]['coverage_date'] = '##REMOVE##'
 
 new_overlay_df = pd.DataFrame.from_records(
-    list(new_overlay.values())).sort_values('episode_number')
+    list(new_overlay.values())).sort_values(by=['episode_number'], key=natsort.natsort_keygen())
 
 kfio.save_without_nulls(new_overlay_df, 'data/overlay.json')

@@ -6,7 +6,6 @@ import page_listing
 import pandas as pd
 import parse
 
-from glob import glob
 from jinja2 import Environment
 from jinja2 import FileSystemLoader
 from jinja2 import Template
@@ -60,13 +59,9 @@ def stamp_transcripts(overwrite):
 
         episode_details = episodes_df.iloc[idx]
 
-        slug = 'Transcript{{FORWARD_SLASH}}' + episode_details['slug']
-        ofile = 'kf_wiki_content/' + slug + '.wiki'
-        title = 'Transcript/' + episode_details['title']
-
         transcript = parse_transcript(transcript_record)
 
-        if exists(ofile) and not overwrite:
+        if exists(episode_details['transcript_ofile']) and not overwrite:
             continue
 
         raw = template.render(
@@ -76,10 +71,10 @@ def stamp_transcripts(overwrite):
 
         pretty = simple_format(raw)
 
-        with io.open(ofile, mode="w", encoding="utf-8") as f:
+        with io.open(episode_details['transcript_ofile'], mode="w", encoding="utf-8") as f:
             f.write(pretty)
 
-        page_listing.add(title=title, slug=slug)
+        page_listing.add(title=episode_details['transcript_safe_title'], slug=episode_details['transcript_slug'])
 
     page_listing.save()
 

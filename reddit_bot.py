@@ -16,7 +16,7 @@ from jinja2 import Environment
 from jinja2 import FileSystemLoader
 from jinja2 import Template
 from jinja2 import select_autoescape
-from search_transcripts import search_transcripts
+from sensitive.transcript_search import search_transcripts
 from sensitive.redactions import is_sensitive
 from transcripts import format_timestamp
 from typing import Optional
@@ -310,7 +310,7 @@ for comment in subreddit.stream.comments():
         # printing stack trace
         logging.exception(
             "Failed to serve response. Replying with an error.")
-        print("Failed to handle '%s'" % comment.body)
+        print("Failed to handle '%s'" % comment.permalink)
         traceback.print_exc()
         reply_comment = comment.reply(
             clean_reply(error_reply_template.render()))

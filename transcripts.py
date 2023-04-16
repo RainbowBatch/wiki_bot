@@ -1,12 +1,14 @@
 import datetime
+import json
 import pandas as pd
 import parse
-import json
 
+from kfio import TRANSCRIPT_DIR
 from attr import attr
 from attr import attrs
 from box import Box
 from glob import glob
+from pathlib import Path
 from tqdm import tqdm
 
 
@@ -14,9 +16,9 @@ def create_full_transcript_listing():
     header = ['episode_number', 'transcript_type',
               'transcript_format', 'transcript_fname']
     rows = []
-    for transcript_fname in glob('transcripts/*.*.*'):
+    for transcript_fname in glob(str(TRANSCRIPT_DIR / '*.*.*')):
         episode_number, transcript_type, transcript_format = parse.parse(
-            "transcripts\\{}.{}.{}", transcript_fname)
+            "{}.{}.{}", Path(transcript_fname).name)
         rows.append([episode_number, transcript_type,
                      transcript_format, transcript_fname])
 
@@ -36,7 +38,7 @@ type_sorter_index = dict(zip(type_sorter, range(len(type_sorter))))
 format_sorter = [
     'srt',
     'vtt',
-    'txt', # TODO: Migrate to vtt?
+    'txt',  # TODO: Migrate to vtt?
     'json',
 ]
 format_sorter_index = dict(zip(type_sorter, range(len(type_sorter))))
@@ -46,7 +48,8 @@ def create_best_transcript_listing():
     df = create_full_transcript_listing()
 
     df['transcript_type_rank'] = df['transcript_type'].map(type_sorter_index)
-    df['transcript_format_rank'] = df['transcript_format'].map(format_sorter_index)
+    df['transcript_format_rank'] = df['transcript_format'].map(
+        format_sorter_index)
 
     df = df.sort_values(
         ['episode_number', 'transcript_type_rank', 'transcript_format_rank'],

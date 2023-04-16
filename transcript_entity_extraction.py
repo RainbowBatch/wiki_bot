@@ -11,7 +11,8 @@ from entity import extract_entities
 from entity import simplify_entity
 from glob import glob
 from pprint import pprint
-
+from pathlib import Path
+from natsort import natsorted
 
 table_header = ['episode_number', 'people']
 transcript_guest_names = []
@@ -22,9 +23,9 @@ OVERUSED = [
     'Dan Friesen',
 ]
 
-for transcript_fname in glob('transcripts/*.otter.txt'):
+for transcript_fname in natsorted(glob(str(kfio.TRANSCRIPT_DIR / '*.otter.txt'))):
     episode_number = parse.parse(
-        "transcripts\\{}.otter.txt", transcript_fname)[0]
+        "{}.otter.txt", Path(transcript_fname).name)[0]
 
     print(episode_number)
 
@@ -94,4 +95,4 @@ for transcript_fname in glob('transcripts/*.otter.txt'):
 df = pd.DataFrame(transcript_guest_names, columns=table_header)
 df = df.sort_values(by=['episode_number'], key=natsort.natsort_keygen())
 
-kfio.save(df, 'data/nlp_guests.json')
+kfio.save(df, kfio.DATA_DIR / 'nlp_guests.json')

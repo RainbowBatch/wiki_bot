@@ -12,6 +12,7 @@ from box import Box
 from date_lookup import canonicalize_date
 from date_lookup import extract_date_from_string
 from date_lookup import format_date
+from date_lookup import format_daterange
 from pprint import pprint
 from string_processing import agressive_splits
 from string_processing import cleans
@@ -66,6 +67,7 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
             ep_record[colname] = np.nan
 
     ep_record['title'] = cleantitle(ep_record['title'])
+    ep_record['transcript_title'] = 'Transcript/' + ep_record['title']
     ep_record['prev_title'] = cleantitle(ep_record['prev_title'])
     ep_record['next_title'] = cleantitle(ep_record['next_title'])
 
@@ -74,23 +76,27 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
     ep_record['wiki_transcript_link'] = "https://knowledge-fight.fandom.com/wiki/Transcript/%s" % ep_record['title'].replace(' ', '_')
 
     ep_record['slug'] = canonicalize_title(ep_record['title'])
+    ep_record['transcript_slug'] = 'Transcript{{FORWARD_SLASH}}' + ep_record['slug']
 
     ep_record['ofile'] = 'kf_wiki_content/%s.wiki' % ep_record['slug']
-
-    # Transcript columns
-    # ep_record['transcript_ofile'] = 'kf_wiki_content/Transcript{{FORWARD_SLASH}}%s.wiki' % ep_record['slug']
+    ep_record['transcript_ofile'] = 'kf_wiki_content/%s.wiki' % ep_record['transcript_slug']
 
     # TODO: Handle "Repost:" special case...
     if ep_record['title'].startswith("Repost:"):
         ep_record['clean_title'] = ep_record['title']
     else:
         ep_record['clean_title'] = ep_record['title'].split(':')[-1].strip()
+    ep_record['transcript_clean_title'] = 'Transcript/' + ep_record['clean_title']
 
     ep_record['sortkey'] = sortkey(
         ep_record['clean_title'], ep_record['episode_number'], ep_record['prev_episode_number'])
+    ep_record['transcript_sortkey'] = ep_record['sortkey'].replace("EPISODE", "TRANSCRIPT")
 
     ep_record['safe_title'] = ep_record['title'].replace('#', '')
     ep_record['safe_clean_title'] = ep_record['clean_title'].replace('#', '')
+    ep_record['transcript_safe_title'] = ep_record['transcript_title'].replace('#', '')
+    ep_record['transcript_safe_clean_title'] = ep_record['transcript_clean_title'].replace('#', '')
+
     if ep_record['prev_title'] is not None:
         ep_record['safe_prev_title'] = ep_record['prev_title'].replace('#', '')
     if ep_record['next_title'] is not None:
@@ -188,7 +194,7 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
 
     # TODO: Nicer formatting here
     if ep_record['coverage_date'] is None:
-        ep_record['coverage_dates_string'] = "%s - %s" % (ep_record['coverage_start_date'], ep_record['coverage_end_date'])
+        ep_record['coverage_dates_string'] = format_daterange(ep_record['coverage_start_date'], ep_record['coverage_end_date'])
     else:
         ep_record['coverage_dates_string'] = ep_record['coverage_date']
 
@@ -216,5 +222,8 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
     del ep_record['release_date_y']
     # Redundant with details_html
     del ep_record['description']
+
+    # Redundant with title fields.
+    del ep_record['twitch_title']
 
     return Box(ep_record)

@@ -3,6 +3,7 @@ import kfio
 from box import Box
 import wikitextparser
 from pprint import pprint
+from tqdm import tqdm
 import re
 import pandas as pd
 
@@ -14,7 +15,7 @@ page_listing = kfio.load('kf_wiki_content/page_listing.json')
 episode_listing = kfio.load('data/final.json')
 
 PAGE_RECORDS = []
-for wiki_fname in glob.glob('kf_wiki_content/*.wiki'):
+for wiki_fname in tqdm(glob.glob('kf_wiki_content/*.wiki')):
     with open(wiki_fname, encoding='utf-8') as wiki_f:
         page_slug = wiki_fname[16:-5]
 
@@ -42,10 +43,20 @@ for wiki_fname in glob.glob('kf_wiki_content/*.wiki'):
             if template_name == 'externalredirect':
                 page_metadata.is_external_redirect = True
                 continue
-            if template_name in ['notice', 'messagebox', 'quote', 'main', 'topic', 'transcript', 'transcriptblock']:
+            if template_name in ['notice', 'messagebox', 'quote', 'main', 'topic', 'transcriptblock']:
                 continue
+
+            if template_name == 'transcript':
+                for argument in template.arguments:
+                    argument_name = argument.name.strip()
+                    if argument_name not in ['episodeNumber']:
+                        continue
+                    page_metadata['transcriptEpisodeNumber'] = argument.value.strip().split('|')[-1][:-2]
+                continue
+
             if template_name != 'episode':
                 raise NotImplementedError("Unable to handle template named '%s'." % template_name)
+
             for argument in template.arguments:
                 argument_name = argument.name.strip()
                 if argument_name in ['title']:

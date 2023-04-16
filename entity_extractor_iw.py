@@ -23,12 +23,11 @@ def extract_proto_entities_cli():
 
 
 def extract_proto_entities():
-    PROTO_ENTITIES_PATH = pathlib.Path(
-        'transcripts/infowars/proto_entities.json')
+    PROTO_ENTITIES_PATH = kfio.TRANSCRIPT_DIR / 'infowars' / 'proto_entities.json'
 
     new_proto_entities = dict()
 
-    for f_name in tqdm(glob.glob('transcripts/infowars/*.txt')):
+    for f_name in tqdm(glob.glob(str(kfio.TRANSCRIPT_DIR / 'infowars' / '*.txt'))):
         with open(f_name, 'rb') as f:
             f_byte_contents = f.read()
             try:

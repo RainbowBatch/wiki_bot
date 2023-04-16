@@ -59,7 +59,7 @@ def download_citations():
     # Almost everything ought to be in the sitemap, but it can take 24h to update.
     libsyn_details = kfio.load('data/libsyn_details.json')
     for description in libsyn_details.details_html.to_list():
-        for link in BeautifulSoup(description, parse_only=SoupStrainer('a')):
+        for link in BeautifulSoup(description, parse_only=SoupStrainer('a'), features="lxml"):
             if link.has_attr('href') and citation_url_regex.match(link['href'].strip()):
                 citation_urls.add(link['href'].strip())
 

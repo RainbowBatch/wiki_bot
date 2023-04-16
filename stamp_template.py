@@ -1,5 +1,6 @@
 import io
 import kfio
+import numpy as np
 import page_listing
 import pandas as pd
 
@@ -21,6 +22,8 @@ template = env.get_template('episode.wiki.template')
 
 def stamp_templates():
     episodes_df = kfio.load('data/final.json')
+
+    episodes_df = episodes_df.replace({np.nan: None})
 
     git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
 

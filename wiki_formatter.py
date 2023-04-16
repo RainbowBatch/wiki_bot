@@ -11,6 +11,7 @@ from pprint import pprint
 from pygit2 import Repository
 from spacy import displacy
 from wiki_cleaner import simple_format
+from tqdm import tqdm
 
 # TODO: Breaks "The Dreamy Creamy Summer" article?
 
@@ -23,14 +24,14 @@ nlp = en_core_web_sm.load()
 entities = []
 
 page_listing = kfio.load('kf_wiki_content/page_listing.json')
-known_missing_pages = kfio.load('data/missing_pages.json')
 
-recognized_entities = page_listing.title.to_list() + known_missing_pages.title.to_list()
-
-for page_record in page_listing.to_dict(orient='records'):
+for page_record in tqdm(page_listing.to_dict(orient='records')):
     page_record = Box(page_record)
 
     if 'Dreamy Creamy Summer' in page_record.title:
+        continue
+
+    if 'Transcript' in page_record.title:
         continue
 
     fname = 'kf_wiki_content/%s.wiki' % page_record.slug
@@ -39,10 +40,10 @@ for page_record in page_listing.to_dict(orient='records'):
             page_text = f.read()
 
         if '#redirect' in page_text.lower():
-            #print(fname, "is a redirect")
-            continue
-
-        formatted_page_text = simple_format(page_text)
+            formatted_page_text = page_text.replace(u'\u200f', '').replace(u'\u200e', '').strip()
+            assert len(formatted_page_text.split('\n')) == 1
+        else:
+            formatted_page_text = simple_format(page_text)
 
         if page_text.strip() != formatted_page_text.strip():
             with open(fname, "w", encoding='utf-8') as f:

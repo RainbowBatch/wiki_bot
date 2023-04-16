@@ -1,5 +1,7 @@
 {% import 'macros.template' as macro %}
 
+{% raw %}{{{% endraw %}DEFAULTSORT:{{episode_details.transcript_sortkey}}{% raw %}}}{% endraw %}
+{%- if episode_details.transcript_safe_clean_title != episode_details.transcript_clean_title -%}{%- raw -%}{{{%- endraw -%}DISPLAYTITLE:{{episode_details.transcript_clean_title}}{%- raw -%}}}{%- endraw -%}{%- endif -%}
 {% raw %}{{Transcript{% endraw %}
     | title           = {{ macro.wiki_link(episode_details.title, episode_details.safe_title) }}
     | caption         = [{{episode_details.libsyn_page}} Listen to this episode on Libsyn]

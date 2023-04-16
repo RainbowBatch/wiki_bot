@@ -97,7 +97,7 @@ def extract_proto_entities(margin, overwrite):
         transcript = parse_transcript(transcript_record)
 
         origin = '__'.join(['None' if frag is None else frag for frag in parse_entity_orgin(
-            transcript_record['transcript_fname'])])
+            'transcripts\\' + pathlib.Path(transcript_record['transcript_fname']).name)])
 
         proto_entities = aggregate_proto_entities(
             transcript_extractor(transcript, origin)).sort_values(

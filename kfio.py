@@ -5,6 +5,17 @@ import requests
 import time
 
 from string_processing import splits
+from pathlib import Path
+
+
+TOP_LEVEL_DIR = Path(
+    __file__
+).parent.absolute(
+)
+
+TRANSCRIPT_DIR = TOP_LEVEL_DIR / 'transcripts'
+AUDIO_FILES_DIR = TOP_LEVEL_DIR / 'audio_files'
+DATA_DIR = TOP_LEVEL_DIR / 'data'
 
 
 def save(df, fname):
