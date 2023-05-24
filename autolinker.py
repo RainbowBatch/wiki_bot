@@ -1,11 +1,37 @@
-import os
-import openai
+import click
+import diff_match_patch as dmp_module
+import kfio
 import mwparserfromhell
 import mwparserfromhell.nodes as wiki_node
-from abc import ABC, abstractmethod
-from parsimonious.nodes import VisitationError
-import kfio
+import openai
+import os
+import re
+import time
+
+from abc import ABC
+from abc import abstractmethod
+from attr import attr
+from attr import attrs
 from box import Box
+from entity import simplify_entity
+from entity_extraction_util import wikipage_extractor
+from parsimonious.nodes import VisitationError
+from pprint import pprint
+from pygit2 import Repository
+from wiki_cleaner import simple_format
+
+WIKILINK_PATTERN = re.compile(
+    r"\[\[(?P<link>[^|\]]+)(?:\|(?P<text>[^]]+))?\]\]")
+
+dmp = dmp_module.diff_match_patch()
+
+with open("secrets/openaiorg.txt") as openaiorg_f:
+    openai.organization = openaiorg_f.read().strip()
+with open("secrets/openaikey.txt") as openaikey_f:
+    openai.api_key = openaikey_f.read().strip()
+
+entities_df = kfio.load('data/raw_entities.json')
+episodes_df = kfio.load('data/final.json')
 
 
 class WikitextVisitor(ABC):
@@ -33,8 +59,47 @@ class WikitextVisitor(ABC):
         pass
 
 
+@attrs
+class ExistingLinkFinderVisitor(WikitextVisitor):
+    '''Despite the name, this doesn't actually visit because mwfromhell doesn't support clean copies...'''
+    entities = attr(factory=set)
+
+    def generic_visit(self, node, visited_children):
+        return node
+
+    def visit_Template(self, node, _):
+        # Don't consider links inside templates.
+        return node
+
+    def visit_Wikilink(self, node, _):
+        if "Category:" in node.title:
+            return node
+
+        if "File:" in node.title:
+            return node
+
+        e_key = simplify_entity(str(node.title))
+        if node.title != e_key:
+            print(node.title, "=>", simplify_entity(str(node.title)))
+            # raise NotImplementedError("possible dirty redirect...")
+        self.entities.add(e_key)
+        return node
+
+
+def lookup_entity(e_key):
+    entity_entry = entities_df[entities_df.raw_entity_name == e_key]
+    if len(entity_entry) == 0:
+        return None
+    assert len(entity_entry) == 1
+    entity_entry = Box(entity_entry.to_dict(orient='records')[0])
+    return entity_entry
+
+
+@attrs
 class AutoLinkingVisitor(WikitextVisitor):
     '''Despite the name, this doesn't actually visit because mwfromhell doesn't support clean copies...'''
+    entities = attr(factory=set)
+    present_entities = attr(factory=set)
 
     def generic_visit(self, node, visited_children):
         # TODO: Integrate children changes
@@ -42,65 +107,193 @@ class AutoLinkingVisitor(WikitextVisitor):
         return node
 
     def visit_Template(self, node, _):
-      # Don't alter templates.
-      return node
+        # Don't alter templates.
+        return node
 
     def visit_Text(self, node, _):
-      # Edit the text.
-      if node.value.strip() != '':
-        node.value = "foo" + node.value
-      return node
+        # Edit the text.
+        if node.value.strip() != '':
+            for proto_entity in wikipage_extractor(node.value, origin=None):
+                e_key = simplify_entity(proto_entity[0])
+                entity_entry = lookup_entity(e_key)
+
+                if entity_entry is None:
+                    continue
+
+                if not entity_entry.is_existing:
+                    continue
+
+                # Ensure we haven't already linked to this.
+                if e_key not in self.present_entities:
+                    self.present_entities.add(e_key)
+                    if e_key == "Alex Jones":
+                        # For right now, stop trying to link Alex Jones... would be better handled with a special case.
+                        continue
+                    if (" %s " % e_key) in node.value or (" %s." % e_key) in node.value or (" %s's" % e_key) in node.value or (" %s," % e_key) in node.value or node.value.strip().startswith(e_key) or node.value.strip().endswith(e_key):
+                        # Special case, for now make sure we don't incorrectly link up "the alex jones show"
+                        if e_key == 'Alex Jones' and 'the alex jones show' in node.value.lower():
+                            continue
+                        print("Autolinking:", e_key)
+                        node.value = node.value.replace(
+                            e_key, "[[%s]]" % e_key, 1)
+                    elif "[[" in node.value:
+                        continue  # Can only handle one at a time.
+                    else:
+                        print("Attempting GPT-3 based autolink on '%s' (%s)" %
+                              (node.value.strip(), e_key))
+
+                        replaced_text, clean_link = gpt3_autolink(
+                            node.value.strip(),
+                            entity_entry,
+                        )
+
+                        if replaced_text is not None:
+                            print("***", replaced_text, "=>", clean_link)
+                            node.value = node.value.replace(
+                                replaced_text, clean_link, 1)
+                        else:
+                            print("FAILED", e_key, node.value)
+
+                    # TODO(woursler): GPT enabled smart editing?
+        return node
 
     def visit_Heading(self, node, _):
-        node.title = "bar" + str(node.title)
+        # Don't alter headings... for now.
         return node
 
 
-entities_df = kfio.load('data/raw_entities.json')
-episodes_df = kfio.load('data/final.json')
+@click.command()
+@click.option('--min-ep-num', default=0, help='Lowest numbered episode to include.')
+@click.option('--max-ep-num', default=10**3, help='Highest numbered episode to include.')
+def autolink_episodes(min_ep_num, max_ep_num):
 
-EPISODE_NUMBER = '40'
+    git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
 
-episode_details = Box(episodes_df[episodes_df.episode_number == EPISODE_NUMBER].to_dict(orient='records')[0])
+    assert git_branch == 'pre-upload', "Please checkout pre-upload! Currently on %s." % git_branch
 
-print(episode_details)
+    for EPISODE_NUMBER in episodes_df.episode_number:
 
+        ep_num = int(
+            ''.join([s for s in EPISODE_NUMBER if s.isdigit()]))
 
-print(entities_df)
-for entity_record in entities_df[entities_df.is_existing & ~entities_df.is_redirect].to_dict(orient='records'):
-    entity_record = Box(entity_record)
-    origin_episode_numbers = set([o.split('__')[0]
-                                  for o in entity_record.entity_origin])
-    origin_episode_numbers.discard('None')
+        if ep_num < min_ep_num:
+            continue
 
-    if EPISODE_NUMBER in origin_episode_numbers:
-        print("***", entity_record.entity_name)
+        if ep_num > max_ep_num:
+            continue
 
+        episode_details = Box(
+            episodes_df[episodes_df.episode_number == EPISODE_NUMBER].to_dict(orient='records')[0])
 
+        print("Checking Episode", EPISODE_NUMBER)
 
-with open("secrets/openaiorg.txt") as openaiorg_f:
-    openai.organization = openaiorg_f.read().strip()
-with open("secrets/openaikey.txt") as openaikey_f:
-    openai.api_key = openaikey_f.read().strip()
+        with open("secrets/openaiorg.txt") as openaiorg_f:
+            openai.organization = openaiorg_f.read().strip()
+        with open("secrets/openaikey.txt") as openaikey_f:
+            openai.api_key = openaikey_f.read().strip()
 
+        with open(episode_details.ofile, encoding='utf-8') as wiki_f:
+            raw_mediawiki = wiki_f.read()
 
-with open(episode_details.ofile) as wiki_f:
-    raw_mediawiki = wiki_f.read()
-    structured_mediawiki = mwparserfromhell.parse(raw_mediawiki)
+        structured_mediawiki = mwparserfromhell.parse(raw_mediawiki)
 
-    visitor = AutoLinkingVisitor()
-    print(
+        existing_link_visitor = ExistingLinkFinderVisitor()
+        existing_link_visitor.process(structured_mediawiki)
+
+        visitor = AutoLinkingVisitor(
+            present_entities=existing_link_visitor.entities)
         visitor.process(structured_mediawiki)
-    )
 
-    print(structured_mediawiki)
+        # This should now include the modifications.
+        edited_mediawiki = simple_format(str(structured_mediawiki))
 
-'''
-print(openai.Edit.create(
-  model="text-davinci-edit-001",
-  # input="Alex is a con artist, having founded InfoWars. Harrison and Owen are hangers on.",
-  input="Alex references Drudge link to a PJW article",
-  n=5,
-  instruction="Annotate the text with a mediawiki link to the page named 'Paul Joseph Watson' (e.g. [[Link Text|Page Name]]) on the most closely matching text.",
-))
-'''
+        if raw_mediawiki.strip() != edited_mediawiki.strip():
+            print("Saving non-trivial changes.")
+            with open(episode_details.ofile, "w", encoding='utf-8') as wiki_f:
+                wiki_f.write(edited_mediawiki)
+
+
+def gpt3_autolink(input_text, entity_entry):
+    time.sleep(10)  # We have to go really slow to avoid rate limits.
+    try:
+        result = openai.Edit.create(
+            model="text-davinci-edit-001",
+            input=input_text,
+            n=10,
+            instruction="Annotate the text with a mediawiki link to the page named '%s' (e.g. [[Link Text|Page Name]]) on the most closely matching text. Maintain the text of the page. Don't include possessives and other punctuation (e.g. link like [[Bob]]'s not [[Bob|Bob's]])" % entity_entry.entity_name,
+        )
+    except:
+        print("OPENAI FAILURE")
+        time.sleep(60)  # Wait a while for things to maybe get better.
+        return None, None
+
+    for choice in result['choices']:
+        if 'error' in choice:
+            continue
+
+        z = dmp.diff_main(input_text, choice["text"].strip())
+        dmp.diff_cleanupSemantic(z)
+
+        is_valid = True
+        for origin, fragment in z:
+            if origin == 1:
+                if not (fragment.startswith("[[") or fragment.endswith("]]")):
+                    is_valid = False
+
+        if not is_valid:
+            # TODO(woursler): Log something?
+            continue
+
+        matches = WIKILINK_PATTERN.findall(choice["text"].strip())
+
+        if len(matches) != 1:
+            continue
+
+        def validate_link(link):
+            link, text = link
+            link = link.strip()
+            text = text.strip()
+            if len(text.strip()) == 0:
+                text = None
+
+            linked_text = text if text is not None else link
+
+            if linked_text not in input_text or simplify_entity(linked_text) != entity_entry.entity_name:
+                return False, None, None
+
+            if link != entity_entry.entity_name:
+                if text is None:
+                    text = link
+                link = entity_entry.entity_name
+
+            if link == text:
+                text = None
+
+            if text is None:
+                return True, linked_text,  "[[%s]]" % entity_entry.entity_name
+            return True, linked_text, "[[%s|%s]]" % (entity_entry.entity_name, text)
+
+        is_valid, replaced_text, clean_link = validate_link(matches[0])
+
+        if not is_valid:
+            continue
+
+        if replaced_text.endswith("s'") or replaced_text.endswith("'s"):
+            continue
+
+        # DO NOT SUBMIT: Aggregate?
+        return replaced_text, clean_link
+    return None, None
+
+
+if __name__ == '__main__':
+    autolink_episodes()
+
+    INPUT = "...Alex references Drudge link to a PJW article..."
+
+    entity_entry = lookup_entity(simplify_entity("Paul Joseph Watson"))
+
+    #replaced_text, clean_link = gpt3_autolink(INPUT, entity_entry)
+
+    #print("***", replaced_text, "=>", clean_link)
+    #print(INPUT.replace(replaced_text, clean_link, 1))

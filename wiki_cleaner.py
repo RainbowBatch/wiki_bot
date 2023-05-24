@@ -27,6 +27,45 @@ class LineClassification(Enum):
         return lc == LineClassification.BULLET_STAR or lc == LineClassification.BULLET_HASH
 
 
+GARBLED_CHARS = {
+    "A¶": "ö",
+    "Ã ": "à",
+    "Ã¡": "á",
+    "Ã¢": "â",
+    "Ã£": "ã",
+    "Ã¥": "å",
+    "Ã§": "ç",
+    "Ã¨": "è",
+    "Ã©": "é",
+    "Ã¯": "ï",
+    "Ã±": "ñ",
+    "Ã³": "ó",
+    "Ã´": "ô",
+    "Ã¶": "ö",
+    "Ã¶": "ö",
+    "Ã¸": "ø",
+    "Ã¼": "ü",
+    "ÃƒÂ­": "í",
+    "ÃƒÂ¶": "ö",
+    "Ä‡": "ć",
+    "Ä╪": "ć",
+    "Å¡": "š",
+    "Å‚": "ł",
+    'â€"': " - ",
+    "-ââ,¬\"": " - ",
+    "â€¦": " - ",
+    "â€™": "'",
+    "Â§": "§",
+    "Â£": "£",
+    # Andreas KÃ¶lker / JÃƒÂ¶rg Sprave
+    # JarosÅ‚aw KarczyÅ„ski
+    # Stanislaw KoÅ¼e
+    # "â•¼" from Transcript 378.... is weird.
+    #"President [[Barack Obama|Obama]]": "[[Barack Obama|President Obama]]",
+    #"President [[Donald Trump|Trump]]": "[[Donald Trump|President Trump]]",
+    # "the [[The Alex Jones Show|Alex Jones Show]]": "[[The Alex Jones Show|the Alex Jones Show]]",
+}
+
 table_start_pattern = re.compile(r"\{\|")
 table_end_pattern = re.compile(r"\|\}")
 section_pattern = re.compile(r"==+(?P<section_name>[^=]+)==+")
@@ -229,8 +268,25 @@ UNIX_LINE_ENDING = '\n'
 
 
 def simple_pformat_pass(raw_mediawiki):
-    text = wikitextparser.parse(raw_mediawiki).pformat().replace("* *", "**").replace(
+    text = wikitextparser.parse(raw_mediawiki).pformat().replace("–", "-").replace("‚", ",").replace("* *", "**").replace("‘", "'").replace(
         "’", "'").replace('“', '"').replace('”', '"').replace('&quot;', '"').replace('&amp;', '&').replace(u'\xa0', u' ').replace(u'\u200f', '').replace(u'\u200e', '').replace('<br>', '\n\n').replace('<br/>', '\n\n').replace('<br />', '\n\n')
+
+    # Hotfix for a bug in the autolinker.
+    text = text.replace(
+        "[[The Sandy Hook Elementary Massacre|Sandy Hook]]",
+        "[[@@@SANDY_HOOK_LINK]]",
+        1,
+    ).replace(
+        "[[The Sandy Hook Elementary Massacre|Sandy Hook]]",
+        "Sandy Hook",
+    ).replace(
+        "[[@@@SANDY_HOOK_LINK]]",
+        "[[The Sandy Hook Elementary Massacre|Sandy Hook]]",
+        1,
+    )
+
+    for garbled, clean in GARBLED_CHARS.items():
+        text = text.replace(garbled, clean)
 
     text = re.sub(r'<references\s*/>', '', text)
 

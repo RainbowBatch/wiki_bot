@@ -97,6 +97,7 @@ for e_key, proto_entities in tqdm(grouped_proto_entities.items()):
     if not has_diverse_origins(set(z['entity_origin'].keys())):
         continue
 
+    z['raw_entity_name'] = e_key
     z['entity_name'] = restore_capitalization(
         e_key, z['entity_sourcetexts'].keys())
 
