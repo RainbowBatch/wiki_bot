@@ -247,6 +247,7 @@ REMAPPING = {
     'Jaquari Jackson': 'Jakari Jackson',
     'JBS John Birch Society': 'John Birch Society',
     'JBS': 'John Birch Society',
+    'Jeff Charlotte': 'Jeff Sharlet',
     'Jesse Smollett': 'Jussie Smollett',
     'Jessie Smollett': 'Jussie Smollett',
     'Joanne Richard': 'Jo Ann Richards',
