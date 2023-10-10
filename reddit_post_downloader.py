@@ -25,6 +25,9 @@ with open("secrets/reddit.json") as secrets_f:
 existing_df = kfio.load('sensitive/all_reddit_posts.json')
 existing_post_ids = set(existing_df.PostIds)
 
+discussion_post_df = kfio.load('sensitive/reddit_episode_discussions.json')
+known_discussed_episodes = set(discussion_post_df.episode_number)
+
 # Define the subreddit you want to scrape
 subreddit_name = 'KnowledgeFight'
 
@@ -52,9 +55,15 @@ for post in tqdm(subreddit.new(limit=None), total=1000, desc="Downloading recent
 data = {'Title': titles, 'Link': links, "Timestamps": timestamps, 'PostIds': post_ids2}
 most_recent_posts_df = pd.DataFrame(data)
 
+
+max_episode = max([int(x) for x in known_discussed_episodes if x.isdigit()])
 result_urls = set()
-for n in tqdm(range(1, 850), desc="Scraping Google for posts."):
+for n in tqdm(range(1, max_episode+1), desc="Scraping Google for posts."):
     n = str(n)
+
+    if n in known_discussed_episodes:
+        continue
+
     # Make a request to Google Search
     response = requests.get("https://www.google.com/search?q=knowledge+fight+reddit+%23" + n)
 
@@ -102,46 +111,54 @@ search_based_df = pd.DataFrame(data)
 
 ids = []
 
-posters = set()
 
-for post_id in tqdm(pd.concat([search_based_df, most_recent_posts_df, existing_df]).PostIds, desc="Identifying posters."):
-    time.sleep(1)
-    post = reddit.submission(id=post_id)
-    posters.add(str(post.author))
+download_by_author = True
+if download_by_author:
+    posters = set()
 
-for poster in tqdm(posters, desc="Looking up posts by subreddit users."):
-    try:
-        user = reddit.redditor(poster)
-        for post in user.submissions.new(limit=None):
-            if post.subreddit != 'KnowledgeFight':
-                continue
-            ids.append(post.id)
-    except:
-        continue
+    for post_id in tqdm(pd.concat([search_based_df, most_recent_posts_df, existing_df]).PostIds, desc="Identifying posters."):
+        # Already processed, most likely.
+        if post_id in existing_post_ids:
+            continue
+        time.sleep(1)
+        post = reddit.submission(id=post_id)
+        posters.add(str(post.author))
 
-# Initialize lists to store titles and links
-titles = []
-links = []
-timestamps = []
-post_ids2 = []
+    for poster in tqdm(posters, desc="Looking up posts by subreddit users."):
+        try:
+            user = reddit.redditor(poster)
+            for post in user.submissions.new(limit=None):
+                if post.subreddit != 'KnowledgeFight':
+                    continue
+                ids.append(post.id)
+        except:
+            continue
 
-for post_id in tqdm(ids, desc="Processing user posts."):
-    if post_id in existing_post_ids:
-        continue
-    time.sleep(1)
-    post = reddit.submission(id=post_id)
-    titles.append(post.title)
-    timestamps.append(post.created_utc)
-    post_ids2.append(post.id)
+    # Initialize lists to store titles and links
+    titles = []
+    links = []
+    timestamps = []
+    post_ids2 = []
 
-    if post.is_self:  # Check if it's a text post
-        links.append(None)
-    else:  # Link post
-        links.append(post.url)
+    for post_id in tqdm(ids, desc="Processing user posts."):
+        if post_id in existing_post_ids:
+            continue
+        time.sleep(1)
+        post = reddit.submission(id=post_id)
+        titles.append(post.title)
+        timestamps.append(post.created_utc)
+        post_ids2.append(post.id)
 
-# Create a dataframe from the lists
-data = {'Title': titles, 'Link': links, "Timestamps": timestamps, 'PostIds': post_ids2}
-user_based_df = pd.DataFrame(data)
+        if post.is_self:  # Check if it's a text post
+            links.append(None)
+        else:  # Link post
+            links.append(post.url)
+
+    # Create a dataframe from the lists
+    data = {'Title': titles, 'Link': links, "Timestamps": timestamps, 'PostIds': post_ids2}
+    user_based_df = pd.DataFrame({'Title': [], 'Link': [], "Timestamps": [], 'PostIds': []})
+else:
+    user_based_df = pd.DataFrame(data)
 
 merged_df = pd.concat([search_based_df, most_recent_posts_df, user_based_df, existing_df]).drop_duplicates(subset=['PostIds']).sort_values(by=['PostIds'])
 

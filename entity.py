@@ -37,6 +37,14 @@ hardcoded_people = [
     'Omar al-Faruq',
     'Jim Shepherd',
     'Elizabeth Williamson',
+    'Ezra Levant',
+]
+
+hardcoded_capitalization = [
+    'HONR Network',
+    'Council on Foreign Relations',
+    'GoFundMe.com',
+    'GCN Radio Network',
 ]
 
 LIKELY_PEOPLE = set(
@@ -221,6 +229,7 @@ REMAPPING = {
     'Gerald Cilentes': 'Gerald Celente',
     'Gerald Cilenti': 'Gerald Celente',
     'Gerald Cilenty': 'Gerald Celente',
+    'Gofundmecom': 'GoFundMe.com',
     'Hillary Clint': 'Hillary Clinton',
     'horizon zero': 'Horizon Zero Dawn',
     'Howard Stearn': 'Howard Stern',
@@ -468,6 +477,7 @@ CAPITALIZATION_REMAPPING = {
         + scraped_pages.title.to_list()
         + list(REMAPPING.values())
         + hardcoded_people
+        + hardcoded_capitalization
     )
 }
 
