@@ -6,16 +6,16 @@
 # In[1]:
 
 
+from youtube_transcript_api import YouTubeTranscriptApi
+from neo4j import GraphDatabase
+from retry import retry
+import openai
+import pandas as pd
 get_ipython().system('pip install openai youtube-transcript-api neo4j retry')
 
 
 # In[2]:
 
-
-import pandas as pd
-import openai
-from retry import retry
-from neo4j import GraphDatabase
 
 pd.set_option("display.max_colwidth", 150)
 
@@ -38,28 +38,26 @@ def run_query(query, params={}):
 
 # # Creating a Knowledge Graph from Video Transcripts with GPT-4
 # ## Use GPT-4 as a domain expert to help you extract knowledge from a video transcript
-# 
+#
 # A couple of days ago, I got access to GPT-4. The first thing that came to my mind was to test how well it performs as an information extraction model, where the task is to extract relevant entities and relationships from a given text. I have already played around with GPT-3.5 a bit. The most important thing I noticed is that we don't want to use the GPT endpoint as an entity linking solution or have it come up with any other external references like citations, as it likes to hallucinate those types of information.
-# 
+#
 # However, a great thing about GPT-3 or GPT-4 is that it performs well in various domains. For example, we can use it to extract people, organizations, or locations from a text. However, I feel that competing against dedicated NLP models is not where the GPT models shine (although they perform well). Instead, the strength of GPT models is in their ability to generalize and be used in other domains where other open-sourced models fail due to their limited training data.
-# 
+#
 # My friend Michael Hunger gave me a great idea to test the GPT-4 on extracting information from a nature documentary. I always liked the deep sea documentary as the ecosystem and animals are so vastly different from terrestrial ones. Therefore, I decided to test GPT-4 information extraction capabilities on an underwater documentary. Additionally, I don't know of any open-source NLP models trained to detect relationships between sea plants and creatures. So, a deep sea documentary makes for an excellent example of using a GPT-4 to construct a knowledge graph.
-# 
+#
 # ## Dataset
-# 
+#
 # The most accessible place to find documentaries is YouTube. Although the GPT-4 is multi-modal (supports video, audio, and text), the current version of the endpoint only supports text inputs. Therefore, we will analyze a video's audio transcript, not the video itself.
 # We will be analyzing the transcript of the following documentary.
-# 
+#
 # https://www.youtube.com/watch?v=nrI483C5Tro
-# 
+#
 # First of all, I like the topic of the documentary. Secondly, extracting captions from a YouTube video is effortless as we don't have to use any audio2text models at all. However, converting audio to text with all the available models on HuggingFace or even OpenAI's Whisper shouldn't be a big problem. Thirdly, this video has captions that are not auto-generated. At first, I tried to extract information from auto-generated captions on YouTube, but I learned that they might not be the best input. So if you can, avoid using auto-generated YouTube captions.
-# 
+#
 # The captions can be retrieved straightforwardly with the YouTube Transcript/Subtitle library. All we have to do is to provide the video id.
 
 # In[33]:
 
-
-from youtube_transcript_api import YouTubeTranscriptApi
 
 video_id = "nrI483C5Tro"
 transcript = YouTubeTranscriptApi.get_transcript(video_id)
@@ -67,9 +65,9 @@ print(transcript[:3])
 
 
 # The captions are split into chunks, which can be used as video subtitles. Therefore, the start and duration information is provided along with the text. You might also notice a couple of special characters like \xa0 and \n .
-# 
+#
 # Even though GPT-4 endpoint support up to 8k tokens per request, more is needed to process the whole transcript in a single request. Therefore, we need to split the transcript into several parts. So, I decided to split the transcript into multiple parts, where the end of the part is determined when there are five or more seconds of no captions, announcing a brief pause in narration. Using this approach, I aim to keep all connecting text together and retain relevant information in a single section.
-# 
+#
 # I used the following code to group the transcript into several sections.
 
 # In[5]:
@@ -127,7 +125,8 @@ sections = [p for p in sections if p["text"]]
 
 # Number of paragraphs
 print(f"Number of sections: {len(sections)}")
-print(f"Max characters per section: {max([len(el['text']) for el in sections])}")
+print(
+    f"Max characters per section: {max([len(el['text']) for el in sections])}")
 
 
 # In[7]:
@@ -138,7 +137,7 @@ sections[0]
 
 # There are 77 sections, with the longest having 1267 characters in it. We are nowhere near the GPT-4 token limit, and I think the above approach delivers a nice text granularity, at least in this example.
 # Information extraction with GPT-4
-# 
+#
 # GPT-4 endpoint is optimized for chat but works well for traditional completion tasks. As the model is optimized for conversation, we can provide a system message, which helps set the assistant's behavior along with any previous messages that can help keep the context of the dialogue. However, as we are using the GPT-4 endpoint for a text completion task, we will not provide any previous messages.
 
 # In[8]:
@@ -170,9 +169,9 @@ def parse_entities_and_relationships(input_str):
 
 
 # The GPT-4 is prompted to extract relevant entities from a given text. Additionally, I added some constraints that distances and time durations should not be treated as entities. The extracted entities should contain their name, type, and the sentiment. As for the relationships, they should be provided in a form of a triple. I added some hints that the model should follow Wikipedia schema type, which makes the extracted relationship types a bit more standardized. I learned that it is always good to provide an example of an output as otherwise the model might use different output formats at will. 
-# 
+#
 # One thing to note is that we might have instructed the model to provide us with a nice JSON representation of extracted entities and relationships. Nicely structured data might certainly be plus. However, you are paying the price for nicely structured JSON objects as the cost of the API is calculated per input and output token count. Therefore, the JSON boilerplate comes with a price.
-# 
+#
 # Next, we need to define the function that calls the GPT-4 endpoint and processes the response.
 
 # In[9]:
@@ -198,6 +197,7 @@ Paris, location, 0.0
 relationships
 St.Peter, LOCATED_IN, Paris\n"""
 
+
 @retry(tries=3, delay=5)
 def process_gpt4(text):
     paragraph = text
@@ -213,24 +213,24 @@ def process_gpt4(text):
     )
 
     nlp_results = completion.choices[0].message.content
-    
+
     if not "relationships" in nlp_results:
         raise Exception(
             "GPT-4 is not being nice and isn't returning results in correct format"
         )
-    
+
     return parse_entities_and_relationships(nlp_results)
 
 
 # Even though we explicitly defined the output format in the prompt, the GPT-4 model sometimes does its own thing and does follow the rules. It happened to me only twice out of a couple of hundred requests. However, it is annoying when that happens, and all the downstream dataflow doesn't work as intended. Therefore, I added a simple check of the response and added a retry decorator in case that happens.
-# 
+#
 # Additionally, I only added the temperature parameter to make the model behave as deterministic as possible. However, when I rerun the transcript a couple of times, I got slightly different results. It costs around $1.6 to process the transcript of the chosen video with GPT-4.
-# 
+#
 # ## Graph model and import
-# 
+#
 # We will be using Neo4j to store the results of the information extraction pipeline. I have used a free Neo4j Sandbox instance for this project, but you can also use the free Aura, or local Desktop environment.
 # One thing is certain. No NLP model is perfect. Therefore, we want all extracted entities and relationships to point to the text where they were extracted, which allows us to verify the validity of information if necessary.
-# 
+#
 # Since we want to point the extracted entities and relationships to the relevant text, we need to include the sections along with the video in our graph. The section nodes contain the text, start, and end time. Entities and relationships are then connected to the section nodes. What might be counterintuitive is that we represent extracted relationships as a node in our graph. The reason is that Neo4j doesn't allow to have relationships to point to another relationship. However, we want to have a link between extracted relationship and its source text. Therefore, we need to model the extracted relationship as a separate node.
 
 # In[10]:
@@ -273,16 +273,16 @@ with driver.session() as session:
 
 
 # # Entity disambiguation
-# 
+#
 # Entity disambiguation with GPT-4
 # After inspecting the GPT-4 results, I have decided that performing a simple entity disambiguation would be best. For example, there are currently five different nodes for a Moray Eels:
-# 
+#
 # * moray eel
 # * Moray
 # * Moray Eel
 # * moray
 # * morays
-# 
+#
 # We could lowercase all entities and use various NLP techniques to identify which nodes refer to the same entities. However, we can also use the GPT-4 endpoint to perform entity disambiguation. I wrote the following prompt to perform entity disambiguation.
 
 # In[11]:
@@ -306,13 +306,15 @@ disambiguation_prompt = """
 #Now process the following values\n
 """
 
+
 def disambiguate(entities):
     completion = openai.ChatCompletion.create(
         model="gpt-4",
         # Try to be as deterministic as possible
         temperature=0,
         messages=[
-            {"role": "user", "content": disambiguation_prompt + "\n".join(all_animals)},
+            {"role": "user", "content": disambiguation_prompt + \
+                "\n".join(all_animals)},
         ],
     )
 
@@ -370,7 +372,7 @@ RETURN distinct 'done'
 # While this disambiguation is not that complicated, it is still worth noting that we can achieve this without NLP knowledge or having to develop any hand-crafted rules.
 # ## Analysis
 # In the final step of this blog post, we will evaluate the results of the information extraction pipeline using the GPT-4 model.
-# 
+#
 # First, we will examine the type and count of extracted entities.
 
 # In[36]:
@@ -385,11 +387,11 @@ LIMIT 5
 
 
 # Most entities are animals, locations, and biological entities. However, we can notice that sometimes the model decides to use the whitespace and other times underscore for biological entities.
-# 
+#
 # Throughout my experiments with GPT endpoints, I have observed that the best approach is to be as specific as possible in what information and how you want it to be categorized. Therefore, it is good practice with GPT-4 to define the types of entities we want to extract, as the resulting types will be more consistent.
-# 
+#
 # Additionally, the model didn't classify 33 entity types. The thing is that GPT-4 might come up with some types for these entities if asked. However, they only appear in the relationship extraction part of the results, where entity types are not requested. One workaround could be to ask for entity types in the relationship extraction part as well.
-# 
+#
 # Next, we will examine which animals are the most mentioned in the video.
 
 # In[37]:
@@ -405,7 +407,7 @@ LIMIT 5
 
 
 # The most mentioned animals are moray eels, lionfish, and brittle stars. I am familiar only with eels, so watching the documentary to learn about other fishes might be a good idea.
-# 
+#
 # We can also evaluate the which relationships or facts have been extracted regarding moray eels.
 
 # In[26]:
@@ -423,7 +425,7 @@ RETURN source.name AS source, r.type AS relationship, e.name AS target,
 
 
 # There is quite a lot we can learn about moray eels. They cooperate with groupers, coexist with Triggerfishes, and are being cleaned by cleaner shrimps. Additionally, a moray searching for a female moray can be relatable.
-# 
+#
 # Let's say, for example, we want to check if the relationship that morays interact with lionfish is accurate. We can retrieve the source text and validate the claim manually.
 
 # In[38]:
@@ -438,7 +440,7 @@ RETURN s.text AS text
 
 
 # The text mentions that eels fight with lionfish for food. We can also notice that the transcript is hard to read and understand, even for a human. Therefore, we can commend GPT-4 for doing a good job on a transcript where even a human might struggle.
-# 
+#
 # Lastly, we can use the knowledge graph as a search engine that returns timestamps of sections where relevant entities we want to see. So, for example, we can ask the database to return all the timestamps of sections in which lionfish is mentioned.
 
 # In[31]:
@@ -456,7 +458,3 @@ ORDER BY timestamp
 # The remarkable ability of GPT-3.5 and GPT-4 models to generalize across various domains is a powerful tool for exploring and analyzing different datasets to extract relevant information. In all honesty, I'm not entirely sure which endpoint I would use to recreate this blog post without GPT-4. As far as I know, there are no open-source relation extraction models or datasets on sea creatures. Therefore, to avoid the hassle of labeling a dataset and training a custom model, we can simply utilize a GPT endpoint. Furthermore, I'm eagerly anticipating the opportunity to examine its promised capability for multi-modal analysis based on audio or text input.
 
 # In[ ]:
-
-
-
-
