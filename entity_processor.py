@@ -185,7 +185,7 @@ for episode_number, entity_map in grouped_by_episode.items():
 
 kfio.save_json(per_episode_results, 'data/raw_entities_per_episode.json')
 
-# TODO(woursler): A ton of people are missing from this for some reason.
+# TODO: A ton of people are missing from this for some reason.
 nlp_guests = [
     {
         "episode_number": episode_number,
