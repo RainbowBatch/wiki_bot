@@ -94,7 +94,7 @@ def fuzzy_match_verb(query):
 
     if similarity < 80:
         print(EXAMPLE_QUERIES[index], similarity)
-        return None  # TODO(woursler): More explicit error?
+        return None  # TODO: More explicit error?
 
     return EXAMPLE_QUERIES[index]['parsed_object'].command
 
@@ -129,7 +129,7 @@ def fuzzy_parse_bot_command(query: str) -> BotCommand:
             arg = fuzzy_extract_search_term(query)
     elif verb == "episode_details":
         if arg is None:
-            # TODO(woursler): Custom fuzzy extraction...
+            # TODO: Custom fuzzy extraction...
             raise NotImplementedError()
 
     return BotCommand(
