@@ -19,6 +19,8 @@ from parsimonious.nodes import VisitationError
 from pprint import pprint
 from pygit2 import Repository
 from wiki_cleaner import simple_format
+from retrying import retry
+from tqdm import tqdm
 
 WIKILINK_PATTERN = re.compile(
     r"\[\[(?P<link>[^|\]]+)(?:\|(?P<text>[^]]+))?\]\]")
@@ -122,6 +124,8 @@ class AutoLinkingVisitor(WikitextVisitor):
 
                 if not entity_entry.is_existing:
                     continue
+                #if "alex" in e_key.lower():
+                #    continue
 
                 # Ensure we haven't already linked to this.
                 if e_key not in self.present_entities:
@@ -142,10 +146,13 @@ class AutoLinkingVisitor(WikitextVisitor):
                         print("Attempting GPT-3 based autolink on '%s' (%s)" %
                               (node.value.strip(), e_key))
 
-                        replaced_text, clean_link = gpt3_autolink(
-                            node.value.strip(),
-                            entity_entry,
-                        )
+                        try:
+                            replaced_text, clean_link = gpt3_autolink(
+                                node.value.strip(),
+                                entity_entry,
+                            )
+                        except:
+                            replaced_text = None
 
                         if replaced_text is not None:
                             print("***", replaced_text, "=>", clean_link)
@@ -160,6 +167,36 @@ class AutoLinkingVisitor(WikitextVisitor):
     def visit_Heading(self, node, _):
         # Don't alter headings... for now.
         return node
+
+
+def autolink_file(fname, present_entities=None):
+    try:
+        if present_entities is None:
+            present_entities = set()
+        with open(fname, encoding='utf-8') as wiki_f:
+            raw_mediawiki = wiki_f.read()
+
+        if '#redirect' in raw_mediawiki.lower():
+            return
+
+        structured_mediawiki = mwparserfromhell.parse(raw_mediawiki)
+
+        existing_link_visitor = ExistingLinkFinderVisitor()
+        existing_link_visitor.process(structured_mediawiki)
+
+        visitor = AutoLinkingVisitor(
+            present_entities=existing_link_visitor.entities | present_entities)
+        visitor.process(structured_mediawiki)
+
+        # This should now include the modifications.
+        edited_mediawiki = simple_format(str(structured_mediawiki))
+
+        if raw_mediawiki.strip() != edited_mediawiki.strip():
+            print("Saving non-trivial changes.")
+            with open(fname, "w", encoding='utf-8') as wiki_f:
+                wiki_f.write(edited_mediawiki)
+    except:
+        print("Something went wrong:", fname)
 
 
 @click.command()
@@ -187,45 +224,64 @@ def autolink_episodes(min_ep_num, max_ep_num):
 
         print("Checking Episode", EPISODE_NUMBER)
 
-        with open("secrets/openaiorg.txt") as openaiorg_f:
-            openai.organization = openaiorg_f.read().strip()
-        with open("secrets/openaikey.txt") as openaikey_f:
-            openai.api_key = openaikey_f.read().strip()
-
-        with open(episode_details.ofile, encoding='utf-8') as wiki_f:
-            raw_mediawiki = wiki_f.read()
-
-        structured_mediawiki = mwparserfromhell.parse(raw_mediawiki)
-
-        existing_link_visitor = ExistingLinkFinderVisitor()
-        existing_link_visitor.process(structured_mediawiki)
-
-        visitor = AutoLinkingVisitor(
-            present_entities=existing_link_visitor.entities)
-        visitor.process(structured_mediawiki)
-
-        # This should now include the modifications.
-        edited_mediawiki = simple_format(str(structured_mediawiki))
-
-        if raw_mediawiki.strip() != edited_mediawiki.strip():
-            print("Saving non-trivial changes.")
-            with open(episode_details.ofile, "w", encoding='utf-8') as wiki_f:
-                wiki_f.write(edited_mediawiki)
+        autolink_file(episode_details.ofile)
 
 
+@click.command()
+def autolink_pages():
+
+    git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
+
+    assert git_branch == 'pre-upload', "Please checkout pre-upload! Currently on %s." % git_branch
+
+    page_listing = kfio.load('kf_wiki_content/page_listing.json')
+
+    for page_record in tqdm(page_listing.to_dict(orient='records')):
+        page_record = Box(page_record)
+
+        fname = 'kf_wiki_content/%s.wiki' % page_record.slug
+
+        if 'Transcript' in page_record.title:
+            continue
+
+        if 'Dreamy Creamy Summer' in page_record.title:
+            continue
+
+        if page_record.title[0] in "01234567890":
+            continue
+
+        autolink_file(fname, present_entities=set([page_record.title]))
+
+
+@click.command()
+def autolink_transcripts():
+
+    git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
+
+    assert git_branch == 'pre-upload', "Please checkout pre-upload! Currently on %s." % git_branch
+
+    page_listing = kfio.load('kf_wiki_content/page_listing.json')
+
+    for page_record in tqdm(page_listing.to_dict(orient='records')):
+        page_record = Box(page_record)
+
+        fname = 'kf_wiki_content/%s.wiki' % page_record.slug
+
+        if 'Transcript' not in page_record.title:
+            continue
+
+        autolink_file(fname)
+
+
+@retry(wait_exponential_multiplier=1000, wait_exponential_max=10000, stop_max_attempt_number=10)
 def gpt3_autolink(input_text, entity_entry):
-    time.sleep(10)  # We have to go really slow to avoid rate limits.
-    try:
-        result = openai.Edit.create(
-            model="text-davinci-edit-001",
-            input=input_text,
-            n=10,
-            instruction="Annotate the text with a mediawiki link to the page named '%s' (e.g. [[Link Text|Page Name]]) on the most closely matching text. Maintain the text of the page. Don't include possessives and other punctuation (e.g. link like [[Bob]]'s not [[Bob|Bob's]])" % entity_entry.entity_name,
-        )
-    except:
-        print("OPENAI FAILURE")
-        time.sleep(60)  # Wait a while for things to maybe get better.
-        return None, None
+    print("GPT-EDIT on", entity_entry.entity_name)
+    result = openai.Edit.create(
+        model="text-davinci-edit-001",
+        input=input_text,
+        n=10,
+        instruction="Annotate the text with a mediawiki link to the page named '%s' (e.g. [[Link Text|Page Name]]) on the most closely matching text. Maintain the text of the page. Don't include possessives and other punctuation (e.g. link like [[Bob]]'s not [[Bob|Bob's]])" % entity_entry.entity_name,
+    )
 
     for choice in result['choices']:
         if 'error' in choice:
@@ -288,12 +344,3 @@ def gpt3_autolink(input_text, entity_entry):
 
 if __name__ == '__main__':
     autolink_episodes()
-
-    INPUT = "...Alex references Drudge link to a PJW article..."
-
-    entity_entry = lookup_entity(simplify_entity("Paul Joseph Watson"))
-
-    #replaced_text, clean_link = gpt3_autolink(INPUT, entity_entry)
-
-    #print("***", replaced_text, "=>", clean_link)
-    #print(INPUT.replace(replaced_text, clean_link, 1))

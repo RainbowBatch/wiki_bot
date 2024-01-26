@@ -5,6 +5,7 @@ import mwparserfromhell
 import mwparserfromhell.nodes as wiki_node
 import openai
 import os
+import pandas as pd
 import re
 import time
 
@@ -13,14 +14,14 @@ from abc import abstractmethod
 from attr import attr
 from attr import attrs
 from box import Box
+from collections import Counter
 from entity import simplify_entity
 from entity_extraction_util import wikipage_extractor
 from parsimonious.nodes import VisitationError
 from pprint import pprint
 from pygit2 import Repository
-from wiki_cleaner import simple_format
 from tqdm import tqdm
-from collections import Counter
+from wiki_cleaner import simple_format
 
 WIKILINK_PATTERN = re.compile(
     r"\[\[(?P<link>[^|\]]+)(?:\|(?P<text>[^]]+))?\]\]")
@@ -99,7 +100,7 @@ ALLOWABLE = {
     "John Birch Society": {"the John Birch Society"},
     "Jordan Holmes": {"Jordan"},
     "Judge Andrew Napolitano": {"Andrew Napolitano"},
-    "Infowars": {"InfoWars"}, # TODO for non ep pages, prefer...
+    "Infowars": {"InfoWars"},  # TODO for non ep pages, prefer...
     "Kanye West": {"Ye", "Kanye West / Ye"},
     "Leo Zagami": {"Leo"},
     "Leonard Pozner": {"Lenny Pozner", "Pozner"},
@@ -292,3 +293,14 @@ for page_record in tqdm(page_listing.to_dict(orient='records')):
 
 pprint(MISSING)
 
+df = pd.DataFrame(
+    MISSING.most_common(),
+    columns=[
+        "title",
+        "references",
+    ],
+)
+
+df = df.sort_values(by=['references', 'title'], ascending=[False, True])
+
+kfio.save(df, 'data/missing_pages.json')
