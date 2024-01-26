@@ -25,7 +25,7 @@ with open("secrets/reddit.json") as secrets_f:
 existing_df = kfio.load('sensitive/all_reddit_posts.json')
 existing_post_ids = set(existing_df.PostIds)
 
-discussion_post_df = kfio.load('sensitive/reddit_episode_discussions.json')
+discussion_post_df = kfio.load('data/reddit_episode_discussions.json')
 known_discussed_episodes = set(discussion_post_df.episode_number)
 
 # Define the subreddit you want to scrape
@@ -180,5 +180,5 @@ final_data = kfio.load('data/final.json')
 
 episode_discussions = pd.merge(libsyn_links, final_data, left_on='Link', right_on='libsyn_page')[['episode_number', 'PostIds', 'Link']].sort_values(by=['episode_number'], key=natsort.natsort_keygen())
 print(episode_discussions)
-kfio.save(episode_discussions, 'sensitive/reddit_episode_discussions.json')
+kfio.save(episode_discussions, 'data/reddit_episode_discussions.json')
 print(set(libsyn_links['Link']) - set(final_data['libsyn_page']))
