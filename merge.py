@@ -11,13 +11,20 @@ def merge_records():
     title_table = kfio.load('data/titles.json')
     libsyn_details_table = kfio.load('data/libsyn_details.json')
     spotify_details_table = kfio.load('data/spotify_details.json')
+    reddit_details_table = kfio.load('data/reddit_episode_discussions.json')
+    reddit_details_table['reddit_url'] = reddit_details_table.PostIds.apply(
+        lambda post_id: "https://reddit.com/%s" % post_id
+    )
+    reddit_details_table = reddit_details_table.drop_duplicates(subset=['episode_number'], keep='first')
     twitch_details_table = kfio.load('data/twitch_details.json')
     twitch_details_table = twitch_details_table.dropna()
-    twitch_details_table['episode_number'] = twitch_details_table['episode_number'].astype(int).astype(str)
+    twitch_details_table['episode_number'] = twitch_details_table['episode_number'].astype(
+        int).astype(str)
     overlay_table = kfio.load('data/overlay.json')
     scraped_page_data_table = kfio.load('data/scraped_page_data.json')
 
-    existing_transcripts = scraped_page_data_table['transcriptEpisodeNumber'].unique()
+    existing_transcripts = scraped_page_data_table['transcriptEpisodeNumber'].unique(
+    )
 
     # Annotate next / previous from the libsyn dataset.
     # TODO: Do something different?
@@ -34,7 +41,6 @@ def merge_records():
 
     tracker_table['episode_number'] = tracker_table.episode_number.apply(
         clean_episode_number)
-
 
     # TODO: Ensure we're not dropping anything here?
     augmented_title_table = pd.merge(
@@ -54,6 +60,13 @@ def merge_records():
     augmented_title_table = pd.merge(
         augmented_title_table,
         twitch_details_table.dropna(subset=['episode_number']),
+        how='left',
+        on='episode_number'
+    )
+
+    augmented_title_table = pd.merge(
+        augmented_title_table,
+        reddit_details_table[['episode_number', 'reddit_url']],
         how='left',
         on='episode_number'
     )
@@ -92,7 +105,8 @@ def merge_records():
         record = process_ep_record(
             raw_record, citations_df, category_remapping_df)
 
-        record['transcript_exists'] = (record['episode_number'] in existing_transcripts)
+        record['transcript_exists'] = (
+            record['episode_number'] in existing_transcripts)
 
         NEW_RECORDS.append(record)
 

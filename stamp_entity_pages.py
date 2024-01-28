@@ -9,7 +9,6 @@ from episode_processor import canonicalize_title
 from jinja2 import Environment
 from jinja2 import FileSystemLoader
 from jinja2 import select_autoescape
-from pprint import pprint
 from pygit2 import Repository
 from stamp_episode_listing import mayafy_date
 from wiki_cleaner import simple_format
@@ -44,7 +43,7 @@ for entity_record in raw_entities[raw_entities.is_existing & ~raw_entities.is_re
     relevant_episodes = episodes_df[episodes_df.episode_number.isin(origin_episode_numbers)].sort_values(
         ['maya_release_date', 'episode_number']).to_dict(orient='records')
 
-    # TODO: Ensure we don't clobber anything important.q
+    # TODO: Ensure we don't clobber anything important.
     raw = template.render(
         relevant_episodes=relevant_episodes,
     )

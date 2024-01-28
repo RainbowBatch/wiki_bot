@@ -10,7 +10,7 @@ from pprint import pprint
 
 
 def download_spotify_details():
-    PODCAST_ID = "6hK78c5u6Bscdz0HCDeFLn"
+    PODCAST_ID = "spotify:show:6hK78c5u6Bscdz0HCDeFLn"
 
     with open("secrets/spotify.json") as secrets_f:
         secrets = Box(json.load(secrets_f))

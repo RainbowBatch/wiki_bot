@@ -1,8 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
+# Derived from https://github.com/thamsuppp/llm_summary_medium/blob/master/summarizing_llm.ipynb
 
 from datetime import datetime
 import pandas as pd
@@ -13,7 +9,7 @@ import matplotlib.pyplot as plt
 from scipy.spatial.distance import cosine
 import networkx as nx
 from networkx.algorithms import community
-
+from pprint import pprint
 from langchain import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains.llm import LLMChain
@@ -21,32 +17,21 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.docstore.document import Document
 from langchain.chains.summarize import load_summarize_chain
 
-os.environ["OPENAI_API_KEY"] = 'YOUR API KEY HERE'
-
-
-# In[2]:
-
+with open("../secrets/openaikey.txt") as openaikey_f:
+    os.environ["OPENAI_API_KEY"] = openaikey_f.read().strip()
 
 # Load the txt file
-txt_path = 'stateoftheunion.txt'
-with open(txt_path, 'r') as f:
+# txt_path = 'stateoftheunion.txt'
+# with open(txt_path, 'r', encoding='utf-8') as f:
+#     txt = f.read()
+# segments = txt.split('.')
+# segments = [segment + '.' for segment in segments]
+# segments = [segment.split(',') for segment in segments]
+# segments = [item for sublist in segments for item in sublist]
+
+with open('859mod.txt', 'r', encoding='utf-8') as f:
     txt = f.read()
-
-
-# In[3]:
-
-
-# Get segments from txt by splitting on .
-segments = txt.split('.')
-# Put the . back in
-segments = [segment + '.' for segment in segments]
-# Further split by comma
-segments = [segment.split(',') for segment in segments]
-# Flatten
-segments = [item for sublist in segments for item in sublist]
-
-
-# In[4]:
+segments = txt.split('\n')
 
 
 def create_sentences(segments, MIN_WORDS, MAX_WORDS):
@@ -129,17 +114,21 @@ def parse_title_summary_results(results):
     return out
 
 
-# In[5]:
+sentences = [
+    {
+        'sentence_num': i,
+        'text': segment,
+        'sentence_length': len(segment)
+    }
+    for i, segment in enumerate(segments)
+]
 
-
-sentences = create_sentences(segments, MIN_WORDS=20, MAX_WORDS=80)
+# create_sentences(segments, MIN_WORDS=20, MAX_WORDS=80)
 chunks = create_chunks(sentences, CHUNK_LENGTH=5, STRIDE=1)
 chunks_text = [chunk['text'] for chunk in chunks]
 
 
-# ### Stage 1: Getting Chunk Summaries
-
-# In[9]:
+# Stage 1: Getting Chunk Summaries
 
 
 def summarize_stage_1(chunks_text):
@@ -152,7 +141,7 @@ def summarize_stage_1(chunks_text):
 
   Return your answer in the following format:
   Title | Summary...
-  e.g. 
+  e.g.
   Why Artificial Intelligence is Good | AI can make humans more productive by automating many repetitive processes.
 
   TITLE AND CONCISE SUMMARY:"""
@@ -161,6 +150,8 @@ def summarize_stage_1(chunks_text):
         template=map_prompt_template, input_variables=["text"])
 
     # Define the LLMs
+    # TODO(woursler): Pass in API key here rather than putting it into envar
+    # Also, pull this out.
     map_llm = OpenAI(temperature=0, model_name='text-davinci-003')
     map_llm_chain = LLMChain(llm=map_llm, prompt=map_prompt)
     map_llm_chain_input = [{'text': t} for t in chunks_text]
@@ -177,29 +168,19 @@ def summarize_stage_1(chunks_text):
     }
 
 
-# In[10]:
-
-
 # Run Stage 1 Summarizing
 stage_1_outputs = summarize_stage_1(chunks_text)['stage_1_outputs']
+pprint(stage_1_outputs)
 # Split the titles and summaries
 stage_1_summaries = [e['summary'] for e in stage_1_outputs]
 stage_1_titles = [e['title'] for e in stage_1_outputs]
 num_1_chunks = len(stage_1_summaries)
-
-
-# In[11]:
-
 
 # Use OpenAI to embed the summaries and titles. Size of _embeds: (num_chunks x 1536)
 openai_embed = OpenAIEmbeddings()
 
 summary_embeds = np.array(openai_embed.embed_documents(stage_1_summaries))
 title_embeds = np.array(openai_embed.embed_documents(stage_1_titles))
-
-
-# In[12]:
-
 
 # Get similarity matrix between the embeddings of the chunk summaries
 summary_similarity_matrix = np.zeros((num_1_chunks, num_1_chunks))
@@ -212,20 +193,13 @@ for row in range(num_1_chunks):
         summary_similarity_matrix[row, col] = similarity
         summary_similarity_matrix[col, row] = similarity
 
-
-# In[13]:
-
-
 # Draw a heatmap with the summary_similarity_matrix
 plt.figure()
 # Color scheme blues
 plt.imshow(summary_similarity_matrix, cmap='Blues')
 
-
-# In[14]:
-
-
 # Run the community detection algorithm
+
 
 def get_topics(title_similarity, num_topics=8, bonus_constant=0.25, min_size=3):
 
@@ -301,19 +275,12 @@ def get_topics(title_similarity, num_topics=8, bonus_constant=0.25, min_size=3):
     }
 
 
-# In[15]:
-
-
 # Set num_topics to be 1/4 of the number of chunks, or 8, which ever is smaller
 num_topics = min(int(num_1_chunks / 4), 8)
 topics_out = get_topics(summary_similarity_matrix,
                         num_topics=num_topics, bonus_constant=0.2)
 chunk_topics = topics_out['chunk_topics']
 topics = topics_out['topics']
-
-
-# In[16]:
-
 
 # Plot a heatmap of this array
 plt.figure(figsize=(10, 4))
@@ -323,20 +290,17 @@ for i in range(1, len(chunk_topics)):
     plt.axvline(x=i - 0.5, color='black', linewidth=0.5)
 
 
-# ### Stage 2 Summaries
-
-# In[17]:
-
+# Stage 2 Summaries
 
 def summarize_stage_2(stage_1_outputs, topics, summary_num_words=250):
     print(f'Stage 2 start time {datetime.now()}')
 
     # Prompt that passes in all the titles of a topic, and asks for an overall title of the topic
-    title_prompt_template = """Write an informative title that summarizes each of the following groups of titles. Make sure that the titles capture as much information as possible, 
+    title_prompt_template = """Write an informative title that summarizes each of the following groups of titles. Make sure that the titles capture as much information as possible,
   and are different from each other:
   {text}
-  
-  Return your answer in a numbered list, with new line separating each title: 
+
+  Return your answer in a numbered list, with new line separating each title:
   1. Title 1
   2. Title 2
   3. Title 3
@@ -344,7 +308,7 @@ def summarize_stage_2(stage_1_outputs, topics, summary_num_words=250):
   TITLES:
   """
 
-    map_prompt_template = """Wite a 75-100 word summary of the following text:
+    map_prompt_template = """Write a 75-100 word summary of the following text:
     {text}
 
     CONCISE SUMMARY:"""
@@ -419,9 +383,6 @@ def summarize_stage_2(stage_1_outputs, topics, summary_num_words=250):
     return out
 
 
-# In[18]:
-
-
 # Query GPT-3 to get a summarized title for each topic_data
 out = summarize_stage_2(stage_1_outputs, topics, summary_num_words=250)
 stage_2_outputs = out['stage_2_outputs']
@@ -429,14 +390,6 @@ stage_2_titles = [e['title'] for e in stage_2_outputs]
 stage_2_summaries = [e['summary'] for e in stage_2_outputs]
 final_summary = out['final_summary']
 
-
-# In[20]:
-
-
-stage_2_outputs
-
-
-# In[19]:
-
-
-final_summary
+pprint(stage_2_outputs)
+print(final_summary)
+plt.show()

@@ -7,7 +7,6 @@ from jinja2 import Environment
 from jinja2 import FileSystemLoader
 from jinja2 import Template
 from jinja2 import select_autoescape
-from pprint import pprint
 from pygit2 import Repository
 from wiki_cleaner import simple_format
 

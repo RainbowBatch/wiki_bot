@@ -11,7 +11,10 @@ from title_download import download_titles
 if __name__ == '__main__':
     download_titles()
     download_episode_details()
-    download_spotify_details()
+    try:
+        download_spotify_details()
+    except:
+        print("Warning: Failed to download spotify details.")
     download_twitch_details()
     download_citations()
     merge_records()

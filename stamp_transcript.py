@@ -25,6 +25,8 @@ from wiki_cleaner import simple_format
 def stamp_transcripts_cli(overwrite):
     stamp_transcripts(overwrite)
 
+# TODO(woursler): Add ep number range flags.
+
 
 def stamp_transcripts(overwrite):
     env = Environment(
@@ -52,6 +54,9 @@ def stamp_transcripts(overwrite):
 
         idxs = episodes_df.index[episodes_df.episode_number ==
                                  episode_number].tolist()
+        # TODO: WTF print(transcript_record, idxs)
+        if len(idxs) >= 2:
+            continue  # FOR NOW... TODO(woursler): WTF
         assert len(idxs) <= 1
         if len(idxs) == 0:
             continue  # Likely a lost episode.
@@ -61,7 +66,7 @@ def stamp_transcripts(overwrite):
 
         transcript = parse_transcript(transcript_record)
 
-        if exists(episode_details['transcript_ofile']) and not overwrite:
+        if exists(episode_details['transcript_ofile']) and page_listing.lookup(episode_details['transcript_slug']) is not None and not overwrite:
             continue
 
         raw = template.render(
@@ -74,8 +79,12 @@ def stamp_transcripts(overwrite):
         with io.open(episode_details['transcript_ofile'], mode="w", encoding="utf-8") as f:
             f.write(pretty)
 
-        page_listing.add(title=episode_details['transcript_safe_title'], slug=episode_details['transcript_slug'])
+        print("page_listing.add",
+            episode_details['transcript_safe_title'], episode_details['transcript_slug'])
+        page_listing.add(
+            title=episode_details['transcript_safe_title'], slug=episode_details['transcript_slug'])
 
+    print("SAVING PAGE LISTING")
     page_listing.save()
 
 

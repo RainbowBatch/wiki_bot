@@ -1,33 +1,21 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# <a href="https://colab.research.google.com/github/tomasonjo/blogs/blob/master/youtube/video2graph.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
-# In[1]:
-
+# Derived from https://github.com/tomasonjo/blogs/blob/master/youtube/video2graph.ipynb
 
 from youtube_transcript_api import YouTubeTranscriptApi
 from neo4j import GraphDatabase
 from retry import retry
 import openai
 import pandas as pd
-get_ipython().system('pip install openai youtube-transcript-api neo4j retry')
-
-
-# In[2]:
-
 
 pd.set_option("display.max_colwidth", 150)
 
-openai.api_key = "OPENAI_KEY"
+with open("../secrets/openaikey.txt") as openaikey_f:
+    openai.api_key = openaikey_f.read().strip()
 
+# DO NOT RUN Holy batman
 uri = "bolt://18.207.186.117:7687"
 username = "neo4j"
 password = "magazine-scream-roadside"
 driver = GraphDatabase.driver(uri, auth=(username, password))
-
-
-# In[3]:
 
 
 def run_query(query, params={}):
@@ -36,7 +24,7 @@ def run_query(query, params={}):
         return pd.DataFrame([r.values() for r in result], columns=result.keys())
 
 
-# # Creating a Knowledge Graph from Video Transcripts with GPT-4
+# # Creating a Knowledge Graph from Video Transcripts with GPT-4
 # ## Use GPT-4 as a domain expert to help you extract knowledge from a video transcript
 #
 # A couple of days ago, I got access to GPT-4. The first thing that came to my mind was to test how well it performs as an information extraction model, where the task is to extract relevant entities and relationships from a given text. I have already played around with GPT-3.5 a bit. The most important thing I noticed is that we don't want to use the GPT endpoint as an entity linking solution or have it come up with any other external references like citations, as it likes to hallucinate those types of information.
@@ -56,22 +44,15 @@ def run_query(query, params={}):
 #
 # The captions can be retrieved straightforwardly with the YouTube Transcript/Subtitle library. All we have to do is to provide the video id.
 
-# In[33]:
-
-
 video_id = "nrI483C5Tro"
 transcript = YouTubeTranscriptApi.get_transcript(video_id)
 print(transcript[:3])
-
 
 # The captions are split into chunks, which can be used as video subtitles. Therefore, the start and duration information is provided along with the text. You might also notice a couple of special characters like \xa0 and \n .
 #
 # Even though GPT-4 endpoint support up to 8k tokens per request, more is needed to process the whole transcript in a single request. Therefore, we need to split the transcript into several parts. So, I decided to split the transcript into multiple parts, where the end of the part is determined when there are five or more seconds of no captions, announcing a brief pause in narration. Using this approach, I aim to keep all connecting text together and retain relevant information in a single section.
 #
 # I used the following code to group the transcript into several sections.
-
-# In[5]:
-
 
 # Split into sections and include start and end timestamps
 sections = []
@@ -120,28 +101,17 @@ sections = [p for p in sections if p["text"]]
 
 # To evaluate results of the section grouping, I printed the following information.
 
-# In[34]:
-
-
 # Number of paragraphs
 print(f"Number of sections: {len(sections)}")
 print(
     f"Max characters per section: {max([len(el['text']) for el in sections])}")
-
-
-# In[7]:
-
-
-sections[0]
+print(sections[0])
 
 
 # There are 77 sections, with the longest having 1267 characters in it. We are nowhere near the GPT-4 token limit, and I think the above approach delivers a nice text granularity, at least in this example.
 # Information extraction with GPT-4
 #
 # GPT-4 endpoint is optimized for chat but works well for traditional completion tasks. As the model is optimized for conversation, we can provide a system message, which helps set the assistant's behavior along with any previous messages that can help keep the context of the dialogue. However, as we are using the GPT-4 endpoint for a text completion task, we will not provide any previous messages.
-
-# In[8]:
-
 
 def parse_entities_and_relationships(input_str):
     # Parse the input string
@@ -173,9 +143,6 @@ def parse_entities_and_relationships(input_str):
 # One thing to note is that we might have instructed the model to provide us with a nice JSON representation of extracted entities and relationships. Nicely structured data might certainly be plus. However, you are paying the price for nicely structured JSON objects as the cost of the API is calculated per input and output token count. Therefore, the JSON boilerplate comes with a price.
 #
 # Next, we need to define the function that calls the GPT-4 endpoint and processes the response.
-
-# In[9]:
-
 
 system = "You are an archeology and biology expert helping us extract relevant information."
 
@@ -226,15 +193,12 @@ def process_gpt4(text):
 #
 # Additionally, I only added the temperature parameter to make the model behave as deterministic as possible. However, when I rerun the transcript a couple of times, I got slightly different results. It costs around $1.6 to process the transcript of the chosen video with GPT-4.
 #
-# ## Graph model and import
+# ## Graph model and import
 #
 # We will be using Neo4j to store the results of the information extraction pipeline. I have used a free Neo4j Sandbox instance for this project, but you can also use the free Aura, or local Desktop environment.
 # One thing is certain. No NLP model is perfect. Therefore, we want all extracted entities and relationships to point to the text where they were extracted, which allows us to verify the validity of information if necessary.
 #
 # Since we want to point the extracted entities and relationships to the relevant text, we need to include the sections along with the video in our graph. The section nodes contain the text, start, and end time. Entities and relationships are then connected to the section nodes. What might be counterintuitive is that we represent extracted relationships as a node in our graph. The reason is that Neo4j doesn't allow to have relationships to point to another relationship. However, we want to have a link between extracted relationship and its source text. Therefore, we need to model the extracted relationship as a separate node.
-
-# In[10]:
-
 
 import_query = """
 MERGE (v:Video {id:$videoId})
@@ -285,9 +249,6 @@ with driver.session() as session:
 #
 # We could lowercase all entities and use various NLP techniques to identify which nodes refer to the same entities. However, we can also use the GPT-4 endpoint to perform entity disambiguation. I wrote the following prompt to perform entity disambiguation.
 
-# In[11]:
-
-
 disambiguation_prompt = """
 #Act as a entity disambiugation tool and tell me which values reference the same entity. 
 #For example if I give you
@@ -324,9 +285,6 @@ def disambiguate(entities):
 
 # The idea is to assign the same integers to nodes that refer to the same entity. Using this prompt, we are able to tag all nodes with additional disambiguation property.
 
-# In[12]:
-
-
 all_animals = run_query("""
 MATCH (e:Entity {type: 'animal'})
 RETURN e.name AS animal
@@ -346,19 +304,12 @@ SET e.disambiguation = row[1]
 
 # Now that the disambiguation information is in the database, we can use it to evaluate the results.
 
-# In[13]:
-
-
 run_query("""
 MATCH (e:Entity {type:"animal"})
 RETURN e.disambiguation AS i, collect(e.name) AS entities
 ORDER BY size(entities) DESC
 LIMIT 5
 """)
-
-
-# In[14]:
-
 
 run_query("""
 MATCH (e:Entity {type:"animal"})
@@ -374,9 +325,6 @@ RETURN distinct 'done'
 # In the final step of this blog post, we will evaluate the results of the information extraction pipeline using the GPT-4 model.
 #
 # First, we will examine the type and count of extracted entities.
-
-# In[36]:
-
 
 run_query("""
 MATCH (e:Entity)
@@ -394,9 +342,6 @@ LIMIT 5
 #
 # Next, we will examine which animals are the most mentioned in the video.
 
-# In[37]:
-
-
 run_query("""
 MATCH (e:Entity {type:"animal"})
 RETURN e.name AS entity, e.type AS type,
@@ -409,9 +354,6 @@ LIMIT 5
 # The most mentioned animals are moray eels, lionfish, and brittle stars. I am familiar only with eels, so watching the documentary to learn about other fishes might be a good idea.
 #
 # We can also evaluate the which relationships or facts have been extracted regarding moray eels.
-
-# In[26]:
-
 
 run_query("""
 MATCH (e:Entity {name:"morays"})-[:RELATIONSHIP]->(r)-[:RELATIONSHIP]->(target)
@@ -428,9 +370,6 @@ RETURN source.name AS source, r.type AS relationship, e.name AS target,
 #
 # Let's say, for example, we want to check if the relationship that morays interact with lionfish is accurate. We can retrieve the source text and validate the claim manually.
 
-# In[38]:
-
-
 run_query("""
 MATCH (e:Entity)-[:RELATIONSHIP]->(r)-[:RELATIONSHIP]->(t:Entity)
 WHERE e.name = "morays" AND r.type = "INTERACTS_WITH" AND t.name = "Lionfish"
@@ -443,9 +382,6 @@ RETURN s.text AS text
 #
 # Lastly, we can use the knowledge graph as a search engine that returns timestamps of sections where relevant entities we want to see. So, for example, we can ask the database to return all the timestamps of sections in which lionfish is mentioned.
 
-# In[31]:
-
-
 run_query("""
 MATCH (e:Entity {name:"Lionfish"})<-[:MENTIONS]-(s:Section)<-[:HAS_SECTION]-(v:Video)
 RETURN s.startTime AS timestamp, s.endTime AS endTime,
@@ -456,5 +392,3 @@ ORDER BY timestamp
 
 # ## Summary
 # The remarkable ability of GPT-3.5 and GPT-4 models to generalize across various domains is a powerful tool for exploring and analyzing different datasets to extract relevant information. In all honesty, I'm not entirely sure which endpoint I would use to recreate this blog post without GPT-4. As far as I know, there are no open-source relation extraction models or datasets on sea creatures. Therefore, to avoid the hassle of labeling a dataset and training a custom model, we can simply utilize a GPT endpoint. Furthermore, I'm eagerly anticipating the opportunity to examine its promised capability for multi-modal analysis based on audio or text input.
-
-# In[ ]:

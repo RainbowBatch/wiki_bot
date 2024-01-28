@@ -7,6 +7,13 @@ page_listing = kfio.load('kf_wiki_content/page_listing.json')
 page_listing.oldid = page_listing.oldid.astype('Int64')
 
 
+def lookup(slug):
+    for _, row in page_listing.iterrows():
+        if row['slug'] == slug:
+            return row
+    return None
+
+
 def add(title, slug):
     global page_listing
 
