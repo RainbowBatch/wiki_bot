@@ -7,7 +7,7 @@ from tqdm import tqdm
 
 
 def download_titles():
-    r = requests.get('https://knowledgefight.libsyn.com/page/1/size/1000')
+    r = requests.get('https://knowledgefight.libsyn.com/page/1/size/2000')
 
     soup = BeautifulSoup(r.text, 'html.parser')
 

@@ -177,8 +177,13 @@ libsyn_links['Link'] = libsyn_links['Link'].apply(link_fixer)
 print(libsyn_links)
 final_data = kfio.load('data/final.json')
 
+def resolve_reddit_id(rid='79h5fc'):
+    submission = reddit.submission(rid)
+    print("Resolving permalink:", rid, "->", 'https://www.reddit.com' +submission.permalink)
+    return 'https://www.reddit.com' + submission.permalink
 
 episode_discussions = pd.merge(libsyn_links, final_data, left_on='Link', right_on='libsyn_page')[['episode_number', 'PostIds', 'Link']].sort_values(by=['episode_number'], key=natsort.natsort_keygen())
+episode_discussions['permalink'] = episode_discussions.PostIds.apply(resolve_reddit_id)
 print(episode_discussions)
 kfio.save(episode_discussions, 'data/reddit_episode_discussions.json')
 print(set(libsyn_links['Link']) - set(final_data['libsyn_page']))

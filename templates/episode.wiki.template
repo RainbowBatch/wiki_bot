@@ -4,7 +4,7 @@
 {%- if safe_clean_title != clean_title -%}{%- raw -%}{{{%- endraw -%}DISPLAYTITLE:{{clean_title}}{%- raw -%}}}{%- endraw -%}{%- endif -%}
 {% raw %}{{{% endraw %}Episode
 |title={{clean_title}}
-|caption=Listen to this episode on [{{libsyn_page}} Libsyn]{% if spotify_page is not none %} [{{spotify_page}} Spotify]{% endif %}{% if twitch_url is not none %} [{{twitch_url}} Twitch]{% endif %}{% if transcript_exists %}, Read the {{ macro.wiki_link("Unofficial Transcript", transcript_safe_title)}}{% endif %}{% if reddit_url is not none %}, View discussion on [{{reddit_url}} Reddit]{% endif %}
+|caption=Listen to this episode on [{{libsyn_page}} Libsyn]{% if spotify_page is not none %} [{{spotify_page}} Spotify]{% endif %}{% if twitch_url is not none %} [{{twitch_url}} Twitch]{% endif %}{% if transcript_exists %}, Read the {{ macro.wiki_link("Unofficial Transcript", transcript_safe_title)}}{% endif %}{% if permalink is not none %}, View discussion on [{{permalink}} Reddit]{% endif %}
 |episodeNumber={{episode_number}}
 |length={{episode_length}}
 {% if release_date is defined and release_date is not none %}

@@ -39,6 +39,26 @@ def merge_records():
     title_table['next_episode_number'] = title_table.episode_number.shift(-1)
     title_table['prev_episode_number'] = title_table.episode_number.shift(1)
 
+    # TODO(woursler): sort_key relevant fields.
+    ep_nums = list(title_table.episode_number)
+    last_ep_num = None
+    incr = 0
+    prev_nonspecial_episode_numbers = []
+    count_since_nonspecial_episode_numbers = []
+    for x in ep_nums:
+        if last_ep_num is None:
+            last_ep_num = x
+        if not x.startswith('S'):
+            last_ep_num = x
+            incr = 0
+        else:
+            incr += 1
+        prev_nonspecial_episode_numbers.append(last_ep_num)
+        count_since_nonspecial_episode_numbers.append(incr)
+
+    title_table['prev_nonspecial_episode_number'] = prev_nonspecial_episode_numbers
+    title_table['count_since_nonspecial_episode_number'] = count_since_nonspecial_episode_numbers
+
     tracker_table['episode_number'] = tracker_table.episode_number.apply(
         clean_episode_number)
 
@@ -66,7 +86,7 @@ def merge_records():
 
     augmented_title_table = pd.merge(
         augmented_title_table,
-        reddit_details_table[['episode_number', 'reddit_url']],
+        reddit_details_table[['episode_number', 'reddit_url', 'permalink']],
         how='left',
         on='episode_number'
     )
@@ -115,9 +135,10 @@ def merge_records():
     print("Adding overlays.")
     for overlay_record in tqdm(overlay_table.to_dict(orient='records')):
         assert 'episode_number' in overlay_record
+        print("processed_records.episode_number", processed_records.episode_number)
         idxs = processed_records.index[processed_records.episode_number ==
                                        overlay_record['episode_number']].tolist()
-        assert len(idxs) == 1
+        assert len(idxs) == 1, "%d matches for %s" % (len(idxs), repr(overlay_record['episode_number']))
         idx = idxs[0]
 
         for field, value in overlay_record.items():

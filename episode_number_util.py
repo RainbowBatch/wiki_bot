@@ -22,6 +22,9 @@ MANUAL_EPISODE_NUMBER_REMAPPING = {
 
     "Lost Episode": 'S014', # TODO: This may not be correct, it's def out of order.
     "Taking A Lil' Breaky": 'S015',
+    "Doing Dune: Dune (1984)": 'S016',
+    "Doing Dune: Part 1": 'S017',
+    "Doing Dune: Part 2": 'S018',
 }
 
 

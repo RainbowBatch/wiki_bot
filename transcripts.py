@@ -29,6 +29,7 @@ type_sorter = [
     'autosub',
     'welder',
     'whisper',
+    'scribe',
     'otter',
     'fek',  # TODO: move to manual and attribute in authors metadata.
     'manual',
@@ -170,10 +171,10 @@ def parse_srt(transcript_text):
             block_lines = block_lines[:-1]
         if len(block_lines) == 0:
             continue
-        assert len(block_lines) == 3, block_lines
+        # assert len(block_lines) == 3, block_lines
 
         start_timestamp, end_timestamp = block_lines[1].split(" --> ")
-        text = block_lines[2].strip()
+        text = ' '.join(block_lines[2:]).strip()
 
         transcript_blocks.append(TranscriptBlock(
             start_timestamp=parse_timestamp(start_timestamp),
@@ -221,15 +222,35 @@ def parse_json_transcript(transcript_text):
     return transcript_blocks
 
 
+# An alternative JSON format produced by
+# https://huggingface.co/spaces/Xenova/whisper-web
+def parse_alt_json_transcript(transcript_text):
+    transcript_json = json.loads(transcript_text)
+
+    transcript_blocks = []
+
+    for block in transcript_json:
+        block = Box(block)
+        transcript_blocks.append(TranscriptBlock(
+            start_timestamp=block.timestamp[0],
+            end_timestamp=block.timestamp[1],
+            text=block.text,
+        ))
+
+    return transcript_blocks
+
+
 FORMAT_PARSERS = {
     # FowlEdgeKnight is mostly editing otter transcripts.
     ('fek', 'txt'): parse_otter_txt,
     ('manual', 'txt'): parse_otter_txt,
     ('otter', 'txt'): parse_otter_txt,
+    ('scribe', 'srt'): parse_srt,
     ('autosub', 'srt'): parse_srt,
     ('welder', 'srt'): parse_srt,
     ('whisper', 'vtt'): parse_vtt,
     ('whisper', 'txt'): parse_whisper_txt,
+    ('whisper', 'json'): parse_json_transcript,
     ('whisper', 'srt'): parse_srt,
     ('fek', 'json'): parse_json_transcript,
     ('manual', 'json'): parse_json_transcript,

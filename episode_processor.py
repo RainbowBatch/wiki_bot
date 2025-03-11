@@ -22,13 +22,11 @@ from wiki_cleaner import format_citation_block
 from wiki_cleaner import simple_format
 
 
-def sortkey(clean_title, episode_number, prev_episode_number, letter_code=None, max_digits=4):
-    episode_number = episode_number
-    prev_episode_number = prev_episode_number
-
+def sortkey(clean_title, episode_number, prev_nonspecial_episode_number, count_since_nonspecial_episode_number, letter_code=None, max_digits=4):
     if episode_number.startswith('S'):
-        assert prev_episode_number is not None
-        return sortkey(clean_title, prev_episode_number, None, letter_code='S', max_digits=max_digits)
+        assert letter_code is None
+        letter_code = 'S'
+        episode_number = prev_nonspecial_episode_number
     if episode_number.endswith(('A', 'B', 'C', 'D', 'E', 'F', 'G')):
         assert letter_code is None
         letter_code = episode_number[-1]
@@ -36,6 +34,9 @@ def sortkey(clean_title, episode_number, prev_episode_number, letter_code=None, 
 
     if letter_code is None:
         letter_code = ''
+
+    if letter_code == 'S':
+        letter_code += str(count_since_nonspecial_episode_number)
 
     return '#_EPISODE_%s%s:%s' % (str(int(episode_number)).zfill(max_digits), letter_code, clean_title)
 
@@ -89,7 +90,11 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
     ep_record['transcript_clean_title'] = 'Transcript/' + ep_record['clean_title']
 
     ep_record['sortkey'] = sortkey(
-        ep_record['clean_title'], ep_record['episode_number'], ep_record['prev_episode_number'])
+        ep_record['clean_title'],
+        ep_record['episode_number'],
+        ep_record['prev_nonspecial_episode_number'],
+        ep_record['count_since_nonspecial_episode_number'],
+    )
     ep_record['transcript_sortkey'] = ep_record['sortkey'].replace("EPISODE", "TRANSCRIPT")
 
     ep_record['safe_title'] = ep_record['title'].replace('#', '')

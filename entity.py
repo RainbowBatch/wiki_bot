@@ -307,7 +307,7 @@ REMAPPING = {
     'Leticia James': 'Letitia James',
     'Louis Thoreau': 'Louis Theroux',
     'lron hubbard': 'L Ron Hubbard',
-    'Lucian Wintrick':'Lucian Wintrich',
+    'Lucian Wintrick': 'Lucian Wintrich',
     'Luke Radowski': 'Luke Rudkowski',
     'Luke Redowski': 'Luke Rudkowski',
     'Luke Ridowski': 'Luke Rudkowski',
@@ -402,16 +402,27 @@ REMAPPING = {
     'Steve Pachanik': 'Steve Pieczenik',
     'Steve Pachannik': 'Steve Pieczenik',
     'Steve Pachannock': 'Steve Pieczenik',
+    'Steve Pachenik': 'Steve Pieczenik',
+    'Steve Pachenik': 'Steve Pieczenik',
     'Steve Pachinik': 'Steve Pieczenik',
     'Steve Pachinnik': 'Steve Pieczenik',
+    'Steve Pacinek': 'Steve Pieczenik',
     'Steve Pacinik': 'Steve Pieczenik',
+    'Steve Paczentk': 'Steve Pieczenik',
     'Steve Pagenek': 'Steve Pieczenik',
     'Steve Pagenik': 'Steve Pieczenik',
     'Steve Pajanik': 'Steve Pieczenik',
     'Steve Patentic': 'Steve Pieczenik',
     'Steve Pechenik': 'Steve Pieczenik',
+    'Steve Petchenik': 'Steve Pieczenik',
+    'Steve Pichanik': 'Steve Pieczenik',
     'Steve Pieczenick': 'Steve Pieczenik',
+    'Steve Pieczenik': 'Steve Pieczenik',
+    'Steve Pjanic': 'Steve Pieczenik',
+    'Steve Porchenek': 'Steve Pieczenik',
+    'Steve Prochenik': 'Steve Pieczenik',
     'Steve Puchenik': 'Steve Pieczenik',
+    'Steve Puranic': 'Steve Pieczenik',
     'Steve Quale': "Steve Quayle",
     'Stevie Peace': 'Steve Pieczenik',
     'Stevie Pease': 'Steve Pieczenik',
@@ -697,6 +708,7 @@ REFERENCE_TYPES = {
     'welder': "Welder",
     'manual': "Manually-created",
     'whisper': "OpenAI Whisper",
+    'scribe': "ElevenLabs Scribe",
     'wiki': "Wiki Page",
     'fek': "FoulEdgeKnight-edited",
 }
@@ -721,7 +733,8 @@ def parse_entity_orgin(value):
 
 
 def create_entity_origin_list_mw(entities_origins):
-    eo_rows = [[None if s == 'None' else s for s in eo.split('__')] for eo in entities_origins]
+    eo_rows = [[None if s == 'None' else s for s in eo.split(
+        '__')] for eo in entities_origins]
 
     eo_df = pd.DataFrame(
         eo_rows, columns=['episode_number', 'reference_type', 'title'])

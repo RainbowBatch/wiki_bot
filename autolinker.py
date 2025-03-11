@@ -7,6 +7,7 @@ import openai
 import os
 import re
 import time
+import traceback
 
 from abc import ABC
 from abc import abstractmethod
@@ -47,8 +48,9 @@ class WikitextVisitor(ABC):
             self.visit(n)
             for n in node.__children__()]
             if not isinstance(node, mwparserfromhell.wikicode.Wikicode)
-            # TODO: Might need to handle this differently?
-            else [],
+            else [
+            self.visit(n)
+            for n in node.nodes],
         )
 
     def process(self, wikitext):
@@ -69,9 +71,15 @@ class ExistingLinkFinderVisitor(WikitextVisitor):
     def generic_visit(self, node, visited_children):
         return node
 
-    def visit_Template(self, node, _):
-        # Don't consider links inside templates.
-        return node
+    def visit_Template(self, node, visited_children):
+        if node.name.strip() != "TranscriptBlock":
+            return node
+        # Only look for links in block templates.
+        return self.visit_TranscriptBlock(node, visited_children)
+
+    def visit_TranscriptBlock(self, node, visited_children):
+        transcript_text = node.get('text').value
+        return self.visit(transcript_text)
 
     def visit_Wikilink(self, node, _):
         if "Category:" in node.title:
@@ -105,12 +113,24 @@ class AutoLinkingVisitor(WikitextVisitor):
 
     def generic_visit(self, node, visited_children):
         # TODO: Integrate children changes
-        # print("Visiting", type(node), node)
+        print("Visiting", type(node), node.__class__.__name__, node)
         return node
 
-    def visit_Template(self, node, _):
-        # Don't alter templates.
-        return node
+    def visit_Template(self, node, visited_children):
+        if node.name.strip() != "TranscriptBlock":
+            return node
+        # Only autolink transcript block templates.
+        return self.visit_TranscriptBlock(node, visited_children)
+
+    def visit_TranscriptBlock(self, node, visited_children):
+        transcript_text = node.get('text').value
+        return self.visit(transcript_text)
+
+    def visit_Wikilink(self, node, _):
+        return node # DO NOTHING.
+
+    def visit_ExternalLink(self, node, _):
+        return node # DO NOTHING
 
     def visit_Text(self, node, _):
         # Edit the text.
@@ -124,7 +144,7 @@ class AutoLinkingVisitor(WikitextVisitor):
 
                 if not entity_entry.is_existing:
                     continue
-                #if "alex" in e_key.lower():
+                # if "alex" in e_key.lower():
                 #    continue
 
                 # Ensure we haven't already linked to this.
@@ -197,11 +217,12 @@ def autolink_file(fname, present_entities=None):
                 wiki_f.write(edited_mediawiki)
     except:
         print("Something went wrong:", fname)
+        traceback.print_exc()
 
 
 @click.command()
 @click.option('--min-ep-num', default=0, help='Lowest numbered episode to include.')
-@click.option('--max-ep-num', default=10**3, help='Highest numbered episode to include.')
+@click.option('--max-ep-num', default=10**4, help='Highest numbered episode to include.')
 def autolink_episodes(min_ep_num, max_ep_num):
 
     git_branch = Repository('kf_wiki_content/').head.shorthand.strip()

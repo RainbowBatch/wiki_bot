@@ -43,7 +43,7 @@ for wiki_fname in tqdm(glob.glob('kf_wiki_content/*.wiki')):
             if template_name == 'externalredirect' or template_name == 'external redirect':
                 page_metadata.is_external_redirect = True
                 continue
-            if template_name in ['notice', 'messagebox', 'quote', 'main', 'topic', 'transcriptblock']:
+            if template_name in ['notice', 'messagebox', 'quote', 'main', 'topic', 'transcriptblock', 'person']:
                 continue
 
             if template_name == 'transcript':
