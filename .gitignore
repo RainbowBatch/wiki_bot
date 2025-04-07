@@ -5,6 +5,7 @@ audio_files/
 data/
 google_credentials.json
 kf_wiki_content/
+kf_wiki_files/
 pywikibot/
 secrets/
 sensitive/
@@ -13,3 +14,4 @@ transcripts/
 praw.ini
 reddit_bot.log
 RainbowBatch.github.io/
+transcript_processing/first_15m/
