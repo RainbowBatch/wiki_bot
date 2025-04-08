@@ -32,6 +32,9 @@
 {% if ooc_drop is defined and ooc_drop is not none %}
 |oocDrop={{ooc_drop}}
 {% endif %}
+{% if brightSpot is defined and brightSpot is not none %}
+|brightSpot={{brightSpot}}
+{% endif %}
 {% if prev_title is defined and prev_title is not none %}
 |previousEpisode={{ macro.wiki_link(prev_title, safe_prev_title) }}
 {% endif %}

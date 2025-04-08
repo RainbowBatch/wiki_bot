@@ -23,6 +23,9 @@ def merge_records():
     overlay_table = kfio.load('data/overlay.json')
     scraped_page_data_table = kfio.load('data/scraped_page_data.json')
 
+    bright_spots_table = kfio.load('data/bright_spots.json')
+    bright_spots_table['episode_number'] = bright_spots_table['episode_number'].astype(str)
+
     existing_transcripts = scraped_page_data_table['transcriptEpisodeNumber'].unique(
     )
 
@@ -73,6 +76,13 @@ def merge_records():
     augmented_title_table = pd.merge(
         augmented_title_table,
         spotify_details_table,
+        how='left',
+        on='episode_number'
+    )
+
+    augmented_title_table = pd.merge(
+        augmented_title_table,
+        bright_spots_table,
         how='left',
         on='episode_number'
     )
