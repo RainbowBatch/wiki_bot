@@ -26,6 +26,9 @@ def merge_records():
     bright_spots_table = kfio.load('data/bright_spots.json')
     bright_spots_table['episode_number'] = bright_spots_table['episode_number'].astype(str)
 
+    ooc_drops_table = kfio.load('data/ooc_drops.json')
+    ooc_drops_table['episode_number'] = ooc_drops_table['episode_number'].astype(str)
+
     existing_transcripts = scraped_page_data_table['transcriptEpisodeNumber'].unique(
     )
 
@@ -89,6 +92,13 @@ def merge_records():
 
     augmented_title_table = pd.merge(
         augmented_title_table,
+        ooc_drops_table,
+        how='left',
+        on='episode_number'
+    )
+
+    augmented_title_table = pd.merge(
+        augmented_title_table,
         twitch_details_table.dropna(subset=['episode_number']),
         how='left',
         on='episode_number'
@@ -110,6 +120,9 @@ def merge_records():
         how='inner',  # TODO: Outer join?
         on='episode_number'
     )
+
+    merged['ooc_drop'] = merged['ooc_drop_x'].combine_first(merged['ooc_drop_y'])
+    merged = merged.drop(columns=['ooc_drop_x', 'ooc_drop_y'])
 
     title_keys = title_table.episode_number.to_list()
     tracker_keys = tracker_table.episode_number.to_list()

@@ -39,13 +39,18 @@ merged = merged.sort_values(
     key=natsort_keygen()
 )
 
+# Update categories that are edited on the wiki.
+category_mask = (merged["wiki_episodeType"] != merged["final_categories"]) & (merged["final_categories"].apply(lambda x: len(x) if isinstance(x, list) else 0) == 0)
+print("Episodes to copy category from wiki scrape", merged[category_mask].episode_number.to_list())
+merged.loc[category_mask, "overlay_categories"] = merged.loc[category_mask, "wiki_episodeType"]
+
 # Identify episodes without categories
 missing_category_mask = (
     (merged["wiki_categories"].apply(lambda x: len(x) if isinstance(x, list) else 0) == 0) &
     (merged["final_categories"].apply(lambda x: len(x) if isinstance(x, list) else 0) == 0) &
     (merged["overlay_categories"].apply(lambda x: len(x) if isinstance(x, list) else 0) == 0)
 )
-print(merged[missing_category_mask].episode_number.to_list())
+print("Episodes with missing category", merged[missing_category_mask].episode_number.to_list())
 # TODO: Add handling for episodes missing categories
 
 
@@ -65,7 +70,6 @@ present_day_mask = (
 print("Episodes meeting the present_day condition:", merged[missing_category_mask & present_day_mask]['episode_number'].tolist())
 
 merged.loc[missing_category_mask & present_day_mask, "overlay_categories"] = merged.loc[missing_category_mask & present_day_mask, "overlay_categories"].apply(lambda x: x if isinstance(x, list) else []).apply(lambda x: x + ["Present Day"])
-
 
 # Update overlay_people with wiki_people if different
 mask = merged["wiki_people"] != merged["final_people"]

@@ -10,6 +10,7 @@ import pandas as pd
 redirect_regex = re.compile(r'#redirect\s*\[\[\s*(?P<link>[^\]]+)\]\]', re.IGNORECASE)
 
 category_regex = re.compile(r'\[\[\s*Category\s*:\s*(?P<category>[^\]]+)\]\]')
+category_regex2 = re.compile(r'\[\[\s*Category\s*:\s*(?P<category>[^\]]+)\|.*\]\]')
 
 page_listing = kfio.load('kf_wiki_content/page_listing.json')
 episode_listing = kfio.load('data/final.json')
@@ -30,10 +31,13 @@ for wiki_fname in tqdm(glob.glob('kf_wiki_content/*.wiki')):
         page_metadata.is_stub = False
         page_metadata.is_external_redirect = False
 
-        page_metadata.wiki_categories = [
+        page_metadata.wiki_categories = list(set([
             z.strip()
             for z in category_regex.findall(page_text)
-        ]
+        ] + [
+            z.strip()
+            for z in category_regex2.findall(page_text)
+        ]))
 
         for template in page_parsed.templates:
             template_name = template.name.strip().lower()
