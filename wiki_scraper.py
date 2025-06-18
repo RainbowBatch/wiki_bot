@@ -7,10 +7,12 @@ from tqdm import tqdm
 import re
 import pandas as pd
 
-redirect_regex = re.compile(r'#redirect\s*\[\[\s*(?P<link>[^\]]+)\]\]', re.IGNORECASE)
+redirect_regex = re.compile(
+    r'#redirect\s*\[\[\s*(?P<link>[^\]]+)\]\]', re.IGNORECASE)
 
 category_regex = re.compile(r'\[\[\s*Category\s*:\s*(?P<category>[^\]]+)\]\]')
-category_regex2 = re.compile(r'\[\[\s*Category\s*:\s*(?P<category>[^\]]+)\|.*\]\]')
+category_regex2 = re.compile(
+    r'\[\[\s*Category\s*:\s*(?P<category>[^\]]+)\|.*\]\]')
 
 page_listing = kfio.load('kf_wiki_content/page_listing.json')
 episode_listing = kfio.load('data/final.json')
@@ -47,7 +49,7 @@ for wiki_fname in tqdm(glob.glob('kf_wiki_content/*.wiki')):
             if template_name == 'externalredirect' or template_name == 'external redirect':
                 page_metadata.is_external_redirect = True
                 continue
-            if template_name in ['notice', 'messagebox', 'quote', 'main', 'topic', 'transcriptblock', 'person']:
+            if template_name in ['notice', 'messagebox', 'quote', 'main', 'topic', 'transcriptblock', 'person', 'birth date and age', 'birth date', 'death date', 'death date and age', 'plainlist', 'marriage']:
                 continue
 
             if template_name == 'transcript':
@@ -55,18 +57,21 @@ for wiki_fname in tqdm(glob.glob('kf_wiki_content/*.wiki')):
                     argument_name = argument.name.strip()
                     if argument_name not in ['episodeNumber']:
                         continue
-                    page_metadata['transcriptEpisodeNumber'] = argument.value.strip().split('|')[-1][:-2]
+                    page_metadata['transcriptEpisodeNumber'] = argument.value.strip().split(
+                        '|')[-1][:-2]
                 continue
 
             if template_name != 'episode':
-                raise NotImplementedError("Unable to handle template named '%s'." % template_name)
+                raise NotImplementedError(
+                    "Unable to handle template named '%s'." % template_name)
 
             for argument in template.arguments:
                 argument_name = argument.name.strip()
                 if argument_name in ['title']:
                     continue
                 if argument_name in page_metadata:
-                    print("WARNING! Duplicated %s in %s. Using first instance." % (argument_name, wiki_fname))
+                    print("WARNING! Duplicated %s in %s. Using first instance." % (
+                        argument_name, wiki_fname))
                     continue
                 page_metadata[argument_name] = argument.value.strip()
 
@@ -87,9 +92,11 @@ for wiki_fname in tqdm(glob.glob('kf_wiki_content/*.wiki')):
                     continue
                 yield appearance
         if 'appearance' in page_metadata:
-            page_metadata.appearance = list(process_appearances(page_metadata.appearance))
+            page_metadata.appearance = list(
+                process_appearances(page_metadata.appearance))
         if 'hosts' in page_metadata:
-            page_metadata.hosts = list(process_appearances(page_metadata.hosts))
+            page_metadata.hosts = list(
+                process_appearances(page_metadata.hosts))
 
         def process_episodeType(episode_types):
             episode_types = re.split('\[\[|\]\]', episode_types)
@@ -102,24 +109,29 @@ for wiki_fname in tqdm(glob.glob('kf_wiki_content/*.wiki')):
                 else:
                     yield episode_type
         if 'episodeType' in page_metadata:
-            page_metadata.episodeType = list(process_episodeType(page_metadata.episodeType))
+            page_metadata.episodeType = list(
+                process_episodeType(page_metadata.episodeType))
 
         def match_episode(raw_link):
             raw_link = raw_link.strip()
             assert raw_link.startswith('[[')
             assert raw_link.endswith(']]')
             raw_link = raw_link[2:-2]
-            matching_episodes = episode_listing[episode_listing.title.isin(raw_link.split('|'))].episode_number.to_list()
+            matching_episodes = episode_listing[episode_listing.title.isin(
+                raw_link.split('|'))].episode_number.to_list()
 
             if len(matching_episodes) == 1:
                 return matching_episodes[0]
 
-            raise NotImplementedError("No match %s; => %s" % (raw_link, ', '.join(matching_episodes)))
+            raise NotImplementedError("No match %s; => %s" % (
+                raw_link, ', '.join(matching_episodes)))
 
         if 'previousEpisode' in page_metadata:
-            page_metadata.previousEpisode = match_episode(page_metadata.previousEpisode)
+            page_metadata.previousEpisode = match_episode(
+                page_metadata.previousEpisode)
         if 'nextEpisode' in page_metadata:
-            page_metadata.nextEpisode = match_episode(page_metadata.nextEpisode)
+            page_metadata.nextEpisode = match_episode(
+                page_metadata.nextEpisode)
 
         if 'caption' in page_metadata:
             page_metadata.libsyn_link = page_metadata.caption.split()[0][1:]
@@ -133,11 +145,11 @@ page_records_df = pd.DataFrame.from_records(PAGE_RECORDS).sort_values('title')
 redirect_header = ['from', 'to']
 redirect_rows = []
 for page_metadata in PAGE_RECORDS:
-       if 'redirect' in page_metadata:
-            redirect_rows.append({
-                'from': page_metadata.title.strip(),
-                'to': page_metadata.redirect.strip(),
-            })
+    if 'redirect' in page_metadata:
+        redirect_rows.append({
+            'from': page_metadata.title.strip(),
+            'to': page_metadata.redirect.strip(),
+        })
 
 redirects_df = pd.DataFrame(redirect_rows, columns=redirect_header)
 

@@ -4,7 +4,6 @@ import maya
 import pathlib
 import kfio
 import pandas as pd
-import pandoc
 import glob
 
 from box import Box

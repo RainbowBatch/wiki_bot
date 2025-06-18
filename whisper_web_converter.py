@@ -5,7 +5,7 @@ from box import Box
 
 KF_TRANSCRIPT_NAMESPACE = uuid.UUID('c43bff5e-c3d0-4ee8-9925-d76901871ef7')
 
-episode_number = 1024
+episode_number = 1028
 ipath = r"C:\Users\wours\Downloads\%s.whisper.json" % episode_number
 
 with open(ipath) as f:
@@ -15,7 +15,8 @@ transcript = Transcript(blocks=transcript_blocks)
 
 obj = {
     "audio_identifier": "KF_%s" % episode_number,
-    "audio_url": "https://traffic.libsyn.com/secure/knowledgefight/Mar11-2025.mp3",
+    # TODO: Fix this in generality.
+    "audio_url": "https://traffic.libsyn.com/secure/knowledgefight/M-B2.mp3",
     "history": {
         "type": "whisper",
         "original_format": "json",
