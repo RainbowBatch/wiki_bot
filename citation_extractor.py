@@ -1,7 +1,7 @@
 import kfio
 import math
 import pandas as pd
-import pandoc
+import pypandoc
 import re
 import wikitextparser
 
@@ -116,10 +116,10 @@ def download_citations():
             for tag_html in tags_container_html.find_all("a"):
                 citations_tags.append(tag_html.text)
 
-        citations_mediawiki = pandoc.write(
-            pandoc.read(citations_html,
-                        format="html-native_divs-native_spans"),
-            format="mediawiki"
+        citations_mediawiki = pypandoc.convert_text(
+            citations_html,
+            to='mediawiki',
+            format='html-native_divs-native_spans'
         )
 
         print("Finished", citations_url)

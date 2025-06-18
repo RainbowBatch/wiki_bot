@@ -1,7 +1,6 @@
 import en_core_web_sm
 import kfio
 import pandas as pd
-import pandoc
 import spacy
 
 from box import Box

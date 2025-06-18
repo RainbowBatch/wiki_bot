@@ -4,7 +4,7 @@ import math
 import maya
 import numpy as np
 import pandas as pd
-import pandoc
+import pypandoc
 import re
 import wikitextparser
 
@@ -73,11 +73,14 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
     ep_record['next_title'] = cleantitle(ep_record['next_title'])
 
     # TODO: These are probably wrong.
-    ep_record['wiki_link'] = "https://knowledge-fight.fandom.com/wiki/%s" % ep_record['title'].replace(' ', '_')
-    ep_record['wiki_transcript_link'] = "https://knowledge-fight.fandom.com/wiki/Transcript/%s" % ep_record['title'].replace(' ', '_')
+    ep_record['wiki_link'] = "https://knowledge-fight.fandom.com/wiki/%s" % ep_record['title'].replace(
+        ' ', '_')
+    ep_record['wiki_transcript_link'] = "https://knowledge-fight.fandom.com/wiki/Transcript/%s" % ep_record['title'].replace(
+        ' ', '_')
 
     ep_record['slug'] = canonicalize_title(ep_record['title'])
-    ep_record['transcript_slug'] = 'Transcript{{FORWARD_SLASH}}' + ep_record['slug']
+    ep_record['transcript_slug'] = 'Transcript{{FORWARD_SLASH}}' + \
+        ep_record['slug']
 
     ep_record['ofile'] = 'kf_wiki_content/%s.wiki' % ep_record['slug']
     ep_record['transcript_ofile'] = 'kf_wiki_content/%s.wiki' % ep_record['transcript_slug']
@@ -87,7 +90,8 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
         ep_record['clean_title'] = ep_record['title']
     else:
         ep_record['clean_title'] = ep_record['title'].split(':')[-1].strip()
-    ep_record['transcript_clean_title'] = 'Transcript/' + ep_record['clean_title']
+    ep_record['transcript_clean_title'] = 'Transcript/' + \
+        ep_record['clean_title']
 
     ep_record['sortkey'] = sortkey(
         ep_record['clean_title'],
@@ -95,12 +99,15 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
         ep_record['prev_nonspecial_episode_number'],
         ep_record['count_since_nonspecial_episode_number'],
     )
-    ep_record['transcript_sortkey'] = ep_record['sortkey'].replace("EPISODE", "TRANSCRIPT")
+    ep_record['transcript_sortkey'] = ep_record['sortkey'].replace(
+        "EPISODE", "TRANSCRIPT")
 
     ep_record['safe_title'] = ep_record['title'].replace('#', '')
     ep_record['safe_clean_title'] = ep_record['clean_title'].replace('#', '')
-    ep_record['transcript_safe_title'] = ep_record['transcript_title'].replace('#', '')
-    ep_record['transcript_safe_clean_title'] = ep_record['transcript_clean_title'].replace('#', '')
+    ep_record['transcript_safe_title'] = ep_record['transcript_title'].replace(
+        '#', '')
+    ep_record['transcript_safe_clean_title'] = ep_record['transcript_clean_title'].replace(
+        '#', '')
 
     if ep_record['prev_title'] is not None:
         ep_record['safe_prev_title'] = ep_record['prev_title'].replace('#', '')
@@ -119,17 +126,18 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
         ep_record['plaintext_description'] = ''
     else:
         ep_record['mediawiki_description'] = simple_format(
-            pandoc.write(
-                pandoc.read(ep_record['details_html'],
-                            format="html-native_divs-native_spans"),
-                format="mediawiki"
+            pypandoc.convert_text(
+                ep_record['details_html'],
+                to='mediawiki',
+                format='html-native_divs-native_spans'
             )
         )
-        pre_plaintext_description = pandoc.write(
-            pandoc.read(ep_record['mediawiki_description'],
-                        format="mediawiki"),
-            format="plain"
+        pre_plaintext_description = pypandoc.convert_text(
+            ep_record['mediawiki_description'],
+            to='plain',
+            format='mediawiki'
         ).replace('\n-  ', '\n')
+
         ep_record['plaintext_description'] = ' '.join([
             line.strip()
             for line in pre_plaintext_description.split('\n')
@@ -199,7 +207,8 @@ def process_ep_record(ep_record, citations_df, category_remapping_df):
 
     # TODO: Nicer formatting here
     if ep_record['coverage_date'] is None:
-        ep_record['coverage_dates_string'] = format_daterange(ep_record['coverage_start_date'], ep_record['coverage_end_date'])
+        ep_record['coverage_dates_string'] = format_daterange(
+            ep_record['coverage_start_date'], ep_record['coverage_end_date'])
     else:
         ep_record['coverage_dates_string'] = ep_record['coverage_date']
 

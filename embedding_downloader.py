@@ -3,7 +3,7 @@ import openai
 import kfio
 import pandas as pd
 from wiki_cleaner import simple_format
-import pandoc
+import pypandoc
 
 with open("secrets/openaiorg.txt") as openaiorg_f:
    openai.organization = openaiorg_f.read().strip()
@@ -24,10 +24,10 @@ def f(html):
         return None
     else:
         return simple_format(
-            pandoc.write(
-                pandoc.read(html,
-                            format="html-native_divs-native_spans"),
-                format="mediawiki"
+            pypandoc.convert_text(
+                html,
+                to='mediawiki',
+                format='html-native_divs-native_spans'
             )
         )
 unclassified_descriptions['mediawiki_description'] = unclassified_descriptions.details_html.apply(f)

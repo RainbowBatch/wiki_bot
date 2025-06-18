@@ -1,12 +1,13 @@
 import wikitextparser
 from entity import extract_entities
-import pandoc
+import pypandoc
 
 
 def wikitext_extractor(wiki_text, origin):
-    cleaned_text = pandoc.write(
-        pandoc.read(wiki_text, format="mediawiki"),
-        format="plain"
+    cleaned_text = pypandoc.convert_text(
+        wiki_text,
+        to='plain',
+        format='mediawiki'
     )
 
     # TODO: Consider processing line by line?
