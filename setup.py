@@ -9,5 +9,7 @@ setup(
         "pandas",
         "requests",
         "maya",
+        "python-box",
+        "praw",
     ],
 )
