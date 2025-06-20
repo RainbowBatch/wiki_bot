@@ -22,7 +22,7 @@ DATA_DIR = TOP_LEVEL_DIR / 'data'
 
 
 def save(df, fname):
-    with open(fname, "w", encoding='utf-8') as json_file:
+    with open(TOP_LEVEL_DIR / fname, "w", encoding='utf-8') as json_file:
         json_file.write(
             json.dumps(
                 json.loads(
@@ -33,7 +33,7 @@ def save(df, fname):
         )
 
 def save_json(obj, fname):
-    with open(fname, "w", encoding='utf-8') as json_file:
+    with open(TOP_LEVEL_DIR / fname, "w", encoding='utf-8') as json_file:
         json_file.write(
             json.dumps(
                 obj,
@@ -54,7 +54,7 @@ def serialize_without_nulls(df):
 
 
 def save_without_nulls(df, fname):
-    with open(fname, "w", encoding='utf-8') as json_file:
+    with open(TOP_LEVEL_DIR / fname, "w", encoding='utf-8') as json_file:
         json_file.write(
             json.dumps(
                 serialize_without_nulls(df),
@@ -65,7 +65,7 @@ def save_without_nulls(df, fname):
 
 def load(fname):
     return pd.read_json(
-        fname,
+        TOP_LEVEL_DIR / fname,
         orient='records',
     )
 
@@ -81,7 +81,7 @@ def download(url):
 
 
 def load_category_remapping(fname):
-    category_remapping_df = load(fname)
+    category_remapping_df = load(TOP_LEVEL_DIR / fname)
 
     category_remapping_df.new_categories = category_remapping_df.new_categories.apply(
         splits)
@@ -91,7 +91,7 @@ def load_category_remapping(fname):
 
 
 def load_citations_table(fname):
-    citations_df = load(fname)
+    citations_df = load(TOP_LEVEL_DIR / fname)
     citations_df.citations_start_date = citations_df.citations_start_date.apply(
         lambda dt: maya.parse(dt) if not pd.isna(dt) else None)
     return citations_df
