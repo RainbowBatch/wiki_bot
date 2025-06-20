@@ -7,6 +7,9 @@ setup(
     packages=find_packages(),
     install_requires=[
         "beautifulsoup4",
+        "google-api-python-client",
+        "google-auth",
+        "google-auth-oauthlib",
         "maya",
         "natsort",
         "pandas",
