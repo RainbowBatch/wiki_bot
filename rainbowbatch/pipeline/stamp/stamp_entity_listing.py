@@ -31,11 +31,11 @@ def pretty_entity_sourcetext(value):
 
 env.filters["pretty_entity_sourcetext"] = pretty_entity_sourcetext
 
-template = env.get_template('entity_listing.wiki.template')
-
 
 def stamp_entity_listing():
     assert check_git_branch('bot_raw'), "Please checkout bot_raw! Currently on %s." % git_branch
+
+    template = env.get_template('entity_listing.wiki.template')
 
     # We can't render all the entities because the resulting page is too large.
     # Instead we split them into groups based on their first letter.

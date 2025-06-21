@@ -6,8 +6,6 @@ import pandas as pd
 import re
 
 TIMEZONE = 'US/Eastern'
-DATE_FORMAT = "%B %#d, %Y"
-
 
 def mayafy_date(datestring):
     if pd.isna(datestring) or len(datestring.strip()) == 0:
@@ -34,21 +32,20 @@ def format_daterange(start_dt, end_dt):
     if start_dt == end_dt:
         return format_date(start_dt)
 
-
     if start_dt.month == end_dt.month and start_dt.year == end_dt.year:
-        return "%s %s-%s, %s" % (
+        return "%s %d-%d, %s" % (
             start_dt.datetime().strftime("%B"),
-            start_dt.datetime().strftime("%#d"),
-            end_dt.datetime().strftime("%#d"),
-            start_dt.datetime().strftime("%Y"),
+            start_dt.datetime().day,
+            end_dt.datetime().day,
+            start_dt.datetime().year,
         )
     if start_dt.year == end_dt.year:
-        return "%s %s-%s %s, %s" % (
+        return "%s %d-%s %d, %s" % (
             start_dt.datetime().strftime("%B"),
-            start_dt.datetime().strftime("%#d"),
+            start_dt.datetime().day,
             end_dt.datetime().strftime("%B"),
-            end_dt.datetime().strftime("%#d"),
-            start_dt.datetime().strftime("%Y"),
+            end_dt.datetime().day,
+            start_dt.datetime().year,
         )
     return "%s-%s" % (format_date(start_dt), format_date(end_dt))
 
@@ -58,8 +55,11 @@ def format_date(dt):
         return canonicalize_date(dt)
     if dt is None:
         return None
-    return dt.datetime().strftime(DATE_FORMAT)
-
+    return "%s %d, %s" % (
+        dt.datetime().strftime("%B"),
+        dt.datetime().day,
+        dt.datetime().year,
+    )
 
 date_listing_df = kfio.load(
     'data/final.json')[['title', 'episode_number', 'coverage_start_date', 'coverage_end_date', 'coverage_date']]

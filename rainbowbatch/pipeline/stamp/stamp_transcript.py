@@ -26,21 +26,20 @@ def stamp_transcripts_cli(overwrite):
 
 # TODO(woursler): Add ep number range flags.
 
+env = Environment(
+    loader=FileSystemLoader(kfio.TOP_LEVEL_DIR/"templates"),
+    autoescape=select_autoescape()
+)
+
+env.filters["format_speaker"] = lambda speaker: "Unknown Speaker" if speaker is None else speaker
+env.filters["format_timestamp"] = format_timestamp
 
 def stamp_transcripts(overwrite):
-    env = Environment(
-        loader=FileSystemLoader(kfio.TOP_LEVEL_DIR/"templates"),
-        autoescape=select_autoescape()
-    )
-
-    env.filters["format_speaker"] = lambda speaker: "Unknown Speaker" if speaker is None else speaker
-    env.filters["format_timestamp"] = format_timestamp
+    assert check_git_branch('bot_raw'), "Please checkout bot_raw! Currently on %s." % git_branch
 
     template = env.get_template('transcript.wiki.template')
 
     episodes_df = kfio.load('data/final.json')
-
-    assert check_git_branch('bot_raw'), "Please checkout bot_raw! Currently on %s." % git_branch
 
     transcript_listing = create_best_transcript_listing()
     transcript_listing = transcript_listing[transcript_listing.transcript_type != 'autosub']

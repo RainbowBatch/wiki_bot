@@ -17,15 +17,14 @@ env = Environment(
     autoescape=select_autoescape()
 )
 
-template = env.get_template('episode.wiki.template')
-
-
 def stamp_templates():
+    assert check_git_branch('bot_raw'), "Please checkout bot_raw! Currently on %s." % git_branch
+
+    template = env.get_template('episode.wiki.template')
+
     episodes_df = kfio.load('data/final.json')
 
     episodes_df = episodes_df.replace({np.nan: None})
-
-    assert check_git_branch('bot_raw'), "Please checkout bot_raw! Currently on %s." % git_branch
 
     PAGE_RECORDS = []
     print("Stamping episodes.")
