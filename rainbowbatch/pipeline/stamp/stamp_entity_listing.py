@@ -49,7 +49,7 @@ def stamp_entity_listing():
 
         fragment_title = 'RainbowBatch Entities/%s' % starting_letter
         fragment_slug = canonicalize_title(fragment_title)
-        fragment_fname = 'kf_wiki_content/%s.wiki' % fragment_slug
+        fragment_fname = kfio.TOP_LEVEL_DIR/'kf_wiki_content/%s.wiki' % fragment_slug
 
         raw = template.render(
             entities=fragment_df.to_dict(orient='records')

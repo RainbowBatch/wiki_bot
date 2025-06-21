@@ -63,7 +63,7 @@ def stamp_transcripts(overwrite):
 
         transcript = parse_transcript(transcript_record)
 
-        if exists(episode_details['transcript_ofile']) and page_listing.lookup(episode_details['transcript_slug']) is not None and not overwrite:
+        if exists(kfio.TOP_LEVEL_DIR/episode_details['transcript_ofile']) and page_listing.lookup(episode_details['transcript_slug']) is not None and not overwrite:
             continue
 
         raw = template.render(
@@ -73,7 +73,7 @@ def stamp_transcripts(overwrite):
 
         pretty = simple_format(raw)
 
-        with io.open(episode_details['transcript_ofile'], mode="w", encoding="utf-8") as f:
+        with io.open(kfio.TOP_LEVEL_DIR/episode_details['transcript_ofile'], mode="w", encoding="utf-8") as f:
             f.write(pretty)
 
         print("page_listing.add",

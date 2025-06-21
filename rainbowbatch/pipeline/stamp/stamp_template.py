@@ -32,7 +32,7 @@ def stamp_templates():
     for record in tqdm(episodes_df.to_dict(orient='records')):
         raw = template.render(**record)
         pretty = simple_format(raw)
-        with io.open(record['ofile'], mode="w", encoding="utf-8") as f:
+        with io.open(kfio.TOP_LEVEL_DIR/record['ofile'], mode="w", encoding="utf-8") as f:
             f.write(pretty)
 
         PAGE_RECORDS.append({

@@ -50,7 +50,7 @@ for entity_record in raw_entities[raw_entities.is_existing & ~raw_entities.is_re
 
     page_title = entity_record.entity_name
     page_slug = canonicalize_title(page_title)
-    page_fname = 'kf_wiki_content/%s.wiki' % page_slug
+    page_fname = kfio.TOP_LEVEL_DIR/'kf_wiki_content/%s.wiki' % page_slug
 
     with io.open(page_fname, mode="w", encoding="utf-8") as f:
         f.write(pretty)
