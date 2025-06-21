@@ -1,10 +1,10 @@
 import click
 import io
-import kfio
 import maya
-import page_listing
 import pandas as pd
 import parse
+import rainbowbatch.kfio as kfio
+import rainbowbatch.wiki.page_listing as page_listing
 
 from jinja2 import Environment
 from jinja2 import FileSystemLoader
@@ -13,11 +13,11 @@ from jinja2 import select_autoescape
 from os.path import exists
 from pprint import pprint
 from pygit2 import Repository
+from rainbowbatch.remap.wiki_cleaner import simple_format
 from tqdm import tqdm
 from transcripts import create_best_transcript_listing
 from transcripts import format_timestamp
 from transcripts import parse_transcript
-from wiki_cleaner import simple_format
 
 
 @click.command()

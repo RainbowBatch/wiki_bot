@@ -1,15 +1,14 @@
 import base64
 import json
-import kfio
-import time
 import natsort
-
 import pandas as pd
+import rainbowbatch.kfio as kfio
+import time
 
 from box import Box
 from google import genai
 from google.genai import types
-from pprint import pprint
+from rainbowbatch.secrets import secret_file
 from tqdm import tqdm
 from transcripts import create_best_transcript_listing
 from transcripts import parse_transcript
@@ -19,7 +18,7 @@ episode_listing = kfio.load('data/final.json')
 
 
 def attempt_ooc_drop_extraction(episode_number):
-    with open("secrets/gemini.json") as secrets_f:
+    with open(secret_file("gemini.json")) as secrets_f:
         secrets = Box(json.load(secrets_f))
 
     client = genai.Client(

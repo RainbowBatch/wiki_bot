@@ -1,14 +1,16 @@
 # Derived from https://github.com/tomasonjo/blogs/blob/master/youtube/video2graph.ipynb
 
-from youtube_transcript_api import YouTubeTranscriptApi
-from neo4j import GraphDatabase
-from retry import retry
 import openai
 import pandas as pd
 
+from neo4j import GraphDatabase
+from rainbowbatch.secrets import secret_file
+from retry import retry
+from youtube_transcript_api import YouTubeTranscriptApi
+
 pd.set_option("display.max_colwidth", 150)
 
-with open("../secrets/openaikey.txt") as openaikey_f:
+with open(secret_file("openaikey.txt")) as openaikey_f:
     openai.api_key = openaikey_f.read().strip()
 
 # DO NOT RUN Holy batman

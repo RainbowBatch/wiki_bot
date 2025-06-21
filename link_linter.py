@@ -1,6 +1,6 @@
 import click
 import diff_match_patch as dmp_module
-import kfio
+import rainbowbatch.kfio as kfio
 import mwparserfromhell
 import mwparserfromhell.nodes as wiki_node
 import openai
@@ -15,13 +15,13 @@ from attr import attr
 from attr import attrs
 from box import Box
 from collections import Counter
-from entity import simplify_entity
+from rainbowbatch.entity.entity import simplify_entity
 from entity_extraction_util import wikipage_extractor
 from parsimonious.nodes import VisitationError
 from pprint import pprint
 from pygit2 import Repository
 from tqdm import tqdm
-from wiki_cleaner import simple_format
+from rainbowbatch.remap.wiki_cleaner import simple_format
 
 WIKILINK_PATTERN = re.compile(
     r"\[\[(?P<link>[^|\]]+)(?:\|(?P<text>[^]]+))?\]\]")

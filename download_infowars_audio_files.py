@@ -1,11 +1,11 @@
-import kfio
+import rainbowbatch.kfio as kfio
 import requests
 import pandas as pd
 from os.path import exists
 from tqdm import tqdm
 from bs4 import BeautifulSoup
 import maya
-from date_lookup import format_date
+from rainbowbatch.remap.date_lookup import format_date
 from tqdm import tqdm
 
 

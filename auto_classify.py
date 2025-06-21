@@ -7,7 +7,7 @@ from sklearn.metrics import classification_report, accuracy_score
 from scipy import spatial
 from openai.embeddings_utils import cosine_similarity
 
-import kfio
+import rainbowbatch.kfio as kfio
 
 classified_descriptions = kfio.load('data/final.json')[['episode_number', 'categories', 'mediawiki_description']]
 embeddings = kfio.load('data/description_embeddings.json')[['episode_number', 'gpt3_ts_babbage_embedding']]

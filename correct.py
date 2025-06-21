@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import random
 import time
-import kfio
+import rainbowbatch.kfio as kfio
 import json
 from tqdm import tqdm
 

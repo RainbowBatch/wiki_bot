@@ -1,7 +1,7 @@
 import _thread as thread
 import box
 import en_core_web_sm
-import kfio
+import rainbowbatch.kfio as kfio
 import pandas as pd
 import parse
 import re

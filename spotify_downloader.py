@@ -1,18 +1,18 @@
 import json
-import kfio
 import natsort
 import pandas as pd
+import rainbowbatch.kfio as kfio
 import spotipy
 
 from box import Box
-from episode_number_util import extract_episode_number
-from pprint import pprint
+from rainbowbatch.remap.episode_number_util import extract_episode_number
+from rainbowbatch.secrets import secret_file
 
 
 def download_spotify_details():
     PODCAST_ID = "spotify:show:6hK78c5u6Bscdz0HCDeFLn"
 
-    with open("secrets/spotify.json") as secrets_f:
+    with open(secret_file("spotify.json")) as secrets_f:
         secrets = Box(json.load(secrets_f))
 
         client_credentials_manager = spotipy.oauth2.SpotifyClientCredentials(

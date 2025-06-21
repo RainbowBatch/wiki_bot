@@ -1,17 +1,16 @@
-import kfio
+import rainbowbatch.kfio as kfio
 import pandas as pd
 import pathlib
 import re
 
 from collections import Counter
 from collections import defaultdict
-from entity import LIKELY_PEOPLE
-from entity import NOT_RELEVANT_PEOPLE
-from entity import create_entity_origin_list_mw
-from entity import restore_capitalization
-from entity import simplify_entity
+from rainbowbatch.entity.entity import LIKELY_PEOPLE
+from rainbowbatch.entity.entity import NOT_RELEVANT_PEOPLE
+from rainbowbatch.entity.entity import create_entity_origin_list_mw
+from rainbowbatch.entity.entity import restore_capitalization
+from rainbowbatch.entity.entity import simplify_entity
 from natsort import natsorted
-from pprint import pprint
 from pygit2 import Repository
 from tqdm import tqdm
 

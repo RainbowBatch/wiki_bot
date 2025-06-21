@@ -1,4 +1,4 @@
-import kfio
+import rainbowbatch.kfio as kfio
 import json
 
 import uuid

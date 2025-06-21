@@ -1,16 +1,16 @@
 import io
-import kfio
 import numpy as np
-import page_listing
 import pandas as pd
+import rainbowbatch.kfio as kfio
+import rainbowbatch.wiki.page_listing as page_listing
 
 from jinja2 import Environment
 from jinja2 import FileSystemLoader
 from jinja2 import Template
 from jinja2 import select_autoescape
 from pygit2 import Repository
+from rainbowbatch.remap.wiki_cleaner import simple_format
 from tqdm import tqdm
-from wiki_cleaner import simple_format
 
 env = Environment(
     loader=FileSystemLoader("templates"),

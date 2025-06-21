@@ -1,10 +1,10 @@
 import click
 import diff_match_patch as dmp_module
-import kfio
 import mwparserfromhell
 import mwparserfromhell.nodes as wiki_node
 import openai
 import os
+import rainbowbatch.kfio as kfio
 import re
 import time
 import traceback
@@ -14,23 +14,23 @@ from abc import abstractmethod
 from attr import attr
 from attr import attrs
 from box import Box
-from entity import simplify_entity
+from rainbowbatch.entity.entity import simplify_entity
 from entity_extraction_util import wikipage_extractor
 from parsimonious.nodes import VisitationError
-from pprint import pprint
 from pygit2 import Repository
-from wiki_cleaner import simple_format
+from rainbowbatch.secrets import secret_file
 from retrying import retry
 from tqdm import tqdm
+from rainbowbatch.remap.wiki_cleaner import simple_format
 
 WIKILINK_PATTERN = re.compile(
     r"\[\[(?P<link>[^|\]]+)(?:\|(?P<text>[^]]+))?\]\]")
 
 dmp = dmp_module.diff_match_patch()
 
-with open("secrets/openaiorg.txt") as openaiorg_f:
+with open(secret_file("openaiorg.txt")) as openaiorg_f:
     openai.organization = openaiorg_f.read().strip()
-with open("secrets/openaikey.txt") as openaikey_f:
+with open(secret_file("openaikey.txt")) as openaikey_f:
     openai.api_key = openaikey_f.read().strip()
 
 entities_df = kfio.load('data/raw_entities.json')

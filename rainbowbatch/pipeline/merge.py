@@ -1,9 +1,9 @@
 import json
-import kfio
+import rainbowbatch.kfio as kfio
 import pandas as pd
 from tqdm import tqdm
-from episode_processor import process_ep_record
-from episode_number_util import extract_episode_number, clean_episode_number
+from rainbowbatch.pipeline.episode_processor import process_ep_record
+from rainbowbatch.remap.episode_number_util import extract_episode_number, clean_episode_number
 
 
 def merge_records():
@@ -15,7 +15,8 @@ def merge_records():
     reddit_details_table['reddit_url'] = reddit_details_table.PostIds.apply(
         lambda post_id: "https://reddit.com/%s" % post_id
     )
-    reddit_details_table = reddit_details_table.drop_duplicates(subset=['episode_number'], keep='first')
+    reddit_details_table = reddit_details_table.drop_duplicates(
+        subset=['episode_number'], keep='first')
     twitch_details_table = kfio.load('data/twitch_details.json')
     twitch_details_table = twitch_details_table.dropna()
     twitch_details_table['episode_number'] = twitch_details_table['episode_number'].astype(
@@ -24,10 +25,12 @@ def merge_records():
     scraped_page_data_table = kfio.load('data/scraped_page_data.json')
 
     bright_spots_table = kfio.load('data/bright_spots.json')
-    bright_spots_table['episode_number'] = bright_spots_table['episode_number'].astype(str)
+    bright_spots_table['episode_number'] = bright_spots_table['episode_number'].astype(
+        str)
 
     ooc_drops_table = kfio.load('data/ooc_drops.json')
-    ooc_drops_table['episode_number'] = ooc_drops_table['episode_number'].astype(str)
+    ooc_drops_table['episode_number'] = ooc_drops_table['episode_number'].astype(
+        str)
 
     existing_transcripts = scraped_page_data_table['transcriptEpisodeNumber'].unique(
     )
@@ -121,7 +124,8 @@ def merge_records():
         on='episode_number'
     )
 
-    merged['ooc_drop'] = merged['ooc_drop_x'].combine_first(merged['ooc_drop_y'])
+    merged['ooc_drop'] = merged['ooc_drop_x'].combine_first(
+        merged['ooc_drop_y'])
     merged = merged.drop(columns=['ooc_drop_x', 'ooc_drop_y'])
 
     title_keys = title_table.episode_number.to_list()
@@ -158,10 +162,12 @@ def merge_records():
     print("Adding overlays.")
     for overlay_record in tqdm(overlay_table.to_dict(orient='records')):
         assert 'episode_number' in overlay_record
-        print("processed_records.episode_number", processed_records.episode_number)
+        print("processed_records.episode_number",
+              processed_records.episode_number)
         idxs = processed_records.index[processed_records.episode_number ==
                                        overlay_record['episode_number']].tolist()
-        assert len(idxs) == 1, "%d matches for %s" % (len(idxs), repr(overlay_record['episode_number']))
+        assert len(idxs) == 1, "%d matches for %s" % (
+            len(idxs), repr(overlay_record['episode_number']))
         idx = idxs[0]
 
         for field, value in overlay_record.items():

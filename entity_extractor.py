@@ -1,14 +1,14 @@
 import click
 import datetime
-import kfio
+import rainbowbatch.kfio as kfio
 import maya
 import pandas as pd
 import pathlib
 
 from box import Box
-from entity import aggregate_proto_entities
-from entity import extract_entities
-from entity import parse_entity_orgin
+from rainbowbatch.entity.entity import aggregate_proto_entities
+from rainbowbatch.entity.entity import extract_entities
+from rainbowbatch.entity.entity import parse_entity_orgin
 from entity_extraction_util import transcript_extractor
 from entity_extraction_util import wikipage_extractor
 from pprint import pprint

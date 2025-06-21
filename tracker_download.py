@@ -1,7 +1,7 @@
 from __future__ import print_function
 
 import os.path
-import kfio
+import rainbowbatch.kfio as kfio
 
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials

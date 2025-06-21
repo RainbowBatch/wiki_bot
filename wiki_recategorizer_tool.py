@@ -1,8 +1,8 @@
-import kfio
+import rainbowbatch.kfio as kfio
 from pick import pick
 from pprint import pprint, pformat
 from box import Box
-from wiki_cleaner import simple_format
+from rainbowbatch.remap.wiki_cleaner import simple_format
 from tqdm import tqdm
 
 page_data = kfio.load('data/scraped_page_data.json')

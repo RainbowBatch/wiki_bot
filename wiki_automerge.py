@@ -1,8 +1,9 @@
+import rainbowbatch.kfio as kfio
 import re
-from pprint import pprint
+
 from box import Box
-from wiki_cleaner import simple_format
-import kfio
+from pprint import pprint
+from rainbowbatch.remap.wiki_cleaner import simple_format
 
 merge_conflict_pattern = re.compile(
     r'^<{7} (?P<branch1>[/a-z0-9_-]+)(?P<content1>(?:\n(?!={7}\n).*)*)\n={7}(?P<content2>(?:\n(?!>{7} ).*)*)\n>{7} (?P<branch2>[/a-z0-9_-]+)',
@@ -36,7 +37,7 @@ def get_merge_conflicts(text):
     return conflicts
 
 
-#print(merge_conflict_pattern.search(SAMPLE))
+# print(merge_conflict_pattern.search(SAMPLE))
 
 
 def my_replace(match):
@@ -113,15 +114,17 @@ with open('kf_wiki_content/page_listing.json', encoding='utf-8') as f:
 
 print(page_text)
 
+
 def merge_transcript_block(match):
     print(match)
     match = Box(match.groupdict())
     print(match)
     return match.content2
 
+
 raw = re.sub(merge_conflict_pattern, merge_transcript_block, page_text)
 
 print(raw)
 
 with open('kf_wiki_content/page_listing.json', mode="w", encoding="utf-8") as f:
-            f.write(raw)
+    f.write(raw)

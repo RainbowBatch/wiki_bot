@@ -1,5 +1,5 @@
 import glob
-import kfio
+import rainbowbatch.kfio as kfio
 from box import Box
 import wikitextparser
 from pprint import pprint

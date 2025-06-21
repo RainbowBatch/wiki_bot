@@ -1,5 +1,5 @@
 import wikitextparser
-from entity import extract_entities
+from rainbowbatch.entity.entity import extract_entities
 import pypandoc
 
 

@@ -1,5 +1,5 @@
 from thefuzz import fuzz
-import kfio
+import rainbowbatch.kfio as kfio
 import numpy as np
 
 from box import Box

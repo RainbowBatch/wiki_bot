@@ -3,7 +3,6 @@ import wikitextparser
 
 from enum import Enum
 from io import StringIO
-from pprint import pprint
 
 
 class LineClassification(Enum):
@@ -61,8 +60,8 @@ GARBLED_CHARS = {
     # JarosÅ‚aw KarczyÅ„ski
     # Stanislaw KoÅ¼e
     # "â•¼" from Transcript 378.... is weird.
-    #"President [[Barack Obama|Obama]]": "[[Barack Obama|President Obama]]",
-    #"President [[Donald Trump|Trump]]": "[[Donald Trump|President Trump]]",
+    # "President [[Barack Obama|Obama]]": "[[Barack Obama|President Obama]]",
+    # "President [[Donald Trump|Trump]]": "[[Donald Trump|President Trump]]",
     # "the [[The Alex Jones Show|Alex Jones Show]]": "[[The Alex Jones Show|the Alex Jones Show]]",
 }
 

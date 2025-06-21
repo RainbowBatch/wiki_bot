@@ -1,4 +1,4 @@
-import kfio
+import rainbowbatch.kfio as kfio
 import requests
 from os.path import exists
 from tqdm import tqdm

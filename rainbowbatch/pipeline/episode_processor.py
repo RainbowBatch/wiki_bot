@@ -1,25 +1,24 @@
 import io
-import kfio
 import math
 import maya
 import numpy as np
 import pandas as pd
 import pypandoc
+import rainbowbatch.kfio as kfio
 import re
 import wikitextparser
 
 from box import Box
-from date_lookup import canonicalize_date
-from date_lookup import extract_date_from_string
-from date_lookup import format_date
-from date_lookup import format_daterange
-from pprint import pprint
-from string_processing import agressive_splits
-from string_processing import cleans
-from string_processing import cleantitle
-from string_processing import splits
-from wiki_cleaner import format_citation_block
-from wiki_cleaner import simple_format
+from rainbowbatch.remap.date_lookup import canonicalize_date
+from rainbowbatch.remap.date_lookup import extract_date_from_string
+from rainbowbatch.remap.date_lookup import format_date
+from rainbowbatch.remap.date_lookup import format_daterange
+from rainbowbatch.remap.string_processing import agressive_splits
+from rainbowbatch.remap.string_processing import cleans
+from rainbowbatch.remap.string_processing import cleantitle
+from rainbowbatch.remap.string_processing import splits
+from rainbowbatch.remap.wiki_cleaner import format_citation_block
+from rainbowbatch.remap.wiki_cleaner import simple_format
 
 
 def sortkey(clean_title, episode_number, prev_nonspecial_episode_number, count_since_nonspecial_episode_number, letter_code=None, max_digits=4):
@@ -40,7 +39,7 @@ def sortkey(clean_title, episode_number, prev_nonspecial_episode_number, count_s
 
     return '#_EPISODE_%s%s:%s' % (str(int(episode_number)).zfill(max_digits), letter_code, clean_title)
 
-
+# TODO: This belongs in rainbowbatch/remap
 def canonicalize_title(title):
     return title.replace(' ', '_').replace('#', '').replace('"', '{{QUOTE}}').replace("/", "{{FORWARD_SLASH}}").replace(":", "{{COLON}}").replace("?", "{{QUESTION_MARK}}")
 

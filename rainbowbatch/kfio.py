@@ -4,7 +4,7 @@ import pandas as pd
 import requests
 import time
 
-from string_processing import splits
+from rainbowbatch.remap.string_processing import splits
 from pathlib import Path
 
 # TODO: Make this more robust.

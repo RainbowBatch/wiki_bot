@@ -1,24 +1,22 @@
 import json
-
 import torch
+import torchaudio
 
 from box import Box
-from pyannote.audio import Pipeline
-from pyannote.audio.pipelines.speaker_verification import PretrainedSpeakerEmbedding
-
+from pathlib import Path
 from pyannote.audio import Inference
 from pyannote.audio import Model
+from pyannote.audio import Pipeline
+from pyannote.audio.pipelines.speaker_verification import PretrainedSpeakerEmbedding
 from pyannote.core import Segment
-import torchaudio
-from pathlib import Path
-
+from rainbowbatch.secrets import secret_file
 
 #embedding_model = Model.from_pretrained("pyannote/embedding",
 #                                        use_auth_token=access_token)
 #inference = Inference(embedding_model, window="whole")
 
 
-with open("secrets/huggingface.json") as secrets_f:
+with open(secret_file("huggingface.json")) as secrets_f:
     secrets = Box(json.load(secrets_f))
     access_token = secrets.access_token
 

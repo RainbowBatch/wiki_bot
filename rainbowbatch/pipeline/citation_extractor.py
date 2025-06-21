@@ -1,4 +1,4 @@
-import kfio
+import rainbowbatch.kfio as kfio
 import math
 import pandas as pd
 import pypandoc
@@ -7,9 +7,9 @@ import wikitextparser
 
 from bs4 import BeautifulSoup
 from bs4 import SoupStrainer
-from citation_episode_number_matcher import guess_associated_episode
-from date_lookup import extract_date_from_string
-from date_lookup import format_date
+from rainbowbatch.remap.citation_episode_number_matcher import guess_associated_episode
+from rainbowbatch.remap.date_lookup import extract_date_from_string
+from rainbowbatch.remap.date_lookup import format_date
 from pprint import pprint
 from tqdm import tqdm
 

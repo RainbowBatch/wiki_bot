@@ -1,4 +1,4 @@
-import kfio
+import rainbowbatch.kfio as kfio
 import natsort
 import numpy as np
 import pandas as pd

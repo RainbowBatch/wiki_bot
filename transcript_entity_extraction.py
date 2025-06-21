@@ -1,14 +1,14 @@
-import kfio
+import rainbowbatch.kfio as kfio
 import pandas as pd
 import parse
 import natsort
 
 from collections import Counter
 from collections import defaultdict
-from entity import LIKELY_PEOPLE
-from entity import NOT_RELEVANT_PEOPLE
-from entity import extract_entities
-from entity import simplify_entity
+from rainbowbatch.entity.entity import LIKELY_PEOPLE
+from rainbowbatch.entity.entity import NOT_RELEVANT_PEOPLE
+from rainbowbatch.entity.entity import extract_entities
+from rainbowbatch.entity.entity import simplify_entity
 from glob import glob
 from pprint import pprint
 from pathlib import Path

@@ -1,11 +1,11 @@
 import box
-import kfio
+import rainbowbatch.kfio as kfio
 import natsort
 import pandas as pd
 
 from box import Box
 from collections import defaultdict
-from date_lookup import mayafy_date
+from rainbowbatch.remap.date_lookup import mayafy_date
 
 scraped_data = kfio.load('data/scraped_page_data.json')
 

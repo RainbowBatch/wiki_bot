@@ -1,13 +1,11 @@
-import kfio
 import pandas as pd
+import rainbowbatch.kfio as kfio
 import re
 
-from date_lookup import extract_date_from_string
-from date_lookup import lookup_by_maya_date
-from pprint import pprint
+from rainbowbatch.remap.date_lookup import extract_date_from_string
+from rainbowbatch.remap.date_lookup import lookup_by_maya_date
 
 explicit_episode_regex = re.compile(r"Episode\s+#?(?P<episode_number>\d+):")
-
 
 MANUAL_OVERRIDE = {
     # These appear to be just wrong on the explicit ep number.

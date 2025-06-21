@@ -1,5 +1,5 @@
 import en_core_web_sm
-import kfio
+import rainbowbatch.kfio as kfio
 import pandas as pd
 import spacy
 
@@ -9,7 +9,7 @@ from collections import defaultdict
 from pprint import pprint
 from pygit2 import Repository
 from spacy import displacy
-from wiki_cleaner import simple_format
+from rainbowbatch.remap.wiki_cleaner import simple_format
 from tqdm import tqdm
 
 # TODO: Breaks "The Dreamy Creamy Summer" article?

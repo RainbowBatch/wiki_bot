@@ -1,23 +1,25 @@
 # Derived from https://github.com/thamsuppp/llm_summary_medium/blob/master/summarizing_llm.ipynb
 
-from datetime import datetime
-import pandas as pd
-import numpy as np
 import json
-import os
 import matplotlib.pyplot as plt
-from scipy.spatial.distance import cosine
 import networkx as nx
+import numpy as np
+import os
+import pandas as pd
+
+from datetime import datetime
+from langchain import OpenAI
+from langchain.chains.llm import LLMChain
+from langchain.chains.summarize import load_summarize_chain
+from langchain.docstore.document import Document
+from langchain.embeddings import OpenAIEmbeddings
+from langchain.prompts import PromptTemplate
 from networkx.algorithms import community
 from pprint import pprint
-from langchain import OpenAI
-from langchain.prompts import PromptTemplate
-from langchain.chains.llm import LLMChain
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.docstore.document import Document
-from langchain.chains.summarize import load_summarize_chain
+from rainbowbatch.secrets import secret_file
+from scipy.spatial.distance import cosine
 
-with open("../secrets/openaikey.txt") as openaikey_f:
+with open(secret_file("openaikey.txt")) as openaikey_f:
     os.environ["OPENAI_API_KEY"] = openaikey_f.read().strip()
 
 # Load the txt file

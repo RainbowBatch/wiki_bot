@@ -1,4 +1,4 @@
-import kfio
+import rainbowbatch.kfio as kfio
 import pandas as pd
 
 from bs4 import BeautifulSoup

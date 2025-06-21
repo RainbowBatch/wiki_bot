@@ -1,12 +1,11 @@
 import box
 import io
-import kfio
 import maya
-import page_listing
 import pandas as pd
 import parse
+import rainbowbatch.kfio as kfio
+import rainbowbatch.wiki.page_listing as page_listing
 
-from episode_processor import canonicalize_title
 from jinja2 import Environment
 from jinja2 import FileSystemLoader
 from jinja2 import Template
@@ -14,7 +13,8 @@ from jinja2 import select_autoescape
 from natsort import natsorted
 from pprint import pprint
 from pygit2 import Repository
-from wiki_cleaner import simple_format
+from rainbowbatch.pipeline.episode_processor import canonicalize_title
+from rainbowbatch.remap.wiki_cleaner import simple_format
 
 entities_df = kfio.load('data/raw_entities.json')
 episodes_df = kfio.load('data/final.json')

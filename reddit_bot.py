@@ -5,7 +5,7 @@ import praw
 import random
 import re
 import traceback
-import kfio
+import rainbowbatch.kfio as kfio
 
 from thefuzz import process as fuzzy_process
 from attr import attr
@@ -21,6 +21,7 @@ from sensitive.redactions import is_sensitive
 from transcripts import format_timestamp
 from typing import Optional
 from reddit_bot.nlp_command_parser import fuzzy_parse_bot_command
+from rainbowbatch.secrets import secret_file
 
 
 # Configure logging.
@@ -91,7 +92,7 @@ transcript_search_reply_template = env.get_template(
 
 episodes_df = kfio.load('data/final.json')
 
-with open("secrets/reddit.json") as secrets_f:
+with open(secret_file("reddit.json")) as secrets_f:
     secrets = Box(json.load(secrets_f))
 
     reddit = praw.Reddit(

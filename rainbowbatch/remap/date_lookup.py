@@ -1,5 +1,5 @@
 import box
-import kfio
+import rainbowbatch.kfio as kfio
 import math
 import maya
 import pandas as pd

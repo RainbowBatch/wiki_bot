@@ -1,13 +1,15 @@
-import os
 import openai
-import kfio
+import os
 import pandas as pd
-from wiki_cleaner import simple_format
 import pypandoc
+import rainbowbatch.kfio as kfio
 
-with open("secrets/openaiorg.txt") as openaiorg_f:
+from rainbowbatch.secrets import secret_file
+from wiki_cleaner import simple_format
+
+with open(secret_file("openaiorg.txt")) as openaiorg_f:
    openai.organization = openaiorg_f.read().strip()
-with open("secrets/openaikey.txt") as openaikey_f:
+with open(secret_file("openaikey.txt")) as openaikey_f:
    openai.api_key = openaikey_f.read().strip()
 
 
