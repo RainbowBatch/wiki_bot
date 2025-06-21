@@ -14,8 +14,6 @@ TOP_LEVEL_DIR = Path(
 ).parent.parent.absolute(
 )
 
-print(TOP_LEVEL_DIR)
-
 TRANSCRIPT_DIR = TOP_LEVEL_DIR / 'transcripts'
 AUDIO_FILES_DIR = TOP_LEVEL_DIR / 'audio_files'
 DATA_DIR = TOP_LEVEL_DIR / 'data'

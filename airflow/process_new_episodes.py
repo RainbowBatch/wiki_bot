@@ -1,24 +1,28 @@
 import logging
 
 from airflow import DAG
+from airflow.operators.empty import EmptyOperator
 from airflow.operators.python import PythonOperator
 from airflow.operators.python import ShortCircuitOperator
+from airflow.utils.trigger_rule import TriggerRule
 from datetime import datetime
 from rainbowbatch.pipeline.citation_extractor import download_citations
 from rainbowbatch.pipeline.citation_extractor import reprocess_citation_episodes
 
 from rainbowbatch.git import check_git_branch
 from rainbowbatch.pipeline.episode_details_downloader import download_episode_details
+from rainbowbatch.pipeline.external.spotify_downloader import download_spotify_details
+from rainbowbatch.pipeline.external.twitch_downloader import download_twitch_details
 from rainbowbatch.pipeline.merge import merge_records
 from rainbowbatch.pipeline.stamp.stamp_episode_listing import stamp_episode_listing
 from rainbowbatch.pipeline.stamp.stamp_template import stamp_templates
 from rainbowbatch.pipeline.title_download import download_titles
 
-# TODO: Add spotify and twitch to this DAG or create a new dag.
 
 def unprocessed_episodes_exist():
     # TODO: Check if there are episode ids that are not present in final.
     return True  # Or False to skip
+
 
 def merge_wrapper():
     merge_records()
@@ -28,6 +32,7 @@ def merge_wrapper():
     if reprocess_citation_episodes():
         logging.info("Doing second merge due to recalculated citations.")
         merge_records()  # In case any citations have new associations.
+
 
 with DAG(
     "process_new_episodes",
@@ -62,6 +67,22 @@ with DAG(
         python_callable=download_citations,
     )
 
+    download_spotify_details_task = PythonOperator(
+        task_id='download_spotify_details',
+        python_callable=download_spotify_details
+    )
+
+    download_twitch_details_task = PythonOperator(
+        task_id='download_twitch_details',
+        python_callable=download_twitch_details
+    )
+
+    # If these downloaders break, don't block the merge.
+    optional_downloaders_task = EmptyOperator(
+        task_id='optional_downloaders',
+        trigger_rule=TriggerRule.ALL_DONE
+    )
+
     merge_records_task = PythonOperator(
         task_id='merge_episode_records',
         python_callable=merge_wrapper,
@@ -79,11 +100,19 @@ with DAG(
 
     download_titles_task >> check_unprocessed_task
     check_unprocessed_task >> download_episode_details_task >> download_citations_task
+    check_unprocessed_task >> download_spotify_details_task
+    check_unprocessed_task >> download_twitch_details_task
+
+    [
+        download_spotify_details_task,
+        download_twitch_details_task,
+    ] >> optional_downloaders_task
 
     [
         download_titles_task,
         download_citations_task,
         download_episode_details_task,
+        optional_downloaders_task,
     ] >> merge_records_task
 
     merge_records_task >> on_branch_bot_raw >> stamp_templates_task >> stamp_listing_task

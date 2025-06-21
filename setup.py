@@ -19,7 +19,9 @@ setup(
         "pypandoc",
         "python-box",
         "requests",
+        "spotipy",
         "tqdm",
+        "twitch-python",
         "wikitextparser",
     ],
 )

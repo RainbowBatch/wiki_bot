@@ -1,26 +1,15 @@
-import json
 import natsort
 import pandas as pd
 import rainbowbatch.kfio as kfio
-import spotipy
 
-from box import Box
+from rainbowbatch.external.spotify import make_spotify_client
 from rainbowbatch.remap.episode_number_util import extract_episode_number
-from rainbowbatch.secrets import secret_file
 
 
 def download_spotify_details():
     PODCAST_ID = "spotify:show:6hK78c5u6Bscdz0HCDeFLn"
 
-    with open(secret_file("spotify.json")) as secrets_f:
-        secrets = Box(json.load(secrets_f))
-
-        client_credentials_manager = spotipy.oauth2.SpotifyClientCredentials(
-            client_id=secrets.client_id,
-            client_secret=secrets.client_secret,
-        )
-        spotify = spotipy.Spotify(
-            client_credentials_manager=client_credentials_manager)
+    spotify = make_spotify_client()
 
     BATCH_SIZE = 50
     offset = 0
@@ -41,6 +30,8 @@ def download_spotify_details():
             break
 
         for episode in episodes['items']:
+            if episode is None:
+                continue
             rows.append([
                 extract_episode_number(episode['name']),
                 episode['external_urls']['spotify'],

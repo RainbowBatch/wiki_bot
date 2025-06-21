@@ -1,11 +1,8 @@
-import json
 import natsort
 import pandas as pd
 import rainbowbatch.kfio as kfio
-import twitch
 
-from box import Box
-from pprint import pprint
+from rainbowbatch.external.twitch import make_twitch_client
 from rainbowbatch.remap.date_lookup import extract_date_from_string
 from rainbowbatch.remap.date_lookup import lookup_by_maya_date
 from rainbowbatch.remap.date_lookup import mayafy_date
@@ -27,13 +24,7 @@ def match_episode_number(twitch_title):
 def download_twitch_details():
     PODCAST_ID = "6hK78c5u6Bscdz0HCDeFLn"
 
-    with open("secrets/twitch.json") as secrets_f:
-        secrets = Box(json.load(secrets_f))
-
-        twitch_api = twitch.Helix(
-            client_id=secrets.client_id,
-            client_secret=secrets.client_secret,
-        )
+    twitch_api = make_twitch_client()
 
     header = [
         "episode_number",
