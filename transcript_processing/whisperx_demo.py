@@ -4,8 +4,8 @@ import whisperx
 from mutagen.mp3 import MP3
 
 from pprint import pprint
-from transcripts import create_best_transcript_listing
-from transcripts import parse_transcript
+from rainbowbatch.transcripts import create_best_transcript_listing
+from rainbowbatch.transcripts import parse_transcript
 
 device = "cuda"
 audio_file = "audio_files/1.mp3"
@@ -22,7 +22,7 @@ print(transcript_record)
 transcript = parse_transcript(transcript_record)
 transcript.augment_timestamps()
 if transcript.blocks[-1].end_timestamp == None:
-	transcript.blocks[-1].end_timestamp  = audio_length
+    transcript.blocks[-1].end_timestamp = audio_length
 
 # load alignment model and metadata
 model_a, metadata = whisperx.load_align_model(
@@ -94,7 +94,7 @@ result_aligned = whisperx.align(
             'text': block.text,
             'id': 'FOO',
         }
-        for block in transcript.blocks # To demonstrate [-10:-5]
+        for block in transcript.blocks  # To demonstrate [-10:-5]
     ],
     model_a,
     metadata,
@@ -103,5 +103,5 @@ result_aligned = whisperx.align(
 )
 
 pprint(result_aligned["segments"])  # after alignment
-#pprint(result_aligned["word_segments"])  # after alignment
-#pprint(result_aligned.keys())
+# pprint(result_aligned["word_segments"])  # after alignment
+# pprint(result_aligned.keys())

@@ -6,9 +6,9 @@ import parse
 from box import Box
 from natsort import natsorted
 from os.path import exists
+from rainbowbatch.transcripts import create_best_transcript_listing
+from rainbowbatch.transcripts import create_full_transcript_listing
 from tqdm import tqdm
-from transcripts import create_best_transcript_listing
-from transcripts import create_full_transcript_listing
 
 
 @click.command()

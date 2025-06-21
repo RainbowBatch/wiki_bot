@@ -2,12 +2,11 @@ import json
 import logging
 import os
 import praw
+import rainbowbatch.kfio as kfio
 import random
 import re
 import traceback
-import rainbowbatch.kfio as kfio
 
-from thefuzz import process as fuzzy_process
 from attr import attr
 from attr import attrs
 from box import Box
@@ -16,12 +15,13 @@ from jinja2 import Environment
 from jinja2 import FileSystemLoader
 from jinja2 import Template
 from jinja2 import select_autoescape
-from sensitive.transcript_search import search_transcripts
-from sensitive.redactions import is_sensitive
-from transcripts import format_timestamp
-from typing import Optional
-from reddit_bot.nlp_command_parser import fuzzy_parse_bot_command
 from rainbowbatch.secrets import secret_file
+from rainbowbatch.transcripts import format_timestamp
+from reddit_bot.nlp_command_parser import fuzzy_parse_bot_command
+from sensitive.redactions import is_sensitive
+from sensitive.transcript_search import search_transcripts
+from thefuzz import process as fuzzy_process
+from typing import Optional
 
 
 # Configure logging.
@@ -106,6 +106,7 @@ with open(secret_file("reddit.json")) as secrets_f:
 
 # Only interact with specific subreddits.
 subreddit = reddit.subreddit("KnowledgeFight+KnowledgeFightBots")
+
 
 def already_replied(comment):
     for reply in comment.replies:

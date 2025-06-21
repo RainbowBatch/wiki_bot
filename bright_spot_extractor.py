@@ -9,9 +9,9 @@ from box import Box
 from google import genai
 from google.genai import types
 from rainbowbatch.secrets import secret_file
+from rainbowbatch.transcripts import create_best_transcript_listing
+from rainbowbatch.transcripts import parse_transcript
 from tqdm import tqdm
-from transcripts import create_best_transcript_listing
-from transcripts import parse_transcript
 
 transcript_listing = create_best_transcript_listing()
 episode_listing = kfio.load('data/final.json')

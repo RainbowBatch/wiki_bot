@@ -1,7 +1,9 @@
-from transcripts import parse_alt_json_transcript, Transcript
-import uuid
 import json
+import uuid
+
 from box import Box
+from rainbowbatch.transcripts import Transcript
+from rainbowbatch.transcripts import parse_alt_json_transcript
 
 KF_TRANSCRIPT_NAMESPACE = uuid.UUID('c43bff5e-c3d0-4ee8-9925-d76901871ef7')
 
@@ -9,7 +11,7 @@ episode_number = 1028
 ipath = r"C:\Users\wours\Downloads\%s.whisper.json" % episode_number
 
 with open(ipath) as f:
-	transcript_blocks = parse_alt_json_transcript(f.read())
+    transcript_blocks = parse_alt_json_transcript(f.read())
 
 transcript = Transcript(blocks=transcript_blocks)
 

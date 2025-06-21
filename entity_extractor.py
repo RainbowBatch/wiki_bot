@@ -1,22 +1,22 @@
 import click
 import datetime
-import rainbowbatch.kfio as kfio
 import maya
 import pandas as pd
 import pathlib
+import rainbowbatch.kfio as kfio
 
 from box import Box
-from rainbowbatch.entity.entity import aggregate_proto_entities
-from rainbowbatch.entity.entity import extract_entities
-from rainbowbatch.entity.entity import parse_entity_orgin
 from entity_extraction_util import transcript_extractor
 from entity_extraction_util import wikipage_extractor
 from pprint import pprint
-from rainbowbatch.git import check_git_branch
 from pytimeparse.timeparse import timeparse as duration_seconds
+from rainbowbatch.entity.entity import aggregate_proto_entities
+from rainbowbatch.entity.entity import extract_entities
+from rainbowbatch.entity.entity import parse_entity_orgin
+from rainbowbatch.git import check_git_branch
+from rainbowbatch.transcripts import create_full_transcript_listing
+from rainbowbatch.transcripts import parse_transcript
 from tqdm import tqdm
-from transcripts import create_full_transcript_listing
-from transcripts import parse_transcript
 
 
 @click.command()

@@ -7,16 +7,23 @@ from attr import attr
 from attr import attrs
 from box import Box
 from natsort import natsorted
+from rainbowbatch.transcripts import create_full_transcript_listing
+from rainbowbatch.transcripts import format_timestamp
+from rainbowbatch.transcripts import parse_transcript
+from rainbowbatch.transcripts import type_sorter_index
+from sensitive.transcript_search import SearchResult
+from sensitive.transcript_search import search_transcripts
 from termcolor import colored
 from thefuzz import fuzz
 from tqdm import tqdm
-from transcripts import create_full_transcript_listing
-from transcripts import format_timestamp
-from transcripts import parse_transcript
-from transcripts import type_sorter_index
 from typing import List
 
-from sensitive.transcript_search import SearchResult, search_transcripts
+
+def default_if_none(v, default_v):
+    if v is not None:
+        return v
+    return default_v
+
 
 def display_search_results(results: List[SearchResult]):
     for result in results:
@@ -27,6 +34,7 @@ def display_search_results(results: List[SearchResult]):
             default_if_none(result.speaker_name, "Unknown"),
             result.snippet,
         ))
+
 
 @click.command()
 @click.argument('searchterm')

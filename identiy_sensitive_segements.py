@@ -1,12 +1,12 @@
-import rainbowbatch.kfio as kfio
 import pandas as pd
+import rainbowbatch.kfio as kfio
 
 from natsort import natsorted
 from pprint import pprint
+from rainbowbatch.transcripts import create_full_transcript_listing
+from rainbowbatch.transcripts import parse_transcript
 from search_transcripts import search_transcript
 from tqdm import tqdm
-from transcripts import create_full_transcript_listing
-from transcripts import parse_transcript
 
 # TODO: Move this script into sensitive. It's too exploitable otherwise.
 

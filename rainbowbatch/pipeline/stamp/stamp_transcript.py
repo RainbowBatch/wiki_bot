@@ -13,10 +13,10 @@ from jinja2 import select_autoescape
 from os.path import exists
 from rainbowbatch.git import check_git_branch
 from rainbowbatch.remap.wiki_cleaner import simple_format
+from rainbowbatch.transcripts import create_best_transcript_listing
+from rainbowbatch.transcripts import format_timestamp
+from rainbowbatch.transcripts import parse_transcript
 from tqdm import tqdm
-from transcripts import create_best_transcript_listing
-from transcripts import format_timestamp
-from transcripts import parse_transcript
 
 
 @click.command()
@@ -26,6 +26,7 @@ def stamp_transcripts_cli(overwrite):
 
 # TODO(woursler): Add ep number range flags.
 
+
 env = Environment(
     loader=FileSystemLoader(kfio.TOP_LEVEL_DIR/"templates"),
     autoescape=select_autoescape()
@@ -34,8 +35,10 @@ env = Environment(
 env.filters["format_speaker"] = lambda speaker: "Unknown Speaker" if speaker is None else speaker
 env.filters["format_timestamp"] = format_timestamp
 
+
 def stamp_transcripts(overwrite):
-    assert check_git_branch('bot_raw'), "Please checkout bot_raw! Currently on %s." % git_branch
+    assert check_git_branch(
+        'bot_raw'), "Please checkout bot_raw! Currently on %s." % git_branch
 
     template = env.get_template('transcript.wiki.template')
 
@@ -76,7 +79,7 @@ def stamp_transcripts(overwrite):
             f.write(pretty)
 
         print("page_listing.add",
-            episode_details['transcript_safe_title'], episode_details['transcript_slug'])
+              episode_details['transcript_safe_title'], episode_details['transcript_slug'])
         page_listing.add(
             title=episode_details['transcript_safe_title'], slug=episode_details['transcript_slug'])
 

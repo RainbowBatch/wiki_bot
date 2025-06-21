@@ -3,12 +3,12 @@ import json
 import pandas as pd
 import parse
 
-from kfio import TRANSCRIPT_DIR
 from attr import attr
 from attr import attrs
 from box import Box
 from glob import glob
 from pathlib import Path
+from rainbowbatch.kfio import TRANSCRIPT_DIR
 from tqdm import tqdm
 
 

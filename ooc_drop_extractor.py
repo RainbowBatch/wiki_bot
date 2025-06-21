@@ -9,9 +9,9 @@ from box import Box
 from google import genai
 from google.genai import types
 from rainbowbatch.secrets import secret_file
+from rainbowbatch.transcripts import create_best_transcript_listing
+from rainbowbatch.transcripts import parse_transcript
 from tqdm import tqdm
-from transcripts import create_best_transcript_listing
-from transcripts import parse_transcript
 
 transcript_listing = create_best_transcript_listing()
 episode_listing = kfio.load('data/final.json')
@@ -134,7 +134,8 @@ with open("data/ai_ooc_drops.jsonl") as extracted_ooc_drops_f:
     for l in extracted_ooc_drops_f:
         data = Box(json.loads(l))
 
-        existing_ooc_drop = scraped_data[scraped_data.episodeNumber == data.episode_number].oocDrop.isna().any()
+        existing_ooc_drop = scraped_data[scraped_data.episodeNumber ==
+                                         data.episode_number].oocDrop.isna().any()
 
         # TODO: Why is this reversed compared to what I expect?
         if existing_ooc_drop:

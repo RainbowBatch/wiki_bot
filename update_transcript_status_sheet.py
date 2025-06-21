@@ -1,13 +1,14 @@
-import rainbowbatch.kfio as kfio
 import json
 import natsort
+import pandas as pd
+import rainbowbatch.kfio as kfio
 import uuid
+
 from box import Box
 from pprint import pprint
-from transcripts import create_best_transcript_listing
-from transcripts import parse_transcript
+from rainbowbatch.transcripts import create_best_transcript_listing
+from rainbowbatch.transcripts import parse_transcript
 from tqdm import tqdm
-import pandas as pd
 
 transcript_listing = create_best_transcript_listing()
 episode_listing = kfio.load('data/final.json')
