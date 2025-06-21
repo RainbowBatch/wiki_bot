@@ -8,7 +8,6 @@ import rainbowbatch.kfio as kfio
 
 from box import Box
 from pprint import pprint
-from pygit2 import Repository
 from pytimeparse.timeparse import timeparse as duration_seconds
 from rainbowbatch.entity.entity import aggregate_proto_entities
 from rainbowbatch.entity.entity import extract_entities

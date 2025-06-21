@@ -7,17 +7,17 @@ from jinja2 import Environment
 from jinja2 import FileSystemLoader
 from jinja2 import Template
 from jinja2 import select_autoescape
-from pygit2 import Repository
+from rainbowbatch.git import check_git_branch
 from rainbowbatch.remap.wiki_cleaner import simple_format
 
 env = Environment(
-    loader=FileSystemLoader("templates"),
+    loader=FileSystemLoader(kfio.TOP_LEVEL_DIR/"templates"),
     autoescape=select_autoescape()
 )
 
 template = env.get_template('episode_listing.wiki.template')
 
-
+# TODO: These should be moved into remap
 def extract_year(dts):
     if dts is None:
         return None
@@ -33,11 +33,8 @@ def date_midpoint(dt1, dt2):
 
 
 def stamp_episode_listing():
+    assert check_git_branch('bot_raw'), "Please checkout bot_raw! Currently on %s." % git_branch
     episodes_df = kfio.load('data/final.json')
-
-    git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
-
-    assert git_branch == 'bot_raw', "Please checkout bot_raw! Currently on %s." % git_branch
 
     episodes_df['release_year'] = episodes_df.release_date.apply(extract_year)
 

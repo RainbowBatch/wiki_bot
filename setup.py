@@ -15,6 +15,7 @@ setup(
         "natsort",
         "pandas",
         "praw",
+        "pygit2",
         "pypandoc",
         "python-box",
         "requests",

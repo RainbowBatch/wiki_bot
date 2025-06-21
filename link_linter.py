@@ -1,11 +1,11 @@
 import click
 import diff_match_patch as dmp_module
-import rainbowbatch.kfio as kfio
 import mwparserfromhell
 import mwparserfromhell.nodes as wiki_node
 import openai
 import os
 import pandas as pd
+import rainbowbatch.kfio as kfio
 import re
 import time
 
@@ -15,13 +15,13 @@ from attr import attr
 from attr import attrs
 from box import Box
 from collections import Counter
-from rainbowbatch.entity.entity import simplify_entity
 from entity_extraction_util import wikipage_extractor
 from parsimonious.nodes import VisitationError
 from pprint import pprint
-from pygit2 import Repository
-from tqdm import tqdm
+from rainbowbatch.entity.entity import simplify_entity
+from rainbowbatch.git import check_git_branch
 from rainbowbatch.remap.wiki_cleaner import simple_format
+from tqdm import tqdm
 
 WIKILINK_PATTERN = re.compile(
     r"\[\[(?P<link>[^|\]]+)(?:\|(?P<text>[^]]+))?\]\]")
@@ -39,11 +39,9 @@ def lookup_entity(e_key):
     entity_entry = Box(entity_entry.to_dict(orient='records')[0])
     return entity_entry
 
+assert check_git_branch(git_branch), "Please checkout pre-upload! Currently on %s." % git_branch
 
-git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
-
-# TODO(woursler): assert git_branch == 'pre-upload', "Please checkout pre-upload! Currently on %s." % git_branch
-
+# TODO: Move this into some sort of combined entity files.
 ALLOWABLE = {
     '"Mandatory Service Bill"': {"Mandatory Service Bill"},
     "2011 Norway attacks": {"Anders Breivik"},

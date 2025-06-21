@@ -7,11 +7,14 @@ from datetime import datetime
 from rainbowbatch.pipeline.citation_extractor import download_citations
 from rainbowbatch.pipeline.citation_extractor import reprocess_citation_episodes
 
+from rainbowbatch.git import check_git_branch
 from rainbowbatch.pipeline.episode_details_downloader import download_episode_details
 from rainbowbatch.pipeline.merge import merge_records
-#from rainbowbatch.pipeline.stamp_episode_listing import stamp_episode_listing
-#from rainbowbatch.pipeline.stamp_template import stamp_templates
+from rainbowbatch.pipeline.stamp.stamp_episode_listing import stamp_episode_listing
+from rainbowbatch.pipeline.stamp.stamp_template import stamp_templates
 from rainbowbatch.pipeline.title_download import download_titles
+
+# TODO: Add spotify and twitch to this DAG or create a new dag.
 
 def unprocessed_episodes_exist():
     # TODO: Check if there are episode ids that are not present in final.
@@ -32,9 +35,15 @@ with DAG(
     schedule_interval="@hourly",
     catchup=False,
 ) as dag:
-    unprocessed_episodes_exist = ShortCircuitOperator(
+    check_unprocessed_task = ShortCircuitOperator(
         task_id="unprocessed_episodes_exist",
         python_callable=unprocessed_episodes_exist,
+        dag=dag,
+    )
+
+    on_branch_bot_raw = ShortCircuitOperator(
+        task_id="on_branch_bot_raw",
+        python_callable=lambda: check_git_branch("bot_raw"),
         dag=dag,
     )
 
@@ -58,23 +67,23 @@ with DAG(
         python_callable=merge_wrapper,
     )
 
-    #stamp_templates_task = PythonOperator(
-    #    task_id='stamp_templates',
-    #    python_callable=stamp_templates,
-    #)
+    stamp_templates_task = PythonOperator(
+        task_id='stamp_templates',
+        python_callable=stamp_templates,
+    )
 
-    #stamp_listing_task = PythonOperator(
-    #    task_id='stamp_episode_listing',
-    #    python_callable=stamp_episode_listing,
-    #)
+    stamp_listing_task = PythonOperator(
+        task_id='stamp_episode_listing',
+        python_callable=stamp_episode_listing,
+    )
 
-    download_titles_task >> unprocessed_episodes_exist
-    unprocessed_episodes_exist >> download_episode_details_task >> download_citations_task
+    download_titles_task >> check_unprocessed_task
+    check_unprocessed_task >> download_episode_details_task >> download_citations_task
 
     [
-        download_citations_task,
+        download_titles_task,
         download_citations_task,
         download_episode_details_task,
     ] >> merge_records_task
 
-    # merge_records_task >> stamp_templates_task >> stamp_listing_task
+    merge_records_task >> on_branch_bot_raw >> stamp_templates_task >> stamp_listing_task

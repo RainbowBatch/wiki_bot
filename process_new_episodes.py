@@ -7,8 +7,8 @@ from rainbowbatch.pipeline.title_download import download_titles
 # TODO: Move below this line into pipelines.
 from spotify_downloader import download_spotify_details
 from twitch_downloader import download_twitch_details
-from stamp_episode_listing import stamp_episode_listing
-from stamp_template import stamp_templates
+from rainbowbatch.pipeline.stamp.stamp_episode_listing import stamp_episode_listing
+from rainbowbatch.pipeline.stamp.stamp_template import stamp_templates
 
 if __name__ == '__main__':
     download_titles()

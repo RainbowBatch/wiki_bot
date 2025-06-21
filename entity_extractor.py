@@ -12,7 +12,7 @@ from rainbowbatch.entity.entity import parse_entity_orgin
 from entity_extraction_util import transcript_extractor
 from entity_extraction_util import wikipage_extractor
 from pprint import pprint
-from pygit2 import Repository
+from rainbowbatch.git import check_git_branch
 from pytimeparse.timeparse import timeparse as duration_seconds
 from tqdm import tqdm
 from transcripts import create_full_transcript_listing
@@ -49,9 +49,7 @@ def extract_proto_entities(margin, overwrite):
 
     new_proto_entities = dict()
 
-    git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
-
-    if git_branch == 'latest_edits':
+    if check_git_branch('latest_edits'):
 
         page_listing = kfio.load('kf_wiki_content/page_listing.json')
 

@@ -8,12 +8,12 @@ from jinja2 import Environment
 from jinja2 import FileSystemLoader
 from jinja2 import Template
 from jinja2 import select_autoescape
-from pygit2 import Repository
+from rainbowbatch.git import check_git_branch
 from rainbowbatch.remap.wiki_cleaner import simple_format
 from tqdm import tqdm
 
 env = Environment(
-    loader=FileSystemLoader("templates"),
+    loader=FileSystemLoader(kfio.TOP_LEVEL_DIR/"templates"),
     autoescape=select_autoescape()
 )
 
@@ -25,9 +25,7 @@ def stamp_templates():
 
     episodes_df = episodes_df.replace({np.nan: None})
 
-    git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
-
-    assert git_branch == 'bot_raw', "Please checkout bot_raw! Currently on %s." % git_branch
+    assert check_git_branch('bot_raw'), "Please checkout bot_raw! Currently on %s." % git_branch
 
     PAGE_RECORDS = []
     print("Stamping episodes.")

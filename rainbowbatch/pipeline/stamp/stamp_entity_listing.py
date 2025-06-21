@@ -11,8 +11,7 @@ from jinja2 import FileSystemLoader
 from jinja2 import Template
 from jinja2 import select_autoescape
 from natsort import natsorted
-from pprint import pprint
-from pygit2 import Repository
+from rainbowbatch.git import check_git_branch
 from rainbowbatch.pipeline.episode_processor import canonicalize_title
 from rainbowbatch.remap.wiki_cleaner import simple_format
 
@@ -20,9 +19,8 @@ entities_df = kfio.load('data/raw_entities.json')
 episodes_df = kfio.load('data/final.json')
 wiki_df = kfio.load('data/scraped_page_data.json')
 
-
 env = Environment(
-    loader=FileSystemLoader("templates"),
+    loader=FileSystemLoader(kfio.TOP_LEVEL_DIR/"templates"),
     autoescape=select_autoescape()
 )
 
@@ -37,9 +35,7 @@ template = env.get_template('entity_listing.wiki.template')
 
 
 def stamp_entity_listing():
-    git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
-
-    assert git_branch == 'bot_raw', "Please checkout bot_raw! Currently on %s." % git_branch
+    assert check_git_branch('bot_raw'), "Please checkout bot_raw! Currently on %s." % git_branch
 
     # We can't render all the entities because the resulting page is too large.
     # Instead we split them into groups based on their first letter.

@@ -1,21 +1,19 @@
 import en_core_web_sm
-import rainbowbatch.kfio as kfio
 import pandas as pd
+import rainbowbatch.kfio as kfio
 import spacy
 
 from box import Box
 from collections import Counter
 from collections import defaultdict
 from pprint import pprint
-from pygit2 import Repository
-from spacy import displacy
+from rainbowbatch.git import check_git_branch
 from rainbowbatch.remap.wiki_cleaner import simple_format
+from spacy import displacy
 
 # TODO: Breaks "The Dreamy Creamy Summer" article?
 
-git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
-
-assert git_branch == 'pre-upload', "Please checkout pre-upload! Currently on %s." % git_branch
+assert check_git_branch('pre-upload'), "Please checkout pre-upload! Currently on %s." % git_branch
 
 nlp = en_core_web_sm.load()
 

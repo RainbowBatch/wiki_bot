@@ -5,13 +5,8 @@ from glob import glob
 from os.path import exists
 from pathlib import Path
 
-TOP_LEVEL_DIR = Path(
-    __file__
-).parent.absolute(
-)
-
-TRANSCRIPT_DIR = TOP_LEVEL_DIR / 'transcripts'
-AUDIO_FILES_DIR = TOP_LEVEL_DIR / 'audio_files'
+TRANSCRIPT_DIR = kfio.TOP_LEVEL_DIR / 'transcripts'
+AUDIO_FILES_DIR = kfio.TOP_LEVEL_DIR / 'audio_files'
 
 for audio_fname in glob(str(AUDIO_FILES_DIR / '*.mp3')):
     episode_number = parse.parse(

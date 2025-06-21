@@ -1,15 +1,7 @@
 from pathlib import Path
+import rainbowbatch.kfio as kfio
 
-# TODO: Switch to a more robust secret management system.
-
-# TODO: Make this more robust.
-# TODO: Support for tmp directories, other airflow helpers.
-TOP_LEVEL_DIR = Path(
-    __file__
-).parent.parent.absolute(
-)
-
-SECRET_DIR = TOP_LEVEL_DIR / 'secrets'
+SECRET_DIR = kfio.TOP_LEVEL_DIR / 'secrets'
 
 def secret_file(fname):
     return SECRET_DIR / fname

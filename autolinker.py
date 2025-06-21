@@ -17,7 +17,7 @@ from box import Box
 from rainbowbatch.entity.entity import simplify_entity
 from entity_extraction_util import wikipage_extractor
 from parsimonious.nodes import VisitationError
-from pygit2 import Repository
+from rainbowbatch.git import check_git_branch
 from rainbowbatch.secrets import secret_file
 from retrying import retry
 from tqdm import tqdm
@@ -224,10 +224,7 @@ def autolink_file(fname, present_entities=None):
 @click.option('--min-ep-num', default=0, help='Lowest numbered episode to include.')
 @click.option('--max-ep-num', default=10**4, help='Highest numbered episode to include.')
 def autolink_episodes(min_ep_num, max_ep_num):
-
-    git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
-
-    assert git_branch == 'pre-upload', "Please checkout pre-upload! Currently on %s." % git_branch
+    assert check_git_branch('pre-upload'), "Please checkout pre-upload! Currently on %s." % git_branch
 
     for EPISODE_NUMBER in episodes_df.episode_number:
 
@@ -250,10 +247,7 @@ def autolink_episodes(min_ep_num, max_ep_num):
 
 @click.command()
 def autolink_pages():
-
-    git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
-
-    assert git_branch == 'pre-upload', "Please checkout pre-upload! Currently on %s." % git_branch
+    assert check_git_branch('pre-upload'), "Please checkout pre-upload! Currently on %s." % git_branch
 
     page_listing = kfio.load('kf_wiki_content/page_listing.json')
 
@@ -276,10 +270,7 @@ def autolink_pages():
 
 @click.command()
 def autolink_transcripts():
-
-    git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
-
-    assert git_branch == 'pre-upload', "Please checkout pre-upload! Currently on %s." % git_branch
+    assert check_git_branch('pre-upload'), "Please checkout pre-upload! Currently on %s." % git_branch
 
     page_listing = kfio.load('kf_wiki_content/page_listing.json')
 

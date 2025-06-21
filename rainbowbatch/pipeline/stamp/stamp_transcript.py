@@ -11,8 +11,7 @@ from jinja2 import FileSystemLoader
 from jinja2 import Template
 from jinja2 import select_autoescape
 from os.path import exists
-from pprint import pprint
-from pygit2 import Repository
+from rainbowbatch.git import check_git_branch
 from rainbowbatch.remap.wiki_cleaner import simple_format
 from tqdm import tqdm
 from transcripts import create_best_transcript_listing
@@ -30,7 +29,7 @@ def stamp_transcripts_cli(overwrite):
 
 def stamp_transcripts(overwrite):
     env = Environment(
-        loader=FileSystemLoader("templates"),
+        loader=FileSystemLoader(kfio.TOP_LEVEL_DIR/"templates"),
         autoescape=select_autoescape()
     )
 
@@ -41,9 +40,7 @@ def stamp_transcripts(overwrite):
 
     episodes_df = kfio.load('data/final.json')
 
-    git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
-
-    assert git_branch == 'bot_raw', "Please checkout bot_raw! Currently on %s." % git_branch
+    assert check_git_branch('bot_raw'), "Please checkout bot_raw! Currently on %s." % git_branch
 
     transcript_listing = create_best_transcript_listing()
     transcript_listing = transcript_listing[transcript_listing.transcript_type != 'autosub']

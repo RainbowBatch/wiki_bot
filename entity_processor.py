@@ -11,7 +11,7 @@ from rainbowbatch.entity.entity import create_entity_origin_list_mw
 from rainbowbatch.entity.entity import restore_capitalization
 from rainbowbatch.entity.entity import simplify_entity
 from natsort import natsorted
-from pygit2 import Repository
+from rainbowbatch.git import check_git_branch
 from tqdm import tqdm
 
 
@@ -108,10 +108,7 @@ entities_df = pd.DataFrame.from_records(entities_records)
 
 print("Augmenting final dataframe.")
 
-
-git_branch = Repository('kf_wiki_content/').head.shorthand.strip()
-
-assert git_branch == 'latest_edits', "Please checkout latest_edits! Currently on %s." % git_branch
+assert check_git_branch('latest_edits'), "Please checkout latest_edits! Currently on %s." % git_branch
 
 page_listing = kfio.load('kf_wiki_content/page_listing.json')
 known_missing_pages = kfio.load('data/missing_pages.json')
