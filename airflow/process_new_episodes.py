@@ -10,6 +10,7 @@ from rainbowbatch.pipeline.citation_extractor import download_citations
 from rainbowbatch.pipeline.citation_extractor import reprocess_citation_episodes
 
 from rainbowbatch.git import check_git_branch
+from rainbowbatch.pipeline.download_audio_files import download_audio_files
 from rainbowbatch.pipeline.episode_details_downloader import download_episode_details
 from rainbowbatch.pipeline.external.spotify_downloader import download_spotify_details
 from rainbowbatch.pipeline.external.twitch_downloader import download_twitch_details
@@ -17,7 +18,6 @@ from rainbowbatch.pipeline.merge import merge_records
 from rainbowbatch.pipeline.stamp.stamp_episode_listing import stamp_episode_listing
 from rainbowbatch.pipeline.stamp.stamp_template import stamp_templates
 from rainbowbatch.pipeline.title_download import download_titles
-
 
 def unprocessed_episodes_exist():
     # TODO: Check if there are episode ids that are not present in final.
@@ -88,6 +88,11 @@ with DAG(
         python_callable=merge_wrapper,
     )
 
+    download_audio_files_task = PythonOperator(
+        task_id='download_audio_files',
+        python_callable=download_audio_files
+    )
+
     stamp_templates_task = PythonOperator(
         task_id='stamp_templates',
         python_callable=stamp_templates,
@@ -115,4 +120,5 @@ with DAG(
         optional_downloaders_task,
     ] >> merge_records_task
 
+    merge_records_task >> download_audio_files_task
     merge_records_task >> on_branch_bot_raw >> stamp_templates_task >> stamp_listing_task
