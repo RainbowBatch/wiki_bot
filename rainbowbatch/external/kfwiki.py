@@ -1,39 +1,22 @@
-import os
+import json
+import mwclient
 
-from pathlib import Path
-
-# NOTE: In order for this to work, we need to place the files from secret/pywikibot
-# somewhere in the unix file system. This workaround assumed they've copied into
-# ~/pywikibot. rebuild.sh contains a script to do this automatically.
-pywikibot_dir = Path.home() / 'pywikibot'
-os.environ['PYWIKIBOT_DIR'] = str(pywikibot_dir)
-
-import pywikibot
-
-from pywikibot import config
-from pywikibot import site
+from box import Box
+from rainbowbatch.secrets import secret_file
 
 
 def make_kfwiki_client():
-    site = pywikibot.Site()
+    site = mwclient.Site('knowledgefight.wiki', path='/')
 
-    site.login()
-    if not site.user():
-        raise Exception("Login failed — check your credentials.")
+    with open(secret_file("kfwiki.json")) as secrets_f:
+        secrets = Box(json.load(secrets_f))
+
+    full_username = f"{secrets.username_user}@{secrets.username_bot}"
+    site.login(full_username, secrets.bot_password)
     return site
 
 
-def hard_reset_site(site):
-    # Clear cached site objects so we get a fresh login context
-    site._apisite._sites.clear()
-
-    # Force the correct username if not already set
-    config.usernames['knowledgefight']['en'] = 'RainbowBatch'
-
-    new_site = pywikibot.Site('en', 'knowledgefight')
-    new_site.login()
-    return new_site
-
 if __name__ == '__main__':
     site = make_kfwiki_client()
-    print(f"Logged in as: {site.user()}")
+    username = site.get('query', meta='userinfo')['query']['userinfo']['name']
+    print(f"Logged in as: {username}")
