@@ -3,13 +3,10 @@ __pycache__/
 .cache
 audio_files/
 data/
-google_credentials.json
 kf_wiki_content/
 kf_wiki_files/
-pywikibot/
 secrets/
 sensitive/
-token.json
 transcripts/
 praw.ini
 reddit_bot.log
