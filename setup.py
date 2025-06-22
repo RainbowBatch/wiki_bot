@@ -18,6 +18,7 @@ setup(
         "pygit2",
         "pypandoc",
         "python-box",
+        "pywikibot",
         "requests",
         "spotipy",
         "tqdm",
