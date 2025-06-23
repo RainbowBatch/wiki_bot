@@ -1,4 +1,3 @@
-import autosub
 import click
 import pandas as pd
 import parse
@@ -14,7 +13,7 @@ from tqdm import tqdm
 @click.command()
 @click.option('--n_threads', default=1, help='Number of simultaneous whisper processes your GPU can run.')
 @click.option('--min-ep-num', default=0, help='Lowest numbered episode to include.')
-@click.option('--max-ep-num', default=10**3, help='Highest numbered episode to include.')
+@click.option('--max-ep-num', default=2*10**3, help='Highest numbered episode to include.')
 def generate_whisper_commands(min_ep_num, max_ep_num, n_threads):
 
     transcript_listing = create_full_transcript_listing()

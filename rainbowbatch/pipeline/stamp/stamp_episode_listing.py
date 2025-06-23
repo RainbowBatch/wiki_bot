@@ -3,6 +3,7 @@ import maya
 import pandas as pd
 import rainbowbatch.kfio as kfio
 
+from collections import OrderedDict
 from jinja2 import Environment
 from jinja2 import FileSystemLoader
 from jinja2 import Template
@@ -52,31 +53,49 @@ def stamp_episode_listing():
     episodes_df['coverage_year'] = episodes_df.coverage_start_date.apply(
         extract_year)
 
-    categories = list(sorted(set([
+    categories = sorted({
         category
-        for categories in episodes_df.categories.to_list()
-        for category in categories
-        if category not in ['Present Day']
-    ])))
+        for row in episodes_df.categories.dropna()
+        if isinstance(row, list)
+        for category in row
+        if category != 'Present Day'
+    })
 
     release_years = list(sorted(set(episodes_df.release_year.to_list())))
-    coverage_years = list(sorted(set(episodes_df.coverage_year.to_list())))
+    coverage_years = sorted(
+        {int(y) for y in episodes_df.coverage_year.dropna()}
+    )
 
-    release_year_shards = {
-        release_year: episodes_df[episodes_df.release_year == release_year].sort_values(['maya_release_date', 'episode_number']).to_dict(orient='records')
+    release_year_shards = OrderedDict(
+        (
+            release_year,
+            episodes_df[episodes_df.release_year == release_year]
+            .sort_values(['maya_release_date', 'episode_number'])
+            .to_dict(orient='records')
+        )
         for release_year in release_years
-    }
+    )
 
-    coverage_year_shards = {
-        int(coverage_year): episodes_df[episodes_df.coverage_year == coverage_year].sort_values(['maya_coverage_mid_date', 'maya_release_date', 'episode_number']).to_dict(orient='records')
+    coverage_year_shards = OrderedDict(
+        (
+            int(coverage_year),
+            episodes_df[episodes_df.coverage_year == coverage_year]
+            .sort_values(['maya_coverage_mid_date', 'maya_release_date', 'episode_number'])
+            .to_dict(orient='records')
+        )
         for coverage_year in coverage_years
         if not pd.isna(coverage_year)
-    }
+    )
 
-    category_shards = {
-        category: episodes_df[episodes_df.categories.map(set([category]).issubset)].sort_values(['maya_release_date', 'episode_number']).to_dict(orient='records')
+    category_shards = OrderedDict(
+        (
+            category,
+            episodes_df[episodes_df.categories.map(set([category]).issubset)]
+            .sort_values(['maya_release_date', 'episode_number'])
+            .to_dict(orient='records')
+        )
         for category in categories
-    }
+    )
 
     raw = template.render(
         release_year_shards=release_year_shards,

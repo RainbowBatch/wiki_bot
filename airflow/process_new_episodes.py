@@ -1,4 +1,5 @@
 import logging
+import rainbowbatch.kfio as kfio
 
 from airflow import DAG
 from airflow.operators.empty import EmptyOperator
@@ -9,6 +10,7 @@ from datetime import datetime
 from rainbowbatch.pipeline.citation_extractor import download_citations
 from rainbowbatch.pipeline.citation_extractor import reprocess_citation_episodes
 
+from rainbowbatch.remap.episode_number_util import extract_episode_number
 from rainbowbatch.git import check_git_branch
 from rainbowbatch.pipeline.download_audio_files import download_audio_files
 from rainbowbatch.pipeline.episode_details_downloader import download_episode_details
@@ -20,8 +22,18 @@ from rainbowbatch.pipeline.stamp.stamp_template import stamp_templates
 from rainbowbatch.pipeline.title_download import download_titles
 
 def unprocessed_episodes_exist():
-    # TODO: Check if there are episode ids that are not present in final.
-    return True  # Or False to skip
+    title_table = kfio.load('data/titles.json')
+    final_table = kfio.load('data/final.json')
+
+    title_eps = set(title_table['title'].apply(extract_episode_number))
+    final_eps = set(final_table['episode_number'])
+
+    missing_eps = title_eps - final_eps
+
+    if missing_eps:
+        print(f"Unprocessed episodes: {sorted(missing_eps)}")
+        return True
+    return False
 
 
 def merge_wrapper():
@@ -105,14 +117,16 @@ with DAG(
 
     download_titles_task >> check_unprocessed_task
     check_unprocessed_task >> download_episode_details_task >> download_citations_task
+
+    # External third party services which are flaky.
     check_unprocessed_task >> download_spotify_details_task
     check_unprocessed_task >> download_twitch_details_task
-
     [
         download_spotify_details_task,
         download_twitch_details_task,
     ] >> optional_downloaders_task
 
+    # Merge everything into final.json
     [
         download_titles_task,
         download_citations_task,

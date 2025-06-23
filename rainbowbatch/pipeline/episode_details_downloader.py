@@ -52,10 +52,8 @@ def download_episode_details():
         ])
         print(details_url, episode_length)
 
-    df = existing_details_table.append(
-        pd.DataFrame(rows, columns=header),
-        ignore_index=True,
-    )
+    df = pd.concat([existing_details_table, pd.DataFrame(
+        rows, columns=header)], ignore_index=True)
 
     kfio.save(df, 'data/libsyn_details.json')
 
