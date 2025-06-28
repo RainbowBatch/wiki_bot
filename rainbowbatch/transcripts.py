@@ -194,7 +194,7 @@ def parse_vtt(transcript_text):
         if block.strip() == '':
             continue
 
-        tss, text = block.split('\n')
+        tss, text = block.strip().split('\n')
         start_timestamp, end_timestamp = tss.split(' --> ')
         transcript_blocks.append(TranscriptBlock(
             start_timestamp=parse_timestamp(start_timestamp),

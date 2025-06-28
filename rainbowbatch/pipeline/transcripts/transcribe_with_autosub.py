@@ -51,4 +51,4 @@ def transcribe_with_autosub(max_transcriptions=2):
 
 
 if __name__ == '__main__':
-    transcribe_with_autosub(0)
+    transcribe_with_autosub(1)

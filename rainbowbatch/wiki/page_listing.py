@@ -17,15 +17,17 @@ def lookup(slug):
 def add(title, slug):
     global page_listing
 
-    page_listing = page_listing.append(
-        {'title': title, 'slug': slug}, ignore_index=True)
+    # Use pd.concat instead of append
+    new_row = pd.DataFrame([{'title': title, 'slug': slug}])
+    page_listing = pd.concat([page_listing, new_row], ignore_index=True)
     page_listing = page_listing.drop_duplicates(subset='slug', keep="last")
 
 
 def add_all(other_page_listing):
     global page_listing
-    page_listing = pd.concat([page_listing, other_page_listing])
 
+    page_listing = pd.concat(
+        [page_listing, other_page_listing], ignore_index=True)
     page_listing = page_listing.drop_duplicates(subset='slug', keep="last")
 
 
