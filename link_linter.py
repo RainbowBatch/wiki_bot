@@ -15,10 +15,10 @@ from attr import attr
 from attr import attrs
 from box import Box
 from collections import Counter
-from entity_extraction_util import wikipage_extractor
 from parsimonious.nodes import VisitationError
 from pprint import pprint
 from rainbowbatch.entity.entity import simplify_entity
+from rainbowbatch.entity.entity_extraction_util import wikipage_extractor
 from rainbowbatch.git import check_git_branch
 from rainbowbatch.remap.wiki_cleaner import simple_format
 from tqdm import tqdm

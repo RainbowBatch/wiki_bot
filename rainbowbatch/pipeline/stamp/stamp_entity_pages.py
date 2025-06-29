@@ -20,7 +20,8 @@ env = Environment(
 
 
 def stamp_entity_pages():
-    assert check_git_branch('bot_raw'), "Please checkout bot_raw! Currently on %s." % git_branch
+    assert check_git_branch(
+        'bot_raw'), "Please checkout bot_raw! Currently on %s." % git_branch
 
     template = env.get_template('entity.wiki.template')
 
@@ -52,7 +53,8 @@ def stamp_entity_pages():
 
         page_title = entity_record.entity_name
         page_slug = canonicalize_title(page_title)
-        page_fname = kfio.TOP_LEVEL_DIR/'kf_wiki_content/%s.wiki' % page_slug
+        page_fname = kfio.TOP_LEVEL_DIR / \
+            'kf_wiki_content' / ('%s.wiki' % page_slug)
 
         with io.open(page_fname, mode="w", encoding="utf-8") as f:
             f.write(pretty)

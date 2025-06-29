@@ -6,13 +6,13 @@ import pathlib
 import rainbowbatch.kfio as kfio
 
 from box import Box
-from entity_extraction_util import transcript_extractor
-from entity_extraction_util import wikipage_extractor
 from pprint import pprint
 from pytimeparse.timeparse import timeparse as duration_seconds
 from rainbowbatch.entity.entity import aggregate_proto_entities
 from rainbowbatch.entity.entity import extract_entities
 from rainbowbatch.entity.entity import parse_entity_orgin
+from rainbowbatch.entity.entity_extraction_util import transcript_extractor
+from rainbowbatch.entity.entity_extraction_util import wikipage_extractor
 from rainbowbatch.git import check_git_branch
 from rainbowbatch.transcripts import create_full_transcript_listing
 from rainbowbatch.transcripts import parse_transcript
@@ -35,7 +35,7 @@ def modified_time(path):
 
 
 def extract_proto_entities(margin, overwrite):
-    PROTO_ENTITIES_PATH = pathlib.Path('data/proto_entities.json')
+    PROTO_ENTITIES_PATH = kfio.TOP_LEVEL_DIR / 'data/proto_entities.json'
 
     last_run_time = modified_time(PROTO_ENTITIES_PATH)
 
@@ -47,6 +47,10 @@ def extract_proto_entities(margin, overwrite):
     else:
         margin_seconds = duration_seconds(margin)
 
+    cutoff_time = last_run_time.subtract(seconds=margin_seconds)
+
+    print("cutoff_time", cutoff_time)
+
     new_proto_entities = dict()
 
     if check_git_branch('latest_edits'):
@@ -56,6 +60,13 @@ def extract_proto_entities(margin, overwrite):
         print("Processing wiki pages into proto entities")
         for page_record in tqdm(page_listing.to_dict(orient='records')):
             page_record = Box(page_record)
+
+            if not overwrite and page_record.get('olddt'):
+                page_modified_time = datetime.datetime.fromisoformat(
+                    page_record.olddt).replace(tzinfo=datetime.timezone.utc)
+
+                if page_modified_time <= cutoff_time.datetime(to_timezone='UTC', naive=False):
+                    continue
 
             if page_record.slug.startswith('RainbowBatch_Entities') or page_record.slug.startswith('Transcript') or page_record.slug.startswith('List_of_Knowledge_Fight_episodes'):
                 continue  # Avoid circular entity inclusion.
@@ -87,11 +98,14 @@ def extract_proto_entities(margin, overwrite):
     if margin_seconds is None:
         relevant_transcript_listing = transcript_listing
     else:
-        cutoff_time = last_run_time.subtract(seconds=margin_seconds)
         relevant_transcript_listing = transcript_listing[transcript_listing.modified_time > cutoff_time]
 
     for transcript_record in tqdm(relevant_transcript_listing.to_dict(orient='records')):
-        transcript = parse_transcript(transcript_record)
+        try:
+            transcript = parse_transcript(transcript_record)
+        except:
+            print("Problem parsing", transcript_record)
+            continue
 
         origin = '__'.join(['None' if frag is None else frag for frag in parse_entity_orgin(
             'transcripts\\' + pathlib.Path(transcript_record['transcript_fname']).name)])
@@ -107,11 +121,17 @@ def extract_proto_entities(margin, overwrite):
         kfio.save(pd.DataFrame(new_proto_entities.items(), columns=[
                   'origin', 'proto_entities']).sort_values('origin'), PROTO_ENTITIES_PATH)
     else:
-        combined_proto_entities = new_proto_entities
+        combined_proto_entities = dict()
+
+        # Load old entities
         for _, origin, proto_entities in kfio.load(PROTO_ENTITIES_PATH).itertuples():
-            origin = tuple(origin)
-            if origin not in combined_proto_entities:
-                combined_proto_entities[origin] = proto_entities
+            combined_proto_entities[origin] = proto_entities
+
+        # Overwrite or insert new ones
+        for origin, proto_entities in new_proto_entities.items():
+            print("Adding", origin, origin in combined_proto_entities)
+            combined_proto_entities[origin] = proto_entities
+
         kfio.save(pd.DataFrame(combined_proto_entities.items(), columns=[
                   'origin', 'proto_entities']).sort_values('origin'), PROTO_ENTITIES_PATH)
 

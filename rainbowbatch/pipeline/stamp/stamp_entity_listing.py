@@ -33,7 +33,8 @@ env.filters["pretty_entity_sourcetext"] = pretty_entity_sourcetext
 
 
 def stamp_entity_listing():
-    assert check_git_branch('bot_raw'), "Please checkout bot_raw! Currently on %s." % git_branch
+    assert check_git_branch(
+        'bot_raw'), "Please checkout bot_raw! Currently on %s." % git_branch
 
     template = env.get_template('entity_listing.wiki.template')
 
@@ -49,7 +50,8 @@ def stamp_entity_listing():
 
         fragment_title = 'RainbowBatch Entities/%s' % starting_letter
         fragment_slug = canonicalize_title(fragment_title)
-        fragment_fname = kfio.TOP_LEVEL_DIR/'kf_wiki_content/%s.wiki' % fragment_slug
+        fragment_fname = kfio.TOP_LEVEL_DIR / \
+            'kf_wiki_content'/('%s.wiki' % fragment_slug)
 
         raw = template.render(
             entities=fragment_df.to_dict(orient='records')

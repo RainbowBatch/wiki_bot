@@ -61,7 +61,7 @@ def has_diverse_origins(entity_origins):
     return origin_counter['None'] > 1 or len(origin_counter) > 1
 
 
-PROTO_ENTITIES_PATH = pathlib.Path('data/proto_entities.json')
+PROTO_ENTITIES_PATH = kfio.TOP_LEVEL_DIR / 'data/proto_entities.json'
 
 grouped_proto_entities = defaultdict(list)
 
